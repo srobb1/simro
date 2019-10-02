@@ -1,0 +1,7 @@
+ID	Label	definition	Entity Type	Characteristic	Super Property	Domain	Range
+ID	LABEL	A definition SPLIT=|	TYPE	CHARACTERISTIC	SP %	DOMAIN	RANGE
+http://purl.obolibrary.org/obo/SIMRO_0000610	used by	entity is utilized by something	owl:ObjectProperty	transitive			
+http://purl.obolibrary.org/obo/SIMRO_0000613	used by equipment	entity is utilized by a piece of equipement	owl:ObjectProperty	transitive	http://purl.obolibrary.org/obo/SIMRO_0000610		
+http://purl.obolibrary.org/obo/SIMRO_0000611	used by group	entity is utilized by a group	owl:ObjectProperty	transitive	http://purl.obolibrary.org/obo/SIMRO_0000610		
+http://purl.obolibrary.org/obo/SIMRO_0000612	used by method	entity is utilized by a protocol or method	owl:ObjectProperty	transitive	http://purl.obolibrary.org/obo/SIMRO_0000610		
+http://purl.obolibrary.org/obo/SIMRO_0000614	used to label	entity is used to label or identify another entity	owl:ObjectProperty	transitive			

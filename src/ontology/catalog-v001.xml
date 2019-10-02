@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 
-
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/components/objectProperties.owl" uri="../templates/objectProperties.owl"/>
   
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ms_import.owl" uri="imports/ms_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ms_import.obo" uri="imports/ms_import.obo"/>
