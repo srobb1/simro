@@ -9,3 +9,2347 @@ property_value: http://purl.org/dc/terms/license "Unspecified" xsd:string
 id: SIMRO:00000000
 name: root node
 
+[Term]
+id: SIMRO:0001000
+name: institutional group
+def: "A collection of individuals or a department at an institution that works towards a common goal. This could be a research group, core facility, or department." []
+is_a: IAO:0000030
+
+[Term]
+id: SIMRO:0001001
+name: computational biology group
+def: "ig" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001002
+name: electron microscopy group
+def: "electron microscopy group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001003
+name: genomics group
+def: "genomics group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001004
+name: histology group
+def: "histology group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001005
+name: light microscopy group
+def: "light microscopy group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001006
+name: molecular biology group
+def: "molecular biology group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001007
+name: proteomic group
+def: "proteomic group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001008
+name: research group
+def: "research group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001009
+name: screening group
+def: "screening group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0001010
+name: tissue culture group
+def: "tissue culture group of institutional group needs def" []
+is_a: SIMRO:0001000 ! institutional group
+
+[Term]
+id: SIMRO:0002000
+name: x-gal staining fixation solution
+def: "LacZ fixative solution containing 0.2% glutaraldehyde, 5 mM EGTA (pH 7.3), 100 mM MgCl2 in 0.1 M NaPO4 (pH 7.3) (Lobe et al. 1999)" []
+is_a: OBI:0302729
+
+[Term]
+id: SIMRO:0002001
+name: feulegen staining
+def: "Feulgen stain is a staining technique discovered by Robert Feulgen and used in histology to identify chromosomal material or DNA in cell specimens. DNA should be stained red." []
+is_a: EFO:0003813
+
+[Term]
+id: SIMRO:0002002
+name: 10% neutral buffered formalin
+def: "For 1L: formalin  100mL; water  900mL; Sodium dihydrogen phosphate, monohydrate (NaH2PO4.H2O) 4.0g;  Disodium hydrogen phosphate, anhydrous (Na2HPO4) 6.5g.  Neutral buffered formalin, usually simply shortened to NBF, has become the standard fixative for use in a diagnostic setting. It is more effective than the simple formalin mixtures as the phosphate salts present make it unlikely that erythrocytes will be damaged, and the neutral pH inhibits the formation of formalin pigment. The phosphates will adjust the pH to about 7.0 as the \"neutral\" infers, but there is no need to adjust it to this level if it is slightly different. Although the formation of formalin pigment is inhibited it is not stopped altogether, and it may slowly form in very bloody tissues, or in tissues stored for a long time in NBF without it being changed. NBF is useful as a fixative for museum and photography specimens as it permits restoration of natural colour to the specimen. (Reference: Drury, R.A.B. and Wallington, E.A., Carleton's Histological Technique, Ed. 5, Oxford University Press, Oxford, UK.)" []
+is_a: OBI:0302729
+
+[Term]
+id: SIMRO:0002003
+name: von Kossa staining method
+def: "The method was originally developed by von Kossa,[1] and underwent several modifications. The stain principle is a precipitation reaction in which silver ions react with phosphate (not calcium) in the presence of acidic material [5] Photochemical degradation of silver phosphate to silver then occurs under light illumination. This method is not specific for calcium itself but tissues are treated with a silver nitrate solution and the silver is deposited by replacing the calcium reduced by the strong light, and so can be visualized as metallic silver. Additional methods need to be employed to confirm the presence of calcium, such as Alizarin Red, which detects calcium deposits." []
+is_a: NCIT:C23044
+
+[Term]
+id: SIMRO:0002004
+name: Alexa Fluor 488
+def: "A fluorescent dye of absorption wavelength 495 nm and emission wavelength 519 nm, derived from a 3,6-diaminoxanthenium-4,5-disulfate." []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002005
+name: ATTO 532
+def: "Bright photostable ATTO-TEC dye which excites at 532 nm and emits at 552 nm" []
+is_a: MI:1092
+
+[Term]
+id: SIMRO:0002006
+name: ATTO 550
+def: "Bright photostable ATTO-TEC dye which excites at 554 nm and emits at 576 nm" []
+is_a: MI:1092
+
+[Term]
+id: SIMRO:0002007
+name: zinc formalin fixative
+def: "Zinc Formalin Fixative (ZFF) provides excellent morphological preservation of nuclear and cytoplasmic tissue components. Zinc Formalin Fixative can replace the commonly used 10% neutral buffered formalin solution for routine tissue and immunohistochemical procedures. This fixative is compatible with histochemical, immunochemical, and special stains. It may be used with automated tissue processors. The zinc chloride component of the formulation increases the rigidity of cellular components to withstand subsequent processing, sectioning, and staining procedures. Tissue specimens initially fixed using 10% neutral buffered formalin solution may be post-fixed using the Zinc Formalin Fixative." []
+is_a: CHEBI:50913
+
+[Term]
+id: SIMRO:0002008
+name: beta-galactosidase staining fixation
+def: "beta-galactosidase staining fixation of fixation protocol needs def" []
+is_a: SIMRO:0002009 ! fixation protocol
+
+[Term]
+id: SIMRO:0002009
+name: fixation protocol
+def: "fixation protocol of protocol needs def" []
+is_a: OBI:0000272
+
+[Term]
+id: SIMRO:0002010
+name: slide staining
+def: "slide staining of staining needs def" []
+is_a: OBI:0302887
+
+[Term]
+id: SIMRO:0002011
+name: R110Direct HaloTag Ligand
+def: "Version of Rhodamine 110 that covalently binds the HaloTag, is cell permeant, and it non-fluorescent until bound." []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002012
+name: ATTO 488
+def: "Bright photostable ATTO-TEC dye which excites at 500 nm and emits at 520 nm." []
+is_a: MI:1092
+
+[Term]
+id: SIMRO:0002013
+name: SNAP-Cell Oregon Green
+def: "SNAP-Cell Oregon Green,Version of Oregon Green 488 that binds covalently to the SNAP tag and is cell permeant" []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002014
+name: CF405M
+def: "Bright and photostable dye from Biotium that absorbs at 408 nm and emits at 452 nm." []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002015
+name: skeletal staining method
+def: "The first step in almost every investigation of skeletal phenotypes is analysis of whole-mount skeletal preparations. Whole-mount skeletal staining permits evaluation of the shapes and sizes of skeletal elements in their appropriate locations. The technique is thus the major method for detecting changes in skeletal patterning. Because cartilage and bone can be distinguished by differential staining, this technique is also a powerful means to assess the pace of skeletal maturation. This protocol covers staining of the pre- and postnatal mouse skeleton using Alcian blue and Alizarin red to identify cartilage and bone, respectively." []
+is_a: NCIT:C23044
+
+[Term]
+id: SIMRO:0002016
+name: ATTO 647N
+def: "Bright photostable ATTO-TEC dye which excites at 646 nm and emits at 664 nm and is suitable for STED microscopy" []
+is_a: MI:1092
+
+[Term]
+id: SIMRO:0002017
+name: TMRDirect HaloTag Ligand
+def: "Version of TMR (tetramethylrhodamine) that covalently binds the HaloTag, is cell permeant, and it non-fluorescent until bound." []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002018
+name: ATTO 594
+def: "Bright photostable ATTO-TEC dye which excites at 603 nm and emits at 626 nm." []
+is_a: MI:1092
+
+[Term]
+id: SIMRO:0002019
+name: ATTO 633
+def: "Bright photostable ATTO-TEC dye which excites at 630 nm and emits at 651 nm." []
+is_a: MI:1092
+
+[Term]
+id: SIMRO:0002020
+name: ATTO 647
+def: "Bright photostable ATTO-TEC dye which excites at 647 nm and emits at 667 nm." []
+is_a: MI:1092
+
+[Term]
+id: SIMRO:0002021
+name: Bouin solution
+def: "Bouin solution, or Bouin's solution, is a compound fixative used in histology.[1] It was invented by French biologist Pol Bouin and is composed of picric acid, acetic acid and formaldehyde in an aqueous solution. It is especially good for gastrointestinal tract biopsies because this fixative allows crisper and better nuclear staining than 10% neutral-buffered formalin. It is not a good fixative when tissue ultrastructure must be preserved for electron microscopy. However, it is a good fixative when tissue structure with a soft and delicate texture must be preserved. Formalin-fixed tissue is normally mordanted with Bouin solution for better staining results in the trichrome stains. The acetic acid in this fixative lyses red blood cells and dissolves small iron and calcium deposits in tissue. A variant in which the acetic acid is replaced with formic acid can be used for both fixation of tissue and decalcification. The effects of the three chemicals in Bouin solution balance each other. Formalin causes cytoplasm to become basophilic but this effect is balanced by the effect of the picric acid. This results in excellent nuclear and cytoplasmic H&E staining. The tissue hardening effect of formalin is balanced by the soft tissue fixation of picric acid. The tissue swelling effect of acetic acid is balanced by the tissue shrinking effect of picric acid. When using Bouin solution, several potential problems can arise. Due to the formalin in the solution, formalin pigment may be present when viewing tissue sections under the microscope. Wet tissue should be fixed in Bouin solution for less than 24 hours. Excess picric acid should be washed out of tissue using several alcohol and water solutions or staining quality may deteriorate over time. Wet tissue fixed in Bouin solution should be stored in an alcohol and water solution rather than Bouin solution. Since Bouin solution contains formaldehyde, picric acid and acetic acid, appropriate safety precautions for these substances should be taken and regulations followed. In particular, noting that picric acid can be explosive, sensitive to friction and shock when dry and in contact with some metals can form unstable metal picrates. Under the name, Bouin's fluid, this fixative is also widely used for marine invertebrates." []
+is_a: CHEBI:50913
+
+[Term]
+id: SIMRO:0002022
+name: GFP 1-10 fragment
+def: "Strands 1-10 of GFP (214 amino acids) optimized for GFP complementation assays with different affinity GFP11 peptides." []
+is_a: FBbi:00000082
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002023
+name: SNAP-Cell TMR-Star
+def: "Version of TMR (tetramethyl rhodamine) that binds to the SNAP-tag covalently and is cell permeant" []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002024
+name: GFP 11 fragment
+def: "GFP strand 11 (15 amino acids) optimized for complementation with GFP 1-10 fragment.  Comes in low (M2), medium (M3), and high (M1) affinity versions." []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002025
+name: HaloTag
+def: "Derivatives of haloalkane dehalogenase that can be covalently attached to fluorescent ligands or purification matrices" [HaloTag control vector]
+is_a: FBbi:00000076
+
+[Term]
+id: SIMRO:0002026
+name: SNAP-tag
+def: "Adaptations of the protein O-6-methylguanine-DNA methyltransferase that can covalently bind fluorescent ligands or purification matrices." []
+is_a: FBbi:00000076
+
+[Term]
+id: SIMRO:0002027
+name: fluorescent protein derived from Entacmaea quadricolor
+def: "fluorescent protein derived from Entacmaea quadricolor" []
+is_a: MI:0687
+
+[Term]
+id: SIMRO:0002028
+name: mCardinalFP
+def: "red-excitable monomeric FPs obtained by structure-guided mutagenesis of mNeptune. mCardinal, has a red-shifted excitation spectrum without reduction in brightness. We show that mCardinal can be used to non-invasively and longitudinally visualize the differentiation of myoblasts into myocytes in living mice with high anatomical detail." []
+synonym: "mCardinal" EXACT []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002029
+name: mEOS3.1FP
+def: "next generation of mEos related photoconvertible protein" []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002030
+name: widefield microscope
+def: "widefield microscope of microscope needs def" []
+is_a: OBI:0400169
+
+[Term]
+id: SIMRO:0002031
+name: Axiovert 206 MOT (WID)
+def: "Axiovert 206 MOT (WID) of widefields needs def" []
+is_a: SIMRO:0002030 ! widefield microscope
+
+[Term]
+id: SIMRO:0002032
+name: Axiovert 206 Std (WID)
+def: "Axiovert 206 Std (WID) of widefields needs def" []
+is_a: SIMRO:0002030 ! widefield microscope
+
+[Term]
+id: SIMRO:0002033
+name: Axiovert MOT BW (WID)
+def: "Axiovert MOT BW (WID) of widefields needs def" []
+is_a: SIMRO:0002030 ! widefield microscope
+
+[Term]
+id: SIMRO:0002034
+name: Nikon TE2000 (NIW)
+def: "Nikon TE2000 (NIW) of widefields needs def" []
+is_a: SIMRO:0002030 ! widefield microscope
+
+[Term]
+id: SIMRO:0002035
+name: Olympus Slide Scanner (OSS)
+def: "Olympus Slide Scanner (OSS) of widefields needs def" []
+is_a: SIMRO:0002030 ! widefield microscope
+
+[Term]
+id: SIMRO:0002036
+name: Widefield sCMOS (WID)
+def: "Widefield sCMOS (WID) of widefields needs def" []
+is_a: SIMRO:0002030 ! widefield microscope
+
+[Term]
+id: SIMRO:0002037
+name: Deltavision OMX (OMX)
+def: "Deltavision OMX (OMX) of super-resolution microscope needs def" []
+is_a: ERO:0001946
+
+[Term]
+id: SIMRO:0002038
+name: LSM-780 DS (780)
+def: "LSM-780 DS (780) of super-resolution microscope needs def" []
+is_a: ERO:0001946
+
+[Term]
+id: SIMRO:0002039
+name: SP8 STED (SP8)
+def: "SP8 STED (SP8) of super-resolution microscope needs def" []
+is_a: ERO:0001946
+
+[Term]
+id: SIMRO:0002040
+name: laser capture microdissection
+def: "laser capture microdissection of sample preparation method needs def" []
+is_a: FBbi:00000001
+
+[Term]
+id: SIMRO:0002041
+name: laser capture microdissection microscope
+def: "laser capture microdissection microscope of microscope needs def" []
+is_a: OBI:0400169
+
+[Term]
+id: SIMRO:0002042
+name: Zeiss Microbeam (LCM)
+def: "Zeiss Microbeam (LCM) of laser capture microdissection microscope needs def" []
+is_a: SIMRO:0002041 ! laser capture microdissection microscope
+
+[Term]
+id: SIMRO:0002043
+name: AiryScan
+def: "AiryScan of structured illumination microscopy (SIM) needs def" []
+is_a: FBbi:00000332
+
+[Term]
+id: SIMRO:0002044
+name: Deltavision OMX (OMX)
+def: "Deltavision OMX (OMX) of structured illumination microscopy (SIM) needs def" []
+is_a: FBbi:00000332
+
+[Term]
+id: SIMRO:0002045
+name: LSM-700 Falcon (FAL)
+def: "LSM-700 Falcon (FAL) of confocal microscope needs def" []
+is_a: OBI:0001079
+
+[Term]
+id: SIMRO:0002046
+name: LSM-700 Upright (UPR)
+def: "LSM-700 Upright (UPR) of confocal microscope needs def" []
+is_a: OBI:0001079
+
+[Term]
+id: SIMRO:0002047
+name: LSM-710 (710)
+def: "LSM-710 (710) of confocal microscope needs def" []
+is_a: OBI:0001079
+
+[Term]
+id: SIMRO:0002048
+name: LSM-780 DS (780)
+def: "LSM-780 DS (780) of confocal microscope needs def" []
+is_a: OBI:0001079
+
+[Term]
+id: SIMRO:0002049
+name: SP8 STED (SP8)
+def: "SP8 STED (SP8) of confocal microscope needs def" []
+is_a: OBI:0001079
+
+[Term]
+id: SIMRO:0002050
+name: Nikon 3PO (3PO)
+def: "Nikon 3PO (3PO) of spinning-disk confocal microscope needs def" []
+is_a: OBI:0001055
+
+[Term]
+id: SIMRO:0002051
+name: PE Ultraview (ULT)
+def: "PE Ultraview (ULT) of spinning-disk confocal microscope needs def" []
+is_a: OBI:0001055
+
+[Term]
+id: SIMRO:0002052
+name: CF405M
+def: "CF405M of fluorescent label needs def" []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002053
+name: SPIM microscope
+def: "SPIM microscope of microscope needs def" []
+is_a: OBI:0400169
+
+[Term]
+id: SIMRO:0002054
+name: SPIM (SPIM)
+def: "SPIM (SPIM) of SPIM microscope needs def" []
+is_a: SIMRO:0002053 ! SPIM microscope
+
+[Term]
+id: SIMRO:0002055
+name: microscopy image capture
+def: "microscopy image capture of experimental process needs def" []
+is_a: EFO:0002694
+
+[Term]
+id: SIMRO:0002056
+name: microscope web camera
+def: "microscope web camera of microscope digital camera needs def" []
+is_a: ERO:0000276
+
+[Term]
+id: SIMRO:0002057
+name: webcam (WEB)
+def: "webcam (WEB) of microscope web camera needs def" []
+is_a: SIMRO:0002056 ! microscope web camera
+
+[Term]
+id: SIMRO:0002058
+name: mTurquoise2
+def: "mTurquoise2 of fluorescent label needs def" []
+is_a: FBbi:00000455
+
+[Term]
+id: SIMRO:0002059
+name: 100% ethanol
+def: "100% ethanol of chemical solution needs def" []
+is_a: OBI:0302729
+
+[Term]
+id: SIMRO:0002060
+name: 15% sucrose in PBS
+def: "15% sucrose in PBS of chemical solution needs def" []
+is_a: OBI:0302729
+
+[Term]
+id: SIMRO:0002061
+name: 30% ethanol
+def: "30% ethanol of chemical solution needs def" []
+is_a: OBI:0302729
+
+[Term]
+id: SIMRO:0002062
+name: 30% sucrose in PBS
+def: "30% sucrose in PBS of chemical solution needs def" []
+is_a: OBI:0302729
+
+[Term]
+id: SIMRO:0002063
+name: 4% paraformaldehyde solution
+def: "4% paraformaldehyde solution of chemical solution needs def" []
+is_a: OBI:0302729
+
+[Term]
+id: SIMRO:0002064
+name: 70% ethanol
+def: "70% ethanol of chemical solution needs def" []
+is_a: OBI:0302729
+
+[Term]
+id: SIMRO:0002065
+name: temperature fixed tissue
+def: "temperature fixed tissue of fixation method needs def" []
+is_a: FBbi:00001012
+
+[Term]
+id: SIMRO:0002066
+name: fixed frozen tissue
+def: "fixed frozen tissue of temperature fixed tissue needs def" []
+is_a: SIMRO:0002065 ! temperature fixed tissue
+
+[Term]
+id: SIMRO:0002067
+name: slide mounted tissue
+def: "slide mounted tissue of sample preparation method needs def" []
+is_a: FBbi:00000001
+
+[Term]
+id: SIMRO:0002068
+name: unfixed frozen tissue
+def: "unfixed frozen tissue of unfixed tissue needs def" []
+is_a: FBbi:00000014
+
+[Term]
+id: SIMRO:0002069
+name: whole mounted organism
+def: "whole mounted organism of sample preparation method needs def" []
+is_a: FBbi:00000001
+
+[Term]
+id: SIMRO:0002070
+name: ATTO 565
+def: "ATTO 565 of atto label needs def" []
+is_a: MI:1092
+
+[Term]
+id: SIMRO:0002071
+name: Alexa Fluor 532
+def: "Alexa Fluor 532 of alexa label needs def" []
+is_a: MI:0384
+
+[Term]
+id: SIMRO:0002072
+name: Alexa Fluor 546
+def: "Alexa Fluor 546 of alexa label needs def" []
+is_a: MI:0384
+
+[Term]
+id: SIMRO:0002073
+name: Alexa Fluor 568
+def: "Alexa Fluor 568 of alexa label needs def" []
+is_a: MI:0384
+
+[Term]
+id: SIMRO:0002074
+name: Alexa Fluor 594
+def: "Alexa Fluor 594 of alexa label needs def" []
+is_a: MI:0384
+
+[Term]
+id: SIMRO:0002075
+name: Alexa Fluor 610
+def: "Alexa Fluor 610 of alexa label needs def" []
+is_a: MI:0384
+
+[Term]
+id: SIMRO:0002076
+name: Alexa Fluor 633
+def: "Alexa Fluor 633 of alexa label needs def" []
+is_a: MI:0384
+
+[Term]
+id: SIMRO:0002077
+name: Alexa Fluor 647
+def: "Alexa Fluor 647 of alexa label needs def" []
+is_a: MI:0384
+
+[Term]
+id: SIMRO:0002078
+name: Alexa Fluor 555
+def: "Alexa Fluor 555 of alexa label needs def" []
+is_a: MI:0384
+
+[Term]
+id: SIMRO:0002079
+name: KH2 cell
+def: "KH2 cell of mouse embryonic stem cell line cell needs def" []
+is_a: CLO:0037317
+
+[Term]
+id: SIMRO:0002080
+name: MEF cell
+def: "Mouse embryonic fibroblast cell line. [ ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/ ]" []
+is_a: CLO:0000161
+
+[Term]
+id: SIMRO:0002081
+name: K562 cell
+def: "Human chronic myeloid leukemia in blast crisis established from the pleural effusion of a 53-year-old woman with chronic myeloid leukemia (CML) in blast crisis in 1970; cells can be used as highly sensitive targets in in-vitro natural killer assays; cells produce hemoglobin; cells carry the Philadelphia chromosome with a b3-a2 fusion gene." []
+is_a: CLO:0054401
+
+[Term]
+id: SIMRO:0002082
+name: HEK-293T cell
+def: "A highly transformed human renal epithelial line expressing two viral oncogenes, adenovirus E1a and SV40 large T antigen." [PMID:7553648]
+is_a: CLO:0037237
+
+[Term]
+id: SIMRO:0005000
+name: X-Rhodamine
+def: "X-Rhodamine used by light microscopy group." []
+intersection_of: FBbi:00000584
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005001
+name: x-gal staining fixation solution
+def: "x-gal staining fixation solution used by histology group." []
+intersection_of: SIMRO:0002000 ! x-gal staining fixation solution
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005002
+name: x-gal staining fixation solution
+def: "x-gal staining fixation solution used by histology group." []
+intersection_of: SIMRO:0002000 ! x-gal staining fixation solution
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005003
+name: Tartrate Resistant Acid Phosphatase Staining Method
+def: "Tartrate Resistant Acid Phosphatase Staining Method used by histology group." []
+intersection_of: NCIT:C118401
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005004
+name: Alexa Fluor 488
+def: "Alexa Fluor 488 used by light microscopy group." []
+intersection_of: FBbi:00000440
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005005
+name: feulegen staining
+def: "feulegen staining used by histology group." []
+intersection_of: SIMRO:0002001 ! feulegen staining
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005006
+name: feulegen staining
+def: "feulegen staining used by histology group." []
+intersection_of: SIMRO:0002001 ! feulegen staining
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005007
+name: 10% neutral buffered formalin
+def: "10% neutral buffered formalin used by histology group." []
+intersection_of: SIMRO:0002002 ! 10% neutral buffered formalin
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005008
+name: von Kossa staining Method
+def: "von Kossa staining Method used by histology group." []
+intersection_of: SIMRO:0002003 ! von Kossa staining method
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005009
+name: living tissue
+def: "living tissue used by histology group." []
+intersection_of: FBbi:00000025
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005010
+name: ATTO 532
+def: "ATTO 532 used by light microscopy group." []
+intersection_of: SIMRO:0002005 ! ATTO 532
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005011
+name: ATTO 550
+def: "ATTO 550 used by light microscopy group." []
+intersection_of: SIMRO:0002006 ! ATTO 550
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005012
+name: warm/hot temperature regimen
+def: "warm/hot temperature regimen used by proteomic group." []
+intersection_of: EO:0007173
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005013
+name: Masson Trichrome Staining Method
+def: "Masson Trichrome Staining Method used by histology group." []
+intersection_of: NCIT:C120047
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005014
+name: PD173074
+def: "PD173074 used by research group." []
+intersection_of: CHEBI:63448
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005015
+name: phosphate buffered saline solution
+def: "phosphate buffered saline solution used by histology group." []
+intersection_of: OBI:0100046
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005016
+name: zinc formalin fixative
+def: "zinc formalin fixative used by histology group." []
+intersection_of: SIMRO:0002007 ! zinc formalin fixative
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005017
+name: R110Direct HaloTag Ligand
+def: "R110Direct HaloTag Ligand used by light microscopy group." []
+intersection_of: SIMRO:0002011 ! R110Direct HaloTag Ligand
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005018
+name: Cy7 dye
+def: "Cy7 dye used by light microscopy group." []
+intersection_of: CHEBI:52718
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005019
+name: ATTO 488
+def: "ATTO 488 used by light microscopy group." []
+intersection_of: SIMRO:0002012 ! ATTO 488
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005020
+name: UV light regimen
+def: "UV light regimen used by proteomic group." []
+intersection_of: EO:0007222
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005021
+name: SNAP-Cell Oregon Green
+def: "SNAP-Cell Oregon Green used by light microscopy group." []
+intersection_of: SIMRO:0002013 ! SNAP-Cell Oregon Green
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005022
+name: Alexa Fluor 555
+def: "Alexa Fluor 555 used by light microscopy group." []
+intersection_of: FBbi:00000443
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005023
+name: fluorescein isothiocyanate
+def: "fluorescein isothiocyanate used by light microscopy group." []
+intersection_of: CHEBI:37926
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005024
+name: Alcian Blue Staining Method
+def: "Alcian Blue Staining Method used by histology group." []
+intersection_of: NCIT:C92299
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005025
+name: mouse embryonic stem cell line cell
+def: "mouse embryonic stem cell line cell used by proteomic group." []
+intersection_of: CLO:0037317
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005026
+name: LY-411575
+def: "LY-411575 used by research group." []
+intersection_of: CHEBI:87359
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005027
+name: protein staining
+def: "protein staining used by proteomic group." []
+intersection_of: MI:0094
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005028
+name: hematoxylin
+def: "hematoxylin used by histology group." []
+intersection_of: FBbi:00000041
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005029
+name: CF405M
+def: "CF405M used by light microscopy group." []
+intersection_of: SIMRO:0002014 ! CF405M
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005030
+name: Hematoxylin and Eosin Staining Method
+def: "Hematoxylin and Eosin Staining Method used by histology group." []
+intersection_of: NCIT:C23011
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005031
+name: zinc atom
+def: "zinc atom used by histology group." []
+intersection_of: CHEBI:27363
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005032
+name: neomycin
+def: "neomycin used by research group." []
+intersection_of: CHEBI:7507
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005033
+name: SU5402
+def: "SU5402 used by research group." []
+intersection_of: CHEBI:63449
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005034
+name: skeletal staining method
+def: "skeletal staining method used by histology group." []
+intersection_of: SIMRO:0002015 ! skeletal staining method
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005035
+name: ATTO 647N
+def: "ATTO 647N used by light microscopy group." []
+intersection_of: SIMRO:0002016 ! ATTO 647N
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005036
+name: fluorescein
+def: "fluorescein used by light microscopy group." []
+intersection_of: CHEBI:31624
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005037
+name: tyrphostin AG 1478
+def: "tyrphostin AG 1478 used by research group." []
+intersection_of: CHEBI:75404
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005038
+name: TMRDirect HaloTag Ligand
+def: "TMRDirect HaloTag Ligand used by light microscopy group." []
+intersection_of: SIMRO:0002017 ! TMRDirect HaloTag Ligand
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005039
+name: ATTO 594
+def: "ATTO 594 used by light microscopy group." []
+intersection_of: SIMRO:0002018 ! ATTO 594
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005040
+name: oregon green 488
+def: "oregon green 488 used by light microscopy group." []
+intersection_of: CHEBI:4477
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005041
+name: eosin
+def: "eosin used by histology group." []
+intersection_of: FBbi:00000037
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005042
+name: TexasRed
+def: "TexasRed used by light microscopy group." []
+intersection_of: FBbi:00000453
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005043
+name: ATTO 633
+def: "ATTO 633 used by light microscopy group." []
+intersection_of: SIMRO:0002019 ! ATTO 633
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005044
+name: alizarin red S
+def: "alizarin red S used by histology group." []
+intersection_of: CHEBI:87358
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005045
+name: alizarin red S
+def: "alizarin red S used by histology group." []
+intersection_of: CHEBI:87358
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005046
+name: ATTO 647
+def: "ATTO 647 used by light microscopy group." []
+intersection_of: SIMRO:0002020 ! ATTO 647
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005047
+name: Bouin solution
+def: "Bouin solution used by histology group." []
+intersection_of: SIMRO:0002021 ! Bouin solution
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005048
+name: GFP 1-10 fragment
+def: "GFP 1-10 fragment used by light microscopy group." []
+intersection_of: SIMRO:0002022 ! GFP 1-10 fragment
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005049
+name: SNAP-Cell TMR-Star
+def: "SNAP-Cell TMR-Star used by light microscopy group." []
+intersection_of: SIMRO:0002023 ! SNAP-Cell TMR-Star
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005050
+name: GFP 11 fragment
+def: "GFP 11 fragment used by light microscopy group." []
+intersection_of: SIMRO:0002024 ! GFP 11 fragment
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005051
+name: HaloTag
+def: "HaloTag used by light microscopy group." []
+intersection_of: SIMRO:0002025 ! HaloTag
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005052
+name: SNAP-tag
+def: "SNAP-tag used by light microscopy group." []
+intersection_of: SIMRO:0002026 ! SNAP-tag
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005053
+name: mCardinalFP
+def: "mCardinalFP used by light microscopy group." []
+intersection_of: SIMRO:0002028 ! mCardinalFP
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005054
+name: widefields
+def: "widefields used by light microscopy group." []
+intersection_of: SIMRO:0002030 ! widefield microscope
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005055
+name: widefields
+def: "widefields used by light microscopy group." []
+intersection_of: SIMRO:0002030 ! widefield microscope
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005056
+name: widefields
+def: "widefields used by light microscopy group." []
+intersection_of: SIMRO:0002030 ! widefield microscope
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005057
+name: widefields
+def: "widefields used by light microscopy group." []
+intersection_of: SIMRO:0002030 ! widefield microscope
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005058
+name: widefields
+def: "widefields used by light microscopy group." []
+intersection_of: SIMRO:0002030 ! widefield microscope
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005059
+name: widefields
+def: "widefields used by light microscopy group." []
+intersection_of: SIMRO:0002030 ! widefield microscope
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005060
+name: super-resolution microscope
+def: "super-resolution microscope used by light microscopy group." []
+intersection_of: ERO:0001946
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005061
+name: super-resolution microscope
+def: "super-resolution microscope used by light microscopy group." []
+intersection_of: ERO:0001946
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005062
+name: super-resolution microscope
+def: "super-resolution microscope used by light microscopy group." []
+intersection_of: ERO:0001946
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005063
+name: Zeiss Microbeam (LCM)
+def: "Zeiss Microbeam (LCM) used by light microscopy group." []
+intersection_of: SIMRO:0002041 ! laser capture microdissection microscope
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005064
+name: Zeiss Microbeam (LCM)
+def: "Zeiss Microbeam (LCM) used by light microscopy group." []
+intersection_of: SIMRO:0002042 ! Zeiss Microbeam (LCM)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005065
+name: AiryScan
+def: "AiryScan used by light microscopy group." []
+intersection_of: SIMRO:0002043 ! AiryScan
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005066
+name: Deltavision OMX (OMX)
+def: "Deltavision OMX (OMX) used by light microscopy group." []
+intersection_of: SIMRO:0002044 ! Deltavision OMX (OMX)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005067
+name: LSM-700 Falcon (FAL)
+def: "LSM-700 Falcon (FAL) used by light microscopy group." []
+intersection_of: SIMRO:0002045 ! LSM-700 Falcon (FAL)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005068
+name: LSM-700 Upright (UPR)
+def: "LSM-700 Upright (UPR) used by light microscopy group." []
+intersection_of: SIMRO:0002046 ! LSM-700 Upright (UPR)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005069
+name: LSM-710 (710)
+def: "LSM-710 (710) used by light microscopy group." []
+intersection_of: SIMRO:0002047 ! LSM-710 (710)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005070
+name: LSM-780 DS (780)
+def: "LSM-780 DS (780) used by light microscopy group." []
+intersection_of: SIMRO:0002048 ! LSM-780 DS (780)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005071
+name: SP8 STED (SP8)
+def: "SP8 STED (SP8) used by light microscopy group." []
+intersection_of: SIMRO:0002049 ! SP8 STED (SP8)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005072
+name: Nikon 3PO (3PO)
+def: "Nikon 3PO (3PO) used by light microscopy group." []
+intersection_of: SIMRO:0002050 ! Nikon 3PO (3PO)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005073
+name: PE Ultraview (ULT)
+def: "PE Ultraview (ULT) used by light microscopy group." []
+intersection_of: SIMRO:0002051 ! PE Ultraview (ULT)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005074
+name: SPIM microscope
+def: "SPIM microscope used by light microscopy group." []
+intersection_of: SIMRO:0002053 ! SPIM microscope
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005075
+name: Bimolecular Fluorescence Complementation
+def: "Bimolecular Fluorescence Complementation used by light microscopy group." []
+intersection_of: MI:0229
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005076
+name: webcam (WEB)
+def: "webcam (WEB) used by light microscopy group." []
+intersection_of: SIMRO:0002057 ! webcam (WEB)
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005077
+name: 2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole
+def: "2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole used by light microscopy group." []
+intersection_of: CHEBI:51232
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005078
+name: ATTO 565
+def: "ATTO 565 used by light microscopy group." []
+intersection_of: SIMRO:0002070 ! ATTO 565
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005079
+name: Alexa Fluor 532
+def: "Alexa Fluor 532 used by light microscopy group." []
+intersection_of: CHEBI:51756
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005080
+name: Alexa Fluor 546
+def: "Alexa Fluor 546 used by light microscopy group." []
+intersection_of: CHEBI:51760
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005081
+name: Alexa Fluor 568
+def: "Alexa Fluor 568 used by light microscopy group." []
+intersection_of: CHEBI:51766
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005082
+name: Alexa Fluor 594
+def: "Alexa Fluor 594 used by light microscopy group." []
+intersection_of: FBbi:00000444
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005083
+name: Alexa Fluor 610
+def: "Alexa Fluor 610 used by light microscopy group." []
+intersection_of: FBbi:00000445
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005084
+name: Alexa Fluor 633
+def: "Alexa Fluor 633 used by light microscopy group." []
+intersection_of: CHEBI:137393
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005085
+name: Alexa Fluor 647
+def: "Alexa Fluor 647 used by light microscopy group." []
+intersection_of: CHEBI:137394
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005086
+name: BODIPY FL
+def: "BODIPY FL used by light microscopy group." []
+intersection_of: CHEBI:51886
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005087
+name: Cy3 dye
+def: "Cy3 dye used by light microscopy group." []
+intersection_of: CHEBI:37987
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005088
+name: Cy5 dye
+def: "Cy5 dye used by light microscopy group." []
+intersection_of: CHEBI:37989
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005089
+name: Cy5.5 dye
+def: "Cy5.5 dye used by light microscopy group." []
+intersection_of: CHEBI:52003
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005090
+name: FM 4-64 dye
+def: "FM 4-64 dye used by light microscopy group." []
+intersection_of: CHEBI:52078
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005091
+name: lucifer yellow dye
+def: "lucifer yellow dye used by light microscopy group." []
+intersection_of: CHEBI:52104
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005092
+name: mitoTracker Red
+def: "mitoTracker Red used by light microscopy group." []
+intersection_of: CHEBI:52156
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005093
+name: rhodamine 110
+def: "rhodamine 110 used by light microscopy group." []
+intersection_of: CHEBI:52315
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005094
+name: CitrineFP
+def: "CitrineFP used by light microscopy group." []
+intersection_of: FBbi:00000474
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005095
+name: DAPI
+def: "DAPI used by light microscopy group." []
+intersection_of: CHEBI:51231
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005096
+name: Dendra2FP
+def: "Dendra2FP used by light microscopy group." []
+intersection_of: FBbi:00000549
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005097
+name: DiI
+def: "DiI used by light microscopy group." []
+intersection_of: FBbi:00000115
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005098
+name: DiO
+def: "DiO used by light microscopy group." []
+intersection_of: FBbi:00000116
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005099
+name: DsRed
+def: "DsRed used by light microscopy group." []
+intersection_of: FBbi:00000085
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005100
+name: ECFP
+def: "ECFP used by light microscopy group." []
+intersection_of: FBbi:00000081
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005101
+name: EGFP
+def: "EGFP used by light microscopy group." []
+intersection_of: FBbi:00000082
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005102
+name: EYFP
+def: "EYFP used by light microscopy group." []
+intersection_of: FBbi:00000084
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005103
+name: fluorescein isothiocyanate
+def: "fluorescein isothiocyanate used by light microscopy group." []
+intersection_of: CHEBI:37926
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005104
+name: Fluo-4
+def: "Fluo-4 used by light microscopy group." []
+intersection_of: CHEBI:51103
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005105
+name: PA-CFP
+def: "PA-CFP used by light microscopy group." []
+intersection_of: FBbi:00000545
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005106
+name: PA-GFP
+def: "PA-GFP used by light microscopy group." []
+intersection_of: FBbi:00000544
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005107
+name: SuperfolderFP
+def: "SuperfolderFP used by light microscopy group." []
+intersection_of: FBbi:00000472
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005108
+name: T-SapphireFP
+def: "T-SapphireFP used by light microscopy group." []
+intersection_of: FBbi:00000473
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005109
+name: tetramethylrhodamine thiocyanate
+def: "tetramethylrhodamine thiocyanate used by light microscopy group." []
+intersection_of: CHEBI:52336
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005110
+name: TagRFP-T
+def: "TagRFP-T used by light microscopy group." []
+intersection_of: FBbi:00000517
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005111
+name: VenusFP
+def: "VenusFP used by light microscopy group." []
+intersection_of: FBbi:00000477
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005112
+name: fluorescein
+def: "fluorescein used by light microscopy group." []
+intersection_of: CHEBI:31624
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005113
+name: mAppleFP
+def: "mAppleFP used by light microscopy group." []
+intersection_of: FBbi:00000524
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005114
+name: mCherryFP
+def: "mCherryFP used by light microscopy group." []
+intersection_of: FBbi:00000525
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005115
+name: mEOS2FP
+def: "mEOS2FP used by light microscopy group." []
+intersection_of: FBbi:00000552
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005116
+name: mEOS3.1FP
+def: "mEOS3.1FP used by light microscopy group." []
+intersection_of: SIMRO:0002029 ! mEOS3.1FP
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005117
+name: mKate2FP
+def: "mKate2FP used by light microscopy group." []
+intersection_of: FBbi:00000495
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005118
+name: mKateFP
+def: "mKateFP used by light microscopy group." []
+intersection_of: FBbi:00000494
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005119
+name: mKikGR
+def: "mKikGR used by light microscopy group." []
+intersection_of: FBbi:00000553
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005120
+name: mOrangeFP
+def: "mOrangeFP used by light microscopy group." []
+intersection_of: FBbi:00000514
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005121
+name: mStrawberryFP
+def: "mStrawberryFP used by light microscopy group." []
+intersection_of: FBbi:00000529
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005122
+name: mTagBFP
+def: "mTagBFP used by light microscopy group." []
+intersection_of: FBbi:00000486
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005123
+name: mTurquoise2
+def: "mTurquoise2 used by light microscopy group." []
+intersection_of: SIMRO:0002058 ! mTurquoise2
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005124
+name: tdTomatoFP
+def: "tdTomatoFP used by light microscopy group." []
+intersection_of: FBbi:00000518
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005125
+name: wtKIikGR
+def: "wtKIikGR used by light microscopy group." []
+intersection_of: FBbi:00000555
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005126
+name: X-Rhodamine
+def: "X-Rhodamine used by light microscopy group." []
+intersection_of: FBbi:00000584
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005127
+name: yPet
+def: "yPet used by light microscopy group." []
+intersection_of: FBbi:00000478
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005128
+name: 100% ethanol
+def: "100% ethanol used by histology group." []
+intersection_of: SIMRO:0002059 ! 100% ethanol
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005129
+name: 15% sucrose in PBS
+def: "15% sucrose in PBS used by histology group." []
+intersection_of: SIMRO:0002060 ! 15% sucrose in PBS
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005130
+name: 30% ethanol
+def: "30% ethanol used by histology group." []
+intersection_of: SIMRO:0002061 ! 30% ethanol
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005131
+name: 30% sucrose in PBS
+def: "30% sucrose in PBS used by histology group." []
+intersection_of: SIMRO:0002062 ! 30% sucrose in PBS
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005132
+name: 4% paraformaldehyde solution
+def: "4% paraformaldehyde solution used by histology group." []
+intersection_of: SIMRO:0002063 ! 4% paraformaldehyde solution
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005133
+name: 70% ethanol
+def: "70% ethanol used by histology group." []
+intersection_of: SIMRO:0002064 ! 70% ethanol
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005134
+name: acid phosphatase
+def: "acid phosphatase used by histology group." []
+intersection_of: FBbi:00000158
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005135
+name: critical_point dried specimen
+def: "critical_point dried specimen used by histology group." []
+intersection_of: FBbi:00000581
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005136
+name: cryofixed tissue
+def: "cryofixed tissue used by histology group." []
+intersection_of: FBbi:00000013
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005137
+name: ethanol fixed tissue
+def: "ethanol fixed tissue used by histology group." []
+intersection_of: FBbi:00000006
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005138
+name: fixed frozen tissue
+def: "fixed frozen tissue used by histology group." []
+intersection_of: SIMRO:0002066 ! fixed frozen tissue
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005139
+name: formaldehyde fixed tissue
+def: "formaldehyde fixed tissue used by histology group." []
+intersection_of: FBbi:00000010
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005140
+name: freeze-substituted tissue
+def: "freeze-substituted tissue used by histology group." []
+intersection_of: FBbi:00000621
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005141
+name: glutaraldehyde fixed tissue
+def: "glutaraldehyde fixed tissue used by histology group." []
+intersection_of: FBbi:00000011
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005142
+name: lyophilized specimen
+def: "lyophilized specimen used by histology group." []
+intersection_of: FBbi:00000583
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005143
+name: methanol fixed tissue
+def: "methanol fixed tissue used by histology group." []
+intersection_of: FBbi:00000007
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005144
+name: methyl green
+def: "methyl green used by histology group." []
+intersection_of: FBbi:00000042
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005145
+name: nuclear fast red
+def: "nuclear fast red used by histology group." []
+intersection_of: FBbi:00000045
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005146
+name: slide mounted tissue
+def: "slide mounted tissue used by histology group." []
+intersection_of: SIMRO:0002067 ! slide mounted tissue
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005147
+name: tissue in acrylic resin embedment
+def: "tissue in acrylic resin embedment used by histology group." []
+intersection_of: FBbi:00000017
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005148
+name: tissue in epoxy resin embedment
+def: "tissue in epoxy resin embedment used by histology group." []
+intersection_of: FBbi:00000018
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005149
+name: tissue in paraffin embedment
+def: "tissue in paraffin embedment used by histology group." []
+intersection_of: FBbi:00000020
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005150
+name: tissue in plastic embedment
+def: "tissue in plastic embedment used by histology group." []
+intersection_of: FBbi:00000016
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005151
+name: Toluidine Blue Staining Method
+def: "Toluidine Blue Staining Method used by histology group." []
+intersection_of: NCIT:C92302
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005152
+name: toluidine blue
+def: "toluidine blue used by histology group." []
+intersection_of: FBbi:00000049
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005153
+name: vibratome-sectioned tissue
+def: "vibratome-sectioned tissue used by histology group." []
+intersection_of: FBbi:00000030
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005154
+name: DAPI
+def: "DAPI used by histology group." []
+intersection_of: CHEBI:51231
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005155
+name: ToTo-3
+def: "ToTo-3 used by histology group." []
+intersection_of: CHEBI:52299
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005156
+name: beta-galactosidase
+def: "beta-galactosidase used by histology group." []
+intersection_of: FBbi:00000077
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005157
+name: whole mounted organism
+def: "whole mounted organism used by histology group." []
+intersection_of: SIMRO:0002069 ! whole mounted organism
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005158
+name: freeze_fracture/freeze_etch
+def: "freeze_fracture/freeze_etch used by histology group." []
+intersection_of: FBbi:00000419
+intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
+
+[Term]
+id: SIMRO:0005159
+name: Escherichia coli
+def: "Escherichia coli used by proteomic group." []
+intersection_of: NCBITaxon:562
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005160
+name: HEK293-T-REx cell
+def: "HEK293-T-REx cell used by proteomic group." []
+intersection_of: CLO:0037238
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005161
+name: KH2 cell
+def: "KH2 cell used by proteomic group." []
+intersection_of: SIMRO:0002079 ! KH2 cell
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005162
+name: MEF cell
+def: "MEF cell used by proteomic group." []
+intersection_of: SIMRO:0002080 ! MEF cell
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005163
+name: RNA interference
+def: "RNA interference used by proteomic group." []
+intersection_of: GO:0016246
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005164
+name: Saccharomyces cerevisiae W303
+def: "Saccharomyces cerevisiae W303 used by proteomic group." []
+intersection_of: NCBITaxon:580240
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005165
+name: Schizosaccharomyces pombe 972h-
+def: "Schizosaccharomyces pombe 972h- used by proteomic group." []
+intersection_of: NCBITaxon:284812
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005166
+name: 293T
+def: "293T used by proteomic group." []
+intersection_of: SIMRO:0002082 ! HEK-293T cell
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005167
+name: Saccharomyces cerevisiae BY4741
+def: "Saccharomyces cerevisiae BY4741 used by proteomic group." []
+intersection_of: NCBITaxon:1247190
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005168
+name: HCT 116 cellHCT 116 细胞
+def: "HCT 116 cellHCT 116 细胞 used by proteomic group." []
+intersection_of: CLO:0003665
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005169
+name: HEK293
+def: "HEK293 used by proteomic group." []
+intersection_of: CLO:0001230
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005170
+name: HeLa cellHeLa 细胞
+def: "HeLa cellHeLa 细胞 used by proteomic group." []
+intersection_of: CLO:0003684
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005171
+name: HELA-S3 cell
+def: "HELA-S3 cell used by proteomic group." []
+intersection_of: CLO:0003699
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005172
+name: K562
+def: "K562 used by proteomic group." []
+intersection_of: SIMRO:0002081 ! K562 cell
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005173
+name: S2 cellS2 细胞
+def: "S2 cellS2 细胞 used by proteomic group." []
+intersection_of: CLO:0008922
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005174
+name: T98G cell
+def: "T98G cell used by proteomic group." []
+intersection_of: CLO:0009258
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005175
+name: CRISPR-cas system
+def: "CRISPR-cas system used by proteomic group." []
+intersection_of: GO:0099048
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005176
+name: DAPI
+def: "DAPI used by cytometry group." []
+intersection_of: CHEBI:51231
+intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
+
+[Term]
+id: SIMRO:0005177
+name: Pomacea canaliculata
+def: "Pomacea canaliculata used by proteomic group." []
+intersection_of: NCBITaxon:400727
+intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
+
+[Term]
+id: SIMRO:0005178
+name: Chamaeleo calyptratus
+def: "Chamaeleo calyptratus used by research group." []
+intersection_of: NCBITaxon:179908
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005179
+name: 小家鼠Mus musculus
+def: "小家鼠Mus musculus used by research group." []
+intersection_of: NCBITaxon:10090
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005180
+name: Rattus norvegicus
+def: "Rattus norvegicus used by research group." []
+intersection_of: NCBITaxon:10116
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005181
+name: Nothobranchius furzeri
+def: "Nothobranchius furzeri used by research group." []
+intersection_of: NCBITaxon:105023
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005182
+name: Drosophila biarmipes
+def: "Drosophila biarmipes used by research group." []
+intersection_of: NCBITaxon:125945
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005183
+name: Rhynchomesostoma
+def: "Rhynchomesostoma used by research group." []
+intersection_of: NCBITaxon:1311949
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005184
+name: Phagocata gracilis
+def: "Phagocata gracilis used by research group." []
+intersection_of: NCBITaxon:1354672
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005185
+name: Girardia dorotocephala
+def: "Girardia dorotocephala used by research group." []
+intersection_of: NCBITaxon:135777
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005186
+name: Borreliella burgdorferi
+def: "Borreliella burgdorferi used by research group." []
+intersection_of: NCBITaxon:139
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005187
+name: Aspidoscelis burti
+def: "Aspidoscelis burti used by research group." []
+intersection_of: NCBITaxon:171129
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005188
+name: Phagocata morgani
+def: "Phagocata morgani used by research group." []
+intersection_of: NCBITaxon:1820202
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005189
+name: Aspidoscelis tesselatus
+def: "Aspidoscelis tesselatus used by research group." []
+intersection_of: NCBITaxon:1842987
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005190
+name: Polycelis coronata
+def: "Polycelis coronata used by research group." []
+intersection_of: NCBITaxon:1930915
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005191
+name: Phagocata velata
+def: "Phagocata velata used by research group." []
+intersection_of: NCBITaxon:1969971
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005192
+name: Bacteria细菌
+def: "Bacteria细菌 used by research group." []
+intersection_of: NCBITaxon:2
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005193
+name: Schizosaccharomyces kambucha
+def: "Schizosaccharomyces kambucha used by research group." []
+intersection_of: NCBITaxon:204045
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005194
+name: Borreliella burgdorferi B31
+def: "Borreliella burgdorferi B31 used by research group." []
+intersection_of: NCBITaxon:224326
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005195
+name: Saccharomyces uvarum
+def: "Saccharomyces uvarum used by research group." []
+intersection_of: NCBITaxon:230603
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005196
+name: Procotyla fluviatilis
+def: "Procotyla fluviatilis used by research group." []
+intersection_of: NCBITaxon:231627
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005197
+name: Thermus thermophilus
+def: "Thermus thermophilus used by research group." []
+intersection_of: NCBITaxon:274
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005198
+name: Drosophila eugracilis
+def: "Drosophila eugracilis used by research group." []
+intersection_of: NCBITaxon:29029
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005199
+name: Drosophila kikkawai
+def: "Drosophila kikkawai used by research group." []
+intersection_of: NCBITaxon:30033
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005200
+name: Thermococcus kodakarensis
+def: "Thermococcus kodakarensis used by research group." []
+intersection_of: NCBITaxon:311400
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005201
+name: Aspidoscelis uniparens
+def: "Aspidoscelis uniparens used by research group." []
+intersection_of: NCBITaxon:37197
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005202
+name: Pomacea canaliculata
+def: "Pomacea canaliculata used by research group." []
+intersection_of: NCBITaxon:400727
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005203
+name: Drosophila bipectinata
+def: "Drosophila bipectinata used by research group." []
+intersection_of: NCBITaxon:42026
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005204
+name: Maritigrella
+def: "Maritigrella used by research group." []
+intersection_of: NCBITaxon:439306
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005205
+name: Nematostella vectensis
+def: "Nematostella vectensis used by research group." []
+intersection_of: NCBITaxon:45351
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005206
+name: Bdelloura candida
+def: "Bdelloura candida used by research group." []
+intersection_of: NCBITaxon:46766
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005207
+name: Schizosaccharomyces pombe
+def: "Schizosaccharomyces pombe used by research group." []
+intersection_of: NCBITaxon:4896
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005208
+name: Schizosaccharomyces octosporus
+def: "Schizosaccharomyces octosporus used by research group." []
+intersection_of: NCBITaxon:4899
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005209
+name: Saccharomyces cerevisiae
+def: "Saccharomyces cerevisiae used by research group." []
+intersection_of: NCBITaxon:4932
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005210
+name: Schmidtea polychroa
+def: "Schmidtea polychroa used by research group." []
+intersection_of: NCBITaxon:50054
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005211
+name: Aspidoscelis tigris
+def: "Aspidoscelis tigris used by research group." []
+intersection_of: NCBITaxon:52180
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005212
+name: Candida albicans
+def: "Candida albicans used by research group." []
+intersection_of: NCBITaxon:5476
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005213
+name: Toxoplasma gondii
+def: "Toxoplasma gondii used by research group." []
+intersection_of: NCBITaxon:5811
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005214
+name: Plasmodium falciparum
+def: "Plasmodium falciparum used by research group." []
+intersection_of: NCBITaxon:5833
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005215
+name: Dugesia japonica
+def: "Dugesia japonica used by research group." []
+intersection_of: NCBITaxon:6161
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005216
+name: Girardia tigrina
+def: "Girardia tigrina used by research group." []
+intersection_of: NCBITaxon:6162
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005217
+name: Caenorhabditis elegans
+def: "Caenorhabditis elegans used by research group." []
+intersection_of: NCBITaxon:6239
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005218
+name: Ptychodera flava
+def: "Ptychodera flava used by research group." []
+intersection_of: NCBITaxon:63121
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005219
+name: Crassostrea virginica
+def: "Crassostrea virginica used by research group." []
+intersection_of: NCBITaxon:6565
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005220
+name: Aspidoscelis gularis
+def: "Aspidoscelis gularis used by research group." []
+intersection_of: NCBITaxon:68351
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005221
+name: Aspidoscelis inornatus
+def: "Aspidoscelis inornatus used by research group." []
+intersection_of: NCBITaxon:68352
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005222
+name: Spodoptera frugiperda
+def: "Spodoptera frugiperda used by research group." []
+intersection_of: NCBITaxon:7108
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005223
+name: Drosophila <fruit fly, genus>果蝇 <果蝇，属>
+def: "Drosophila <fruit fly, genus>果蝇 <果蝇，属> used by research group." []
+intersection_of: NCBITaxon:7215
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005224
+name: Drosophila ananassae
+def: "Drosophila ananassae used by research group." []
+intersection_of: NCBITaxon:7217
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005225
+name: Drosophila erecta
+def: "Drosophila erecta used by research group." []
+intersection_of: NCBITaxon:7220
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005226
+name: Drosophila mauritiana
+def: "Drosophila mauritiana used by research group." []
+intersection_of: NCBITaxon:7226
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005227
+name: 黑腹果蝇Drosophila melanogaster
+def: "黑腹果蝇Drosophila melanogaster used by research group." []
+intersection_of: NCBITaxon:7227
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005228
+name: Drosophila miranda
+def: "Drosophila miranda used by research group." []
+intersection_of: NCBITaxon:7229
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005229
+name: Drosophila mojavensis
+def: "Drosophila mojavensis used by research group." []
+intersection_of: NCBITaxon:7230
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005230
+name: Drosophila persimilis
+def: "Drosophila persimilis used by research group." []
+intersection_of: NCBITaxon:7234
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005231
+name: Drosophila pseudoobscura
+def: "Drosophila pseudoobscura used by research group." []
+intersection_of: NCBITaxon:7237
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005232
+name: Drosophila sechellia
+def: "Drosophila sechellia used by research group." []
+intersection_of: NCBITaxon:7238
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005233
+name: Drosophila simulans
+def: "Drosophila simulans used by research group." []
+intersection_of: NCBITaxon:7240
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005234
+name: Drosophila virilis
+def: "Drosophila virilis used by research group." []
+intersection_of: NCBITaxon:7244
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005235
+name: Drosophila yakuba
+def: "Drosophila yakuba used by research group." []
+intersection_of: NCBITaxon:7245
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005236
+name: Drosophila mercatorum
+def: "Drosophila mercatorum used by research group." []
+intersection_of: NCBITaxon:7253
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005237
+name: Drosophila willistoni
+def: "Drosophila willistoni used by research group." []
+intersection_of: NCBITaxon:7260
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005238
+name: Petromyzon marinus
+def: "Petromyzon marinus used by research group." []
+intersection_of: NCBITaxon:7757
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005239
+name: Polyodon spathula
+def: "Polyodon spathula used by research group." []
+intersection_of: NCBITaxon:7913
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005240
+name: Schmidtea mediterranea
+def: "Schmidtea mediterranea used by research group." []
+intersection_of: NCBITaxon:79327
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005241
+name: Danio rerio
+def: "Danio rerio used by research group." []
+intersection_of: NCBITaxon:7955
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005242
+name: Astyanax mexicanus
+def: "Astyanax mexicanus used by research group." []
+intersection_of: NCBITaxon:7994
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005243
+name: Xenopus tropicalis
+def: "Xenopus tropicalis used by research group." []
+intersection_of: NCBITaxon:8364
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005244
+name: Gallus gallus
+def: "Gallus gallus used by research group." []
+intersection_of: NCBITaxon:9031
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005245
+name: Homo sapiens人类
+def: "Homo sapiens人类 used by research group." []
+intersection_of: NCBITaxon:9606
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005246
+name: Bos taurus
+def: "Bos taurus used by research group." []
+intersection_of: NCBITaxon:9913
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005247
+name: Mesostoma
+def: "Mesostoma used by research group." []
+intersection_of: NCBITaxon:99404
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005248
+name: HaloTag control vector
+def: "HaloTag control vector used by research group." []
+intersection_of: NCBITaxon:886328
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005249
+name: Escherichia coli
+def: "Escherichia coli used by research group." []
+intersection_of: NCBITaxon:562
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005250
+name: Saccharomyces cerevisiae W303
+def: "Saccharomyces cerevisiae W303 used by research group." []
+intersection_of: NCBITaxon:580240
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005251
+name: Schizosaccharomyces pombe 972h-
+def: "Schizosaccharomyces pombe 972h- used by research group." []
+intersection_of: NCBITaxon:284812
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005252
+name: Saccharomyces cerevisiae BY4741
+def: "Saccharomyces cerevisiae BY4741 used by research group." []
+intersection_of: NCBITaxon:1247190
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005253
+name: Ptychodera flava
+def: "Ptychodera flava used by research group." []
+intersection_of: NCBITaxon:63121
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+

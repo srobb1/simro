@@ -1,0 +1,255 @@
+defined_class	defined_class_label	entity	entity_label	group	group_label	usedByMethod	usedByMethod_label	usedToLabel	usedToLabel_label	usedBy	usedBy_label	usedToGenerate	usedToGenerate_label	menu	menu_label	more_info	syns
+SIMRO:0005000	X-Rhodamine	FBbi:00000584	X-Rhodamine	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005001	x-gal staining fixation solution	SIMRO:0002000	x-gal staining fixation solution	SIMRO:0001004	histology group	SIMRO:0002010	beta-galactosidase staining fixation										
+SIMRO:0005002	x-gal staining fixation solution	SIMRO:0002000	x-gal staining fixation solution	SIMRO:0001004	histology group	FBbi:00000011	glutaraldehyde fixed tissue										
+SIMRO:0005003	Tartrate Resistant Acid Phosphatase Staining Method	NCIT:C118401	Tartrate Resistant Acid Phosphatase Staining Method	SIMRO:0001004	histology group	SIMRO:0002010	slide staining										
+SIMRO:0005004	Alexa Fluor 488	FBbi:00000440	Alexa Fluor 488	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005005	feulegen staining	SIMRO:0002001	feulegen staining	SIMRO:0001004	histology group	EFO:0003813	nucleic acid labeling protocol										
+SIMRO:0005006	feulegen staining	SIMRO:0002001	feulegen staining	SIMRO:0001004	histology group	EFO:0000562	labelling										
+SIMRO:0005007	10% neutral buffered formalin	SIMRO:0002002	10% neutral buffered formalin	SIMRO:0001004	histology group	FBbi:00000010	formaldehyde fixed tissue										
+SIMRO:0005008	von Kossa staining Method	SIMRO:0002003	von Kossa staining Method	SIMRO:0001004	histology group	SIMRO:0002010	slide staining	CHEBI:22984	calcium								
+SIMRO:0005009	living tissue	FBbi:00000025	living tissue	SIMRO:0001004	histology group										sample submission		fresh tissue
+SIMRO:0005010	ATTO 532	SIMRO:0002005	ATTO 532	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005011	ATTO 550	SIMRO:0002006	ATTO 550	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005012	warm/hot temperature regimen	EO:0007173	warm/hot temperature regimen	SIMRO:0001007	proteomic group	EFO:0003969	treatment protocol										
+SIMRO:0005013	Masson Trichrome Staining Method	NCIT:C120047	Masson Trichrome Staining Method	SIMRO:0001004	histology group	SIMRO:0002010	slide staining	UBERON:0002384	connective tissue								
+SIMRO:0005014	PD173074	CHEBI:63448	PD173074	SIMRO:0001008	research group					NCBITaxon:7955	Danio rerio						
+SIMRO:0005015	phosphate buffered saline solution	OBI:0100046	phosphate buffered saline solution	SIMRO:0001004	histology group										sample submission		
+SIMRO:0005016	zinc formalin fixative	SIMRO:0002007	zinc formalin fixative	SIMRO:0001004	histology group	FBbi:00000010	formaldehyde fixed tissue										
+SIMRO:0005017	R110Direct HaloTag Ligand	SIMRO:0002011	R110Direct HaloTag Ligand	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005018	Cy7 dye	CHEBI:52718	Cy7 dye	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005019	ATTO 488	SIMRO:0002012	ATTO 488	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005020	UV light regimen	EO:0007222	UV light regimen	SIMRO:0001007	proteomic group	EFO:0003969	treatment protocol										
+SIMRO:0005021	SNAP-Cell Oregon Green	SIMRO:0002013	SNAP-Cell Oregon Green	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005022	Alexa Fluor 555	FBbi:00000443	Alexa Fluor 555	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005023	FITC	CHEBI:37926	FITC	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005024	Alcian Blue Staining Method	NCIT:C92299	Alcian Blue Staining Method	SIMRO:0001004	histology group	SIMRO:0002010	slide staining	UBERON:0002418 | NCIT:C16883	cartilage tissue | Mucin								
+SIMRO:0005025	mouse embryonic stem cell line cell	CLO:0037317	mouse embryonic stem cell	SIMRO:0001007	proteomic group	NCIT:C23010	Staining Method										
+SIMRO:0005026	LY-411575	CHEBI:87359	LY-411575	SIMRO:0001008	research group					NCBITaxon:7955	Danio rerio						
+SIMRO:0005027	protein staining	MI:0094	protein staining	SIMRO:0001007	proteomic group	EFO:0000562	labelling										
+SIMRO:0005028	hematoxylin	FBbi:00000041	hematoxylin	SIMRO:0001004	histology group	SIMRO:0002010	slide staining	UBERON:0005769	basement membrane of epithelium								
+SIMRO:0005029	CF405M	SIMRO:0002014	CF405M	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005030	Hematoxylin and Eosin Staining Method	NCIT:C23011	Hematoxylin and Eosin Staining Method	SIMRO:0001004	histology group	NCIT:C23010	Staining Method	UBERON:0002384 | CHEBI:3815 | GO:0000785 connective tissue | Collagen | chromatin									
+SIMRO:0005031	Zinc	CHEBI:27363	Zinc	SIMRO:0001004	histology group	FBbi:00001012	fixation method										
+SIMRO:0005032	neomycin	CHEBI:7507	neomycin	SIMRO:0001008	research group					NCBITaxon:7955	Danio rerio						
+SIMRO:0005033	SU5402	CHEBI:63449	SU5402	SIMRO:0001008	research group					NCBITaxon:7955	Danio rerio						
+SIMRO:0005034	skeletal staining method	SIMRO:0002015	skeletal staining method	SIMRO:0001004	histology group	NCIT:C23010	Staining Method	UBERON:0002418 | UBERON:0001434 | UBERON:0004288	cartilage tissue | skeletal system | skeleton								
+SIMRO:0005035	ATTO 647N	SIMRO:0002016	ATTO 647N	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005036	fluorescein	CHEBI:31624	fluorescein	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005037	tyrphostin AG 1478	CHEBI:75404	tyrphostin AG 1478	SIMRO:0001008	research group					NCBITaxon:7955	Danio rerio						
+SIMRO:0005038	TMRDirect HaloTag Ligand	SIMRO:0002017	TMRDirect HaloTag Ligand	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005039	ATTO 594	SIMRO:0002018	ATTO 594	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005040	oregon green 488	CHEBI:4477	oregon green 488	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005041	eosin	FBbi:00000037	eosin	SIMRO:0001004	histology group	NCIT:C23010	Staining Method										
+SIMRO:0005042	TexasRed	FBbi:00000453	TexasRed	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005043	ATTO 633	SIMRO:0002019	ATTO 633	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005044	alizarin red S	CHEBI:87358	alizarin red S	SIMRO:0001004	histology group	NCIT:C23010	Staining Method	CHEBI:22984 | UBERON:0001434 | UBERON:0004288	calcium | skeletal system | skeleton								
+SIMRO:0005045	alizarin red S	CHEBI:87358	alizarin red S	SIMRO:0001004	histology group	SIMRO:0002010	slide staining	CHEBI:22984 | UBERON:0001434 | UBERON:0004288	calcium | skeletal system | skeleton								
+SIMRO:0005046	ATTO 647	SIMRO:0002020	ATTO 647	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005047	Bouin solution	SIMRO:0002021	Bouin solution	SIMRO:0001004	histology group	FBbi:00000010	formaldehyde fixed tissue										
+SIMRO:0005048	GFP 1-10 fragment	SIMRO:0002022	GFP 1-10 fragment	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005049	SNAP-Cell TMR-Star	SIMRO:0002023	SNAP-Cell TMR-Star	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005050	GFP 11 fragment	SIMRO:0002024	GFP 11 fragment	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005051	HaloTag	SIMRO:0002025	HaloTag	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005052	SNAP-tag	SIMRO:0002026	SNAP-tag	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005053	mCardinalFP	SIMRO:0002028	mCardinalFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005054	Axiovert 206 MOT (WID)	SIMRO:0002030	widefields	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method									http://smc/Microscopy/status.php?content=equip&id=32	
+SIMRO:0005055	Axiovert 206 Std (WID)	SIMRO:0002030	widefields	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method									http://smc/Microscopy/status.php?content=equip&id=134	
+SIMRO:0005056	Axiovert MOT BW (WID)	SIMRO:0002030	widefields	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method									http://smc/Microscopy/status.php?content=equip&id=30	
+SIMRO:0005057	Nikon TE2000 (NIW)	SIMRO:0002030	widefields	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method									http://smc/Microscopy/status.php?content=equip&id=348	
+SIMRO:0005058	Olympus Slide Scanner (OSS)	SIMRO:0002030	widefields	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method								http://smc/Microscopy/status.php?content=equip&id=137		
+SIMRO:0005059	Widefield sCMOS (WID)	SIMRO:0002030	widefields	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method									http://smc/Microscopy/status.php?content=equip&id=137	
+SIMRO:0005060	Deltavision OMX (OMX)	ERO:0001946	super-resolution microscope	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005061	LSM-780 DS (780)	ERO:0001946	super-resolution microscope	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005062	SP8 STED (SP8)	ERO:0001946	super-resolution microscope	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005063	Zeiss Microbeam (LCM)	SIMRO:0002041	Zeiss Microbeam (LCM)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005064	Zeiss Microbeam (LCM)	SIMRO:0002042	Zeiss Microbeam (LCM)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005065	AiryScan	SIMRO:0002043	AiryScan	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005066	Deltavision OMX (OMX)	SIMRO:0002044	Deltavision OMX (OMX)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005067	LSM-700 Falcon (FAL)	SIMRO:0002045	LSM-700 Falcon (FAL)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005068	LSM-700 Upright (UPR)	SIMRO:0002046	LSM-700 Upright (UPR)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005069	LSM-710 (710)	SIMRO:0002047	LSM-710 (710)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005070	LSM-780 DS (780)	SIMRO:0002048	LSM-780 DS (780)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method								http://smc/Microscopy/status.php?content=equip&id=181		
+SIMRO:0005071	SP8 STED (SP8)	SIMRO:0002049	SP8 STED (SP8)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005072	Nikon 3PO (3PO)	SIMRO:0002050	Nikon 3PO (3PO)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005073	PE Ultraview (ULT)	SIMRO:0002051	PE Ultraview (ULT)	SIMRO:0001005	light microscopy group	FBbi:00000031	visualization method										
+SIMRO:0005074	SPIM microscope	SIMRO:0002053	SPIM microscope	SIMRO:0001005	light microscopy group	FBbi:00000369	single plane illumination microscopy										
+SIMRO:0005075	Bimolecular Fluorescence Complementation	MI:0229	Bimolecular Fluorescence Complementation	SIMRO:0001005	light microscopy group	MI:0416	fluorescence microscopy										
+SIMRO:0005076	webcam (WEB)	SIMRO:0002057	webcam (WEB)	SIMRO:0001005	light microscopy group	SIMRO:0002055	microscopy image capture										
+SIMRO:0005077	Hoechst 33342	CHEBI:51232	Hoechst 33342	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005078	ATTO 565	SIMRO:0002070	ATTO 565	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005079	Alexa Fluor 532	CHEBI:51756	Alexa Fluor 532	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005080	Alexa Fluor 546	CHEBI:51760	Alexa Fluor 546	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005081	Alexa Fluor 568	CHEBI:51766	Alexa Fluor 568	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005082	Alexa Fluor 594	FBbi:00000444	Alexa Fluor 594	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005083	Alexa Fluor 610	FBbi:00000445	Alexa Fluor 610	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005084	Alexa Fluor 633	CHEBI:137393	Alexa Fluor 633	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005085	Alexa Fluor 647	CHEBI:137394	Alexa Fluor 647	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005086	BODIPY FL	CHEBI:51886	BODIPY FL	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005087	Cy3 dye	CHEBI:37987	Cy3 dye	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005088	Cy5 dye	CHEBI:37989	Cy5 dye	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005089	Cy5.5 dye	CHEBI:52003	Cy5.5 dye	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005090	FM 4-64 dye	CHEBI:52078	FM 4-64 dye	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005091	lucifer yellow dye	CHEBI:52104	lucifer yellow dye	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005092	mitoTracker Red	CHEBI:52156	mitoTracker Red	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005093	rhodamine 110	CHEBI:52315	rhodamine 110	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005094	CitrineFP	FBbi:00000474	CitrineFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005095	DAPI	CHEBI:51231	DAPI	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005096	Dendra2FP	FBbi:00000549	Dendra2FP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005097	DiI	FBbi:00000115	DiI	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005098	DiO	FBbi:00000116	DiO	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005099	DsRed	FBbi:00000085	DsRed	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005100	ECFP	FBbi:00000081	ECFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005101	EGFP	FBbi:00000082	EGFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005102	EYFP	FBbi:00000084	EYFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005103	FITC	CHEBI:37926	fluorescein isothiocyanate	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005104	Fluo-4	CHEBI:51103	Fluo-4	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005105	PA-CFP	FBbi:00000545	PA-CFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005106	PA-GFP	FBbi:00000544	PA-GFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005107	SuperfolderFP	FBbi:00000472	SuperfolderFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005108	T-SapphireFP	FBbi:00000473	T-SapphireFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005109	TRITC	CHEBI:52336	tetramethylrhodamine thiocyanate	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005110	TagRFP-T	FBbi:00000517	TagRFP-T	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005111	VenusFP	FBbi:00000477	VenusFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005112	fluorescein	CHEBI:31624	fluorescein	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005113	mAppleFP	FBbi:00000524	mAppleFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005114	mCherryFP	FBbi:00000525	mCherryFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005115	mEOS2FP	FBbi:00000552	mEOS2FP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling									https://www.fpbase.org/protein/meos2/	
+SIMRO:0005116	mEOS3.1FP	SIMRO:0002029	mEOS3.1FP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005117	mKate2FP	FBbi:00000495	mKate2FP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005118	mKateFP	FBbi:00000494	mKateFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005119	mKikGR	FBbi:00000553	mKikGR	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005120	mOrangeFP	FBbi:00000514	mOrangeFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005121	mStrawberryFP	FBbi:00000529	mStrawberryFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005122	mTagBFP	FBbi:00000486	mTagBFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005123	mTurquoise2	SIMRO:0002058	mTurquoise2	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005124	tdTomatoFP	FBbi:00000518	tdTomatoFP	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005125	wtKIikGR	FBbi:00000555	wtKIikGR	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005126	x-rhodamine	FBbi:00000584	x-rhodamine	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005127	yPet	FBbi:00000478	yPet	SIMRO:0001005	light microscopy group	EFO:0000562	labelling										
+SIMRO:0005128	100% ethanol	SIMRO:0002059	100% ethanol	SIMRO:0001004	histology group	FBbi:00000006	ethanol fixed tissue										
+SIMRO:0005129	15% sucrose in PBS	SIMRO:0002060	15% sucrose in PBS	SIMRO:0001004	histology group												
+SIMRO:0005130	30% ethanol	SIMRO:0002061	30% ethanol	SIMRO:0001004	histology group	FBbi:00000006	ethanol fixed tissue										
+SIMRO:0005131	30% sucrose in PBS	SIMRO:0002062	30% sucrose in PBS	SIMRO:0001004	histology group												
+SIMRO:0005132	4% paraformaldehyde solution	SIMRO:0002063	4% paraformaldehyde solution	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005133	70% ethanol	SIMRO:0002064	70% ethanol	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method					FBbi:00000010	formaldehyde fixed tissue				
+SIMRO:0005134	acid phosphatase	FBbi:00000158	acid phosphatase	SIMRO:0001004	histology group	SIMRO:0002010	slide staining					FBbi:00000006	ethanol fixed tissue				
+SIMRO:0005135	critical_point dried specimen	FBbi:00000581	critical_point dried specimen	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005136	cryofixed tissue	FBbi:00000013	cryofixed tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005137	ethanol fixed tissue	FBbi:00000006	ethanol fixed tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005138	fixed frozen tissue	SIMRO:0002066	fixed frozen tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005139	formaldehyde fixed tissue	FBbi:00000010	formaldehyde fixed tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005140	freeze-substituted tissue	FBbi:00000621	freeze-substituted tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method						sample submission		differentite between tissue being submitted and the fixation methon		
+SIMRO:0005141	glutaraldehyde fixed tissue	FBbi:00000011	glutaraldehyde fixed tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005142	lyophilized specimen	FBbi:00000583	yophilized specimen	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005143	methanol fixed tissue	FBbi:00000007	methanol fixed tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005144	methyl green	FBbi:00000042	methyl green	SIMRO:0001004	histology group	NCIT:C23010	Staining Method										
+SIMRO:0005145	nuclear fast red	FBbi:00000045	nuclear fast red	SIMRO:0001004	histology group	NCIT:C23010	Staining Method										
+SIMRO:0005146	slide mounted tissue	SIMRO:0002067	slide mounted tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005147	tissue in acrylic resin embedment	FBbi:00000017	tissue in acrylic resin embedment	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005148	tissue in epoxy resin embedment	FBbi:00000018	tissue in epoxy resin embedment	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005149	tissue in paraffin embedment	FBbi:00000020	tissue in paraffin embedment	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005150	tissue in plastic embedment	FBbi:00000016	tissue in plastic embedment	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005151	Toluidine Blue Staining Method	NCIT:C92302	Toluidine Blue Staining Method	SIMRO:0001004	histology group	NCIT:C23010	Staining Method										
+SIMRO:0005152	toluidine blue	FBbi:00000049	toluidine blue	SIMRO:0001004	histology group	NCIT:C92302	Toluidine Blue Staining Method										
+SIMRO:0005153	vibratome-sectioned tissue	FBbi:00000030	vibratome-sectioned tissue	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005154	DAPI	CHEBI:51231	DAPI	SIMRO:0001004	histology group	EFO:0003813	nucleic acid labeling protocol										
+SIMRO:0005155	ToTo-3	CHEBI:52299	ToTo-3	SIMRO:0001004	histology group	EFO:0003813	nucleic acid labeling protocol										
+SIMRO:0005156	beta-galactosidase	FBbi:00000077	beta-galactosidase	SIMRO:0001004	histology group	SIMRO:0002010	slide staining										
+SIMRO:0005157	whole mounted organism	SIMRO:0002069	whole mounted organism	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005158	freeze_fracture/freeze_etch	FBbi:00000419	freeze_fracture/freeze_etch	SIMRO:0001004	histology group	FBbi:00000001	sample preparation method										
+SIMRO:0005159	Escherichia coli	NCBITaxon:562	Escherichia coli	SIMRO:0001007	proteomic group												
+SIMRO:0005160	HEK293-T-REx cell	CLO:0037238	HEK293-T-REx cell	SIMRO:0001007	proteomic group												
+SIMRO:0005161	KH2 cell	SIMRO:0002079	KH2 cell	SIMRO:0001007	proteomic group												
+SIMRO:0005162	MEF cell line	SIMRO:0002080	MEF cell	SIMRO:0001007	proteomic group												
+SIMRO:0005163	RNA interference	GO:0016246	RNA interference	SIMRO:0001007	proteomic group	EFO:0003969	treatment protocol										
+SIMRO:0005164	Saccharomyces cerevisiae W303	NCBITaxon:580240	Saccharomyces cerevisiae W303	SIMRO:0001007	proteomic group												
+SIMRO:0005165	Schizosaccharomyces pombe 972h-	NCBITaxon:284812	Schizosaccharomyces pombe 972h-	SIMRO:0001007	proteomic group												
+SIMRO:0005166	293T	SIMRO:0002082	293T	SIMRO:0001007	proteomic group												
+SIMRO:0005167	Saccharomyces cerevisiae BY4741	NCBITaxon:1247190	Saccharomyces cerevisiae BY4741	SIMRO:0001007	proteomic group												
+SIMRO:0005168	HCT116	CLO:0003665	HCT 116 cell	SIMRO:0001007	proteomic group												
+SIMRO:0005169	HEK293	CLO:0001230	HEK293	SIMRO:0001007	proteomic group												
+SIMRO:0005170	HeLa	CLO:0003684	HeLa cell	SIMRO:0001007	proteomic group												
+SIMRO:0005171	HeLa-S3	CLO:0003699	HeLa-S3 cell	SIMRO:0001007	proteomic group												
+SIMRO:0005172	K562	SIMRO:0002081	K562	SIMRO:0001007	proteomic group												
+SIMRO:0005173	S2	CLO:0008922	S2 cell	SIMRO:0001007	proteomic group												
+SIMRO:0005174	T98G	CLO:0009258	T98G cell	SIMRO:0001007	proteomic group												
+SIMRO:0005175	CRISPR/Cas9	GO:0099048	CRISPR-cas system	SIMRO:0001007	proteomic group	EFO:0003969	treatment protocol										
+SIMRO:0005176	DAPI	CHEBI:51231	DAPI	SIMRO:0001005	cytometry group	EFO:0000562	labelling										
+SIMRO:0005177	Pomacea canaliculata	NCBITaxon:400727	Pomacea canaliculata	SIMRO:0001007	proteomic group												(base) mp181vbhv2j:default smr$
+SIMRO:0005178	Veiled Chameleon	NCBITaxon:179908	Chamaeleo calyptratus	SIMRO:0001008	research group												
+SIMRO:0005179	Mus musculus	NCBITaxon:10090		SIMRO:0001008	research group												
+SIMRO:0005180	Rattus norvegicus	NCBITaxon:10116		SIMRO:0001008	research group												
+SIMRO:0005181	Nothobranchius furzeri 	NCBITaxon:105023		SIMRO:0001008	research group												
+SIMRO:0005182	Drosophila biarmipes	NCBITaxon:125945		SIMRO:0001008	research group												
+SIMRO:0005183	Rhynchomesostoma <genus>	NCBITaxon:1311949		SIMRO:0001008	research group												
+SIMRO:0005184	Phagocata gracilis 	NCBITaxon:1354672		SIMRO:0001008	research group												
+SIMRO:0005185	Girardia dorotocephala	NCBITaxon:135777		SIMRO:0001008	research group												
+SIMRO:0005186	Borreliella burgdorferi	NCBITaxon:139		SIMRO:0001008	research group												
+SIMRO:0005187	Aspidoscelis burti	NCBITaxon:171129		SIMRO:0001008	research group												
+SIMRO:0005188	Phagocata morgani	NCBITaxon:1820202		SIMRO:0001008	research group												
+SIMRO:0005189	Aspidoscelis tesselatus	NCBITaxon:1842987		SIMRO:0001008	research group												
+SIMRO:0005190	Polycelis coronata	NCBITaxon:1930915		SIMRO:0001008	research group												
+SIMRO:0005191	Phagocata velata	NCBITaxon:1969971		SIMRO:0001008	research group												
+SIMRO:0005192	Bacteria <superkingdom>	NCBITaxon:2		SIMRO:0001008	research group												
+SIMRO:0005193	Schizosaccharomyces kambucha	NCBITaxon:204045		SIMRO:0001008	research group												
+SIMRO:0005194	Borreliella burgdorferi B31	NCBITaxon:224326		SIMRO:0001008	research group												
+SIMRO:0005195	Saccharomyces uvarum	NCBITaxon:230603		SIMRO:0001008	research group												
+SIMRO:0005196	Procotyla fluviatilis	NCBITaxon:231627		SIMRO:0001008	research group												
+SIMRO:0005197	Thermus thermophilus	NCBITaxon:274		SIMRO:0001008	research group												
+SIMRO:0005198	Drosophila eugracilis	NCBITaxon:29029		SIMRO:0001008	research group												
+SIMRO:0005199	Drosophila kikkawai	NCBITaxon:30033		SIMRO:0001008	research group												
+SIMRO:0005200	Thermococcus kodakarensis	NCBITaxon:311400		SIMRO:0001008	research group												
+SIMRO:0005201	Aspidoscelis uniparens	NCBITaxon:37197		SIMRO:0001008	research group												
+SIMRO:0005202	Pomacea canaliculata	NCBITaxon:400727		SIMRO:0001008	research group												
+SIMRO:0005203	Drosophila bipectinata	NCBITaxon:42026		SIMRO:0001008	research group												
+SIMRO:0005204	Maritigrella <genus>	NCBITaxon:439306		SIMRO:0001008	research group												
+SIMRO:0005205	Nematostella vectensis	NCBITaxon:45351		SIMRO:0001008	research group												
+SIMRO:0005206	Bdelloura candida	NCBITaxon:46766		SIMRO:0001008	research group												
+SIMRO:0005207	Schizosaccharomyces pombe	NCBITaxon:4896		SIMRO:0001008	research group												
+SIMRO:0005208	Schizosaccharomyces octosporus	NCBITaxon:4899		SIMRO:0001008	research group												
+SIMRO:0005209	Saccharomyces cerevisiae	NCBITaxon:4932		SIMRO:0001008	research group												
+SIMRO:0005210	Schmidtea polychroa	NCBITaxon:50054		SIMRO:0001008	research group												
+SIMRO:0005211	Aspidoscelis tigris	NCBITaxon:52180		SIMRO:0001008	research group												
+SIMRO:0005212	Candida albicans	NCBITaxon:5476		SIMRO:0001008	research group												
+SIMRO:0005213	Toxoplasma gondii	NCBITaxon:5811		SIMRO:0001008	research group												
+SIMRO:0005214	Plasmodium falciparum	NCBITaxon:5833		SIMRO:0001008	research group												
+SIMRO:0005215	Dugesia japonica	NCBITaxon:6161		SIMRO:0001008	research group												
+SIMRO:0005216	Girardia tigrina	NCBITaxon:6162		SIMRO:0001008	research group												
+SIMRO:0005217	Caenorhabditis elegans	NCBITaxon:6239		SIMRO:0001008	research group												
+SIMRO:0005218	Ptychodera flava	NCBITaxon:63121		SIMRO:0001008	research group												
+SIMRO:0005219	Crassostrea virginica	NCBITaxon:6565		SIMRO:0001008	research group												
+SIMRO:0005220	Aspidoscelis gularis	NCBITaxon:68351		SIMRO:0001008	research group												
+SIMRO:0005221	Aspidoscelis inornatus	NCBITaxon:68352		SIMRO:0001008	research group												
+SIMRO:0005222	Spodoptera frugiperda	NCBITaxon:7108		SIMRO:0001008	research group												
+SIMRO:0005223	Drosophila <fruit fly, genus>	NCBITaxon:7215		SIMRO:0001008	research group												
+SIMRO:0005224	Drosophila ananassae	NCBITaxon:7217		SIMRO:0001008	research group												
+SIMRO:0005225	Drosophila erecta	NCBITaxon:7220		SIMRO:0001008	research group												
+SIMRO:0005226	Drosophila mauritiana	NCBITaxon:7226		SIMRO:0001008	research group												
+SIMRO:0005227	Drosophila melanogaster	NCBITaxon:7227		SIMRO:0001008	research group												
+SIMRO:0005228	Drosophila miranda	NCBITaxon:7229		SIMRO:0001008	research group												
+SIMRO:0005229	Drosophila mojavensis	NCBITaxon:7230		SIMRO:0001008	research group												
+SIMRO:0005230	Drosophila persimilis	NCBITaxon:7234		SIMRO:0001008	research group												
+SIMRO:0005231	Drosophila pseudoobscura	NCBITaxon:7237		SIMRO:0001008	research group												
+SIMRO:0005232	Drosophila sechellia	NCBITaxon:7238		SIMRO:0001008	research group												
+SIMRO:0005233	Drosophila simulans	NCBITaxon:7240		SIMRO:0001008	research group												
+SIMRO:0005234	Drosophila virilis	NCBITaxon:7244		SIMRO:0001008	research group												
+SIMRO:0005235	Drosophila yakuba	NCBITaxon:7245		SIMRO:0001008	research group												
+SIMRO:0005236	Drosophila mercatorum	NCBITaxon:7253		SIMRO:0001008	research group												
+SIMRO:0005237	Drosophila willistoni	NCBITaxon:7260		SIMRO:0001008	research group												
+SIMRO:0005238	Petromyzon marinus	NCBITaxon:7757		SIMRO:0001008	research group												
+SIMRO:0005239	Polyodon spathula	NCBITaxon:7913		SIMRO:0001008	research group												
+SIMRO:0005240	Schmidtea mediterranea	NCBITaxon:79327		SIMRO:0001008	research group												
+SIMRO:0005241	Danio rerio	NCBITaxon:7955		SIMRO:0001008	research group												
+SIMRO:0005242	Astyanax mexicanus	NCBITaxon:7994		SIMRO:0001008	research group												
+SIMRO:0005243	Xenopus tropicalis	NCBITaxon:8364		SIMRO:0001008	research group												
+SIMRO:0005244	Gallus gallus	NCBITaxon:9031		SIMRO:0001008	research group												
+SIMRO:0005245	Homo sapiens	NCBITaxon:9606		SIMRO:0001008	research group												
+SIMRO:0005246	Bos taurus	NCBITaxon:9913		SIMRO:0001008	research group												
+SIMRO:0005247	Mesostoma <genus>	NCBITaxon:99404		SIMRO:0001008	research group												
+SIMRO:0005248	HaloTag control vector	NCBITaxon:886328		SIMRO:0001008	research group												
+SIMRO:0005249	Escherichia coli	NCBITaxon:562		SIMRO:0001008	research group												
+SIMRO:0005250	Saccharomyces cerevisiae W303	NCBITaxon:580240		SIMRO:0001008	research group												
+SIMRO:0005251	Schizosaccharomyces pombe 972h-	NCBITaxon:284812		SIMRO:0001008	research group												
+SIMRO:0005252	Saccharomyces cerevisiae BY4741	NCBITaxon:1247190		SIMRO:0001008	research group												
+SIMRO:0005253	Ptychodera flava	NCBITaxon:63121		SIMRO:0001008	research group												

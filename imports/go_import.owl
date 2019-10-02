@@ -46,6 +46,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#goslim_agr -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_agr">
@@ -78,6 +86,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#goslim_generic -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_generic">
@@ -89,6 +105,14 @@
     <!-- http://purl.obolibrary.org/obo/go#goslim_metagenomics -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_metagenomics">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_mouse -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_mouse">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -359,6 +383,59 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0006950 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+        <obo:IAO_0000115>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>MIPS_funcat:32.01</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>response to abiotic stress</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>response to biotic stress</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0006950</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <rdfs:label>response to stress</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006950"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006950"/>
+        <obo:IAO_0000115>Reactions, triggered in response to the presence of a foreign body or the occurrence of an injury, which result in restriction of damage to the organism attacked or prevention/recovery from the infection caused by the attack.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0002217</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0042829</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>defence response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>physiological defense response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>antimicrobial peptide activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>defense/immunity protein activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0006952</oboInOwl:id>
+        <rdfs:label>defense response</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Reactions, triggered in response to the presence of a foreign body or the occurrence of an injury, which result in restriction of damage to the organism attacked or prevention/recovery from the infection caused by the attack.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
@@ -392,6 +469,772 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pdt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation.</obo:IAO_0000115>
+        <oboInOwl:created_by>janelomax</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-10-17T15:46:40Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0044236</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044710</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>MIPS_funcat:01</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Metabolism</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>metabolic process resulting in cell growth</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>metabolism resulting in cell growth</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>multicellular organism metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-organism metabolic process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0008152</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <rdfs:comment>Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.</rdfs:comment>
+        <rdfs:label>metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0198547684</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009892 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009892">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048519"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0044252</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>down regulation of metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of organismal metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of organismal metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>negative regulation of multicellular organismal metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0009892</oboInOwl:id>
+        <rdfs:label>negative regulation of metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009892"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009893 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009893">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0044253</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>positive regulation of metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>positive regulation of multicellular organismal metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>positive regulation of organismal metabolism</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>stimulation of metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>stimulation of organismal metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>up-regulation of organismal metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0009893</oboInOwl:id>
+        <rdfs:label>positive regulation of metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009893"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:created_by>janelomax</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-12-11T16:56:55Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0008151</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044763</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0050875</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>cell physiology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>cell growth and/or maintenance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-organism cellular process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0009987</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <rdfs:label>cellular process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:isa_complete</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010467 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010467">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+        <obo:IAO_0000115>The process in which a gene&apos;s sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Gene_expression</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0010467</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
+        <rdfs:label>gene expression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010467"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The process in which a gene&apos;s sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010468">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0010467"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060255"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0010467"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of gene expression. Gene expression is the process in which a gene&apos;s coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Regulation_of_gene_expression</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>regulation of protein expression</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>regulation of gene product expression</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0010468</oboInOwl:id>
+        <rdfs:comment>This class covers any process that regulates the rate of production of a mature gene product, and so includes processes that regulate that rate by regulating the level, stability or availability of intermediates in the process of gene expression.  For example, it covers any process that regulates the level, stability or availability of mRNA or circRNA for translation and thereby regulates the rate of production of the encoded protein via translation.</rdfs:comment>
+        <rdfs:label>regulation of gene expression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010468"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of gene expression. Gene expression is the process in which a gene&apos;s coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010468"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>regulation of protein expression</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010468"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>regulation of gene product expression</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010604">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009893"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060255"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that increases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0010604</oboInOwl:id>
+        <rdfs:label>positive regulation of macromolecule metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010604"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that increases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010605">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009892"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060255"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that decreases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0010605</oboInOwl:id>
+        <rdfs:label>negative regulation of macromolecule metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010605"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that decreases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010468"/>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of gene expression after the production of an RNA transcript.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0010608</oboInOwl:id>
+        <rdfs:label>posttranscriptional regulation of gene expression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010608"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of gene expression after the production of an RNA transcript.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010628">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0010467"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010468"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010604"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0010467"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that increases the frequency, rate or extent of gene expression. Gene expression is the process in which a gene&apos;s coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0010628</oboInOwl:id>
+        <rdfs:label>positive regulation of gene expression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010628"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that increases the frequency, rate or extent of gene expression. Gene expression is the process in which a gene&apos;s coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010629">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0010467"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010468"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010605"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0010467"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that decreases the frequency, rate or extent of gene expression. Gene expression is the process in which a gene&apos;s coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0010629</oboInOwl:id>
+        <rdfs:comment>This term covers any process that negatively regulates the rate of production of a mature gene product, and so includes processes that negatively regulate that rate by reducing the level, stability or availability of intermediates in the process of gene expression. For example, it covers any process that reduces the level, stability or availability of mRNA or circRNA for translation and thereby reduces the rate of production of the encoded protein via translation.</rdfs:comment>
+        <rdfs:label>negative regulation of gene expression</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010629"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that decreases the frequency, rate or extent of gene expression. Gene expression is the process in which a gene&apos;s coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016246 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016246">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0035194"/>
+        <obo:IAO_0000115>The process in which double-stranded RNAs silence cognate genes. Involves posttranscriptional gene inactivation (&apos;silencing&apos;) both of transgenes or dsRNA introduced into a germline, and of the host gene(s) homologous to the transgenes or dsRNA. This silencing is triggered by the introduction of transgenes or double-stranded RNA (dsRNA), and can occur through a specific decrease in the level of mRNA, or by negative regulation of translation, of both host genes and transgenes.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:RNA_interference</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0016246</oboInOwl:id>
+        <rdfs:comment>Note that this term refers specifically to posttranscriptional mechanisms by which small interfering RNAs down-regulate gene expression. Also consider annotating to other descendants of &apos;gene silencing by RNA ; GO:0031047&apos;.</rdfs:comment>
+        <rdfs:label>RNA interference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016246"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The process in which double-stranded RNAs silence cognate genes. Involves posttranscriptional gene inactivation (&apos;silencing&apos;) both of transgenes or dsRNA introduced into a germline, and of the host gene(s) homologous to the transgenes or dsRNA. This silencing is triggered by the introduction of transgenes or double-stranded RNA (dsRNA), and can occur through a specific decrease in the level of mRNA, or by negative regulation of translation, of both host genes and transgenes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:ems</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11201747</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11713190</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:18771919</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016246"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010608"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016458"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0040029"/>
+        <obo:IAO_0000115>The inactivation of gene expression by a posttranscriptional mechanism.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Post_transcriptional_gene_silencing</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>PTGS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>post-transcriptional gene silencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quelling</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>cosuppression</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0016441</oboInOwl:id>
+        <rdfs:label>posttranscriptional gene silencing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The inactivation of gene expression by a posttranscriptional mechanism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15020054</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>post-transcriptional gene silencing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010629"/>
+        <obo:IAO_0000115>Any process carried out at the cellular level that results in either long-term transcriptional repression via action on chromatin structure or RNA mediated, post-transcriptional repression of gene expression.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Gene_silencing</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>long-term maintenance of gene inactivation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0016458</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <rdfs:comment>This is a rather broad grouping term.  While it was originally defined for long-term, heritable, epigenetic effects, short term effects on expression mediated by RNA are also frequently referred to as gene silencing, and are grouped under this class.</rdfs:comment>
+        <rdfs:label>gene silencing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016458"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process carried out at the cellular level that results in either long-term transcriptional repression via action on chromatin structure or RNA mediated, post-transcriptional repression of gene expression.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dos</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019222">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0044246</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>regulation of metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>regulation of multicellular organismal metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>regulation of organismal metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0019222</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <rdfs:label>regulation of metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>regulation of organismal metabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0031047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0031047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016458"/>
+        <obo:IAO_0000115>Any process in which RNA molecules inactivate expression of target genes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>RNA-mediated gene silencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0031047</oboInOwl:id>
+        <rdfs:label>gene silencing by RNA</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0031047"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process in which RNA molecules inactivate expression of target genes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15020054</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0031047"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>RNA-mediated gene silencing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0031347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0031347">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0080134"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of a defense response.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0031347</oboInOwl:id>
+        <rdfs:label>regulation of defense response</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0031347"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of a defense response.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0031348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0031348">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031347"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048585"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of a defense response.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>down regulation of defense response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of defense response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of defense response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of defense response</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0031348</oboInOwl:id>
+        <rdfs:label>negative regulation of defense response</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0031348"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of a defense response.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0031349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0031349">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031347"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048584"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of a defense response.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>up regulation of defense response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of defense response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of defense response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of defense response</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>stimulation of defense response</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0031349</oboInOwl:id>
+        <rdfs:label>positive regulation of defense response</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0031349"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of a defense response.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0035194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031047"/>
+        <obo:IAO_0000115>Any process of posttranscriptional gene inactivation (silencing) mediated by small RNA molecules that may trigger RNA (often mRNA) degradation or negatively regulate mRNA translation.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>RNA-mediated posttranscriptional gene silencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>sense-PTGS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0035194</oboInOwl:id>
+        <rdfs:label>posttranscriptional gene silencing by RNA</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0035194"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process of posttranscriptional gene inactivation (silencing) mediated by small RNA molecules that may trigger RNA (often mRNA) degradation or negatively regulate mRNA translation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:aruk</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:bc</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15020054</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15066275</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:15066283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:23985560</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:28379604</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0035194"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>RNA-mediated posttranscriptional gene silencing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0040029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0040029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010468"/>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of gene expression; the process is mitotically or meiotically heritable, or is stably self-propagated in the cytoplasm of a resting cell, and does not entail a change in DNA sequence.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0040029</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <rdfs:label>regulation of gene expression, epigenetic</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0040029"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of gene expression; the process is mitotically or meiotically heritable, or is stably self-propagated in the cytoplasm of a resting cell, and does not entail a change in DNA sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10521337</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11498582</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
+        <obo:IAO_0000115>The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0043283</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044259</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>biopolymer metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>macromolecule metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organismal macromolecule metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>multicellular organismal macromolecule metabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0043170</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <rdfs:label>macromolecule metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:33694</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>biopolymer metabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_chebi_dec09</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -430,12 +1273,6 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any constituent part of a cell, the basic structural and functional unit of all organisms.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jl</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>cellular subcomponent</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao628508602</oboInOwl:hasDbXref>
@@ -445,6 +1282,12 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>protoplast</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any constituent part of a cell, the basic structural and functional unit of all organisms.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jl</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -534,6 +1377,213 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0048522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048522">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0051242</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>positive regulation of cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of cellular process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of cellular process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of cellular process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of cellular process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>stimulation of cellular process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0048522</oboInOwl:id>
+        <rdfs:label>positive regulation of cellular process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048522"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048523">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048519"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0051243</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>down regulation of cellular process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of cellular process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of cellular process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of cellular process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0048523</oboInOwl:id>
+        <rdfs:label>negative regulation of cellular process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048523"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048583">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0048583</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <rdfs:label>regulation of response to stimulus</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048583"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048584 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048584">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048583"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that activates, maintains or increases the rate of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>up regulation of response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of response to stimulus</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>stimulation of response to stimulus</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0048584</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <rdfs:label>positive regulation of response to stimulus</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048584"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates, maintains or increases the rate of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048585 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048585">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048519"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048583"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>down regulation of response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of response to stimulus</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0048585</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <rdfs:label>negative regulation of response to stimulus</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048585"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0050789 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050789">
@@ -577,6 +1627,370 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0050794 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050794">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0051244</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>regulation of cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0050794</oboInOwl:id>
+        <rdfs:label>regulation of cellular process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050896">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0051869</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>MIPS_funcat:34.11</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>physiological response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0050896</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <rdfs:label>response to stimulus</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:bf</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060147">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060968"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0060147</oboInOwl:id>
+        <rdfs:label>regulation of posttranscriptional gene silencing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0060147"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060148">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048522"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060147"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that increases the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0060148</oboInOwl:id>
+        <rdfs:label>positive regulation of posttranscriptional gene silencing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0060148"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that increases the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060149">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060969"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016441"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that decreases the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0060149</oboInOwl:id>
+        <rdfs:label>negative regulation of posttranscriptional gene silencing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0060149"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that decreases the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060255">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0060255</oboInOwl:id>
+        <rdfs:label>regulation of macromolecule metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0060255"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060966 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060966">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0031047"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060968"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0031047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that regulates the rate, frequency, or extent of gene silencing by RNA. Gene silencing by RNA is the process in which RNA molecules inactivate expression of target genes.</obo:IAO_0000115>
+        <oboInOwl:created_by>dph</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-10-05T03:17:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0060966</oboInOwl:id>
+        <rdfs:label>regulation of gene silencing by RNA</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0060966"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that regulates the rate, frequency, or extent of gene silencing by RNA. Gene silencing by RNA is the process in which RNA molecules inactivate expression of target genes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060967 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060967">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0031047"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060966"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060969"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0031047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that decreases the rate, frequency, or extent of gene silencing by RNA. Gene silencing by RNA is the process in which RNA molecules inactivate expression of target genes.</obo:IAO_0000115>
+        <oboInOwl:created_by>dph</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-10-05T03:21:05Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0060967</oboInOwl:id>
+        <rdfs:label>negative regulation of gene silencing by RNA</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0060967"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that decreases the rate, frequency, or extent of gene silencing by RNA. Gene silencing by RNA is the process in which RNA molecules inactivate expression of target genes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060968 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060968">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016458"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010468"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016458"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the rate, frequency, or extent of gene silencing, the transcriptional or post-transcriptional process carried out at the cellular level that results in long-term gene inactivation.</obo:IAO_0000115>
+        <oboInOwl:created_by>dph</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-10-05T03:23:56Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0060968</oboInOwl:id>
+        <rdfs:label>regulation of gene silencing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0060968"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the rate, frequency, or extent of gene silencing, the transcriptional or post-transcriptional process carried out at the cellular level that results in long-term gene inactivation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060969 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0060969">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016458"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0010628"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060968"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016458"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that decreases the rate, frequency, or extent of gene silencing, the transcriptional or post-transcriptional process carried out at the cellular level that results in long-term gene inactivation.</obo:IAO_0000115>
+        <oboInOwl:created_by>dph</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-10-05T03:26:19Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0060969</oboInOwl:id>
+        <rdfs:label>negative regulation of gene silencing</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0060969"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that decreases the rate, frequency, or extent of gene silencing, the transcriptional or post-transcriptional process carried out at the cellular level that results in long-term gene inactivation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0065007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065007">
@@ -598,6 +2012,513 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pr</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0071704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <obo:IAO_0000115>The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon.</obo:IAO_0000115>
+        <oboInOwl:created_by>midori</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-08T03:32:18Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>organic molecular entity metabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organic molecular entity metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>organic substance metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0071704</oboInOwl:id>
+        <rdfs:label>organic substance metabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHEBI:50860</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0080134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0080134">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006950"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048583"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of a response to stress. Response to stress is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).</obo:IAO_0000115>
+        <oboInOwl:created_by>donghui</oboInOwl:created_by>
+        <oboInOwl:creation_date>2009-05-06T04:51:28Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0080134</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <rdfs:label>regulation of response to stress</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0080134"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of a response to stress. Response to stress is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dhl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0099046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0099046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006952"/>
+        <obo:IAO_0000115>A defense process that protects an organism from invading foreign DNA or RNA.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0099046</oboInOwl:id>
+        <rdfs:label>clearance of foreign intracellular nucleic acids</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0099046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A defense process that protects an organism from invading foreign DNA or RNA.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:dos</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0099048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0099048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0099046"/>
+        <obo:IAO_0000115>An adaptive immune response of bacteria that serves to clear host cells of foreign DNA and RNA. It has three distinct stage: acquisition of foreign DNA by integration into CRISPR loci in the host chromosome, CRISPR RNA (crRNA) biogenesis, and target interference. CISPR stands for Clustered Regularly Interspaced Short Palindromic Repeat, which describes the nature of the loci.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0099048</oboInOwl:id>
+        <rdfs:label>CRISPR-cas system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0099048"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An adaptive immune response of bacteria that serves to clear host cells of foreign DNA and RNA. It has three distinct stage: acquisition of foreign DNA by integration into CRISPR loci in the host chromosome, CRISPR RNA (crRNA) biogenesis, and target interference. CISPR stands for Clustered Regularly Interspaced Short Palindromic Repeat, which describes the nature of the loci.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:23495939</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0110132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0110132">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0099048"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031347"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0099048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of a CRISPR-cas system.</obo:IAO_0000115>
+        <oboInOwl:created_by>kmv</oboInOwl:created_by>
+        <oboInOwl:creation_date>2018-11-14T17:13:16Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0110132</oboInOwl:id>
+        <rdfs:label>regulation of CRISPR-cas system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0110132"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of a CRISPR-cas system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30190307</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30190308</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0110133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0110133">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0099048"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031348"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0110132"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0099048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of a CRISPR-cas system.</obo:IAO_0000115>
+        <oboInOwl:created_by>kmv</oboInOwl:created_by>
+        <oboInOwl:creation_date>2018-11-14T17:23:07Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0110133</oboInOwl:id>
+        <rdfs:label>negative regulation of CRISPR-cas system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0110133"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of a CRISPR-cas system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30190307</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:30190308</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1900368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900368">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016246"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060147"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060966"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016246"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of RNA interference.</obo:IAO_0000115>
+        <oboInOwl:created_by>kmv</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-04-13T08:28:39Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>regulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>regulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1900368</oboInOwl:id>
+        <rdfs:label>regulation of RNA interference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900368"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of RNA interference.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:kmv</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22412382</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900368"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>regulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900368"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>regulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1900369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900369">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016246"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060149"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060967"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1900368"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016246"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that stops, prevents or reduces the frequency, rate or extent of RNA interference.</obo:IAO_0000115>
+        <oboInOwl:created_by>kmv</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-04-13T08:28:50Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>down regulation of RNA interference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down regulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down regulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of RNA interference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of RNA interference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inhibition of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inhibition of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of RNA interference</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1900369</oboInOwl:id>
+        <rdfs:label>negative regulation of RNA interference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents or reduces the frequency, rate or extent of RNA interference.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:kmv</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22412382</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of RNA interference</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of RNA interference</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of RNA interference</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>inhibition of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>inhibition of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>negative regulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>negative regulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900369"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>inhibition of RNA interference</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1900370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1900370">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016246"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0060148"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1900368"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016246"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of RNA interference.</obo:IAO_0000115>
+        <oboInOwl:created_by>kmv</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-04-13T08:29:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>activation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>activation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>positive regulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>positive regulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of RNA interference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of RNA interference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of RNA interference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of RNAi</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of posttranscriptional gene silencing by siRNA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of RNA interference</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1900370</oboInOwl:id>
+        <rdfs:label>positive regulation of RNA interference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of RNA interference.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:kmv</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:22412382</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>positive regulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>positive regulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up regulation of RNA interference</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up regulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up regulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up-regulation of RNA interference</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up-regulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up-regulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>upregulation of RNA interference</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>upregulation of RNAi</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>upregulation of posttranscriptional gene silencing by siRNA</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1900370"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>activation of RNA interference</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 

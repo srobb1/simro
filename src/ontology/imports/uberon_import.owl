@@ -203,13 +203,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>is preceded by</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>SIO:000249</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIO:000249</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>takes place after</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allen:precedes</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Allen:precedes</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

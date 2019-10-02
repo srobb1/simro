@@ -1,0 +1,43 @@
+pattern_name: entityUsedByGroup 
+pattern_iri: tbd 
+description: "any entity used by an institutional group."
+
+contributors:
+  - https://orcid.org/0000-0002-3528-5267
+
+classes:
+  material entity: BFO:0000040 
+  institutional group: SIMRO:0001000
+
+relations: 
+  used by group: SIMRO:0000611
+  
+annotationProperties:
+  exact_synonym: oio:hasExactSynonym 
+
+vars:
+  entity: "'material entity'"
+  group: "'institutional group'"
+
+name:
+  text: "%s"
+  vars:
+   - entity
+
+annotations:
+  - annotationProperty: exact_synonym
+    text: ""
+    vars:
+     - entity
+
+def:
+  text: "%s used by %s."
+  vars:
+    - entity
+    - group
+
+equivalentTo:
+  text: "%s and 'used by group' some  %s"
+  vars:
+    - entity
+    - group

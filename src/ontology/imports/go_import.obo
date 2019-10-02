@@ -1,12 +1,15 @@
 format-version: 1.2
 data-version: simro/releases/2019-10-02/imports/go_import.owl
 subsetdef: gocheck_do_not_annotate ""
+subsetdef: gocheck_do_not_manually_annotate ""
 subsetdef: goslim_agr ""
 subsetdef: goslim_aspergillus ""
 subsetdef: goslim_candida ""
 subsetdef: goslim_chembl ""
+subsetdef: goslim_flybase_ribbon ""
 subsetdef: goslim_generic ""
 subsetdef: goslim_metagenomics ""
+subsetdef: goslim_mouse ""
 subsetdef: goslim_pir ""
 subsetdef: goslim_plant ""
 subsetdef: goslim_pombe ""
@@ -48,6 +51,37 @@ is_a: GO:0005575 ! cellular_component
 property_value: IAO:0000589 "cell and encapsulating structures" xsd:string
 
 [Term]
+id: GO:0006950
+name: response to stress
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_plant
+synonym: "response to abiotic stress" RELATED []
+synonym: "response to biotic stress" RELATED []
+xref: MIPS_funcat:32.01
+is_a: GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0006952
+name: defense response
+namespace: biological_process
+alt_id: GO:0002217
+alt_id: GO:0042829
+def: "Reactions, triggered in response to the presence of a foreign body or the occurrence of an injury, which result in restriction of damage to the organism attacked or prevention/recovery from the infection caused by the attack." [GOC:go_curators]
+synonym: "antimicrobial peptide activity" RELATED []
+synonym: "defence response" EXACT []
+synonym: "defense/immunity protein activity" RELATED []
+synonym: "physiological defense response" EXACT []
+is_a: GO:0006950 ! response to stress
+
+[Term]
 id: GO:0008150
 name: biological_process
 namespace: biological_process
@@ -72,6 +106,297 @@ synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
 created_by: janelomax
 creation_date: 2012-09-19T15:05:24Z
+
+[Term]
+id: GO:0008152
+name: metabolic process
+namespace: biological_process
+alt_id: GO:0044236
+alt_id: GO:0044710
+def: "The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation." [GOC:go_curators, ISBN:0198547684]
+comment: Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+synonym: "metabolic process resulting in cell growth" NARROW []
+synonym: "metabolism" EXACT []
+synonym: "metabolism resulting in cell growth" NARROW []
+synonym: "multicellular organism metabolic process" NARROW []
+synonym: "single-organism metabolic process" RELATED []
+xref: MIPS_funcat:01
+xref: Wikipedia:Metabolism
+is_a: GO:0008150 ! biological_process
+created_by: janelomax
+creation_date: 2012-10-17T15:46:40Z
+
+[Term]
+id: GO:0009892
+name: negative regulation of metabolic process
+namespace: biological_process
+alt_id: GO:0044252
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism." [GOC:go_curators]
+synonym: "down regulation of metabolic process" EXACT []
+synonym: "down-regulation of metabolic process" EXACT []
+synonym: "downregulation of metabolic process" EXACT []
+synonym: "inhibition of metabolic process" NARROW []
+synonym: "inhibition of organismal metabolic process" NARROW []
+synonym: "negative regulation of metabolism" EXACT []
+synonym: "negative regulation of multicellular organismal metabolic process" NARROW []
+synonym: "negative regulation of organismal metabolism" EXACT []
+is_a: GO:0019222 ! regulation of metabolic process
+is_a: GO:0048519 ! negative regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0008152 ! metabolic process
+relationship: negatively_regulates GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0009893
+name: positive regulation of metabolic process
+namespace: biological_process
+alt_id: GO:0044253
+def: "Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism." [GOC:go_curators]
+synonym: "activation of metabolic process" NARROW []
+synonym: "positive regulation of metabolism" EXACT []
+synonym: "positive regulation of multicellular organismal metabolic process" NARROW []
+synonym: "positive regulation of organismal metabolism" NARROW []
+synonym: "stimulation of metabolic process" NARROW []
+synonym: "stimulation of organismal metabolic process" NARROW []
+synonym: "up regulation of metabolic process" EXACT []
+synonym: "up-regulation of metabolic process" EXACT []
+synonym: "up-regulation of organismal metabolic process" NARROW []
+synonym: "upregulation of metabolic process" EXACT []
+is_a: GO:0019222 ! regulation of metabolic process
+is_a: GO:0048518 ! positive regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0008152 ! metabolic process
+relationship: positively_regulates GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0009987
+name: cellular process
+namespace: biological_process
+alt_id: GO:0008151
+alt_id: GO:0044763
+alt_id: GO:0050875
+def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators, GOC:isa_complete]
+subset: goslim_plant
+synonym: "cell growth and/or maintenance" NARROW []
+synonym: "cell physiology" EXACT []
+synonym: "cellular physiological process" EXACT []
+synonym: "single-organism cellular process" RELATED []
+is_a: GO:0008150 ! biological_process
+created_by: janelomax
+creation_date: 2012-12-11T16:56:55Z
+
+[Term]
+id: GO:0010467
+name: gene expression
+namespace: biological_process
+def: "The process in which a gene's sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form." [GOC:dph, GOC:tb]
+subset: goslim_flybase_ribbon
+xref: Wikipedia:Gene_expression
+is_a: GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0010468
+name: regulation of gene expression
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of gene expression. Gene expression is the process in which a gene's coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form." [GOC:dph, GOC:tb]
+comment: This class covers any process that regulates the rate of production of a mature gene product, and so includes processes that regulate that rate by regulating the level, stability or availability of intermediates in the process of gene expression.  For example, it covers any process that regulates the level, stability or availability of mRNA or circRNA for translation and thereby regulates the rate of production of the encoded protein via translation.
+synonym: "regulation of gene product expression" RELATED [GOC:curators]
+synonym: "regulation of protein expression" NARROW [GOC:curators]
+xref: Wikipedia:Regulation_of_gene_expression
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0010467 ! gene expression
+relationship: regulates GO:0010467 ! gene expression
+
+[Term]
+id: GO:0010604
+name: positive regulation of macromolecule metabolic process
+namespace: biological_process
+def: "Any process that increases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:dph, GOC:tb]
+is_a: GO:0009893 ! positive regulation of metabolic process
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0043170 ! macromolecule metabolic process
+relationship: positively_regulates GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0010605
+name: negative regulation of macromolecule metabolic process
+namespace: biological_process
+def: "Any process that decreases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:dph, GOC:tb]
+is_a: GO:0009892 ! negative regulation of metabolic process
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0043170 ! macromolecule metabolic process
+relationship: negatively_regulates GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0010608
+name: posttranscriptional regulation of gene expression
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of gene expression after the production of an RNA transcript." [GOC:dph, GOC:tb]
+is_a: GO:0010468 ! regulation of gene expression
+
+[Term]
+id: GO:0010628
+name: positive regulation of gene expression
+namespace: biological_process
+def: "Any process that increases the frequency, rate or extent of gene expression. Gene expression is the process in which a gene's coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form." [GOC:dph, GOC:tb]
+is_a: GO:0010468 ! regulation of gene expression
+is_a: GO:0010604 ! positive regulation of macromolecule metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0010467 ! gene expression
+relationship: positively_regulates GO:0010467 ! gene expression
+
+[Term]
+id: GO:0010629
+name: negative regulation of gene expression
+namespace: biological_process
+def: "Any process that decreases the frequency, rate or extent of gene expression. Gene expression is the process in which a gene's coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form." [GOC:dph, GOC:tb]
+comment: This term covers any process that negatively regulates the rate of production of a mature gene product, and so includes processes that negatively regulate that rate by reducing the level, stability or availability of intermediates in the process of gene expression. For example, it covers any process that reduces the level, stability or availability of mRNA or circRNA for translation and thereby reduces the rate of production of the encoded protein via translation.
+is_a: GO:0010468 ! regulation of gene expression
+is_a: GO:0010605 ! negative regulation of macromolecule metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0010467 ! gene expression
+relationship: negatively_regulates GO:0010467 ! gene expression
+
+[Term]
+id: GO:0016246
+name: RNA interference
+namespace: biological_process
+def: "The process in which double-stranded RNAs silence cognate genes. Involves posttranscriptional gene inactivation ('silencing') both of transgenes or dsRNA introduced into a germline, and of the host gene(s) homologous to the transgenes or dsRNA. This silencing is triggered by the introduction of transgenes or double-stranded RNA (dsRNA), and can occur through a specific decrease in the level of mRNA, or by negative regulation of translation, of both host genes and transgenes." [GOC:ems, PMID:11201747, PMID:11713190, PMID:18771919]
+comment: Note that this term refers specifically to posttranscriptional mechanisms by which small interfering RNAs down-regulate gene expression. Also consider annotating to other descendants of 'gene silencing by RNA ; GO:0031047'.
+synonym: "posttranscriptional gene silencing by siRNA" EXACT [GOC:mah]
+synonym: "RNAi" EXACT []
+xref: Wikipedia:RNA_interference
+is_a: GO:0035194 ! posttranscriptional gene silencing by RNA
+
+[Term]
+id: GO:0016441
+name: posttranscriptional gene silencing
+namespace: biological_process
+def: "The inactivation of gene expression by a posttranscriptional mechanism." [GOC:mah, PMID:15020054]
+synonym: "cosuppression" RELATED []
+synonym: "post-transcriptional gene silencing" EXACT [GOC:vw]
+synonym: "PTGS" EXACT []
+synonym: "quelling" EXACT []
+xref: Wikipedia:Post_transcriptional_gene_silencing
+is_a: GO:0010608 ! posttranscriptional regulation of gene expression
+is_a: GO:0016458 ! gene silencing
+is_a: GO:0040029 ! regulation of gene expression, epigenetic
+
+[Term]
+id: GO:0016458
+name: gene silencing
+namespace: biological_process
+def: "Any process carried out at the cellular level that results in either long-term transcriptional repression via action on chromatin structure or RNA mediated, post-transcriptional repression of gene expression." [GOC:dos, GOC:dph, GOC:jid, GOC:tb]
+comment: This is a rather broad grouping term.  While it was originally defined for long-term, heritable, epigenetic effects, short term effects on expression mediated by RNA are also frequently referred to as gene silencing, and are grouped under this class.
+subset: goslim_pir
+synonym: "long-term maintenance of gene inactivation" NARROW []
+xref: Wikipedia:Gene_silencing
+is_a: GO:0009987 ! cellular process
+is_a: GO:0010629 ! negative regulation of gene expression
+
+[Term]
+id: GO:0019222
+name: regulation of metabolic process
+namespace: biological_process
+alt_id: GO:0044246
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism." [GOC:go_curators]
+subset: goslim_metagenomics
+synonym: "regulation of metabolism" EXACT []
+synonym: "regulation of multicellular organismal metabolic process" NARROW []
+synonym: "regulation of organismal metabolic process" NARROW [GOC:tb]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0008152 ! metabolic process
+relationship: regulates GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0031047
+name: gene silencing by RNA
+namespace: biological_process
+def: "Any process in which RNA molecules inactivate expression of target genes." [GOC:dph, GOC:mah, GOC:tb, PMID:15020054]
+synonym: "RNA-mediated gene silencing" EXACT [GOC:dph, GOC:tb]
+is_a: GO:0016458 ! gene silencing
+
+[Term]
+id: GO:0031347
+name: regulation of defense response
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a defense response." [GOC:mah]
+is_a: GO:0080134 ! regulation of response to stress
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0006952 ! defense response
+relationship: regulates GO:0006952 ! defense response
+
+[Term]
+id: GO:0031348
+name: negative regulation of defense response
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a defense response." [GOC:mah]
+synonym: "down regulation of defense response" EXACT []
+synonym: "down-regulation of defense response" EXACT []
+synonym: "downregulation of defense response" EXACT []
+synonym: "inhibition of defense response" NARROW []
+is_a: GO:0031347 ! regulation of defense response
+is_a: GO:0048585 ! negative regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0006952 ! defense response
+relationship: negatively_regulates GO:0006952 ! defense response
+
+[Term]
+id: GO:0031349
+name: positive regulation of defense response
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of a defense response." [GOC:mah]
+synonym: "activation of defense response" NARROW []
+synonym: "stimulation of defense response" NARROW []
+synonym: "up regulation of defense response" EXACT []
+synonym: "up-regulation of defense response" EXACT []
+synonym: "upregulation of defense response" EXACT []
+is_a: GO:0031347 ! regulation of defense response
+is_a: GO:0048584 ! positive regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0006952 ! defense response
+relationship: positively_regulates GO:0006952 ! defense response
+
+[Term]
+id: GO:0035194
+name: posttranscriptional gene silencing by RNA
+namespace: biological_process
+def: "Any process of posttranscriptional gene inactivation (silencing) mediated by small RNA molecules that may trigger RNA (often mRNA) degradation or negatively regulate mRNA translation." [GOC:aruk, GOC:bc, GOC:mah, GOC:rl, PMID:15020054, PMID:15066275, PMID:15066283, PMID:23985560, PMID:28379604]
+synonym: "RNA-mediated posttranscriptional gene silencing" EXACT [GOC:dph, GOC:tb]
+synonym: "sense-PTGS" RELATED []
+is_a: GO:0016441 ! posttranscriptional gene silencing
+is_a: GO:0031047 ! gene silencing by RNA
+
+[Term]
+id: GO:0040029
+name: regulation of gene expression, epigenetic
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of gene expression; the process is mitotically or meiotically heritable, or is stably self-propagated in the cytoplasm of a resting cell, and does not entail a change in DNA sequence." [PMID:10521337, PMID:11498582]
+subset: goslim_plant
+is_a: GO:0010468 ! regulation of gene expression
+
+[Term]
+id: GO:0043170
+name: macromolecule metabolic process
+namespace: biological_process
+alt_id: GO:0043283
+alt_id: GO:0044259
+def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [CHEBI:33694, GOC:mah]
+subset: goslim_pir
+synonym: "biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
+synonym: "macromolecule metabolism" EXACT []
+synonym: "multicellular organismal macromolecule metabolic process" NARROW []
+synonym: "organismal macromolecule metabolism" EXACT []
+is_a: GO:0071704 ! organic substance metabolic process
 
 [Term]
 id: GO:0044464
@@ -125,6 +450,88 @@ intersection_of: negatively_regulates GO:0008150 ! biological_process
 relationship: negatively_regulates GO:0008150 ! biological_process
 
 [Term]
+id: GO:0048522
+name: positive regulation of cellular process
+namespace: biological_process
+alt_id: GO:0051242
+def: "Any process that activates or increases the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:jid]
+synonym: "activation of cellular process" NARROW []
+synonym: "positive regulation of cellular physiological process" EXACT []
+synonym: "stimulation of cellular process" NARROW []
+synonym: "up regulation of cellular process" EXACT []
+synonym: "up-regulation of cellular process" EXACT []
+synonym: "upregulation of cellular process" EXACT []
+is_a: GO:0048518 ! positive regulation of biological process
+is_a: GO:0050794 ! regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0009987 ! cellular process
+relationship: positively_regulates GO:0009987 ! cellular process
+
+[Term]
+id: GO:0048523
+name: negative regulation of cellular process
+namespace: biological_process
+alt_id: GO:0051243
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:jid]
+synonym: "down regulation of cellular process" EXACT []
+synonym: "down-regulation of cellular process" EXACT []
+synonym: "downregulation of cellular process" EXACT []
+synonym: "inhibition of cellular process" NARROW []
+synonym: "negative regulation of cellular physiological process" EXACT []
+is_a: GO:0048519 ! negative regulation of biological process
+is_a: GO:0050794 ! regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0009987 ! cellular process
+relationship: negatively_regulates GO:0009987 ! cellular process
+
+[Term]
+id: GO:0048583
+name: regulation of response to stimulus
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus." [GOC:jid]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0050896 ! response to stimulus
+relationship: regulates GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0048584
+name: positive regulation of response to stimulus
+namespace: biological_process
+def: "Any process that activates, maintains or increases the rate of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus." [GOC:jid]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+synonym: "activation of response to stimulus" NARROW []
+synonym: "stimulation of response to stimulus" NARROW []
+synonym: "up regulation of response to stimulus" EXACT []
+synonym: "up-regulation of response to stimulus" EXACT []
+synonym: "upregulation of response to stimulus" EXACT []
+is_a: GO:0048518 ! positive regulation of biological process
+is_a: GO:0048583 ! regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0050896 ! response to stimulus
+relationship: positively_regulates GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0048585
+name: negative regulation of response to stimulus
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus." [GOC:jid]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+synonym: "down regulation of response to stimulus" EXACT []
+synonym: "down-regulation of response to stimulus" EXACT []
+synonym: "downregulation of response to stimulus" EXACT []
+synonym: "inhibition of response to stimulus" NARROW []
+is_a: GO:0048519 ! negative regulation of biological process
+is_a: GO:0048583 ! regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0050896 ! response to stimulus
+relationship: negatively_regulates GO:0050896 ! response to stimulus
+
+[Term]
 id: GO:0050789
 name: regulation of biological process
 namespace: biological_process
@@ -142,6 +549,128 @@ intersection_of: regulates GO:0008150 ! biological_process
 relationship: regulates GO:0008150 ! biological_process
 
 [Term]
+id: GO:0050794
+name: regulation of cellular process
+namespace: biological_process
+alt_id: GO:0051244
+def: "Any process that modulates the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators]
+synonym: "regulation of cellular physiological process" EXACT []
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0009987 ! cellular process
+relationship: regulates GO:0009987 ! cellular process
+
+[Term]
+id: GO:0050896
+name: response to stimulus
+namespace: biological_process
+alt_id: GO:0051869
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism." [GOC:ai, GOC:bf]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_agr
+subset: goslim_flybase_ribbon
+subset: goslim_mouse
+subset: goslim_pir
+synonym: "physiological response to stimulus" EXACT []
+xref: MIPS_funcat:34.11
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0060147
+name: regulation of posttranscriptional gene silencing
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism." [GOC:dph]
+is_a: GO:0060968 ! regulation of gene silencing
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0016441 ! posttranscriptional gene silencing
+relationship: regulates GO:0016441 ! posttranscriptional gene silencing
+
+[Term]
+id: GO:0060148
+name: positive regulation of posttranscriptional gene silencing
+namespace: biological_process
+def: "Any process that increases the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism." [GOC:dph]
+is_a: GO:0048522 ! positive regulation of cellular process
+is_a: GO:0060147 ! regulation of posttranscriptional gene silencing
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0016441 ! posttranscriptional gene silencing
+relationship: positively_regulates GO:0016441 ! posttranscriptional gene silencing
+
+[Term]
+id: GO:0060149
+name: negative regulation of posttranscriptional gene silencing
+namespace: biological_process
+def: "Any process that decreases the frequency, rate or extent of the inactivation of gene expression by a posttranscriptional mechanism." [GOC:dph]
+is_a: GO:0060147 ! regulation of posttranscriptional gene silencing
+is_a: GO:0060969 ! negative regulation of gene silencing
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0016441 ! posttranscriptional gene silencing
+relationship: negatively_regulates GO:0016441 ! posttranscriptional gene silencing
+
+[Term]
+id: GO:0060255
+name: regulation of macromolecule metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:dph, GOC:tb]
+is_a: GO:0019222 ! regulation of metabolic process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0043170 ! macromolecule metabolic process
+relationship: regulates GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0060966
+name: regulation of gene silencing by RNA
+namespace: biological_process
+def: "Any process that regulates the rate, frequency, or extent of gene silencing by RNA. Gene silencing by RNA is the process in which RNA molecules inactivate expression of target genes." [GOC:dph, GOC:tb]
+is_a: GO:0060968 ! regulation of gene silencing
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0031047 ! gene silencing by RNA
+relationship: regulates GO:0031047 ! gene silencing by RNA
+created_by: dph
+creation_date: 2009-10-05T03:17:02Z
+
+[Term]
+id: GO:0060967
+name: negative regulation of gene silencing by RNA
+namespace: biological_process
+def: "Any process that decreases the rate, frequency, or extent of gene silencing by RNA. Gene silencing by RNA is the process in which RNA molecules inactivate expression of target genes." [GOC:dph, GOC:tb]
+is_a: GO:0060966 ! regulation of gene silencing by RNA
+is_a: GO:0060969 ! negative regulation of gene silencing
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0031047 ! gene silencing by RNA
+relationship: negatively_regulates GO:0031047 ! gene silencing by RNA
+created_by: dph
+creation_date: 2009-10-05T03:21:05Z
+
+[Term]
+id: GO:0060968
+name: regulation of gene silencing
+namespace: biological_process
+def: "Any process that modulates the rate, frequency, or extent of gene silencing, the transcriptional or post-transcriptional process carried out at the cellular level that results in long-term gene inactivation." [GOC:dph, GOC:tb]
+is_a: GO:0010468 ! regulation of gene expression
+is_a: GO:0050794 ! regulation of cellular process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0016458 ! gene silencing
+relationship: regulates GO:0016458 ! gene silencing
+created_by: dph
+creation_date: 2009-10-05T03:23:56Z
+
+[Term]
+id: GO:0060969
+name: negative regulation of gene silencing
+namespace: biological_process
+def: "Any process that decreases the rate, frequency, or extent of gene silencing, the transcriptional or post-transcriptional process carried out at the cellular level that results in long-term gene inactivation." [GOC:dph, GOC:tb]
+is_a: GO:0010628 ! positive regulation of gene expression
+is_a: GO:0048523 ! negative regulation of cellular process
+is_a: GO:0060968 ! regulation of gene silencing
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0016458 ! gene silencing
+relationship: negatively_regulates GO:0016458 ! gene silencing
+created_by: dph
+creation_date: 2009-10-05T03:26:19Z
+
+[Term]
 id: GO:0065007
 name: biological regulation
 namespace: biological_process
@@ -150,6 +679,141 @@ subset: gocheck_do_not_annotate
 subset: goslim_pir
 synonym: "regulation" BROAD []
 is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0071704
+name: organic substance metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon." [CHEBI:50860, GOC:mah]
+synonym: "organic molecular entity metabolic process" EXACT []
+synonym: "organic molecular entity metabolism" EXACT []
+synonym: "organic substance metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+created_by: midori
+creation_date: 2010-03-08T03:32:18Z
+
+[Term]
+id: GO:0080134
+name: regulation of response to stress
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a response to stress. Response to stress is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:dhl]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+is_a: GO:0048583 ! regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0006950 ! response to stress
+relationship: regulates GO:0006950 ! response to stress
+created_by: donghui
+creation_date: 2009-05-06T04:51:28Z
+
+[Term]
+id: GO:0099046
+name: clearance of foreign intracellular nucleic acids
+namespace: biological_process
+def: "A defense process that protects an organism from invading foreign DNA or RNA." [GO:dos]
+is_a: GO:0006952 ! defense response
+
+[Term]
+id: GO:0099048
+name: CRISPR-cas system
+namespace: biological_process
+def: "An adaptive immune response of bacteria that serves to clear host cells of foreign DNA and RNA. It has three distinct stage: acquisition of foreign DNA by integration into CRISPR loci in the host chromosome, CRISPR RNA (crRNA) biogenesis, and target interference. CISPR stands for Clustered Regularly Interspaced Short Palindromic Repeat, which describes the nature of the loci." [PMID:23495939]
+is_a: GO:0099046 ! clearance of foreign intracellular nucleic acids
+
+[Term]
+id: GO:0110132
+name: regulation of CRISPR-cas system
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a CRISPR-cas system." [PMID:30190307, PMID:30190308]
+is_a: GO:0031347 ! regulation of defense response
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0099048 ! CRISPR-cas system
+relationship: regulates GO:0099048 ! CRISPR-cas system
+created_by: kmv
+creation_date: 2018-11-14T17:13:16Z
+
+[Term]
+id: GO:0110133
+name: negative regulation of CRISPR-cas system
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a CRISPR-cas system." [PMID:30190307, PMID:30190308]
+is_a: GO:0031348 ! negative regulation of defense response
+is_a: GO:0110132 ! regulation of CRISPR-cas system
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0099048 ! CRISPR-cas system
+relationship: negatively_regulates GO:0099048 ! CRISPR-cas system
+created_by: kmv
+creation_date: 2018-11-14T17:23:07Z
+
+[Term]
+id: GO:1900368
+name: regulation of RNA interference
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of RNA interference." [GOC:kmv, GOC:TermGenie, PMID:22412382]
+synonym: "regulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "regulation of RNAi" EXACT [GOC:TermGenie]
+is_a: GO:0060147 ! regulation of posttranscriptional gene silencing
+is_a: GO:0060966 ! regulation of gene silencing by RNA
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0016246 ! RNA interference
+relationship: regulates GO:0016246 ! RNA interference
+created_by: kmv
+creation_date: 2012-04-13T08:28:39Z
+
+[Term]
+id: GO:1900369
+name: negative regulation of RNA interference
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of RNA interference." [GOC:kmv, GOC:TermGenie, PMID:22412382]
+synonym: "down regulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "down regulation of RNA interference" EXACT [GOC:TermGenie]
+synonym: "down regulation of RNAi" EXACT [GOC:TermGenie]
+synonym: "down-regulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "down-regulation of RNA interference" EXACT [GOC:TermGenie]
+synonym: "down-regulation of RNAi" EXACT [GOC:TermGenie]
+synonym: "downregulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "downregulation of RNA interference" EXACT [GOC:TermGenie]
+synonym: "downregulation of RNAi" EXACT [GOC:TermGenie]
+synonym: "inhibition of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "inhibition of RNA interference" NARROW [GOC:TermGenie]
+synonym: "inhibition of RNAi" EXACT [GOC:TermGenie]
+synonym: "negative regulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "negative regulation of RNAi" EXACT [GOC:TermGenie]
+is_a: GO:0060149 ! negative regulation of posttranscriptional gene silencing
+is_a: GO:0060967 ! negative regulation of gene silencing by RNA
+is_a: GO:1900368 ! regulation of RNA interference
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0016246 ! RNA interference
+relationship: negatively_regulates GO:0016246 ! RNA interference
+created_by: kmv
+creation_date: 2012-04-13T08:28:50Z
+
+[Term]
+id: GO:1900370
+name: positive regulation of RNA interference
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of RNA interference." [GOC:kmv, GOC:TermGenie, PMID:22412382]
+synonym: "activation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "activation of RNA interference" NARROW [GOC:TermGenie]
+synonym: "activation of RNAi" EXACT [GOC:TermGenie]
+synonym: "positive regulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "positive regulation of RNAi" EXACT [GOC:TermGenie]
+synonym: "up regulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "up regulation of RNA interference" EXACT [GOC:TermGenie]
+synonym: "up regulation of RNAi" EXACT [GOC:TermGenie]
+synonym: "up-regulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "up-regulation of RNA interference" EXACT [GOC:TermGenie]
+synonym: "up-regulation of RNAi" EXACT [GOC:TermGenie]
+synonym: "upregulation of posttranscriptional gene silencing by siRNA" EXACT [GOC:TermGenie]
+synonym: "upregulation of RNA interference" EXACT [GOC:TermGenie]
+synonym: "upregulation of RNAi" EXACT [GOC:TermGenie]
+is_a: GO:0060148 ! positive regulation of posttranscriptional gene silencing
+is_a: GO:1900368 ! regulation of RNA interference
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0016246 ! RNA interference
+relationship: positively_regulates GO:0016246 ! RNA interference
+created_by: kmv
+creation_date: 2012-04-13T08:29:00Z
 
 [Typedef]
 id: has_part

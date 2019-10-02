@@ -93,6 +93,24 @@ property_value: IAO:0000117 "James Malone modified from original OBI definition"
 property_value: IAO:0000117 "Tomasz Adamusiak modified from original OBI definition" xsd:string
 
 [Term]
+id: OBI:0000272
+name: protocol
+def: "a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process." []
+def: "A protocol is an information entity which is a set of instructions that describe an how an experiment is done." []
+synonym: "method" EXACT []
+synonym: "method used in an experiment" EXACT []
+synonym: "plan specification" EXACT []
+xref: MO:214
+xref: NCIt:C42651
+xref: SNOMEDCT:260686004
+is_a: IAO:0000030 ! information entity
+property_value: branch:class "true" xsd:string
+property_value: EFO:URI http://www.ebi.ac.uk/efo/EFO_0001442 xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Jie Zheng" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
 id: Quality
 name: quality
 def: "A quality is an entity that describes some aspect which is intrinsic to that particular object and is dependent on or more material entities in which it inheres in or is borne by. Example the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee" []

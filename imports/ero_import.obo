@@ -48,9 +48,27 @@ name: generically dependent continuant
 is_a: BFO:0000002 ! continuant
 
 [Term]
+id: BFO:0000034
+name: function
+is_a: BFO:0000016 ! disposition (bfo)
+
+[Term]
 id: BFO:0000040
 name: material_entity
 is_a: BFO:0000004 ! independent_continuant
+
+[Term]
+id: ERO:0000004
+name: instrument
+def: "Material entity that is designed to have a function and play a role in scientific investigation." []
+comment: See OBI listserv discussion for considerations in defining instrument. http://sourceforge.net/tracker/index.php?func=detail&aid=2894801&group_id=177891&atid=886178
+is_a: BFO:0000040 ! material_entity
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
+property_value: IAO:0000111 "instrument" xsd:string
+property_value: IAO:0000112 "A flow cytometer." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Melissa Haendel" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Scientific_instrument xsd:string
 
 [Term]
 id: ERO:0000007
@@ -64,6 +82,19 @@ property_value: IAO:0000117 "PERSON: Melissa Haendel" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Technique xsd:string
 
 [Term]
+id: ERO:0000276
+name: microscope digital camera
+def: "A digital camera for a microscope, which records image data of a sample image obtained by the microscope in a recording medium." []
+is_a: OBI:0001048 ! digital camera
+relationship: OBI:0000306 OBI:0000368 ! has_function record function
+relationship: OBI:0000306 OBI:0000397 ! has_function image acquisition function
+property_value: IAO:0000111 "microscope digital camera" xsd:string
+property_value: IAO:0000112 "A digital camera hooked up to a microscope, which can be used to capture the images that are visualized by the microscope." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Karen Corday" xsd:string
+property_value: IAO:0000119 http://www.google.com/patents/about?id=XumGAAAAEBAJ xsd:string
+
+[Term]
 id: ERO:0000316
 name: biosafety level
 def: "A biosafety level is the level of the biocontainment precautions required to isolate dangerous biological agents in an enclosed facility. The levels of containment range from the lowest biosafety level 1 to the highest at level 4." []
@@ -73,6 +104,37 @@ property_value: IAO:0000112 "Work with ebola virus is a biosafety level 4." xsd:
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Karen Corday" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Biosafety_level xsd:string
+
+[Term]
+id: ERO:0000614
+name: measurement instrument
+def: "An instrument that has measure function. Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference." []
+intersection_of: ERO:0000004 ! instrument
+intersection_of: OBI:0000306 OBI:0000453 ! has_function measure function
+property_value: IAO:0000112 "A pH meter is used to measure the pH of a sample." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+
+[Term]
+id: ERO:0000615
+name: image acquisition instrument
+def: "An instrument that has image acquisition function. An image acquisition function is a function to acquire an image of a material." []
+intersection_of: ERO:0000004 ! instrument
+intersection_of: OBI:0000306 OBI:0000397 ! has_function image acquisition function
+property_value: IAO:0000112 "A microscope." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+
+[Term]
+id: ERO:0001946
+name: super-resolution microscope
+def: "A microscope that uses light to capture images with a higher resolution than the diffraction limit" []
+is_a: OBI:0400169 ! microscope
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "PERSON: Scott Hoffmann" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Super_resolution_microscopy xsd:string
 
 [Term]
 id: IAO:0000005
@@ -221,6 +283,43 @@ property_value: IAO:0000119 "OBI branch derived" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000368
+name: record function
+def: "A record function is a function that registers or collects information in a particular format on a particular recording medium. For example on paper or a digital representation" []
+is_a: BFO:0000034 ! function
+property_value: IAO:0000111 "record function" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bill Bug" xsd:string
+property_value: IAO:0000117 "Daniel Schober" xsd:string
+property_value: IAO:0000117 "Frank Gibson" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000397
+name: image acquisition function
+def: "An image acquisition function is a function to acquire an image of a material" []
+is_a: OBI:0000453 ! measure function
+property_value: IAO:0000111 "image acquisition function" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Frank Gibson" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000453
+name: measure function
+def: "Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference." []
+is_a: BFO:0000034 ! function
+property_value: IAO:0000111 "measure function" xsd:string
+property_value: IAO:0000112 "A glucometer measures blood glucose concentration, the glucometer has a measure function." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON: Daniel Schober" xsd:string
+property_value: IAO:0000117 "PERSON: Helen Parkinson" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000117 "PERSON:Frank Gibson" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: OBI:0000456
 name: material transformation objective
 def: "an objective specifiction that creates an specific output object from input materials." []
@@ -235,6 +334,29 @@ property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
 property_value: IAO:0000118 "artifact  creation objective" xsd:string
 property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001048
+name: digital camera
+def: "An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor." []
+is_a: ERO:0000004 ! instrument
+property_value: IAO:0000111 "digital camera" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Digital_camera xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0400169
+name: microscope
+def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
+is_a: ERO:0000004 ! instrument
+property_value: IAO:0000111 "microscope" xsd:string
+property_value: IAO:0000112 "PMID:18466942. A light and transmission electron microscope study of hepatic portal tracts in the rhesus monkey (Macacus rhesus). Tissue Cell. 2008 May 6" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "PERSON: Phillippe Rocca-Serra" xsd:string
+property_value: IAO:0000119 "wikipedia" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
@@ -269,6 +391,19 @@ domain: OBI:0000011 ! planned process
 is_a: RO:0000057 ! has_participant
 is_a: RO:0002234 ! has output
 inverse_of: OBI:0000312 ! is_specified_output_of
+
+[Typedef]
+id: OBI:0000306
+name: has_function
+def: "Relation between an independent continuant and a function." []
+property_value: IAO:0000111 "has_function" xsd:string
+property_value: IAO:0000112 "heart has_function to-pump-blood" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON: Chris Mungall" xsd:string
+domain: BFO:0000004 ! independent_continuant
+range: BFO:0000034 ! function
+is_a: RO:0000053 ! bearer_of
 
 [Typedef]
 id: OBI:0000312

@@ -38,6 +38,787 @@ def: "An independent continuant that is spatially extended whose identity is ind
 is_a: BFO:0000004 ! independent continuant
 
 [Term]
+id: FBbi:00000001
+name: sample preparation method
+namespace: image
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+
+[Term]
+id: FBbi:00000002
+name: chemically fixed tissue
+namespace: image
+is_a: FBbi:00001012 ! fixation method
+
+[Term]
+id: FBbi:00000003
+name: coagulating-fixative fixed tissue
+namespace: image
+is_a: FBbi:00000002 ! chemically fixed tissue
+is_a: FBbi:00000263 ! solvent permeabilized
+
+[Term]
+id: FBbi:00000006
+name: ethanol fixed tissue
+namespace: image
+is_a: FBbi:00000003 ! coagulating-fixative fixed tissue
+
+[Term]
+id: FBbi:00000007
+name: methanol fixed tissue
+namespace: image
+is_a: FBbi:00000003 ! coagulating-fixative fixed tissue
+
+[Term]
+id: FBbi:00000008
+name: crosslinking-fixative fixed tissue
+namespace: image
+is_a: FBbi:00000002 ! chemically fixed tissue
+
+[Term]
+id: FBbi:00000010
+name: formaldehyde fixed tissue
+namespace: image
+is_a: FBbi:00000008 ! crosslinking-fixative fixed tissue
+
+[Term]
+id: FBbi:00000011
+name: glutaraldehyde fixed tissue
+namespace: image
+is_a: FBbi:00000008 ! crosslinking-fixative fixed tissue
+
+[Term]
+id: FBbi:00000013
+name: cryofixed tissue
+namespace: image
+is_a: FBbi:00001012 ! fixation method
+
+[Term]
+id: FBbi:00000014
+name: unfixed tissue
+namespace: image
+is_a: FBbi:00001012 ! fixation method
+
+[Term]
+id: FBbi:00000015
+name: embedded tissue
+namespace: image
+is_a: FBbi:00000001 ! sample preparation method
+
+[Term]
+id: FBbi:00000016
+name: tissue in plastic embedment
+namespace: image
+is_a: FBbi:00000015 ! embedded tissue
+
+[Term]
+id: FBbi:00000017
+name: tissue in acrylic resin embedment
+namespace: image
+is_a: FBbi:00000016 ! tissue in plastic embedment
+
+[Term]
+id: FBbi:00000018
+name: tissue in epoxy resin embedment
+namespace: image
+is_a: FBbi:00000016 ! tissue in plastic embedment
+
+[Term]
+id: FBbi:00000019
+name: tissue in wax embedment
+namespace: image
+is_a: FBbi:00000015 ! embedded tissue
+
+[Term]
+id: FBbi:00000020
+name: tissue in paraffin embedment
+namespace: image
+is_a: FBbi:00000019 ! tissue in wax embedment
+
+[Term]
+id: FBbi:00000025
+name: living tissue
+namespace: image
+def: "Unfixed fully hydrated tissue, typically employed to monitor dynamic changes in the living state." [XX:ISBN978-087969683-2]
+synonym: "live-cell imaging" RELATED []
+is_a: FBbi:00000014 ! unfixed tissue
+
+[Term]
+id: FBbi:00000026
+name: sectioned tissue
+namespace: image
+is_a: FBbi:00000001 ! sample preparation method
+
+[Term]
+id: FBbi:00000030
+name: vibratome-sectioned tissue
+namespace: image
+is_a: FBbi:00000026 ! sectioned tissue
+
+[Term]
+id: FBbi:00000031
+name: visualization method
+namespace: image
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+
+[Term]
+id: FBbi:00000037
+name: eosin
+namespace: image
+def: "Staining with an aqueous or alcoholic solution of eosin Y,colors eosinophilic structures in various shades of red, pink and orange. The eosinophilic structures are generally composed of intracellular or extracellular protein. The Lewy bodies and Mallory bodies are examples of eosinophilic structures. Most of the cytoplasm is eosinophilic. Red blood cells are stained intensely red." [Wikipedia:http\://en.wikipedia.org/wiki/H%26E_stain]
+is_a: FBbi:00000460 ! non-specific protein affinity
+property_value: IAO:0000589 "visualization of eosin" xsd:string
+
+[Term]
+id: FBbi:00000041
+name: hematoxylin
+namespace: image
+def: "The staining method involves application of hemalum, which is a complex formed from aluminium ions and oxidized haematoxylin. This colors nuclei of cells (and a few other objects, such as keratohyalin granules) blue. The staining of nuclei by hemalum does not require the presence of DNA and is probably due to binding of the dye-metal complex to arginine-rich basic nucleoproteins such as histones. The mechanism is different from that of nuclear staining by basic (cationic) dyes such as thionine or toluidine blue. Staining by basic dyes is prevented by chemical or enzymatic extraction of nucleic acids. Such extractions do not prevent staining of nuclei by hemalum." [Wikipedia:http\://en.wikipedia.org/wiki/H%26E_stain]
+is_a: FBbi:00000460 ! non-specific protein affinity
+property_value: IAO:0000589 "visualization of hematoxylin" xsd:string
+
+[Term]
+id: FBbi:00000042
+name: methyl green
+namespace: image
+is_a: FBbi:00000422 ! membrane impermeant probe
+property_value: IAO:0000589 "visualization of methyl green" xsd:string
+
+[Term]
+id: FBbi:00000045
+name: nuclear fast red
+namespace: image
+is_a: FBbi:00000567 ! optically-dense stain
+property_value: IAO:0000589 "visualization of nuclear fast red" xsd:string
+
+[Term]
+id: FBbi:00000049
+name: toluidine blue
+namespace: image
+is_a: FBbi:00000567 ! optically-dense stain
+property_value: IAO:0000589 "visualization of toluidine blue" xsd:string
+
+[Term]
+id: FBbi:00000076
+name: genetically encoded enzyme
+namespace: image
+is_a: FBbi:00000079 ! genetically encoded tag
+property_value: IAO:0000589 "visualization of genetically encoded enzyme" xsd:string
+
+[Term]
+id: FBbi:00000077
+name: beta-galactosidase
+namespace: image
+synonym: "lacZ, X-gal" RELATED []
+is_a: FBbi:00000076 ! genetically encoded enzyme
+property_value: IAO:0000589 "visualization of beta-galactosidase" xsd:string
+
+[Term]
+id: FBbi:00000079
+name: genetically encoded tag
+namespace: image
+is_a: FBbi:00000410 ! macromolecular probe
+property_value: IAO:0000589 "visualization of genetically encoded tag" xsd:string
+
+[Term]
+id: FBbi:00000081
+name: ECFP
+namespace: image
+synonym: "CFP" RELATED []
+is_a: FBbi:00000436 ! Cyan fluorescent protein from Aequorea
+property_value: IAO:0000589 "visualization of ECFP" xsd:string
+
+[Term]
+id: FBbi:00000082
+name: EGFP
+namespace: image
+synonym: "GFP" RELATED []
+is_a: FBbi:00000437 ! Green fluorescent protein from Aequorea
+property_value: IAO:0000589 "visualization of EGFP" xsd:string
+
+[Term]
+id: FBbi:00000084
+name: EYFP
+namespace: image
+synonym: "YFP" RELATED []
+is_a: FBbi:00000439 ! Yellow fluorescent protein from Aequorea
+property_value: IAO:0000589 "visualization of EYFP" xsd:string
+
+[Term]
+id: FBbi:00000085
+name: DsRed
+namespace: image
+synonym: "DsRed" RELATED []
+is_a: FBbi:00000482 ! Orange fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of DsRed" xsd:string
+
+[Term]
+id: FBbi:00000093
+name: permeabilized tissue
+namespace: image
+def: "Tissue treated to make cell membranes permeable, typically for the purpose of allowing access by exogenous stains or substrates." []
+is_a: FBbi:00000001 ! sample preparation method
+created_by: jm
+creation_date: 2010-03-07T02:26:37Z
+
+[Term]
+id: FBbi:00000112
+name: probe for lipid
+namespace: image
+is_a: FBbi:00000403 ! small-molecule probe
+property_value: IAO:0000589 "visualization of probe for lipid" xsd:string
+
+[Term]
+id: FBbi:00000115
+name: DiI
+namespace: image
+is_a: FBbi:00000112 ! probe for lipid
+property_value: IAO:0000589 "visualization of DiI" xsd:string
+
+[Term]
+id: FBbi:00000116
+name: DiO
+namespace: image
+is_a: FBbi:00000112 ! probe for lipid
+property_value: IAO:0000589 "visualization of DiO" xsd:string
+
+[Term]
+id: FBbi:00000128
+name: vizualization of label conjugated to probe
+namespace: image
+is_a: FBbi:00000031 ! visualization method
+
+[Term]
+id: FBbi:00000158
+name: acid phosphatase
+namespace: image
+is_a: FBbi:00000456 ! enzyme label
+property_value: IAO:0000589 "visualization of acid phosphatase conjugated to probe" xsd:string
+
+[Term]
+id: FBbi:00000263
+name: solvent permeabilized
+namespace: image
+def: "permeabilization due to extraction of lipid from membranes by an organic solvent such as acetone or methanol." []
+is_a: FBbi:00000093 ! permeabilized tissue
+created_by: jm
+creation_date: 2010-03-07T02:37:29Z
+
+[Term]
+id: FBbi:00000321
+name: resolution-enhancing method
+namespace: image
+def: "methods for increasing the resolution beyond the classical Abbe diffraction limit" []
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+created_by: jm
+creation_date: 2010-03-09T03:12:34Z
+
+[Term]
+id: FBbi:00000332
+name: structured illumination microscopy (SIM)
+namespace: image
+is_a: FBbi:00000321 ! resolution-enhancing method
+created_by: jm
+creation_date: 2010-03-09T03:24:02Z
+
+[Term]
+id: FBbi:00000397
+name: visualization by chemical attribute
+namespace: image
+def: "methods of visualization that differentiate regions of the specimen on the basis of their chemical properties" []
+is_a: FBbi:00000031 ! visualization method
+created_by: jm
+creation_date: 2010-03-14T08:38:50Z
+
+[Term]
+id: FBbi:00000403
+name: small-molecule probe
+namespace: image
+is_a: FBbi:00000397 ! visualization by chemical attribute
+property_value: IAO:0000589 "visualization of small-molecule probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T09:07:35Z
+
+[Term]
+id: FBbi:00000405
+name: fluorescent protein tag
+namespace: image
+is_a: FBbi:00000079 ! genetically encoded tag
+property_value: IAO:0000589 "visualization of fluorescent protein tag" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:54:20Z
+
+[Term]
+id: FBbi:00000406
+name: probes for nucleic acid
+namespace: image
+is_a: FBbi:00000403 ! small-molecule probe
+property_value: IAO:0000589 "visualization of probes for nucleic acid" xsd:string
+created_by: jm
+creation_date: 2010-03-14T09:25:57Z
+
+[Term]
+id: FBbi:00000408
+name: probe for protein
+namespace: image
+is_a: FBbi:00000403 ! small-molecule probe
+property_value: IAO:0000589 "visualization of probe for protein" xsd:string
+created_by: jm
+creation_date: 2010-03-14T09:25:57Z
+
+[Term]
+id: FBbi:00000410
+name: macromolecular probe
+namespace: image
+is_a: FBbi:00000397 ! visualization by chemical attribute
+property_value: IAO:0000589 "visualization of macromolecular probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T09:26:11Z
+
+[Term]
+id: FBbi:00000415
+name: stain with broad specificity
+namespace: image
+synonym: "positive staining" RELATED []
+is_a: FBbi:00000403 ! small-molecule probe
+property_value: IAO:0000589 "visualization of stain with broad specificity" xsd:string
+created_by: jm
+creation_date: 2010-03-15T11:51:34Z
+
+[Term]
+id: FBbi:00000419
+name: freeze_fracture/freeze_etch
+namespace: image
+is_a: FBbi:00000013 ! cryofixed tissue
+created_by: jm
+creation_date: 2010-03-17T01:55:02Z
+
+[Term]
+id: FBbi:00000420
+name: fluorescent protein derived from Aequorea victoria
+namespace: image
+is_a: FBbi:00000405 ! fluorescent protein tag
+property_value: IAO:0000589 "visualization of fluorescent protein derived from Aequorea victoria" xsd:string
+created_by: jm
+creation_date: 2010-03-17T01:59:59Z
+
+[Term]
+id: FBbi:00000422
+name: membrane impermeant probe
+namespace: image
+is_a: FBbi:00000406 ! probes for nucleic acid
+property_value: IAO:0000589 "visualization of membrane impermeant probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T09:33:53Z
+
+[Term]
+id: FBbi:00000433
+name: fluorescent protein derived from Anthozoa
+namespace: image
+is_a: FBbi:00000405 ! fluorescent protein tag
+property_value: IAO:0000589 "visualization of fluorescent protein derived from Anthozoa" xsd:string
+created_by: jm
+creation_date: 2010-03-17T01:59:59Z
+
+[Term]
+id: FBbi:00000434
+name: optical highlighter
+namespace: image
+is_a: FBbi:00000405 ! fluorescent protein tag
+property_value: IAO:0000589 "visualization of optical highlighter" xsd:string
+created_by: jm
+creation_date: 2010-03-17T01:59:59Z
+
+[Term]
+id: FBbi:00000436
+name: Cyan fluorescent protein from Aequorea
+namespace: image
+is_a: FBbi:00000420 ! fluorescent protein derived from Aequorea victoria
+property_value: IAO:0000589 "visualization of Cyan fluorescent protein from Aequorea" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:01:22Z
+
+[Term]
+id: FBbi:00000437
+name: Green fluorescent protein from Aequorea
+namespace: image
+is_a: FBbi:00000420 ! fluorescent protein derived from Aequorea victoria
+property_value: IAO:0000589 "visualization of Green fluorescent protein from Aequorea" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:01:22Z
+
+[Term]
+id: FBbi:00000439
+name: Yellow fluorescent protein from Aequorea
+namespace: image
+is_a: FBbi:00000420 ! fluorescent protein derived from Aequorea victoria
+property_value: IAO:0000589 "visualization of Yellow fluorescent protein from Aequorea" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:01:22Z
+
+[Term]
+id: FBbi:00000440
+name: Alexa Fluor 488
+namespace: image
+is_a: FBbi:00000455 ! fluorescent label
+property_value: IAO:0000589 "visualization of Alexa Fluor 488 conjugated to probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:22:41Z
+
+[Term]
+id: FBbi:00000443
+name: Alexa Fluor 555
+namespace: image
+is_a: FBbi:00000455 ! fluorescent label
+property_value: IAO:0000589 "visualization of Alexa Fluor 555 conjugated to probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:22:41Z
+
+[Term]
+id: FBbi:00000444
+name: Alexa Fluor 594
+namespace: image
+is_a: FBbi:00000455 ! fluorescent label
+property_value: IAO:0000589 "visualization of Alexa Fluor 594 conjugated to probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:22:41Z
+
+[Term]
+id: FBbi:00000445
+name: Alexa Fluor 610
+namespace: image
+is_a: FBbi:00000455 ! fluorescent label
+property_value: IAO:0000589 "visualization of Alexa Fluor 610 conjugated to probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:22:41Z
+
+[Term]
+id: FBbi:00000453
+name: TexasRed
+namespace: image
+def: "fluorophore with ex/em 589/615" []
+is_a: FBbi:00000455 ! fluorescent label
+property_value: IAO:0000589 "visualization of TexasRed conjugated to probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:22:41Z
+
+[Term]
+id: FBbi:00000455
+name: fluorescent label
+namespace: image
+is_a: FBbi:00000128 ! vizualization of label conjugated to probe
+property_value: IAO:0000589 "visualization of fluorescent label conjugated to probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:25:58Z
+
+[Term]
+id: FBbi:00000456
+name: enzyme label
+namespace: image
+is_a: FBbi:00000128 ! vizualization of label conjugated to probe
+property_value: IAO:0000589 "visualization of enzyme label conjugated to probe" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:25:58Z
+
+[Term]
+id: FBbi:00000460
+name: non-specific protein affinity
+namespace: image
+is_a: FBbi:00000408 ! probe for protein
+property_value: IAO:0000589 "visualization of non-specific protein affinity" xsd:string
+created_by: jm
+creation_date: 2010-03-14T10:28:34Z
+
+[Term]
+id: FBbi:00000472
+name: SuperfolderFP
+namespace: image
+is_a: FBbi:00000437 ! Green fluorescent protein from Aequorea
+property_value: IAO:0000589 "visualization of SuperfolderFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:11:07Z
+
+[Term]
+id: FBbi:00000473
+name: T-SapphireFP
+namespace: image
+is_a: FBbi:00000437 ! Green fluorescent protein from Aequorea
+property_value: IAO:0000589 "visualization of T-SapphireFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:11:07Z
+
+[Term]
+id: FBbi:00000474
+name: CitrineFP
+namespace: image
+is_a: FBbi:00000439 ! Yellow fluorescent protein from Aequorea
+property_value: IAO:0000589 "visualization of CitrineFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:14:30Z
+
+[Term]
+id: FBbi:00000477
+name: VenusFP
+namespace: image
+is_a: FBbi:00000439 ! Yellow fluorescent protein from Aequorea
+property_value: IAO:0000589 "visualization of VenusFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:14:30Z
+
+[Term]
+id: FBbi:00000478
+name: yPet
+namespace: image
+is_a: FBbi:00000439 ! Yellow fluorescent protein from Aequorea
+property_value: IAO:0000589 "visualization of yPet" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:14:30Z
+
+[Term]
+id: FBbi:00000479
+name: Blue fluorescent proteins from Anthozoa
+namespace: image
+is_a: FBbi:00000433 ! fluorescent protein derived from Anthozoa
+property_value: IAO:0000589 "visualization of Blue fluorescent proteins from Anthozoa" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:16:24Z
+
+[Term]
+id: FBbi:00000482
+name: Orange fluorescent proteins from Anthozoa
+namespace: image
+is_a: FBbi:00000433 ! fluorescent protein derived from Anthozoa
+property_value: IAO:0000589 "visualization of Orange fluorescent proteins from Anthozoa" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:16:24Z
+
+[Term]
+id: FBbi:00000483
+name: Red fluorescent proteins from Anthozoa
+namespace: image
+is_a: FBbi:00000433 ! fluorescent protein derived from Anthozoa
+property_value: IAO:0000589 "visualization of Red fluorescent proteins from Anthozoa" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:16:24Z
+
+[Term]
+id: FBbi:00000484
+name: Far-red fluorescent proteins from Anthozoa
+namespace: image
+is_a: FBbi:00000433 ! fluorescent protein derived from Anthozoa
+property_value: IAO:0000589 "visualization of Far-red fluorescent proteins from Anthozoa" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:16:24Z
+
+[Term]
+id: FBbi:00000486
+name: mTagBFP
+namespace: image
+is_a: FBbi:00000479 ! Blue fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of mTagBFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:16:38Z
+
+[Term]
+id: FBbi:00000494
+name: mKateFP
+namespace: image
+is_a: FBbi:00000484 ! Far-red fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of mKateFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:19:04Z
+
+[Term]
+id: FBbi:00000495
+name: mKate2FP
+namespace: image
+is_a: FBbi:00000484 ! Far-red fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of mKate2FP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:19:04Z
+
+[Term]
+id: FBbi:00000514
+name: mOrangeFP
+namespace: image
+is_a: FBbi:00000482 ! Orange fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of mOrangeFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:22:53Z
+
+[Term]
+id: FBbi:00000517
+name: TagRFP-T
+namespace: image
+is_a: FBbi:00000482 ! Orange fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of TagRFP-T" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:22:53Z
+
+[Term]
+id: FBbi:00000518
+name: tdTomatoFP
+namespace: image
+is_a: FBbi:00000482 ! Orange fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of tdTomatoFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:22:53Z
+
+[Term]
+id: FBbi:00000524
+name: mAppleFP
+namespace: image
+is_a: FBbi:00000483 ! Red fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of mAppleFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:24:26Z
+
+[Term]
+id: FBbi:00000525
+name: mCherryFP
+namespace: image
+is_a: FBbi:00000483 ! Red fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of mCherryFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:24:26Z
+
+[Term]
+id: FBbi:00000529
+name: mStrawberryFP
+namespace: image
+is_a: FBbi:00000483 ! Red fluorescent proteins from Anthozoa
+property_value: IAO:0000589 "visualization of mStrawberryFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:24:26Z
+
+[Term]
+id: FBbi:00000536
+name: photoactivatable fluorescent protein
+namespace: image
+is_a: FBbi:00000434 ! optical highlighter
+property_value: IAO:0000589 "visualization of photoactivatable fluorescent protein" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:27:50Z
+
+[Term]
+id: FBbi:00000537
+name: photoconvertible fluorescent protein
+namespace: image
+is_a: FBbi:00000434 ! optical highlighter
+property_value: IAO:0000589 "visualization of photoconvertible fluorescent protein" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:27:50Z
+
+[Term]
+id: FBbi:00000544
+name: PA-GFP
+namespace: image
+is_a: FBbi:00000536 ! photoactivatable fluorescent protein
+property_value: IAO:0000589 "visualization of PA-GFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:31:26Z
+
+[Term]
+id: FBbi:00000545
+name: PA-CFP
+namespace: image
+is_a: FBbi:00000536 ! photoactivatable fluorescent protein
+property_value: IAO:0000589 "visualization of PA-CFP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:31:26Z
+
+[Term]
+id: FBbi:00000549
+name: Dendra2FP
+namespace: image
+is_a: FBbi:00000537 ! photoconvertible fluorescent protein
+property_value: IAO:0000589 "visualization of Dendra2FP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:32:35Z
+
+[Term]
+id: FBbi:00000552
+name: mEOS2FP
+namespace: image
+is_a: FBbi:00000537 ! photoconvertible fluorescent protein
+property_value: IAO:0000589 "visualization of mEOS2FP" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:32:35Z
+
+[Term]
+id: FBbi:00000553
+name: mKikGR
+namespace: image
+is_a: FBbi:00000537 ! photoconvertible fluorescent protein
+property_value: IAO:0000589 "visualization of mKikGR" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:32:35Z
+
+[Term]
+id: FBbi:00000555
+name: wtKIikGR
+namespace: image
+is_a: FBbi:00000537 ! photoconvertible fluorescent protein
+property_value: IAO:0000589 "visualization of wtKIikGR" xsd:string
+created_by: jm
+creation_date: 2010-03-17T02:32:35Z
+
+[Term]
+id: FBbi:00000567
+name: optically-dense stain
+namespace: image
+is_a: FBbi:00000415 ! stain with broad specificity
+property_value: IAO:0000589 "visualization of optically-dense stain" xsd:string
+created_by: jm
+creation_date: 2010-04-27T10:29:56Z
+
+[Term]
+id: FBbi:00000581
+name: critical_point dried specimen
+namespace: image
+def: "specimen from which water has been removed by a process that avoids liquid-gas and solid-gas phase transitions." []
+is_a: FBbi:00000013 ! cryofixed tissue
+created_by: jm
+creation_date: 2010-05-04T12:31:12Z
+
+[Term]
+id: FBbi:00000583
+name: lyophilized specimen
+namespace: image
+def: "specimen from which water has been removed by evaporation under vacuum at a temperature below freezing." []
+is_a: FBbi:00000013 ! cryofixed tissue
+created_by: jm
+creation_date: 2010-05-04T12:49:31Z
+
+[Term]
+id: FBbi:00000584
+name: X-Rhodamine
+namespace: image
+def: "fluorophore derivative of rhodamine with ex/em 580/605" []
+is_a: FBbi:00000455 ! fluorescent label
+property_value: IAO:0000589 "visualization of X-Rhodamine conjugated to probe" xsd:string
+created_by: jm
+creation_date: 2010-05-04T09:02:54Z
+
+[Term]
+id: FBbi:00000621
+name: freeze-substituted tissue
+namespace: image
+is_a: FBbi:00000013 ! cryofixed tissue
+created_by: jm
+creation_date: 2011-05-23T10:51:16Z
+
+[Term]
+id: FBbi:00001012
+name: fixation method
+namespace: image
+is_a: FBbi:00000001 ! sample preparation method
+
+[Term]
+id: FBbi_root:00000000
+name: method involved in biological imaging
+namespace: image
+
+[Term]
 id: GO:0003674
 name: molecular_function
 is_a: BFO:0000015 ! process

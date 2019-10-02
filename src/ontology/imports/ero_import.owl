@@ -139,6 +139,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000306 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111>has_function</obo:IAO_0000111>
+        <obo:IAO_0000112>heart has_function to-pump-blood</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>Relation between an independent continuant and a function.</obo:IAO_0000115>
+        <obo:IAO_0000117>GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Chris Mungall</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has_function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
@@ -345,11 +362,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>function</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:label xml:lang="en">material_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>instrument</obo:IAO_0000111>
+        <obo:IAO_0000112>A flow cytometer.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>Material entity that is designed to have a function and play a role in scientific investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Scientific_instrument</obo:IAO_0000119>
+        <rdfs:comment>See OBI listserv discussion for considerations in defining instrument. http://sourceforge.net/tracker/index.php?func=detail&amp;aid=2894801&amp;group_id=177891&amp;atid=886178</rdfs:comment>
+        <rdfs:label>instrument</rdfs:label>
     </owl:Class>
     
 
@@ -369,6 +417,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001048"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>microscope digital camera</obo:IAO_0000111>
+        <obo:IAO_0000112>A digital camera hooked up to a microscope, which can be used to capture the images that are visualized by the microscope.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A digital camera for a microscope, which records image data of a sample image obtained by the microscope in a recording medium.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Karen Corday</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.google.com/patents/about?id=XumGAAAAEBAJ</obo:IAO_0000119>
+        <rdfs:label>microscope digital camera</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000316 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000316">
@@ -380,6 +455,67 @@
         <obo:IAO_0000117>PERSON: Karen Corday</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Biosafety_level</obo:IAO_0000119>
         <rdfs:label>biosafety level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000614">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112>A pH meter is used to measure the pH of a sample.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An instrument that has measure function. Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>measurement instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000615">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112>A microscope.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An instrument that has image acquisition function. An image acquisition function is a function to acquire an image of a material.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <rdfs:label>image acquisition instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001946 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001946">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A microscope that uses light to capture images with a higher resolution than the diffraction limit</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Super_resolution_microscopy</obo:IAO_0000119>
+        <rdfs:label>super-resolution microscope</rdfs:label>
     </owl:Class>
     
 
@@ -644,6 +780,55 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000368">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">record function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A record function is a function that registers or collects information in a particular format on a particular recording medium. For example on paper or a digital representation</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">record function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <obo:IAO_0000111 xml:lang="en">image acquisition function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An image acquisition function is a function to acquire an image of a material</obo:IAO_0000115>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">image acquisition function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">measure function</obo:IAO_0000111>
+        <obo:IAO_0000112>A glucometer measures blood glucose concentration, the glucometer has a measure function.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">measure function</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000456 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000456">
@@ -661,6 +846,37 @@
         <obo:IAO_0000119>GROUP: OBI PlanAndPlannedProcess Branch</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">material transformation objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111>digital camera</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Digital_camera</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>digital camera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000111 xml:lang="en">microscope</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID:18466942. A light and transmission electron microscope study of hepatic portal tracts in the rhesus monkey (Macacus rhesus). Tissue Cell. 2008 May 6</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Phillippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>wikipedia</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">microscope</rdfs:label>
     </owl:Class>
     
 

@@ -1899,6 +1899,1290 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_root_00000000"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000001</oboInOwl:id>
+        <rdfs:label>sample preparation method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00001012"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000002</oboInOwl:id>
+        <rdfs:label>chemically fixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000263"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000003</oboInOwl:id>
+        <rdfs:label>coagulating-fixative fixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000003"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000006</oboInOwl:id>
+        <rdfs:label>ethanol fixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000003"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000007</oboInOwl:id>
+        <rdfs:label>methanol fixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000002"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000008</oboInOwl:id>
+        <rdfs:label>crosslinking-fixative fixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000008"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000010</oboInOwl:id>
+        <rdfs:label>formaldehyde fixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000008"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000011</oboInOwl:id>
+        <rdfs:label>glutaraldehyde fixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00001012"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000013</oboInOwl:id>
+        <rdfs:label>cryofixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00001012"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000014</oboInOwl:id>
+        <rdfs:label>unfixed tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000001"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000015</oboInOwl:id>
+        <rdfs:label>embedded tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000015"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000016</oboInOwl:id>
+        <rdfs:label>tissue in plastic embedment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000016"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000017</oboInOwl:id>
+        <rdfs:label>tissue in acrylic resin embedment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000016"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000018</oboInOwl:id>
+        <rdfs:label>tissue in epoxy resin embedment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000015"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000019</oboInOwl:id>
+        <rdfs:label>tissue in wax embedment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000019"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000020</oboInOwl:id>
+        <rdfs:label>tissue in paraffin embedment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000014"/>
+        <obo:IAO_0000115>Unfixed fully hydrated tissue, typically employed to monitor dynamic changes in the living state.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>live-cell imaging</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000025</oboInOwl:id>
+        <rdfs:label>living tissue</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000025"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Unfixed fully hydrated tissue, typically employed to monitor dynamic changes in the living state.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XX:ISBN978-087969683-2</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000001"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000026</oboInOwl:id>
+        <rdfs:label>sectioned tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000026"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000030</oboInOwl:id>
+        <rdfs:label>vibratome-sectioned tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_root_00000000"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000031</oboInOwl:id>
+        <rdfs:label>visualization method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000460"/>
+        <obo:IAO_0000115>Staining with an aqueous or alcoholic solution of eosin Y,colors eosinophilic structures in various shades of red, pink and orange. The eosinophilic structures are generally composed of intracellular or extracellular protein. The Lewy bodies and Mallory bodies are examples of eosinophilic structures. Most of the cytoplasm is eosinophilic. Red blood cells are stained intensely red.</obo:IAO_0000115>
+        <obo:IAO_0000589>visualization of eosin</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000037</oboInOwl:id>
+        <rdfs:label>eosin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000037"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Staining with an aqueous or alcoholic solution of eosin Y,colors eosinophilic structures in various shades of red, pink and orange. The eosinophilic structures are generally composed of intracellular or extracellular protein. The Lewy bodies and Mallory bodies are examples of eosinophilic structures. Most of the cytoplasm is eosinophilic. Red blood cells are stained intensely red.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/H%26E_stain</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000460"/>
+        <obo:IAO_0000115>The staining method involves application of hemalum, which is a complex formed from aluminium ions and oxidized haematoxylin. This colors nuclei of cells (and a few other objects, such as keratohyalin granules) blue. The staining of nuclei by hemalum does not require the presence of DNA and is probably due to binding of the dye-metal complex to arginine-rich basic nucleoproteins such as histones. The mechanism is different from that of nuclear staining by basic (cationic) dyes such as thionine or toluidine blue. Staining by basic dyes is prevented by chemical or enzymatic extraction of nucleic acids. Such extractions do not prevent staining of nuclei by hemalum.</obo:IAO_0000115>
+        <obo:IAO_0000589>visualization of hematoxylin</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000041</oboInOwl:id>
+        <rdfs:label>hematoxylin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The staining method involves application of hemalum, which is a complex formed from aluminium ions and oxidized haematoxylin. This colors nuclei of cells (and a few other objects, such as keratohyalin granules) blue. The staining of nuclei by hemalum does not require the presence of DNA and is probably due to binding of the dye-metal complex to arginine-rich basic nucleoproteins such as histones. The mechanism is different from that of nuclear staining by basic (cationic) dyes such as thionine or toluidine blue. Staining by basic dyes is prevented by chemical or enzymatic extraction of nucleic acids. Such extractions do not prevent staining of nuclei by hemalum.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:http://en.wikipedia.org/wiki/H%26E_stain</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000422"/>
+        <obo:IAO_0000589>visualization of methyl green</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000042</oboInOwl:id>
+        <rdfs:label>methyl green</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000567"/>
+        <obo:IAO_0000589>visualization of nuclear fast red</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000045</oboInOwl:id>
+        <rdfs:label>nuclear fast red</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000567"/>
+        <obo:IAO_0000589>visualization of toluidine blue</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000049</oboInOwl:id>
+        <rdfs:label>toluidine blue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000079"/>
+        <obo:IAO_0000589>visualization of genetically encoded enzyme</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000076</oboInOwl:id>
+        <rdfs:label>genetically encoded enzyme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000076"/>
+        <obo:IAO_0000589>visualization of beta-galactosidase</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>lacZ, X-gal</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000077</oboInOwl:id>
+        <rdfs:label>beta-galactosidase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000410"/>
+        <obo:IAO_0000589>visualization of genetically encoded tag</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000079</oboInOwl:id>
+        <rdfs:label>genetically encoded tag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000436"/>
+        <obo:IAO_0000589>visualization of ECFP</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>CFP</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000081</oboInOwl:id>
+        <rdfs:label>ECFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000437"/>
+        <obo:IAO_0000589>visualization of EGFP</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>GFP</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000082</oboInOwl:id>
+        <rdfs:label>EGFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000439"/>
+        <obo:IAO_0000589>visualization of EYFP</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>YFP</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000084</oboInOwl:id>
+        <rdfs:label>EYFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000482"/>
+        <obo:IAO_0000589>visualization of DsRed</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>DsRed</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000085</oboInOwl:id>
+        <rdfs:label>DsRed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000001"/>
+        <obo:IAO_0000115>Tissue treated to make cell membranes permeable, typically for the purpose of allowing access by exogenous stains or substrates.</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-07T02:26:37Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000093</oboInOwl:id>
+        <rdfs:label>permeabilized tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000403"/>
+        <obo:IAO_0000589>visualization of probe for lipid</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000112</oboInOwl:id>
+        <rdfs:label>probe for lipid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000112"/>
+        <obo:IAO_0000589>visualization of DiI</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000115</oboInOwl:id>
+        <rdfs:label>DiI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000112"/>
+        <obo:IAO_0000589>visualization of DiO</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000116</oboInOwl:id>
+        <rdfs:label>DiO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000031"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000128</oboInOwl:id>
+        <rdfs:label>vizualization of label conjugated to probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000456"/>
+        <obo:IAO_0000589>visualization of acid phosphatase conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000158</oboInOwl:id>
+        <rdfs:label>acid phosphatase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000093"/>
+        <obo:IAO_0000115>permeabilization due to extraction of lipid from membranes by an organic solvent such as acetone or methanol.</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-07T02:37:29Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000263</oboInOwl:id>
+        <rdfs:label>solvent permeabilized</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_root_00000000"/>
+        <obo:IAO_0000115>methods for increasing the resolution beyond the classical Abbe diffraction limit</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T03:12:34Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000321</oboInOwl:id>
+        <rdfs:label>resolution-enhancing method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000321"/>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T03:24:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000332</oboInOwl:id>
+        <rdfs:label>structured illumination microscopy (SIM)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000031"/>
+        <obo:IAO_0000115>methods of visualization that differentiate regions of the specimen on the basis of their chemical properties</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T08:38:50Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000397</oboInOwl:id>
+        <rdfs:label>visualization by chemical attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000397"/>
+        <obo:IAO_0000589>visualization of small-molecule probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T09:07:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000403</oboInOwl:id>
+        <rdfs:label>small-molecule probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000405">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000079"/>
+        <obo:IAO_0000589>visualization of fluorescent protein tag</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:54:20Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000405</oboInOwl:id>
+        <rdfs:label>fluorescent protein tag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000403"/>
+        <obo:IAO_0000589>visualization of probes for nucleic acid</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T09:25:57Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000406</oboInOwl:id>
+        <rdfs:label>probes for nucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000403"/>
+        <obo:IAO_0000589>visualization of probe for protein</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T09:25:57Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000408</oboInOwl:id>
+        <rdfs:label>probe for protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000410">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000397"/>
+        <obo:IAO_0000589>visualization of macromolecular probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T09:26:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000410</oboInOwl:id>
+        <rdfs:label>macromolecular probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000403"/>
+        <obo:IAO_0000589>visualization of stain with broad specificity</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-15T11:51:34Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>positive staining</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000415</oboInOwl:id>
+        <rdfs:label>stain with broad specificity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000013"/>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T01:55:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000419</oboInOwl:id>
+        <rdfs:label>freeze_fracture/freeze_etch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000420">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000405"/>
+        <obo:IAO_0000589>visualization of fluorescent protein derived from Aequorea victoria</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T01:59:59Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000420</oboInOwl:id>
+        <rdfs:label>fluorescent protein derived from Aequorea victoria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000422">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000406"/>
+        <obo:IAO_0000589>visualization of membrane impermeant probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T09:33:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000422</oboInOwl:id>
+        <rdfs:label>membrane impermeant probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000405"/>
+        <obo:IAO_0000589>visualization of fluorescent protein derived from Anthozoa</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T01:59:59Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000433</oboInOwl:id>
+        <rdfs:label>fluorescent protein derived from Anthozoa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000434 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000434">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000405"/>
+        <obo:IAO_0000589>visualization of optical highlighter</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T01:59:59Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000434</oboInOwl:id>
+        <rdfs:label>optical highlighter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000436">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000420"/>
+        <obo:IAO_0000589>visualization of Cyan fluorescent protein from Aequorea</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:01:22Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000436</oboInOwl:id>
+        <rdfs:label>Cyan fluorescent protein from Aequorea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000437 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000437">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000420"/>
+        <obo:IAO_0000589>visualization of Green fluorescent protein from Aequorea</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:01:22Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000437</oboInOwl:id>
+        <rdfs:label>Green fluorescent protein from Aequorea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000439 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000420"/>
+        <obo:IAO_0000589>visualization of Yellow fluorescent protein from Aequorea</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:01:22Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000439</oboInOwl:id>
+        <rdfs:label>Yellow fluorescent protein from Aequorea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000440 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000440">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000455"/>
+        <obo:IAO_0000589>visualization of Alexa Fluor 488 conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:22:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000440</oboInOwl:id>
+        <rdfs:label>Alexa Fluor 488</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000443">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000455"/>
+        <obo:IAO_0000589>visualization of Alexa Fluor 555 conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:22:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000443</oboInOwl:id>
+        <rdfs:label>Alexa Fluor 555</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000444 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000444">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000455"/>
+        <obo:IAO_0000589>visualization of Alexa Fluor 594 conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:22:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000444</oboInOwl:id>
+        <rdfs:label>Alexa Fluor 594</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000455"/>
+        <obo:IAO_0000589>visualization of Alexa Fluor 610 conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:22:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000445</oboInOwl:id>
+        <rdfs:label>Alexa Fluor 610</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000455"/>
+        <obo:IAO_0000115>fluorophore with ex/em 589/615</obo:IAO_0000115>
+        <obo:IAO_0000589>visualization of TexasRed conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:22:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000453</oboInOwl:id>
+        <rdfs:label>TexasRed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000455 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000128"/>
+        <obo:IAO_0000589>visualization of fluorescent label conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:25:58Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000455</oboInOwl:id>
+        <rdfs:label>fluorescent label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000456 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000456">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000128"/>
+        <obo:IAO_0000589>visualization of enzyme label conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:25:58Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000456</oboInOwl:id>
+        <rdfs:label>enzyme label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000460 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000460">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000408"/>
+        <obo:IAO_0000589>visualization of non-specific protein affinity</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-14T10:28:34Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000460</oboInOwl:id>
+        <rdfs:label>non-specific protein affinity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000437"/>
+        <obo:IAO_0000589>visualization of SuperfolderFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:11:07Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000472</oboInOwl:id>
+        <rdfs:label>SuperfolderFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000437"/>
+        <obo:IAO_0000589>visualization of T-SapphireFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:11:07Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000473</oboInOwl:id>
+        <rdfs:label>T-SapphireFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000474">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000439"/>
+        <obo:IAO_0000589>visualization of CitrineFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:14:30Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000474</oboInOwl:id>
+        <rdfs:label>CitrineFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000439"/>
+        <obo:IAO_0000589>visualization of VenusFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:14:30Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000477</oboInOwl:id>
+        <rdfs:label>VenusFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000478 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000478">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000439"/>
+        <obo:IAO_0000589>visualization of yPet</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:14:30Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000478</oboInOwl:id>
+        <rdfs:label>yPet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000433"/>
+        <obo:IAO_0000589>visualization of Blue fluorescent proteins from Anthozoa</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:16:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000479</oboInOwl:id>
+        <rdfs:label>Blue fluorescent proteins from Anthozoa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000433"/>
+        <obo:IAO_0000589>visualization of Orange fluorescent proteins from Anthozoa</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:16:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000482</oboInOwl:id>
+        <rdfs:label>Orange fluorescent proteins from Anthozoa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000433"/>
+        <obo:IAO_0000589>visualization of Red fluorescent proteins from Anthozoa</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:16:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000483</oboInOwl:id>
+        <rdfs:label>Red fluorescent proteins from Anthozoa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000484 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000484">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000433"/>
+        <obo:IAO_0000589>visualization of Far-red fluorescent proteins from Anthozoa</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:16:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000484</oboInOwl:id>
+        <rdfs:label>Far-red fluorescent proteins from Anthozoa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000479"/>
+        <obo:IAO_0000589>visualization of mTagBFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:16:38Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000486</oboInOwl:id>
+        <rdfs:label>mTagBFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000484"/>
+        <obo:IAO_0000589>visualization of mKateFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:19:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000494</oboInOwl:id>
+        <rdfs:label>mKateFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000484"/>
+        <obo:IAO_0000589>visualization of mKate2FP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:19:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000495</oboInOwl:id>
+        <rdfs:label>mKate2FP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000482"/>
+        <obo:IAO_0000589>visualization of mOrangeFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:22:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000514</oboInOwl:id>
+        <rdfs:label>mOrangeFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000482"/>
+        <obo:IAO_0000589>visualization of TagRFP-T</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:22:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000517</oboInOwl:id>
+        <rdfs:label>TagRFP-T</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000482"/>
+        <obo:IAO_0000589>visualization of tdTomatoFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:22:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000518</oboInOwl:id>
+        <rdfs:label>tdTomatoFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000483"/>
+        <obo:IAO_0000589>visualization of mAppleFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:24:26Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000524</oboInOwl:id>
+        <rdfs:label>mAppleFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000483"/>
+        <obo:IAO_0000589>visualization of mCherryFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:24:26Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000525</oboInOwl:id>
+        <rdfs:label>mCherryFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000529 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000483"/>
+        <obo:IAO_0000589>visualization of mStrawberryFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:24:26Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000529</oboInOwl:id>
+        <rdfs:label>mStrawberryFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000434"/>
+        <obo:IAO_0000589>visualization of photoactivatable fluorescent protein</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:27:50Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000536</oboInOwl:id>
+        <rdfs:label>photoactivatable fluorescent protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000434"/>
+        <obo:IAO_0000589>visualization of photoconvertible fluorescent protein</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:27:50Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000537</oboInOwl:id>
+        <rdfs:label>photoconvertible fluorescent protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000536"/>
+        <obo:IAO_0000589>visualization of PA-GFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:31:26Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000544</oboInOwl:id>
+        <rdfs:label>PA-GFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000536"/>
+        <obo:IAO_0000589>visualization of PA-CFP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:31:26Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000545</oboInOwl:id>
+        <rdfs:label>PA-CFP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000537"/>
+        <obo:IAO_0000589>visualization of Dendra2FP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:32:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000549</oboInOwl:id>
+        <rdfs:label>Dendra2FP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000537"/>
+        <obo:IAO_0000589>visualization of mEOS2FP</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:32:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000552</oboInOwl:id>
+        <rdfs:label>mEOS2FP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000553 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000537"/>
+        <obo:IAO_0000589>visualization of mKikGR</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:32:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000553</oboInOwl:id>
+        <rdfs:label>mKikGR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000537"/>
+        <obo:IAO_0000589>visualization of wtKIikGR</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-17T02:32:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000555</oboInOwl:id>
+        <rdfs:label>wtKIikGR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000567 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000567">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000415"/>
+        <obo:IAO_0000589>visualization of optically-dense stain</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-04-27T10:29:56Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000567</oboInOwl:id>
+        <rdfs:label>optically-dense stain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000581 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000581">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000013"/>
+        <obo:IAO_0000115>specimen from which water has been removed by a process that avoids liquid-gas and solid-gas phase transitions.</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-05-04T12:31:12Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000581</oboInOwl:id>
+        <rdfs:label>critical_point dried specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000013"/>
+        <obo:IAO_0000115>specimen from which water has been removed by evaporation under vacuum at a temperature below freezing.</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-05-04T12:49:31Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000583</oboInOwl:id>
+        <rdfs:label>lyophilized specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000584 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000455"/>
+        <obo:IAO_0000115>fluorophore derivative of rhodamine with ex/em 580/605</obo:IAO_0000115>
+        <obo:IAO_0000589>visualization of X-Rhodamine conjugated to probe</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-05-04T09:02:54Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000584</oboInOwl:id>
+        <rdfs:label>X-Rhodamine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000013"/>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-05-23T10:51:16Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000621</oboInOwl:id>
+        <rdfs:label>freeze-substituted tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00001012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00001012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000001"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00001012</oboInOwl:id>
+        <rdfs:label>fixation method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_root_00000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_root_00000000">
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi_root:00000000</oboInOwl:id>
+        <rdfs:label>method involved in biological imaging</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003674">

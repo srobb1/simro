@@ -228,6 +228,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>A protocol is an information entity which is a set of instructions that describe an how an experiment is done.</obo:IAO_0000115>
+        <obo:IAO_0000115>a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001442</efo:EFO_URI>
+        <efo:branch_class>true</efo:branch_class>
+        <oboInOwl:hasDbXref>MO:214</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C42651</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:260686004</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>method</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>method used in an experiment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plan specification</oboInOwl:hasExactSynonym>
+        <rdfs:label>protocol</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0000001 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000001">

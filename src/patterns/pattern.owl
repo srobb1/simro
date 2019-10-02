@@ -8,15 +8,20 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<urn:unnamed:ontology#ont1>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000460>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0001000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(Class(<http://purl.obolibrary.org/obo/upheno/patterns/abnormalAnatomicalEntity.yaml>))
+Declaration(Class(<urn:dosdp:defined_class>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002314>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002573>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_0000611>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
@@ -33,5 +38,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/upheno/patterns/abnormalAnatomicalEntity.yaml> "abnormal 'anatomical entity'"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/upheno/patterns/abnormalAnatomicalEntity.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PATO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002573> <http://purl.obolibrary.org/obo/PATO_0000460>))))
 
+# Class: <urn:dosdp:defined_class> ('material entity')
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <urn:dosdp:defined_class> "'material entity' used by 'institutional group'."^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "xsd:string"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <urn:dosdp:defined_class> "'new_entity' of 'parent_entity' needs def"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <urn:dosdp:defined_class> ""^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <urn:dosdp:defined_class> "xsd:string"^^xsd:string)
+AnnotationAssertion(rdfs:label <urn:dosdp:defined_class> "'material entity'"^^xsd:string)
+AnnotationAssertion(rdfs:label <urn:dosdp:defined_class> "'new_entity'"^^xsd:string)
+EquivalentClasses(<urn:dosdp:defined_class> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001000>)))
+SubClassOf(<urn:dosdp:defined_class> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+
+AnnotationAssertion(<http://purl.org/dc/terms/title> <tbd> "entityUsedByGroup"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/title> <tbd> "simrTerms.yam"^^xsd:string)
 )
