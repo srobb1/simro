@@ -1,0 +1,152 @@
+format-version: 1.2
+data-version: simro/releases/2019-10-02/imports/uberon_import.owl
+subsetdef: upper_level ""
+ontology: simro/imports/uberon_import
+
+[Term]
+id: UBERON:0001062
+name: anatomical entity
+namespace: uberon
+def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." [FMA:62955, http://orcid.org/0000-0001-9114-8737]
+subset: upper_level
+xref: AAO:0010841
+xref: AEO:0000000
+xref: BILA:0000000
+xref: BIRNLEX:6
+xref: CARO:0000000
+xref: EHDAA2:0002229
+xref: FBbt:10000000
+xref: FBbt_root:00000000
+xref: FMA:62955
+xref: HAO:0000000
+xref: http://linkedlifedata.com/resource/umls/id/C1515976
+xref: MA:0000001
+xref: NCIT:C12219
+xref: TAO:0100000
+xref: TGMA:0001822
+xref: UMLS:C1515976 {source="ncithesaurus:Anatomic_Structure_System_or_Substance"}
+xref: WBbt:0000100
+xref: XAO:0000000
+xref: ZFA:0100000
+
+[Typedef]
+id: developmentally_contributes_to
+name: developmentally_contributes_to
+namespace: uberon
+xref: RO:0002255
+holds_over_chain: develops_into part_of
+is_a: has_potential_to_developmentally_contribute_to ! has potential to developmentally contribute to
+
+[Typedef]
+id: develops_from
+name: develops_from
+namespace: uberon
+xref: RO:0002202
+holds_over_chain: part_of develops_from
+is_transitive: true
+is_a: has_developmental_contribution_from ! has developmental contribution from
+inverse_of: develops_into ! develops_into
+transitive_over: part_of ! part of
+
+[Typedef]
+id: develops_into
+name: develops_into
+namespace: uberon
+xref: RO:0002203
+is_a: has_potential_to_develop_into ! has potential to develop into
+
+[Typedef]
+id: has_developmental_contribution_from
+name: has developmental contribution from
+namespace: uberon
+xref: RO:0002254
+holds_over_chain: has_part develops_from
+is_transitive: true
+
+[Typedef]
+id: has_member
+name: has member
+namespace: uberon
+xref: RO:0002351
+is_a: has_part ! has part
+
+[Typedef]
+id: has_part
+name: has part
+namespace: uberon
+xref: BFO:0000051
+is_transitive: true
+
+[Typedef]
+id: has_potential_to_develop_into
+name: has potential to develop into
+namespace: uberon
+def: "x has the potential to develop into y iff x develops into y or if x is capable of developing into y" []
+xref: RO:0002387
+
+[Typedef]
+id: has_potential_to_developmentally_contribute_to
+name: has potential to developmentally contribute to
+namespace: uberon
+def: "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y" []
+xref: RO:0002385
+
+[Typedef]
+id: immediately_preceded_by
+name: immediately_preceded_by
+namespace: uberon
+def: "X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)" []
+synonym: "directly preceded by" EXACT []
+synonym: "is directly preceded by" EXACT []
+synonym: "is immediately preceded by" EXACT [SIO:000251]
+synonym: "starts_at_end_of" EXACT []
+xref: RO:0002087
+property_value: seeAlso SIO:000251
+property_value: UBPROP:0000001 "A non-transitive temporal relation in which one process immediately precedes another process, such that there is no interval of time between the two processes[SIO:000251]." xsd:string {source="SIO:000251"}
+is_a: preceded_by ! preceded_by
+
+[Typedef]
+id: member_of
+name: member of
+namespace: uberon
+xref: RO:0002350
+is_a: part_of ! part of
+inverse_of: has_member ! has member
+
+[Typedef]
+id: part_of
+name: part of
+namespace: uberon
+xref: BFO:0000050
+is_transitive: true
+inverse_of: has_part ! has part
+
+[Typedef]
+id: preceded_by
+name: preceded_by
+namespace: uberon
+def: "X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)" []
+synonym: "is preceded by" EXACT [SIO:000249]
+synonym: "takes place after" EXACT [Allen:precedes]
+xref: BFO:0000062
+is_transitive: true
+
+[Typedef]
+id: precedes
+name: precedes
+namespace: uberon
+xref: BFO:0000063
+is_transitive: true
+
+[Typedef]
+id: produced_by
+name: produced_by
+namespace: uberon
+xref: RO:0003001
+
+[Typedef]
+id: produces
+name: produces
+namespace: uberon
+xref: RO:0003000
+

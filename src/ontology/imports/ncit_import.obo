@@ -1,0 +1,4 @@
+format-version: 1.2
+data-version: simro/releases/2019-10-02/imports/ncit_import.owl
+ontology: simro/imports/ncit_import
+

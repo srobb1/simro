@@ -1,0 +1,394 @@
+format-version: 1.2
+data-version: simro/releases/2019-10-02/imports/ncbitaxon_import.owl
+ontology: simro/imports/ncbitaxon_import
+
+[Term]
+id: NCBITaxon:1
+name: root
+namespace: ncbi_taxonomy
+synonym: "all" RELATED synonym []
+xref: GC_ID:1
+
+[Term]
+id: NCBITaxon:117570
+name: Teleostomi
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:7776 ! Gnathostomata <vertebrate>
+
+[Term]
+id: NCBITaxon:117571
+name: Euteleostomi
+namespace: ncbi_taxonomy
+alt_id: NCBITaxon:40673
+synonym: "bony vertebrates" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:117570 ! Teleostomi
+
+[Term]
+id: NCBITaxon:131567
+name: cellular organisms
+namespace: ncbi_taxonomy
+synonym: "biota" RELATED synonym []
+xref: GC_ID:1
+is_a: NCBITaxon:1 ! root
+
+[Term]
+id: NCBITaxon:1338369
+name: Dipnotetrapodomorpha
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:8287 ! Sarcopterygii
+
+[Term]
+id: NCBITaxon:1437010
+name: Boreoeutheria
+namespace: ncbi_taxonomy
+synonym: "Boreotheria" RELATED synonym []
+xref: GC_ID:1
+xref: PMID:11743200
+xref: PMID:11791233
+is_a: NCBITaxon:9347 ! Eutheria
+
+[Term]
+id: NCBITaxon:2
+name: Bacteria
+namespace: ncbi_taxonomy
+synonym: "bacteria" RELATED blast_name []
+synonym: "eubacteria" EXACT genbank_common_name []
+synonym: "Monera" RELATED in_part []
+synonym: "Procaryotae" RELATED in_part []
+synonym: "Prokaryota" RELATED in_part []
+synonym: "Prokaryotae" RELATED in_part []
+synonym: "prokaryote" RELATED in_part []
+synonym: "prokaryotes" RELATED in_part []
+xref: GC_ID:11
+xref: PMID:10425795
+xref: PMID:10425796
+xref: PMID:10425797
+xref: PMID:10490293
+xref: PMID:10843050
+xref: PMID:10939651
+xref: PMID:10939673
+xref: PMID:10939677
+xref: PMID:11211268
+xref: PMID:11321083
+xref: PMID:11321113
+xref: PMID:11411719
+xref: PMID:11540071
+xref: PMID:11542017
+xref: PMID:11542087
+xref: PMID:11760965
+xref: PMID:12054223
+xref: PMID:2112744
+xref: PMID:270744
+xref: PMID:8123559
+xref: PMID:8590690
+xref: PMID:9103655
+xref: PMID:9336922
+is_a: NCBITaxon:131567 ! cellular organisms
+property_value: has_rank NCBITaxon:superkingdom
+
+[Term]
+id: NCBITaxon:207598
+name: Homininae
+namespace: ncbi_taxonomy
+synonym: "Homo/Pan/Gorilla group" RELATED synonym []
+xref: GC_ID:1
+is_a: NCBITaxon:9604 ! Hominidae
+property_value: has_rank NCBITaxon:subfamily
+
+[Term]
+id: NCBITaxon:2157
+name: Archaea
+namespace: ncbi_taxonomy
+synonym: "archaea" RELATED blast_name []
+synonym: "Archaebacteria" RELATED synonym []
+synonym: "Mendosicutes" RELATED synonym []
+synonym: "Metabacteria" RELATED synonym []
+synonym: "Monera" RELATED in_part []
+synonym: "Procaryotae" RELATED in_part []
+synonym: "Prokaryota" RELATED in_part []
+synonym: "Prokaryotae" RELATED in_part []
+synonym: "prokaryote" RELATED in_part []
+synonym: "prokaryotes" RELATED in_part []
+xref: GC_ID:11
+xref: PMID:10425795
+xref: PMID:10425796
+xref: PMID:10425797
+xref: PMID:10490293
+xref: PMID:10843050
+xref: PMID:10939651
+xref: PMID:10939673
+xref: PMID:10939677
+xref: PMID:11211268
+xref: PMID:11321083
+xref: PMID:11321113
+xref: PMID:11411719
+xref: PMID:11540071
+xref: PMID:11541975
+xref: PMID:11542064
+xref: PMID:11542149
+xref: PMID:11760965
+xref: PMID:12054223
+xref: PMID:2112744
+xref: PMID:25527841
+xref: PMID:270744
+xref: PMID:8123559
+xref: PMID:8590690
+xref: PMID:9103655
+xref: PMID:9336922
+is_a: NCBITaxon:131567 ! cellular organisms
+property_value: has_rank NCBITaxon:superkingdom
+
+[Term]
+id: NCBITaxon:2759
+name: Eukaryota
+namespace: ncbi_taxonomy
+synonym: "Eucarya" RELATED synonym []
+synonym: "Eucaryotae" RELATED synonym []
+synonym: "eucaryotes" EXACT genbank_common_name []
+synonym: "Eukarya" RELATED synonym []
+synonym: "Eukaryotae" RELATED synonym []
+synonym: "eukaryotes" EXACT common_name []
+synonym: "eukaryotes" RELATED blast_name []
+xref: GC_ID:1
+xref: PMID:23020233
+is_a: NCBITaxon:131567 ! cellular organisms
+property_value: has_rank NCBITaxon:superkingdom
+
+[Term]
+id: NCBITaxon:314146
+name: Euarchontoglires
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+xref: PMID:11214319
+xref: PMID:12082125
+xref: PMID:12878460
+xref: PMID:15522813
+is_a: NCBITaxon:1437010 ! Boreoeutheria
+property_value: has_rank NCBITaxon:superorder
+
+[Term]
+id: NCBITaxon:314293
+name: Simiiformes
+namespace: ncbi_taxonomy
+synonym: "Anthropoidea" RELATED synonym []
+xref: GC_ID:1
+is_a: NCBITaxon:376913 ! Haplorrhini
+property_value: has_rank NCBITaxon:infraorder
+
+[Term]
+id: NCBITaxon:314295
+name: Hominoidea
+namespace: ncbi_taxonomy
+synonym: "ape" EXACT common_name []
+synonym: "apes" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:9526 ! Catarrhini
+property_value: has_rank NCBITaxon:superfamily
+
+[Term]
+id: NCBITaxon:32523
+name: Tetrapoda
+namespace: ncbi_taxonomy
+synonym: "tetrapods" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:1338369 ! Dipnotetrapodomorpha
+
+[Term]
+id: NCBITaxon:32524
+name: Amniota
+namespace: ncbi_taxonomy
+synonym: "amniotes" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:32523 ! Tetrapoda
+
+[Term]
+id: NCBITaxon:32525
+name: Theria <Mammalia>
+namespace: ncbi_taxonomy
+synonym: "Theria" EXACT scientific_name []
+xref: GC_ID:1
+is_a: NCBITaxon:40674 ! Mammalia
+
+[Term]
+id: NCBITaxon:33154
+name: Opisthokonta
+namespace: ncbi_taxonomy
+synonym: "Fungi/Metazoa group" RELATED synonym []
+synonym: "opisthokonts" RELATED synonym []
+xref: GC_ID:1
+is_a: NCBITaxon:2759 ! Eukaryota
+
+[Term]
+id: NCBITaxon:33208
+name: Metazoa
+namespace: ncbi_taxonomy
+synonym: "Animalia" RELATED synonym []
+synonym: "animals" RELATED blast_name []
+synonym: "metazoans" EXACT genbank_common_name []
+synonym: "multicellular animals" EXACT common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:33154 ! Opisthokonta
+property_value: has_rank NCBITaxon:kingdom
+
+[Term]
+id: NCBITaxon:33213
+name: Bilateria
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:6072 ! Eumetazoa
+
+[Term]
+id: NCBITaxon:33511
+name: Deuterostomia
+namespace: ncbi_taxonomy
+synonym: "deuterostomes" EXACT common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:33213 ! Bilateria
+
+[Term]
+id: NCBITaxon:376913
+name: Haplorrhini
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:9443 ! Primates
+property_value: has_rank NCBITaxon:suborder
+
+[Term]
+id: NCBITaxon:40674
+name: Mammalia
+namespace: ncbi_taxonomy
+synonym: "mammals" EXACT genbank_common_name []
+synonym: "mammals" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:32524 ! Amniota
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:6072
+name: Eumetazoa
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:33208 ! Metazoa
+
+[Term]
+id: NCBITaxon:7711
+name: Chordata
+namespace: ncbi_taxonomy
+synonym: "chordates" EXACT genbank_common_name []
+synonym: "chordates" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:33511 ! Deuterostomia
+property_value: has_rank NCBITaxon:phylum
+
+[Term]
+id: NCBITaxon:7742
+name: Vertebrata <Metazoa>
+namespace: ncbi_taxonomy
+synonym: "Vertebrata" EXACT scientific_name []
+synonym: "vertebrates" EXACT genbank_common_name []
+synonym: "vertebrates" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:89593 ! Craniata <chordata>
+
+[Term]
+id: NCBITaxon:7776
+name: Gnathostomata <vertebrate>
+namespace: ncbi_taxonomy
+synonym: "Gnathostomata" EXACT scientific_name []
+synonym: "jawed vertebrates" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:7742 ! Vertebrata <Metazoa>
+
+[Term]
+id: NCBITaxon:8287
+name: Sarcopterygii
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:117571 ! Euteleostomi
+property_value: has_rank NCBITaxon:superclass
+
+[Term]
+id: NCBITaxon:89593
+name: Craniata <chordata>
+namespace: ncbi_taxonomy
+synonym: "Craniata" EXACT scientific_name []
+xref: GC_ID:1
+is_a: NCBITaxon:7711 ! Chordata
+property_value: has_rank NCBITaxon:subphylum
+
+[Term]
+id: NCBITaxon:9347
+name: Eutheria
+namespace: ncbi_taxonomy
+synonym: "eutherian mammals" EXACT common_name []
+synonym: "placental mammals" EXACT common_name []
+synonym: "Placentalia" RELATED synonym []
+synonym: "placentals" EXACT genbank_common_name []
+synonym: "placentals" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:32525 ! Theria <Mammalia>
+
+[Term]
+id: NCBITaxon:9443
+name: Primates
+namespace: ncbi_taxonomy
+synonym: "Primata" RELATED synonym []
+synonym: "primate" EXACT equivalent_name []
+synonym: "primates" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:314146 ! Euarchontoglires
+property_value: has_rank NCBITaxon:order
+
+[Term]
+id: NCBITaxon:9526
+name: Catarrhini
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:314293 ! Simiiformes
+property_value: has_rank NCBITaxon:parvorder
+
+[Term]
+id: NCBITaxon:9604
+name: Hominidae
+namespace: ncbi_taxonomy
+synonym: "great apes" EXACT genbank_common_name []
+synonym: "Pongidae" RELATED synonym []
+xref: GC_ID:1
+is_a: NCBITaxon:314295 ! Hominoidea
+property_value: has_rank NCBITaxon:family
+
+[Term]
+id: NCBITaxon:9605
+name: Homo
+namespace: ncbi_taxonomy
+synonym: "humans" EXACT common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:207598 ! Homininae
+property_value: has_rank NCBITaxon:genus
+
+[Term]
+id: NCBITaxon:9606
+name: Homo sapiens
+namespace: ncbi_taxonomy
+synonym: "Home sapiens" RELATED misspelling []
+synonym: "Homo sampiens" RELATED misspelling []
+synonym: "Homo sapeins" RELATED misspelling []
+synonym: "Homo sapian" RELATED misspelling []
+synonym: "Homo sapians" RELATED misspelling []
+synonym: "Homo sapien" RELATED misspelling []
+synonym: "Homo sapience" RELATED misspelling []
+synonym: "Homo sapiense" RELATED misspelling []
+synonym: "Homo sapients" RELATED misspelling []
+synonym: "Homo sapines" RELATED misspelling []
+synonym: "Homo spaiens" RELATED misspelling []
+synonym: "Homo spiens" RELATED misspelling []
+synonym: "human" EXACT genbank_common_name []
+synonym: "Humo sapiens" RELATED misspelling []
+synonym: "man" EXACT common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:9605 ! Homo
+property_value: has_rank NCBITaxon:species
+

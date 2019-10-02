@@ -1,0 +1,29 @@
+format-version: 1.2
+data-version: simro/releases/2019-10-02/imports/chebi_import.owl
+subsetdef: 3_STAR ""
+ontology: simro/imports/chebi_import
+
+[Term]
+id: CHEBI:24431
+name: chemical entity
+namespace: chebi_ontology
+def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." []
+subset: 3_STAR
+synonym: "chemical entity" EXACT [UniProt]
+
+[Typedef]
+id: has_part
+name: has part
+namespace: chebi_ontology
+xref: BFO:0000051
+is_cyclic: false
+is_transitive: true
+
+[Typedef]
+id: has_role
+name: has role
+namespace: chebi_ontology
+xref: RO:0000087
+is_cyclic: false
+is_transitive: false
+

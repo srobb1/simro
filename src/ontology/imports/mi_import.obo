@@ -1,0 +1,4 @@
+format-version: 1.2
+data-version: simro/releases/2019-10-02/imports/mi_import.owl
+ontology: simro/imports/mi_import
+

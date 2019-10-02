@@ -1,0 +1,1154 @@
+format-version: 1.2
+data-version: simro/releases/2019-10-02/imports/ms_import.owl
+subsetdef: abnormal_slim "Abnormal/normal slim"
+subsetdef: attribute_slim "Attribute slim"
+subsetdef: disposition_slim "Disposition slim"
+subsetdef: hpo_slim "Human phenotype slim"
+subsetdef: mpath_slim "Pathology slim"
+subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
+subsetdef: scalar_slim "Scalar slim"
+subsetdef: unit_group_slim "unit group slim"
+subsetdef: unit_slim "unit slim"
+subsetdef: value_slim "Value slim"
+ontology: simro/imports/ms_import
+
+[Term]
+id: MS:0000000
+name: Proteomics Standards Initiative Mass Spectrometry Vocabularies
+namespace: MS
+def: "Proteomics Standards Initiative Mass Spectrometry Vocabularies." [PSI:MS]
+
+[Term]
+id: PATO:0000001
+name: quality
+namespace: quality
+alt_id: PATO:0000072
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
+
+[Term]
+id: PATO:0000033
+name: concentration of
+namespace: quality
+def: "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance." [Wikipedia:http\://en.wikipedia.org/wiki/concentration]
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+synonym: "concentration" EXACT []
+is_a: PATO:0002182 ! molecular quality
+
+[Term]
+id: PATO:0000044
+name: frequency
+namespace: quality
+def: "A physical quality which inheres in a bearer by virtue of the number of the bearer's repetitive actions in a particular time." [Wikipedia:http\://en.wikipedia.org/wiki/frequency]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0050000 ! rate of occurence
+
+[Term]
+id: PATO:0000051
+name: morphology
+namespace: quality
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0000068
+name: qualitative
+namespace: quality
+comment: TODO: define this or obsolete it and move children somewhere else.
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0000069
+name: deviation(from_normal)
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the whether the bearer differs from normal or average." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0000068 ! qualitative
+
+[Term]
+id: PATO:0000117
+name: size
+namespace: quality
+def: "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0000051 ! morphology
+
+[Term]
+id: PATO:0000125
+name: mass
+namespace: quality
+def: "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0000128
+name: weight
+namespace: quality
+def: "A physical quality inhering in a bearer that has mass near a gravitational body." [Wikipedia:http\://en.wikipedia.org/wiki/Weight]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001035 ! force
+
+[Term]
+id: PATO:0000146
+name: temperature
+namespace: quality
+def: "A physical quality of the thermal energy of a system." [PATOC:GVG]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0000161
+name: rate
+namespace: quality
+def: "A quality of a single process inhering in a bearer by virtue of the bearer's occurrence per unit time." [PATOC:melissa]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0002062 ! physical quality of a process
+
+[Term]
+id: PATO:0000165
+name: time
+namespace: quality
+def: "A quality in which events occur in sequence." [PATOC:GVG]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0000186
+name: behavioral quality
+namespace: quality
+alt_id: PATO:0001722
+def: "An organismal quality inhering in a bearer by virtue of the bearer's behavior aggregate of the responses or reactions or movements in a given situation." [PATOC:GVG]
+synonym: "behavioural quality" EXACT []
+is_a: PATO:0001995 ! organismal quality
+
+[Term]
+id: PATO:0000460
+name: abnormal
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's deviation from normal or average." [PATOC:GVG]
+subset: abnormal_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "aberrant" RELATED []
+synonym: "atypia" RELATED []
+synonym: "atypical" RELATED []
+synonym: "defective" RELATED []
+is_a: PATO:0000069 ! deviation(from_normal)
+relationship: is_opposite_of PATO:0000461 ! normal
+
+[Term]
+id: PATO:0000461
+name: normal
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's exhibiting no deviation from normal or average." [PATOC:GVG]
+subset: abnormal_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "average" RELATED []
+is_a: PATO:0000068 ! qualitative
+relationship: is_opposite_of PATO:0000460 ! abnormal
+
+[Term]
+id: PATO:0001018
+name: physical quality
+namespace: quality
+alt_id: PATO:0002079
+def: "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities." [PATOC:GVG]
+subset: attribute_slim
+synonym: "relational physical quality" EXACT []
+xref: Wikipedia:Physical_property
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0001019
+name: mass density
+namespace: quality
+def: "A physical quality which inheres in a bearer by virtue of some influence is exerted by the bearer's mass per unit size." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+synonym: "density" RELATED []
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0001035
+name: force
+namespace: quality
+def: "A physical quality inhering in a bearer by virtue of the bearer's rate of change of momentum." [thesaurus.maths:thesaurus.maths]
+subset: attribute_slim
+subset: scalar_slim
+synonym: "force amplitude" EXACT []
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0001236
+name: process quality
+namespace: quality
+alt_id: PATO:0001239
+alt_id: PATO:0001240
+def: "A quality which inheres in an process." [PATOC:GVG]
+comment: See comments of relational quality of a physical entity.
+synonym: "quality of a process" EXACT []
+synonym: "quality of occurrent" EXACT []
+synonym: "quality of process" EXACT []
+synonym: "relational quality of occurrent" EXACT []
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0001241
+name: physical object quality
+namespace: quality
+alt_id: PATO:0001237
+alt_id: PATO:0001238
+def: "A quality which inheres in a continuant." [PATOC:GVG]
+comment: Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.
+synonym: "monadic quality of a continuant" EXACT []
+synonym: "monadic quality of an object" NARROW []
+synonym: "monadic quality of continuant" NARROW []
+synonym: "multiply inhering quality of a physical entity" EXACT []
+synonym: "quality of a continuant" EXACT []
+synonym: "quality of a single physical entity" EXACT []
+synonym: "quality of an object" EXACT []
+synonym: "quality of continuant" EXACT []
+xref: snap:Quality
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0001309
+name: duration
+namespace: quality
+alt_id: PATO:0000081
+def: "A process quality inhering in a bearer by virtue of the bearer's magnitude of the temporal extent between the starting and ending point." [PATOC:mellybelly]
+subset: attribute_slim
+subset: hpo_slim
+synonym: "period" EXACT []
+synonym: "time" RELATED []
+is_a: PATO:0002062 ! physical quality of a process
+
+[Term]
+id: PATO:0001353
+name: volumetric density
+namespace: quality
+def: "A density quality which inheres in a bearer by virtue of some influence exerted by the bearer's mass on a given volume." [Wikipedia:http\://en.wikipedia.org/wiki/Mass_density]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001019 ! mass density
+
+[Term]
+id: PATO:0001428
+name: medium acidity
+namespace: quality
+def: "A concentration quality inhering in a medium by virtue of the bearer's tendency to hydronate a specific reference base." [chemicool:chemicool]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001842 ! acidity
+
+[Term]
+id: PATO:0001574
+name: flow rate
+namespace: quality
+def: "A physical quality inhering in a bearer by virtue of the bearer's motion characteristic." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001906 ! movement quality
+
+[Term]
+id: PATO:0001708
+name: 1-D extent
+namespace: quality
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in one dimension." [PATOC:GVG]
+subset: attribute_slim
+synonym: "1-D size" EXACT []
+is_a: PATO:0000117 ! size
+
+[Term]
+id: PATO:0001710
+name: 3-D extent
+namespace: quality
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in three dimensions." [PATOC:GVG]
+subset: attribute_slim
+synonym: "3D size" EXACT []
+is_a: PATO:0000117 ! size
+
+[Term]
+id: PATO:0001842
+name: acidity
+namespace: quality
+def: "A concentration quality inhering in a bearer by virtue of the bearer's containing acid (hydrogen ions)." [biology-online:biology-online]
+subset: attribute_slim
+subset: scalar_slim
+synonym: "pH" EXACT []
+is_a: PATO:0000033 ! concentration of
+
+[Term]
+id: PATO:0001906
+name: movement quality
+namespace: quality
+def: "A physical quality inhering in a bearer by virtue of the bearer's participation in movement." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001018 ! physical quality
+
+[Term]
+id: PATO:0001995
+name: organismal quality
+namespace: quality
+def: "A quality that inheres in an entire organism or part of an organism." [PATOC:CJM]
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0002062
+name: physical quality of a process
+namespace: quality
+subset: attribute_slim
+is_a: PATO:0001236 ! process quality
+created_by: george
+creation_date: 2009-06-05T09:16:46Z
+
+[Term]
+id: PATO:0002182
+name: molecular quality
+namespace: quality
+alt_id: PATO:0002061
+def: "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc." [PATOC:GVG]
+synonym: "relational molecular quality" EXACT []
+is_a: PATO:0001241 ! physical object quality
+created_by: George Gkoutos
+creation_date: 2010-03-10T03:18:15Z
+
+[Term]
+id: PATO:0002201
+name: handedness
+namespace: quality
+def: "A behavioral quality inhering ina bearer by virtue of the bearer's unequal distribution of fine motor skill between its left and right hands or feet." [birnlex:2178]
+comment: Adapted from Wikipedia and the birnlex term that is dbxref'd. Added on behalf of OBI at March 2010 workshop.
+subset: attribute_slim
+subset: disposition_slim
+is_a: PATO:0000186 ! behavioral quality
+created_by: haendel
+creation_date: 2010-03-22T05:48:33Z
+
+[Term]
+id: PATO:0002202
+name: left handedness
+namespace: quality
+def: "Handedness where the organism preferentially uses the left hand or foot for tasks requiring the use of a single hand or foot or a dominant hand or foot." [birnlex:2038]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0002201 ! handedness
+created_by: haendel
+creation_date: 2010-03-22T05:49:06Z
+
+[Term]
+id: PATO:0002203
+name: right handedness
+namespace: quality
+def: "Handedness where the organism preferentially uses the right hand or foot for tasks requiring the use of a single hand or foot or a dominant hand or foot." [birnlex:2184]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0002201 ! handedness
+created_by: haendel
+creation_date: 2010-03-22T05:49:19Z
+
+[Term]
+id: PATO:0002204
+name: ambidextrous handedness
+namespace: quality
+def: "Handedness where the organism exhibits no overall dominance in the use of right or left hand or foot in the performance of tasks that require one hand or foot or a dominant hand or foot." [birnlex:2042]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0002201 ! handedness
+created_by: haendel
+creation_date: 2010-03-22T05:49:30Z
+
+[Term]
+id: PATO:0050000
+name: rate of occurence
+namespace: quality
+def: "The number of repeated events per unit time, occurring in a repeating series. (e.g. the number of heart beats occurring over 1 minute)" [https://orcid.org/0000-0002-9943-9018]
+is_a: PATO:0000161 ! rate
+
+[Term]
+id: UO:0000000
+name: unit
+namespace: unit.ontology
+def: "A unit of measurement is a standardized quantity of a physical quality." [Wikipedia:Wikipedia]
+created_by: george gkoutos
+
+[Term]
+id: UO:0000001
+name: length unit
+namespace: unit.ontology
+def: "A unit which is a standard measure of the distance between two points." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+relationship: is_unit_of PATO:0001708 ! 1-D extent
+created_by: george gkoutos
+
+[Term]
+id: UO:0000002
+name: mass unit
+namespace: unit.ontology
+def: "A unit which is a standard measure of the amount of matter/energy of a physical object." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+relationship: is_unit_of PATO:0000125 ! mass
+relationship: is_unit_of PATO:0000128 ! weight
+created_by: george gkoutos
+
+[Term]
+id: UO:0000003
+name: time unit
+namespace: unit.ontology
+alt_id: UO:0000149
+def: "A unit which is a standard measure of the dimension in which events occur in sequence." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+synonym: "time derived unit" EXACT []
+is_a: UO:0000000 ! unit
+relationship: is_unit_of PATO:0000165 ! time
+relationship: is_unit_of PATO:0001309 ! duration
+created_by: george gkoutos
+
+[Term]
+id: UO:0000005
+name: temperature unit
+namespace: unit.ontology
+alt_id: UO:0000126
+def: "A unit which is a standard measure of the average kinetic energy of the particles in a sample of matter." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+synonym: "temperature derived unit" EXACT []
+is_a: UO:0000000 ! unit
+relationship: is_unit_of PATO:0000146 ! temperature
+created_by: george gkoutos
+
+[Term]
+id: UO:0000006
+name: substance unit
+namespace: unit.ontology
+def: "A unit which is a standardised quantity of an element or compound with uniform composition." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000008
+name: meter
+namespace: unit.ontology
+def: "A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second." [BIPM:BIPM, NIST:NIST]
+subset: unit_slim
+synonym: "m" EXACT []
+synonym: "metre" EXACT []
+is_a: UO:0000001 ! length unit
+is_a: UO:0000045 ! base unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000009
+name: kilogram
+namespace: unit.ontology
+def: "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France." [BIPM:BIPM, NIST:NIST]
+subset: unit_slim
+synonym: "kg" EXACT []
+is_a: UO:0000002 ! mass unit
+is_a: UO:0000045 ! base unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000010
+name: second
+namespace: unit.ontology
+def: "A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom." [BIPM:BIPM, NIST:NIST]
+subset: unit_slim
+synonym: "s" EXACT []
+is_a: UO:0000003 ! time unit
+is_a: UO:0000045 ! base unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000015
+name: centimeter
+namespace: unit.ontology
+def: "A length unit which is equal to one hundredth of a meter or 10^[-2] m." [NIST:NIST]
+subset: unit_slim
+synonym: "centimetre" EXACT []
+synonym: "cm" EXACT []
+is_a: UO:0000001 ! length unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000016
+name: millimeter
+namespace: unit.ontology
+def: "A length unit which is equal to one thousandth of a meter or 10^[-3] m." [NIST:NIST]
+subset: unit_slim
+synonym: "micrometre" EXACT []
+synonym: "mm" EXACT []
+is_a: UO:0000001 ! length unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000017
+name: micrometer
+namespace: unit.ontology
+def: "A length unit which is equal to one millionth of a meter or 10^[-6] m." [NIST:NIST]
+subset: unit_slim
+synonym: "micrometre" EXACT []
+synonym: "micron" EXACT []
+synonym: "um" EXACT []
+is_a: UO:0000001 ! length unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000018
+name: nanometer
+namespace: unit.ontology
+def: "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m." [NIST:NIST]
+subset: unit_slim
+synonym: "nanometre" EXACT []
+synonym: "nm" EXACT []
+is_a: UO:0000001 ! length unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000019
+name: angstrom
+namespace: unit.ontology
+def: "A length unit which is equal to 10 [-10] m." [NIST:NIST]
+subset: unit_slim
+synonym: "Å" EXACT []
+is_a: UO:0000001 ! length unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000021
+name: gram
+namespace: unit.ontology
+def: "A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg." [NIST:NIST]
+subset: unit_slim
+synonym: "g" EXACT []
+is_a: UO:0000002 ! mass unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000022
+name: milligram
+namespace: unit.ontology
+def: "A mass unit which is equal to one thousandth of a gram or 10^[-3] g." [UOC:GVG]
+subset: unit_slim
+synonym: "mg" EXACT []
+is_a: UO:0000002 ! mass unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000023
+name: microgram
+namespace: unit.ontology
+def: "A mass unit which is equal to one millionth of a gram or 10^[-6] g." [UOC:GVG]
+subset: unit_slim
+synonym: "ug" EXACT []
+is_a: UO:0000002 ! mass unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000024
+name: nanogram
+namespace: unit.ontology
+def: "A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g." [UOC:GVG]
+subset: unit_slim
+synonym: "ng" EXACT []
+is_a: UO:0000002 ! mass unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000025
+name: picogram
+namespace: unit.ontology
+def: "A mass unit which is equal to 10^[-12] g." [UOC:GVG]
+subset: unit_slim
+synonym: "pg" EXACT []
+is_a: UO:0000002 ! mass unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000027
+name: degree Celsius
+namespace: unit.ontology
+def: "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K." [NIST:NIST]
+subset: unit_slim
+synonym: "C" EXACT []
+is_a: UO:0000005 ! temperature unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000031
+name: minute
+namespace: unit.ontology
+def: "A time unit which is equal to 60 seconds." [Wikipedia:Wikipedia]
+subset: unit_slim
+synonym: "min" EXACT []
+is_a: UO:0000003 ! time unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000032
+name: hour
+namespace: unit.ontology
+def: "A time unit which is equal to 3600 seconds or 60 minutes." [Wikipedia:Wikipedia]
+subset: unit_slim
+synonym: "h" EXACT []
+is_a: UO:0000003 ! time unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000033
+name: day
+namespace: unit.ontology
+def: "A time unit which is equal to 24 hours." [Wikipedia:Wikipedia]
+subset: unit_slim
+is_a: UO:0000003 ! time unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000034
+name: week
+namespace: unit.ontology
+def: "A time unit which is equal to 7 days." [Wikipedia:Wikipedia]
+subset: unit_slim
+is_a: UO:0000003 ! time unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000035
+name: month
+namespace: unit.ontology
+def: "A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days." [Wikipedia:Wikipedia]
+subset: unit_slim
+is_a: UO:0000003 ! time unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000036
+name: year
+namespace: unit.ontology
+def: "A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days." [Wikipedia:Wikipedia]
+subset: unit_slim
+is_a: UO:0000003 ! time unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000039
+name: micromole
+namespace: unit.ontology
+def: "A substance unit equal to a millionth of a mol or 10^[-6] mol." [NIST:NIST]
+subset: unit_slim
+synonym: "umol" EXACT []
+is_a: UO:0000006 ! substance unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000041
+name: nanomole
+namespace: unit.ontology
+def: "A substance unit equal to one thousandth of one millionth of a mole or 10^[-9] mol." [NIST:NIST]
+subset: unit_slim
+synonym: "nmol" EXACT []
+is_a: UO:0000006 ! substance unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000042
+name: picomole
+namespace: unit.ontology
+def: "A substance unit equal to 10^[-12] mol." [NIST:NIST]
+subset: unit_slim
+synonym: "pmol" EXACT []
+is_a: UO:0000006 ! substance unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000045
+name: base unit
+namespace: unit.ontology
+def: "A unit which is one of a particular measure to which all measures of that type can be related." [NIST:NIST]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000051
+name: concentration unit
+namespace: unit.ontology
+def: "A unit which represents a standard measurement of how much of a given substance there is mixed with another substance." [UOC:GVG]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+relationship: is_unit_of PATO:0000033 ! concentration of
+created_by: george gkoutos
+
+[Term]
+id: UO:0000052
+name: mass density unit
+namespace: unit.ontology
+def: "A density unit which is a standard measure of the mass of a substance in a given volume." [UOC:GVG]
+subset: unit_group_slim
+synonym: "mass per unit volume" EXACT []
+is_a: UO:0000182 ! density unit
+relationship: is_unit_of PATO:0001353 ! volumetric density
+created_by: george gkoutos
+
+[Term]
+id: UO:0000061
+name: unit of molarity
+namespace: unit.ontology
+def: "A concentration unit which is a standard measure of the number of moles of a given substance per liter of solution." [UOC:GVG]
+subset: unit_group_slim
+is_a: UO:0000051 ! concentration unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000062
+name: molar
+namespace: unit.ontology
+def: "A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L)." [UOC:GVG]
+subset: unit_slim
+synonym: "M" EXACT []
+is_a: UO:0000061 ! unit of molarity
+created_by: george gkoutos
+
+[Term]
+id: UO:0000063
+name: millimolar
+namespace: unit.ontology
+def: "A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M." [UOC:GVG]
+subset: unit_slim
+synonym: "mM" EXACT []
+is_a: UO:0000061 ! unit of molarity
+created_by: george gkoutos
+
+[Term]
+id: UO:0000064
+name: micromolar
+namespace: unit.ontology
+def: "A unit of molarity which is equal to one millionth of a molar or 10^[-6] M." [UOC:GVG]
+subset: unit_slim
+synonym: "uM" EXACT []
+is_a: UO:0000061 ! unit of molarity
+created_by: george gkoutos
+
+[Term]
+id: UO:0000065
+name: nanomolar
+namespace: unit.ontology
+def: "A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M." [UOC:GVG]
+subset: unit_slim
+synonym: "nM" EXACT []
+is_a: UO:0000061 ! unit of molarity
+created_by: george gkoutos
+
+[Term]
+id: UO:0000066
+name: picomolar
+namespace: unit.ontology
+def: "A unit of molarity which is equal to 10^[-12] M." [UOC:GVG]
+subset: unit_slim
+synonym: "pM" EXACT []
+is_a: UO:0000061 ! unit of molarity
+created_by: george gkoutos
+
+[Term]
+id: UO:0000067
+name: unit of molality
+namespace: unit.ontology
+def: "A concentration unit which is a standard measure of the number of moles of a given substance per kilogram of solvent." [UOC:GVG]
+subset: unit_group_slim
+is_a: UO:0000051 ! concentration unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000095
+name: volume unit
+namespace: unit.ontology
+def: "A unit which is a standard measure of the amount of space occupied by any substance, whether solid, liquid, or gas." [NIST:NIST]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+relationship: is_unit_of PATO:0001710 ! 3-D extent
+created_by: george gkoutos
+
+[Term]
+id: UO:0000097
+name: cubic centimeter
+namespace: unit.ontology
+def: "A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml." [NIST:NIST]
+subset: unit_slim
+synonym: "cc" EXACT []
+synonym: "cm^3" EXACT []
+synonym: "cubic centimetre" EXACT []
+is_a: UO:0000095 ! volume unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000098
+name: milliliter
+namespace: unit.ontology
+def: "A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter." [NIST:NIST]
+subset: unit_slim
+synonym: "millilitre" EXACT []
+synonym: "ml" EXACT []
+is_a: UO:0000095 ! volume unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000099
+name: liter
+namespace: unit.ontology
+def: "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter." [NIST:NIST]
+subset: unit_slim
+synonym: "L" EXACT []
+synonym: "l" EXACT []
+synonym: "litre" EXACT []
+is_a: UO:0000095 ! volume unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000100
+name: cubic decimeter
+namespace: unit.ontology
+def: "A volume unit which is equal to one thousand of a cubic meter or 10^[-3] m^[3], or to 1 L." [NIST:NIST]
+subset: unit_slim
+synonym: "cubic decimetre" EXACT []
+synonym: "dm^[3]" EXACT []
+is_a: UO:0000095 ! volume unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000101
+name: microliter
+namespace: unit.ontology
+def: "A volume unit which is equal to one millionth of a liter or 10^[-6] L." [NIST:NIST]
+subset: unit_slim
+synonym: "microlitre" EXACT []
+synonym: "ul" EXACT []
+is_a: UO:0000095 ! volume unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000102
+name: nanoliter
+namespace: unit.ontology
+def: "A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L." [NIST:NIST]
+subset: unit_slim
+synonym: "nanolitre" EXACT []
+synonym: "nl" EXACT []
+is_a: UO:0000095 ! volume unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000103
+name: picoliter
+namespace: unit.ontology
+def: "A volume unit which is equal to 10^[-12] L." [NIST:NIST]
+subset: unit_slim
+synonym: "picolitre" EXACT []
+synonym: "pl" EXACT []
+is_a: UO:0000095 ! volume unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000105
+name: frequency unit
+namespace: unit.ontology
+def: "A unit which is a standard measure of the number of repetitive actions in a particular time." [NIST:NIST]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+relationship: is_unit_of PATO:0000044 ! frequency
+created_by: george gkoutos
+
+[Term]
+id: UO:0000106
+name: hertz
+namespace: unit.ontology
+def: "A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second." [NIST:NIST]
+subset: unit_slim
+synonym: "Hz" EXACT []
+synonym: "s^1" EXACT []
+is_a: UO:0000105 ! frequency unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000163
+name: mass percentage
+namespace: unit.ontology
+def: "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture." [Wikipedia:Wikipedia]
+subset: unit_slim
+synonym: "w/w" EXACT []
+synonym: "weight-weight percentage" EXACT []
+is_a: UO:0000051 ! concentration unit
+is_a: UO:0000187 ! percent
+created_by: george gkoutos
+
+[Term]
+id: UO:0000164
+name: mass volume percentage
+namespace: unit.ontology
+def: "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture." [UOC:GVG]
+subset: unit_slim
+synonym: "(w/v)" EXACT []
+synonym: "weight-volume percentage" EXACT []
+is_a: UO:0000051 ! concentration unit
+is_a: UO:0000187 ! percent
+created_by: george gkoutos
+
+[Term]
+id: UO:0000165
+name: volume percentage
+namespace: unit.ontology
+def: "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution." [UOC:GVG]
+subset: unit_slim
+synonym: "% (v/v)" EXACT []
+is_a: UO:0000187 ! percent
+is_a: UO:0000205 ! volume per unit volume
+created_by: george gkoutos
+
+[Term]
+id: UO:0000175
+name: gram per liter
+namespace: unit.ontology
+def: "A mass unit density which is equal to mass of an object in grams divided by the volume in liters." [UOC:GVG]
+subset: unit_slim
+synonym: "g/L" EXACT []
+synonym: "gram per litre" EXACT []
+is_a: UO:0000052 ! mass density unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000176
+name: milligram per milliliter
+namespace: unit.ontology
+def: "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters." [UOC:GVG]
+subset: unit_slim
+synonym: "mg/ml" EXACT []
+synonym: "milligram per millilitre" EXACT []
+is_a: UO:0000052 ! mass density unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000182
+name: density unit
+namespace: unit.ontology
+def: "A unit which is a standard measure of the influence exerted by some mass." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+relationship: is_unit_of PATO:0001019 ! mass density
+created_by: george gkoutos
+
+[Term]
+id: UO:0000186
+name: dimensionless unit
+namespace: unit.ontology
+def: "A unit which is a standard measure of physical quantity consisting of only a numerical number without any units." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000187
+name: percent
+namespace: unit.ontology
+def: "A dimensionless ratio unit which denotes numbers as fractions of 100." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+synonym: "%" EXACT []
+is_a: UO:0000190 ! ratio
+created_by: george gkoutos
+
+[Term]
+id: UO:0000190
+name: ratio
+namespace: unit.ontology
+def: "A dimensionless unit which denotes an amount or magnitude of one quantity relative to another." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000186 ! dimensionless unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000195
+name: degree Fahrenheit
+namespace: unit.ontology
+def: "A temperature unit which is equal to 5/9ths of a kelvin. Negative 40 degrees Fahrenheit is equal to negative 40 degrees Celsius." [Wikipedia:Wikipedia]
+comment: In this scale, the freezing point of water is 32 degrees Fahrenheit and the boiling point is 212 degrees, placing the boiling and freezing points of water 180 degrees apart. -40 degrees Fahrenheit is equal to -40 degrees Celsius.
+subset: unit_slim
+synonym: "F" EXACT []
+is_a: UO:0000005 ! temperature unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000196
+name: pH
+namespace: unit.ontology
+def: "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+)." [Wikipedia:Wikipedia]
+subset: unit_slim
+is_a: UO:0000051 ! concentration unit
+is_a: UO:0000186 ! dimensionless unit
+relationship: is_unit_of PATO:0001428 ! medium acidity
+created_by: george gkoutos
+
+[Term]
+id: UO:0000205
+name: volume per unit volume
+namespace: unit.ontology
+def: "A dimensionless concentration unit which denotes the given volume of the solute in the total volume of the resulting solution." [NIST:NIST]
+subset: unit_group_slim
+is_a: UO:0000051 ! concentration unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000207
+name: milliliter per liter
+namespace: unit.ontology
+def: "A volume per unit volume unit which is equal to one millionth of a liter of solute in one liter of solution." [NIST:NIST]
+subset: unit_slim
+synonym: "millilitre per litre" EXACT []
+synonym: "ml/l" EXACT []
+is_a: UO:0000205 ! volume per unit volume
+created_by: george gkoutos
+
+[Term]
+id: UO:0000208
+name: gram per deciliter
+namespace: unit.ontology
+def: "A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters." [UOC:GVG]
+subset: unit_slim
+synonym: "g/dl" EXACT []
+synonym: "gram per decilitre" EXACT []
+is_a: UO:0000052 ! mass density unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000212
+name: colony forming unit per volume
+namespace: unit.ontology
+def: "A concentration unit which a measure of viable bacterial numbers in a given volume." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000051 ! concentration unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000270
+name: volumetric flow rate unit
+namespace: unit.ontology
+def: "A unit which is a standard measure of the volume of fluid which passes through a given surface per unit time ." [Wikipedia:Wikipedia]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000271
+name: microliters per minute
+namespace: unit.ontology
+def: "A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute." [UOC:GVG]
+subset: unit_slim
+synonym: "microlitres per minute" EXACT []
+synonym: "uL/min" EXACT []
+is_a: UO:0000270 ! volumetric flow rate unit
+relationship: is_unit_of PATO:0001574 ! flow rate
+created_by: george gkoutos
+
+[Term]
+id: UO:0000280
+name: rate unit
+namespace: unit.ontology
+def: "A unit which represents a standard measurement occurrence of a process per unit time." [UOC:GVG]
+subset: unit_group_slim
+is_a: UO:0000000 ! unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000281
+name: count per nanomolar second
+namespace: unit.ontology
+def: "A rate unit which is equal to one over one nanomolar second." [UOC:GVG]
+subset: unit_slim
+synonym: "nM^-1 s^-1" EXACT []
+is_a: UO:0000280 ! rate unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000282
+name: count per molar second
+namespace: unit.ontology
+def: "A rate unit which is equal to one over one molar second." [UOC:GVG]
+subset: unit_slim
+synonym: "M^-1 s^-1" EXACT []
+is_a: UO:0000280 ! rate unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0000284
+name: count per nanomolar
+namespace: unit.ontology
+def: "A rate unit which is equal to one over one nanomolar." [UO:GVG]
+subset: unit_slim
+synonym: "1/nM" EXACT []
+synonym: "nM^-1" EXACT []
+is_a: UO:0000280 ! rate unit
+
+[Term]
+id: UO:0000285
+name: count per molar
+namespace: unit.ontology
+def: "A rate unit which is equal to one over one molar." [UO:GVG]
+subset: unit_slim
+synonym: "1/M" EXACT []
+synonym: "M^-1" EXACT []
+is_a: UO:0000280 ! rate unit
+
+[Term]
+id: UO:0000301
+name: microgram per liter
+namespace: unit.ontology
+def: "A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters." [UOC:GVG]
+subset: unit_slim
+synonym: "microgram per litre" EXACT []
+synonym: "ug/L" EXACT []
+is_a: UO:0000052 ! mass density unit
+created_by: george gkoutos
+
+[Term]
+id: UO:0010003
+name: micromole per litre
+namespace: unit.ontology
+def: "A specific concentration unit which is equal to 1 micromole in a given volume of one thousandth of a cubic meter." [NIST:NIST]
+subset: unit_slim
+is_a: UO:0000067 ! unit of molality
+created_by: Luke Slater
+
+[Typedef]
+id: has_part
+name: has_part
+namespace: quality
+def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
+comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
+xref: BFO:0000051
+
+[Typedef]
+id: is_opposite_of
+name: is opposite of
+namespace: quality
+xref: RO:0002604
+is_metadata_tag: true
+is_class_level: true
+
+[Typedef]
+id: part_of
+name: part_of
+namespace: quality
+xref: BFO:0000050
+is_transitive: true
+
