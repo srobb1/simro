@@ -1,0 +1,123 @@
+allow_equivalents: all
+catalog_file: catalog-v001.xml
+components: null
+contact: null
+contributors: null
+creators: null
+description: None
+dosdp_tools_options: --obo-prefixes=true --prefixes=myprefixes.yaml
+edit_format: owl
+export_formats:
+- owl
+- obo
+git_user: ''
+github_org: srobb1
+gzip_main: false
+id: simro
+import_group:
+  directory: imports/
+  disabled: false
+  ids: null
+  products:
+  - description: null
+    id: ms
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ro
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: uo
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: cl
+    mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: clo
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/clo_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ero
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/ero_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: obi
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/obi_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: fbbi
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/fbbi_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: efo
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/efo_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: uberon
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/uberon_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: mi
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/mi_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: go
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/go_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: chebi
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/chebi_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ncit
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/ncit_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  - description: null
+    id: ncbitaxon
+    mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/ncbitaxon_import.owl
+    rebuild_if_source_changes: true
+    robot_settings: null
+  rebuild_if_source_changes: true
+import_pattern_ontology: false
+license: Unspecified
+namespaces: null
+obo_format_options: ''
+pattern_group: null
+pattern_pipelines_group: null
+primary_release: full
+public_release: none
+public_release_assets: null
+reasoner: ELK
+release_artefacts:
+- full
+- base
+release_date: false
+repo: simro
+report_fail_on: null
+robot_java_args: -Xmx12G
+robot_settings: null
+robot_version: null
+robotemplate_group: null
+subset_group: null
+title: SIMR Ontology
+travis_emails: null
+uribase: http://purl.obolibrary.org/obo
+use_dosdps: true
+use_external_date: false

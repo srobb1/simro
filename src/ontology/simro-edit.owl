@@ -1,0 +1,64 @@
+
+Prefix(:=<http://purl.obolibrary.org/obo/simro.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/simro.owl>
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/ms_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/ro_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/uo_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/cl_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/clo_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/ero_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/obi_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/fbbi_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/efo_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/uberon_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/mi_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/go_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/chebi_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/ncit_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/simro/imports/ncbitaxon_import.owl>)
+
+
+Import(<http://purl.obolibrary.org/obo/simro/patterns/definitions.owl>)
+
+Annotation(dce:title "SIMR Ontology")
+Annotation(dcterms:license "Unspecified")
+Annotation(dce:description "None")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_00000000>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_00000000>
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_00000000> "root node"@en)
+
+
+)
+
