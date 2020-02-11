@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: simro/releases/2019-10-02/imports/cl_import.owl
-subsetdef: ubprop:upper_level "abstract upper-level terms not directly useful for analysis"
+data-version: simro/releases/2020-02-11/imports/cl_import.owl
+subsetdef: ubprop:upper_level ""
 ontology: simro/imports/cl_import
 
 [Term]
@@ -20,42 +20,149 @@ xref: XAO:0003012
 equivalent_to: GO:0005623
 
 [Term]
-id: CL:0000001
-name: primary cultured cell
+id: CL:0000003
+name: native cell
 namespace: cell
-def: "A cultured cell that is freshly isolated from a organismal source, or derives in culture from such a cell prior to the culture being passaged." [ReO:mhb]
-comment: Covers cells actively being cultured or stored in a quiescent state for future use.
-synonym: "primary cell culture cell" EXACT []
-synonym: "primary cell line cell" RELATED []
-synonym: "unpassaged cultured cell" EXACT []
-xref: BTO:0002290
-is_a: CL:0000010 ! cultured cell
-
-[Term]
-id: CL:0000010
-name: cultured cell
-namespace: cell
-def: "A cell in vitro that is or has been maintained or propagated as part of a cell culture." [ReO:mhb]
-comment: Note that this class was re-labeled to 'cultured cell' instead of 'cell line cell', as it intent was clarified to cover any cultured cells of multicellular and unicellular organisms. This includes cells actively being cultured, or cells that have been cultured but are stored in a quiescent state for future use. In having been cultured, cells must establish homeostasis and often replicate in a foreign environment. Accomodation of this stress initiates a selection of cells fit for such challenges, wherein necessary adaptive biochemical and.or genetic changes can occur. These changes can set them apart from the in vivo cells from which they derive, and such changes will typically accumulate and change over increasing time in culture.
-is_a: CL:0000578 ! experimentally modified cell in vitro
-
-[Term]
-id: CL:0000578
-name: experimentally modified cell in vitro
-namespace: cell
-def: "A cell in vitro that has undergone physical changes as a consequence of a deliberate and specific experimental procedure." [FB:ma, ReO:mhb]
-comment: This class has been re-labeled to imply reference only to in vitro experimentally modified cells, similarly, the definition has been slightly updated to reflect this. 'experimentally modified cell' refers only to cells in vitro, and not modified in vivo/in environment cells. There is currently no class representing unmodified in vitro cells (other than the parent 'cell in vitro'), or a class representing modified native cells. More granular subclassing of experimentally modified cell can be found in ReO. MHB 1.12.12
-is_a: CL:0001034 ! cell in vitro
-
-[Term]
-id: CL:0001034
-name: cell in vitro
-namespace: cell
-def: "A cell that is maintained or propagated in a controlled artificial environment for use in an investigation." [ReO:mhb]
-comment: 'In vitro', translating literally to 'in glass', typically refers to a controlled, often sterile, laboratory setting where cells or other specimens are placed by some agent for the purpose of studying or manipulating them as part of some research investigation. 'In vitro' is intended to contrast with 'native',which refers to cells or other biological entities that are found in a natural setting. It describes unicellular organisms removed from a natural environement and multicellular organism cells removed from an organism, or cells derived in culture from such displaced cells.
+def: "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment)." [CARO:mah]
+comment: To accommodate unicellular organisms better, 'cell in vivo' has been re-labeled 'native cell' to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. 'Native' is intended to contrast with 'in vitro', which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12).
+subset: ubprop:upper_level
+synonym: "cell in vivo" NARROW []
+xref: CARO:0000013
 is_a: CL:0000000 ! cell
-created_by: haendel
-creation_date: 2012-01-12T09:58:38Z
+
+[Term]
+id: CL:0000031
+name: neuroblast
+namespace: cell
+def: "A cell that will develop into a neuron often after a migration phase." [GOC:NV, http://en.wikipedia.org/wiki/Neuroblast]
+xref: BTO:0000930
+xref: FBbt:00005146
+xref: FMA:70563
+is_a: CL:0000047 ! neuronal stem cell
+is_a: CL:0000055 ! non-terminally differentiated cell
+
+[Term]
+id: CL:0000034
+name: stem cell
+namespace: cell
+def: "A relatively undifferentiated cell that retains the ability to divide and proliferate throughout life to provide progenitor cells that can differentiate into specialized cells." [GOC:tfm, MESH:A11.872]
+xref: CALOHA:TS-2086
+xref: FMA:63368
+intersection_of: CL:0000003 ! native cell
+intersection_of: RO:0002215 GO:0017145
+relationship: RO:0002215 GO:0030154
+
+[Term]
+id: CL:0000047
+name: neuronal stem cell
+namespace: cell
+def: "Neural stem cell is characterized as an undifferentiated cell that originates from the neuroectoderm and has the capacity both to perpetually self-renew without differentiating and to generate multiple types of lineage-restricted progenitors." [GOC:tfm, http://en.wikipedia.org/wiki/Neural_stem_cell, MESH:D058953, PMID:15247488]
+synonym: "neural stem cell" EXACT []
+synonym: "NSC" EXACT []
+xref: BTO:0002881
+xref: CALOHA:TS-2360
+xref: FMA:86684
+is_a: CL:0000048 {is_inferred="true"} ! multi fate stem cell
+intersection_of: CL:0000048 ! multi fate stem cell
+intersection_of: BFO:0000050 UBERON:0001017
+relationship: RO:0002202 CL:0000133 ! neurectodermal cell
+
+[Term]
+id: CL:0000048
+name: multi fate stem cell
+namespace: cell
+def: "A stem cell that can give rise to multiple lineages of cells." [GOC:add]
+synonym: "multi-fate stem cell" EXACT []
+synonym: "multifate stem cell" EXACT []
+synonym: "multipotent cell" EXACT []
+synonym: "multipotent stem cell" EXACT []
+xref: FMA:84789
+intersection_of: CL:0002371 ! somatic cell
+intersection_of: RO:0000053 PATO:0001402
+intersection_of: RO:0002215 GO:0017145
+
+[Term]
+id: CL:0000055
+name: non-terminally differentiated cell
+namespace: cell
+def: "A precursor cell with a limited number of potential fates." [SANBI:mhl]
+comment: define using PATO mulit-potent or oligopotent?
+synonym: "blast cell" EXACT []
+xref: BTO:0000125
+xref: FMA:84782
+is_a: CL:0000003 ! native cell
+relationship: RO:0002215 GO:0030154
+
+[Term]
+id: CL:0000133
+name: neurectodermal cell
+namespace: cell
+def: "Ectoderm destined to be nervous tissue." [GOC:tfm, ISBN:068340007X]
+synonym: "neurectoderm cell" EXACT []
+is_a: CL:0000221 ! ectodermal cell
+
+[Term]
+id: CL:0000211
+name: electrically active cell
+namespace: cell
+def: "A cell whose function is determined by the generation or the reception of an electric signal." [FB:ma]
+is_a: CL:0000003 ! native cell
+
+[Term]
+id: CL:0000221
+name: ectodermal cell
+namespace: cell
+def: "A cell of the outer of the three germ layers of the embryo." [MESH:A16.254.425.273]
+synonym: "ectoderm cell" EXACT []
+xref: FMA:72549
+is_a: CL:0002321 ! embryonic cell
+relationship: BFO:0000050 UBERON:0000924
+
+[Term]
+id: CL:0000255
+name: eukaryotic cell
+namespace: cell
+is_a: CL:0000003 ! native cell
+
+[Term]
+id: CL:0000393
+name: electrically responsive cell
+namespace: cell
+def: "A cell whose function is determined by its response to an electric signal." [FB:ma]
+is_a: CL:0000211 ! electrically active cell
+
+[Term]
+id: CL:0000404
+name: electrically signaling cell
+namespace: cell
+def: "A cell that initiates an electrical signal and passes that signal to another cell." [FB:ma]
+is_a: CL:0000211 ! electrically active cell
+
+[Term]
+id: CL:0000540
+name: neuron
+namespace: cell
+def: "The basic cellular unit of nervous tissue. Each neuron consists of a body, an axon, and dendrites. Their purpose is to receive, conduct, and transmit impulses in the nervous system." [http://en.wikipedia.org/wiki/Neuron, MESH:A08.663, MESH:D009474]
+comment: These cells are also reportedly CD4-negative and CD200-positive. They are also capable of producing CD40L and IFN-gamma.
+synonym: "nerve cell" EXACT []
+xref: BTO:0000938
+xref: CALOHA:TS-0683
+xref: FBbt:00005106
+xref: FMA:54527
+xref: VHOG:0001483
+xref: WBbt:0003679
+is_a: CL:0000393 ! electrically responsive cell
+is_a: CL:0000404 ! electrically signaling cell
+is_a: CL:0002319 ! neural cell
+relationship: RO:0002202 CL:0000031 ! neuroblast
+relationship: RO:0002215 GO:0019226
+
+[Term]
+id: CL:0000548
+name: animal cell
+namespace: cell
+subset: ubprop:upper_level
+is_a: CL:0000255 ! eukaryotic cell
 
 [Term]
 id: CL:0001061
@@ -69,4 +176,74 @@ intersection_of: GO:0005623
 intersection_of: RO:0000053 PATO:0000460
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9990-8331
 property_value: http://purl.org/dc/elements/1.1/date 2017-01-30T18:53:32Z xsd:dateTime
+
+[Term]
+id: CL:0002242
+name: nucleate cell
+namespace: cell
+def: "A cell containing at least one nucleus." [GOC:tfm]
+xref: FMA:67513
+intersection_of: CL:0000003 ! native cell
+intersection_of: BFO:0000051 GO:0005634
+created_by: tmeehan
+creation_date: 2010-09-07T03:32:33Z
+
+[Term]
+id: CL:0002319
+name: neural cell
+namespace: cell
+def: "A cell that is part of the nervous system." [GOC:tfm, ISBN:0618947256]
+xref: CALOHA:TS-2040
+xref: FMA:70333
+is_a: CL:0000548 ! animal cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0001016
+created_by: tmeehan
+creation_date: 2010-09-15T01:34:57Z
+
+[Term]
+id: CL:0002321
+name: embryonic cell
+namespace: cell
+def: "A cell of the embryo." [FMA:0618947256]
+xref: CALOHA:TS-0263
+xref: FMA:82840
+xref: FMA:82841
+xref: WBbt:0007028
+is_a: CL:0000548 ! animal cell
+created_by: tmeehan
+creation_date: 2010-09-15T03:39:21Z
+
+[Term]
+id: CL:0002371
+name: somatic cell
+namespace: cell
+def: "A cell of an organism that does not pass on its genetic material to the organism's offspring (i.e. a non-germ line cell)." [GOC:tfm, ISBN:0721662544]
+subset: ubprop:upper_level
+xref: BTO:0001268
+xref: FMA:72300
+xref: WBbt:0008378
+is_a: CL:0000003 ! native cell
+created_by: tmeehan
+creation_date: 2010-09-24T09:44:42Z
+
+[Term]
+id: CL:0011115
+name: precursor cell
+def: "A cell that, by division or terminal differentiation, can give rise to other cell types." [GOC:dos]
+comment: Work is needed on GO 'cell differentiation' before it is clear whether the equivalent class definition 'native cell' that capable_of some 'cell differentiation' works. Also, may want to consider merging this with non-terminally differentiated cell.
+is_a: CL:0000003 ! native cell
+intersection_of: CL:0000003 ! native cell
+intersection_of: RO:0002215 GO:0030154
+
+[Term]
+id: CL:2000029
+name: central nervous system neuron
+namespace: cell
+def: "Any neuron that is part of a central nervous system." [GOC:TermGenie]
+intersection_of: CL:0000540 ! neuron
+intersection_of: BFO:0000050 UBERON:0001017
+created_by: TermGenie
+creation_date: 2014-06-25T01:17:43Z
 

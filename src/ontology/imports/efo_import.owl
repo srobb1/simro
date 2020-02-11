@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/simro/imports/efo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2019-10-02/imports/efo_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-11/imports/efo_import.owl"/>
     </owl:Ontology>
     
 
@@ -113,6 +113,15 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0301">
         <rdfs:label>hasAncestryStatus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/is_executed_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/is_executed_in">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>is_executed_in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -270,6 +279,88 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000562 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000562">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002694"/>
+        <obo:IAO_0000115>The process of marking a material in some way for experimental purposes. E.g. the labelling of  a nucleic acid with biotin in a microarray experiment</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>MO:471</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C54694</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>labeling</oboInOwl:hasExactSynonym>
+        <rdfs:label>labelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0002694 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0002694">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004542"/>
+        <obo:IAO_0000115>A process performed as part of an experiment or wider study, i.e. intentionally designed.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIt:C42790</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_2117</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Experiment</oboInOwl:hasExactSynonym>
+        <rdfs:label>experimental process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003788 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003788">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <obo:IAO_0000115>A gene expression protocol is a  protocol which is designed to be used in a gene expression experiment performed on arrays or by high throughput sequencing.</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <efo:ArrayExpress_label>ArrayExpress protocol</efo:ArrayExpress_label>
+        <rdfs:label>gene expression protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003808 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003808">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <obo:IAO_0000115>A labelling protocol is a set of instructions or plan which is realised</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym>labeling protocol</oboInOwl:hasExactSynonym>
+        <rdfs:label>labelling protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003813 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003813">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003788"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0003808"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ebi.ac.uk/efo/is_executed_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000562"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A protocol description in which input nucleic acid material is labeled.</obo:IAO_0000115>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <rdfs:label>nucleic acid labeling protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004542 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004542">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <obo:IAO_0000115>A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <efo:definition_citation>OBI_0000011</efo:definition_citation>
+        <rdfs:label>planned process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">
@@ -318,6 +409,22 @@
         <oboInOwl:hasExactSynonym>SpecificallyDependentContinuant</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>specifically dependent continuant</oboInOwl:hasExactSynonym>
         <rdfs:label>material property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
+        <obo:IAO_0000115>A process is an entity that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity during the time it occurs.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001433</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</efo:source_definition>
+        <oboInOwl:hasDbXref>NCIt:C29862</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:415178003</oboInOwl:hasDbXref>
+        <rdfs:label>process</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

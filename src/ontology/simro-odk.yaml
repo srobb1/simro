@@ -1,0 +1,31 @@
+id: simro 
+title: SIMR Experimental Ontology
+github_org: srobb1 
+repo: simro
+robot_java_args: -Xmx12G
+#report_fail_on: ERROR
+use_dosdps: TRUE
+dosdp_tools_options: --obo-prefixes=true --prefixes=myprefixes.yaml
+import_group:
+  products:
+    - id: ro
+    - id: ms
+    - id: uo
+    - id: obi
+    - id: ero
+    - id: fbbi
+    - id: mi
+    - id: go
+    - id: chebi
+    - id: cl
+      mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
+    - id: clo
+      mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/clo_import.owl
+    - id: efo
+      mirror_from:  https://raw.githubusercontent.com/srobb1/simr_imports/master/efo_import.owl
+    - id: uberon
+      mirror_from:  https://raw.githubusercontent.com/srobb1/simr_imports/master/uberon_import.owl
+    - id: ncit
+      mirror_from: https://raw.githubusercontent.com/srobb1/simr_imports/master/ncit_import.owl
+    - id: ncbitaxon
+      mirror_from:  https://raw.githubusercontent.com/srobb1/simr_imports/master/ncbitaxon_import.owl

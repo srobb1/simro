@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2019-10-02/imports/ero_import.owl
+data-version: simro/releases/2020-02-11/imports/ero_import.owl
 ontology: simro/imports/ero_import
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000094>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000456>))\nDeclaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000224>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000420>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (obsolescence reason specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000225> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (denotator type)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000094> (material processing)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000456>))\n\n# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)\n\nEquivalentClasses(<http://www.geneontology.org/formats/oboInOwl#Subset> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000224>))\n\n\n############################\n#   Named Individuals\n############################\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (metadata complete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (ready for release)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (metadata incomplete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (uncurated)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (pending final vetting)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000224> (core)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (to be replaced with external ontology term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)\n\n\n\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)\n\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>)\n)
 
@@ -26,6 +26,7 @@ is_a: BFO:0000002 ! continuant
 id: BFO:0000015
 name: process
 is_a: BFO:0000003 ! occurrent
+disjoint_from: UBERON:0001062 ! anatomical entity
 
 [Term]
 id: BFO:0000016
@@ -38,9 +39,19 @@ name: realizable_entity
 is_a: BFO:0000020 ! specifically_dependent_continuant
 
 [Term]
+id: BFO:0000019
+name: quality
+is_a: BFO:0000020 ! specifically_dependent_continuant
+
+[Term]
 id: BFO:0000020
 name: specifically_dependent_continuant
 is_a: BFO:0000002 ! continuant
+
+[Term]
+id: BFO:0000023
+name: role (bfo)
+is_a: BFO:0000017 ! realizable_entity
 
 [Term]
 id: BFO:0000031
@@ -56,6 +67,18 @@ is_a: BFO:0000016 ! disposition (bfo)
 id: BFO:0000040
 name: material_entity
 is_a: BFO:0000004 ! independent_continuant
+
+[Term]
+id: ERO:0000001
+name: laboratory
+def: "Material entity that performs research, provides services, or processes materials." []
+comment: requested in OBI 2894859
+is_a: owl:DeprecatedClass ! DeprecatedClass
+property_value: IAO:0000112 "A cancer research laboratory." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Melissa Haendel" xsd:string
+property_value: IAO:0000119 "PERSON: Melissa Haendel" xsd:string
+is_obsolete: true
 
 [Term]
 id: ERO:0000004
@@ -106,6 +129,17 @@ property_value: IAO:0000117 "PERSON: Karen Corday" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Biosafety_level xsd:string
 
 [Term]
+id: ERO:0000581
+name: Prokaryota
+def: "The prokaryotes (pronounced /pro?'k�ri.o?ts/ or /pro?'k�ri?ts/) are a group of organisms that lack a cell nucleus (= karyon), or any other membrane-bound organelles." []
+def: "The prokaryotes (pronounced /proʊˈkæri.oʊts/ or /proʊˈkæriəts/) are a group of organisms that lack a cell nucleus (= karyon), or any other membrane-bound organelles." []
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000111 "Prokaryota" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Prokaryote xsd:string
+
+[Term]
 id: ERO:0000614
 name: measurement instrument
 def: "An instrument that has measure function. Measure function is a function that is borne by a processed material  and realized in a process in which information about some entity is expressed relative to some reference." []
@@ -128,6 +162,15 @@ property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 
 [Term]
+id: ERO:0000985
+name: non viral organism
+def: "A unicellular or multicellular individual living system that is capable of replicating or reproducing and growth and maintenance in the right environment. Examples: animal, plant, bacteria, fungus." []
+is_a: OBI:0100026 ! organism
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "PERSON: Melissa Haendel" xsd:string
+property_value: IAO:0000119 "PERSON: Melissa Haendel" xsd:string
+
+[Term]
 id: ERO:0001946
 name: super-resolution microscope
 def: "A microscope that uses light to capture images with a higher resolution than the diffraction limit" []
@@ -135,6 +178,15 @@ is_a: OBI:0400169 ! microscope
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "PERSON: Scott Hoffmann" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Super_resolution_microscopy xsd:string
+
+[Term]
+id: GO:0008150
+name: biological_process
+def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." []
+is_a: BFO:0000015 ! process
+property_value: IAO:0000118 "biological process" xsd:string
+property_value: IAO:0000118 "physiological process" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Term]
 id: IAO:0000005
@@ -225,6 +277,17 @@ property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 
 [Term]
+id: IAO:0000310
+name: document
+def: "A collection of information content entities intended to be understood together as a whole" []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "document" xsd:string
+property_value: IAO:0000112 "A journal article, patent application, laboratory notebook, or a book" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Lawrence Hunter" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
 id: IAO:0000409
 name: denotator type
 def: "A denotator type indicates how a term should be interpreted from an ontological perspective." []
@@ -232,6 +295,430 @@ is_a: IAO:0000102 ! data about an ontology part
 property_value: IAO:0000112 "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities." xsd:string
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Barry Smith, Werner Ceusters" xsd:string
+
+[Term]
+id: NCBITaxon:10088
+name: Mus <mouse, genus>
+is_a: NCBITaxon:9989 ! Rodentia
+property_value: IAO:0000118 "mice" xsd:string
+property_value: IAO:0000118 "Mus" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:10090
+name: Mus musculus
+is_a: NCBITaxon:10088 ! Mus <mouse, genus>
+property_value: IAO:0000118 "house mouse" xsd:string
+property_value: IAO:0000118 "mice C57BL/6xCBA/CaJ hybrid" xsd:string
+property_value: IAO:0000118 "mouse" xsd:string
+property_value: IAO:0000118 "Mus muscaris" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:10114
+name: Rattus
+is_a: NCBITaxon:9989 ! Rodentia
+property_value: IAO:0000118 "rat" xsd:string
+property_value: IAO:0000118 "rats" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:10116
+name: Rattus norvegicus
+is_a: NCBITaxon:10114 ! Rattus
+property_value: IAO:0000118 "brown rat" xsd:string
+property_value: IAO:0000118 "Gunn rats" xsd:string
+property_value: IAO:0000118 "Norway rat" xsd:string
+property_value: IAO:0000118 "rat" xsd:string
+property_value: IAO:0000118 "rats" xsd:string
+property_value: IAO:0000118 "Rattus norvegicus8" xsd:string
+property_value: IAO:0000118 "Rattus norwegicus" xsd:string
+property_value: IAO:0000118 "Rattus rattiscus" xsd:string
+property_value: IAO:0000118 "Rattus sp. strain Wistar" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:1224
+name: Proteobacteria
+is_a: NCBITaxon:2 ! Bacteria
+property_value: IAO:0000118 "proteobacteria" xsd:string
+property_value: IAO:0000118 "purple bacteria" xsd:string
+property_value: IAO:0000118 "purple bacteria and relatives" xsd:string
+property_value: IAO:0000118 "purple non-sulfur bacteria" xsd:string
+property_value: IAO:0000118 "purple photosynthetic bacteria" xsd:string
+property_value: IAO:0000118 "purple photosynthetic bacteria and relatives" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:2
+name: Bacteria
+is_a: ERO:0000581 ! Prokaryota
+property_value: IAO:0000118 "bacteria" xsd:string
+property_value: IAO:0000118 "eubacteria" xsd:string
+property_value: IAO:0000118 "Monera" xsd:string
+property_value: IAO:0000118 "not Bacteria Haeckel 1894" xsd:string
+property_value: IAO:0000118 "Procaryotae" xsd:string
+property_value: IAO:0000118 "Prokaryota" xsd:string
+property_value: IAO:0000118 "Prokaryotae" xsd:string
+property_value: IAO:0000118 "prokaryote" xsd:string
+property_value: IAO:0000118 "prokaryotes" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:314147
+name: Glires
+is_a: NCBITaxon:40674 ! Mammalia
+property_value: IAO:0000118 "Rodents and rabbits" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:32443
+name: Teleostei
+is_a: NCBITaxon:7742 ! Vertebrata <Metazoa>
+property_value: IAO:0000118 "teleost fishes" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:40674
+name: Mammalia
+is_a: NCBITaxon:7742 ! Vertebrata <Metazoa>
+property_value: IAO:0000118 "mammals" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:422676
+name: Aconoidasida
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:45351
+name: Nematostella vectensis
+is_a: NCBITaxon:6073 ! Cnidaria
+property_value: IAO:0000118 "Nematostella vectensis Stephenson, 1935" xsd:string
+property_value: IAO:0000118 "starlet sea anemone" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:4751
+name: Fungi
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000118 "fungi" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:4896
+name: Schizosaccharomyces pombe
+is_a: NCBITaxon:4751 ! Fungi
+property_value: IAO:0000118 "fission yeast" xsd:string
+property_value: IAO:0000118 "Schizosaccharomyces malidevorans" xsd:string
+property_value: IAO:0000118 "Schizosaccharomyces pombeP" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:4930
+name: Saccharomyces
+is_a: NCBITaxon:4751 ! Fungi
+property_value: IAO:0000118 "Pachytichospora" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:4932
+name: Saccharomyces cerevisiae
+is_a: NCBITaxon:4930 ! Saccharomyces
+property_value: IAO:0000118 "baker's yeast" xsd:string
+property_value: IAO:0000118 "brewer's yeast" xsd:string
+property_value: IAO:0000118 "Candida robusta" xsd:string
+property_value: IAO:0000118 "lager beer yeast" xsd:string
+property_value: IAO:0000118 "Saccaromyces cerevisiae" xsd:string
+property_value: IAO:0000118 "Saccharomyces capensis" xsd:string
+property_value: IAO:0000118 "Saccharomyces italicus" xsd:string
+property_value: IAO:0000118 "Saccharomyces oviformis" xsd:string
+property_value: IAO:0000118 "Saccharomyces uvarum var. melibiosus" xsd:string
+property_value: IAO:0000118 "Saccharomyes cerevisiae" xsd:string
+property_value: IAO:0000118 "Sccharomyces cerevisiae" xsd:string
+property_value: IAO:0000118 "yeast" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:50557
+name: Insecta
+is_a: NCBITaxon:6656 ! Arthropoda
+property_value: IAO:0000118 "true insects" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:5476
+name: Candida albicans
+is_a: NCBITaxon:4751 ! Fungi
+property_value: IAO:0000118 "Candida stellatoidea" xsd:string
+property_value: IAO:0000118 "Candida stellatoidea type I" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:562
+name: Escherichia coli
+is_a: NCBITaxon:1224 ! Proteobacteria
+property_value: IAO:0000118 "Bacillus coli" xsd:string
+property_value: IAO:0000118 "Bacterium coli" xsd:string
+property_value: IAO:0000118 "Bacterium coli commune" xsd:string
+property_value: IAO:0000118 "bacterium E3" xsd:string
+property_value: IAO:0000118 "Enterococcus coli" xsd:string
+property_value: IAO:0000118 "Escherchia coli" xsd:string
+property_value: IAO:0000118 "Eschericia coli" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:5811
+name: Toxoplasma gondii
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:5833
+name: Plasmodium falciparum
+is_a: NCBITaxon:422676 ! Aconoidasida
+property_value: IAO:0000118 "malaria parasite P. falciparum" xsd:string
+property_value: IAO:0000118 "Plasmodium (Laverania) falciparum" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:6073
+name: Cnidaria
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000118 "cnidarians" xsd:string
+property_value: IAO:0000118 "Coelenterata" xsd:string
+property_value: IAO:0000118 "coelenterates" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:6157
+name: Platyhelminthes
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000118 "flatworm" xsd:string
+property_value: IAO:0000118 "flatworms" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:6231
+name: Nematoda
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000118 "Nemata" xsd:string
+property_value: IAO:0000118 "nematode" xsd:string
+property_value: IAO:0000118 "nematodes" xsd:string
+property_value: IAO:0000118 "roundworm" xsd:string
+property_value: IAO:0000118 "roundworms" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:6239
+name: Caenorhabditis elegans
+is_a: NCBITaxon:6231 ! Nematoda
+property_value: IAO:0000118 "nematode" xsd:string
+property_value: IAO:0000118 "Rhabditis elegans" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:6656
+name: Arthropoda
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000118 "arthropods" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7088
+name: Lepidoptera
+is_a: NCBITaxon:50557 ! Insecta
+property_value: IAO:0000118 "butterflies and moths" xsd:string
+property_value: IAO:0000118 "moths" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7108
+name: Spodoptera frugiperda
+is_a: NCBITaxon:7088 ! Lepidoptera
+property_value: IAO:0000118 "fall armyworm" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7147
+name: Diptera
+is_a: NCBITaxon:50557 ! Insecta
+property_value: IAO:0000118 "flies" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7215
+name: Drosophila <fruit fly, genus>
+is_a: NCBITaxon:7147 ! Diptera
+property_value: IAO:0000118 "Drosophila" xsd:string
+property_value: IAO:0000118 "Drosophila Fallen, 1823" xsd:string
+property_value: IAO:0000118 "fruit flies" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7227
+name: Drosophila melanogaster
+is_a: NCBITaxon:7215 ! Drosophila <fruit fly, genus>
+property_value: IAO:0000118 "Drosophila melangaster" xsd:string
+property_value: IAO:0000118 "fruit fly" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7711
+name: Chordata
+is_a: ERO:0000985 ! non viral organism
+property_value: IAO:0000118 "chordates" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7742
+name: Vertebrata <Metazoa>
+is_a: NCBITaxon:7711 ! Chordata
+property_value: IAO:0000118 "Vertebrata" xsd:string
+property_value: IAO:0000118 "vertebrates" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:79327
+name: Schmidtea mediterranea
+is_a: NCBITaxon:6157 ! Platyhelminthes
+property_value: IAO:0000118 "Dugesia (Schmidtea) mediterranea" xsd:string
+property_value: IAO:0000118 "Dugesia mediterranea" xsd:string
+property_value: IAO:0000118 "freshwater planarian" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7955
+name: Danio rerio
+is_a: NCBITaxon:32443 ! Teleostei
+property_value: IAO:0000118 "Brachidanio rerio" xsd:string
+property_value: IAO:0000118 "Brachydanio rerio" xsd:string
+property_value: IAO:0000118 "Brachydanio rerio frankei" xsd:string
+property_value: IAO:0000118 "Cyprinus rerio" xsd:string
+property_value: IAO:0000118 "Cyprinus rerio Hamilton, 1822" xsd:string
+property_value: IAO:0000118 "Danio frankei" xsd:string
+property_value: IAO:0000118 "Danio rerio (Hamilton, 1822)" xsd:string
+property_value: IAO:0000118 "Danio rerio frankei" xsd:string
+property_value: IAO:0000118 "leopard danio" xsd:string
+property_value: IAO:0000118 "zebra danio" xsd:string
+property_value: IAO:0000118 "zebra fish" xsd:string
+property_value: IAO:0000118 "zebrafish" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:7994
+name: Astyanax mexicanus
+is_a: NCBITaxon:32443 ! Teleostei
+property_value: IAO:0000118 "Astyanax mexicanus (De Filippi, 1853)" xsd:string
+property_value: IAO:0000118 "blind cave fish" xsd:string
+property_value: IAO:0000118 "Mexican tetra" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:8292
+name: Amphibia
+is_a: NCBITaxon:7742 ! Vertebrata <Metazoa>
+property_value: IAO:0000118 "amphibians" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:8342
+name: Anura
+is_a: NCBITaxon:8292 ! Amphibia
+property_value: IAO:0000118 "anurans" xsd:string
+property_value: IAO:0000118 "frogs" xsd:string
+property_value: IAO:0000118 "frogs & toads" xsd:string
+property_value: IAO:0000118 "frogs and toads" xsd:string
+property_value: IAO:0000118 "Salientia" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:8353
+name: Xenopus <genus>
+is_a: NCBITaxon:8342 ! Anura
+property_value: IAO:0000118 "Xenopus" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:8364
+name: Xenopus (Silurana) tropicalis
+is_a: NCBITaxon:8353 ! Xenopus <genus>
+property_value: IAO:0000118 "Silurana tropicalis" xsd:string
+property_value: IAO:0000118 "western clawed frog" xsd:string
+property_value: IAO:0000118 "Xenopus laevis tropicalis" xsd:string
+property_value: IAO:0000118 "Xenopus tropicalis" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:8782
+name: Aves
+is_a: NCBITaxon:7742 ! Vertebrata <Metazoa>
+property_value: IAO:0000118 "birds" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:9005
+name: Phasianidae
+is_a: NCBITaxon:8782 ! Aves
+property_value: IAO:0000118 "turkeys" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:9031
+name: Gallus gallus
+is_a: NCBITaxon:9005 ! Phasianidae
+property_value: IAO:0000118 "bantam" xsd:string
+property_value: IAO:0000118 "chicken" xsd:string
+property_value: IAO:0000118 "chickens" xsd:string
+property_value: IAO:0000118 "Gallus domesticus" xsd:string
+property_value: IAO:0000118 "Gallus gallus domesticus" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:9443
+name: Primates
+is_a: NCBITaxon:40674 ! Mammalia
+property_value: IAO:0000118 "Primata" xsd:string
+property_value: IAO:0000118 "primate" xsd:string
+property_value: IAO:0000118 "primates" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:9606
+name: Homo sapiens
+is_a: NCBITaxon:9443 ! Primates
+property_value: IAO:0000118 "human" xsd:string
+property_value: IAO:0000118 "man" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:9845
+name: Ruminantia
+is_a: NCBITaxon:40674 ! Mammalia
+property_value: IAO:0000118 "Artiodactyla" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:9913
+name: Bos taurus
+is_a: NCBITaxon:9845 ! Ruminantia
+property_value: IAO:0000118 "Bos bovis" xsd:string
+property_value: IAO:0000118 "Bos primigenius taurus" xsd:string
+property_value: IAO:0000118 "Bos Tauurus" xsd:string
+property_value: IAO:0000118 "bovine" xsd:string
+property_value: IAO:0000118 "cattle" xsd:string
+property_value: IAO:0000118 "cow" xsd:string
+property_value: IAO:0000118 "domestic cattle" xsd:string
+property_value: IAO:0000118 "domestic cow" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:9989
+name: Rodentia
+is_a: NCBITaxon:314147 ! Glires
+property_value: IAO:0000118 "rodents" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 
 [Term]
 id: OBI:0000011
@@ -280,6 +767,19 @@ property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000117 "PERSON: Philippe Rocca Serra" xsd:string
 property_value: IAO:0000118 "material transformation" xsd:string
 property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000272
+name: protocol
+def: "a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process." []
+is_a: IAO:0000310 ! document
+property_value: IAO:0000111 "Protocol" xsd:string
+property_value: IAO:0000111 "protocol" xsd:string
+property_value: IAO:0000112 "PMID: 18388943.Nat Protoc. 2008;3(4):612-8.Protocol for the induction of arthritis in C57BL/6 mice." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
@@ -348,6 +848,58 @@ property_value: IAO:0000119 http://en.wikipedia.org/wiki/Digital_camera xsd:stri
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0001055
+name: spinning-disk confocal microscope
+def: "A confocal microscope that uses a Nipkow disk, a mechanical, geometrically operating image scanning device." []
+is_a: OBI:0001079 ! confocal microscope
+relationship: OBI:0000306 OBI:0000453 ! has_function measure function
+property_value: IAO:0000111 "spinning-disk confocal microscope" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Nipkow_disk xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001079
+name: confocal microscope
+def: "A microscope that is used to increase micrograph contrast and/or reconstruct three-dimensional images by using a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane." []
+is_a: OBI:0400169 ! microscope
+relationship: OBI:0000306 OBI:0000453 ! has_function measure function
+property_value: IAO:0000111 "confocal microscope" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Confocal_microscopy xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0100026
+name: organism
+def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
+is_a: BFO:0000040 ! material_entity
+property_value: IAO:0000111 "organism" xsd:string
+property_value: IAO:0000112 "animal" xsd:string
+property_value: IAO:0000112 "fungus" xsd:string
+property_value: IAO:0000112 "plant" xsd:string
+property_value: IAO:0000112 "virus" xsd:string
+property_value: IAO:0000114 IAO:0000121
+property_value: IAO:0000116 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')" xsd:string
+property_value: IAO:0000117 "GROUP: OBI Biomaterial Branch" xsd:string
+property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Organism" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0302887
+name: staining
+def: "Staining is a process which results in the addition a class-specific (DNA, proteins, lipids, carbohydrates) dye to a substrate to qualify or quantify the presence of a specific compound." []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000111 "staining" xsd:string
+property_value: IAO:0000112 "PMID: 18540298. Role of modified bleach method in staining of acid-fast bacilli in lymph node aspirates. Acta Cytol. 2008 May-Jun;52(3):325-8." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000119 "adapted from Wikipedia: http://en.wikipedia.org/wiki/Staining" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: OBI:0400169
 name: microscope
 def: "A microscope is an instrument which magnifies the view on objects (too small to be viewed by the naked eye) under increased resolution. A microscope can be an optical instrument but also and electronic instrument. There are various kind of optical microscopes, e.g confocal microscope, epifluoresence microscope)" []
@@ -360,8 +912,61 @@ property_value: IAO:0000119 "wikipedia" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: PATO:0000001
+name: quality
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." []
+is_a: BFO:0000020 ! specifically_dependent_continuant
+property_value: IAO:0000118 "trait" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
 id: Subset
 is_a: IAO:0000102 ! data about an ontology part
+
+[Term]
+id: UBERON:0001062
+name: anatomical entity
+def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." []
+is_a: BFO:0000040 ! material_entity
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000118 "mouse anatomical entity" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: owl:DeprecatedClass
+name: DeprecatedClass
+def: "The class of deprecated classes." []
+property_value: IAO:0000111 "DeprecatedClass" xsd:string
+
+[Typedef]
+id: BFO:0000050
+name: part_of
+namespace: relationship
+comment: Parthood as a relation between instances: The primitive instance-level relation p part_of p1 is illustrated in assertions such as: this instance of rhodopsin mediated phototransduction part_of this instance of visual perception.    This relation satisfies at least the following standard axioms of mereology: reflexivity (for all p, p part_of p); anti-symmetry (for all p, p1, if p part_of p1 and p1 part_of p then p and p1 are identical); and transitivity (for all p, p1, p2, if p part_of p1 and p1 part_of p2, then p part_of p2). Analogous axioms hold also for parthood as a relation between spatial regions.    For parthood as a relation between continuants, these axioms need to be modified to take account of the incorporation of a temporal argument. Thus for example the axiom of transitivity for continuants will assert that if c part_of c1 at t and c1 part_of c2 at t, then also c part_of c2 at t.    Parthood as a relation between classes: To define part_of as a relation between classes we again need to distinguish the two cases of continuants and processes, even though the explicit reference to instants of time now falls away. For continuants, we have C part_of C1 if and only if any instance of C at any time is an instance-level part of some instance of C1 at that time, as for example in: cell nucleus part_ of cell.
+is_transitive: true
+inverse_of: BFO:0000051 ! has_part
+
+[Typedef]
+id: BFO:0000051
+name: has_part
+namespace: relationship
+is_transitive: true
+
+[Typedef]
+id: BFO:0000062
+name: preceded_by
+namespace: relationship
+comment: An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.
+domain: BFO:0000003 ! occurrent
+is_transitive: true
+inverse_of: BFO:0000063 ! precedes
+
+[Typedef]
+id: BFO:0000063
+name: precedes
+namespace: relationship
+domain: BFO:0000003 ! occurrent
+is_transitive: true
 
 [Typedef]
 id: OBI:0000293
@@ -467,6 +1072,71 @@ comment: Has_participant is a primitive instance-level relation between a proces
 domain: BFO:0000003 ! occurrent
 
 [Typedef]
+id: RO:0001000
+name: derives from (ro)
+name: derives_from
+namespace: relationship
+comment: Derivation as a relation between instances. The temporal relation of derivation is more complex. Transformation, on the instance level, is just the relation of identity: each adult is identical to some child existing at some earlier time. Derivation on the instance-level is a relation holding between non-identicals. More precisely, it holds between distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later. Thus we will have axioms to the effect that from c derives_from c1 we can infer that c and c1 are not identical and that there is some instant of time t such that c1 exists only prior to and c only subsequent to t. We will also be able to infer that the spatial region occupied by c as it begins to exist at t overlaps with the spatial region occupied by c1 as it ceases to exist in the same instant.
+domain: BFO:0000002 ! continuant
+is_transitive: true
+inverse_of: RO:0001001 ! derived_into
+
+[Typedef]
+id: RO:0001001
+name: derived_into
+namespace: relationship
+domain: BFO:0000002 ! continuant
+is_transitive: true
+
+[Typedef]
+id: RO:0001015
+name: location of
+name: location_of
+namespace: relationship
+domain: BFO:0000002 ! continuant
+is_transitive: true
+inverse_of: RO:0001025 ! located in
+
+[Typedef]
+id: RO:0001018
+name: contained in
+name: contained_in
+namespace: relationship
+comment: Containment obtains in each case between material and immaterial continuants, for instance: lung contained_in thoracic cavity; bladder contained_in pelvic cavity. Hence containment is not a transitive relation.    If c part_of c1 at t then we have also, by our definition and by the axioms of mereology applied to spatial regions, c located_in c1 at t. Thus, many examples of instance-level location relations for continuants are in fact cases of instance-level parthood. For material continuants location and parthood coincide. Containment is location not involving parthood, and arises only where some immaterial continuant is involved. To understand this relation, we first define overlap for continuants as follows:    c1 overlap c2 at t =def for some c, c part_of c1 at t and c part_of c2 at t.    The containment relation on the instance level can then be defined (see definition):
+inverse_of: RO:0001019 ! contains
+
+[Typedef]
+id: RO:0001019
+name: contains
+namespace: relationship
+
+[Typedef]
+id: RO:0001025
+name: located in
+name: located_in
+namespace: relationship
+comment: Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus
+domain: BFO:0000002 ! continuant
+is_transitive: true
+
+[Typedef]
+id: RO:0002202
+name: develops into
+property_value: IAO:0000114 http://purl.obolibrary.org/obo/IAO_0000125 xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000117 "Terry Meehan" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+is_transitive: true
+
+[Typedef]
+id: RO:0002220
+name: adjacent to
+name: adjacent_to
+namespace: relationship
+comment: Note that adjacent_to as thus defined is not a symmetric relation, in contrast to its instance-level counterpart. For it can be the case that Cs are in general such as to be adjacent to instances of C1 while no analogous statement holds for C1s in general in relation to instances of C. Examples are: nuclear membrane adjacent_to cytoplasm; seminal vesicle adjacent_to urinary bladder; ovary adjacent_to parietal pelvic peritoneum
+
+[Typedef]
 id: RO:0002233
 name: has input
 
@@ -475,7 +1145,36 @@ id: RO:0002234
 name: has output
 
 [Typedef]
+id: RO:0002350
+name: member of
+def: "is member of is a mereological relation between a item and a collection." []
+property_value: IAO:0000112 "An organism that is a member of a population of organisms" xsd:string
+property_value: IAO:0000118 "is member of" xsd:string
+property_value: IAO:0000118 "member part of" xsd:string
+property_value: IAO:0000119 "SIO" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+property_value: RO:0001900 RO:0001901
+
+[Typedef]
 id: RO:0002353
 name: output_of
 is_a: RO:0000056 ! participates_in
+
+[Typedef]
+id: RO:0003000
+name: produces
+def: "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." []
+property_value: IAO:0000117 "Melissa Haendel" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+domain: BFO:0000040 ! material_entity
+range: BFO:0000040 ! material_entity
+inverse_of: RO:0003001 ! produced_by
+
+[Typedef]
+id: RO:0003001
+name: produced_by
+property_value: IAO:0000117 "Melissa Haendel" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+domain: BFO:0000040 ! material_entity
+range: BFO:0000040 ! material_entity
 
