@@ -26,7 +26,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/simro/imports/clo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2019-10-02/imports/clo_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-11/imports/clo_import.owl"/>
     </owl:Ontology>
     
 

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2019-10-02/imports/chebi_import.owl
+data-version: simro/releases/2020-02-11/imports/chebi_import.owl
 subsetdef: 1_STAR ""
 subsetdef: 3_STAR ""
 ontology: simro/imports/chebi_import
@@ -504,7 +504,7 @@ name: sulfite
 namespace: chebi_ontology
 alt_id: CHEBI:15139
 alt_id: CHEBI:45548
-def: "Sulfite is an inorganic anion, which is the conjugate base of hydrogen sulfite." []
+def: "A sulfur oxoanion that is the conjugate base of hydrogen sulfite (H2SO3)." []
 subset: 3_STAR
 synonym: "[SO3](2-)" RELATED [IUPAC]
 synonym: "SO3" RELATED [ChEBI]
@@ -565,6 +565,7 @@ xref: MetaCyc:HCO3
 xref: PDBeChem:BCT
 xref: PMID:17215880 "Europe PMC"
 xref: PMID:17505962 "Europe PMC"
+xref: PMID:18439416 "Europe PMC"
 xref: PMID:28732801 "Europe PMC"
 xref: PMID:29150416 "Europe PMC"
 xref: PMID:29460248 "Europe PMC"
@@ -572,6 +573,7 @@ xref: PMID:29466234 "Europe PMC"
 xref: PMID:4208463 "Europe PMC"
 xref: Wikipedia:Bicarbonate
 is_a: CHEBI:35604 ! carbon oxoanion
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
@@ -704,6 +706,7 @@ xref: PDBeChem:CL
 xref: UM-BBD_compID:c0884 "UM-BBD"
 is_a: CHEBI:16042 ! halide anion
 is_a: CHEBI:33432 ! monoatomic chlorine
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:17883 ! hydrogen chloride
@@ -965,8 +968,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [UniProt]
 synonym: "carbonyl group" EXACT [ChEBI]
+synonym: "carbonyl group" EXACT [UniProt]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -1025,6 +1028,17 @@ def: "Any organochlorine compound containing a benzene ring which is substituted
 subset: 3_STAR
 is_a: CHEBI:22712 ! benzenes
 is_a: CHEBI:36683 ! organochlorine compound
+
+[Term]
+id: CHEBI:23357
+name: cofactor
+namespace: chebi_ontology
+def: "An organic molecule or ion (usually a metal ion) that is required by an enzyme for its activity. It may be attached either loosely (coenzyme) or tightly (prosthetic group)." []
+subset: 3_STAR
+synonym: "cofactor" EXACT [IUPAC]
+synonym: "cofactors" EXACT IUPAC_NAME [IUPAC]
+xref: Wikipedia:Cofactor_(biochemistry)
+is_a: CHEBI:52206 ! biochemical role
 
 [Term]
 id: CHEBI:23367
@@ -2013,7 +2027,7 @@ subset: 3_STAR
 synonym: "[NH4](+)" RELATED [MolBase]
 synonym: "ammonium" EXACT IUPAC_NAME [IUPAC]
 synonym: "ammonium" EXACT [ChEBI]
-synonym: "AMMONIUM ION" RELATED [PDBeChem]
+synonym: "ammonium ion" RELATED [PDBeChem]
 synonym: "Ammonium(1+)" RELATED [ChemIDplus]
 synonym: "azanium" EXACT IUPAC_NAME [IUPAC]
 synonym: "NH4(+)" RELATED [UniProt]
@@ -2046,9 +2060,9 @@ xref: PMID:22631217 "Europe PMC"
 xref: Reaxys:16093784 "Reaxys"
 xref: Wikipedia:Ammonium
 is_a: CHEBI:35106 ! nitrogen hydride
-is_a: CHEBI:35274 ! ammonium ion
 is_a: CHEBI:50313 ! onium cation
 is_a: CHEBI:60242 ! monovalent inorganic cation
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
@@ -2110,6 +2124,7 @@ synonym: "carboxylic anions" RELATED [ChEBI]
 is_a: CHEBI:25696 ! organic anion
 is_a: CHEBI:35406 ! oxoanion
 relationship: is_conjugate_base_of CHEBI:33575 ! carboxylic acid
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO2R" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "44.00950" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "43.98983" xsd:string
@@ -2140,6 +2155,7 @@ is_a: CHEBI:25414 ! monoatomic monocation
 is_a: CHEBI:33504 ! alkali metal cation
 is_a: CHEBI:37246 ! elemental sodium
 is_a: CHEBI:60242 ! monovalent inorganic cation
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:77746 ! human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Na" xsd:string
@@ -3530,7 +3546,7 @@ synonym: "quaternary ammonium ion" EXACT IUPAC_NAME [IUPAC]
 synonym: "quaternary ammonium ions" RELATED [ChEBI]
 xref: KEGG:C06703
 is_a: CHEBI:25697 ! organic cation
-is_a: CHEBI:35274 ! ammonium ion
+is_a: CHEBI:35274 ! ammonium ion derivative
 relationship: has_parent_hydride CHEBI:28938 ! ammonium
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "NR4" xsd:string
@@ -3556,14 +3572,18 @@ relationship: has_part CHEBI:35267 ! quaternary ammonium ion
 
 [Term]
 id: CHEBI:35274
-name: ammonium ion
+name: ammonium ion derivative
 namespace: chebi_ontology
-def: "Ammonium, NH4(+), and derivatives formed by substitution by univalent groups." []
+def: "A derivative of ammonium, NH4(+), in which one (or more) of the hydrogens bonded to the nitrogen have been replaced with univalent organyl groups. The substituting carbon of the organyl group must not itself be directly attached to a heteroatom (thereby excluding protonated amides, hemiaminals, etc)." []
 subset: 3_STAR
+synonym: "ammonium ion derivatives" RELATED [ChEBI]
 synonym: "ammonium ions" RELATED [ChEBI]
+synonym: "azanium ion derivative" RELATED [ChEBI]
+synonym: "azanium ion derivatives" RELATED [ChEBI]
 synonym: "azanium ions" RELATED [ChEBI]
 is_a: CHEBI:33702 ! polyatomic cation
 is_a: CHEBI:51143 ! nitrogen molecular entity
+relationship: has_parent_hydride CHEBI:28938 ! ammonium
 
 [Term]
 id: CHEBI:35276
@@ -3575,7 +3595,7 @@ synonym: "ammonium compounds" RELATED [ChEBI]
 synonym: "ammonium compounds" RELATED [IUPAC]
 synonym: "azanium compounds" EXACT IUPAC_NAME [IUPAC]
 is_a: CHEBI:51143 ! nitrogen molecular entity
-relationship: has_part CHEBI:35274 ! ammonium ion
+relationship: has_part CHEBI:35274 ! ammonium ion derivative
 
 [Term]
 id: CHEBI:35281
@@ -3680,7 +3700,9 @@ name: D-glucoside
 namespace: chebi_ontology
 alt_id: CHEBI:21009
 alt_id: CHEBI:4173
+def: "Any glucoside in which the glycoside group is derived from D-glucose." []
 subset: 3_STAR
+synonym: "a D-glucoside" RELATED [UniProt]
 synonym: "D-Glucoside" EXACT [KEGG_COMPOUND]
 synonym: "D-glucosides" RELATED [ChEBI]
 xref: KEGG:C01798
@@ -3689,6 +3711,7 @@ property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H11O6R" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "179.148" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "179.05556" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[C@@H]1(OC([C@H](O)[C@H]([C@@H]1O)O)O*)CO" xsd:string
 
 [Term]
 id: CHEBI:35441
@@ -3814,10 +3837,9 @@ xref: KEGG:C01612
 is_a: CHEBI:30879 ! alcohol
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH2OR2" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "30.02600" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "58.07910" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "30.026" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "30.01056" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "OC([*])[*]" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "*C(*)O" xsd:string
 
 [Term]
 id: CHEBI:35701
@@ -4884,8 +4906,7 @@ synonym: "HYDROXY GROUP" EXACT [PDBeChem]
 synonym: "hydroxy group" EXACT [UniProt]
 synonym: "hydroxyl" RELATED [ChEBI]
 synonym: "hydroxyl group" RELATED [ChEBI]
-synonym: "oxidanyl" EXACT IUPAC_NAME [IUPAC]
-xref: PDBeChem:HYD
+xref: PDBeChem:OH
 is_a: CHEBI:33246 ! inorganic group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "HO" xsd:string
@@ -4941,7 +4962,7 @@ subset: 3_STAR
 synonym: "=O" RELATED [IUPAC]
 synonym: "oxo" EXACT IUPAC_NAME [IUPAC]
 synonym: "OXO GROUP" EXACT [PDBeChem]
-xref: PDBeChem:OXO
+xref: PDBeChem:O
 is_a: CHEBI:33246 ! inorganic group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "O" xsd:string
@@ -4978,7 +4999,7 @@ synonym: "-COOH" RELATED [IUPAC]
 synonym: "carboxy" EXACT IUPAC_NAME [IUPAC]
 synonym: "CARBOXY GROUP" EXACT [PDBeChem]
 synonym: "carboxyl group" RELATED [ChEBI]
-xref: PDBeChem:CBX
+xref: PDBeChem:FMT
 is_a: CHEBI:33249 ! organyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CHO2" xsd:string
@@ -6699,7 +6720,7 @@ synonym: "neaminium tetracation" RELATED [ChEBI]
 synonym: "neaminium(4+)" RELATED [ChEBI]
 xref: PMID:17206729 "SUBMITTER"
 is_a: CHEBI:25697 ! organic cation
-is_a: CHEBI:35274 ! ammonium ion
+is_a: CHEBI:35274 ! ammonium ion derivative
 relationship: is_conjugate_acid_of CHEBI:7489 ! neamine
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C12H30N4O6" xsd:string
@@ -6719,7 +6740,7 @@ synonym: "(1R,2R,3S,4R,6S)-4,6-diammmonio-2-{[3-O-(2,6-diammmonio-2,6-dideoxy-al
 synonym: "neomycin C" RELATED [UniProt]
 xref: PMID:17206729 "SUBMITTER"
 is_a: CHEBI:25697 ! organic cation
-is_a: CHEBI:35274 ! ammonium ion
+is_a: CHEBI:35274 ! ammonium ion derivative
 relationship: is_conjugate_acid_of CHEBI:53634 ! neomycin C
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C23H52N6O13" xsd:string
@@ -7417,7 +7438,7 @@ synonym: "neomycin B" RELATED [UniProt]
 xref: MetaCyc:CPD-14142 "SUBMITTER"
 xref: PMID:25230155 "SUBMITTER"
 is_a: CHEBI:25697 ! organic cation
-is_a: CHEBI:35274 ! ammonium ion
+is_a: CHEBI:35274 ! ammonium ion derivative
 relationship: is_conjugate_acid_of CHEBI:7508 ! framycetin
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C23H52N6O13" xsd:string

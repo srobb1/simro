@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2019-10-02/imports/clo_import.owl
+data-version: simro/releases/2020-02-11/imports/clo_import.owl
 subsetdef: 3_STAR ""
 subsetdef: disjointness_axiom_removed ""
 subsetdef: early_development ""
@@ -793,9 +793,9 @@ synonym: "神经干细胞" EXACT []
 xref: BTO:0002881
 xref: CALOHA:TS-2360
 xref: FMA:86684
-is_a: CL:0000048 ! 多能造血干细胞
+is_a: CL:0000048 ! multi fate stem cell
 is_a: CL:0002319 ! neural cell
-intersection_of: CL:0000048 ! 多能造血干细胞
+intersection_of: CL:0000048 ! multi fate stem cell
 intersection_of: BFO:0000050 UBERON:0001017 ! part of central nervous system
 relationship: BFO:0000050 UBERON:0001017 ! part of central nervous system
 relationship: RO:0002202 CL:0000133 ! develops from neurectodermal cell
@@ -982,34 +982,34 @@ synonym: "骨髓基质细胞(marrow stromal cells)" NARROW []
 xref: BTO:0002625
 xref: BTO:0003298
 xref: FMA:70546
-is_a: CL:0000048 ! 多能造血干细胞
+is_a: CL:0000048 ! multi fate stem cell
 is_a: CL:0000219 ! motile cell
 is_a: CL:0002320 ! 结缔组织细胞
 intersection_of: CL:0002320 ! 结缔组织细胞
 intersection_of: lacks_plasma_membrane_part GO:0042613 ! MHCⅡ类蛋白复合物
 intersection_of: lacks_plasma_membrane_part PR:000001003 ! CD34 molecule
 intersection_of: lacks_plasma_membrane_part PR:000001006 ! 受体型酪氨酸蛋白磷酸酶C
-intersection_of: RO:0002104 PR:000001345 ! has plasma membrane part endoglin
+intersection_of: RO:0002104 PR:000001345 ! has plasma membrane part 内皮糖蛋白
 intersection_of: RO:0002104 PR:000001800 ! has plasma membrane part 5'-nucleotidase
 intersection_of: RO:0002104 PR:000001843 ! has plasma membrane part Thy-1 membrane glycoprotein
 intersection_of: RO:0002215 GO:0001649 ! capable of osteoblast differentiation
 intersection_of: RO:0002215 GO:0016477 ! capable of 细胞迁移
-intersection_of: RO:0002215 GO:0030182 ! capable of neuron differentiation
+intersection_of: RO:0002215 GO:0030182 ! capable of 神经元分化
 intersection_of: RO:0002215 GO:0030855 ! capable of epithelial cell differentiation
-intersection_of: RO:0002215 GO:0045444 ! capable of 脂肪细胞分化
+intersection_of: RO:0002215 GO:0045444 ! capable of fat cell differentiation
 intersection_of: RO:0002215 GO:0055007 ! capable of cardiac muscle cell differentiation
 intersection_of: RO:0002215 GO:0060591 ! capable of chondroblast differentiation
 relationship: lacks_plasma_membrane_part GO:0042613 ! MHCⅡ类蛋白复合物
 relationship: lacks_plasma_membrane_part PR:000001003 ! CD34 molecule
 relationship: lacks_plasma_membrane_part PR:000001006 ! 受体型酪氨酸蛋白磷酸酶C
-relationship: RO:0002104 PR:000001345 ! has plasma membrane part endoglin
+relationship: RO:0002104 PR:000001345 ! has plasma membrane part 内皮糖蛋白
 relationship: RO:0002104 PR:000001800 ! has plasma membrane part 5'-nucleotidase
 relationship: RO:0002104 PR:000001843 ! has plasma membrane part Thy-1 membrane glycoprotein
 relationship: RO:0002215 GO:0001649 ! capable of osteoblast differentiation
 relationship: RO:0002215 GO:0016477 ! capable of 细胞迁移
-relationship: RO:0002215 GO:0030182 ! capable of neuron differentiation
+relationship: RO:0002215 GO:0030182 ! capable of 神经元分化
 relationship: RO:0002215 GO:0030855 ! capable of epithelial cell differentiation
-relationship: RO:0002215 GO:0045444 ! capable of 脂肪细胞分化
+relationship: RO:0002215 GO:0045444 ! capable of fat cell differentiation
 relationship: RO:0002215 GO:0055007 ! capable of cardiac muscle cell differentiation
 relationship: RO:0002215 GO:0060591 ! capable of chondroblast differentiation
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
@@ -5335,7 +5335,7 @@ name: data item
 name: 数据条目
 def: "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
 def: "一个数据项是一个信息内容实体，其意图是关于某事的真实陈述（模数，例如测量精度或其他系统误差），并且是通过可靠地倾向于产生（近似）真实陈述的方法构建/获取的。" []
-is_a: IAO:0000030 ! 信息内容实体
+is_a: IAO:0000030 ! information content entity
 property_value: IAO:0000111 "data item" xsd:string
 property_value: IAO:0000111 "数据条目" xsd:string
 property_value: IAO:0000112 "Data items include counts of things, analyte concentrations, and statistical summaries." xsd:string
@@ -5393,7 +5393,7 @@ name: directive information entity
 name: 指令信息实体
 def: "An information content entity whose concretizations indicate to their bearer how to realize them in a process." []
 def: "一个信息内容实体，其具体化向其承载者指示如何在一个过程中实现它们。" []
-is_a: IAO:0000030 ! 信息内容实体
+is_a: IAO:0000030 ! information content entity
 relationship: IAO:0000136 BFO:0000017 ! is about 可实现实体
 property_value: IAO:0000111 "directive information entity" xsd:string
 property_value: IAO:0000111 "指令信息实体" xsd:string
@@ -5865,7 +5865,7 @@ synonym: "动物(animals)" RELATED []
 synonym: "动物界" RELATED []
 synonym: "后生动物" EXACT []
 synonym: "多细胞动物" EXACT []
-is_a: NCBITaxon:33154 ! Opisthokonta
+is_a: NCBITaxon:33154 ! 后鞭毛生物
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
@@ -5877,7 +5877,7 @@ id: NCBITaxon:33213
 name: Bilateria
 name: 两侧对称动物
 is_a: NCBITaxon:2759 ! 真核生物(Eukaryota)
-is_a: NCBITaxon:33154 ! Opisthokonta
+is_a: NCBITaxon:33154 ! 后鞭毛生物
 is_a: NCBITaxon:6072 ! Eumetazoa
 property_value: http://purl.obolibrary.org/obo/hasDbXref GC_ID:1 xsd:string
 property_value: http://purl.obolibrary.org/obo/hasOBONamespace "ncbi_taxonomy" xsd:string
@@ -11579,7 +11579,7 @@ property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-domain: IAO:0000030 ! 信息内容实体
+domain: IAO:0000030 ! information content entity
 
 [Typedef]
 id: OBI:0000293

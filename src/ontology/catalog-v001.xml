@@ -1,57 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-
-
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ms_import.owl" uri="imports/ms_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ms_import.obo" uri="imports/ms_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ro_import.obo" uri="imports/ro_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/uo_import.owl" uri="imports/uo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/uo_import.obo" uri="imports/uo_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/cl_import.owl" uri="imports/cl_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/cl_import.obo" uri="imports/cl_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/clo_import.owl" uri="imports/clo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/clo_import.obo" uri="imports/clo_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ero_import.owl" uri="imports/ero_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ero_import.obo" uri="imports/ero_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/obi_import.owl" uri="imports/obi_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/obi_import.obo" uri="imports/obi_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/fbbi_import.owl" uri="imports/fbbi_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/fbbi_import.obo" uri="imports/fbbi_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/efo_import.owl" uri="imports/efo_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/efo_import.obo" uri="imports/efo_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/mi_import.owl" uri="imports/mi_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/mi_import.obo" uri="imports/mi_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/go_import.owl" uri="imports/go_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/go_import.obo" uri="imports/go_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/chebi_import.obo" uri="imports/chebi_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ncit_import.obo" uri="imports/ncit_import.obo"/>
-  
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ncbitaxon_import.obo" uri="imports/ncbitaxon_import.obo"/>
-  
-
-
-  
- 
-  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
-  <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/components/objectProperties.owl" uri="../templates/objectProperties.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/obi_import.obo" uri="imports/obi_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ms_import.owl" uri="imports/ms_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ms_import.obo" uri="imports/ms_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/uo_import.owl" uri="imports/uo_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/uo_import.obo" uri="imports/uo_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/cl_import.owl" uri="imports/cl_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/cl_import.obo" uri="imports/cl_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/clo_import.owl" uri="imports/clo_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/clo_import.obo" uri="imports/clo_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ero_import.owl" uri="imports/ero_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ero_import.obo" uri="imports/ero_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/fbbi_import.owl" uri="imports/fbbi_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/fbbi_import.obo" uri="imports/fbbi_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/efo_import.owl" uri="imports/efo_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/efo_import.obo" uri="imports/efo_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/mi_import.owl" uri="imports/mi_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/mi_import.obo" uri="imports/mi_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/go_import.owl" uri="imports/go_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/go_import.obo" uri="imports/go_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/chebi_import.obo" uri="imports/chebi_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ncit_import.obo" uri="imports/ncit_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/imports/ncbitaxon_import.obo" uri="imports/ncbitaxon_import.obo"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/simro/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>

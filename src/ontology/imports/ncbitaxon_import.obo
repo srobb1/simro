@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2019-10-02/imports/ncbitaxon_import.owl
+data-version: simro/releases/2020-02-11/imports/ncbitaxon_import.owl
 ontology: simro/imports/ncbitaxon_import
 
 [Term]
@@ -2172,6 +2172,13 @@ namespace: ncbi_taxonomy
 xref: GC_ID:1
 is_a: NCBITaxon:6243 ! Rhabditidae
 property_value: has_rank NCBITaxon:subfamily
+
+[Term]
+id: NCBITaxon:559292
+name: Saccharomyces cerevisiae S288C
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:4932 ! Saccharomyces cerevisiae
 
 [Term]
 id: NCBITaxon:561

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2019-10-02/imports/efo_import.owl
+data-version: simro/releases/2020-02-11/imports/efo_import.owl
 ontology: simro/imports/efo_import
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/HANCESTRO_0290>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/HANCESTRO_0305>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/HANCESTRO_0301>))\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/HANCESTRO_0290> (genetically isolated population)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/HANCESTRO_0290> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/HANCESTRO_0301> <http://purl.obolibrary.org/obo/HANCESTRO_0305>))\n\n\n)
 
@@ -18,6 +18,59 @@ property_value: organizational:class "true" xsd:string
 created_by: Helen Parkinson
 created_by: James Malone
 created_by: Tomasz Adamusiak
+
+[Term]
+id: EFO:0000562
+name: labelling
+def: "The process of marking a material in some way for experimental purposes. E.g. the labelling of  a nucleic acid with biotin in a microarray experiment" []
+synonym: "labeling" EXACT []
+xref: MO:471
+xref: NCIt:C54694
+is_a: EFO:0002694 ! experimental process
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Jie Zheng" xsd:string
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0002694
+name: experimental process
+def: "A process performed as part of an experiment or wider study, i.e. intentionally designed." []
+synonym: "Experiment" EXACT []
+xref: NCIt:C42790
+xref: NIFSTD:birnlex_2117
+is_a: EFO:0004542 ! planned process
+
+[Term]
+id: EFO:0003788
+name: gene expression protocol
+def: "A gene expression protocol is a  protocol which is designed to be used in a gene expression experiment performed on arrays or by high throughput sequencing." []
+is_a: OBI:0000272 ! protocol
+property_value: ArrayExpress:label "ArrayExpress protocol" xsd:string
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+
+[Term]
+id: EFO:0003808
+name: labelling protocol
+def: "A labelling protocol is a set of instructions or plan which is realised" []
+synonym: "labeling protocol" EXACT []
+is_a: OBI:0000272 ! protocol
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+
+[Term]
+id: EFO:0003813
+name: nucleic acid labeling protocol
+def: "A protocol description in which input nucleic acid material is labeled." []
+is_a: EFO:0003788 ! gene expression protocol
+is_a: EFO:0003808 ! labelling protocol
+relationship: http://www.ebi.ac.uk/efo/is_executed_in EFO:0000562 ! labelling
+property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
+
+[Term]
+id: EFO:0004542
+name: planned process
+def: "A processual entity that realizes a plan which is the concretization of a plan specification." []
+is_a: ProcessualEntity ! process
+property_value: definition:citation "OBI_0000011" xsd:string
 
 [Term]
 id: HANCESTRO:0004
@@ -111,6 +164,18 @@ property_value: IAO:0000117 "Jie Zheng" xsd:string
 property_value: IAO:0000117 "Tomasz Adamusiak" xsd:string
 
 [Term]
+id: ProcessualEntity
+name: process
+def: "A process is an entity that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity during the time it occurs." []
+xref: NCIt:C29862
+xref: SNOMEDCT:415178003
+is_a: EFO:0000001 ! experimental factor
+property_value: EFO:URI http://www.ebi.ac.uk/efo/EFO_0001433 xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: organizational:class "true" xsd:string
+property_value: source:definition "An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity." xsd:string
+
+[Term]
 id: Quality
 name: quality
 def: "A quality is an entity that describes some aspect which is intrinsic to that particular object and is dependent on or more material entities in which it inheres in or is borne by. Example the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee" []
@@ -140,4 +205,9 @@ property_value: source:definition "A continuant [snap:Continuant] that inheres i
 [Typedef]
 id: HANCESTRO:0301
 name: hasAncestryStatus
+
+[Typedef]
+id: http://www.ebi.ac.uk/efo/is_executed_in
+name: is_executed_in
+is_transitive: true
 

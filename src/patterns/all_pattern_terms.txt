@@ -1,5 +1,6 @@
 http://purl.obolibrary.org/obo/BFO_0000040
 http://purl.obolibrary.org/obo/BFO_0000051
+http://purl.obolibrary.org/obo/BFO_0000051
 http://purl.obolibrary.org/obo/CHEBI_137393
 http://purl.obolibrary.org/obo/CHEBI_137394
 http://purl.obolibrary.org/obo/CHEBI_27363
@@ -153,6 +154,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_4932
 http://purl.obolibrary.org/obo/NCBITaxon_50054
 http://purl.obolibrary.org/obo/NCBITaxon_52180
 http://purl.obolibrary.org/obo/NCBITaxon_5476
+http://purl.obolibrary.org/obo/NCBITaxon_559292
 http://purl.obolibrary.org/obo/NCBITaxon_562
 http://purl.obolibrary.org/obo/NCBITaxon_580240
 http://purl.obolibrary.org/obo/NCBITaxon_5811
@@ -205,8 +207,12 @@ http://purl.obolibrary.org/obo/OBI_0302729
 http://purl.obolibrary.org/obo/OBI_0302887
 http://purl.obolibrary.org/obo/OBI_0400169
 http://purl.obolibrary.org/obo/PATO_0000001
+http://purl.obolibrary.org/obo/PATO_0000001
+http://purl.obolibrary.org/obo/PATO_0000460
 http://purl.obolibrary.org/obo/PATO_0000460
 http://purl.obolibrary.org/obo/RO_0002314
+http://purl.obolibrary.org/obo/RO_0002314
+http://purl.obolibrary.org/obo/RO_0002573
 http://purl.obolibrary.org/obo/RO_0002573
 http://purl.obolibrary.org/obo/SIMRO_0000611
 http://purl.obolibrary.org/obo/SIMRO_0000611
@@ -559,6 +565,10 @@ http://purl.obolibrary.org/obo/SIMRO_0005250
 http://purl.obolibrary.org/obo/SIMRO_0005251
 http://purl.obolibrary.org/obo/SIMRO_0005252
 http://purl.obolibrary.org/obo/SIMRO_0005253
+http://purl.obolibrary.org/obo/SIMR_0001008
+http://purl.obolibrary.org/obo/SIMR_0002083
+http://purl.obolibrary.org/obo/SIMR_0005254
+http://purl.obolibrary.org/obo/SIMR_0005255
 http://purl.obolibrary.org/obo/UBERON_0001062
 http://purl.obolibrary.org/obo/upheno/patterns/abnormalAnatomicalEntity.yaml
 http://purl.org/dc/terms/title

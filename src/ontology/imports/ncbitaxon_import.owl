@@ -9,7 +9,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/simro/imports/ncbitaxon_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2019-10-02/imports/ncbitaxon_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-11/imports/ncbitaxon_import.owl"/>
     </owl:Ontology>
     
 
@@ -4397,6 +4397,17 @@
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
         <rdfs:label>Peloderinae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_559292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_559292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4932"/>
+        <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <rdfs:label>Saccharomyces cerevisiae S288C</rdfs:label>
     </owl:Class>
     
 

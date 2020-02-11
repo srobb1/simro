@@ -12,7 +12,7 @@
      xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/simro/imports/chebi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2019-10-02/imports/chebi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-11/imports/chebi_import.owl"/>
     </owl:Ontology>
     
 
@@ -30,7 +30,9 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -106,7 +108,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty">
+        <rdfs:label>subset_property</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -118,13 +122,17 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -136,7 +144,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -154,7 +164,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -172,7 +184,21 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -2229,7 +2255,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17137"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Sulfite is an inorganic anion, which is the conjugate base of hydrogen sulfite.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sulfur oxoanion that is the conjugate base of hydrogen sulfite (H2SO3).</obo:IAO_0000115>
         <chebi:charge>-2</chebi:charge>
         <chebi:formula>O3S</chebi:formula>
         <chebi:inchi>InChI=1S/H2O3S/c1-4(2)3/h(H2,1,2,3)/p-2</chebi:inchi>
@@ -2342,6 +2368,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23357"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_75771"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2396,6 +2428,7 @@
         <oboInOwl:hasDbXref>PDBeChem:BCT</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:17215880</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:17505962</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:18439416</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:28732801</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:29150416</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:29460248</oboInOwl:hasDbXref>
@@ -2449,6 +2482,12 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17544"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>PMID:17505962</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe PMC</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17544"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:18439416</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Europe PMC</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
@@ -2887,6 +2926,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17996">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16042"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33432"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23357"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
@@ -3997,6 +4042,35 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>chlorobenzenes</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <obo:IAO_0000115>An organic molecule or ion (usually a metal ion) that is required by an enzyme for its activity. It may be attached either loosely (coenzyme) or tightly (prosthetic group).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Wikipedia:Cofactor_(biochemistry)</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cofactor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cofactors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:23357</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>cofactor</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>cofactor</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>cofactors</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
     
 
 
@@ -7157,9 +7231,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28938">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35106"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35274"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50313"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60242"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23357"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
@@ -7224,11 +7303,11 @@
         <oboInOwl:hasExactSynonym>ammonium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>azanium</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>AMMONIUM ION</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Ammonium(1+)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>NH4(+)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>NH4+</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>[NH4](+)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ammonium ion</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:28938</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>ammonium</rdfs:label>
@@ -7388,12 +7467,6 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28938"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>AMMONIUM ION</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDBeChem</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28938"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Ammonium(1+)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemIDplus</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -7420,6 +7493,12 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>[NH4](+)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MolBase</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28938"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>ammonium ion</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDBeChem</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7551,6 +7630,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The conjugate base formed when the carboxy group of a carboxylic acid is deprotonated.</obo:IAO_0000115>
+        <chebi:charge>-1</chebi:charge>
         <chebi:formula>CO2R</chebi:formula>
         <chebi:mass>44.00950</chebi:mass>
         <chebi:monoisotopicmass>43.98983</chebi:monoisotopicmass>
@@ -7595,6 +7675,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33504"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37246"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60242"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23357"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
@@ -9959,16 +10045,16 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33405"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>hydracids</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33405"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>hydracid</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33405"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>hydracids</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -11966,18 +12052,45 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35274">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33702"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51143"/>
-        <obo:IAO_0000115>Ammonium, NH4(+), and derivatives formed by substitution by univalent groups.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/chebi#has_parent_hydride"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28938"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A derivative of ammonium, NH4(+), in which one (or more) of the hydrogens bonded to the nitrogen have been replaced with univalent organyl groups. The substituting carbon of the organyl group must not itself be directly attached to a heteroatom (thereby excluding protonated amides, hemiaminals, etc).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ammonium ion derivatives</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>ammonium ions</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>azanium ion derivative</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>azanium ion derivatives</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>azanium ions</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:35274</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
-        <rdfs:label>ammonium ion</rdfs:label>
+        <rdfs:label>ammonium ion derivative</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35274"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>ammonium ion derivatives</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35274"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>ammonium ions</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35274"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>azanium ion derivative</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35274"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>azanium ion derivatives</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -12273,16 +12386,19 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35436">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24278"/>
+        <obo:IAO_0000115>Any glucoside in which the glycoside group is derived from D-glucose.</obo:IAO_0000115>
         <chebi:charge>0</chebi:charge>
         <chebi:formula>C6H11O6R</chebi:formula>
         <chebi:mass>179.148</chebi:mass>
         <chebi:monoisotopicmass>179.05556</chebi:monoisotopicmass>
+        <chebi:smiles>[C@@H]1(OC([C@H](O)[C@H]([C@@H]1O)O)O*)CO</chebi:smiles>
         <oboInOwl:hasAlternativeId>CHEBI:21009</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:4173</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>KEGG:C01798</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>D-Glucoside</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>D-glucosides</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>a D-glucoside</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:35436</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>D-glucoside</rdfs:label>
@@ -12298,6 +12414,12 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>D-glucosides</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35436"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>a D-glucoside</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -12614,10 +12736,9 @@
         <obo:IAO_0000115>A secondary alcohol is a compound in which a hydroxy group, -OH, is attached to a saturated carbon atom which has two other carbon atoms attached to it.</obo:IAO_0000115>
         <chebi:charge>0</chebi:charge>
         <chebi:formula>CH2OR2</chebi:formula>
-        <chebi:mass>30.02600</chebi:mass>
-        <chebi:mass>58.07910</chebi:mass>
+        <chebi:mass>30.026</chebi:mass>
         <chebi:monoisotopicmass>30.01056</chebi:monoisotopicmass>
-        <chebi:smiles>OC([*])[*]</chebi:smiles>
+        <chebi:smiles>*C(*)O</chebi:smiles>
         <oboInOwl:hasAlternativeId>CHEBI:13425</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:13686</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:26617</oboInOwl:hasAlternativeId>
@@ -15672,11 +15793,10 @@
         <chebi:monoisotopicmass>17.00274</chebi:monoisotopicmass>
         <oboInOwl:hasAlternativeId>CHEBI:24706</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:43171</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>PDBeChem:HYD</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PDBeChem:OH</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HYDROXY GROUP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hydroxy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hydroxy group</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>oxidanyl</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>-OH</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>hydroxyl</oboInOwl:hasRelatedSynonym>
@@ -15703,13 +15823,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>hydroxy group</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_43176"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>oxidanyl</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IUPAC</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_43176"/>
@@ -15921,7 +16034,7 @@
         <chebi:monoisotopicmass>15.99491</chebi:monoisotopicmass>
         <oboInOwl:hasAlternativeId>CHEBI:29353</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:44607</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>PDBeChem:OXO</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PDBeChem:O</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>OXO GROUP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>oxo</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -16001,7 +16114,7 @@
         <chebi:monoisotopicmass>44.99765</chebi:monoisotopicmass>
         <oboInOwl:hasAlternativeId>CHEBI:23025</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:41420</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>PDBeChem:CBX</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PDBeChem:FMT</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>CARBOXY GROUP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>carboxy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>

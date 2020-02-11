@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2019-10-02/imports/mi_import.owl
+data-version: simro/releases/2020-02-11/imports/mi_import.owl
 subsetdef: Drugable ""
 subsetdef: PSI-MI_slim ""
 ontology: simro/imports/mi_import
