@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-11/imports/cl_import.owl
-subsetdef: ubprop:upper_level ""
+data-version: simro/releases/2020-02-13/imports/cl_import.owl
+subsetdef: ubprop:upper_level "abstract upper-level terms not directly useful for analysis"
 ontology: simro/imports/cl_import
 
 [Term]
@@ -20,6 +20,18 @@ xref: XAO:0003012
 equivalent_to: GO:0005623
 
 [Term]
+id: CL:0000001
+name: primary cultured cell
+namespace: cell
+def: "A cultured cell that is freshly isolated from a organismal source, or derives in culture from such a cell prior to the culture being passaged." [ReO:mhb]
+comment: Covers cells actively being cultured or stored in a quiescent state for future use.
+synonym: "primary cell culture cell" EXACT []
+synonym: "primary cell line cell" RELATED []
+synonym: "unpassaged cultured cell" EXACT []
+xref: BTO:0002290
+is_a: CL:0000010 ! cultured cell
+
+[Term]
 id: CL:0000003
 name: native cell
 namespace: cell
@@ -29,6 +41,14 @@ subset: ubprop:upper_level
 synonym: "cell in vivo" NARROW []
 xref: CARO:0000013
 is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:0000010
+name: cultured cell
+namespace: cell
+def: "A cell in vitro that is or has been maintained or propagated as part of a cell culture." [ReO:mhb]
+comment: Note that this class was re-labeled to 'cultured cell' instead of 'cell line cell', as it intent was clarified to cover any cultured cells of multicellular and unicellular organisms. This includes cells actively being cultured, or cells that have been cultured but are stored in a quiescent state for future use. In having been cultured, cells must establish homeostasis and often replicate in a foreign environment. Accomodation of this stress initiates a selection of cells fit for such challenges, wherein necessary adaptive biochemical and.or genetic changes can occur. These changes can set them apart from the in vivo cells from which they derive, and such changes will typically accumulate and change over increasing time in culture.
+is_a: CL:0000578 ! experimentally modified cell in vitro
 
 [Term]
 id: CL:0000031
@@ -51,6 +71,53 @@ xref: FMA:63368
 intersection_of: CL:0000003 ! native cell
 intersection_of: RO:0002215 GO:0017145
 relationship: RO:0002215 GO:0030154
+
+[Term]
+id: CL:0000035
+name: single fate stem cell
+namespace: cell
+def: "A stem cell that self-renews as well as give rise to a single mature cell type." [GOC:tfm]
+synonym: "unipotent stem cell" EXACT []
+synonym: "unipotential stem cell" EXACT []
+xref: FMA:70569
+is_a: CL:0000723 ! somatic stem cell
+intersection_of: CL:0000003 ! native cell
+intersection_of: RO:0000053 PATO:0001400
+intersection_of: RO:0002215 GO:0017145
+
+[Term]
+id: CL:0000037
+name: hematopoietic stem cell
+namespace: cell
+def: "A stem cell from which all cells of the lymphoid and myeloid lineages develop, including blood cells and cells of the immune system. Hematopoietic stem cells lack cell markers of effector cells (lin-negative). Lin-negative is defined by lacking one or more of the following cell surface markers: CD2, CD3 epsilon, CD4, CD5 ,CD8 alpha chain, CD11b, CD14, CD19, CD20, CD56, ly6G, ter119." [GOC:add, GOC:dsd, GOC:tfm, http://en.wikipedia.org/wiki/Hematopoietic_stem_cell, PMID:19022770]
+comment: Markers differ between species, and two sets of markers have been described for mice. HSCs are reportedly CD34-positive, CD45-positive, CD48-negative, CD150-positive, CD133-positive, and CD244-negative.
+synonym: "blood forming stem cell" EXACT []
+synonym: "colony forming unit hematopoietic" RELATED []
+synonym: "hemopoietic stem cell" EXACT []
+synonym: "HSC" EXACT []
+xref: BTO:0000725
+xref: CALOHA:TS-0448
+xref: FMA:70337
+xref: FMA:86475
+xref: VHOG:0001485
+is_a: CL:0000988 {is_inferred="true"} ! hematopoietic cell
+is_a: CL:0008001 ! hematopoietic precursor cell
+intersection_of: CL:0000988 ! hematopoietic cell
+intersection_of: lacks_plasma_membrane_part PR:000001002
+intersection_of: lacks_plasma_membrane_part PR:000001004
+intersection_of: lacks_plasma_membrane_part PR:000001012
+intersection_of: lacks_plasma_membrane_part PR:000001020
+intersection_of: lacks_plasma_membrane_part PR:000001024
+intersection_of: lacks_plasma_membrane_part PR:000001083
+intersection_of: lacks_plasma_membrane_part PR:000001084
+intersection_of: lacks_plasma_membrane_part PR:000001289
+intersection_of: lacks_plasma_membrane_part PR:000001839
+intersection_of: lacks_plasma_membrane_part PR:000001889
+intersection_of: lacks_plasma_membrane_part PR:000002978
+intersection_of: lacks_plasma_membrane_part PR:000002981
+intersection_of: RO:0002215 GO:0002244
+intersection_of: RO:0002215 GO:0048103
+relationship: RO:0002202 CL:0000566 ! angioblastic mesenchymal cell
 
 [Term]
 id: CL:0000047
@@ -82,6 +149,26 @@ intersection_of: RO:0000053 PATO:0001402
 intersection_of: RO:0002215 GO:0017145
 
 [Term]
+id: CL:0000051
+name: common lymphoid progenitor
+namespace: cell
+alt_id: CL:0000044
+def: "A oligopotent progenitor cell committed to the lymphoid lineage." [GOC:add, GOC:dsd, GOC:tfm, PMID:10407577, PMID:16551251]
+comment: CLP are CD7-positive, CD10-positive, CD19-negative, CD34-positive, CD45RA-positive, CD79a-negative, CD127-positive, AA4.1-positive, RAG-negative, Sca-1-low, sIgM-negative, sIgD-negative, TdT-negative, Vpre-B-negative, and pre-BCR-negative. Expression of transcription factors include E2A-positive, EBF-positive, Ikaros-negative, PU.1-negative, and Pax5-negative.
+synonym: "CLP" EXACT []
+synonym: "committed lymphopoietic stem cell" RELATED []
+synonym: "common lymphocyte precursor" EXACT []
+synonym: "common lymphocyte progenitor" EXACT []
+synonym: "common lymphoid precursor" EXACT []
+synonym: "early lymphocyte progenitor" RELATED []
+synonym: "ELP" RELATED []
+synonym: "lymphoid stem cell" RELATED []
+synonym: "lymphopoietic stem cell" RELATED []
+is_a: CL:0002032 {is_inferred="true"} ! hematopoietic oligopotent progenitor cell
+intersection_of: CL:0002032 ! hematopoietic oligopotent progenitor cell
+intersection_of: RO:0002215 GO:0030098
+
+[Term]
 id: CL:0000055
 name: non-terminally differentiated cell
 namespace: cell
@@ -94,6 +181,60 @@ is_a: CL:0000003 ! native cell
 relationship: RO:0002215 GO:0030154
 
 [Term]
+id: CL:0000057
+name: fibroblast
+namespace: cell
+def: "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped." [http://en.wikipedia.org/wiki/Fibroblast, ISBN:0517223651, MESH:A11.329.228, MESH:D005347]
+comment: These cells may be vimentin-positive, fibronectin-positive, fsp1-positive, MMP-1-positive, collagen I-positive, collagen III-positive, and alpha-SMA-negative.
+xref: BTO:0000452
+xref: CALOHA:TS-0362
+xref: FMA:63877
+xref: VHOG:0001482
+is_a: CL:0002320 ! connective tissue cell
+relationship: RO:0002202 CL:0000134 ! mesenchymal stem cell
+
+[Term]
+id: CL:0000066
+name: epithelial cell
+namespace: cell
+def: "A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina." [FB:ma, GOC:tfm, MESH:A11.436]
+synonym: "epitheliocyte" EXACT []
+xref: BTO:0000414
+xref: CALOHA:TS-2026
+xref: CARO:0000077
+xref: FBbt:00000124
+xref: FMA:66768
+xref: WBbt:0003672
+is_a: CL:0000548 ! animal cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0000483
+disjoint_from: CL:0000738 ! leukocyte
+
+[Term]
+id: CL:0000068
+name: duct epithelial cell
+namespace: cell
+is_a: CL:0000066 ! epithelial cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0000058
+
+[Term]
+id: CL:0000075
+name: columnar/cuboidal epithelial cell
+namespace: cell
+is_a: CL:0000066 ! epithelial cell
+is_a: CL:0002371 ! somatic cell
+
+[Term]
+id: CL:0000080
+name: circulating cell
+namespace: cell
+def: "A cell which moves among different tissues of the body, via blood, lymph, or other medium." [GOC:add]
+intersection_of: CL:0000003 ! native cell
+intersection_of: BFO:0000050 UBERON:0000179
+
+[Term]
 id: CL:0000133
 name: neurectodermal cell
 namespace: cell
@@ -102,11 +243,58 @@ synonym: "neurectoderm cell" EXACT []
 is_a: CL:0000221 ! ectodermal cell
 
 [Term]
+id: CL:0000134
+name: mesenchymal stem cell
+namespace: cell
+alt_id: CL:0002452
+def: "A connective tissue cell that normally gives rise to other cells that are organized as three-dimensional masses. This cell type is CD73-positive, CD90-positive, CD105-positive, CD45-negative, CD34-negative, and MHCII-negative. They may further differentiate into osteoblasts, adipocytes, myocytes, neurons, or chondroblasts in vitro. Originally described as residing in the bone marrow, this cell type is now known to reside in many, if not all, adult organs." [FB:ma, GOC:dsd, http://en.wikipedia.org/wiki/Mesenchymal_stem_cell, http://www.copewithcytokines.de/cope.cgi?key=mesenchymal%20stem%20cells, PMCID:PMC2613570, PMID:10102814j, PMID:16923606, PMID:17986482, PMID:19960544]
+comment: Many but not all mesenchymal cells derive from the mesoderm. MSCs are reportedly CD3-negative, CD4-negative, CD5-negative, CD8-negative, CD11a-negative, CD11b-negative, CD14-negative, CD19-negative, CD29-positive, CD31-negative, CD34-negative, CD38-negative, CD40-negative, CD44-positive, CD45-negative, CD49-positive, CD54-positive, CD66b-negative, CD79a-negative, CD80-negative, CD102-positive, CD106-positive, CD117-positive, CD121a-positive, CD121b-positive, CD123-positive, CD124-positive, CD133-negative, CD146-positive, CD166-positive, CD271-positive, B220-negative, Gr1-negative, MHCI-positive, MHCII-negative, SSEA4-negative, sca1-positive, Ter119-negative, and glycophorin A-negative. Cultured MSCs are capable of producing stem cell factor, IL7, IL8, IL11, TGF-beta, cofilin, galectin-1, laminin-receptor 1, cyclophilin A, and MMP-2.
+synonym: "BMSC" NARROW []
+synonym: "bone marrow stromal cells" NARROW []
+synonym: "CFU-F" RELATED []
+synonym: "colony-forming unit-fibroblast" NARROW []
+synonym: "marrow stromal cells" NARROW [PMID:11378515]
+synonym: "mesenchymal precursor cell" RELATED []
+synonym: "mesenchymal progenitor cells" RELATED PLURAL [MESH:D044982]
+synonym: "mesenchymal stem cell" RELATED []
+synonym: "mesenchymal stromal cell" RELATED []
+synonym: "mesenchymal stromal cells" RELATED PLURAL []
+synonym: "MSC" RELATED [PMID:11378515]
+synonym: "stem cells, mesenchymal" RELATED PLURAL [MESH:D044982]
+xref: BTO:0002625
+xref: BTO:0003298
+xref: FMA:70546
+is_a: CL:0000048 ! multi fate stem cell
+is_a: CL:0002320 {is_inferred="true"} ! connective tissue cell
+intersection_of: CL:0002320 ! connective tissue cell
+intersection_of: lacks_plasma_membrane_part GO:0042613
+intersection_of: lacks_plasma_membrane_part PR:000001003
+intersection_of: lacks_plasma_membrane_part PR:000001006
+intersection_of: RO:0002104 PR:000001345
+intersection_of: RO:0002104 PR:000001800
+intersection_of: RO:0002104 PR:000001843
+intersection_of: RO:0002215 GO:0001649
+intersection_of: RO:0002215 GO:0016477
+intersection_of: RO:0002215 GO:0030182
+intersection_of: RO:0002215 GO:0030855
+intersection_of: RO:0002215 GO:0045444
+intersection_of: RO:0002215 GO:0055007
+intersection_of: RO:0002215 GO:0060591
+
+[Term]
 id: CL:0000211
 name: electrically active cell
 namespace: cell
 def: "A cell whose function is determined by the generation or the reception of an electric signal." [FB:ma]
 is_a: CL:0000003 ! native cell
+
+[Term]
+id: CL:0000219
+name: motile cell
+namespace: cell
+def: "A cell that moves by its own activities." [FB:ma]
+intersection_of: CL:0000003 ! native cell
+intersection_of: RO:0002215 GO:0048870
 
 [Term]
 id: CL:0000221
@@ -119,10 +307,85 @@ is_a: CL:0002321 ! embryonic cell
 relationship: BFO:0000050 UBERON:0000924
 
 [Term]
+id: CL:0000223
+name: endodermal cell
+namespace: cell
+def: "A cell of the inner of the three germ layers of the embryo." [MESH:A16.254.425.407]
+synonym: "endoderm cell" EXACT []
+xref: FMA:72555
+is_a: CL:0002321 ! embryonic cell
+relationship: BFO:0000050 UBERON:0000925
+
+[Term]
+id: CL:0000226
+name: single nucleate cell
+namespace: cell
+def: "A cell with a single nucleus." [FB:ma, GOC:tfm]
+intersection_of: CL:0000003 ! native cell
+intersection_of: RO:0000053 PATO:0001407
+
+[Term]
+id: CL:0000236
+name: B cell
+namespace: cell
+def: "A lymphocyte of B lineage with the phenotype CD19-positive, CD20-positive, and capable of B cell mediated immunity." [GO_REF:0000031, GOC:add, GOC:tfm, ISBN:0781735149]
+synonym: "B lymphocyte" EXACT []
+synonym: "B-cell" EXACT []
+synonym: "B-lymphocyte" EXACT []
+xref: BTO:0000776
+xref: CALOHA:TS-0068
+xref: FMA:62869
+xref: VHOG:0001480
+is_a: CL:0000945 {is_inferred="true"} ! lymphocyte of B lineage
+intersection_of: CL:0000945 ! lymphocyte of B lineage
+intersection_of: RO:0002215 GO:0019724
+relationship: RO:0002202 CL:0000826 ! pro-B cell
+
+[Term]
 id: CL:0000255
 name: eukaryotic cell
 namespace: cell
 is_a: CL:0000003 ! native cell
+
+[Term]
+id: CL:0000306
+name: crystallin accumulating cell
+namespace: cell
+synonym: "lens cell" EXACT []
+xref: FBbt:00004193
+is_a: CL:0000325 ! stuff accumulating cell
+
+[Term]
+id: CL:0000325
+name: stuff accumulating cell
+namespace: cell
+def: "A cell that is specialised to accumulate a particular substance(s)." [FB:ma]
+subset: ubprop:upper_level
+is_a: CL:0000003 ! native cell
+
+[Term]
+id: CL:0000349
+name: extraembryonic cell
+namespace: cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0000478
+
+[Term]
+id: CL:0000362
+name: epidermal cell
+namespace: cell
+alt_id: CL:1000396
+def: "An epithelial cell of the integument (the outer layer of an organism)." [Flybase:dsj, MA:ma]
+synonym: "cell of epidermis" EXACT [FMA:62411]
+synonym: "epithelial cell of skin" NARROW [FMA:62411]
+xref: BTO:0001470
+xref: CALOHA:TS-0283
+xref: FMA:62411
+is_a: CL:0002159 ! general ecto-epithelial cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0007376
 
 [Term]
 id: CL:0000393
@@ -158,11 +421,259 @@ relationship: RO:0002202 CL:0000031 ! neuroblast
 relationship: RO:0002215 GO:0019226
 
 [Term]
+id: CL:0000542
+name: lymphocyte
+namespace: cell
+def: "A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin." [GOC:add, ISBN:0683073696, ISBN:0781735149]
+comment: Editors note: consider adding taxon constraint to vertebrata (PMID:18025161)
+xref: BTO:0000775
+xref: CALOHA:TS-0583
+xref: FMA:62863
+xref: VHOG:0001535
+is_a: CL:0000738 {is_inferred="true"} ! leukocyte
+intersection_of: CL:0000738 ! leukocyte
+intersection_of: BFO:0000051 CP:0000000 ! neutrophillic cytoplasm
+intersection_of: BFO:0000051 CP:0000037 ! increased nucleus size
+intersection_of: BFO:0000051 GO:0000792
+intersection_of: lacks_part GO:0030141
+relationship: RO:0002202 CL:0000051 ! common lymphoid progenitor
+
+[Term]
 id: CL:0000548
 name: animal cell
 namespace: cell
 subset: ubprop:upper_level
 is_a: CL:0000255 ! eukaryotic cell
+
+[Term]
+id: CL:0000566
+name: angioblastic mesenchymal cell
+namespace: cell
+def: "A mesenchymal stem cell capable of developing into blood vessel endothelium." [GOC:dsd, GOC:tfm, PMID:12768659]
+comment: These cells are reportedly CD31-positive, CD34-positive, CD144-positive, CD309-positive, and TAL1-positive.
+synonym: "angioblast" EXACT []
+synonym: "chondroplast" EXACT []
+is_a: CL:0000134 {is_inferred="true"} ! mesenchymal stem cell
+intersection_of: CL:0000134 ! mesenchymal stem cell
+intersection_of: RO:0002104 PR:000001444
+intersection_of: RO:0002104 PR:000002112
+intersection_of: RO:0002104 PR:000016043
+relationship: RO:0002202 CL:0000134 ! mesenchymal stem cell
+
+[Term]
+id: CL:0000578
+name: experimentally modified cell in vitro
+namespace: cell
+def: "A cell in vitro that has undergone physical changes as a consequence of a deliberate and specific experimental procedure." [FB:ma, ReO:mhb]
+comment: This class has been re-labeled to imply reference only to in vitro experimentally modified cells, similarly, the definition has been slightly updated to reflect this. 'experimentally modified cell' refers only to cells in vitro, and not modified in vivo/in environment cells. There is currently no class representing unmodified in vitro cells (other than the parent 'cell in vitro'), or a class representing modified native cells. More granular subclassing of experimentally modified cell can be found in ReO. MHB 1.12.12
+is_a: CL:0001034 ! cell in vitro
+
+[Term]
+id: CL:0000630
+name: supportive cell
+namespace: cell
+def: "A cell whose primary function is to support other cell types." [FB:ma, GOC:tfm]
+xref: BTO:0002315
+is_a: CL:0000003 ! native cell
+
+[Term]
+id: CL:0000710
+name: neurecto-epithelial cell
+namespace: cell
+def: "Epithelial cells derived from neural plate and neural crest." [GOC:tfm]
+comment: The term "neuroepithelial cell" is used to describe both this cell type and sensory epithelial cell (CL:0000098).
+synonym: "neuroepithelial cell" BROAD []
+xref: BTO:0004301
+xref: FMA:70557
+is_a: CL:0000075 ! columnar/cuboidal epithelial cell
+intersection_of: CL:0002077 ! ecto-epithelial cell
+intersection_of: RO:0002202 CL:0000133 ! neurectodermal cell
+
+[Term]
+id: CL:0000723
+name: somatic stem cell
+namespace: cell
+def: "A stem cell that can give rise to cell types of the body other than those of the germ-line." [GO:0048103]
+xref: CALOHA:TS-2086
+xref: FMA:63368
+is_a: CL:0000034 {is_inferred="true"} ! stem cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000034 ! stem cell
+intersection_of: RO:0002215 GO:0048103
+
+[Term]
+id: CL:0000738
+name: leukocyte
+namespace: cell
+def: "An achromatic cell of the myeloid or lymphoid lineages capable of ameboid movement, found in blood or other tissue." [GOC:add, GOC:tfm, ISBN:978-0-323-05290-0]
+synonym: "immune cell" EXACT []
+synonym: "leucocyte" EXACT []
+synonym: "white blood cell" EXACT []
+xref: BTO:0000751
+xref: CALOHA:TS-0549
+xref: FMA:62852
+is_a: CL:0000988 {is_inferred="true"} ! hematopoietic cell
+intersection_of: CL:0000988 ! hematopoietic cell
+intersection_of: RO:0002215 GO:0001667
+relationship: BFO:0000050 UBERON:0002405
+relationship: RO:0002160 NCBITaxon:7742
+relationship: RO:0002202 CL:0000037 ! hematopoietic stem cell
+
+[Term]
+id: CL:0000826
+name: pro-B cell
+namespace: cell
+def: "A progenitor cell of the B cell lineage, with some lineage specific activity such as early stages of recombination of B cell receptor genes, but not yet fully committed to the B cell lineage until the expression of PAX5 occurs." [GOC:add, GOC:dsd, ISBN:0781735149, PMID:12633665, PMID:16551251, PMID:18432934]
+comment: Human pro-B cells are reportedly CD10-positive, CD22-positive, CD34-positive, CD38-positive, CD45-low, CD48-positive, CD79a-positive, CD127-positive, CD184-positive, RAG-positive, TdT-positive, Vpre-B-positive, pre-BCR-negative, IgD-negative, and IgM-negative. Transcription factors expressed: Pax5-positive, EBF-positive, E2A-negative, Ikaros-negative, and PU.1-negative.
+synonym: "pre-B cell (Philadelphia nomenclature)" RELATED [PMID:11244048]
+synonym: "pre-pro B cell" BROAD [PMID:17582343]
+synonym: "pro-B lymphocyte" EXACT []
+synonym: "pro-B-cell" EXACT []
+synonym: "pro-B-lymphocyte" EXACT []
+synonym: "progenitor B cell" EXACT []
+synonym: "progenitor B lymphocyte" EXACT []
+synonym: "progenitor B-cell" EXACT []
+synonym: "progenitor B-lymphocyte" EXACT []
+xref: BTO:0003104
+is_a: CL:0000838 {is_inferred="true"} ! lymphoid lineage restricted progenitor cell
+intersection_of: CL:0000838 ! lymphoid lineage restricted progenitor cell
+intersection_of: BFO:0000051 PR:000001903
+intersection_of: BFO:0000051 PR:000006611
+intersection_of: RO:0000056 GO:0033152
+relationship: RO:0002202 CL:0000051 ! common lymphoid progenitor
+
+[Term]
+id: CL:0000837
+name: hematopoietic multipotent progenitor cell
+namespace: cell
+def: "A hematopoietic multipotent progenitor cell is multipotent, but not capable of long-term self-renewal. These cells are characterized as lacking lineage cell surface markers and being CD34-positive in both mice and humans." [GOC:add, GOC:tfm, PMID:19022770]
+comment: Markers differ between mouse and human.
+synonym: "hemopoietic progenitor cell" EXACT []
+synonym: "MPP" EXACT []
+xref: BTO:0000725
+xref: CALOHA:TS-0448
+is_a: CL:0000988 {is_inferred="true"} ! hematopoietic cell
+is_a: CL:0008001 ! hematopoietic precursor cell
+intersection_of: CL:0000988 ! hematopoietic cell
+intersection_of: lacks_plasma_membrane_part PR:000001002
+intersection_of: lacks_plasma_membrane_part PR:000001004
+intersection_of: lacks_plasma_membrane_part PR:000001012
+intersection_of: lacks_plasma_membrane_part PR:000001020
+intersection_of: lacks_plasma_membrane_part PR:000001024
+intersection_of: lacks_plasma_membrane_part PR:000001083
+intersection_of: lacks_plasma_membrane_part PR:000001084
+intersection_of: lacks_plasma_membrane_part PR:000001289
+intersection_of: lacks_plasma_membrane_part PR:000001839
+intersection_of: lacks_plasma_membrane_part PR:000001869
+intersection_of: lacks_plasma_membrane_part PR:000001889
+intersection_of: lacks_plasma_membrane_part PR:000002978
+intersection_of: lacks_plasma_membrane_part PR:000002981
+intersection_of: RO:0000053 PATO:0001402
+intersection_of: RO:0002104 PR:000001003
+disjoint_from: CL:0002032 ! hematopoietic oligopotent progenitor cell
+relationship: RO:0002202 CL:0000037 ! hematopoietic stem cell
+
+[Term]
+id: CL:0000838
+name: lymphoid lineage restricted progenitor cell
+namespace: cell
+def: "A progenitor cell restricted to the lymphoid lineage." [GOC:add, GOC:tfm]
+comment: Note that this is a class of cell types, not an identified single cell type.
+synonym: "lymphoid progenitor cell" BROAD []
+xref: BTO:0004731
+xref: CALOHA:TS-2025
+xref: FMA:70338
+is_a: CL:0002031 {is_inferred="true"} ! hematopoietic lineage restricted progenitor cell
+intersection_of: CL:0002031 ! hematopoietic lineage restricted progenitor cell
+intersection_of: RO:0002215 GO:0030098
+
+[Term]
+id: CL:0000842
+name: mononuclear cell
+namespace: cell
+def: "A leukocyte with a single non-segmented nucleus in the mature form." [GOC:add]
+synonym: "mononuclear leukocyte" EXACT []
+synonym: "peripheral blood mononuclear cell" NARROW []
+xref: BTO:0000878
+xref: CALOHA:TS-0768
+xref: FMA:86713
+is_a: CL:0000738 {is_inferred="true"} ! leukocyte
+intersection_of: CL:0000738 ! leukocyte
+intersection_of: lacks_part GO:0030141
+intersection_of: RO:0000053 PATO:0001407
+
+[Term]
+id: CL:0000945
+name: lymphocyte of B lineage
+namespace: cell
+def: "A lymphocyte of B lineage is a lymphocyte that expresses CD19 on the cell surface. An additional defining characteristic is the commitment to express an immunoglobulin complex." [GO_REF:0000031, GOC:add, GOC:rhs, GOC:tfm, ISBN:0781735149]
+comment: Types of B lineage lymphocytes include B cells and antibody secreting cells (plasmablasts and plasma cells).  Lymphocytes of B cell lineage can be distinguished from those of T cell lineage by their lack of CD3e (as part of the T cell receptor complex).
+is_a: CL:0000542 {is_inferred="true"} ! lymphocyte
+intersection_of: CL:0000542 ! lymphocyte
+intersection_of: lacks_plasma_membrane_part PR:000001020
+intersection_of: RO:0002104 PR:000001002
+relationship: RO:0002202 CL:0000826 ! pro-B cell
+
+[Term]
+id: CL:0000988
+name: hematopoietic cell
+namespace: cell
+def: "A cell of a hematopoietic lineage." [GO_REF:0000031, GOC:add]
+synonym: "haematopoietic cell" EXACT []
+synonym: "haemopoietic cell" EXACT []
+synonym: "hemopoietic cell" EXACT []
+xref: BTO:0000574
+xref: CALOHA:TS-2017
+xref: FMA:70366
+xref: FMA:83598
+is_a: CL:0000548 ! animal cell
+is_a: CL:0002371 ! somatic cell
+
+[Term]
+id: CL:0001034
+name: cell in vitro
+namespace: cell
+def: "A cell that is maintained or propagated in a controlled artificial environment for use in an investigation." [ReO:mhb]
+comment: 'In vitro', translating literally to 'in glass', typically refers to a controlled, often sterile, laboratory setting where cells or other specimens are placed by some agent for the purpose of studying or manipulating them as part of some research investigation. 'In vitro' is intended to contrast with 'native',which refers to cells or other biological entities that are found in a natural setting. It describes unicellular organisms removed from a natural environement and multicellular organism cells removed from an organism, or cells derived in culture from such displaced cells.
+is_a: CL:0000000 ! cell
+created_by: haendel
+creation_date: 2012-01-12T09:58:38Z
+
+[Term]
+id: CL:0001035
+name: bone cell
+namespace: cell
+def: "A connective tissue cell found in bone." [GO_REF:0000034, GOC:add]
+is_a: CL:0000548 {is_inferred="true"} ! animal cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0001474
+created_by: adiehl
+creation_date: 2011-11-16T04:28:16Z
+
+[Term]
+id: CL:0001060
+name: hematopoietic oligopotent progenitor cell, lineage-negative
+namespace: cell
+def: "A hematopoietic oligopotent progenitor cell that has the ability to differentiate into limited cell types but lacks lineage cell markers and self renewal capabilities. Cell lacks hematopoeitic lineage markers." [GOC:tfm, PMID:19022770]
+is_a: CL:0002032 ! hematopoietic oligopotent progenitor cell
+is_a: CL:0008001 ! hematopoietic precursor cell
+intersection_of: CL:0002032 ! hematopoietic oligopotent progenitor cell
+intersection_of: lacks_plasma_membrane_part PR:000001002
+intersection_of: lacks_plasma_membrane_part PR:000001004
+intersection_of: lacks_plasma_membrane_part PR:000001012
+intersection_of: lacks_plasma_membrane_part PR:000001020
+intersection_of: lacks_plasma_membrane_part PR:000001024
+intersection_of: lacks_plasma_membrane_part PR:000001083
+intersection_of: lacks_plasma_membrane_part PR:000001084
+intersection_of: lacks_plasma_membrane_part PR:000001289
+intersection_of: lacks_plasma_membrane_part PR:000001839
+intersection_of: lacks_plasma_membrane_part PR:000001889
+intersection_of: lacks_plasma_membrane_part PR:000002978
+intersection_of: lacks_plasma_membrane_part PR:000002981
+intersection_of: RO:0000053 PATO:0001401
+relationship: RO:0002202 CL:0000837 ! hematopoietic multipotent progenitor cell
+created_by: tmeehan
+creation_date: 2010-01-06T03:43:27Z
 
 [Term]
 id: CL:0001061
@@ -178,6 +689,120 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 property_value: http://purl.org/dc/elements/1.1/date 2017-01-30T18:53:32Z xsd:dateTime
 
 [Term]
+id: CL:0002031
+name: hematopoietic lineage restricted progenitor cell
+namespace: cell
+def: "A hematopoietic progenitor cell that is capable of developing into only one lineage of hematopoietic cells." [GOC:tfm, PMID:19022770]
+is_a: CL:0000988 {is_inferred="true"} ! hematopoietic cell
+is_a: CL:0008001 ! hematopoietic precursor cell
+intersection_of: CL:0000988 ! hematopoietic cell
+intersection_of: RO:0000053 PATO:0001400
+disjoint_from: CL:0002032 ! hematopoietic oligopotent progenitor cell
+relationship: RO:0002202 CL:0002032 ! hematopoietic oligopotent progenitor cell
+created_by: tmeehan
+creation_date: 2010-01-06T03:43:20Z
+
+[Term]
+id: CL:0002032
+name: hematopoietic oligopotent progenitor cell
+namespace: cell
+def: "A hematopoietic oligopotent progenitor cell that has the ability to differentiate into limited cell types but lacks lineage cell markers and self renewal capabilities. Cell lacks hematopoeitic lineage markers." [GOC:tfm, PMID:19022770]
+comment: This cell type is intended to be compatible with any vertebrate hematopoietic oligopotent progenitor cell.  For mammalian hematopoietic oligopotent progenitor cells known to be lineage-negative, please use the term 'hematopoietic oligopotent progenitor cell' (CL_0001060).
+is_a: CL:0000988 {is_inferred="true"} ! hematopoietic cell
+is_a: CL:0008001 ! hematopoietic precursor cell
+intersection_of: CL:0000988 ! hematopoietic cell
+intersection_of: RO:0000053 PATO:0001401
+relationship: RO:0002202 CL:0000837 ! hematopoietic multipotent progenitor cell
+created_by: tmeehan
+creation_date: 2010-01-06T03:43:27Z
+
+[Term]
+id: CL:0002076
+name: endo-epithelial cell
+namespace: cell
+def: "An epithelial cell derived from endoderm." [FMA:69075, GOC:tfm]
+xref: FMA:69075
+is_a: CL:0000066 ! epithelial cell
+is_a: CL:0002371 ! somatic cell
+relationship: RO:0002202 CL:0000223 ! endodermal cell
+created_by: tmeehan
+creation_date: 2010-06-29T03:38:14Z
+
+[Term]
+id: CL:0002077
+name: ecto-epithelial cell
+namespace: cell
+def: "An epithelial cell derived from ectoderm." [FMA:69074, GOC:tfm]
+xref: FMA:69074
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: RO:0002202 CL:0000221 ! ectodermal cell
+created_by: tmeehan
+creation_date: 2010-06-29T03:38:22Z
+
+[Term]
+id: CL:0002087
+name: nongranular leukocyte
+namespace: cell
+def: "A leukocyte that lacks granules." [GOC:tfm]
+synonym: "agranular leukocyte" EXACT []
+xref: FMA:62855
+is_a: CL:0000738 {is_inferred="true"} ! leukocyte
+intersection_of: CL:0000738 ! leukocyte
+intersection_of: lacks_part GO:0030141
+created_by: tmeehan
+creation_date: 2010-07-22T11:30:33Z
+
+[Term]
+id: CL:0002149
+name: epithelial cell of uterus
+namespace: cell
+alt_id: CL:1000294
+def: "An epithelial cell of the uterus." [GOC:tfm]
+xref: FMA:256161
+is_a: CL:0002076 {is_inferred="true"} ! endo-epithelial cell
+intersection_of: CL:0002076 ! endo-epithelial cell
+intersection_of: BFO:0000050 UBERON:0000995
+created_by: tmeehan
+creation_date: 2010-08-24T10:45:54Z
+
+[Term]
+id: CL:0002159
+name: general ecto-epithelial cell
+namespace: cell
+def: "Epithelial cells derived from general body ectoderm and ectoderm placodes." [GOC:tfm]
+xref: FMA:70556
+is_a: CL:0002077 ! ecto-epithelial cell
+created_by: tmeehan
+creation_date: 2010-08-26T08:31:08Z
+
+[Term]
+id: CL:0002222
+name: vertebrate lens cell
+namespace: cell
+def: "A cell comprising the transparent, biconvex body separating the posterior chamber and vitreous body, and constituting part of the refracting mechanism of the mammalian eye." [GOC:tfm, ISBN:0721662544]
+xref: FMA:70950
+is_a: CL:0000066 ! epithelial cell
+is_a: CL:0000306 ! crystallin accumulating cell
+is_a: CL:0002371 ! somatic cell
+relationship: BFO:0000050 UBERON:0000965
+created_by: tmeehan
+creation_date: 2010-09-07T10:38:03Z
+
+[Term]
+id: CL:0002224
+name: lens epithelial cell
+namespace: cell
+def: "A cell of the cuboidal epithelium that covers the lens. The cells of the lens epithelium regulate most of the homeostatic functions of the lens. As ions, nutrients, and liquid enter the lens from the aqueous humor, Na+/K+ ATPase pumps in the lens epithelial cells pump ions out of the lens to maintain appropriate lens osmolarity and volume, with equatorially positioned lens epithelium cells contributing most to this current. The activity of the Na+/K+ ATPases keeps water and current flowing through the lens from the poles and exiting through the equatorial regions. The cells of the lens epithelium also serve as the progenitors for new lens fibers. It constantly lays down fibers in the embryo, fetus, infant, and adult, and continues to lay down fibers for lifelong growth." [GOC:tfm, http://en.wikipedia.org/wiki/Lens_%28anatomy%29#Lens_epithelium, ISBN:0721662544]
+xref: FMA:67559
+is_a: CL:0000075 {is_inferred="true"} ! columnar/cuboidal epithelial cell
+is_a: CL:0002222 ! vertebrate lens cell
+intersection_of: CL:0000075 ! columnar/cuboidal epithelial cell
+intersection_of: BFO:0000050 UBERON:0001803
+created_by: tmeehan
+creation_date: 2010-09-07T10:45:47Z
+
+[Term]
 id: CL:0002242
 name: nucleate cell
 namespace: cell
@@ -187,6 +812,44 @@ intersection_of: CL:0000003 ! native cell
 intersection_of: BFO:0000051 GO:0005634
 created_by: tmeehan
 creation_date: 2010-09-07T03:32:33Z
+
+[Term]
+id: CL:0002246
+name: peripheral blood stem cell
+namespace: cell
+def: "A hematopoeitic stem cell found in the blood. Normally found in very limited numbers in the peripheral circulation (less than 0.1% of all nucleated cells)." [GOC:tfm]
+synonym: "PBSC" EXACT []
+xref: BTO:0002669
+xref: FMA:86711
+is_a: CL:0000037 {is_inferred="true"} ! hematopoietic stem cell
+intersection_of: CL:0000037 ! hematopoietic stem cell
+intersection_of: BFO:0000050 UBERON:0000178
+created_by: tmeehan
+creation_date: 2010-09-07T03:57:09Z
+
+[Term]
+id: CL:0002251
+name: epithelial cell of alimentary canal
+namespace: cell
+def: "An epithelial cell of the musculomembranous digestive tube extending from the mouth to the anus." [GOC:tfm, ISBN:0721662544]
+is_a: CL:0002076 ! endo-epithelial cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0001555
+created_by: tmeehan
+creation_date: 2010-09-08T09:26:53Z
+
+[Term]
+id: CL:0002308
+name: epithelial cell of skin gland
+namespace: cell
+def: "An epithelial cell of a skin gland." [GOC:tfm]
+synonym: "epithelial cell of gland of skin" EXACT []
+xref: FMA:70657
+is_a: CL:0002159 ! general ecto-epithelial cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0002419
+created_by: tmeehan
+creation_date: 2010-09-14T12:00:07Z
 
 [Term]
 id: CL:0002319
@@ -203,6 +866,21 @@ created_by: tmeehan
 creation_date: 2010-09-15T01:34:57Z
 
 [Term]
+id: CL:0002320
+name: connective tissue cell
+namespace: cell
+alt_id: CL:1000406
+def: "A cell of the supporting or framework tissue of the body, arising chiefly from the embryonic mesoderm and including adipose tissue, cartilage, and bone." [GOC:tfm, ISBN:0618947256]
+xref: CALOHA:TS-2096
+xref: FMA:63875
+is_a: CL:0000548 ! animal cell
+is_a: CL:0002371 {is_inferred="true"} ! somatic cell
+intersection_of: CL:0002371 ! somatic cell
+intersection_of: BFO:0000050 UBERON:0002384
+created_by: tmeehan
+creation_date: 2010-09-15T03:01:54Z
+
+[Term]
 id: CL:0002321
 name: embryonic cell
 namespace: cell
@@ -214,6 +892,17 @@ xref: WBbt:0007028
 is_a: CL:0000548 ! animal cell
 created_by: tmeehan
 creation_date: 2010-09-15T03:39:21Z
+
+[Term]
+id: CL:0002352
+name: gestational hematopoietic stem cell
+namespace: cell
+def: "A hematopoietic stem cell that exists during embryogenesis." [GOC:tfm, ISBN:978-60327-246-6]
+is_a: CL:0000037 ! hematopoietic stem cell
+intersection_of: CL:0000037 ! hematopoietic stem cell
+intersection_of: BFO:0000050 UBERON:0000922
+created_by: tmeehan
+creation_date: 2010-09-22T09:05:13Z
 
 [Term]
 id: CL:0002371
@@ -229,6 +918,151 @@ created_by: tmeehan
 creation_date: 2010-09-24T09:44:42Z
 
 [Term]
+id: CL:0002494
+name: cardiocyte
+namespace: cell
+def: "A cell located in the heart, including both muscle and non muscle cells." [GOC:tfm]
+comment: From Onard of the FMA: Cardiac muscle cell or cardiac myocyte is a striated muscle cell. Cardiocyte on the other hand is any cell in the heart which includes cells other than muscle cells (e.g. endothelial cell of endocardium). Unless there is a consensus among anatomists that cardiocytes refer only to muscle cells, we will treat them as a general class of cells in the heart.
+synonym: "heart cell" EXACT []
+xref: BTO:0001539
+xref: CALOHA:TS-0115
+xref: FMA:83808
+xref: FMA:84791
+is_a: CL:0000548 ! animal cell
+is_a: CL:0002371 {is_inferred="true"} ! somatic cell
+intersection_of: CL:0002371 ! somatic cell
+intersection_of: BFO:0000050 UBERON:0007100
+created_by: tmeehan
+creation_date: 2010-12-07T09:37:22Z
+
+[Term]
+id: CL:0002503
+name: adventitial cell
+namespace: cell
+def: "A cell of the adventitial layer of ductal structures such as the uterer, defent duct, biliary duct, etc" [GOC:tfm]
+xref: BTO:0002441
+xref: FMA:84639
+is_a: CL:0000630 ! supportive cell
+is_a: CL:0002320 ! connective tissue cell
+intersection_of: CL:0002320 ! connective tissue cell
+intersection_of: BFO:0000050 UBERON:0005742
+created_by: tmeehan
+creation_date: 2010-12-07T04:03:56Z
+
+[Term]
+id: CL:0002518
+name: kidney epithelial cell
+namespace: cell
+def: "An epithelial cell of the kidney." [GOC:tfm, KUPO:SJ]
+xref: KUPO:0001019
+is_a: CL:1000497 {is_inferred="true"} ! kidney cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0002113
+created_by: tmeehan
+creation_date: 2011-02-08T10:46:34Z
+
+[Term]
+id: CL:0002535
+name: epithelial cell of cervix
+namespace: cell
+def: "An epithelial cell of the cervix." [GOC:tfm]
+synonym: "cervical canal epithelial cell" EXACT [GOC:tfm]
+synonym: "cervical canal of uterus epithelial cell" EXACT [GOC:tfm]
+synonym: "cervix epithelial cell" EXACT [GOC:tfm]
+synonym: "cervix of uterus epithelial cell" EXACT [GOC:tfm]
+synonym: "epithelial cell of cervical canal" EXACT [GOC:tfm]
+synonym: "epithelial cell of cervical canal of uterus" EXACT [GOC:tfm]
+synonym: "epithelial cell of cervix of uterus" EXACT [GOC:tfm]
+synonym: "epithelial cell of neck of uterus" EXACT [GOC:tfm]
+synonym: "epithelial cell of uterine cervix" EXACT [GOC:tfm]
+synonym: "neck of uterus epithelial cell" EXACT [GOC:tfm]
+synonym: "uterine cervix epithelial cell" EXACT [GOC:tfm]
+is_a: CL:0000066 {is_inferred="true"} ! epithelial cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0000002
+relationship: BFO:0000050 UBERON:0004801
+created_by: tmeehan
+creation_date: 2011-02-24T08:20:08Z
+
+[Term]
+id: CL:0002548
+name: fibroblast of cardiac tissue
+namespace: cell
+def: "A fibroblast that is part of the heart." [GOC:tfm]
+synonym: "cardiac fibroblast" EXACT []
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+is_a: CL:0002494 {is_inferred="true"} ! cardiocyte
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0000948
+created_by: tmeehan
+creation_date: 2011-02-28T04:57:44Z
+
+[Term]
+id: CL:0002551
+name: fibroblast of dermis
+namespace: cell
+is_a: CL:0002620 {is_inferred="true"} ! skin fibroblast
+intersection_of: CL:0002620 ! skin fibroblast
+intersection_of: BFO:0000050 UBERON:0002067
+created_by: tmeehan
+creation_date: 2011-02-28T05:05:33Z
+
+[Term]
+id: CL:0002570
+name: mesenchymal stem cell of adipose
+namespace: cell
+def: "A mesenchymal stem cell of adipose tissue." [GOC:tfm]
+intersection_of: CL:0000134 ! mesenchymal stem cell
+intersection_of: BFO:0000050 UBERON:0001013
+created_by: tmeehan
+creation_date: 2011-03-01T09:57:17Z
+
+[Term]
+id: CL:0002620
+name: skin fibroblast
+namespace: cell
+def: "A fibroblast of skin." [GOC:tfm]
+xref: BTO:0001255
+xref: CALOHA:TS-0935
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0002097
+created_by: tmeehan
+creation_date: 2011-03-14T12:31:49Z
+
+[Term]
+id: CL:0008001
+name: hematopoietic precursor cell
+def: "Any hematopoietic cell that is a precursor of some other hematopoietic cell type." [GOC:dos]
+is_a: CL:0000988 ! hematopoietic cell
+
+[Term]
+id: CL:0009004
+name: retinal cell
+namespace: cell
+def: "Any cell in the retina, the innermost layer or coating at the back of the eyeball, which is sensitive to light and in which the optic nerve terminates." [GOC:pr]
+xref: PMID:10702418
+is_a: CL:0002319 ! neural cell
+intersection_of: CL:0002319 ! neural cell
+intersection_of: BFO:0000050 UBERON:0005388
+
+[Term]
+id: CL:0010022
+name: cardiac neuron
+intersection_of: CL:0000540 ! neuron
+intersection_of: BFO:0000050 UBERON:0000948
+
+[Term]
+id: CL:0011108
+name: colon epithelial cell
+def: "Epithelial cell that is part of the colon epithelium." [GOC:NV]
+synonym: "colonic epithelial cell" EXACT []
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0001155
+relationship: BFO:0000050 UBERON:0000397
+
+[Term]
 id: CL:0011115
 name: precursor cell
 def: "A cell that, by division or terminal differentiation, can give rise to other cell types." [GOC:dos]
@@ -236,6 +1070,85 @@ comment: Work is needed on GO 'cell differentiation' before it is clear whether 
 is_a: CL:0000003 ! native cell
 intersection_of: CL:0000003 ! native cell
 intersection_of: RO:0002215 GO:0030154
+
+[Term]
+id: CL:1000306
+name: fibroblast of tunica adventitia of artery
+namespace: cell
+def: "A fibroblast that is part of the tunica adventitia of artery." [GOC:tfm]
+xref: FMA:261285
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0005734
+
+[Term]
+id: CL:1000428
+name: stem cell of epidermis
+namespace: cell
+def: "A somatic stem cell that is part of the epidermis." [GOC:tfm]
+synonym: "epidermal stem cell" EXACT [FMA:70541]
+xref: FMA:70541
+is_a: CL:0000723 {is_inferred="true"} ! somatic stem cell
+intersection_of: CL:0000723 ! somatic stem cell
+intersection_of: BFO:0000050 UBERON:0001003
+
+[Term]
+id: CL:1000497
+name: kidney cell
+namespace: cell
+xref: KUPO:0001010
+is_a: CL:0000548 {is_inferred="true"} ! animal cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0002113
+relationship: BFO:0000050 UBERON:0002113
+
+[Term]
+id: CL:1000500
+name: kidney interstitial cell
+namespace: cell
+xref: KUPO:0001013
+is_a: CL:1000497 {is_inferred="true"} ! kidney cell
+intersection_of: CL:1000497 ! kidney cell
+intersection_of: BFO:0000050 UBERON:0005215
+relationship: BFO:0000050 UBERON:0005215
+
+[Term]
+id: CL:1000606
+name: kidney nerve cell
+namespace: cell
+xref: KUPO:0001015
+is_a: CL:1000500 ! kidney interstitial cell
+intersection_of: CL:0000540 ! neuron
+intersection_of: BFO:0000050 UBERON:0002113
+
+[Term]
+id: CL:1001609
+name: muscle fibroblast
+def: "Fibroblast from muscle organ." [NPX:PDR]
+xref: CALOHA:TS-0643
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0001630
+
+[Term]
+id: CL:2000001
+name: peripheral blood mononuclear cell
+namespace: cell
+def: "A leukocyte with a single non-segmented nucleus in the mature form found in the circulatory pool of blood." [GOC:TermGenie]
+intersection_of: CL:0000842 ! mononuclear cell
+intersection_of: BFO:0000050 UBERON:0000178
+created_by: TermGenie
+creation_date: 2014-02-11T17:29:04Z
+
+[Term]
+id: CL:2000022
+name: cardiac septum native cell
+namespace: cell
+def: "Any native cell that is part of a cardiac septum." [GOC:TermGenie]
+intersection_of: CL:0000003 ! native cell
+intersection_of: BFO:0000050 UBERON:0002099
+created_by: TermGenie
+creation_date: 2014-06-24T23:17:07Z
 
 [Term]
 id: CL:2000029
@@ -246,4 +1159,73 @@ intersection_of: CL:0000540 ! neuron
 intersection_of: BFO:0000050 UBERON:0001017
 created_by: TermGenie
 creation_date: 2014-06-25T01:17:43Z
+
+[Term]
+id: CL:2000032
+name: peripheral nervous system neuron
+namespace: cell
+def: "Any neuron that is part of a peripheral nervous system." [GOC:TermGenie]
+intersection_of: CL:0000540 ! neuron
+intersection_of: BFO:0000050 UBERON:0000010
+created_by: TermGenie
+creation_date: 2014-06-25T02:28:17Z
+
+[Term]
+id: CL:2000042
+name: embryonic fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a embryo." [GOC:TermGenie]
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0000922
+created_by: TermGenie
+creation_date: 2014-07-09T00:12:00Z
+
+[Term]
+id: CL:2000070
+name: optic choroid fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a optic choroid." [GOC:TermGenie]
+comment: http://www.sciencellonline.com/site/productInformation.php?keyword=6620
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0001776
+created_by: TermGenie
+creation_date: 2014-10-07T18:50:43Z
+
+[Term]
+id: CP:0000000
+name: neutrophillic cytoplasm
+namespace: cell
+def: "Cytoplasm that exhibits molecular interaction for acidic dyes under specific pH conditions." [GOC:tfm]
+is_a: GO:0005737
+created_by: tmeehan
+creation_date: 2010-05-25T01:36:34Z
+
+[Term]
+id: CP:0000037
+name: increased nucleus size
+namespace: cell
+def: "A nucleus size quality which is relatively high compared to the amount of cytoplasm present in the same cell." [GOC:tfm]
+is_a: GO:0005634
+intersection_of: GO:0005634
+intersection_of: RO:0000053 PATO:0000586
+created_by: tmeehan
+creation_date: 2009-12-23T10:53:24Z
+
+[Typedef]
+id: has_relational_adjective
+name: has_relational_adjective
+namespace: uberon
+comment: Used to connect a class to an adjectival form of its label. For example, a class with label 'intestine' may have a relational adjective 'intestinal'.
+xref: UBPROP:0000007
+is_metadata_tag: true
+
+[Typedef]
+id: lacks_part
+name: lacks_part
+expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 exactly 0 ?Y" []
+
+[Typedef]
+id: lacks_plasma_membrane_part
+name: lacks_plasma_membrane_part
+expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 exactly 0 (http://purl.obolibrary.org/obo/GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)" []
 

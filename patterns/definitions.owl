@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/simro/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/simro/releases/2020-02-11/patterns/definitions.owl>
+<http://purl.obolibrary.org/obo/simro/releases/2020-02-13/patterns/definitions.owl>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_137393>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_137394>))
@@ -1396,11 +1396,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005022> "Alexa Fluor 555"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005022> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000443> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005023> (FITC)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005023> (fluorescein isothiocyanate)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005023> "FITC used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005023> "fluorescein isothiocyanate used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005023> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005023> "FITC"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005023> "fluorescein isothiocyanate"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005023> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_37926> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005024> (Alcian Blue Staining Method)
@@ -1410,11 +1410,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005024> "Alcian Blue Staining Method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005024> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCIT_C92299> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005025> (mouse embryonic stem cell)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005025> (mouse embryonic stem cell line cell)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005025> "mouse embryonic stem cell used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005025> "mouse embryonic stem cell line cell used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005025> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005025> "mouse embryonic stem cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005025> "mouse embryonic stem cell line cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005025> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0037317> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005026> (LY-411575)
@@ -1452,11 +1452,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005030> "Hematoxylin and Eosin Staining Method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005030> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCIT_C23011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005031> (Zinc)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005031> (zinc atom)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005031> "Zinc used by histology group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005031> "zinc atom used by histology group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005031> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005031> "Zinc"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005031> "zinc atom"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005031> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_27363> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005032> (neomycin)
@@ -1774,11 +1774,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005076> "webcam (WEB)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005076> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005077> (Hoechst 33342)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005077> (2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005077> "Hoechst 33342 used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005077> "2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005077> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005077> "Hoechst 33342"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005077> "2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51232> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005078> (ATTO 565)
@@ -2117,11 +2117,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005125> "wtKIikGR"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005125> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000555> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005126> (x-rhodamine)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005126> (X-Rhodamine)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005126> "x-rhodamine used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005126> "X-Rhodamine used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005126> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005126> "x-rhodamine"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005126> "X-Rhodamine"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005126> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000584> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005127> (yPet)
@@ -2229,11 +2229,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005141> "glutaraldehyde fixed tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005141> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005142> (yophilized specimen)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005142> (lyophilized specimen)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005142> "yophilized specimen used by histology group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005142> "lyophilized specimen used by histology group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005142> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005142> "yophilized specimen"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005142> "lyophilized specimen"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005142> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005143> (methanol fixed tissue)
@@ -2411,11 +2411,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005167> "Saccharomyces cerevisiae BY4741"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005167> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_1247190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005168> (HCT 116 cell)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005168> (HCT 116 细胞HCT 116 cell)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005168> "HCT 116 cell used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005168> "HCT 116 细胞HCT 116 cell used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005168> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005168> "HCT 116 cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005168> "HCT 116 细胞HCT 116 cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005168> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0003665> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005169> (HEK293)
@@ -2425,18 +2425,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005169> "HEK293"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005169> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0001230> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005170> (HeLa cell)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005170> (HeLa cellHeLa 细胞)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005170> "HeLa cell used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005170> "HeLa cellHeLa 细胞 used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005170> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005170> "HeLa cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005170> "HeLa cellHeLa 细胞"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005170> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0003684> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005171> (HeLa-S3 cell)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005171> (HELA-S3 cell)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005171> "HeLa-S3 cell used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005171> "HELA-S3 cell used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005171> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005171> "HeLa-S3 cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005171> "HELA-S3 cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005171> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0003699> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005172> (K562 cell)
@@ -2446,11 +2446,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562 cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005172> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005173> (S2 cell)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005173> (S2 细胞S2 cell)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005173> "S2 cell used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005173> "S2 细胞S2 cell used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005173> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005173> "S2 cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005173> "S2 细胞S2 cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005173> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0008922> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005174> (T98G cell)
@@ -2488,529 +2488,529 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005178> "Chamaeleo calyptratus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005178> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_179908> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005179> (http://purl.obolibrary.org/obo/NCBITaxon_10090)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005179> (小家鼠Mus musculus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005179> "http://purl.obolibrary.org/obo/NCBITaxon_10090 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005179> "小家鼠Mus musculus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005179> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005179> "http://purl.obolibrary.org/obo/NCBITaxon_10090"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005179> "小家鼠Mus musculus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005179> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_10090> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005180> (http://purl.obolibrary.org/obo/NCBITaxon_10116)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005180> (Rattus norvegicus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005180> "http://purl.obolibrary.org/obo/NCBITaxon_10116 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005180> "Rattus norvegicus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005180> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005180> "http://purl.obolibrary.org/obo/NCBITaxon_10116"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005180> "Rattus norvegicus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005180> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_10116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005181> (http://purl.obolibrary.org/obo/NCBITaxon_105023)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005181> (Nothobranchius furzeri)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005181> "http://purl.obolibrary.org/obo/NCBITaxon_105023 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005181> "Nothobranchius furzeri used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005181> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005181> "http://purl.obolibrary.org/obo/NCBITaxon_105023"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005181> "Nothobranchius furzeri"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005181> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_105023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005182> (http://purl.obolibrary.org/obo/NCBITaxon_125945)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005182> (Drosophila biarmipes)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005182> "http://purl.obolibrary.org/obo/NCBITaxon_125945 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005182> "Drosophila biarmipes used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005182> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005182> "http://purl.obolibrary.org/obo/NCBITaxon_125945"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005182> "Drosophila biarmipes"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005182> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_125945> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005183> (http://purl.obolibrary.org/obo/NCBITaxon_1311949)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005183> (Rhynchomesostoma)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005183> "http://purl.obolibrary.org/obo/NCBITaxon_1311949 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005183> "Rhynchomesostoma used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005183> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005183> "http://purl.obolibrary.org/obo/NCBITaxon_1311949"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005183> "Rhynchomesostoma"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005183> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_1311949> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005184> (http://purl.obolibrary.org/obo/NCBITaxon_1354672)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005184> (Phagocata gracilis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005184> "http://purl.obolibrary.org/obo/NCBITaxon_1354672 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005184> "Phagocata gracilis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005184> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005184> "http://purl.obolibrary.org/obo/NCBITaxon_1354672"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005184> "Phagocata gracilis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005184> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_1354672> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005185> (http://purl.obolibrary.org/obo/NCBITaxon_135777)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005185> (Girardia dorotocephala)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005185> "http://purl.obolibrary.org/obo/NCBITaxon_135777 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005185> "Girardia dorotocephala used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005185> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005185> "http://purl.obolibrary.org/obo/NCBITaxon_135777"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005185> "Girardia dorotocephala"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005185> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_135777> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005186> (http://purl.obolibrary.org/obo/NCBITaxon_139)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005186> (Borreliella burgdorferi)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005186> "http://purl.obolibrary.org/obo/NCBITaxon_139 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005186> "Borreliella burgdorferi used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005186> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005186> "http://purl.obolibrary.org/obo/NCBITaxon_139"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005186> "Borreliella burgdorferi"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005186> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_139> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005187> (http://purl.obolibrary.org/obo/NCBITaxon_171129)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005187> (Aspidoscelis burti)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005187> "http://purl.obolibrary.org/obo/NCBITaxon_171129 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005187> "Aspidoscelis burti used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005187> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005187> "http://purl.obolibrary.org/obo/NCBITaxon_171129"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005187> "Aspidoscelis burti"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005187> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_171129> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005188> (http://purl.obolibrary.org/obo/NCBITaxon_1820202)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005188> (Phagocata morgani)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005188> "http://purl.obolibrary.org/obo/NCBITaxon_1820202 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005188> "Phagocata morgani used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005188> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005188> "http://purl.obolibrary.org/obo/NCBITaxon_1820202"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005188> "Phagocata morgani"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005188> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_1820202> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005189> (http://purl.obolibrary.org/obo/NCBITaxon_1842987)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005189> (Aspidoscelis tesselatus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005189> "http://purl.obolibrary.org/obo/NCBITaxon_1842987 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005189> "Aspidoscelis tesselatus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005189> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005189> "http://purl.obolibrary.org/obo/NCBITaxon_1842987"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005189> "Aspidoscelis tesselatus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005189> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_1842987> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005190> (http://purl.obolibrary.org/obo/NCBITaxon_1930915)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005190> (Polycelis coronata)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005190> "http://purl.obolibrary.org/obo/NCBITaxon_1930915 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005190> "Polycelis coronata used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005190> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005190> "http://purl.obolibrary.org/obo/NCBITaxon_1930915"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005190> "Polycelis coronata"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005190> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_1930915> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005191> (http://purl.obolibrary.org/obo/NCBITaxon_1969971)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005191> (Phagocata velata)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005191> "http://purl.obolibrary.org/obo/NCBITaxon_1969971 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005191> "Phagocata velata used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005191> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005191> "http://purl.obolibrary.org/obo/NCBITaxon_1969971"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005191> "Phagocata velata"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005191> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_1969971> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005192> (http://purl.obolibrary.org/obo/NCBITaxon_2)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005192> (Bacteria细菌)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005192> "http://purl.obolibrary.org/obo/NCBITaxon_2 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005192> "Bacteria细菌 used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005192> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005192> "http://purl.obolibrary.org/obo/NCBITaxon_2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005192> "Bacteria细菌"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005192> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_2> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005193> (http://purl.obolibrary.org/obo/NCBITaxon_204045)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005193> (Schizosaccharomyces kambucha)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005193> "http://purl.obolibrary.org/obo/NCBITaxon_204045 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005193> "Schizosaccharomyces kambucha used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005193> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005193> "http://purl.obolibrary.org/obo/NCBITaxon_204045"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005193> "Schizosaccharomyces kambucha"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005193> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_204045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005194> (http://purl.obolibrary.org/obo/NCBITaxon_224326)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005194> (Borreliella burgdorferi B31)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005194> "http://purl.obolibrary.org/obo/NCBITaxon_224326 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005194> "Borreliella burgdorferi B31 used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005194> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005194> "http://purl.obolibrary.org/obo/NCBITaxon_224326"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005194> "Borreliella burgdorferi B31"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005194> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_224326> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005195> (http://purl.obolibrary.org/obo/NCBITaxon_230603)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005195> (Saccharomyces uvarum)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005195> "http://purl.obolibrary.org/obo/NCBITaxon_230603 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005195> "Saccharomyces uvarum used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005195> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005195> "http://purl.obolibrary.org/obo/NCBITaxon_230603"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005195> "Saccharomyces uvarum"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005195> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_230603> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005196> (http://purl.obolibrary.org/obo/NCBITaxon_231627)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005196> (Procotyla fluviatilis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005196> "http://purl.obolibrary.org/obo/NCBITaxon_231627 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005196> "Procotyla fluviatilis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005196> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005196> "http://purl.obolibrary.org/obo/NCBITaxon_231627"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005196> "Procotyla fluviatilis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005196> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_231627> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005197> (http://purl.obolibrary.org/obo/NCBITaxon_274)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005197> (Thermus thermophilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005197> "http://purl.obolibrary.org/obo/NCBITaxon_274 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005197> "Thermus thermophilus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005197> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005197> "http://purl.obolibrary.org/obo/NCBITaxon_274"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005197> "Thermus thermophilus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005197> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_274> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005198> (http://purl.obolibrary.org/obo/NCBITaxon_29029)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005198> (Drosophila eugracilis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005198> "http://purl.obolibrary.org/obo/NCBITaxon_29029 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005198> "Drosophila eugracilis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005198> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005198> "http://purl.obolibrary.org/obo/NCBITaxon_29029"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005198> "Drosophila eugracilis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005198> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_29029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005199> (http://purl.obolibrary.org/obo/NCBITaxon_30033)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005199> (Drosophila kikkawai)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005199> "http://purl.obolibrary.org/obo/NCBITaxon_30033 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005199> "Drosophila kikkawai used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005199> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005199> "http://purl.obolibrary.org/obo/NCBITaxon_30033"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005199> "Drosophila kikkawai"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005199> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_30033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005200> (http://purl.obolibrary.org/obo/NCBITaxon_311400)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005200> (Thermococcus kodakarensis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005200> "http://purl.obolibrary.org/obo/NCBITaxon_311400 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005200> "Thermococcus kodakarensis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005200> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005200> "http://purl.obolibrary.org/obo/NCBITaxon_311400"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005200> "Thermococcus kodakarensis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005200> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_311400> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005201> (http://purl.obolibrary.org/obo/NCBITaxon_37197)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005201> (Aspidoscelis uniparens)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005201> "http://purl.obolibrary.org/obo/NCBITaxon_37197 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005201> "Aspidoscelis uniparens used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005201> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005201> "http://purl.obolibrary.org/obo/NCBITaxon_37197"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005201> "Aspidoscelis uniparens"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005201> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_37197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005202> (http://purl.obolibrary.org/obo/NCBITaxon_400727)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005202> (Pomacea canaliculata)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005202> "http://purl.obolibrary.org/obo/NCBITaxon_400727 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005202> "Pomacea canaliculata used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005202> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005202> "http://purl.obolibrary.org/obo/NCBITaxon_400727"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005202> "Pomacea canaliculata"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005202> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_400727> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005203> (http://purl.obolibrary.org/obo/NCBITaxon_42026)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005203> (Drosophila bipectinata)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005203> "http://purl.obolibrary.org/obo/NCBITaxon_42026 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005203> "Drosophila bipectinata used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005203> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005203> "http://purl.obolibrary.org/obo/NCBITaxon_42026"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005203> "Drosophila bipectinata"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005203> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_42026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005204> (http://purl.obolibrary.org/obo/NCBITaxon_439306)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005204> (Maritigrella)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005204> "http://purl.obolibrary.org/obo/NCBITaxon_439306 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005204> "Maritigrella used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005204> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005204> "http://purl.obolibrary.org/obo/NCBITaxon_439306"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005204> "Maritigrella"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005204> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_439306> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005205> (http://purl.obolibrary.org/obo/NCBITaxon_45351)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005205> (Nematostella vectensis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005205> "http://purl.obolibrary.org/obo/NCBITaxon_45351 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005205> "Nematostella vectensis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005205> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005205> "http://purl.obolibrary.org/obo/NCBITaxon_45351"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005205> "Nematostella vectensis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005205> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_45351> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005206> (http://purl.obolibrary.org/obo/NCBITaxon_46766)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005206> (Bdelloura candida)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005206> "http://purl.obolibrary.org/obo/NCBITaxon_46766 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005206> "Bdelloura candida used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005206> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005206> "http://purl.obolibrary.org/obo/NCBITaxon_46766"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005206> "Bdelloura candida"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005206> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_46766> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005207> (http://purl.obolibrary.org/obo/NCBITaxon_4896)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005207> (Schizosaccharomyces pombe)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005207> "http://purl.obolibrary.org/obo/NCBITaxon_4896 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005207> "Schizosaccharomyces pombe used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005207> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005207> "http://purl.obolibrary.org/obo/NCBITaxon_4896"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005207> "Schizosaccharomyces pombe"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005207> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_4896> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005208> (http://purl.obolibrary.org/obo/NCBITaxon_4899)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005208> (Schizosaccharomyces octosporus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005208> "http://purl.obolibrary.org/obo/NCBITaxon_4899 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005208> "Schizosaccharomyces octosporus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005208> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005208> "http://purl.obolibrary.org/obo/NCBITaxon_4899"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005208> "Schizosaccharomyces octosporus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005208> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_4899> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005209> (http://purl.obolibrary.org/obo/NCBITaxon_4932)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005209> (Saccharomyces cerevisiae)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005209> "http://purl.obolibrary.org/obo/NCBITaxon_4932 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005209> "Saccharomyces cerevisiae used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005209> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005209> "http://purl.obolibrary.org/obo/NCBITaxon_4932"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005209> "Saccharomyces cerevisiae"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005209> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_4932> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005210> (http://purl.obolibrary.org/obo/NCBITaxon_50054)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005210> (Schmidtea polychroa)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005210> "http://purl.obolibrary.org/obo/NCBITaxon_50054 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005210> "Schmidtea polychroa used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005210> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005210> "http://purl.obolibrary.org/obo/NCBITaxon_50054"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005210> "Schmidtea polychroa"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005210> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_50054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005211> (http://purl.obolibrary.org/obo/NCBITaxon_52180)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005211> (Aspidoscelis tigris)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005211> "http://purl.obolibrary.org/obo/NCBITaxon_52180 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005211> "Aspidoscelis tigris used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005211> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005211> "http://purl.obolibrary.org/obo/NCBITaxon_52180"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005211> "Aspidoscelis tigris"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005211> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_52180> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005212> (http://purl.obolibrary.org/obo/NCBITaxon_5476)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005212> (Candida albicans)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005212> "http://purl.obolibrary.org/obo/NCBITaxon_5476 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005212> "Candida albicans used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005212> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005212> "http://purl.obolibrary.org/obo/NCBITaxon_5476"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005212> "Candida albicans"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005212> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_5476> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005213> (http://purl.obolibrary.org/obo/NCBITaxon_5811)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005213> (Toxoplasma gondii)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005213> "http://purl.obolibrary.org/obo/NCBITaxon_5811 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005213> "Toxoplasma gondii used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005213> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005213> "http://purl.obolibrary.org/obo/NCBITaxon_5811"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005213> "Toxoplasma gondii"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005213> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_5811> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005214> (http://purl.obolibrary.org/obo/NCBITaxon_5833)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005214> (Plasmodium falciparum)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005214> "http://purl.obolibrary.org/obo/NCBITaxon_5833 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005214> "Plasmodium falciparum used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005214> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005214> "http://purl.obolibrary.org/obo/NCBITaxon_5833"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005214> "Plasmodium falciparum"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005214> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_5833> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005215> (http://purl.obolibrary.org/obo/NCBITaxon_6161)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005215> (Dugesia japonica)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005215> "http://purl.obolibrary.org/obo/NCBITaxon_6161 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005215> "Dugesia japonica used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005215> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005215> "http://purl.obolibrary.org/obo/NCBITaxon_6161"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005215> "Dugesia japonica"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005215> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_6161> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005216> (http://purl.obolibrary.org/obo/NCBITaxon_6162)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005216> (Girardia tigrina)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005216> "http://purl.obolibrary.org/obo/NCBITaxon_6162 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005216> "Girardia tigrina used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005216> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005216> "http://purl.obolibrary.org/obo/NCBITaxon_6162"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005216> "Girardia tigrina"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005216> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_6162> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005217> (http://purl.obolibrary.org/obo/NCBITaxon_6239)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005217> (Caenorhabditis elegans)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005217> "http://purl.obolibrary.org/obo/NCBITaxon_6239 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005217> "Caenorhabditis elegans used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005217> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005217> "http://purl.obolibrary.org/obo/NCBITaxon_6239"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005217> "Caenorhabditis elegans"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005217> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_6239> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005218> (http://purl.obolibrary.org/obo/NCBITaxon_63121)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005218> (Ptychodera flava)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005218> "http://purl.obolibrary.org/obo/NCBITaxon_63121 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005218> "Ptychodera flava used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005218> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005218> "http://purl.obolibrary.org/obo/NCBITaxon_63121"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005218> "Ptychodera flava"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005218> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_63121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005219> (http://purl.obolibrary.org/obo/NCBITaxon_6565)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005219> (Crassostrea virginica)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005219> "http://purl.obolibrary.org/obo/NCBITaxon_6565 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005219> "Crassostrea virginica used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005219> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005219> "http://purl.obolibrary.org/obo/NCBITaxon_6565"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005219> "Crassostrea virginica"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005219> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_6565> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005220> (http://purl.obolibrary.org/obo/NCBITaxon_68351)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005220> (Aspidoscelis gularis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005220> "http://purl.obolibrary.org/obo/NCBITaxon_68351 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005220> "Aspidoscelis gularis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005220> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005220> "http://purl.obolibrary.org/obo/NCBITaxon_68351"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005220> "Aspidoscelis gularis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005220> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_68351> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005221> (http://purl.obolibrary.org/obo/NCBITaxon_68352)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005221> (Aspidoscelis inornatus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005221> "http://purl.obolibrary.org/obo/NCBITaxon_68352 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005221> "Aspidoscelis inornatus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005221> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005221> "http://purl.obolibrary.org/obo/NCBITaxon_68352"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005221> "Aspidoscelis inornatus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005221> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_68352> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005222> (http://purl.obolibrary.org/obo/NCBITaxon_7108)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005222> (Spodoptera frugiperda)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005222> "http://purl.obolibrary.org/obo/NCBITaxon_7108 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005222> "Spodoptera frugiperda used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005222> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005222> "http://purl.obolibrary.org/obo/NCBITaxon_7108"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005222> "Spodoptera frugiperda"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005222> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005223> (http://purl.obolibrary.org/obo/NCBITaxon_7215)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005223> (果蝇 <果蝇，属>Drosophila <fruit fly, genus>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005223> "http://purl.obolibrary.org/obo/NCBITaxon_7215 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005223> "果蝇 <果蝇，属>Drosophila <fruit fly, genus> used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005223> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005223> "http://purl.obolibrary.org/obo/NCBITaxon_7215"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005223> "果蝇 <果蝇，属>Drosophila <fruit fly, genus>"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005223> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7215> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005224> (http://purl.obolibrary.org/obo/NCBITaxon_7217)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005224> (Drosophila ananassae)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005224> "http://purl.obolibrary.org/obo/NCBITaxon_7217 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005224> "Drosophila ananassae used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005224> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005224> "http://purl.obolibrary.org/obo/NCBITaxon_7217"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005224> "Drosophila ananassae"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005224> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7217> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005225> (http://purl.obolibrary.org/obo/NCBITaxon_7220)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005225> (Drosophila erecta)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005225> "http://purl.obolibrary.org/obo/NCBITaxon_7220 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005225> "Drosophila erecta used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005225> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005225> "http://purl.obolibrary.org/obo/NCBITaxon_7220"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005225> "Drosophila erecta"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005225> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7220> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005226> (http://purl.obolibrary.org/obo/NCBITaxon_7226)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005226> (Drosophila mauritiana)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005226> "http://purl.obolibrary.org/obo/NCBITaxon_7226 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005226> "Drosophila mauritiana used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005226> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005226> "http://purl.obolibrary.org/obo/NCBITaxon_7226"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005226> "Drosophila mauritiana"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005226> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7226> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005227> (http://purl.obolibrary.org/obo/NCBITaxon_7227)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005227> (黑腹果蝇Drosophila melanogaster)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005227> "http://purl.obolibrary.org/obo/NCBITaxon_7227 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005227> "黑腹果蝇Drosophila melanogaster used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005227> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005227> "http://purl.obolibrary.org/obo/NCBITaxon_7227"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005227> "黑腹果蝇Drosophila melanogaster"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005227> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7227> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005228> (http://purl.obolibrary.org/obo/NCBITaxon_7229)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005228> (Drosophila miranda)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005228> "http://purl.obolibrary.org/obo/NCBITaxon_7229 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005228> "Drosophila miranda used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005228> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005228> "http://purl.obolibrary.org/obo/NCBITaxon_7229"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005228> "Drosophila miranda"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005228> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005229> (http://purl.obolibrary.org/obo/NCBITaxon_7230)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005229> (Drosophila mojavensis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005229> "http://purl.obolibrary.org/obo/NCBITaxon_7230 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005229> "Drosophila mojavensis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005229> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005229> "http://purl.obolibrary.org/obo/NCBITaxon_7230"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005229> "Drosophila mojavensis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005229> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7230> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005230> (http://purl.obolibrary.org/obo/NCBITaxon_7234)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005230> (Drosophila persimilis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005230> "http://purl.obolibrary.org/obo/NCBITaxon_7234 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005230> "Drosophila persimilis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005230> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005230> "http://purl.obolibrary.org/obo/NCBITaxon_7234"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005230> "Drosophila persimilis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005230> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7234> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005231> (http://purl.obolibrary.org/obo/NCBITaxon_7237)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005231> (Drosophila pseudoobscura)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005231> "http://purl.obolibrary.org/obo/NCBITaxon_7237 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005231> "Drosophila pseudoobscura used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005231> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005231> "http://purl.obolibrary.org/obo/NCBITaxon_7237"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005231> "Drosophila pseudoobscura"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005231> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7237> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005232> (http://purl.obolibrary.org/obo/NCBITaxon_7238)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005232> (Drosophila sechellia)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005232> "http://purl.obolibrary.org/obo/NCBITaxon_7238 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005232> "Drosophila sechellia used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005232> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005232> "http://purl.obolibrary.org/obo/NCBITaxon_7238"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005232> "Drosophila sechellia"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005232> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7238> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005233> (http://purl.obolibrary.org/obo/NCBITaxon_7240)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005233> (Drosophila simulans)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005233> "http://purl.obolibrary.org/obo/NCBITaxon_7240 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005233> "Drosophila simulans used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005233> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005233> "http://purl.obolibrary.org/obo/NCBITaxon_7240"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005233> "Drosophila simulans"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005233> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7240> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005234> (http://purl.obolibrary.org/obo/NCBITaxon_7244)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005234> (Drosophila virilis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005234> "http://purl.obolibrary.org/obo/NCBITaxon_7244 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005234> "Drosophila virilis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005234> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005234> "http://purl.obolibrary.org/obo/NCBITaxon_7244"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005234> "Drosophila virilis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005234> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7244> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005235> (http://purl.obolibrary.org/obo/NCBITaxon_7245)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005235> (Drosophila yakuba)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005235> "http://purl.obolibrary.org/obo/NCBITaxon_7245 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005235> "Drosophila yakuba used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005235> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005235> "http://purl.obolibrary.org/obo/NCBITaxon_7245"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005235> "Drosophila yakuba"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005235> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7245> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005236> (http://purl.obolibrary.org/obo/NCBITaxon_7253)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005236> (Drosophila mercatorum)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005236> "http://purl.obolibrary.org/obo/NCBITaxon_7253 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005236> "Drosophila mercatorum used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005236> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005236> "http://purl.obolibrary.org/obo/NCBITaxon_7253"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005236> "Drosophila mercatorum"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005236> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7253> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005237> (http://purl.obolibrary.org/obo/NCBITaxon_7260)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005237> (Drosophila willistoni)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005237> "http://purl.obolibrary.org/obo/NCBITaxon_7260 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005237> "Drosophila willistoni used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005237> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005237> "http://purl.obolibrary.org/obo/NCBITaxon_7260"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005237> "Drosophila willistoni"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005237> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005238> (http://purl.obolibrary.org/obo/NCBITaxon_7757)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005238> (Petromyzon marinus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005238> "http://purl.obolibrary.org/obo/NCBITaxon_7757 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005238> "Petromyzon marinus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005238> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005238> "http://purl.obolibrary.org/obo/NCBITaxon_7757"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005238> "Petromyzon marinus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005238> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7757> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005239> (http://purl.obolibrary.org/obo/NCBITaxon_7913)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005239> (Polyodon spathula)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005239> "http://purl.obolibrary.org/obo/NCBITaxon_7913 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005239> "Polyodon spathula used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005239> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005239> "http://purl.obolibrary.org/obo/NCBITaxon_7913"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005239> "Polyodon spathula"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005239> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7913> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005240> (http://purl.obolibrary.org/obo/NCBITaxon_79327)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005240> (Schmidtea mediterranea)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005240> "http://purl.obolibrary.org/obo/NCBITaxon_79327 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005240> "Schmidtea mediterranea used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005240> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005240> "http://purl.obolibrary.org/obo/NCBITaxon_79327"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005240> "Schmidtea mediterranea"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005240> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_79327> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005241> (http://purl.obolibrary.org/obo/NCBITaxon_7955)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005241> (Danio rerio)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005241> "http://purl.obolibrary.org/obo/NCBITaxon_7955 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005241> "Danio rerio used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005241> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005241> "http://purl.obolibrary.org/obo/NCBITaxon_7955"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005241> "Danio rerio"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005241> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7955> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005242> (http://purl.obolibrary.org/obo/NCBITaxon_7994)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005242> (Astyanax mexicanus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005242> "http://purl.obolibrary.org/obo/NCBITaxon_7994 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005242> "Astyanax mexicanus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005242> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005242> "http://purl.obolibrary.org/obo/NCBITaxon_7994"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005242> "Astyanax mexicanus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005242> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_7994> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005243> (http://purl.obolibrary.org/obo/NCBITaxon_8364)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005243> (Xenopus tropicalis)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005243> "http://purl.obolibrary.org/obo/NCBITaxon_8364 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005243> "Xenopus tropicalis used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005243> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005243> "http://purl.obolibrary.org/obo/NCBITaxon_8364"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005243> "Xenopus tropicalis"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005243> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_8364> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005244> (http://purl.obolibrary.org/obo/NCBITaxon_9031)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005244> (Gallus gallus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005244> "http://purl.obolibrary.org/obo/NCBITaxon_9031 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005244> "Gallus gallus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005244> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005244> "http://purl.obolibrary.org/obo/NCBITaxon_9031"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005244> "Gallus gallus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005244> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005245> (http://purl.obolibrary.org/obo/NCBITaxon_9606)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005245> (人类Homo sapiens)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005245> "http://purl.obolibrary.org/obo/NCBITaxon_9606 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005245> "人类Homo sapiens used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005245> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005245> "http://purl.obolibrary.org/obo/NCBITaxon_9606"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005245> "人类Homo sapiens"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005245> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005246> (http://purl.obolibrary.org/obo/NCBITaxon_9913)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005246> (Bos taurus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005246> "http://purl.obolibrary.org/obo/NCBITaxon_9913 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005246> "Bos taurus used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005246> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005246> "http://purl.obolibrary.org/obo/NCBITaxon_9913"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005246> "Bos taurus"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005246> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9913> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005247> (http://purl.obolibrary.org/obo/NCBITaxon_99404)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005247> (Mesostoma)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005247> "http://purl.obolibrary.org/obo/NCBITaxon_99404 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005247> "Mesostoma used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005247> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005247> "http://purl.obolibrary.org/obo/NCBITaxon_99404"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005247> "Mesostoma"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005247> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_99404> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005248> (http://purl.obolibrary.org/obo/NCBITaxon_886328)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005248> (HaloTag control vector)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005248> "http://purl.obolibrary.org/obo/NCBITaxon_886328 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005248> "HaloTag control vector used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005248> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005248> "http://purl.obolibrary.org/obo/NCBITaxon_886328"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005248> "HaloTag control vector"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005248> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_886328> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005249> (http://purl.obolibrary.org/obo/NCBITaxon_562)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005249> (Escherichia coli)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005249> "http://purl.obolibrary.org/obo/NCBITaxon_562 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005249> "Escherichia coli used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005249> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005249> "http://purl.obolibrary.org/obo/NCBITaxon_562"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005249> "Escherichia coli"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005249> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_562> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005250> (http://purl.obolibrary.org/obo/NCBITaxon_580240)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005250> (Saccharomyces cerevisiae W303)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005250> "http://purl.obolibrary.org/obo/NCBITaxon_580240 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005250> "Saccharomyces cerevisiae W303 used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005250> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005250> "http://purl.obolibrary.org/obo/NCBITaxon_580240"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005250> "Saccharomyces cerevisiae W303"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005250> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_580240> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005251> (http://purl.obolibrary.org/obo/NCBITaxon_284812)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005251> (Schizosaccharomyces pombe 972h-)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005251> "http://purl.obolibrary.org/obo/NCBITaxon_284812 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005251> "Schizosaccharomyces pombe 972h- used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005251> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005251> "http://purl.obolibrary.org/obo/NCBITaxon_284812"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005251> "Schizosaccharomyces pombe 972h-"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005251> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_284812> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005252> (http://purl.obolibrary.org/obo/NCBITaxon_1247190)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005252> (Saccharomyces cerevisiae BY4741)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005252> "http://purl.obolibrary.org/obo/NCBITaxon_1247190 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005252> "Saccharomyces cerevisiae BY4741 used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005252> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005252> "http://purl.obolibrary.org/obo/NCBITaxon_1247190"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005252> "Saccharomyces cerevisiae BY4741"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005252> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_1247190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005253> (http://purl.obolibrary.org/obo/NCBITaxon_63121)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005253> (Ptychodera flava)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005253> "http://purl.obolibrary.org/obo/NCBITaxon_63121 used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005253> "Ptychodera flava used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005253> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005253> "http://purl.obolibrary.org/obo/NCBITaxon_63121"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005253> "Ptychodera flava"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005253> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_63121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMR_0002083> ()

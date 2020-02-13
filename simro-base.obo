@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-11/simro-base.owl
+data-version: simro/releases/2020-02-13/simro-base.owl
 ontology: simro/simro-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "SIMR Ontology" xsd:string
@@ -757,8 +757,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005023
-name: FITC
-def: "FITC used by light microscopy group." []
+name: fluorescein isothiocyanate
+def: "fluorescein isothiocyanate used by light microscopy group." []
 intersection_of: CHEBI:37926
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
@@ -771,8 +771,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
 
 [Term]
 id: SIMRO:0005025
-name: mouse embryonic stem cell
-def: "mouse embryonic stem cell used by proteomic group." []
+name: mouse embryonic stem cell line cell
+def: "mouse embryonic stem cell line cell used by proteomic group." []
 intersection_of: CLO:0037317
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
@@ -813,8 +813,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
 
 [Term]
 id: SIMRO:0005031
-name: Zinc
-def: "Zinc used by histology group." []
+name: zinc atom
+def: "zinc atom used by histology group." []
 intersection_of: CHEBI:27363
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
 
@@ -1135,8 +1135,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005077
-name: Hoechst 33342
-def: "Hoechst 33342 used by light microscopy group." []
+name: 2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole
+def: "2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole used by light microscopy group." []
 intersection_of: CHEBI:51232
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
@@ -1478,8 +1478,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005126
-name: x-rhodamine
-def: "x-rhodamine used by light microscopy group." []
+name: X-Rhodamine
+def: "X-Rhodamine used by light microscopy group." []
 intersection_of: FBbi:00000584
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
@@ -1590,8 +1590,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
 
 [Term]
 id: SIMRO:0005142
-name: yophilized specimen
-def: "yophilized specimen used by histology group." []
+name: lyophilized specimen
+def: "lyophilized specimen used by histology group." []
 intersection_of: FBbi:00000583
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
 
@@ -1772,8 +1772,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
 [Term]
 id: SIMRO:0005168
-name: HCT 116 cell
-def: "HCT 116 cell used by proteomic group." []
+name: HCT 116 细胞HCT 116 cell
+def: "HCT 116 细胞HCT 116 cell used by proteomic group." []
 intersection_of: CLO:0003665
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
@@ -1786,15 +1786,15 @@ intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
 [Term]
 id: SIMRO:0005170
-name: HeLa cell
-def: "HeLa cell used by proteomic group." []
+name: HeLa cellHeLa 细胞
+def: "HeLa cellHeLa 细胞 used by proteomic group." []
 intersection_of: CLO:0003684
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
 [Term]
 id: SIMRO:0005171
-name: HeLa-S3 cell
-def: "HeLa-S3 cell used by proteomic group." []
+name: HELA-S3 cell
+def: "HELA-S3 cell used by proteomic group." []
 intersection_of: CLO:0003699
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
@@ -1807,8 +1807,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
 [Term]
 id: SIMRO:0005173
-name: S2 cell
-def: "S2 cell used by proteomic group." []
+name: S2 细胞S2 cell
+def: "S2 细胞S2 cell used by proteomic group." []
 intersection_of: CLO:0008922
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
@@ -1849,526 +1849,526 @@ intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005179
-name: http://purl.obolibrary.org/obo/NCBITaxon_10090
-def: "http://purl.obolibrary.org/obo/NCBITaxon_10090 used by research group." []
+name: 小家鼠Mus musculus
+def: "小家鼠Mus musculus used by research group." []
 intersection_of: NCBITaxon:10090
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005180
-name: http://purl.obolibrary.org/obo/NCBITaxon_10116
-def: "http://purl.obolibrary.org/obo/NCBITaxon_10116 used by research group." []
+name: Rattus norvegicus
+def: "Rattus norvegicus used by research group." []
 intersection_of: NCBITaxon:10116
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005181
-name: http://purl.obolibrary.org/obo/NCBITaxon_105023
-def: "http://purl.obolibrary.org/obo/NCBITaxon_105023 used by research group." []
+name: Nothobranchius furzeri
+def: "Nothobranchius furzeri used by research group." []
 intersection_of: NCBITaxon:105023
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005182
-name: http://purl.obolibrary.org/obo/NCBITaxon_125945
-def: "http://purl.obolibrary.org/obo/NCBITaxon_125945 used by research group." []
+name: Drosophila biarmipes
+def: "Drosophila biarmipes used by research group." []
 intersection_of: NCBITaxon:125945
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005183
-name: http://purl.obolibrary.org/obo/NCBITaxon_1311949
-def: "http://purl.obolibrary.org/obo/NCBITaxon_1311949 used by research group." []
+name: Rhynchomesostoma
+def: "Rhynchomesostoma used by research group." []
 intersection_of: NCBITaxon:1311949
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005184
-name: http://purl.obolibrary.org/obo/NCBITaxon_1354672
-def: "http://purl.obolibrary.org/obo/NCBITaxon_1354672 used by research group." []
+name: Phagocata gracilis
+def: "Phagocata gracilis used by research group." []
 intersection_of: NCBITaxon:1354672
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005185
-name: http://purl.obolibrary.org/obo/NCBITaxon_135777
-def: "http://purl.obolibrary.org/obo/NCBITaxon_135777 used by research group." []
+name: Girardia dorotocephala
+def: "Girardia dorotocephala used by research group." []
 intersection_of: NCBITaxon:135777
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005186
-name: http://purl.obolibrary.org/obo/NCBITaxon_139
-def: "http://purl.obolibrary.org/obo/NCBITaxon_139 used by research group." []
+name: Borreliella burgdorferi
+def: "Borreliella burgdorferi used by research group." []
 intersection_of: NCBITaxon:139
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005187
-name: http://purl.obolibrary.org/obo/NCBITaxon_171129
-def: "http://purl.obolibrary.org/obo/NCBITaxon_171129 used by research group." []
+name: Aspidoscelis burti
+def: "Aspidoscelis burti used by research group." []
 intersection_of: NCBITaxon:171129
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005188
-name: http://purl.obolibrary.org/obo/NCBITaxon_1820202
-def: "http://purl.obolibrary.org/obo/NCBITaxon_1820202 used by research group." []
+name: Phagocata morgani
+def: "Phagocata morgani used by research group." []
 intersection_of: NCBITaxon:1820202
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005189
-name: http://purl.obolibrary.org/obo/NCBITaxon_1842987
-def: "http://purl.obolibrary.org/obo/NCBITaxon_1842987 used by research group." []
+name: Aspidoscelis tesselatus
+def: "Aspidoscelis tesselatus used by research group." []
 intersection_of: NCBITaxon:1842987
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005190
-name: http://purl.obolibrary.org/obo/NCBITaxon_1930915
-def: "http://purl.obolibrary.org/obo/NCBITaxon_1930915 used by research group." []
+name: Polycelis coronata
+def: "Polycelis coronata used by research group." []
 intersection_of: NCBITaxon:1930915
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005191
-name: http://purl.obolibrary.org/obo/NCBITaxon_1969971
-def: "http://purl.obolibrary.org/obo/NCBITaxon_1969971 used by research group." []
+name: Phagocata velata
+def: "Phagocata velata used by research group." []
 intersection_of: NCBITaxon:1969971
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005192
-name: http://purl.obolibrary.org/obo/NCBITaxon_2
-def: "http://purl.obolibrary.org/obo/NCBITaxon_2 used by research group." []
+name: Bacteria细菌
+def: "Bacteria细菌 used by research group." []
 intersection_of: NCBITaxon:2
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005193
-name: http://purl.obolibrary.org/obo/NCBITaxon_204045
-def: "http://purl.obolibrary.org/obo/NCBITaxon_204045 used by research group." []
+name: Schizosaccharomyces kambucha
+def: "Schizosaccharomyces kambucha used by research group." []
 intersection_of: NCBITaxon:204045
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005194
-name: http://purl.obolibrary.org/obo/NCBITaxon_224326
-def: "http://purl.obolibrary.org/obo/NCBITaxon_224326 used by research group." []
+name: Borreliella burgdorferi B31
+def: "Borreliella burgdorferi B31 used by research group." []
 intersection_of: NCBITaxon:224326
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005195
-name: http://purl.obolibrary.org/obo/NCBITaxon_230603
-def: "http://purl.obolibrary.org/obo/NCBITaxon_230603 used by research group." []
+name: Saccharomyces uvarum
+def: "Saccharomyces uvarum used by research group." []
 intersection_of: NCBITaxon:230603
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005196
-name: http://purl.obolibrary.org/obo/NCBITaxon_231627
-def: "http://purl.obolibrary.org/obo/NCBITaxon_231627 used by research group." []
+name: Procotyla fluviatilis
+def: "Procotyla fluviatilis used by research group." []
 intersection_of: NCBITaxon:231627
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005197
-name: http://purl.obolibrary.org/obo/NCBITaxon_274
-def: "http://purl.obolibrary.org/obo/NCBITaxon_274 used by research group." []
+name: Thermus thermophilus
+def: "Thermus thermophilus used by research group." []
 intersection_of: NCBITaxon:274
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005198
-name: http://purl.obolibrary.org/obo/NCBITaxon_29029
-def: "http://purl.obolibrary.org/obo/NCBITaxon_29029 used by research group." []
+name: Drosophila eugracilis
+def: "Drosophila eugracilis used by research group." []
 intersection_of: NCBITaxon:29029
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005199
-name: http://purl.obolibrary.org/obo/NCBITaxon_30033
-def: "http://purl.obolibrary.org/obo/NCBITaxon_30033 used by research group." []
+name: Drosophila kikkawai
+def: "Drosophila kikkawai used by research group." []
 intersection_of: NCBITaxon:30033
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005200
-name: http://purl.obolibrary.org/obo/NCBITaxon_311400
-def: "http://purl.obolibrary.org/obo/NCBITaxon_311400 used by research group." []
+name: Thermococcus kodakarensis
+def: "Thermococcus kodakarensis used by research group." []
 intersection_of: NCBITaxon:311400
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005201
-name: http://purl.obolibrary.org/obo/NCBITaxon_37197
-def: "http://purl.obolibrary.org/obo/NCBITaxon_37197 used by research group." []
+name: Aspidoscelis uniparens
+def: "Aspidoscelis uniparens used by research group." []
 intersection_of: NCBITaxon:37197
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005202
-name: http://purl.obolibrary.org/obo/NCBITaxon_400727
-def: "http://purl.obolibrary.org/obo/NCBITaxon_400727 used by research group." []
+name: Pomacea canaliculata
+def: "Pomacea canaliculata used by research group." []
 intersection_of: NCBITaxon:400727
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005203
-name: http://purl.obolibrary.org/obo/NCBITaxon_42026
-def: "http://purl.obolibrary.org/obo/NCBITaxon_42026 used by research group." []
+name: Drosophila bipectinata
+def: "Drosophila bipectinata used by research group." []
 intersection_of: NCBITaxon:42026
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005204
-name: http://purl.obolibrary.org/obo/NCBITaxon_439306
-def: "http://purl.obolibrary.org/obo/NCBITaxon_439306 used by research group." []
+name: Maritigrella
+def: "Maritigrella used by research group." []
 intersection_of: NCBITaxon:439306
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005205
-name: http://purl.obolibrary.org/obo/NCBITaxon_45351
-def: "http://purl.obolibrary.org/obo/NCBITaxon_45351 used by research group." []
+name: Nematostella vectensis
+def: "Nematostella vectensis used by research group." []
 intersection_of: NCBITaxon:45351
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005206
-name: http://purl.obolibrary.org/obo/NCBITaxon_46766
-def: "http://purl.obolibrary.org/obo/NCBITaxon_46766 used by research group." []
+name: Bdelloura candida
+def: "Bdelloura candida used by research group." []
 intersection_of: NCBITaxon:46766
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005207
-name: http://purl.obolibrary.org/obo/NCBITaxon_4896
-def: "http://purl.obolibrary.org/obo/NCBITaxon_4896 used by research group." []
+name: Schizosaccharomyces pombe
+def: "Schizosaccharomyces pombe used by research group." []
 intersection_of: NCBITaxon:4896
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005208
-name: http://purl.obolibrary.org/obo/NCBITaxon_4899
-def: "http://purl.obolibrary.org/obo/NCBITaxon_4899 used by research group." []
+name: Schizosaccharomyces octosporus
+def: "Schizosaccharomyces octosporus used by research group." []
 intersection_of: NCBITaxon:4899
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005209
-name: http://purl.obolibrary.org/obo/NCBITaxon_4932
-def: "http://purl.obolibrary.org/obo/NCBITaxon_4932 used by research group." []
+name: Saccharomyces cerevisiae
+def: "Saccharomyces cerevisiae used by research group." []
 intersection_of: NCBITaxon:4932
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005210
-name: http://purl.obolibrary.org/obo/NCBITaxon_50054
-def: "http://purl.obolibrary.org/obo/NCBITaxon_50054 used by research group." []
+name: Schmidtea polychroa
+def: "Schmidtea polychroa used by research group." []
 intersection_of: NCBITaxon:50054
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005211
-name: http://purl.obolibrary.org/obo/NCBITaxon_52180
-def: "http://purl.obolibrary.org/obo/NCBITaxon_52180 used by research group." []
+name: Aspidoscelis tigris
+def: "Aspidoscelis tigris used by research group." []
 intersection_of: NCBITaxon:52180
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005212
-name: http://purl.obolibrary.org/obo/NCBITaxon_5476
-def: "http://purl.obolibrary.org/obo/NCBITaxon_5476 used by research group." []
+name: Candida albicans
+def: "Candida albicans used by research group." []
 intersection_of: NCBITaxon:5476
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005213
-name: http://purl.obolibrary.org/obo/NCBITaxon_5811
-def: "http://purl.obolibrary.org/obo/NCBITaxon_5811 used by research group." []
+name: Toxoplasma gondii
+def: "Toxoplasma gondii used by research group." []
 intersection_of: NCBITaxon:5811
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005214
-name: http://purl.obolibrary.org/obo/NCBITaxon_5833
-def: "http://purl.obolibrary.org/obo/NCBITaxon_5833 used by research group." []
+name: Plasmodium falciparum
+def: "Plasmodium falciparum used by research group." []
 intersection_of: NCBITaxon:5833
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005215
-name: http://purl.obolibrary.org/obo/NCBITaxon_6161
-def: "http://purl.obolibrary.org/obo/NCBITaxon_6161 used by research group." []
+name: Dugesia japonica
+def: "Dugesia japonica used by research group." []
 intersection_of: NCBITaxon:6161
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005216
-name: http://purl.obolibrary.org/obo/NCBITaxon_6162
-def: "http://purl.obolibrary.org/obo/NCBITaxon_6162 used by research group." []
+name: Girardia tigrina
+def: "Girardia tigrina used by research group." []
 intersection_of: NCBITaxon:6162
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005217
-name: http://purl.obolibrary.org/obo/NCBITaxon_6239
-def: "http://purl.obolibrary.org/obo/NCBITaxon_6239 used by research group." []
+name: Caenorhabditis elegans
+def: "Caenorhabditis elegans used by research group." []
 intersection_of: NCBITaxon:6239
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005218
-name: http://purl.obolibrary.org/obo/NCBITaxon_63121
-def: "http://purl.obolibrary.org/obo/NCBITaxon_63121 used by research group." []
+name: Ptychodera flava
+def: "Ptychodera flava used by research group." []
 intersection_of: NCBITaxon:63121
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005219
-name: http://purl.obolibrary.org/obo/NCBITaxon_6565
-def: "http://purl.obolibrary.org/obo/NCBITaxon_6565 used by research group." []
+name: Crassostrea virginica
+def: "Crassostrea virginica used by research group." []
 intersection_of: NCBITaxon:6565
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005220
-name: http://purl.obolibrary.org/obo/NCBITaxon_68351
-def: "http://purl.obolibrary.org/obo/NCBITaxon_68351 used by research group." []
+name: Aspidoscelis gularis
+def: "Aspidoscelis gularis used by research group." []
 intersection_of: NCBITaxon:68351
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005221
-name: http://purl.obolibrary.org/obo/NCBITaxon_68352
-def: "http://purl.obolibrary.org/obo/NCBITaxon_68352 used by research group." []
+name: Aspidoscelis inornatus
+def: "Aspidoscelis inornatus used by research group." []
 intersection_of: NCBITaxon:68352
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005222
-name: http://purl.obolibrary.org/obo/NCBITaxon_7108
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7108 used by research group." []
+name: Spodoptera frugiperda
+def: "Spodoptera frugiperda used by research group." []
 intersection_of: NCBITaxon:7108
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005223
-name: http://purl.obolibrary.org/obo/NCBITaxon_7215
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7215 used by research group." []
+name: 果蝇 <果蝇，属>Drosophila <fruit fly, genus>
+def: "果蝇 <果蝇，属>Drosophila <fruit fly, genus> used by research group." []
 intersection_of: NCBITaxon:7215
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005224
-name: http://purl.obolibrary.org/obo/NCBITaxon_7217
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7217 used by research group." []
+name: Drosophila ananassae
+def: "Drosophila ananassae used by research group." []
 intersection_of: NCBITaxon:7217
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005225
-name: http://purl.obolibrary.org/obo/NCBITaxon_7220
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7220 used by research group." []
+name: Drosophila erecta
+def: "Drosophila erecta used by research group." []
 intersection_of: NCBITaxon:7220
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005226
-name: http://purl.obolibrary.org/obo/NCBITaxon_7226
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7226 used by research group." []
+name: Drosophila mauritiana
+def: "Drosophila mauritiana used by research group." []
 intersection_of: NCBITaxon:7226
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005227
-name: http://purl.obolibrary.org/obo/NCBITaxon_7227
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7227 used by research group." []
+name: 黑腹果蝇Drosophila melanogaster
+def: "黑腹果蝇Drosophila melanogaster used by research group." []
 intersection_of: NCBITaxon:7227
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005228
-name: http://purl.obolibrary.org/obo/NCBITaxon_7229
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7229 used by research group." []
+name: Drosophila miranda
+def: "Drosophila miranda used by research group." []
 intersection_of: NCBITaxon:7229
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005229
-name: http://purl.obolibrary.org/obo/NCBITaxon_7230
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7230 used by research group." []
+name: Drosophila mojavensis
+def: "Drosophila mojavensis used by research group." []
 intersection_of: NCBITaxon:7230
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005230
-name: http://purl.obolibrary.org/obo/NCBITaxon_7234
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7234 used by research group." []
+name: Drosophila persimilis
+def: "Drosophila persimilis used by research group." []
 intersection_of: NCBITaxon:7234
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005231
-name: http://purl.obolibrary.org/obo/NCBITaxon_7237
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7237 used by research group." []
+name: Drosophila pseudoobscura
+def: "Drosophila pseudoobscura used by research group." []
 intersection_of: NCBITaxon:7237
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005232
-name: http://purl.obolibrary.org/obo/NCBITaxon_7238
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7238 used by research group." []
+name: Drosophila sechellia
+def: "Drosophila sechellia used by research group." []
 intersection_of: NCBITaxon:7238
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005233
-name: http://purl.obolibrary.org/obo/NCBITaxon_7240
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7240 used by research group." []
+name: Drosophila simulans
+def: "Drosophila simulans used by research group." []
 intersection_of: NCBITaxon:7240
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005234
-name: http://purl.obolibrary.org/obo/NCBITaxon_7244
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7244 used by research group." []
+name: Drosophila virilis
+def: "Drosophila virilis used by research group." []
 intersection_of: NCBITaxon:7244
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005235
-name: http://purl.obolibrary.org/obo/NCBITaxon_7245
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7245 used by research group." []
+name: Drosophila yakuba
+def: "Drosophila yakuba used by research group." []
 intersection_of: NCBITaxon:7245
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005236
-name: http://purl.obolibrary.org/obo/NCBITaxon_7253
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7253 used by research group." []
+name: Drosophila mercatorum
+def: "Drosophila mercatorum used by research group." []
 intersection_of: NCBITaxon:7253
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005237
-name: http://purl.obolibrary.org/obo/NCBITaxon_7260
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7260 used by research group." []
+name: Drosophila willistoni
+def: "Drosophila willistoni used by research group." []
 intersection_of: NCBITaxon:7260
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005238
-name: http://purl.obolibrary.org/obo/NCBITaxon_7757
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7757 used by research group." []
+name: Petromyzon marinus
+def: "Petromyzon marinus used by research group." []
 intersection_of: NCBITaxon:7757
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005239
-name: http://purl.obolibrary.org/obo/NCBITaxon_7913
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7913 used by research group." []
+name: Polyodon spathula
+def: "Polyodon spathula used by research group." []
 intersection_of: NCBITaxon:7913
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005240
-name: http://purl.obolibrary.org/obo/NCBITaxon_79327
-def: "http://purl.obolibrary.org/obo/NCBITaxon_79327 used by research group." []
+name: Schmidtea mediterranea
+def: "Schmidtea mediterranea used by research group." []
 intersection_of: NCBITaxon:79327
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005241
-name: http://purl.obolibrary.org/obo/NCBITaxon_7955
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7955 used by research group." []
+name: Danio rerio
+def: "Danio rerio used by research group." []
 intersection_of: NCBITaxon:7955
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005242
-name: http://purl.obolibrary.org/obo/NCBITaxon_7994
-def: "http://purl.obolibrary.org/obo/NCBITaxon_7994 used by research group." []
+name: Astyanax mexicanus
+def: "Astyanax mexicanus used by research group." []
 intersection_of: NCBITaxon:7994
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005243
-name: http://purl.obolibrary.org/obo/NCBITaxon_8364
-def: "http://purl.obolibrary.org/obo/NCBITaxon_8364 used by research group." []
+name: Xenopus tropicalis
+def: "Xenopus tropicalis used by research group." []
 intersection_of: NCBITaxon:8364
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005244
-name: http://purl.obolibrary.org/obo/NCBITaxon_9031
-def: "http://purl.obolibrary.org/obo/NCBITaxon_9031 used by research group." []
+name: Gallus gallus
+def: "Gallus gallus used by research group." []
 intersection_of: NCBITaxon:9031
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005245
-name: http://purl.obolibrary.org/obo/NCBITaxon_9606
-def: "http://purl.obolibrary.org/obo/NCBITaxon_9606 used by research group." []
+name: 人类Homo sapiens
+def: "人类Homo sapiens used by research group." []
 intersection_of: NCBITaxon:9606
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005246
-name: http://purl.obolibrary.org/obo/NCBITaxon_9913
-def: "http://purl.obolibrary.org/obo/NCBITaxon_9913 used by research group." []
+name: Bos taurus
+def: "Bos taurus used by research group." []
 intersection_of: NCBITaxon:9913
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005247
-name: http://purl.obolibrary.org/obo/NCBITaxon_99404
-def: "http://purl.obolibrary.org/obo/NCBITaxon_99404 used by research group." []
+name: Mesostoma
+def: "Mesostoma used by research group." []
 intersection_of: NCBITaxon:99404
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005248
-name: http://purl.obolibrary.org/obo/NCBITaxon_886328
-def: "http://purl.obolibrary.org/obo/NCBITaxon_886328 used by research group." []
+name: HaloTag control vector
+def: "HaloTag control vector used by research group." []
 intersection_of: NCBITaxon:886328
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005249
-name: http://purl.obolibrary.org/obo/NCBITaxon_562
-def: "http://purl.obolibrary.org/obo/NCBITaxon_562 used by research group." []
+name: Escherichia coli
+def: "Escherichia coli used by research group." []
 intersection_of: NCBITaxon:562
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005250
-name: http://purl.obolibrary.org/obo/NCBITaxon_580240
-def: "http://purl.obolibrary.org/obo/NCBITaxon_580240 used by research group." []
+name: Saccharomyces cerevisiae W303
+def: "Saccharomyces cerevisiae W303 used by research group." []
 intersection_of: NCBITaxon:580240
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005251
-name: http://purl.obolibrary.org/obo/NCBITaxon_284812
-def: "http://purl.obolibrary.org/obo/NCBITaxon_284812 used by research group." []
+name: Schizosaccharomyces pombe 972h-
+def: "Schizosaccharomyces pombe 972h- used by research group." []
 intersection_of: NCBITaxon:284812
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005252
-name: http://purl.obolibrary.org/obo/NCBITaxon_1247190
-def: "http://purl.obolibrary.org/obo/NCBITaxon_1247190 used by research group." []
+name: Saccharomyces cerevisiae BY4741
+def: "Saccharomyces cerevisiae BY4741 used by research group." []
 intersection_of: NCBITaxon:1247190
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005253
-name: http://purl.obolibrary.org/obo/NCBITaxon_63121
-def: "http://purl.obolibrary.org/obo/NCBITaxon_63121 used by research group." []
+name: Ptychodera flava
+def: "Ptychodera flava used by research group." []
 intersection_of: NCBITaxon:63121
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 

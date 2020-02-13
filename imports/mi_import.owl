@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/simro/imports/mi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-11/imports/mi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-13/imports/mi_import.owl"/>
     </owl:Ontology>
     
 
@@ -49,7 +49,26 @@
     <!-- http://purl.obolibrary.org/obo/mi#Drugable -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#Drugable">
+        <rdfs:comment>Drugable Genome Project</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MI-alternate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:label>Alternate label curated by PSI-MI</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mi#PSI-MI-short -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MI-short">
+        <oboInOwl:hasScope rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <rdfs:label>Unique short label curated by PSI-MI</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -57,6 +76,7 @@
     <!-- http://purl.obolibrary.org/obo/mi#PSI-MI_slim -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mi#PSI-MI_slim">
+        <rdfs:comment>Subset of PSI-MI</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -79,6 +99,14 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -106,9 +134,19 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -120,9 +158,19 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasScope -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasScope">
+        <rdfs:label>has_scope</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType">
+        <rdfs:label>has_synonym_type</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -218,6 +266,38 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MI_0001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0001">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/mi#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MI_0000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Method to determine the interaction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>interaction detect</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0001</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#Drugable"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>interaction detection method</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Method to determine the interaction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0001"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>interaction detect</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MI_0003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0003">
@@ -244,6 +324,110 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0003"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>feature detection</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0045"/>
+        <obo:IAO_0000115>The application of physical principles and methods to biological experiments.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0013</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>biophysical</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0013"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The application of physical principles and methods to biological experiments.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0001"/>
+        <obo:IAO_0000115>Methods based on laboratory experiments to determine an interaction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>experimental interac</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0045</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>experimental interaction detection</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0045"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Methods based on laboratory experiments to determine an interaction.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0045"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>experimental interac</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0013"/>
+        <obo:IAO_0000115>Techniques based upon the measurement of the emission of one or more photons by a molecule activated by the absorption of a quantum of electro-magnetic radiation. Typically the emission, which is characterised by a wavelength that is longer than the one of excitatory radiation, occurs within 10-8 seconds.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>fluorescence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0051</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>fluorescence technology</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0051"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Techniques based upon the measurement of the emission of one or more photons by a molecule activated by the absorption of a quantum of electro-magnetic radiation. Typically the emission, which is characterised by a wavelength that is longer than the one of excitatory radiation, occurs within 10-8 seconds.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:14755292</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0051"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>fluorescence</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0045"/>
+        <obo:IAO_0000115>In the protein-fragment complementation assay, the proteins of interest (&quot;Bait&quot; and &quot;Prey&quot;) are covalently linked at the genetic level to incomplete fragments of a third protein (known as the &quot;reporter&quot;) and are expressed in vivo, Interaction between the &quot;bait&quot; and the &quot;prey&quot; proteins brings the fragments of the &quot;reporter&quot; protein in close enough proximity to allow them to reform and become the functional reporter protein. Typically enzymes which confer resistance to antibiotics, such as Dihydrofolate reductase or Beta-lactamase, or proteins that give colorimetric or fluorescent signals are used. The Bait protein is generally the protein under study and the methods are readily adaptable to highthroughput mode.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>PCA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>complementation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0090</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>protein complementation assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0090"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>In the protein-fragment complementation assay, the proteins of interest (&quot;Bait&quot; and &quot;Prey&quot;) are covalently linked at the genetic level to incomplete fragments of a third protein (known as the &quot;reporter&quot;) and are expressed in vivo, Interaction between the &quot;bait&quot; and the &quot;prey&quot; proteins brings the fragments of the &quot;reporter&quot; protein in close enough proximity to allow them to reform and become the functional reporter protein. Typically enzymes which confer resistance to antibiotics, such as Dihydrofolate reductase or Beta-lactamase, or proteins that give colorimetric or fluorescent signals are used. The Bait protein is generally the protein under study and the methods are readily adaptable to highthroughput mode.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:11495741</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0090"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>PCA</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-alternate"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0090"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>complementation</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
     </owl:Axiom>
     
@@ -451,6 +635,36 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0687"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>fluorescent prot tag</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MI_0809 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MI_0809">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MI_0090"/>
+        <obo:IAO_0000115>The bimolecular fluorescence complementation (BiFC) is an assay for determination of protein interactions and/or their location in living cells. This approach is based on complementation between two non- fluorescent fragments of a protein fluorophore such as green fluorescent protein (GFP) or its derivatives. Interactions between proteins fused to each fragment bring the fragments together resulting in the reconstitution of a fully functional flourophore that can be identified through fluorescence spectroscopy or microscopy.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>MI:0229</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>bifc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gfp complementation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>green fluorescence protein complementation assay</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>PSI-MI</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>MI:0809</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI_slim"/>
+        <rdfs:label>bimolecular fluorescence complementation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0809"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The bimolecular fluorescence complementation (BiFC) is an assay for determination of protein interactions and/or their location in living cells. This approach is based on complementation between two non- fluorescent fragments of a protein fluorophore such as green fluorescent protein (GFP) or its derivatives. Interactions between proteins fused to each fragment bring the fragments together resulting in the reconstitution of a fully functional flourophore that can be identified through fluorescence spectroscopy or microscopy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11983170</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MI_0809"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>bifc</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mi#PSI-MI-short"/>
     </owl:Axiom>
     

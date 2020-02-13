@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/simro/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-11/imports/obi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-13/imports/obi_import.owl"/>
     </owl:Ontology>
     
 
@@ -29,13 +29,22 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
+        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -185,6 +194,18 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
+        <obo:IAO_0000111 xml:lang="en">has obsolescence reason</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
@@ -200,7 +221,14 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>The name of the person, project, or organization that motivated inclusion of an ontology term by requesting its addition.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:comment>The &apos;term requester&apos; can credit the person, organization or project who request the ontology term.</rdfs:comment>
+        <rdfs:label xml:lang="en">ontology term requester</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -291,25 +319,70 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+        <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+        <obo:IAO_0000111 xml:lang="en">has associated axiom(fol)</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000600 xml:lang="en">An axiom expressed in first order logic using CLIF syntax</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
+        <obo:IAO_0000111 xml:lang="en">has axiom id</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000600 xml:lang="en">A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">has axiom label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <obo:IAO_0000111 xml:lang="en">term replaced by</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">Add as annotation triples in the granting ontology</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001847 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001847"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001847">
+        <obo:IAO_0000111 xml:lang="en">ISA alternative term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>An alternative term used by the ISA tools project (http://isa-tools.org).</obo:IAO_0000115>
+        <obo:IAO_0000116>Requested by Alejandra Gonzalez-Beltran
+https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
+        <obo:IAO_0000117>Person: Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000117>Person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>ISA tools project (http://isa-tools.org)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">ISA alternative term</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -352,9 +425,33 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <dc:description xml:lang="en-us">Typically, Date will be associated with the creation or
+         availability of the resource.  Recommended best practice
+         for encoding the date value is defined in a profile of
+         ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</dc:description>
+        <rdfs:comment xml:lang="en-us">A date associated with an event in the life cycle of the
+         resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label>Date</rdfs:label>
+        <rdfs:label xml:lang="en-us">Date</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <dc:description xml:lang="en-us">Description may include but is not limited to: an abstract,
+         table of contents, reference to a graphical representation
+         of content or a free-text account of the content.</dc:description>
+        <rdfs:comment xml:lang="en-us">An account of the content of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label>Description</rdfs:label>
+        <rdfs:label xml:lang="en-us">Description</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -442,6 +539,23 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     <!-- http://xmlns.com/foaf/0.1/page -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
     
 
 
@@ -746,6 +860,74 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <obo:IAO_0000111>is_realized_by</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>Relation between a realizable and a process. Reciprocal relation of realizes [GOC:cjm]</obo:IAO_0000115>
+        <obo:IAO_0000116>replaced by http://purl.obolibrary.org/obo/BFO_0000054: &apos;is realized by&apos;</obo:IAO_0000116>
+        <obo:IAO_0000117>GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000118>executed_during</obo:IAO_0000118>
+        <obo:IAO_0000118>has_realization</obo:IAO_0000118>
+        <obo:IAO_0000118>is_realized_as</obo:IAO_0000118>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
+        <rdfs:label xml:lang="en">obsolete_is_realized_by</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000306 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <obo:IAO_0000111>has_function</obo:IAO_0000111>
+        <obo:IAO_0000112>heart has_function to-pump-blood</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>Relation between an independent continuant and a function.</obo:IAO_0000115>
+        <obo:IAO_0000116>replaced by: http://purl.obolibrary.org/obo/BFO_0000085</obo:IAO_0000116>
+        <obo:IAO_0000117>GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
+        <rdfs:label xml:lang="en">obsolete_has_function</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <obo:IAO_0000111>realizes</obo:IAO_0000111>
+        <obo:IAO_0000112>example of usage: The process of &apos;histidine catabolism&apos; (GO:0006548) realizes the 
+function &apos;histidine ammonia lyase activity&apos; (GO:0004397) (note: here &apos;activity&apos; 
+denotes a function and not a process). We leave open the possibility of defining 
+in future the sub-relations directly_realizes (as bewteen a function and it&apos;s 
+functioning) and indirectly_realizes.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>Relation between a process and a function, where the unfolding of the 
+process requires the execution of the function. Class level: P realizes F iff: 
+given any p that instantiates P, there exists some f, t such that f instantiates
+ F at t and p *realizes* f. Here, *realizes* is the primitive 
+instance level relation [GOC:cjm]</obo:IAO_0000115>
+        <obo:IAO_0000116>replaced by http://purl.obolibrary.org/obo/BFO_0000055: &apos;realizes&apos;</obo:IAO_0000116>
+        <obo:IAO_0000117>GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Chris Mungal</obo:IAO_0000117>
+        <obo:IAO_0000118>executes</obo:IAO_0000118>
+        <obo:IAO_0000118>has_function_part</obo:IAO_0000118>
+        <obo:IAO_0000118>involves_execution_of</obo:IAO_0000118>
+        <obo:IAO_0000118>is_realization_of</obo:IAO_0000118>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
+        <rdfs:label xml:lang="en">obsolete_realizes</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
@@ -764,6 +946,23 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <obo:IAO_0000111>has_role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A relation between a continuant C and a role R. The reciprocal relation of role_of.</obo:IAO_0000115>
+        <obo:IAO_0000116>replaced by: http://purl.obolibrary.org/obo/BFO_0000087</obo:IAO_0000116>
+        <obo:IAO_0000117>GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON:Chris Mungal</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
+        <rdfs:label xml:lang="en">obsolete_has_role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -1355,6 +1554,12 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1939,6 +2144,105 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:BFO_0000179>fiat-object</obo:BFO_0000179>
+        <obo:BFO_0000179>fiat-object-part</obo:BFO_0000179>
+        <obo:BFO_0000180>FiatObjectPart</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">or with divisions drawn by cognitive subjects for practical reasons, such as the division of a cake (before slicing) into (what will become) slices (and thus member parts of an object aggregate). However, this does not mean that fiat object parts are dependent for their existence on divisions or delineations effected by cognitive subjects. If, for example, it is correct to conceive geological layers of the Earth as fiat object parts of the Earth, then even though these layers were first delineated in recent times, still existed long before such delineation and what holds of these layers (for example that the oldest layers are also the lowest layers) did not begin to hold because of our acts of delineation.Treatment of material entity in BFOExamples viewed by some as problematic cases for the trichotomy of fiat object part, object, and object aggregate include: a mussel on (and attached to) a rock, a slime mold, a pizza, a cloud, a galaxy, a railway train with engine and multiple carriages, a clonal stand of quaking aspen, a bacterial community (biofilm), a broken femur. Note that, as Aristotle already clearly recognized, such problematic cases – which lie at or near the penumbra of instances defined by the categories in question – need not invalidate these categories. The existence of grey objects does not prove that there are not objects which are black and objects which are white; the existence of mules does not prove that there are not objects which are donkeys and objects which are horses. It does, however, show that the examples in question need to be addressed carefully in order to show how they can be fitted into the proposed scheme, for example by recognizing additional subdivisions [29</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the FMA:regional parts of an intact human body.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Western hemisphere of the Earth</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the division of the brain into regions</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the division of the planet into hemispheres</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the dorsal and ventral surfaces of the body</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the upper and lower lobes of the left lung</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Most examples of fiat object parts are associated with theoretically drawn divisions</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">fiat object</rdfs:label>
+        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/027-004"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/027-004"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <obo:BFO_0000179>3d-s-region</obo:BFO_0000179>
+        <obo:BFO_0000180>ThreeDimensionalSpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a cube-shaped region of space</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sphere-shaped region of space,</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">A three-dimensional spatial region is a spatial region that is of three dimensions. (axiom label in BFO2 Reference: [040-001])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">three-dimensional spatial region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A three-dimensional spatial region is a spatial region that is of three dimensions. (axiom label in BFO2 Reference: [040-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/040-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/040-001"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:BFO_0000179>object</obo:BFO_0000179>
+        <obo:BFO_0000180>Object</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">atom</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">cell</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">cells and organisms</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">engineered artifacts</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">grain of sand</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">molecule</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">organelle</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">organism</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">planet</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">solid portions of matter</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">star</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: BFO rests on the presupposition that at multiple micro-, meso- and macroscopic scales reality exhibits certain stable, spatially separated or separable material units, combined or combinable into aggregates of various sorts (for example organisms into what are called ‘populations’). Such units play a central role in almost all domains of natural science from particle physics to cosmology. Many scientific laws govern the units in question, employing general terms (such as ‘molecule’ or ‘planet’) referring to the types and subtypes of units, and also to the types and subtypes of the processes through which such units develop and interact. The division of reality into such natural units is at the heart of biological science, as also is the fact that these units may form higher-level units (as cells form multicellular organisms) and that they may also form aggregates of units, for example as cells form portions of tissue and organs form families, herds, breeds, species, and so on. At the same time, the division of certain portions of reality into engineered units (manufactured artifacts) is the basis of modern industrial technology, which rests on the distributed mass production of engineered parts through division of labor and on their assembly into larger, compound units such as cars and laptops. The division of portions of reality into units is one starting point for the phenomenon of counting.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Each object is such that there are entities of which we can assert unproblematically that they lie in its interior, and other entities of which we can assert unproblematically that they lie in its exterior. This may not be so for entities lying at or near the boundary between the interior and exterior. This means that two objects – for example the two cells depicted in Figure 3 – may be such that there are material entities crossing their boundaries which belong determinately to neither cell. Something similar obtains in certain cases of conjoined twins (see below).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: To say that b is causally unified means: b is a material entity which is such that its material parts are tied together in such a way that, in environments typical for entities of the type in question,if c, a continuant part of b that is in the interior of b at t, is larger than a certain threshold size (which will be determined differently from case to case, depending on factors such as porosity of external cover) and is moved in space to be at t at a location on the exterior of the spatial region that had been occupied by b at t, then either b’s other parts will be moved in coordinated fashion or b will be damaged (be affected, for example, by breakage or tearing) in the interval between t and t.causal changes in one part of b can have consequences for other parts of b without the mediation of any entity that lies on the exterior of b. Material entities with no proper material parts would satisfy these conditions trivially. Candidate examples of types of causal unity for material entities of more complex sorts are as follows (this is not intended to be an exhaustive list):CU1: Causal unity via physical coveringHere the parts in the interior of the unified entity are combined together causally through a common membrane or other physical covering\. The latter points outwards toward and may serve a protective function in relation to what lies on the exterior of the entity [13, 47</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: an object is a maximal causally unified material entity</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘objects’ are sometimes referred to as ‘grains’ [74</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above &amp; is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])</obo:IAO_0000600>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above &amp; is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/024-001"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
@@ -2083,6 +2387,30 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33839"/>
+        <obo:IAO_0000111>peptide</obo:IAO_0000111>
+        <obo:IAO_0000115>Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from alpha-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>peptide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_17137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000111>hydrogensulfite</obo:IAO_0000111>
+        <obo:IAO_0000115>A sulfur oxoanion that has formula HO3S.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>hydrogensulfite</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
@@ -2122,6 +2450,67 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115>A xanthene dye that is highly fluorescent, detectable even when present in minute quantities. Used forensically to detect traces of blood, in analytical chemistry as an indicator in silver nitrate titrations and in microscopy.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>fluorescein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111>atom</obo:IAO_0000111>
+        <obo:IAO_0000115>A chemical entity constituting the smallest component of an element having the chemical properties of the element.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>atom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33696">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33839"/>
+        <obo:IAO_0000111>nucleic acid</obo:IAO_0000111>
+        <obo:IAO_0000115>A macromolecule made up of nucleotide units and hydrolysable into certain pyrimidine or purine bases (usually adenine, cytosine, guanine, thymine, uracil), D-ribose or 2-deoxy-D-ribose and phosphoric acid.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>nucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33697 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33697">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33696"/>
+        <obo:IAO_0000111>ribonucleic acid</obo:IAO_0000111>
+        <obo:IAO_0000115>High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>ribonucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33709 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33709">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000111>amino acid</obo:IAO_0000111>
+        <obo:IAO_0000115>A carboxylic acid containing one or more amino groups.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>amino acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33839 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33839">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000111>macromolecule</obo:IAO_0000111>
+        <obo:IAO_0000115>A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">polymer</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>macromolecule</rdfs:label>
     </owl:Class>
     
 
@@ -2207,6 +2596,94 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CLO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001866"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001867"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001867"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>cell line cell</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture</obo:IAO_0000115>
+        <obo:IAO_0000115>A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture
+</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+        <rdfs:label>cell line cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000001"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <obo:IAO_0000116>&apos;derives from&apos; is transitive, so even cell line cells created through modification of an existing cell line cell have derived_from some initial primary cultured cell that existed at some point in time.</obo:IAO_0000116>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
+        <obo:IAO_0000111>immortal cell line cell</obo:IAO_0000111>
+        <obo:IAO_0000115>A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+        <rdfs:label>immortal cell line cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001905"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">cell line</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture). </obo:IAO_0000115>
+        <obo:IAO_0000115>A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  
+</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+        <rdfs:label xml:lang="en">cell line</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
@@ -2218,6 +2695,206 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <rdfs:label>cell</rdfs:label>
         <rdfs:label xml:lang="en">cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600037"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000010"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600037"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>primary cultured cell</obo:IAO_0000111>
+        <obo:IAO_0000115>A cultured cell that is freshly isolated from a organismal source, or derives in culture from such a cell prior to the culture being passaged.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>primary cultured cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000111>native cell</obo:IAO_0000111>
+        <obo:IAO_0000115>A cell that is found in a natural setting, which includes multicellular organism cells &apos;in vivo&apos; (i.e. part of an organism), and unicellular organisms &apos;in environment&apos; (i.e. part of a natural environment).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>native cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600036"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600036"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>cultured cell</obo:IAO_0000111>
+        <obo:IAO_0000115>A cell in vitro that is or has been maintained or propagated as part of a cell culture.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>cultured cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000111>fibroblast</obo:IAO_0000111>
+        <obo:IAO_0000115>A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>fibroblast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000111>epithelial cell</obo:IAO_0000111>
+        <obo:IAO_0000115>A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>epithelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000542"/>
+        <obo:IAO_0000111>B cell</obo:IAO_0000111>
+        <obo:IAO_0000115>A lymphocyte of B lineage with the phenotype CD19-positive, CD20-positive, and capable of B cell mediated immunity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>B cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000842"/>
+        <obo:IAO_0000111>lymphocyte</obo:IAO_0000111>
+        <obo:IAO_0000115>A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>lymphocyte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>experimentally modified cell in vitro</obo:IAO_0000111>
+        <obo:IAO_0000115>A cell in vitro that has undergone physical changes as a consequence of a deliberate and specific experimental procedure.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>experimentally modified cell in vitro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000842 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000842">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000111>mononuclear cell</obo:IAO_0000111>
+        <obo:IAO_0000115>A leukocyte with a single non-segmented nucleus in the mature form.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
+        <rdfs:label>mononuclear cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0000785 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0000785">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+        <obo:IAO_0000111>chromatin</obo:IAO_0000111>
+        <obo:IAO_0000115>The ordered and organized complex of DNA, protein, and sometimes RNA, that forms the chromosome.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>chromatin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0001508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000111>action potential</obo:IAO_0000111>
+        <obo:IAO_0000115>A process in which membrane potential cycles through a depolarizing spike, triggered in response to depolarization above some threshold, followed by repolarization. This cycle is driven by the flow of ions through various voltage gated channels with different thresholds and ion specificities.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>action potential</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0002250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0002250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006955"/>
+        <obo:IAO_0000111>adaptive immune response</obo:IAO_0000111>
+        <obo:IAO_0000115>An immune response mediated by cells expressing specific receptors for antigen produced through a somatic diversification process, and allowing for an enhanced secondary response to subsequent exposures to the same antigen (immunological memory).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>adaptive immune response</rdfs:label>
     </owl:Class>
     
 
@@ -2246,6 +2923,54 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0003964 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003964">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003824"/>
+        <obo:IAO_0000111>RNA-directed DNA polymerase activity</obo:IAO_0000111>
+        <obo:IAO_0000115>Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1). Catalyzes RNA-template-directed extension of the 3&apos;- end of a DNA strand by one deoxynucleotide at a time.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>RNA-directed DNA polymerase activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111>cellular_component</obo:IAO_0000111>
+        <obo:IAO_0000115>A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>cellular_component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005694 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005694">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+        <obo:IAO_0000111>chromosome</obo:IAO_0000111>
+        <obo:IAO_0000115>A structure composed of a very long molecule of DNA and associated proteins (e.g. histones) that carries hereditary information.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>chromosome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006955">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
+        <obo:IAO_0000111>immune response</obo:IAO_0000111>
+        <obo:IAO_0000115>Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>immune response</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
@@ -2255,6 +2980,134 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115>A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000111>cellular process</obo:IAO_0000111>
+        <obo:IAO_0000115>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>cellular process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010467 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0010467">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000111>gene expression</obo:IAO_0000111>
+        <obo:IAO_0000115>The process in which a gene&apos;s sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>gene expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0030097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0030097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000111>hemopoiesis</obo:IAO_0000111>
+        <obo:IAO_0000115>The process whose specific outcome is the progression of the myeloid and lymphoid derived organ/tissue systems of the blood and other parts of the body over time, from formation to the mature structure. The site of hemopoiesis is variable during development, but occurs primarily in bone marrow or kidney in many adult vertebrates.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>hemopoiesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032991 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032991">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>protein-containing complex</obo:IAO_0000111>
+        <obo:IAO_0000112>A ribosome is a protein complex.</obo:IAO_0000112>
+        <obo:IAO_0000115>A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together.</obo:IAO_0000115>
+        <obo:IAO_0000118>protein complex</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>protein-containing complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0034061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0034061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003824"/>
+        <obo:IAO_0000111>DNA polymerase activity</obo:IAO_0000111>
+        <obo:IAO_0000115>Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1); the synthesis of DNA from deoxyribonucleotide triphosphates in the presence of a nucleic acid template and a 3&apos;hydroxyl group.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>DNA polymerase activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0040029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0040029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0040030"/>
+        <obo:IAO_0000111>regulation of gene expression, epigenetic</obo:IAO_0000111>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of gene expression; the process is mitotically or meiotically heritable, or is stably self-propagated in the cytoplasm of a resting cell, and does not entail a change in DNA sequence.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>regulation of gene expression, epigenetic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0040030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0040030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000111>regulation of molecular function, epigenetic</obo:IAO_0000111>
+        <obo:IAO_0000115>Any heritable epigenetic process that modulates the frequency, rate or extent of protein function by self-perpetuating conformational conversions of normal proteins in healthy cells. This is distinct from, though mechanistically analogous to, disease states associated with prion propagation and amyloidogenesis. A single protein, if it carries a glutamine/asparagine-rich (&apos;prion&apos;) domain, can sometimes stably exist in at least two distinct physical states, each associated with a different phenotype; propagation of one of these traits is achieved by a self-perpetuating change in the protein from one form to the other, mediated by conformational changes in the glutamine/asparagine-rich domain. Prion domains are both modular and transferable to other proteins, on which they can confer a heritable epigenetic alteration of function; existing bioinformatics data indicate that they are rare in non-eukarya, but common in eukarya.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>regulation of molecular function, epigenetic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042611 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0042611">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
+        <obo:IAO_0000111>MHC protein complex</obo:IAO_0000111>
+        <obo:IAO_0000115>A transmembrane protein complex composed of an MHC alpha chain and, in most cases, either an MHC class II beta chain or an invariant beta2-microglobin chain, and with or without a bound peptide, lipid, or polysaccharide antigen.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>MHC protein complex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+        <obo:IAO_0000111>membrane-bounded organelle</obo:IAO_0000111>
+        <obo:IAO_0000115>Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>membrane-bounded organelle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048869 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048869">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000111>cellular developmental process</obo:IAO_0000111>
+        <obo:IAO_0000115>A biological process whose specific outcome is the progression of a cell over time from an initial condition to a later condition.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>cellular developmental process</rdfs:label>
     </owl:Class>
     
 
@@ -3166,6 +4019,18 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_8353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_8353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32523"/>
+        <obo:IAO_0000111>Xenopus &lt;genus&gt;</obo:IAO_0000111>
+        <obo:IAO_0000118>Xenopus</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Xenopus &lt;genus&gt;</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9031">
@@ -3334,6 +4199,49 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <obo:IAO_0000111>culture medium</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A growth medium or culture medium is a substance in which microorganisms or cells can grow.  Wikipedia, growth medium, Feb 29, 2008</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>a processed material that provides the needed nourishment for microorganisms or cells grown in vitro.</obo:IAO_0000115>
+        <obo:IAO_0000116>changed from a role to a processed material based on on Aug 22, 2011 dev call. Details see the tracker item: http://sourceforge.net/tracker/?func=detail&amp;aid=3325270&amp;group_id=177891&amp;atid=886178
+Modification made by JZ.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Person: Jennifer Fostel, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">culture medium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000111>reagent role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Buffer, dye, a catalyst, a solvating agent.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000118>reagent</obo:IAO_0000118>
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000232>Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.
+
+May 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (&quot;a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances&quot;).  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.
+</obo:IAO_0000232>
+        <rdfs:comment>(copied from ReO)
+Reagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.
+
+Reagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance will realize only one of these roles in the execution of a given assay or technique. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.
+
+In regard to the statement that reagents are &apos;distinct&apos; from the specified outputs of a technique, note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a &apos;nucleic acid molecule&apos;) that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of &apos;reagent-ness&apos; is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).</rdfs:comment>
+        <rdfs:label xml:lang="en">reagent role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
@@ -3411,6 +4319,24 @@ specimen can later be subject.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">population</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID12564891. Environ Sci Technol. 2003 Jan 15;37(2):223-8. Effects of historic PCB exposures on the reproductive success of the Hudson River striped bass population.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area</obo:IAO_0000115>
+        <obo:IAO_0000116>1/28/2013, BP, on the call it was raised that we may want to switch to an external ontology for all populatin terms: 
+http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">adapted from Oxford English Dictionnary</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">rem1: collection somehow always involve a selection process</obo:IAO_0000232>
+        <rdfs:label xml:lang="en">population</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
@@ -3468,6 +4394,22 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</obo:IAO_0000119>
         <obo:OBI_0001847>study protocol</obo:OBI_0001847>
         <rdfs:label xml:lang="en">protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000368">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <obo:IAO_0000111 xml:lang="en">record function</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A record function is a function that registers or collects information in a particular format on a particular recording medium. For example on paper or a digital representation</obo:IAO_0000115>
+        <obo:IAO_0000117>Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117>Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000117>Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117>Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">record function</rdfs:label>
     </owl:Class>
     
 
@@ -3535,6 +4477,89 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">image acquisition device</obo:IAO_0000118>
         <obo:IAO_0000119>sep:00096</obo:IAO_0000119>
         <rdfs:label xml:lang="en">image creation device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000419">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000427"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0003964"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000427"/>
+        <obo:IAO_0000111 xml:lang="en">reverse transcriptase</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">enzyme and has_function some GO:0003964 (RNA-directed DNA polymerase
+activity)</obo:IAO_0000115>
+        <obo:IAO_0000117>person:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>group:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">reverse transcriptase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000427">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_33697"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0032991"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33697"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0003824"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">enzyme</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">(protein or rna) or has_part (protein or rna) and
+has_function some GO:0003824 (catalytic activity)</obo:IAO_0000115>
+        <obo:IAO_0000116>MC: known issue: enzyme doesn&apos;t classify under material entity for now as it isn&apos;t stated that anything
+that has_part some material entity is a material entity. If we add as equivalent classes to material entity has_part some material entity and part_of some material entity  (each one in his own necessary and sufficient block) Pellet in P3 doesn&apos;t classify any more.</obo:IAO_0000116>
+        <obo:IAO_0000117>person: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000119>GROUP:OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">enzyme</rdfs:label>
     </owl:Class>
     
 
@@ -3737,6 +4762,29 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000639">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000678"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000681"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
+        <obo:IAO_0000111>material separation objective</obo:IAO_0000111>
+        <obo:IAO_0000112>The objective to obtain multiple aliquots of an enzyme preparation. The objective to obtain cells contained in a sample of blood.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>is an objective to transform a material entity into spatially separated components.</obo:IAO_0000115>
+        <obo:IAO_0000117>PPPB branch</obo:IAO_0000117>
+        <obo:IAO_0000119>PPPB branch</obo:IAO_0000119>
+        <rdfs:label>material separation objective</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000648 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000648">
@@ -3864,6 +4912,34 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000118>supervised classification data transformation</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
         <rdfs:label xml:lang="en">class prediction data transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000678 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000678">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000639"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000681"/>
+        <obo:IAO_0000111>portioning objective</obo:IAO_0000111>
+        <obo:IAO_0000112>The objective to obtain multiple aliquots of an enzyme preparation.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A material separation objective aiming to separate material into multiple portions, each of which contains a similar composition of the input material.</obo:IAO_0000115>
+        <rdfs:label>portioning objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000639"/>
+        <obo:IAO_0000111>separation into different composition objective</obo:IAO_0000111>
+        <obo:IAO_0000112>The objective to obtain cells contained in a sample of blood.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A material separation objective aiming to separate a material entity that has parts of different types, and end with at least one output that is a material with parts of fewer types (modulo impurities).</obo:IAO_0000115>
+        <obo:IAO_0000116>We should be using has the grain relations or concentrations to distinguish the portioning and other sub-objectives</obo:IAO_0000116>
+        <rdfs:label>separation into different composition objective</rdfs:label>
     </owl:Class>
     
 
@@ -4099,6 +5175,20 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000806 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000806">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000111>material maintenance objective</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>An objective specification maintains some or all of the qualities of a material over time.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Bjoern Peters</obo:IAO_0000119>
+        <rdfs:label>material maintenance objective</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000832 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000832">
@@ -4149,6 +5239,48 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>A person or organization that has a manufacturer role</obo:IAO_0000115>
         <rdfs:label>manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000838 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000838">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000806"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111>material maintenance</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>a process with that achieves the objective to maintain some or all of the characteristics of an input material over time</obo:IAO_0000115>
+        <rdfs:label>material maintenance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000845 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000845">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33697"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <obo:IAO_0000111>primary structure of RNA molecule</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>The primary structure of an RNA molecule that is completely defined by the set of its nucleic residue parts and the linear order induced by the peptide bonds that hold them together</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:Bjoern Peters</obo:IAO_0000117>
+        <rdfs:label>primary structure of RNA molecule</rdfs:label>
     </owl:Class>
     
 
@@ -4243,6 +5375,17 @@ A blood specimen that has been centrifuged to obtain the white blood cells.</obo
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:disjointWith>
         <obo:IAO_0000111>device</obo:IAO_0000111>
         <obo:IAO_0000112>A voltmeter is a measurement device which is intended to perform some measure function.</obo:IAO_0000112>
         <obo:IAO_0000112>An autoclave is a device that sterlizes instruments or contaminated waste by applying high temperature and pressure.</obo:IAO_0000112>
@@ -4311,6 +5454,26 @@ JZ: based on textual definition of edited document, it can be defined as N&amp;S
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000398"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>digital camera</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Digital_camera</obo:IAO_0000119>
+        <rdfs:label>digital camera</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001055">
@@ -4347,6 +5510,190 @@ JZ: based on textual definition of edited document, it can be defined as N&amp;S
         <obo:IAO_0000117>PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Confocal_microscopy</obo:IAO_0000119>
         <rdfs:label>confocal microscope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001479">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000112"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000477"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <obo:IAO_0000111 xml:lang="en">specimen from organism</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">tissue specimen</obo:IAO_0000118>
+        <obo:IAO_0000119>MO_954 organism_part</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">specimen from organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001866 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001866">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600037"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600037"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>secondary cultured cell</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A cultured cell that has been passaged or derives from a cell that has been passaged in culture. </obo:IAO_0000115>
+        <obo:IAO_0000116>The term &apos;secondary cell culture&apos; is generally used in biological texts/protocols to refer to any culture following an initial passage.  We include it here because there are often a number of passages between a primary culture and the establishment of a stable, homogenous cell line.  Such cultures are considered to be &apos;secondary cultures&apos; but not &apos;cell lines&apos; during this intermediate passaging/selection period between their derivation from a &apos;primary cell culture&apos; and derivation into a &apos;cell line&apos;, which is a more specific type of secondary culture.</obo:IAO_0000116>
+        <obo:IAO_0000117>Person: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Matthew Brush</obo:IAO_0000119>
+        <rdfs:comment>A secondary cultured cell has been passaged in culture or is a descendant of such a cell that is derived through propagation in culture.</rdfs:comment>
+        <rdfs:label>secondary cultured cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001867 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001867">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600036"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>establishing cell line</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>a process whereby a new type of cell line is created, either through passaging of a primary cell culture to relative genetic stability and compositional homogeneity, or through some experimental modification of an existing cell line to produce a new line with novel characteristics  (e.g. immortalization or some other stable genetic modification, or selection of some defined subset).</obo:IAO_0000115>
+        <obo:IAO_0000116>2013-4-20 MHB: For cases of initial establilshment of a line from a primary culture, successive passaging and/or selection processes can confer increasing degrees of genetic stability and compositional homogeneity as compared to the input primary culture. Historically, many texts consider the first passage as the clearest point to define the beginning of a line. However, in practice it is more often that case that more than one passage, and possibly additional selective techniques, may be required before a culture is deemed to have sufficient stability and homogeneity to be considered cell line. This is the view taken in OBI. Regardless, what is important is that some intentional, experimental step has been taken to establish a more homogenous and stable culture that can be characterized and  progatated over time.</obo:IAO_0000116>
+        <obo:IAO_0000117>Person: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
+        <rdfs:label>establishing cell line</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001879 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001879">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">reagent</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A biological or chemical entity that bears a reagent role in virtue of it being intended for application in a scientific technique  to participate in (or have molecular parts that participate in) a chemical reaction that facilitates the generation of data about some distinct entity, or the generation of some distinct material specified output.</obo:IAO_0000115>
+        <obo:IAO_0000116>2013-6-5 MHB: Clarifications regarding the distinction between reagetns and devices were made at the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For examples, see editor note on OBI:device.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
+        <rdfs:comment>(copied from ReO)
+Reagents are distinguished from devices/instruments that also serve as facilitators in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, devices do not participate in a chemical reaction/interaction during the technique.
+
+Reagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance can only realize one of these roles in the execution of a given  assay. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.
+
+In regard to the statement that reagents are &apos;distinct&apos; from the specified outputs of a technique:  note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a &apos;nucleic acid molecule&apos;) that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of &apos;reagent-ness&apos; is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).</rdfs:comment>
+        <rdfs:label xml:lang="en">reagent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001905 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001905">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001866"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001866"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>secondary cultured cell population</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A cultured cell population that is derived through one or more passages in culture.</obo:IAO_0000115>
+        <obo:IAO_0000116>The term &apos;secondary cell culture&apos; is generally used in biological texts/protocols to refer to any culture of cells following an initial passage.  We include it here because there are often a number of passages between a primary culture and the establishment of a stable, homogenous cell line.  Such cultures are considered to be &apos;secondary cultures&apos; but not &apos;cell lines&apos; during this intermediate passaging/selection period between their derivation from a &apos;primary cell culture&apos; and derivation into a &apos;cell line&apos;, which is a more specific type of secondary culture.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000118>secondary cell culture sample</obo:IAO_0000118>
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
+        <rdfs:comment>The concept of a &apos;secondary cultured cell population&apos; covers cell lines as well as cultured cell populations more immediately derived from a primary culture which have yet to achieve adequate genetic stability and compositional homogeneity to be considered a cell line. The extent of the collection of cells in a &apos;secondary cultured cell population&apos; is restricted only in that all cell members must share a propagation history (ie be derived through a common lineage of passages from an initial culture).  Secondary cultured cell populations can be under active culture, stored in a quiescent state for future use, or applied experimentally.</rdfs:comment>
+        <rdfs:label>secondary cultured cell population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001912 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001912">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <obo:IAO_0000111>cell freezing medium</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A processed material that serves as a liquid vehicle for freezing cells for long term quiescent stroage, which contains chemicls needed to sustain cell viability across freeze-thaw cycles. </obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Matthew Brush</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">cell freezing medium</rdfs:label>
     </owl:Class>
     
 
@@ -4773,6 +6120,45 @@ JZ: based on textual definition of edited document, it can be defined as N&amp;S
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0100010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0600036"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000236"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <obo:IAO_0000111 xml:lang="en">Epstein Barr virus transformed B cell</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 8777380. Expression of thyroid peroxidase in EBV-transformed B cell lines using adenovirus.Thyroid. 1996 Feb;6(1):23-8.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity which results from viral transformation process using EBV as transformation agent when applied to B-cell entity</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Susanna Sansone</obo:IAO_0000117>
+        <obo:IAO_0000119>GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Epstein Barr virus transformed B cell</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
@@ -4885,6 +6271,44 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>cultured cell population</obo:IAO_0000111>
+        <obo:IAO_0000112>A cultured cell population applied in an experiment: &quot;293 cells expressing TrkA were serum-starved for 18 hours and then neurotrophins were added for 10 min before cell harvest.&quot;  (Lee, Ramee, et al. &quot;Regulation of cell survival by secreted proneurotrophins.&quot; Science 294.5548 (2001): 1945-1948).
+
+A cultured cell population maintained in vitro: &quot;Rat cortical neurons from 15 day embryos are grown in dissociated cell culture and maintained in vitro for 8–12 weeks&quot; (Dichter, Marc A. &quot;Rat cortical neurons in cell culture: culture methods, cell morphology, electrophysiology, and synapse formation.&quot; Brain Research 149.2 (1978): 279-293).</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>A processed material comprised of a collection of cultured cells that has been continuously maintained together in culture and shares a common propagation history.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2013-6-5 MHB: This OBI class was formerly called &apos;cell culture&apos;, but label changed and definition updated following CLO alignment efforts in spring 2013, during which the intent of this class was clarified to refer to portions of a culture or line rather than a complete cell culture or line.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000118>cell culture sample</obo:IAO_0000118>
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
+        <rdfs:comment>The extent of a &apos;cultured cell population&apos; is restricted only in that all cell members must share a propagation history (ie be derived through a common lineage of passages from an initial culture). In being defined in this way, this class can be used to refer to the populations that researchers actually use in the practice of science - ie are the inputs to culturing, experimentation, and sharing. The cells in such populations will be a relatively uniform population as they have experienced similar selective pressures due to their continuous co-propagation. And this population will also have a single passage number, again owing to their common passaging history. Cultured cell populations represent only a collection of cells (ie do not include media, culture dishes, etc), and include populations of cultured unicellular organisms or cultured multicellular organism cells. They can exist under active culture, stored in a quiescent state for future use, or applied experimentally.</rdfs:comment>
+        <rdfs:label>cultured cell population</rdfs:label>
     </owl:Class>
     
 
@@ -5557,6 +6981,176 @@ class labels for these objects. The resulting predictor can be used to attach cl
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0600014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600014">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000639"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">material component separation</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">Using a cell sorter to separate a mixture of T cells into two fractions; one with surface receptor CD8 and the other lacking the receptor, or purification</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">a material processing in which components of an input material become segregated in space</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">material component separation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000838"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000079"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001912"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000806"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">maintaining cell culture</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">When harvesting blood from a human, isolating T cells, and then limited dilution cloning of the cells, the maintaining_cell_culture step comprises all steps after the initial dilution and plating of the cells into culture, e.g. placing the culture into an incubator, changing or adding media, and splitting a cell culture</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">a protocol application in which cells are kept alive in a defined environment outside of an organism.  part of cell_culturing</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">maintaining cell culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111>&apos;establishing cell culture&apos;</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115>a process through which a new type of cell culture or cell line is created, either through the isolation and culture of one or more cells from a fresh source, or the deliberate experimental modification of an existing cell culture (e.g passaging a primary culture to become a secondary culture or line, or the immortalization or stable genetic modification of an existing culture or line).</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
+        <rdfs:comment>A &apos;cell culture&apos; as used here referes to a new lineage of cells in culture deriving from a single biological source.. New cultures are established through the initial isolation and culturing of cells from an organismal source, or through changes in an existing cell culture or line that result in a new culture with unique characteristics.  This can occur through the passaging/selection of a primary culture into a secondary culture or line, or experimental modifications of an existing cell culture or line such as an immortalization process or other stable genetic modification. This class covers establishment of cultures of either multicellular organism cells or unicellular organisms.</rdfs:comment>
+        <rdfs:label>establishing cell culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000678"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">cell culture splitting</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The act of taking a cell culture of high density, counting the cells, removing part of the cells, and re-seeding a select number of the cells into new flasks with fresh tissue culture media.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">The act of taking part of a homogeneous cell culture and creating one or more additional separate cultures of similar qualities. input: cell_culture, output cell_culture min cardinality 2. part of cell culturing</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000118>cell culture passaging</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <rdfs:comment>An active cell culture is typically split when it has grown to confluence in its culture dish.  Cell culture splitting of a cell culture sample results in an increase in its passage number, which measures how long a sample has been propagated in vitro, and therefore how many selective or genetic changes it is likely to have undergone.</rdfs:comment>
+        <rdfs:label xml:lang="en">cell culture splitting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110055">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000111>disease</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"/>
+        <obo:IAO_0000115 xml:lang="en">placeholder to be imported from disease ontology</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/OGMS_0000031</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete_disease</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031">
@@ -5598,6 +7192,18 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
+        <obo:IAO_0000111>concentration of</obo:IAO_0000111>
+        <obo:IAO_0000115>A quality inhering in a substance by virtue of the amount of the bearer&apos;s there is mixed with another substance.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>concentration of</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
@@ -5606,6 +7212,30 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <obo:IAO_0000115>A quality of a single physical entity inhering in the bearer by virtue of the bearer&apos;s size or shape or structure.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <rdfs:label>morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <obo:IAO_0000111>size</obo:IAO_0000111>
+        <obo:IAO_0000115>A morphology quality inhering in a bearer by virtue of the bearer&apos;s physical magnitude.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000111>mass</obo:IAO_0000111>
+        <obo:IAO_0000115>A physical quality that inheres in a bearer by virtue of the proportion of the bearer&apos;s amount of matter.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>mass</rdfs:label>
     </owl:Class>
     
 
@@ -5622,6 +7252,30 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <obo:IAO_0000111>temperature</obo:IAO_0000111>
+        <obo:IAO_0000115>A physical quality of the thermal energy of a system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <obo:IAO_0000111>time</obo:IAO_0000111>
+        <obo:IAO_0000115>A quality in which events occur in sequence.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>time</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000186 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000186">
@@ -5630,6 +7284,18 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s behavior aggregate of the responses or reactions or movements in a given situation.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <rdfs:label>behavioral quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000111>physical quality</obo:IAO_0000111>
+        <obo:IAO_0000115>A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>physical quality</rdfs:label>
     </owl:Class>
     
 
@@ -5646,6 +7312,54 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0001396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001396">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000111>cellular quality</obo:IAO_0000111>
+        <obo:IAO_0000115>A monadic quality of continuant that exists at the cellular level of organisation.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>cellular quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001906"/>
+        <obo:IAO_0000111>flow rate</obo:IAO_0000111>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s motion characteristic.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>flow rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001710 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
+        <obo:IAO_0000111>3-D extent</obo:IAO_0000111>
+        <obo:IAO_0000115>A size quality inhering in an bearer by virtue of the bearer&apos;s extension in three dimensions.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>3-D extent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <obo:IAO_0000111>movement quality</obo:IAO_0000111>
+        <obo:IAO_0000115>A physical quality inhering in a bearer by virtue of the bearer&apos;s participation in movement.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>movement quality</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
@@ -5654,6 +7368,18 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <obo:IAO_0000115>A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
         <rdfs:label>organismal quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000111>molecular quality</obo:IAO_0000111>
+        <obo:IAO_0000115>A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>molecular quality</rdfs:label>
     </owl:Class>
     
 
@@ -5706,6 +7432,31 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
+        <obo:IAO_0000111>protein</obo:IAO_0000111>
+        <obo:IAO_0000112>antithrombin III is a protein</obo:IAO_0000112>
+        <obo:IAO_0000115>An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
+        <rdfs:label>protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000001004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000001004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <obo:IAO_0000111>CD4 molecule</obo:IAO_0000111>
+        <obo:IAO_0000115>A protein that is a translation product of the human CD4 gene or a 1:1 ortholog thereof. CD4 is an accessory protein for MHC class-II antigen/T-cell receptor interaction. It is the primary receptor for HIV-1. CD4 has four immunoglobulin-like domains in its extracellular region that share the same structure, but can differ in sequence.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
+        <rdfs:label>CD4 molecule</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/REO_0000171 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000171">
@@ -5742,6 +7493,248 @@ realizes some &apos;host of immune response role&apos;</obo:IAO_0000232>
         <obo:IAO_0000119>OBI developer call, 3-12-12</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/reo.owl"/>
         <rdfs:label>molecular label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000111>region</obo:IAO_0000111>
+        <obo:IAO_0000115>A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids.</obo:IAO_0000115>
+        <obo:IAO_0000118>primary structure of sequence macromolecule</obo:IAO_0000118>
+        <obo:IAO_0000118>sequence</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <rdfs:label>region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000111>life cycle stage</obo:IAO_0000111>
+        <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>life cycle stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>mouth</obo:IAO_0000111>
+        <obo:IAO_0000115>The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening. In vertebrates, this extends to the pharynx and includes gums, lips, tongue and parts of the palate. Typically also includes the teeth, except where these occur elsewhere (e.g. pharyngeal jaws) or protrude from the mouth (tusks).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>mouth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+        <obo:IAO_0000111>blood</obo:IAO_0000111>
+        <obo:IAO_0000115>A fluid that is composed of blood plasma and erythrocytes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>blood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000463 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000463">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>organism substance</obo:IAO_0000111>
+        <obo:IAO_0000115>Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>organism substance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111>material anatomical entity</obo:IAO_0000111>
+        <obo:IAO_0000115>Anatomical entity that has mass.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>material anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111>anatomical cluster</obo:IAO_0000111>
+        <obo:IAO_0000115>Anatomical group that has its parts adjacent to one another.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>anatomical cluster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>tissue</obo:IAO_0000111>
+        <obo:IAO_0000115>Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000481 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000481">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>multi-tissue structure</obo:IAO_0000111>
+        <obo:IAO_0000115>Anatomical structure that has as its parts two or more portions of tissue of at least two different types and which through specific morphogenetic processes forms a single distinct structural unit demarcated by bona-fide boundaries from other distinct structural units of different types.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>multi-tissue structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000111>epithelium</obo:IAO_0000111>
+        <obo:IAO_0000115>Portion of tissue, that consists of one or more layers of epithelial cells connected to each other by cell junctions and which is underlain by a basal lamina. Examples: simple squamous epithelium, glandular cuboidal epithelium, transitional epithelium, myoepithelium[CARO].</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>epithelium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000948 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000948">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>heart</obo:IAO_0000111>
+        <obo:IAO_0000115>A myogenic muscular circulatory organ found in the vertebrate cardiovascular system composed of chambers of cardiac muscle. It is the primary circulatory organ.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>heart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000955">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>brain</obo:IAO_0000111>
+        <obo:IAO_0000115>The brain is the center of the nervous system in all vertebrate, and most invertebrate, animals. Some primitive animals such as jellyfish and starfish have a decentralized nervous system without a brain, while sponges lack any nervous system at all. In vertebrates, the brain is located in the head, protected by the skull and close to the primary sensory apparatus of vision, hearing, balance, taste, and smell[WP].</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>brain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000995">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>uterus</obo:IAO_0000111>
+        <obo:IAO_0000115>the female muscular organ of gestation in which the developing embryo or fetus is nourished until birth</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>uterus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000111>adipose tissue</obo:IAO_0000111>
+        <obo:IAO_0000115>Portion of connective tissue composed of adipocytes enmeshed in areolar tissue</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>adipose tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000463"/>
+        <obo:IAO_0000111>synovial fluid</obo:IAO_0000111>
+        <obo:IAO_0000115>Joint fluid is a transudate of plasma that is actively secreted by synovial cells.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>synovial fluid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>colon</obo:IAO_0000111>
+        <obo:IAO_0000115>Last portion of the large intestine before it becomes the rectum.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>colon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001638">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>vein</obo:IAO_0000111>
+        <obo:IAO_0000115>Any of the tubular branching vessels that carry blood from the capillaries toward the heart.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>vein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>dermis</obo:IAO_0000111>
+        <obo:IAO_0000115>The dermis is a layer of skin between the epidermis (with which it makes up the skin) and subcutaneous tissues, and is composed of two layers, the papillary and reticular dermis[WP].</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>dermis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>hypodermis</obo:IAO_0000111>
+        <obo:IAO_0000115>Lowermost layer of the integumentary system in vertebrates. Types of cells that are found in the hypodermis are fibroblasts, adipose cells, and macrophages. It is derived from the mesoderm, but unlike the dermis, it is not derived from the dermatome region of the mesoderm. The hypodermis is used mainly for fat storage[WP].</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>hypodermis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000111>skin of body</obo:IAO_0000111>
+        <obo:IAO_0000115>The organ covering the body that consists of the dermis and epidermis.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:label>skin of body</rdfs:label>
     </owl:Class>
     
 
@@ -10189,6 +12182,12 @@ binary, and takes no temporal argument.
     <!-- http://purl.obolibrary.org/obo/iao.owl -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao.owl"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obi.owl -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi.owl"/>
     
 
 

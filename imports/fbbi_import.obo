@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-11/imports/fbbi_import.owl
+data-version: simro/releases/2020-02-13/imports/fbbi_import.owl
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
 ontology: simro/imports/fbbi_import
