@@ -9360,9 +9360,9 @@ synonym: "神经干细胞" EXACT []
 xref: BTO:0002881
 xref: CALOHA:TS-2360
 xref: FMA:86684
-is_a: CL:0000048 {is_inferred="true"} ! 多能造血干细胞
+is_a: CL:0000048 {is_inferred="true"} ! multi fate stem cell
 is_a: CL:0002319 ! neural cell
-intersection_of: CL:0000048 ! 多能造血干细胞
+intersection_of: CL:0000048 ! multi fate stem cell
 intersection_of: part_of UBERON:0001017 ! central nervous system
 relationship: develops_from CL:0000133 ! neurectodermal cell
 relationship: part_of UBERON:0001017 ! central nervous system
@@ -9614,7 +9614,7 @@ synonym: "骨髓基质细胞(marrow stromal cells)" NARROW []
 xref: BTO:0002625
 xref: BTO:0003298
 xref: FMA:70546
-is_a: CL:0000048 ! 多能造血干细胞
+is_a: CL:0000048 ! multi fate stem cell
 is_a: CL:0000219 ! motile cell
 is_a: CL:0002320 {is_inferred="true"} ! 结缔组织细胞
 intersection_of: CL:0002320 ! 结缔组织细胞
@@ -11328,7 +11328,7 @@ name: HCT 116 细胞
 comment: disease: colorectal carcinoma
 comment: 疾病：结直肠癌
 is_a: CLO:0000020 ! immortal human cell line cell
-is_a: CLO:0037195 ! immortal human colon epithelial cell line cell
+is_a: CLO:0037195 ! 永生化的结肠上皮细胞系细胞
 relationship: OBI:0000295 CLO:0000013 ! is_specified_input_of adherent on feeder cells cell line culturing
 property_value: alternative:term "" xsd:string
 property_value: alternative:term "" xsd:string
@@ -11440,7 +11440,7 @@ name: immortal human colon epithelial cell line cell
 name: 永生化的结肠上皮细胞系细胞
 def: "An immortal human epithelial cell line cell that derives from human colon." []
 def: "来自人类结肠的永生人类上皮细胞系细胞。" []
-is_a: CLO:0000513 ! 永生化的人结肠衍生细胞系细胞
+is_a: CLO:0000513 ! immortal human colon-derived cell line cell
 is_a: CLO:0000563 ! 永生的人上皮细胞系细胞
 property_value: IAO:0000117 "Yongqun He" xsd:string
 property_value: IAO:0000117 "Yongqun He" xsd:string
@@ -30767,28 +30767,6 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://www.jbiomedsem.com/content/4/1/43 xsd:string
 
 [Term]
-id: SIMR:0002083
-def: " of Saccharomyces cerevisiae needs def" []
-is_a: NCBITaxon:4932 ! Saccharomyces cerevisiae
-
-[Term]
-id: SIMR:0005254
-name: Saccharomyces cerevisiae S288C
-def: "Saccharomyces cerevisiae S288C used by research group." []
-is_a: NCBITaxon:559292 ! Saccharomyces cerevisiae S288C
-intersection_of: NCBITaxon:559292 ! Saccharomyces cerevisiae S288C
-intersection_of: SIMRO:0000611 SIMR:0001008 ! used by group
-relationship: SIMRO:0000611 SIMR:0001008 ! used by group
-
-[Term]
-id: SIMR:0005255
-def: " used by research group." []
-is_a: SIMR:0002083
-intersection_of: SIMR:0002083
-intersection_of: SIMRO:0000611 SIMR:0001008 ! used by group
-relationship: SIMRO:0000611 SIMR:0001008 ! used by group
-
-[Term]
 id: SIMRO:00000000
 name: root node
 
@@ -31357,6 +31335,11 @@ id: SIMRO:0002082
 name: HEK-293T cell
 def: "A highly transformed human renal epithelial line expressing two viral oncogenes, adenovirus E1a and SV40 large T antigen." [PMID:7553648]
 is_a: CLO:0037237 ! 293-derived cell
+
+[Term]
+id: SIMRO:0002083
+def: " of Saccharomyces cerevisiae needs def" []
+is_a: NCBITaxon:4932 ! Saccharomyces cerevisiae
 
 [Term]
 id: SIMRO:0005000
@@ -33643,6 +33626,24 @@ is_a: NCBITaxon:63121 ! Ptychodera flava
 intersection_of: NCBITaxon:63121 ! Ptychodera flava
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 relationship: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+
+[Term]
+id: SIMRO:0005254
+name: Saccharomyces cerevisiae S288C
+def: "Saccharomyces cerevisiae S288C used by research group." []
+is_a: NCBITaxon:559292 ! Saccharomyces cerevisiae S288C
+is_a: SIMRO:0005209 ! Saccharomyces cerevisiae
+intersection_of: NCBITaxon:559292 ! Saccharomyces cerevisiae S288C
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+
+[Term]
+id: SIMRO:0005255
+name: Saccharomyces cerevisiae BY4742
+def: "Saccharomyces cerevisiae BY4742 used by research group." []
+is_a: SIMRO:0002083
+is_a: SIMRO:0005209 ! Saccharomyces cerevisiae
+intersection_of: SIMRO:0002083
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
 id: SO:0000001
@@ -38884,8 +38885,8 @@ id: UBERON:0000990
 name: reproductive system
 name: 生殖系统(reproductive system)
 namespace: uberon
-def: "Anatomical system that has as its parts the organs concerned with reproduction." [http://en.wikipedia.org/wiki/Reproductive_system]
 def: "Anatomical system that has as its parts the organs concerned with reproduction." []
+def: "Anatomical system that has as its parts the organs concerned with reproduction." [http://en.wikipedia.org/wiki/Reproductive_system]
 def: "有与生殖器有关的器官部分的解剖系统。" []
 subset: efo_slim
 subset: functional_classification
@@ -65351,8 +65352,8 @@ id: UBERON:0013701
 name: main body axis
 name: 主体轴
 namespace: uberon
-def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." [https://orcid.org/0000-0002-6601-2165]
 def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." []
+def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." [https://orcid.org/0000-0002-6601-2165]
 def: "一个生物体的一种主要细分，包括沿主轴的所有结构，通常是前后轴，从头到尾，包括身体本身（例如肋骨）的结构，但不包括附肢。" []
 subset: non_informative
 is_a: UBERON:0000475 ! organism subdivision

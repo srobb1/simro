@@ -94,4 +94,4 @@ SIMRO:0002079	KH2 cell	SIMRO:0002079	KH2 cell	CLO:0037317	mouse embryonic stem c
 SIMRO:0002080	MEF cell	SIMRO:0002080	MEF cell	CLO:0000161	immortal fibroblast cell line cell	Mouse embryonic fibroblast cell line. [ ATCC_American_Cell_Type_Culture_Collection:http://www.lgcstandards-atcc.org/ ]		BTO:0002572	
 SIMRO:0002081	K562 cell	SIMRO:0002081	K562 cell	CLO:0054401	K562 derived cell line cell	Human chronic myeloid leukemia in blast crisis established from the pleural effusion of a 53-year-old woman with chronic myeloid leukemia (CML) in blast crisis in 1970; cells can be used as highly sensitive targets in in-vitro natural killer assays; cells produce hemoglobin; cells carry the Philadelphia chromosome with a b3-a2 fusion gene.		BTO:0000664	
 SIMRO:0002082	HEK-293T cell	SIMRO:0002082	HEK-293T cell	CLO:0037237	293-derived cell	A highly transformed human renal epithelial line expressing two viral oncogenes, adenovirus E1a and SV40 large T antigen.	PMID:7553648	BTO:0002181	
-SIMR:0002083	Saccharomyces cerevisiae BY4742			NCBITaxon:4932	Saccharomyces cerevisiae				
+SIMRO:0002083	Saccharomyces cerevisiae BY4742			NCBITaxon:4932	Saccharomyces cerevisiae				

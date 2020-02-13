@@ -200,8 +200,8 @@ property_value: IAO:0000601 "b is an occurrent entity iff b is an entity that ha
 property_value: IAO:0000601 "Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/108-001"}
 property_value: IAO:0000601 "如果b是具有时间部分的实体，则b是一个行体实体。 （BFO2公理标签参考：[079-001]）" xsd:string
 property_value: IAO:0000601 "每一个行体都会占据_时空_区域一些时空区域。 （BFO2公理标签参考：[108-001]）" xsd:string
-property_value: IAO:0000602 "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] " xsd:string
 property_value: IAO:0000602 "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/108-001"}
+property_value: IAO:0000602 "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] " xsd:string
 property_value: IAO:0000602 "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] " xsd:string
 property_value: IAO:0000602 "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/079-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
@@ -1891,8 +1891,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [UniProt]
 synonym: "carbonyl group" EXACT [ChEBI]
+synonym: "carbonyl group" EXACT [UniProt]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -9622,26 +9622,26 @@ intersection_of: capable_of GO:0001649 ! osteoblast differentiation
 intersection_of: capable_of GO:0016477 ! 细胞迁移
 intersection_of: capable_of GO:0030182 ! neuron differentiation
 intersection_of: capable_of GO:0030855 ! epithelial cell differentiation
-intersection_of: capable_of GO:0045444 ! fat cell differentiation
+intersection_of: capable_of GO:0045444 ! 脂肪细胞分化
 intersection_of: capable_of GO:0055007 ! cardiac muscle cell differentiation
 intersection_of: capable_of GO:0060591 ! chondroblast differentiation
 intersection_of: lacks_plasma_membrane_part GO:0042613 ! MHCⅡ类蛋白复合物
 intersection_of: lacks_plasma_membrane_part PR:000001003 ! CD34 molecule
 intersection_of: lacks_plasma_membrane_part PR:000001006 ! 受体型酪氨酸蛋白磷酸酶C
-intersection_of: RO:0002104 PR:000001345 ! has plasma membrane part endoglin
+intersection_of: RO:0002104 PR:000001345 ! has plasma membrane part 内皮糖蛋白
 intersection_of: RO:0002104 PR:000001800 ! has plasma membrane part 5'-nucleotidase
 intersection_of: RO:0002104 PR:000001843 ! has plasma membrane part Thy-1 membrane glycoprotein
 relationship: capable_of GO:0001649 ! osteoblast differentiation
 relationship: capable_of GO:0016477 ! 细胞迁移
 relationship: capable_of GO:0030182 ! neuron differentiation
 relationship: capable_of GO:0030855 ! epithelial cell differentiation
-relationship: capable_of GO:0045444 ! fat cell differentiation
+relationship: capable_of GO:0045444 ! 脂肪细胞分化
 relationship: capable_of GO:0055007 ! cardiac muscle cell differentiation
 relationship: capable_of GO:0060591 ! chondroblast differentiation
 relationship: lacks_plasma_membrane_part GO:0042613 ! MHCⅡ类蛋白复合物
 relationship: lacks_plasma_membrane_part PR:000001003 ! CD34 molecule
 relationship: lacks_plasma_membrane_part PR:000001006 ! 受体型酪氨酸蛋白磷酸酶C
-relationship: RO:0002104 PR:000001345 ! has plasma membrane part endoglin
+relationship: RO:0002104 PR:000001345 ! has plasma membrane part 内皮糖蛋白
 relationship: RO:0002104 PR:000001800 ! has plasma membrane part 5'-nucleotidase
 relationship: RO:0002104 PR:000001843 ! has plasma membrane part Thy-1 membrane glycoprotein
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
@@ -10840,7 +10840,7 @@ name: immortal cell line cell
 name: 永生细胞系细胞
 def: "A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line." []
 def: "预期能够进行无限次分裂的细胞系细胞，作为永生细胞系一部分，能够支持体外无限增殖。" []
-is_a: CLO:0000001 ! 细胞系细胞
+is_a: CLO:0000001 ! cell line cell
 property_value: IAO:0000111 "immortal cell line cell" xsd:string
 property_value: IAO:0000111 "immortal cell line cell" xsd:string
 property_value: IAO:0000111 "永生细胞系细胞" xsd:string
@@ -10911,8 +10911,8 @@ comment: The term 'line' is used when a culture has undergone an intentional exp
 comment: The term 'line' is used when a culture has undergone an intentional experimental process to establish a more uniform and stable population of cells (see 'establishing cell line'). This will require one or more passages, but may involve additional selection processes. Through such passaging and/or selection processes, the resulting 'line' attains some level of genetic stability and compositional homogeneity which is typically absent in primary cultures. Because of their relative homogeneity, ‘lines’ are capable of being characterized and stably propagated over a period of time.  A new *type* of cell line can be established not only through the passaging/selection of a primary culture, but also through experimental modifications of existing lines (e.g. immortalization, stable genetic modifications, drug selection for a resistant subset, etc.).  \n\nThe definition provided here establishes the 'scale' of cell populations that qualify as cell lines - specifically those with a shared propagation history in culture. In this way,  the 'cell line' class demarcates populations that represent what researchers actually use in the practice of science - e.g. as inputs to culturing, experimentation, and sharing. The definition is such that cell lines will exhibit important attributes. For example, they will have a relatively homogenous cell type composition as they have experienced similar selective pressures due to their continuous co-propagation. In addition, these populations can also be characterized by a passage number, again owing to their common passaging history.  As defined here,  'cell line' can refer to a population of cells in active culture, applied experimentally, or stored in a quiescent state for future use. \n
 comment: 当培养物经过有意的实验过程以建立更均匀和稳定的细胞群时（参见“建立细胞系”），使用术语“系”。这将需要一个或多次传代，但可能涉及额外的选择过程。通过这样的传代和/或选择过程，产生的'细胞系'达到一定水平的遗传稳定性和组成均一性，这在原代培养物中通常是不存在的。由于它们的相对同质性，“细胞系”能够在一段时间内被表征和稳定地增殖。一种新*型*细胞系不仅可以通过原代培养物的传代/选择建立，而且可以通过对现有系列的实验性修饰（例如永生化，稳定的遗传修饰，用于抗性子集的药物选择等）来建立。 \n\n这里提供的定义确立了符合细胞系特征的细胞群的“范围” - 特别是那些在培养中具有共同繁殖历史的细胞群。通过这种方式，“细胞系”类划分代表研究人员在科学实践中实际使用的细胞群 - 例如作为培养、实验和分享的投入。定义是这样的，细胞系将显示重要的属性。例如，它们将具有相对均匀的细胞类型组成，因为它们的连续共增殖而经历了类似的选择压力。此外，这些细胞群还可以通过传代数来表征，这也是由于它们共同的传代史。如此处所定义的，“细胞系”可以指活性培养物中，实验性应用的或以静止状态存储以备将来使用的细胞群。 \n
 is_a: OBI:0001905 ! secondary cultured cell population
-relationship: OBI:0000643 CLO:0000001 ! has grain 细胞系细胞
-relationship: OBI:0000643 CLO:0000001 ! has grain 细胞系细胞
+relationship: OBI:0000643 CLO:0000001 ! has grain cell line cell
+relationship: OBI:0000643 CLO:0000001 ! has grain cell line cell
 property_value: editor_note "In the spring of 2013, a working group comprised of domain experts and representatives from CLO, OBI, CL, and ReO worked to establish a consensus model and definitions of cultured cells across these efforts. This included a careful characterization of how the term 'cell line' should be defined and applied.  Notes about this work and its outcomes can be found on the CLO wiki here: \nhttp://code.google.com/p/clo-ontology/wiki/Cell_Lines\n" xsd:string
 property_value: editor_note "在2013年春季，由CLO，OBI，CL和ReO的领域专家和代表组成的工作组经过这些努力中建立了共识模型和培养细胞的定义。 这包括仔细描述术语“细胞系”应该如何定义和应用。 关于这项工作及其结果的说明可以在CLO wiki上找到：\nhttp://code.google.com/p/clo-ontology/wiki/Cell_Lines\n" xsd:string
 property_value: example_of_usage "He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  \"To evaluate the transcriptional effects of APC, we studied a human colorectal cancer cell line (HT29-APC) containing a zinc-inducible APC gene and a control cell line (HT29–β-Gal) containing an analogous inducible lacZ gene\". \n	\nNote that common usage in the literature is often of the form \"a human colorectal cancer cell line\", as seen above. But such references to studies in \"a line\" refer to the fact that discrete populations of cells that are input into culturing or experiments, not an entire lineage of cells.  It is these discrete populations that we refer to as 'cell lines'.\n" xsd:string
@@ -10956,7 +10956,7 @@ name: immortal animal cell line cell
 name: 永生的动物细胞系细胞
 def: "a immortal eukaryotic cell line that is derived from animal cell" []
 def: "源自动物细胞的永生真核细胞系" []
-is_a: CLO:0000124 ! immortal eukaryotic cell line cell
+is_a: CLO:0000124 ! 永生的真核细胞系细胞
 relationship: RO:0001000 CL:0000548 ! derives_from animal cell
 property_value: IAO:0000117 "ZX, YH" xsd:string
 property_value: IAO:0000117 "ZX, YH" xsd:string
@@ -11458,8 +11458,8 @@ id: CLO:0037224
 name: stem cell line cell
 def: "A cell line cell that is cultured in vitro and possesses two capabilities: (1) it can self-renew, which means that it can divide indefinitely while remaining in an undifferentiated state; and (2) it is pluripotent or multipotent, which means that it can differentiate to form a specialized cell type." []
 comment: While stem cells hold great promise for biomedical research, the in vitro propagation and maintenance of these cells in an undifferentiated state is essential. Reference: \nhttps://www.atcc.org/~/media/7E031EF950594BC3B85A411AE1DC9684.ashx
-is_a: CLO:0000001 ! 细胞系细胞
-intersection_of: CLO:0000001 ! 细胞系细胞
+is_a: CLO:0000001 ! cell line cell
+intersection_of: CLO:0000001 ! cell line cell
 intersection_of: capable_of GO:0017145 ! stem cell division
 intersection_of: capable_of GO:0030154 ! cell differentiation
 relationship: capable_of GO:0017145 ! stem cell division
@@ -18520,7 +18520,7 @@ name: MHC蛋白复合物
 namespace: cellular_component
 def: "A transmembrane protein complex composed of an MHC alpha chain and, in most cases, either an MHC class II beta chain or an invariant beta2-microglobin chain, and with or without a bound peptide, lipid, or polysaccharide antigen." [GOC:add, GOC:jl, ISBN:0781735149, PMID:15928678, PMID:16153240]
 subset: goslim_pir
-is_a: GO:0098797 ! plasma membrane protein complex
+is_a: GO:0098797 ! 质膜蛋白复合物
 property_value: IAO:0000111 "MHC protein complex" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
@@ -19069,8 +19069,8 @@ synonym: "regulation of adipocyte cell differentiation" EXACT []
 synonym: "regulation of adipocyte differentiation" EXACT []
 is_a: GO:0045595 ! regulation of cell differentiation
 intersection_of: GO:0008150 ! biological_process
-intersection_of: regulates GO:0045444 ! fat cell differentiation
-relationship: regulates GO:0045444 ! fat cell differentiation
+intersection_of: regulates GO:0045444 ! 脂肪细胞分化
+relationship: regulates GO:0045444 ! 脂肪细胞分化
 
 [Term]
 id: GO:0045599
@@ -19086,8 +19086,8 @@ synonym: "negative regulation of adipocyte differentiation" EXACT []
 is_a: GO:0045596 ! negative regulation of cell differentiation
 is_a: GO:0045598 ! regulation of fat cell differentiation
 intersection_of: GO:0008150 ! biological_process
-intersection_of: negatively_regulates GO:0045444 ! fat cell differentiation
-relationship: negatively_regulates GO:0045444 ! fat cell differentiation
+intersection_of: negatively_regulates GO:0045444 ! 脂肪细胞分化
+relationship: negatively_regulates GO:0045444 ! 脂肪细胞分化
 
 [Term]
 id: GO:0045600
@@ -19104,8 +19104,8 @@ synonym: "upregulation of fat cell differentiation" EXACT []
 is_a: GO:0045597 ! positive regulation of cell differentiation
 is_a: GO:0045598 ! regulation of fat cell differentiation
 intersection_of: GO:0008150 ! biological_process
-intersection_of: positively_regulates GO:0045444 ! fat cell differentiation
-relationship: positively_regulates GO:0045444 ! fat cell differentiation
+intersection_of: positively_regulates GO:0045444 ! 脂肪细胞分化
+relationship: positively_regulates GO:0045444 ! 脂肪细胞分化
 
 [Term]
 id: GO:0045619
@@ -30767,28 +30767,6 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://www.jbiomedsem.com/content/4/1/43 xsd:string
 
 [Term]
-id: SIMR:0002083
-def: " of Saccharomyces cerevisiae needs def" []
-is_a: NCBITaxon:4932 ! Saccharomyces cerevisiae
-
-[Term]
-id: SIMR:0005254
-name: Saccharomyces cerevisiae S288C
-def: "Saccharomyces cerevisiae S288C used by research group." []
-is_a: NCBITaxon:559292 ! Saccharomyces cerevisiae S288C
-intersection_of: NCBITaxon:559292 ! Saccharomyces cerevisiae S288C
-intersection_of: SIMRO:0000611 SIMR:0001008 ! used by group
-relationship: SIMRO:0000611 SIMR:0001008 ! used by group
-
-[Term]
-id: SIMR:0005255
-def: " used by research group." []
-is_a: SIMR:0002083
-intersection_of: SIMR:0002083
-intersection_of: SIMRO:0000611 SIMR:0001008 ! used by group
-relationship: SIMRO:0000611 SIMR:0001008 ! used by group
-
-[Term]
 id: SIMRO:00000000
 name: root node
 
@@ -31357,6 +31335,11 @@ id: SIMRO:0002082
 name: HEK-293T cell
 def: "A highly transformed human renal epithelial line expressing two viral oncogenes, adenovirus E1a and SV40 large T antigen." [PMID:7553648]
 is_a: CLO:0037237 ! 293-derived cell
+
+[Term]
+id: SIMRO:0002083
+def: " of Saccharomyces cerevisiae needs def" []
+is_a: NCBITaxon:4932 ! Saccharomyces cerevisiae
 
 [Term]
 id: SIMRO:0005000
@@ -33643,6 +33626,24 @@ is_a: NCBITaxon:63121 ! Ptychodera flava
 intersection_of: NCBITaxon:63121 ! Ptychodera flava
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 relationship: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+
+[Term]
+id: SIMRO:0005254
+name: Saccharomyces cerevisiae S288C
+def: "Saccharomyces cerevisiae S288C used by research group." []
+is_a: NCBITaxon:559292 ! Saccharomyces cerevisiae S288C
+is_a: SIMRO:0005209 ! Saccharomyces cerevisiae
+intersection_of: NCBITaxon:559292 ! Saccharomyces cerevisiae S288C
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+
+[Term]
+id: SIMRO:0005255
+name: Saccharomyces cerevisiae BY4742
+def: "Saccharomyces cerevisiae BY4742 used by research group." []
+is_a: SIMRO:0002083
+is_a: SIMRO:0005209 ! Saccharomyces cerevisiae
+intersection_of: SIMRO:0002083
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
 id: SO:0000001

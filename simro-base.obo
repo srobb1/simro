@@ -7,24 +7,6 @@ property_value: http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/
 property_value: http://purl.org/dc/terms/license "Unspecified" xsd:string
 
 [Term]
-id: SIMR:0002083
-def: " of Saccharomyces cerevisiae needs def" []
-is_a: NCBITaxon:4932
-
-[Term]
-id: SIMR:0005254
-name: Saccharomyces cerevisiae S288C
-def: "Saccharomyces cerevisiae S288C used by research group." []
-intersection_of: NCBITaxon:559292
-intersection_of: SIMRO:0000611 SIMR:0001008
-
-[Term]
-id: SIMR:0005255
-def: " used by research group." []
-intersection_of: SIMR:0002083
-intersection_of: SIMRO:0000611 SIMR:0001008
-
-[Term]
 id: SIMRO:00000000
 name: root node
 
@@ -593,6 +575,11 @@ id: SIMRO:0002082
 name: HEK-293T cell
 def: "A highly transformed human renal epithelial line expressing two viral oncogenes, adenovirus E1a and SV40 large T antigen." [PMID:7553648]
 is_a: CLO:0037237
+
+[Term]
+id: SIMRO:0002083
+def: " of Saccharomyces cerevisiae needs def" []
+is_a: NCBITaxon:4932
 
 [Term]
 id: SIMRO:0005000
@@ -2370,5 +2357,19 @@ id: SIMRO:0005253
 name: Ptychodera flava
 def: "Ptychodera flava used by research group." []
 intersection_of: NCBITaxon:63121
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005254
+name: Saccharomyces cerevisiae S288C
+def: "Saccharomyces cerevisiae S288C used by research group." []
+intersection_of: NCBITaxon:559292
+intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
+
+[Term]
+id: SIMRO:0005255
+name: Saccharomyces cerevisiae BY4742
+def: "Saccharomyces cerevisiae BY4742 used by research group." []
+intersection_of: SIMRO:0002083
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
