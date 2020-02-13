@@ -1,24 +1,24 @@
 format-version: 1.2
 data-version: simro/releases/2020-02-13/imports/uberon_import.owl
 subsetdef: cumbo "CUMBO"
-subsetdef: developmental_classification ""
-subsetdef: early_development ""
+subsetdef: developmental_classification "developmental_classification"
+subsetdef: early_development "A class that represents an early developmental structure, like a blastocyst. This part of the ontology is undergoing review to remove inappropriate grouping classes."
 subsetdef: efo_slim "EFO slim"
-subsetdef: emapa_ehdaa2 ""
+subsetdef: emapa_ehdaa2 "derived from the union of EHDAA2 and EMAPA - still to be checked"
 subsetdef: functional_classification "functional_classification"
 subsetdef: grouping_class "Subset consisting of classes creating for grouping purposes"
-subsetdef: homology_grouping ""
-subsetdef: inconsistent_with_fma ""
+subsetdef: homology_grouping "A grouping class that depends on an assumption of homology between subclasses"
+subsetdef: inconsistent_with_fma "classes that have some inconsistency with FMA"
 subsetdef: major_organ "somewhat fuzzy grouping for analysis purposes, currently composed of something like: liver, heart, skeletal, kidney, bladder, brain, skin, mouth, esophagus, stomach, small intestine, large intestines, trachea nose, lungs, brain, spinal cord,  peripheral nerves, kidneys, ureters, bladder, urethra, gonads"
 subsetdef: non_informative "abstract class brought in to group ontology classes but not informative"
 subsetdef: organ_slim "organs, excluding individual muscles and skeletal elements"
 subsetdef: pheno_slim "Phenotype slim"
-subsetdef: phenotype_rcn ""
+subsetdef: phenotype_rcn "A subset specifically created for the 2012 Phenotype RCN meeting. Includes some human-specific terms that may eventually be removed when they are adequately represented with part of relationships in FMA"
 subsetdef: uberon_slim "Uberon slim - subset that excludes obscure terms and deep compositional terms"
 subsetdef: upper_level "abstract upper-level terms not directly useful for analysis"
 subsetdef: vertebrate_core "core classes typically found across vertebrates. one purpose is to create a rough set of terms that could be used to start a new vertebrate AO"
 ontology: simro/imports/uberon_import
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000009>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000010>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000026>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000068>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000092>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000095>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000104>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000165>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000170>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000344>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000475>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000916>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000924>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000925>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000930>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001004>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001009>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001015>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001016>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001017>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001032>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001041>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001042>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001045>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001353>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001434>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001516>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001676>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001703>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001708>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001776>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001802>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001891>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002028>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002072>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002091>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002097>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002167>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002168>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002199>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002241>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002298>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002416>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003052>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003102>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003113>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003278>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003684>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004088>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004220>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004221>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004456>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004873>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004874>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0005428>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0005613>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0005622>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006211>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006235>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006264>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006866>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0007376>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0007651>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0008203>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0008895>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0008947>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0010190>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0010230>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011198>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0012125>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0012367>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0035639>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0035819>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0036072>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0036073>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#notes>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#source>))\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0000095> (cardiac neural crest)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"Wikipedia\"^^xsd:string) <http://purl.obolibrary.org/obo/UBERON_0000095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005428>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0000165> (mouth)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"exceptions in some taxa\") <http://purl.obolibrary.org/obo/UBERON_0000165> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001004>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0000475> (organism subdivision)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001009>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001015>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001016>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001434>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002416>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001032> (sensory system)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001016>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001353> (anal region)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001353> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0006866>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001516> (abdominal aorta)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001516> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000916>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001676> (occipital bone)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"basi paired exo and supra occipital bones\") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"MA-modified\") <http://purl.obolibrary.org/obo/UBERON_0001676> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002241>)))\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"interparietal (postparietal)\") <http://purl.obolibrary.org/obo/UBERON_0001676> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003113>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001708> (jaw skeleton)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001708> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008895>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001776> (optic choroid)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"Wikipedia\"^^xsd:string) <http://purl.obolibrary.org/obo/UBERON_0001776> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001802>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0002028> (hindbrain)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"modified-source-relation\") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"ABA\") <http://purl.obolibrary.org/obo/UBERON_0002028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002298>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0002091> (appendicular skeleton)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002091> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000026>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0002241> (chondrocranium)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002241> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001703>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0003052> (midbrain-hindbrain boundary)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0003052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0007651> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001891>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002028>))))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0003052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001891>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0003052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002028>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0003102> (surface structure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0003102> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0007376>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0003278> (skeleton of lower jaw)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"VHOG-modified\") <http://purl.obolibrary.org/obo/UBERON_0003278> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008895>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004220> (large intestine smooth muscle)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"consider merging\") <http://purl.obolibrary.org/obo/UBERON_0004220> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0011198>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004221> (intestine smooth muscle)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"consider merging\") <http://purl.obolibrary.org/obo/UBERON_0004221> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0012367>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004456> (entire sense organ system)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004456> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001016>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004873> (splanchnopleure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004873> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000925>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004874> (somatopleure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004874> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000924>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0006211> (buccopharyngeal membrane)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000930>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001042>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0006235> (foregut-midgut junction)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0006235> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0007651> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001041>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001045>))))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006235> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001041>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006235> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001045>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0006264> (mouth-foregut junction)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0006264> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0007651> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000165>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001041>))))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000165>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001041>)))\n\n\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000009>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000344>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002097>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0012125>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000010>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001017>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001016>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000092>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000104>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002097>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002199>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002167>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002168>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000170>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003684>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008203>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035819>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005613>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005622>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0010190>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0010230>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035639>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0004088>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0036072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0036073>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008947>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000009>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000344>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002097>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000010>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001017>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000092>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002097>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002167>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002168>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003684>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008203>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005613>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005622>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0010230>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035639>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0036072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0036073>))\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0002473> \"RO:0002473\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0002488> \"RO:0002488\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0002492> \"RO:0002492\")\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000009>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000010>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000026>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000068>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000092>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000095>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000104>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000165>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000170>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000344>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000475>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000916>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000924>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000925>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000930>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001004>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001009>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001015>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001016>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001017>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001032>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001041>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001042>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001045>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001353>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001434>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001516>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001676>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001703>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001708>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001776>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001802>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001891>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002028>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002072>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002091>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002097>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002167>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002168>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002199>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002241>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002298>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002416>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003052>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003102>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003113>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003278>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003684>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004088>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004220>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004221>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004456>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004873>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004874>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0005428>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0005613>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0005622>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006211>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006235>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006264>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006866>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0007376>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0007651>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0008203>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0008895>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0008947>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0010190>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0010230>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011198>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0012125>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0012367>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0035639>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0035819>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0036072>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0036073>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#notes>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#source>))\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0000095> (cardiac neural crest)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"Wikipedia\"^^xsd:string) <http://purl.obolibrary.org/obo/UBERON_0000095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005428>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0000165> (mouth)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"exceptions in some taxa\") <http://purl.obolibrary.org/obo/UBERON_0000165> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001004>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0000475> (organism subdivision)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001009>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001015>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001016>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001434>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000475> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002416>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001032> (sensory system)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001016>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001353> (anal region)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001353> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0006866>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001516> (abdominal aorta)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001516> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000916>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001676> (occipital bone)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"basi paired exo and supra occipital bones\") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"MA-modified\") <http://purl.obolibrary.org/obo/UBERON_0001676> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002241>)))\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"interparietal (postparietal)\") <http://purl.obolibrary.org/obo/UBERON_0001676> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003113>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001708> (jaw skeleton)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001708> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008895>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0001776> (optic choroid)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"Wikipedia\"^^xsd:string) <http://purl.obolibrary.org/obo/UBERON_0001776> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001802>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0002028> (hindbrain)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"modified-source-relation\") Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"ABA\"^^xsd:string) <http://purl.obolibrary.org/obo/UBERON_0002028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002298>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0002091> (appendicular skeleton)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002091> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000026>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0002241> (chondrocranium)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0002241> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001703>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0003052> (midbrain-hindbrain boundary)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0003052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0007651> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001891>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002028>))))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0003052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001891>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0003052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002028>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0003102> (surface structure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0003102> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0007376>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0003278> (skeleton of lower jaw)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> \"VHOG-modified\") <http://purl.obolibrary.org/obo/UBERON_0003278> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008895>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004220> (large intestine smooth muscle)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"consider merging\") <http://purl.obolibrary.org/obo/UBERON_0004220> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0011198>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004221> (intestine smooth muscle)\n\nSubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#notes> \"consider merging\") <http://purl.obolibrary.org/obo/UBERON_0004221> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0012367>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004456> (entire sense organ system)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004456> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001016>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004873> (splanchnopleure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004873> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000925>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0004874> (somatopleure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004874> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000924>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0006211> (buccopharyngeal membrane)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000930>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001042>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0006235> (foregut-midgut junction)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0006235> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0007651> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001041>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001045>))))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006235> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001041>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006235> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001045>)))\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0006264> (mouth-foregut junction)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0006264> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0007651> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000165>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001041>))))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000165>)))\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0006264> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001041>)))\n\n\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000009>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000344>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002097>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0012125>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000010>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001017>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001016>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000092>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000104>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002097>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002199>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002167>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002168>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000170>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003684>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008203>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035819>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005613>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005622>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0010190>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0010230>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035639>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0004088>))\nEquivalentClasses(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0036072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0036073>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008947>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000009>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000344>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002097>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000010>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001017>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000068>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000092>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002097>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002167>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0002168>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0003684>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0008203>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005613>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0005622>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0010230>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0035639>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0036072>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0036073>))\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0002473> \"RO:0002473\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0002488> \"RO:0002488\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/RO_0002492> \"RO:0002492\")\n)
 
 [Term]
 id: UBERON:0000000
@@ -499,7 +499,7 @@ property_value: external_definition "The duct of amniotes that carries urine fro
 property_value: has_relational_adjective "ureteral" xsd:string
 property_value: has_relational_adjective "ureteric" xsd:string
 property_value: homology_notes "The first embryonic hint of a metanephros is the formation of the metanephric duct that appears as a ureteric diverticulum arising at the base of preexisting mesonephric duct. The ureteric diverticulum grows dorsally into the posterior region of the nephric ridge. Here it enlarges and stimulates the growth of metanephric tubules that come to make up the metanephric kidney. The metanephros becomes the adult kidney of amniotes, and the metanephric duct is usually called the ureter.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000605", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.543"}
-property_value: UBPROP:0000010 "in humans, consists of adventitial, muscular and mucoa layers" xsd:string
+property_value: structure_notes "in humans, consists of adventitial, muscular and mucoa layers" xsd:string
 
 [Term]
 id: UBERON:0000057
@@ -763,7 +763,7 @@ is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000092 ! post-embryonic stage
 relationship: preceded_by UBERON:0000111 ! organogenesis stage
 relationship: precedes UBERON:0000071 ! death stage
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/566
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/566
 
 [Term]
 id: UBERON:0000068
@@ -1074,7 +1074,7 @@ xref: WBls:0000093
 xref: WBls:0000103
 is_a: UBERON:0000105 ! life cycle stage
 relationship: preceded_by UBERON:0000068 ! embryo stage
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/344
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/344
 property_value: taxon_notes "In birds, the postnatal stage begins when the beak penetrates the shell (i.e., external pipping) (Brown et al. 1997)" xsd:string
 
 [Term]
@@ -1145,8 +1145,8 @@ xref: OGES:000011
 is_a: UBERON:0000000 ! processual entity
 relationship: ends_with UBERON:0000071 ! death stage
 relationship: has_part UBERON:0000105 ! life cycle stage
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/532
 relationship: starts_with UBERON:0000106 ! zygote stage
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/532
 
 [Term]
 id: UBERON:0000105
@@ -1202,9 +1202,9 @@ xref: XAO:1000001
 xref: ZFS:0000001
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000068 ! embryo stage
+relationship: seeAlso EMAPA:16033
 relationship: starts UBERON:0000104 ! life cycle
 property_value: homology_notes "As in all metazoans, eumetazoan development begins with a fertilized egg, or zygote.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000745", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030259821 Ruppert EE, Fox RS, Barnes RD, Invertebrate zoology: a functional evolutionary approach (2003) p.107"}
-property_value: seeAlso EMAPA:16033
 
 [Term]
 id: UBERON:0000107
@@ -1293,7 +1293,7 @@ xref: XAO:1000006
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000068 ! embryo stage
 relationship: preceded_by UBERON:0000109 ! gastrula stage
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/343
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/343
 
 [Term]
 id: UBERON:0000111
@@ -1311,7 +1311,7 @@ xref: OGES:000032
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000068 ! embryo stage
 relationship: preceded_by UBERON:0000110 ! neurula stage
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/533
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/533
 
 [Term]
 id: UBERON:0000112
@@ -1332,8 +1332,8 @@ xref: XtroDO:0000083
 xref: ZFS:0000051
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000066 ! fully formed stage
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/427
 property_value: external_definition "The stage of being a sexually immature adult animal[XAO:1000010]." xsd:string {source="XAO:1000010"}
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/427
 property_value: taxon_notes "In mammals this would include infant (nourishment from lactation) and juvenile (prepubertal no longer dependent on mother)" xsd:string
 
 [Term]
@@ -1354,8 +1354,8 @@ xref: ZFS:0000044
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000066 ! fully formed stage
 relationship: preceded_by UBERON:0000112 ! sexually immature stage
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/345
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/499
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/345
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/499
 
 [Term]
 id: UBERON:0000114
@@ -1657,7 +1657,7 @@ relationship: develops_from UBERON:0003064 ! intermediate mesoderm
 relationship: part_of UBERON:0000163 {source="MP-def"} ! embryonic cloaca
 property_value: external_definition "The ventral part of the cloaca after its separation from the rectum, giving rise to the lower part of the bladder in both sexes, to the prostatic portion of the male urethra, and to the urethra and vestibule in the female. [TFD][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000414", ontology="VHOG", source="http://bgee.unil.ch/", source="http://medical-dictionary.thefreedictionary.com/urogenital+sinus"}
 property_value: homology_notes "In mammals the lowly monotremes still have a cloaca. Higher types have done away with this structure and have a separate anal outlet for the rectum. The monotreme cloaca shows the initiation of this subdivision. The cloaca has such includes only the distal part, roughly comparable to the proctodeum. The more proximal part is divided into (1) a large dorsal passage into which the intestine opens, the coprodeum, and (2) a ventral portion, the urodeum with which the bladder connects. (...) the development of the placental mammals recapitulates in many respects the phylogenetic story. In the sexually indifferent stage of placental mammal there is a cloaca. While the indifferent stage still persists, a septum develops, and extends out to the closing membrane. This divides the cloaca into two chambers: a coprodeum continuous with the gut above, and a urodeum or urogenital sinus below.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000414", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0721676678 Romer AS, Vertebrate body (1970)p.388-89 and Figure 300"}
-property_value: UBPROP:0000013 "the term 'urogenital sinus' may refer to the primitive urogenital sinus present as a transient developmental structure in most mammals or it may refer to a condition in which an unseptated cloaca persists in animals longer than normal" xsd:string {source="MP"}
+property_value: terminology_notes "the term 'urogenital sinus' may refer to the primitive urogenital sinus present as a transient developmental structure in most mammals or it may refer to a condition in which an unseptated cloaca persists in animals longer than normal" xsd:string {source="MP"}
 
 [Term]
 id: UBERON:0000165
@@ -1721,12 +1721,12 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/0/06/Mou
 relationship: develops_from UBERON:0035804 ! future mouth
 relationship: part_of UBERON:0000033 ! head
 relationship: proximalmost_part_of UBERON:0001555 ! digestive tract
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/661
 property_value: development_notes "some AOs place this as developing from the stomodeum but we weaken this to developmental contribution, as the mouth includes non-ectodermal derivatives" xsd:string
 property_value: external_definition "Cavity in which food is initially ingested and generally contains teeth, tongue and glands.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010355", ontology="AAO", source="AAO:BJB"}
 property_value: external_ontology_notes "in FMA, the tongue, palate etc are part of the mouth which is itself a subdivision of the face. ZFA includes a separate class 'oral region' which is part of the mouth, but excludes tongue and lips" xsd:string {external_ontology="FMA"}
 property_value: has_relational_adjective "oral" xsd:string
 property_value: homology_notes "Molecular and developmental cell lineage data suggest that the acoel mouth opening is homologous to the mouth of protostomes and deuterostomes and that the last common ancestor of the Bilateria (the 'urbilaterian') had only this single digestive opening.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000812", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1038/nature07309 Hejnol A, Martindale MQ, Acoel development indicates the independent evolution of the bilaterian mouth and anus. Nature (2008)"}
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/661
 
 [Term]
 id: UBERON:0000166
@@ -1908,11 +1908,11 @@ relationship: has_part UBERON:0001969 ! blood plasma
 relationship: immediate_transformation_of UBERON:0006596 {source="Bgee:AN"} ! presumptive blood
 relationship: located_in UBERON:0002049 {source="https://github.com/obophenotype/uberon/issues/1330"} ! vasculature
 relationship: part_of UBERON:0002390 ! hematopoietic system
+property_value: axiom_lost_from_external_ontology "relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000046", ontology="AAO"}
 property_value: curator_notes "This class excludes blood analogues, such as the insect analog of blood. See UBERON:0000179 haemolymphatic fluid." xsd:string
 property_value: external_definition "A complex mixture of cells suspended in a liquid matrix that delivers nutrients to cells and removes wastes. (Source: BioGlossary, www.Biology-Text.com)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000007", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Highly specialized circulating tissue consisting of several types of cells suspended in a fluid medium known as plasma.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000046", ontology="AAO", source="AAO:LAP"}
 property_value: homology_notes "Recent findings strongly suggest that the molecular pathways involved in the development and function of blood cells are highly conserved among vertebrates and various invertebrates phyla. (...) There is now good reason to believe that, in vertebrates and invertebrates alike, blood cell lineages diverge from a common type of progenitor cell, the hemocytoblast.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000224", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1146/annurev.cellbio.22.010605.093317 Hartenstein V, Blood cells and blood cell development in the animal kingdom. Annual review of cell and developmental biology (2006) "}
-property_value: UBPROP:0000002 "relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000046", ontology="AAO"}
 
 [Term]
 id: UBERON:0000179
@@ -2578,7 +2578,7 @@ is_a: UBERON:0000061 ! anatomical structure
 relationship: existence_starts_during_or_after UBERON:0000111 ! organogenesis stage
 relationship: has_part UBERON:0000062 ! organ
 relationship: part_of UBERON:0000468 ! multicellular organism
-property_value: seeAlso EHDAA2:0001330
+relationship: seeAlso EHDAA2:0001330
 
 [Term]
 id: UBERON:0000468
@@ -3223,9 +3223,9 @@ intersection_of: existence_starts_with UBERON:0000068 ! embryo stage
 relationship: depicted_by Wrinkledfrog:embryos.jpg
 relationship: existence_ends_with UBERON:0000068 ! embryo stage
 relationship: existence_starts_with UBERON:0000068 ! embryo stage
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/503
 property_value: external_ontology_notes "Obsoleted in ZFA. Note that embryo is not classified as an embryonic structure - an embryonic structure is only the parts of an embryo" xsd:string {external_ontology="ZFA"}
 property_value: has_relational_adjective "embryonic" xsd:string
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/503
 
 [Term]
 id: UBERON:0000923
@@ -3465,11 +3465,11 @@ relationship: develops_from UBERON:0000924 ! ectoderm
 relationship: has_potential_to_develop_into UBERON:0001353 ! anal region
 relationship: located_in UBERON:0012469 {source="EHDAA2"} ! external anal region
 relationship: part_of UBERON:0007026 ! presumptive gut
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/685
 property_value: editor_note "removed WBbt:0006795 'proctodeum' - junction between the alimentary and genital tracts in the male." xsd:string
 property_value: external_definition "An inward fold on the surface of the embryonic ectoderm that develops into part of the anal passage.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000066", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Inward fold on the surface of the embryonic ectoderm that develops into part of the anal passage.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0011087", ontology="AAO", source="ZFA:0000066"}
 property_value: has_relational_adjective "proctodeal" xsd:string
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/685
 
 [Term]
 id: UBERON:0000947
@@ -3569,11 +3569,11 @@ relationship: contributes_to_morphology_of UBERON:0004535 ! cardiovascular syste
 relationship: develops_from UBERON:0004141 ! heart tube
 relationship: has_part UBERON:0004151 ! cardiac chamber
 relationship: part_of UBERON:0015410 {source="MA"} ! heart plus pericardium
+property_value: axiom_lost_from_external_ontology "relationship type change: differentiates_from lateral plate mesoderm (AAO:0010574) CHANGED TO: develops_from lateral plate mesoderm (UBERON:0003081)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010210", ontology="AAO"}
 property_value: external_definition "Blood pumping organ composed of four chambers: sinus venosus, atrium, cardiac ventricle and bulbus arteriosus.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000114", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Part of the circulatory system responsible for pumping blood; composed of three chambers--two atria and one ventricle.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010210", ontology="AAO", source="AAO:BJB"}
 property_value: has_relational_adjective "cardiac" xsd:string
 property_value: homology_notes "As noted, the hearts of birds and mammals have four chambers that arises from the two chambers (atrium and ventricle) of the fish heart.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000276", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.481"}
-property_value: UBPROP:0000002 "relationship type change: differentiates_from lateral plate mesoderm (AAO:0010574) CHANGED TO: develops_from lateral plate mesoderm (UBERON:0003081)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010210", ontology="AAO"}
 
 [Term]
 id: UBERON:0000955
@@ -3832,7 +3832,7 @@ relationship: part_of UBERON:0002104 ! visual system
 property_value: curator_notes "This class encompasses a variety of light-detecting structures from different phyla with no implication of homology, from the compound insect eye to the vertebrate camera-type eye (distinct classes are provided for each)" xsd:string
 property_value: has_relational_adjective "ocular" xsd:string
 property_value: has_relational_adjective "optic" xsd:string
-property_value: UBPROP:0000010 "Note that whilst this is classified as an organ, it is in fact more of a unit composed of different structures: in Drosophila, it includes the interommatidial bristle as a part; we consider here the vertebrate eye to include the eyeball/eye proper as a part, with the eye having as parts (when present): eyelids, conjuctiva," xsd:string
+property_value: structure_notes "Note that whilst this is classified as an organ, it is in fact more of a unit composed of different structures: in Drosophila, it includes the interommatidial bristle as a part; we consider here the vertebrate eye to include the eyeball/eye proper as a part, with the eye having as parts (when present): eyelids, conjuctiva," xsd:string
 
 [Term]
 id: UBERON:0000974
@@ -4270,12 +4270,12 @@ intersection_of: part_of UBERON:0002097 ! skin of body
 relationship: adjacent_to UBERON:0002067 ! dermis
 relationship: developmentally_replaces UBERON:0003055 ! periderm
 relationship: part_of UBERON:0002097 ! skin of body
+property_value: axiom_lost_from_external_ontology "relationship loss: subclass external integument structures (AAO:0000961)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000143", ontology="AAO"}
 property_value: external_definition "A cellular, multilayered epithelium derived from the ectoderm. Zebrafish epidermis consists only of living cells unlike terrestrial vertebrates in which dead, keratinized cells are present. Le Guellec et al, 2004.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000105", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "The outer epithelial layer of the external integument of the body that is derived from the embryonic epiblast.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000143", ontology="AAO", source="AAO:BJB"}
 property_value: has_relational_adjective "epidermal" xsd:string
 property_value: homology_notes "(...) outer epithelia in all metazoan animals are homologous. (...) The ancestor of all metazoans likely had an epidermis with a basal extracellular matrix (ECM), an apical extracellular glycocalyx, and one cilium with a striated rootlet per cell.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000077", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0198566694 Schmidt-Rhaesa A, The evolution of organ systems (2007) p.71-72"}
 property_value: taxon_notes "Zebrafish epidermis consists only of living cells unlike terrestrial vertebrates in which dead, keratinized cells are present. In terrestrial vertebrates the epidermis often forms an outer keratinized or cornified layer, the stratum corneum. Interaction between the epideris and dermis gives rise to feathers (birds), hair and mammary glands (mammals), teeth and scales (placoid: chondrichthyans; cosmoids, ganoid, cycloid in bony fishes)." xsd:string
-property_value: UBPROP:0000002 "relationship loss: subclass external integument structures (AAO:0000961)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000143", ontology="AAO"}
 
 [Term]
 id: UBERON:0001004
@@ -4536,13 +4536,13 @@ xref: XAO:0003049
 xref: ZFA:0005345
 is_a: UBERON:0011822 {source="FMA"} ! dense irregular connective tissue
 disjoint_from: UBERON:0003714 ! neural tissue
+property_value: axiom_lost_from_external_ontology "relationship loss: subclass connective tissue proper (AAO:0000099)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000001", ontology="AAO"}
 property_value: external_definition "Connective tissue in which fat is stored.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002134", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Tissue that contains adipocytes, used for cushioning, thermal insulation, lubrication (primarily in the pericardium) and energy storage.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000001", ontology="AAO", source="AAO:LAP"}
 property_value: external_ontology_notes "in FMA this is dense irregular connective tissue" xsd:string {external_ontology="FMA"}
 property_value: has_relational_adjective "adipose" xsd:string
 property_value: homology_notes "Adipose tissue is unique to vertebrates. It is found in mostmammals, birds, reptiles and amphibians, and a variety is found in some species of fish. Furthermore, in insects the fat body found in larvae as well as in adults shares some homology with adipose tissue.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001284", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1017/S0029665107005423 Haugen F, Drevon CA, The interplay between nutrients and the adipose tissue. The Proceedings of the Nutrition Society (2007)"}
 property_value: taxon_notes "In humans, adipose tissue is located beneath the skin (subcutaneous fat), around internal organs (visceral fat), in bone marrow (yellow bone marrow) and in breast tissue. Adipose tissue is found in specific locations, which are referred to as adipose depots. Adipose tissue contains several cell types, with the highest percentage of cells being adipocytes, which contain fat droplets. Other cell types include fibroblasts, macrophages, and endothelial cells. Adipose tissue contains many small blood vessels.; Mice have eight major adipose depots, four of which are within the abdominal cavity. The paired gonadal depots are attached to the uterus and ovaries in females and the epididymis and testes in males; the paired retroperitoneal depots are found along the dorsal wall of the abdomen, surrounding the kidney, and, when massive, extend into the pelvis. The mesenteric depot forms a glue-like web that supports the intestines, and the omental depot, which originates near the stomach and spleen, and, when massive, extends into the ventral abdomen." xsd:string
-property_value: UBPROP:0000002 "relationship loss: subclass connective tissue proper (AAO:0000099)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000001", ontology="AAO"}
 
 [Term]
 id: UBERON:0001015
@@ -4809,6 +4809,8 @@ xref: ZFA:0000056
 is_a: UBERON:0006562 ! pharynx
 relationship: develops_from UBERON:0009145 {source="EHDAA2"} ! pharyngeal region of foregut
 relationship: part_of UBERON:0001004 ! respiratory system
+property_value: axiom_lost_from_external_ontology "relationship type change: part_of_proxy respiratory system (AAO:0000541) CHANGED TO: develops_from respiratory system (UBERON:0001004)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000967", ontology="AAO"}
+property_value: axiom_lost_from_external_ontology "relationship type change: part_of_proxy respiratory system (AAO:0000541) CHANGED TO: part_of respiratory system (UBERON:0001004)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000967", ontology="AAO"}
 property_value: external_definition "A funnel-shaped fibromuscular tube that conducts food to the ESOPHAGUS, and air to the LARYNYX and LUNGS. It is located posterior to the NASAL CAVITY; ORAL CAVITY; and LARYNX, and extends from the SKULL BASE to the inferior border of the CRICOID CARTILAGE anteriorly and to the inferior border of the C6 vertebra posteriorly. It is divided into the NASOPHARYNX; OROPHARYNX; and HYPOPHARYNX (laryngopharynx)[MESH:A03.867]." xsd:string {source="MESH:A03.867"}
 property_value: external_definition "Anatomical cavity bounded by the derivatives of the branchial arches.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000967", ontology="AAO", source="AAO:EJS"}
 property_value: external_definition "Swollen region of the anterior foregut, posterior to the mouth and anterior to the liver; its walls form the jaws and gills. Kimmel et al, 1995.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000056", ontology="TAO", source="ZFIN:curator"}
@@ -4816,8 +4818,6 @@ property_value: external_definition "Swollen region of the anterior foregut, pos
 property_value: external_definition "The portion of the alimentary canal between the mouth and the oesophagus. [Dorian_AF, Elsevier's_encyclopaedic_dictionary_of_medicine, Part_B:_Anatomy_(1988)_Amsterdam_etc.:_Elsevier][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000462", ontology="VHOG", source="http://bgee.unil.ch/"}
 property_value: external_ontology_notes "MA/FMA pharynx not part of digestive/alimentary system, we are consistent with this scheme" xsd:string {external_ontology="MA"}
 property_value: homology_notes "(...) the earliest vertebrates possessed unjointed internal and external branchial arches, and musculature encircling the pharynx.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000462", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) Box essay 13.1 and Box figure I, p.502-503"}
-property_value: UBPROP:0000002 "relationship type change: part_of_proxy respiratory system (AAO:0000541) CHANGED TO: develops_from respiratory system (UBERON:0001004)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000967", ontology="AAO"}
-property_value: UBPROP:0000002 "relationship type change: part_of_proxy respiratory system (AAO:0000541) CHANGED TO: part_of respiratory system (UBERON:0001004)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000967", ontology="AAO"}
 
 [Term]
 id: UBERON:0001045
@@ -5318,7 +5318,7 @@ is_a: UBERON:0007794 {source="FMA"} ! secretion of serous gland
 relationship: located_in UBERON:0007617 ! synovial cavity of joint
 property_value: external_definition "Portion of organism substance that is a clear fluid that occupies the space in synovial joints.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0005154", ontology="TAO", source="ZFIN:curator"}
 property_value: function_notes "It provides nutrients and lubrication for articular cartilage" xsd:string
-property_value: UBPROP:0000010 "The fluid contains hyaluronan secreted by fibroblast-like cells in the synovial membrane, lubricin (proteoglycan 4; PRG4) secreted by the surface chondrocytes of the articular cartilage and interstitial fluid filtered from the blood plasma" xsd:string
+property_value: structure_notes "The fluid contains hyaluronan secreted by fibroblast-like cells in the synovial membrane, lubricin (proteoglycan 4; PRG4) secreted by the surface chondrocytes of the articular cartilage and interstitial fluid filtered from the blood plasma" xsd:string
 
 [Term]
 id: UBERON:0001133
@@ -5419,7 +5419,7 @@ relationship: depicted_by Glatte:Muskelzellen.jpg
 property_value: external_definition "A non-striated muscle that is composed of spindle-shaped cells. Smooth muscle usually is organized into sheets that line cavitated organs.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0005274", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Involuntary muscle tissue consisting of uninucleate spindle-shaped fibers.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010244", ontology="AAO", source="AAO:CAM"}
 property_value: homology_notes "(...) the first bilateral animals possessed only smooth muscles with the molecular repertoire necessary to build a striated muscle. (...) it is more parsimonious to regard striated muscle cells as a sister cell type to the smooth muscle cells. In this scenario, striated and smooth muscles would have arisen in the stem lineage that led to the Nephrozoa (i.e. all Bilateria exclusive the acoelomorphs) (Hejnol et al., 2009), from an 'acoel-like' smooth muscle, by segregation and divergence of functions and through differential recruitment of additional genes[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001246", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1002/jez.b.21416 Chiodin M, Achatz JG, Wanninger A, Martinez P, Molecular architecture of muscles in an acoel and its evolutionary implications. Journal of Experimental Zoology (2011)"}
-property_value: UBPROP:0000013 "GO uses visceral and smooth interchangeably. However visceral can also be used in the sense of the viscera. Many fly annotations to smooth muscle terms. If we want to be inclusive of insects have to have a general definition of tissue that includes cells." xsd:string
+property_value: terminology_notes "GO uses visceral and smooth interchangeably. However visceral can also be used in the sense of the viscera. Many fly annotations to smooth muscle terms. If we want to be inclusive of insects have to have a general definition of tissue that includes cells." xsd:string
 
 [Term]
 id: UBERON:0001136
@@ -5919,7 +5919,7 @@ is_a: UBERON:0000056 ! ureter
 intersection_of: UBERON:0000056 ! ureter
 intersection_of: in_right_side_of UBERON:0000468 ! multicellular organism
 relationship: in_right_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0001223
@@ -5937,7 +5937,7 @@ is_a: UBERON:0000056 ! ureter
 intersection_of: UBERON:0000056 ! ureter
 intersection_of: in_left_side_of UBERON:0000468 ! multicellular organism
 relationship: in_left_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0001224
@@ -6499,8 +6499,8 @@ is_a: UBERON:0003889 ! fallopian tube
 intersection_of: UBERON:0003889 ! fallopian tube
 intersection_of: in_right_side_of UBERON:0000468 ! multicellular organism
 relationship: in_right_side_of UBERON:0000468 ! multicellular organism
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 property_value: taxon_notes "non-functional in monotremes[ISBN:978-0226870137]" xsd:string
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0001303
@@ -6520,7 +6520,7 @@ is_a: UBERON:0003889 ! fallopian tube
 intersection_of: UBERON:0003889 ! fallopian tube
 intersection_of: in_left_side_of UBERON:0000468 ! multicellular organism
 relationship: in_left_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0001312
@@ -6693,8 +6693,8 @@ xref: WBbt:0006919
 is_a: UBERON:0000475 ! organism subdivision
 relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/f/fb/Gray408.png
 relationship: has_developmental_contribution_from UBERON:0000931 {evidence="cjm"} ! proctodeum
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/507
 property_value: homology_notes "Although all vertebrates have a digestive tract and accessory glands, various parts of this system are not necessarily homologous, analogous, or even present in all species. Therefore, broad comparisons can be best made under the listings of headgut, foregut, midgut, pancreas and biliary system, hindgut.[uncertain][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000395", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0521617147 Stevens CE and Hume ID, Comparative physiology of the vertebrate digestive system (2004) p.11"}
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/507
 
 [Term]
 id: UBERON:0001415
@@ -6811,8 +6811,8 @@ relationship: has_skeleton UBERON:0007831 ! pectoral girdle skeleton
 relationship: in_lateral_side_of UBERON:0000468 ! multicellular organism
 relationship: part_of UBERON:0010708 ! pectoral complex
 property_value: curator_notes "this class describes the organism subdivision, NOT the skeleton within. See also: skeleton of pectoral girdle (UBERON:0007831)." xsd:string
+property_value: external_comment "Note that this class describes the central subdivision of the pectoral girdle complex, NOT the skeleton within.[VSAO]" xsd:string {date_retrieved="2012-09-06", external_class="VSAO:0000305", ontology="VSAO", source="Curator"}
 property_value: external_definition "An organism subdivision that includes the pectoral girdle skeleton. Note that this includes both the skeletal elements and associated tissues (integument, muscle, etc). There is only one instance of the pectoral girdle region per organism.[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000305", ontology="VSAO", source="https://orcid.org/0000-0002-6601-2165"}
-property_value: UBPROP:0000005 "Note that this class describes the central subdivision of the pectoral girdle complex, NOT the skeleton within.[VSAO]" xsd:string {date_retrieved="2012-09-06", external_class="VSAO:0000305", ontology="VSAO", source="Curator"}
 
 [Term]
 id: UBERON:0001434
@@ -6982,11 +6982,11 @@ intersection_of: composed_primarily_of UBERON:0002481 ! bone tissue
 disjoint_from: UBERON:0001630 ! muscle organ
 disjoint_from: UBERON:0005090 ! muscle structure
 relationship: composed_primarily_of UBERON:0002481 {source="VSAO-modified"} ! bone tissue
+property_value: axiom_lost_from_external_ontology "relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000047", ontology="AAO"}
 property_value: external_definition "Also called osseous tissue, (Latin: os). Is a type of hard endoskeletal connective tissue found in many vertebrate animals. Bone is the main tissue of body organs that support body structures, protect internal organs, (in conjunction with muscles) facilitate movement; and are involved with cell formation, calcium metabolism, and mineral storage.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000047", ontology="AAO", source="AAO:LAP"}
 property_value: external_definition "Portion of tissue which is calcified connective tissue making up the structural elements of the skeletal system.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0001514", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Skeletal element that is composed of bone tissue.[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000057", ontology="VSAO", source="PSPUB:0000170"}
 property_value: homology_notes "The 'new animal phylogeny' reveals that many of the groups known to biomineralize sit among close relatives that do not, and it favours an interpretation of convergent or parallel evolution for biomineralization in animals. (...) Whether this 'biomineralization toolkit'of genes reflects a parallel co-option of a common suite of genes or the inheritance of a skeletogenic gene regulatory network from a biomineralizing common ancestor remains an open debate.[debated][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001190", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1159/000324245 Murdock DJ, Donoghue PC, Evolutionary Origins of Animal Skeletal Biomineralization. Cells Tissues Organs (2011)"}
-property_value: UBPROP:0000002 "relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000047", ontology="AAO"}
 
 [Term]
 id: UBERON:0001484
@@ -7196,7 +7196,7 @@ property_value: external_definition "The alimentary or digestive tract, and asso
 property_value: external_ontology_notes "FMA also has a term 'gastrointestinal tract', but this includes the liver." xsd:string {external_ontology="FMA"}
 property_value: external_ontology_notes "we place the MA and EMAPA class here, although the intent is probably a smaller region. See https://github.com/obophenotype/uberon/issues/509" xsd:string {external_ontology="MA"}
 property_value: homology_notes "The bilaterian gut is typically a complete tube that opens to the exterior at both ends. It consists of mouth, foregut, midgut, hindgut, and anus (reference 1); Although all vertebrates have a digestive tract and accessory glands, various parts of this system are not necessarily homologous, analogous, or even present in all species. Therefore, broad comparisons can be best made under the listings of headgut, foregut, midgut, pancreas and biliary system, hindgut (reference 2).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000309", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030259821 Ruppert EE, Fox RS, Barnes RD, Invertebrate zoology: a functional evolutionary approach (2003) p.203, ISBN:978-0521617147 Stevens CE and Hume ID, Comparative physiology of the vertebrate digestive system (2004) p.11"}
-property_value: UBPROP:0000013 "we following Kardong in naming the entire tube from mouth to anus the alimentary canal. Kardong calls the portion of this tract that excludes buccal cavity and pharynx the 'alimentary canal', consider adding an extra class for this" xsd:string
+property_value: terminology_notes "we following Kardong in naming the entire tube from mouth to anus the alimentary canal. Kardong calls the portion of this tract that excludes buccal cavity and pharynx the 'alimentary canal', consider adding an extra class for this" xsd:string
 
 [Term]
 id: UBERON:0001556
@@ -7710,7 +7710,7 @@ property_value: development_notes "The cartilaginous parts of the neurocranium u
 property_value: external_definition "Anatomical cluster that consists of the cartilages and bones that surround the brain.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0001580", ontology="TAO", source="TAO:MAH"}
 property_value: external_ontology_notes "It seems MA uses 'neurocranium' as a synonym for chondrocranium. Note there are currently some structures part of both viscero and neurocranium - ethmoid, zyogomatic, ..." xsd:string {external_ontology="MA"}
 property_value: has_relational_adjective "neurocranial" xsd:string
-property_value: UBPROP:0000010 "It includes the following bones: Ethmoid bone, Frontal bone, Occipital bone, Parietal bone, Sphenoid bone, Temporal bone. The term cranium can be ambiguous, in that it can refer to the neurocranium, or the neurocranium and the Facial skeleton" xsd:string
+property_value: structure_notes "It includes the following bones: Ethmoid bone, Frontal bone, Occipital bone, Parietal bone, Sphenoid bone, Temporal bone. The term cranium can be ambiguous, in that it can refer to the neurocranium, or the neurocranium and the Facial skeleton" xsd:string
 
 [Term]
 id: UBERON:0001708
@@ -8022,8 +8022,8 @@ property_value: development_notes "Seko et al demonstrate chondrogenic potential
 property_value: external_definition "The sclera, also known as the white part of the eye, is the opaque (usually white, though certain animals, such as horses and lizards, can have black sclera), fibrous, protective, outer layer of the eye containing collagen and elastic fiber. It is derived from the neural crest. In children, it is thinner and shows some of the underlying pigment, appearing slightly blue. In the elderly, however, fatty deposits on the sclera can make it appear slightly yellow. The sclera forms the posterior five sixths of the connective tissue coat of the globe. It is continuous with the dura mater and the cornea, and maintains the shape of the globe, offering resistance to internal and external forces, and provides an attachment for the extraocular muscle insertions. The sclera is perforated by plenty of nerves and vessels passing through the posterior scleral foramen, the hole that is formed by the optic nerve. At the optic disk the outer two-thirds of the sclera continues with the dura mater (outer coat of the brain) via the dural sheath of the optic nerve. The inner third joins with some choroidal tissue to form a plate (lamina cribrosa) across the optic nerve with perforations through which the optic fibers (fasciculi). The thickness of the sclera varies from 1mm at the posterior pole to 0.3 mm just behind the rectus muscle insertions. The sclera's blood vessels are mainly on the surface, and together with the conjunctiva (which lies on top) This is a thin layer covering the sclera. Along with the vessels of the conjunctiva, those of the sclera renders the inflamed eye bright red. [WP,unvetted][Wikipedia:Sclera]." xsd:string {source="http://en.wikipedia.org/wiki/Sclera"}
 property_value: external_definition "The tough, usually white, outer coat of the eyeball, covering all the posterior surface and continuous anteriorly with the cornea. [TFD][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001274", ontology="VHOG", source="http://bgee.unil.ch/", source="http://medical-dictionary.thefreedictionary.com/sclera"}
 property_value: has_relational_adjective "scleral" xsd:string
+property_value: structure_notes "continuous with the dura mater and the cornea; The sclera forms the posterior five-sixths of the connective tissue coat of the globe." xsd:string
 property_value: taxon_notes "in fish, reptiles and monotremes the connective tissue of the sclera is skeletal" xsd:string
-property_value: UBPROP:0000010 "continuous with the dura mater and the cornea; The sclera forms the posterior five-sixths of the connective tissue coat of the globe." xsd:string
 
 [Term]
 id: UBERON:0001775
@@ -8147,9 +8147,9 @@ relationship: contributes_to_morphology_of UBERON:0000964 ! cornea
 relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/6/66/Gray871.png
 relationship: develops_from UBERON:0007213 {inferred_by="cjm", source="ISBN:0781772214", source="Wikipedia"} ! mesenchyme derived from head neural crest
 relationship: part_of UBERON:0000964 ! cornea
+property_value: axiom_lost_from_external_ontology "relationship type change: subclass tissue (CARO:0000043) CHANGED TO: develops_from tissue (UBERON:0000479)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002189", ontology="TAO"}
+property_value: axiom_lost_from_external_ontology "relationship type change: subclass tissue (CARO:0000043) CHANGED TO: has_developmental_contribution_from tissue (UBERON:0000479)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002189", ontology="TAO"}
 property_value: external_definition "Portion of tissue that is located basal to Bowman's layer and distal to Descemet's membrane and is comprised largely of connective tissue.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002189", ontology="TAO", source="ZFIN:ZDB-PUB-061010-3"}
-property_value: UBPROP:0000002 "relationship type change: subclass tissue (CARO:0000043) CHANGED TO: develops_from tissue (UBERON:0000479)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002189", ontology="TAO"}
-property_value: UBPROP:0000002 "relationship type change: subclass tissue (CARO:0000043) CHANGED TO: has_developmental_contribution_from tissue (UBERON:0000479)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002189", ontology="TAO"}
 
 [Term]
 id: UBERON:0001778
@@ -8389,7 +8389,7 @@ relationship: part_of UBERON:0000965 ! lens of camera-type eye
 property_value: external_definition "The transparent membrane which surrounds the lens of the eye. [Dorian_AF, Elsevier's_encyclopaedic_dictionary_of_medicine, Part_B:_Anatomy_(1988)_Amsterdam_etc.:_Elsevier][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000550", ontology="VHOG", source="http://bgee.unil.ch/"}
 property_value: external_ontology_notes "FMA classifies this is a capsule and hence an organ part. In contrast we classify this as acellular" xsd:string {external_ontology="FMA"}
 property_value: homology_notes "(...) we reach the inescapable conclusion that the last common ancestor of jawless and jawed vertebrates already possessed an eye that was comparable to that of extant lampreys and gnathostomes. Accordingly, a vertebrate camera-like eye must have been present by the time that lampreys and gnathostomes diverged, around 500 Mya (reference 1); Although the eye varies greatly in adaptative details among vertebrates, its basic structure is the same in all. The human eye is representative of the design typical for a tetrapod. (...) A watery aqueous humor fills the spaces in the eye in front of the lens (...) (reference 2).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000550", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1038/nrn2283 Lamb TD, Collin SP and Pugh EN Jr, Evolution of the vertebrate eye: opsins, photoreceptors, retina and eye cup. Nature Reviews Neuroscience (2007), ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.424 and p.426 and p.429 and Figure 12-24"}
-property_value: UBPROP:0000010 "synthesized by the lens epithelium and its main components are Type IV collagen and sulfated glycosaminoglycans (GAGs). [Wikipedia:Capsule_of_lens" xsd:string
+property_value: structure_notes "synthesized by the lens epithelium and its main components are Type IV collagen and sulfated glycosaminoglycans (GAGs). [Wikipedia:Capsule_of_lens" xsd:string
 
 [Term]
 id: UBERON:0001833
@@ -9064,7 +9064,7 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/2/2f/A_r
 property_value: editor_note "not all sources agree capillary is a blood vessel - consider adopting EMAPA superclass of vascular element" xsd:string
 property_value: external_definition "Any of the tiny blood vessels connecting the arterioles to the venules.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010252", ontology="AAO", source="AAO:BJB"}
 property_value: homology_notes "The appearance of Chordata and subsequently the vertebrates is accompanied by a rapid structural diversification of this primitive linear heart: looping, unidirectional circulation, an enclosed vasculature, and the conduction system.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001253", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1196/annals.1341.002 Bishopric NH, Evolution of the heart from bacteria to man. Annals of the New York Academy of Sciences (2006)"}
-property_value: UBPROP:0000010 "capillaries lack tunica media and tunica adventitia; only the endothelial wall of the tunica intima belongs" xsd:string
+property_value: structure_notes "capillaries lack tunica media and tunica adventitia; only the endothelial wall of the tunica intima belongs" xsd:string
 
 [Term]
 id: UBERON:0001985
@@ -9287,7 +9287,7 @@ relationship: contributes_to_morphology_of UBERON:0002113 ! kidney
 relationship: depicted_by Illu:kidney.jpg
 relationship: part_of UBERON:0002113 ! kidney
 property_value: function_notes "provides some protection from trauma and damage." xsd:string
-property_value: UBPROP:0000010 "The renal capsule relates to the other layers in the following order (moving from innermost to outermost): renal medulla renal cortex renal capsule perinephric fat (or 'perirenal fat') renal fascia paranephric fat (or 'pararenal fat') peritoneum (anteriorly), and transversalis fascia (posteriorly).[Wikipedia:Kidney_capsule]" xsd:string
+property_value: structure_notes "The renal capsule relates to the other layers in the following order (moving from innermost to outermost): renal medulla renal cortex renal capsule perinephric fat (or 'perirenal fat') renal fascia paranephric fat (or 'pararenal fat') peritoneum (anteriorly), and transversalis fascia (posteriorly).[Wikipedia:Kidney_capsule]" xsd:string
 
 [Term]
 id: UBERON:0002016
@@ -9417,12 +9417,12 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/5/54/Emb
 relationship: develops_from UBERON:0007277 ! presumptive hindbrain
 relationship: immediate_transformation_of UBERON:0007277 {source="Bgee:AN"} ! presumptive hindbrain
 relationship: present_in_taxon NCBITaxon:7762 {source="http://www.ncbi.nlm.nih.gov/pubmed/8932866"}
+property_value: axiom_lost_from_external_ontology "relationship loss: develops_from hindbrain neural tube (TAO:0007043)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000029", ontology="TAO"}
 property_value: external_definition "Posterior part of the brain consisting of the cerebellum and medulla oblongata.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010150", ontology="AAO", source="AAO:BJB"}
 property_value: external_definition "The most posterior of the three principal regions of the brain, forming the rhombencephalon and all or most of the metencephalon. Kimmel et al, 1995.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000029", ontology="TAO", source="ZFIN:curator"}
 property_value: external_ontology_notes "in MA, brainstem and hindbrain and part-of siblings under brain, consistent with FMA and NIF. See also notes for cerebellum. We weaken the relation in ABA to overlaps" xsd:string {external_ontology="MA"}
 property_value: has_relational_adjective "rhombencephalic" xsd:string
 property_value: homology_notes "Fine structural, computerized three-dimensional (3D) mapping of cell connectivity in the amphioxus nervous system and comparative molecular genetic studies of amphioxus and tunicates have provided recent insights into the phylogenetic origin of the vertebrate nervous system. The results suggest that several of the genetic mechanisms for establishing and patterning the vertebrate nervous system already operated in the ancestral chordate and that the nerve cord of the proximate invertebrate ancestor of the vertebrates included a diencephalon, midbrain, hindbrain, and spinal cord.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000070", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1016/S0959-4388(99)00003-3 Holland LZ and Holland ND, Chordate origins of the vertebrate central nervous system. Current Opinion in Neurobiology (1999)"}
-property_value: UBPROP:0000002 "relationship loss: develops_from hindbrain neural tube (TAO:0007043)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000029", ontology="TAO"}
 
 [Term]
 id: UBERON:0002031
@@ -9556,10 +9556,10 @@ relationship: contributes_to_morphology_of UBERON:0001004 ! respiratory system
 relationship: develops_from UBERON:0000118 ! lung bud
 relationship: in_lateral_side_of UBERON:0000170 ! pair of lungs
 relationship: part_of UBERON:0000170 {note="some species only have a single lung"} ! pair of lungs
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/701
 property_value: external_definition "Either of two organs which allow gas exchange absorbing oxygen from inhaled air and releasing carbon dioxide with exhaled air.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010567", ontology="AAO", source="AAO:SBH"}
 property_value: has_relational_adjective "pulmonary" xsd:string
 property_value: homology_notes "Lungs had already developed as paired ventral pockets from the intestine in the ancestor of Osteognathostomata. (...) In actinopterygian fishes, apart from Cladistia, the ventral intestinal pocket migrates dorsally and becomes the swim-bladder, a mainly hydrostatical organ (reference 1); Comparative transcriptome analyses indicate molecular homology of zebrafish swimbladder and Mammalian lung (reference 2).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000310", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0198566694 Schmidt-Rhaesa A, The evolution of organ systems (2007) p.210, DOI:10.1371/journal.pone.0024019 Zheng W, Wang Z, Collins JE, Andrews RM, Stemple D, Gong Z, Comparative transcriptome analyses indicate molecular homology of zebrafish swimbladder and Mammalian lung. PLoS One (2011)"}
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/701
 property_value: taxon_notes "respiration organ in all air-breathing animals, including most tetrapods, a few fish and a few snails. In mammals and the more complex life forms, the two lungs are located in the chest on either side of the heart. Their principal function is to transport oxygen from the atmosphere into the bloodstream, and to release carbon dioxide from the bloodstream into the atmosphere. This exchange of gases is accomplished in the mosaic of specialized cells that form millions of tiny, exceptionally thin-walled air sacs called alveoli. // Avian lungs do not have alveoli as mammalian lungs do, they have Faveolar lungs. They contain millions of tiny passages known as para-bronchi, connected at both ends by the dorsobronchi" xsd:string
 
 [Term]
@@ -9812,8 +9812,8 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/2/20/Dia
 relationship: develops_from UBERON:0009889 {source="http://www.ncbi.nlm.nih.gov/pubmed/17276708"} ! secondary heart field
 relationship: has_developmental_contribution_from UBERON:0004706 {source="cjm"} ! bulbus cordis
 property_value: external_definition "The muscular chamber on the right and in front of the left ventricle. It generally receives venous blood from the right atrium and conveys it into the pulmonary artery. [(1988)_Dorian_AF, Amsterdam, Dorian_AF, Elsevier's_encyclopaedic_dictionary_of_medicine, Part_B._Anatomy, Part_B:_Anatomy_(1988)_Amsterdam_etc.:_Elsevier, Part_B:_Anatomy_(1988)_Amsterdam_etc.:_Elsevier's_Encyclopaedic_Dictionary_of_Medicine][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000717", ontology="VHOG", source="http://bgee.unil.ch/"}
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 property_value: taxon_notes "In mammals continuous with the pulmonary arteries" xsd:string
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0002082
@@ -9896,8 +9896,8 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/2/20/Dia
 relationship: develops_from UBERON:0004140 {source="GO"} ! primary heart field
 property_value: external_definition "Thick-walled muscular chamber constituting the left border and apex of the heart. It receives oxygenated blood from the left atrium through the mitral orifice and send it off into the aorta. [Dorian_AF, Elsevier's_encyclopaedic_dictionary_of_medicine, Part_B:_Anatomy_(1988)_Amsterdam_etc.:_Elsevier][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000718", ontology="VHOG", source="http://bgee.unil.ch/"}
 property_value: homology_notes "The vertebrate heart initially forms as a tube from a population of precursor cells termed the first heart field (FHF). Cells from the adjacent second heart field (SHF) are then progressively added to the developing heart. In avian and mammalian hearts, the FHF contributes mainly to the left ventricle, whereas the SHF gives rise to the outflow tract and large portions of the right ventricle and atria. Both fields arise from common mesodermal progenitors, although the detailed lineage relationships between FHF and SHF remain uncertain.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000718", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1126/science.1190181 Stolfi A, Gainous TB, Young JJ, Mori A, Levine M, Christiaen L, Early chordate origins of the vertebrate second heart field. Science (2010)"}
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 property_value: taxon_notes "In mammals continuous with aorta" xsd:string
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0002090
@@ -10244,7 +10244,7 @@ is_a: UBERON:0015212 ! lateral structure
 intersection_of: UBERON:0000992 ! ovary
 intersection_of: in_right_side_of UBERON:0000468 ! multicellular organism
 relationship: in_right_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0002119
@@ -10263,8 +10263,8 @@ is_a: UBERON:0015212 ! lateral structure
 intersection_of: UBERON:0000992 ! ovary
 intersection_of: in_left_side_of UBERON:0000468 ! multicellular organism
 relationship: in_left_side_of UBERON:0000468 ! multicellular organism
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 property_value: taxon_notes "In some elasmobranchs, the left ovary does not mature, with only the right ovary fully developing. In the primitive jawless fish, and some teleosts, there is only one ovary, formed by the fusion of the paired organs in the embryo" xsd:string {source="In_other_animals"}
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0002120
@@ -10384,7 +10384,7 @@ intersection_of: in_right_side_of UBERON:0000170 ! pair of lungs
 relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/3/32/Gray972.png
 relationship: in_right_side_of UBERON:0000170 ! pair of lungs
 property_value: homology_notes "Lungs had already developed as paired ventral pockets from the intestine in the ancestor of Osteognathostomata.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000301", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0198566694 Schmidt-Rhaesa A, The evolution of organ systems (2007) p.210"}
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0002168
@@ -10411,7 +10411,7 @@ intersection_of: in_left_side_of UBERON:0000170 ! pair of lungs
 relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/d/dd/Gray973.png
 relationship: in_left_side_of UBERON:0000170 ! pair of lungs
 property_value: homology_notes "Lungs had already developed as paired ventral pockets from the intestine in the ancestor of Osteognathostomata.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000618", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0198566694 Schmidt-Rhaesa A, The evolution of organ systems (2007) p.210"}
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0002185
@@ -11044,13 +11044,13 @@ relationship: dorsal_to UBERON:0001555 ! digestive tract
 relationship: existence_starts_during UBERON:0000068 ! embryo stage
 relationship: part_of UBERON:0011137 ! axial skeletal system
 relationship: ventral_to UBERON:0001049 ! neural tube
+property_value: axiom_lost_from_external_ontology "relationship type change: differentiates_from mesoderm (AAO:0000304) CHANGED TO: develops_from mesoderm (UBERON:0000926)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000327", ontology="AAO"}
 property_value: development_notes "In between vertebra the notochord becomes the nucleus pulposus, under it degenerates, and at anterior end in some species its tissue merges with some of the cranial bones.. Some organisms retain a post-embryonic notochord." xsd:string
 property_value: external_definition "Avascular multi-tissue structure composed of large vacuolated epithelial cells (chordablasts) and perichordal fibrous tissue.[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000032", ontology="VSAO", source="PSPUB:0000170"}
 property_value: external_definition "Rod-like principal supportive element of the embryo and larva, present in the midline just ventral to the neural tube, and differentiating during the segmentation period to form large vacuolated epithelial cells and a surrounding a sheath of fibrous and elastic layers. Layering of the sheath may differ in structure, thickness and development among groups; in cypriniforms there are actually three very thin layers to the sheath. A functional, well developed notochord is present throughout life in certain basal fish groups but not in cypriniforms. Kimmel et al, 1995.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000135", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Slender rod of fibrous connective tissue surrounding a core of fluid-filled cells of mesodermal origin; it lies above the gut and directly beneath the spinal cord. The notochord is present during early development and in a few cases it is retained through life; however, usually the notochord is replaced by the vertebral column.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000327", ontology="AAO", source="AAO:LAP"}
 property_value: has_relational_adjective "notochordal" xsd:string
 property_value: homology_notes "(...) at some stage of its development, every chordate exhibits five uniquely derived characters or synapomorphies of the group: (...) (3) a stiff, longitudinal rod of turgid cells along the dorsal part of the body that is called a notochord (...).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000199", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.28"}
-property_value: UBPROP:0000002 "relationship type change: differentiates_from mesoderm (AAO:0000304) CHANGED TO: develops_from mesoderm (UBERON:0000926)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000327", ontology="AAO"}
 
 [Term]
 id: UBERON:0002329
@@ -11092,14 +11092,14 @@ is_a: UBERON:0005423 ! developing anatomical structure
 is_a: UBERON:0007503 {source="EHDAA2"} ! epithelial vesicle
 relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/6/64/Gray19_with_color.png
 relationship: develops_from UBERON:0003059 {source="ZFA"} ! presomitic mesoderm
+property_value: axiom_lost_from_external_ontology "relationship loss: develops_from paraxial mesenchyme (TAO:0000942)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000155", ontology="TAO"}
+property_value: axiom_lost_from_external_ontology "relationship type change: OBO_REL:part_of trunk (TAO:0001115) CHANGED TO: develops_from trunk (UBERON:0002100)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000155", ontology="TAO"}
+property_value: axiom_lost_from_external_ontology "relationship type change: part_of paraxial mesoderm (AAO:0010568) CHANGED TO: develops_from paraxial mesoderm (UBERON:0003077)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010569", ontology="AAO"}
 property_value: editor_note "currently classified as an epithelial vesicle, consistent with EHDAA2 and https://github.com/obophenotype/uberon/wiki/The-neural-crest. Consider making 'somitic mesoderm' a separate term and correlate with regionalization processes. Consider moving ZFA term to 'trunk somite' as it is part of the trunk" xsd:string
 property_value: external_definition "Post-cranial axial segments which form sclerotome and dermomyotome.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010569", ontology="AAO", source="AAO:EJS"}
 property_value: external_definition "Undifferentiated mesodermal components of early trunk or tail segments or metameres, derived from paraxial mesoderm; forms myotomes, sclerotomes and perhaps dermatomes. Kimmel et al, 1995.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000155", ontology="TAO", source="ZFIN:curator"}
 property_value: has_relational_adjective "somitic" xsd:string
 property_value: homology_notes "(...) cephalocordates and craniates belong to a group known as Somitichordata. Somitichordate synapomorphies include (1) somites (...) (reference 1); The idea that the last common ancestor of bilaterian animals (Urbilateria) was segmented has been raised recently on evidence coming from comparative molecular embryology (reference 2).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000191", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.40, DOI:10.1093/icb/43.1.137 Balavoine G, Adoutte A, The segmented urbilateria: a testable scenario. Integrative and Comparative Biology (2003)"}
-property_value: UBPROP:0000002 "relationship loss: develops_from paraxial mesenchyme (TAO:0000942)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000155", ontology="TAO"}
-property_value: UBPROP:0000002 "relationship type change: OBO_REL:part_of trunk (TAO:0001115) CHANGED TO: develops_from trunk (UBERON:0002100)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000155", ontology="TAO"}
-property_value: UBPROP:0000002 "relationship type change: part_of paraxial mesoderm (AAO:0010568) CHANGED TO: develops_from paraxial mesoderm (UBERON:0003077)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010569", ontology="AAO"}
 
 [Term]
 id: UBERON:0002330
@@ -11283,7 +11283,7 @@ is_a: UBERON:0000923 ! germ layer
 is_a: UBERON:0004121 ! ectoderm-derived structure
 property_value: has_relational_adjective "neurectodermal" xsd:string
 property_value: homology_notes "(...) the ability of ectoderm to produce neuronal cells is a general metazoan feature.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000150", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1046/j.1469-7580.2001.19910133.x Graham A. The development and evolution of the pharyngeal arches. J Anat (2001)"}
-property_value: UBPROP:0000013 "we prefer neurectoderm to neural ectoderm since placodal ectoderm is not classified here" xsd:string
+property_value: terminology_notes "we prefer neurectoderm to neural ectoderm since placodal ectoderm is not classified here" xsd:string
 
 [Term]
 id: UBERON:0002349
@@ -11707,11 +11707,11 @@ relationship: contributes_to_morphology_of UBERON:0001434 ! skeletal system
 relationship: dc-contributor https://github.com/cmungall
 relationship: dc-contributor https://github.com/mellybelly
 relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/e/ee/Hypertrophic_Zone_of_Epiphyseal_Plate.jpg
+property_value: axiom_lost_from_external_ontology "relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000060", ontology="AAO"}
 property_value: external_definition "A type of dense connective tissue. It is composed of cells called chondrocytes which are dispersed in a firm gel-like ground substance, called the matrix. Cartilage is avascular (contains no blood vessels) and nutrients are diffused through the matrix. Cartilage is found in the joints, the rib cage, the ear, the nose, in the throat and between intervertebral disks. It makes up virtually the entire skeleton in chondrichthyes.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000060", ontology="AAO", source="AAO:LAP"}
 property_value: external_definition "Portion of tissue which is connective tissue composed of collagen and/or elastin fibers and chondrocytes. Cartilage is avascular and provides both skeletal functions and a framework upon which bone is deposited.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0001501", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Skeletal tissue that is avascular, rich in glycosaminoglycans (GAGs) and typically includes chondrocytes within isolated lacunae. Cartilage tissue is deposited by chondroblasts.[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000040", ontology="VSAO", source="GO_REF:0000034, http://dx.plos.org/10.1371/journal.pone.0051070", source="PSPUB:0000170"}
 property_value: homology_notes "Phylogenetic analysis suggests that cartilage arose independently in cnidarians, hemichordates, vertebrates, arthropods, annelids, brachiopods, and molluscs - or a common ancestor of brachiopods and molluscs (...). Analyses of cartilage as a tissue and of the development of invertebrate cartilages are consistent with homology between invertebrate and vertebrate cartilage. From the discussion above, it will be clear that understanding genetic changes underlying cartilage evolution is key to determining whether the multiple origins of cartilage represent parallel evolution.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001207", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1111/j.1525-142X.2011.00520.x Hall BK, Parallelism, deep homology, and evo-devo. Evolution and Development (2012)"}
-property_value: UBPROP:0000002 "relationship loss: subclass specialized connective tissue (AAO:0000571)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000060", ontology="AAO"}
 
 [Term]
 id: UBERON:0002419
@@ -11829,7 +11829,7 @@ intersection_of: part_of UBERON:0001295 ! endometrium
 relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/2/28/Gray1169.png
 relationship: fma_set_term FMA:71647
 relationship: part_of UBERON:0012276 ! endometrium glandular epithelium
-property_value: UBPROP:0000010 "simple or branched tubular" xsd:string
+property_value: structure_notes "simple or branched tubular" xsd:string
 
 [Term]
 id: UBERON:0002458
@@ -12174,7 +12174,7 @@ relationship: part_of UBERON:0008814 ! pharyngeal arch system
 relationship: part_of UBERON:0008816 {source="http://www.ncbi.nlm.nih.gov/pubmed/16313389"} ! embryonic head
 property_value: external_definition "One of a series of bony or cartilaginous arches that develop in the walls of the mouth cavity and pharynx of the embryo.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010359", ontology="AAO", source="NLM:branchial+arch"}
 property_value: homology_notes "A conserved feature of all vertebrate embryos is the presence of a series of bulges on the lateral surface of the head, the pharyngeal arches; it is within these structures that the nerves, muscles and skeletal components of the pharyngeal apparatus are laid down.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000155", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1111/j.1469-7580.2005.00472.x Graham A, Okabe M and Quinlan R, The role of the endoderm in the development and evolution of the pharyngeal arches. J Anat (2005)"}
-property_value: UBPROP:0000013 "Numbered cranial to caudal. different in mammals. branchial arch = ZFA:0001613 pharyngeal arch 3-7. generally gill arch 1 = pharyngeal arch 3. terminology varies as to whether branchial arch follows gill or pharyngeal numbering" xsd:string
+property_value: terminology_notes "Numbered cranial to caudal. different in mammals. branchial arch = ZFA:0001613 pharyngeal arch 3-7. generally gill arch 1 = pharyngeal arch 3. terminology varies as to whether branchial arch follows gill or pharyngeal numbering" xsd:string
 
 [Term]
 id: UBERON:0002546
@@ -12196,7 +12196,7 @@ is_a: UBERON:0005085 {source="cjm"} ! ectodermal placode
 relationship: part_of UBERON:0000033 ! head
 property_value: editor_note "Do not merge with neurogenic placode" xsd:string
 property_value: taxon_notes "Comparisons of developmental gene expression suggest that the anterior ectoderm in amphioxus may be homologous to the vertebrate olfactory placode, the only vertebrate placode with primary, not secondary, neurons" xsd:string {source="http://www.ncbi.nlm.nih.gov/pubmed/11523831"}
-property_value: UBPROP:0000013 "The term placode or placodes also applies to developing organs such as teeth, mammary glands, hair follicles, feathers and scales. We include a separate parent class for this. to avoid confusion, we include neurogenic placode as a subclass" xsd:string
+property_value: terminology_notes "The term placode or placodes also applies to developing organs such as teeth, mammary glands, hair follicles, feathers and scales. We include a separate parent class for this. to avoid confusion, we include neurogenic placode as a subclass" xsd:string
 
 [Term]
 id: UBERON:0002553
@@ -12320,11 +12320,11 @@ is_a: UBERON:0000487 {source="EHDAA2"} ! simple squamous epithelium
 is_a: UBERON:0010371 ! ecto-epithelium
 relationship: develops_from UBERON:0007383 {source="ZFA"} ! enveloping layer of ectoderm
 relationship: part_of UBERON:0002199 {source="EHDAA2"} ! integument
+property_value: axiom_lost_from_external_ontology "relationship type change: OBO_REL:part_of ectoderm (TAO:0000016) CHANGED TO: develops_from ectoderm (UBERON:0000924)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0001185", ontology="TAO"}
 property_value: development_notes "In some mammals, Eyelid Fusion is thought to be driven by a population of cells which are derived from the periderm, the outermost layer of the developing epidermis" xsd:string
 property_value: development_notes "Originally the epidermis is one layer thick, in most vertebrates it soon becomes a two-layered structure. The outer layer gives rise to the periderm. The periderm goes through distinct developmental phases and is ultimately sloughed into the amniotic fluid when differentiation of the underlying epidermal layers is complete. The function of the periderm is not known, but is thought to be related to transport/exchange between the fetus and the amniotic fluid (http://courses.washington.edu/hubio567/devbio/periderm.html)" xsd:string
 property_value: external_definition "The outermost epidermal layer covering the fish at embryonic stages; derived from the EVL and thought to eventually be replaced by the superficial stratum of the epidermis. Sometimes used synonymously with EVL. Le Guellec et al, 2004.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0001185", ontology="TAO", source="ZFIN:curator"}
 property_value: taxon_notes "In mice, the first non-basal layer formed at ~E9.5; it is a temporary structure composed of simple squamous epithelium that serves as the first barrier to the embryo's physical environment, exists throughout the entire keratinocyte stratification process, and sheds off at ~E17, when it is replaced by corneocytes[MP]" xsd:string
-property_value: UBPROP:0000002 "relationship type change: OBO_REL:part_of ectoderm (TAO:0000016) CHANGED TO: develops_from ectoderm (UBERON:0000924)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0001185", ontology="TAO"}
 
 [Term]
 id: UBERON:0003056
@@ -12451,11 +12451,11 @@ xref: ZFA:0000094
 is_a: UBERON:0006598 ! presumptive structure
 relationship: develops_from UBERON:0003081 ! lateral plate mesoderm
 relationship: has_potential_to_develop_into UBERON:0002390 ! hematopoietic system
+property_value: axiom_lost_from_external_ontology "relationship loss: part_of intermediate cell mass of mesoderm (TAO:0000033)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000094", ontology="TAO"}
 property_value: external_definition "Nests of developing blood cells arising late in the segmentation period from the intermediate mass, and located in the anterior-ventral tail, just posterior to the yolk extension. Kimmel et al, 1995.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000094", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "Region located on the ventral surface of the developing embryo that is a site of hematopoiesis and that is analogous to the yolk sac blood islands of higher vertebrates.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0011006", ontology="AAO", source="AAO:EJS"}
 property_value: external_ontology_notes "EHDAA2 distinguishes 3 types, but does not have a superclass. The VHOG class may refer to yolk sac" xsd:string {external_ontology="EHDAA2"}
 property_value: homology_notes "Small clusters of mesodermal cells called blood islands mark the embryonic debut of the cardiovascular system (in vertebrates) (reference 1); In birds and mammals, primitive hemangioblasts are extraembryonic, populating the yolk sac as the so-called blood islands (reference 2).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000085", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.450, DOI:10.1146/annurev.cellbio.22.010605.093317 Hartenstein V, Blood cells and blood cell development in the animal kingdom. Annual Review of Cell and Developmental Biology (2006)"}
-property_value: UBPROP:0000002 "relationship loss: part_of intermediate cell mass of mesoderm (TAO:0000033)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000094", ontology="TAO"}
 
 [Term]
 id: UBERON:0003063
@@ -12854,10 +12854,10 @@ relationship: develops_from UBERON:0003081 {source="ZFA"} ! lateral plate mesode
 relationship: develops_from UBERON:0004140 ! primary heart field
 relationship: develops_from UBERON:0007005 {source="XAO"} ! cardiogenic splanchnic mesoderm
 relationship: part_of UBERON:0004535 {source="ZFA"} ! cardiovascular system
+property_value: axiom_lost_from_external_ontology "relationship loss: develops_from lateral mesoderm (TAO:0001065)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000028", ontology="TAO"}
 property_value: editor_note "should probably be merged with heart rudiment." xsd:string
 property_value: external_definition "Bilateral groups of cells consisting of three rows: one row of endocardial precursors medially and two rows of myocardical precursors laterally. The two populations fuse at the midline between 21 and 26 somites to form the heart rudiment or cone. Stainier 2001.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000028", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "The fused aspects of ventral mesoderm, which have migrated from either side of the prechordal plate, and fused ventrally, just behind the cement gland. They will give rise to the endocardium at NF stage 27&28.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0011044", ontology="AAO", source="XAO:curator"}
-property_value: UBPROP:0000002 "relationship loss: develops_from lateral mesoderm (TAO:0001065)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000028", ontology="TAO"}
 
 [Term]
 id: UBERON:0003089
@@ -13086,7 +13086,7 @@ xref: ZFA:0001609
 is_a: UBERON:0002539 ! pharyngeal arch
 property_value: external_definition "The forth in a series of paired bars in the wall of the pharynx, within which are formed the forth aortic arch and the cartilage bar of the visceral skeleton, forms and supports the gills.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010368", ontology="AAO", source="ISBN:0-02-377110-0"}
 property_value: homology_notes "A conserved feature of all vertebrate embryos is the presence of a series of bulges on the lateral surface of the head, the pharyngeal arches; it is within these structures that the nerves, muscles and skeletal components of the pharyngeal apparatus are laid down. The pharyngeal arches are separated by endodermal outpocketings, the pharyngeal pouches.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001205", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1111/j.1469-7580.2005.00472.x Graham A, Okabe M, Quinlan R, The role of the endoderm in the development and evolution of the pharyngeal arches. J Anat (2005)"}
-property_value: UBPROP:0000103 "6" xsd:nonNegativeInteger
+property_value: pharyngeal_arch_number "6" xsd:nonNegativeInteger
 
 [Term]
 id: UBERON:0003118
@@ -13240,7 +13240,7 @@ is_a: UBERON:0000075 {source="FMA-inferred"} ! subdivision of skeletal system
 relationship: part_of UBERON:0003129 ! skull
 property_value: external_ontology_notes "the inclusion of the FMA class here is probably not quite correct, as this class includes as parts sutures, whereas this is not part of the bones of the cranium" xsd:string {external_ontology="FMA"}
 property_value: has_relational_adjective "cranial" xsd:string
-property_value: UBPROP:0000013 "The term cranium can be ambiguous, in that it can refer to the neurocranium, or the neurocranium and the Facial skeleton" xsd:string {source="WP"}
+property_value: terminology_notes "The term cranium can be ambiguous, in that it can refer to the neurocranium, or the neurocranium and the Facial skeleton" xsd:string {source="WP"}
 
 [Term]
 id: UBERON:0003129
@@ -13275,7 +13275,7 @@ relationship: part_of UBERON:0010323 ! cranial skeletal system
 relationship: present_in_taxon NCBITaxon:7762
 property_value: external_ontology_notes "in FMA the skull is divided into orbit, neurocranium (8 parts), viscerocranium (26 parts). Here we have a separate overlapping division into cranium and mandible." xsd:string {external_ontology="FMA"}
 property_value: external_ontology_notes "in many ontologies, the structure called the cranium is inclusive of the mandible/lower jaw skeleton" xsd:string
-property_value: UBPROP:0000013 "A skull that is missing a mandible is only a cranium; this is the source of a very commonly made error in terminology. Those animals having skulls are called craniates" xsd:string {source="WP"}
+property_value: terminology_notes "A skull that is missing a mandible is only a cranium; this is the source of a very commonly made error in terminology. Those animals having skulls are called craniates" xsd:string {source="WP"}
 
 [Term]
 id: UBERON:0003133
@@ -16350,7 +16350,7 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/4/46/Gra
 relationship: part_of UBERON:0002080 ! heart right ventricle
 property_value: external_definition "Receives blood from the left atrium and becomes the median truncus arteriosus.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010250", ontology="AAO", source="AAO:BJB"}
 property_value: taxon_notes "Kardong says absent in adult tetrapods, check AAO" xsd:string
-property_value: UBPROP:0000013 "we use the term CA for the anterior chamber if it is composed of cardiac muscle, contractile, and contains conal valves internally" xsd:string {source="ISBN:0073040584"}
+property_value: terminology_notes "we use the term CA for the anterior chamber if it is composed of cardiac muscle, contractile, and contains conal valves internally" xsd:string {source="ISBN:0073040584"}
 
 [Term]
 id: UBERON:0003984
@@ -16412,7 +16412,7 @@ xref: XAO:0000220
 is_a: UBERON:0017650 {source="AEO"} ! developing mesenchymal structure
 relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/f/f3/Gray64.png
 relationship: develops_from UBERON:0004290 {source="EHDAA2-abduced"} ! dermomyotome
-property_value: UBPROP:0000013 "Not to be confused with 'dermatome segment of skin'." xsd:string
+property_value: terminology_notes "Not to be confused with 'dermatome segment of skin'." xsd:string
 
 [Term]
 id: UBERON:0004022
@@ -16654,11 +16654,11 @@ intersection_of: has_part UBERON:0001008 ! renal system
 relationship: existence_ends_during UBERON:0000066 ! fully formed stage
 relationship: has_part UBERON:0000990 ! reproductive system
 relationship: has_part UBERON:0001008 ! renal system
+property_value: axiom_lost_from_external_ontology "relationship type change: differentiates_from intermediate mesoderm (AAO:0010575) CHANGED TO: develops_from intermediate mesoderm (UBERON:0003064)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000624", ontology="AAO"}
 property_value: external_definition "Anatomical system that has as its parts the organs concerned with the production and excretion of urine and those concerned with reproduction.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000624", ontology="AAO", source="AAO:EJS"}
 property_value: has_relational_adjective "genitourinary" xsd:string
 property_value: has_relational_adjective "urogenital" xsd:string
 property_value: homology_notes "Kidneys and gonads (of vertebrates) develop from adjacent tissues, and after the excretory or urinary ducts have developed, the reproductive system usually taps into them or their derivatives.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000286", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.633"}
-property_value: UBPROP:0000002 "relationship type change: differentiates_from intermediate mesoderm (AAO:0010575) CHANGED TO: develops_from intermediate mesoderm (UBERON:0003064)[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000624", ontology="AAO"}
 
 [Term]
 id: UBERON:0004128
@@ -17395,7 +17395,7 @@ is_a: UBERON:0005174 ! dorsal region element
 intersection_of: UBERON:0001474 ! bone element
 intersection_of: part_of UBERON:0001137 ! dorsum
 property_value: curator_notes "this class may be obsoleted. See: https://github.com/obophenotype/mouse-anatomy-ontology/issues/93" xsd:string
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Skeleton-partonomy-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Skeleton-partonomy-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0004253
@@ -17637,12 +17637,12 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/5/56/Lim
 relationship: developmentally_induced_by UBERON:0003104 ! mesenchyme
 relationship: part_of UBERON:0000924 ! ectoderm
 relationship: part_of UBERON:0004357 ! paired limb/fin bud
+property_value: axiom_lost_from_external_ontology "relationship loss: subclass proliferative region (TAO:0000098)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002146", ontology="TAO"}
 property_value: curator_notes "note that media, dorsal fins etc have AERs." xsd:string
 property_value: external_definition "Distal ectodermal thickening which forms along the anterior-posterior limb axis. Signaling from this region influences proximal-distal patterning of the limb. Structure is missing in some lineages (salamanders, Eleutherodactylus coqui) however morphologically their indistinct distal ectoderm may still be involved in signaling.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010760", ontology="AAO", source="AAO:EJS"}
 property_value: external_definition "Proliferative region that is part of the developing fin fold or fin.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002146", ontology="TAO", source="ZFIN:curator"}
 property_value: function_notes "maintaining mesenchyme in plastic proliferating state; maintaining expression of A-P axis genes; interacting with D-V proteins. Genes: AER induced by Fgf10 in mesenchyme. AER secretes Fgf8, which stimulates mitosis in the mesenchyme causing Fgf10 production - positive feedback loop" xsd:string
 property_value: taxon_notes "The AER of tetrapods regresses after specification of skeletal progenitors, the AER of teleosts form an elongating fin fold" xsd:string {source="http://www.ncbi.nlm.nih.gov/pubmed/20574421"}
-property_value: UBPROP:0000002 "relationship loss: subclass proliferative region (TAO:0000098)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0002146", ontology="TAO"}
 
 [Term]
 id: UBERON:0004357
@@ -17701,7 +17701,7 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/2/2d/Gra
 property_value: external_definition "the first arch which contributes to development of mastication muscles, maxilla, mandible, incus, malleus, Meckel's cartilage, trigeminal nerve, and maxillary artery" xsd:string {source="MP:0006337,MGI:smb"}
 property_value: external_definition "The first of the series of bony or cartilaginous arches that develop in the walls of the mouth cavity and pharynx of the embryo.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010364", ontology="AAO", source="XAO:EJS"}
 property_value: homology_notes "A conserved feature of all vertebrate embryos is the presence of a series of bulges on the lateral surface of the head, the pharyngeal arches; it is within these structures that the nerves, muscles and skeletal components of the pharyngeal apparatus are laid down. The pharyngeal arches are separated by endodermal outpocketings, the pharyngeal pouches.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000296", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1111/j.1469-7580.2005.00472.x Graham A, Okabe M and Quinlan R, The role of the endoderm in the development and evolution of the pharyngeal arches. J Anat (2005)"}
-property_value: UBPROP:0000103 "1" xsd:nonNegativeInteger
+property_value: pharyngeal_arch_number "1" xsd:nonNegativeInteger
 
 [Term]
 id: UBERON:0004363
@@ -17796,8 +17796,8 @@ relationship: dc-contributor https://github.com/cmungall
 relationship: dc-contributor https://github.com/gkoutos
 relationship: part_of UBERON:0000964 ! cornea
 relationship: produced_by UBERON:0001985 {source="Cline et al"} ! corneal endothelium
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/15
 property_value: external_definition "Acellular anatomical structure composed of collagen, Descemet's membrane is secreted as a basement membrane of the corneal endothelium. Located between the stroma and the corneal endothelium, it is approximately 0.15 micrometer thick at 6 months post-fertilization.[ZFIN]" xsd:string {date_retrieved="2016-05-01", external_class="TAO:0002157", ontology="ZFIN", source="ORCiD:0000-0001-9114-8737", source="ZFIN:ZDB-PUB-061010-3"}
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/15
 
 [Term]
 id: UBERON:0004370
@@ -17902,8 +17902,8 @@ relationship: attaches_to UBERON:0003129 ! skull
 relationship: develops_from UBERON:0005253 ! head mesenchyme
 relationship: part_of UBERON:0000033 ! head
 relationship: part_of UBERON:0013700 ! axial musculature
-property_value: seeAlso https://github.com/obophenotype/mouse-anatomy-ontology/issues/4
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/1405
+relationship: seeAlso https://github.com/obophenotype/mouse-anatomy-ontology/issues/4
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/1405
 
 [Term]
 id: UBERON:0004464
@@ -18183,7 +18183,7 @@ is_a: UBERON:0002113 ! kidney
 intersection_of: UBERON:0002113 ! kidney
 intersection_of: in_left_side_of UBERON:0000468 ! multicellular organism
 relationship: in_left_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0004539
@@ -18202,7 +18202,7 @@ is_a: UBERON:0002113 ! kidney
 intersection_of: UBERON:0002113 ! kidney
 intersection_of: in_right_side_of UBERON:0000468 ! multicellular organism
 relationship: in_right_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0004548
@@ -18223,7 +18223,7 @@ is_a: UBERON:0015212 ! lateral structure
 intersection_of: UBERON:0000970 ! eye
 intersection_of: in_left_side_of UBERON:0000468 ! multicellular organism
 relationship: in_left_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0004549
@@ -18244,7 +18244,7 @@ is_a: UBERON:0015212 ! lateral structure
 intersection_of: UBERON:0000970 ! eye
 intersection_of: in_right_side_of UBERON:0000468 ! multicellular organism
 relationship: in_right_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0004571
@@ -19121,7 +19121,7 @@ intersection_of: UBERON:0000483 ! epithelium
 intersection_of: part_of UBERON:0000002 ! uterine cervix
 relationship: contributes_to_morphology_of UBERON:0000002 ! uterine cervix
 relationship: part_of UBERON:0000002 ! uterine cervix
-property_value: UBPROP:0000010 "The epithelium of the cervix is varied. The ectocervix (more distal, by the vagina) is composed of nonkeratinized stratified squamous epithelium. The endocervix (more proximal, within the uterus) is composed of simple columnar epithelium" xsd:string {source="Histology"}
+property_value: structure_notes "The epithelium of the cervix is varied. The ectocervix (more distal, by the vagina) is composed of nonkeratinized stratified squamous epithelium. The endocervix (more proximal, within the uterus) is composed of simple columnar epithelium" xsd:string {source="Histology"}
 
 [Term]
 id: UBERON:0004802
@@ -19504,7 +19504,7 @@ relationship: develops_from UBERON:0003064 {source="Wikipedia"} ! intermediate m
 relationship: develops_from UBERON:0012292 {source="EHDAA2"} ! embryonic cloacal fold
 relationship: has_potential_to_develop_into UBERON:0004176 ! external genitalia
 relationship: part_of UBERON:0009196 {source="EHDAA2"} ! indifferent external genitalia
-property_value: UBPROP:0000013 "Less commonly, urogenital fold refers to the fold in the mesonephros which is the precursor of e.g. the suspensory ligament of the ovary. This is the case in older versions of Gray's anatomy[WP]" xsd:string
+property_value: terminology_notes "Less commonly, urogenital fold refers to the fold in the mesonephros which is the precursor of e.g. the suspensory ligament of the ovary. This is the case in older versions of Gray's anatomy[WP]" xsd:string
 
 [Term]
 id: UBERON:0004880
@@ -20556,7 +20556,7 @@ relationship: contributes_to_morphology_of UBERON:0002113 ! kidney
 relationship: part_of UBERON:0002113 ! kidney
 property_value: editor_note "See https://sourceforge.net/p/geneontology/ontology-requests/10941/" xsd:string
 property_value: function_notes "The interstitium is necessarily involved in all intrarenal exchange processes since the reabsorption and secretion of fluid and solutes implicates a transit across the interstitial compartment." xsd:string
-property_value: UBPROP:0000010 "The fibroblasts in the interstitium provide the 'skeleton' of the tissue and maintain the three-dimensional architecture of the tissue." xsd:string
+property_value: structure_notes "The fibroblasts in the interstitium provide the 'skeleton' of the tissue and maintain the three-dimensional architecture of the tissue." xsd:string
 
 [Term]
 id: UBERON:0005216
@@ -20719,7 +20719,7 @@ relationship: dubious_for_taxon NCBITaxon:7955
 relationship: immediate_transformation_of UBERON:0010096 {evidence="definitional"} ! future myelencephalon
 property_value: external_definition "The posterior of the two brain vesicles formed by specialization of the rhombencephalon in the developing embryo, it comprises the medulla oblongata. [TFD][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000456", ontology="VHOG", source="http://bgee.unil.ch/", source="http://medical-dictionary.thefreedictionary.com/myelencephalon"}
 property_value: homology_notes "The early development of most vertebrate brains is similar (...). The zebrafish neural tube follows the same basic differentiation pattern as the mammalian neural tube (reference 1); The brain develops from three embryonic enlargements of the neural tube, which later differentiate into five regions. A forebrain differentiates into telencephalon and diencephalon. The midbrain, or mesencephalon, remains undivided. The hindbrain divides into the metencephalon and myelencephalon. Cavities within the brain enlarge to form a series of interconnected ventricles (reference 2).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000456", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0878932504 Gilbert SF, Developmental Biology (2006) p.381-382, ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.500"}
-property_value: UBPROP:0000013 "the terms metencephalon and myelencephalon are only meaningful in mammals and birds - Neuroanatomy of the Zebrafish Brain. Note that its not clear if this refers to the developing medulla oblongata - MA (adult) has two distinct classes" xsd:string
+property_value: terminology_notes "the terms metencephalon and myelencephalon are only meaningful in mammals and birds - Neuroanatomy of the Zebrafish Brain. Note that its not clear if this refers to the developing medulla oblongata - MA (adult) has two distinct classes" xsd:string
 
 [Term]
 id: UBERON:0005291
@@ -21388,7 +21388,7 @@ intersection_of: adjacent_to UBERON:0001804 ! capsule of lens
 intersection_of: part_of UBERON:0000965 ! lens of camera-type eye
 relationship: adjacent_to UBERON:0000389 ! lens cortex
 relationship: adjacent_to UBERON:0001804 ! capsule of lens
-property_value: UBPROP:0000010 "Cells of the subcapsular epithelium (or anterior lens cells) are mitotically active. In adult individuals they only cover the anterior 'hemisphere' of the lens. As they divide, cells gradually move towards the equator of the lens where they tranform into lens fibres. The apical part of the gradually elongating cell extends between the subcapsular epithelium and adjacent lens fibres towards the anterior pole of the lens. The basal part extends towards the posterior pole. The nucleus remains close to the equatorial plane of the lens - http://www.lab.anhb.uwa.edu.au/mb140/corepages/eye/eye.htm" xsd:string
+property_value: structure_notes "Cells of the subcapsular epithelium (or anterior lens cells) are mitotically active. In adult individuals they only cover the anterior 'hemisphere' of the lens. As they divide, cells gradually move towards the equator of the lens where they tranform into lens fibres. The apical part of the gradually elongating cell extends between the subcapsular epithelium and adjacent lens fibres towards the anterior pole of the lens. The basal part extends towards the posterior pole. The nucleus remains close to the equatorial plane of the lens - http://www.lab.anhb.uwa.edu.au/mb140/corepages/eye/eye.htm" xsd:string
 
 [Term]
 id: UBERON:0005616
@@ -21831,11 +21831,11 @@ relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/f/fb/Gra
 relationship: develops_from UBERON:0001917 ! endothelium of artery
 relationship: develops_from UBERON:0003064 ! intermediate mesoderm
 relationship: part_of UBERON:0002201 ! vasculature of trunk
+property_value: axiom_lost_from_external_ontology "relationship loss: part_of axial vasculature (TAO:0001073)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000014", ontology="TAO"}
 property_value: external_definition "Each primitive aorta receives anteriorly a vein 'the vitelline vein' from the yolk-sac, and is prolonged backward on the lateral aspect of the notochord under the name of the dorsal aorta. The dorsal aortae give branches to the yolk-sac, and are continued backward through the body-stalk as the umbilical arteries to the villi of the chorion. The two dorsal aortae combine to become the descending aorta in later development[WP]." xsd:string {source="Dorsal:aorta"}
 property_value: external_definition "Principal unpaired, median artery of the trunk, leading from the paired roots (radices) of the dorsal aorta to the caudal artery. Kimmel et al, 1995.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000014", ontology="TAO", source="ZFIN:curator"}
 property_value: external_definition "The artery in vertebrate embryos that transports blood from the aortic arches to the trunk and limbs. In adult fish it is a major artery that carries oxygenated blood from the efferent branchial arteries to branches that supply the body organ. In adult tetrapods it arises from the systemic arch" xsd:string {source="BTO:0004673"}
 property_value: homology_notes "When vertebrates first appeared, they must have possessed a ventral and dorsal aorta with aortic arches between them.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000264", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.620"}
-property_value: UBPROP:0000002 "relationship loss: part_of axial vasculature (TAO:0001073)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000014", ontology="TAO"}
 
 [Term]
 id: UBERON:0005856
@@ -23859,6 +23859,23 @@ relationship: develops_from UBERON:0007383 ! enveloping layer of ectoderm
 property_value: editor_note "this grouping class exists primarily to align with GO - see GO:0008544." xsd:string
 
 [Term]
+id: UBERON:0007377
+name: stratum compactum of dermis
+namespace: uberon
+def: "Portion of the dermis characterized by a well-arranged, plywood-like, collagenous network." [ISBN:0073040584, ZFIN:ZDB-PUB-040726-12]
+synonym: "dermal deep region" EXACT [ZFA:0001182]
+synonym: "stratum compactum" EXACT [AAO:0010600]
+xref: AAO:0010600
+xref: TAO:0001182
+xref: ZFA:0001182
+is_a: UBERON:0004121 ! ectoderm-derived structure
+is_a: UBERON:0013754 ! integumentary system layer
+relationship: part_of UBERON:0002067 ! dermis
+property_value: axiom_lost_from_external_ontology "relationship loss: develops_from collagenous dermal stroma (TAO:0001186)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0001182", ontology="TAO"}
+property_value: external_definition "Portion of the dermis characterized by a well-arranged, plywood-like, collagenous network. Le Guellec et al, 2004.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0001182", ontology="TAO", source="ZFIN:curator"}
+property_value: structure_notes "connective tissue in the skin is usually diffuse and irregular, although in some species collagen bundles are arranged in a distinct ordered layer in the dermis" xsd:string
+
+[Term]
 id: UBERON:0007383
 name: enveloping layer of ectoderm
 namespace: uberon
@@ -23874,9 +23891,9 @@ is_a: UBERON:0005291 ! embryonic tissue
 is_a: UBERON:0010371 ! ecto-epithelium
 relationship: bounding_layer_of UBERON:0000922 ! embryo
 relationship: develops_from UBERON:0000076 ! external ectoderm
+property_value: axiom_lost_from_external_ontology "relationship loss: develops_from superficial blastomere (TAO:0001484)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000086", ontology="TAO"}
 property_value: external_definition "Outermost monolayer of cells surrounding the embryo that become very flattened in the blastula and give rise to the periderm. Sometimes used synonymously with periderm. Kimmel et al, 1995.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000086", ontology="TAO", source="ZFIN:curator"}
 property_value: taxon_notes "Originally this tissue is one cell layer thick but in most vertebrates it soon becomes a two layered structure. The outer layer gives rise to the periderm." xsd:string
-property_value: UBPROP:0000002 "relationship loss: develops_from superficial blastomere (TAO:0001484)[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000086", ontology="TAO"}
 
 [Term]
 id: UBERON:0007389
@@ -24189,7 +24206,7 @@ relationship: develops_from UBERON:0001969 ! blood plasma
 relationship: filtered_through UBERON:0001982 ! capillary
 relationship: transformation_of UBERON:0001969 ! blood plasma
 property_value: has_relational_adjective "transudative" xsd:string
-property_value: UBPROP:0000010 "characteristically low in protein and cellular content (unless there has been secondary concentration)" xsd:string
+property_value: structure_notes "characteristically low in protein and cellular content (unless there has been secondary concentration)" xsd:string
 
 [Term]
 id: UBERON:0007794
@@ -24622,8 +24639,8 @@ intersection_of: UBERON:0000955 ! brain
 intersection_of: develops_from UBERON:0001049 ! neural tube
 relationship: develops_from UBERON:0001049 ! neural tube
 relationship: part_of UBERON:0000033 {source="FMA"} ! head
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/338
 property_value: editor_note "a reasoner should automatically classify all the vertebrate ontology brain classes here" xsd:string
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/338
 
 [Term]
 id: UBERON:0008886
@@ -25606,7 +25623,7 @@ is_a: UBERON:0000468 ! multicellular organism
 intersection_of: UBERON:0000468 ! multicellular organism
 intersection_of: existence_starts_with UBERON:0000092 ! post-embryonic stage
 relationship: existence_starts_with UBERON:0000092 ! post-embryonic stage
-property_value: seeAlso https://github.com/obophenotype/uberon/issues/667
+relationship: seeAlso https://github.com/obophenotype/uberon/issues/667
 
 [Term]
 id: UBERON:0009958
@@ -26520,9 +26537,9 @@ is_a: UBERON:0000475 ! organism subdivision
 is_a: UBERON:0015212 ! lateral structure
 relationship: in_lateral_side_of UBERON:0000468 ! multicellular organism
 property_value: editor_note "It is still called a complex when one of the two parts is missing (?) There are fossil fishes with only an outgrowth (no record of a girdle), including thelodonts (which have a suprabranchial fin) as well as some anaspids which have a distinctive 'paired fin' (with differing published assertions on whether it's homologous to a pec fin or pelvic fin or both or neither). There are many fishes and other vertebrates with only a girdle and no outgrowth.[VSAO]" xsd:string
+property_value: external_comment "It is still called a complex when one of the two parts is missing (?) There are fossil fishes with only an outgrowth (no record of a girdle), including thelodonts (which have a suprabranchial fin) as well as some anaspids which have a distinctive 'paired fin' (with differing published assertions on whether it's homologous to a pec fin or pelvic fin or both or neither). There are many fishes and other vertebrates with only a girdle and no outgrowth.[VSAO]" xsd:string {date_retrieved="2012-09-06", external_class="VSAO:0000214", ontology="VSAO", source="Curator"}
 property_value: external_definition "Anatomical group that consists of the soft and skeletal tissues of the appendicular region of the body and the appendage proper.[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000214", ontology="VSAO", source="GO_REF:0000034, http://dx.plos.org/10.1371/journal.pone.0051070"}
 property_value: external_ontology_notes "note that the FMA uses the term 'limb' to refer to the entire appendage complex (free limb plus girdle region)" xsd:string {external_ontology="FMA"}
-property_value: UBPROP:0000005 "It is still called a complex when one of the two parts is missing (?) There are fossil fishes with only an outgrowth (no record of a girdle), including thelodonts (which have a suprabranchial fin) as well as some anaspids which have a distinctive 'paired fin' (with differing published assertions on whether it's homologous to a pec fin or pelvic fin or both or neither). There are many fishes and other vertebrates with only a girdle and no outgrowth.[VSAO]" xsd:string {date_retrieved="2012-09-06", external_class="VSAO:0000214", ontology="VSAO", source="Curator"}
 created_by: haendel
 creation_date: 2012-04-23T10:46:51Z
 
@@ -26589,9 +26606,9 @@ relationship: part_of UBERON:0002091 ! appendicular skeleton
 relationship: part_of UBERON:0007823 ! appendage girdle region
 relationship: proximally_connected_to UBERON:0002090 ! postcranial axial skeleton
 relationship: skeleton_of UBERON:0007823 ! appendage girdle region
+property_value: axiom_lost_from_external_ontology "relationship type change: subclass skeletal subdivision (VSAO:0000042) CHANGED TO: part_of subdivision of skeleton (UBERON:0010912)[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000302", ontology="VSAO"}
+property_value: axiom_lost_from_external_ontology "relationship type change: subclass skeletal subdivision (VSAO:0000042) CHANGED TO: proximally_connected_to subdivision of skeleton (UBERON:0010912)[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000302", ontology="VSAO"}
 property_value: external_definition "Skeletal subdivision that is part of the appendage girdle region.[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000302", ontology="VSAO", source="GO_REF:0000034, http://dx.plos.org/10.1371/journal.pone.0051070"}
-property_value: UBPROP:0000002 "relationship type change: subclass skeletal subdivision (VSAO:0000042) CHANGED TO: part_of subdivision of skeleton (UBERON:0010912)[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000302", ontology="VSAO"}
-property_value: UBPROP:0000002 "relationship type change: subclass skeletal subdivision (VSAO:0000042) CHANGED TO: proximally_connected_to subdivision of skeleton (UBERON:0010912)[VSAO]" xsd:string {date_retrieved="2012-08-14", external_class="VSAO:0000302", ontology="VSAO"}
 
 [Term]
 id: UBERON:0010740
@@ -26713,7 +26730,7 @@ intersection_of: UBERON:0001271 ! pelvic girdle region
 intersection_of: in_right_side_of UBERON:0000468 ! multicellular organism
 relationship: has_skeleton UBERON:0011090 ! skeleton of right pelvic girdle
 relationship: in_right_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0011093
@@ -26727,7 +26744,7 @@ intersection_of: UBERON:0001271 ! pelvic girdle region
 intersection_of: in_left_side_of UBERON:0000468 ! multicellular organism
 relationship: has_skeleton UBERON:0011091 ! skeleton of left pelvic girdle
 relationship: in_left_side_of UBERON:0000468 ! multicellular organism
-property_value: UBPROP:0000006 https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
 
 [Term]
 id: UBERON:0011107
@@ -27237,8 +27254,8 @@ xref: MESH:D024022
 xref: NCIT:C32339
 xref: NIF_Subcellular:sao7547390221
 is_a: UBERON:0000476 {source="ZFA"} ! acellular anatomical structure
+relationship: seeAlso UBERON:0007377 ! stratum compactum of dermis
 property_value: external_ontology_notes "the FMA class specifically refers to ureter" xsd:string {external_ontology="FMA"}
-property_value: seeAlso UBERON:0007377
 
 [Term]
 id: UBERON:0011861
@@ -27537,7 +27554,7 @@ is_a: UBERON:0004801 ! cervix epithelium
 is_a: UBERON:0006799 ! glandular epithelium
 intersection_of: UBERON:0006799 ! glandular epithelium
 intersection_of: part_of UBERON:0000002 ! uterine cervix
-property_value: UBPROP:0000010 "The 'glandular' or columnar epithelium of the cervix is located cephalad to the squamocolumnar junction. It covers a variable amount of the ectocervix and lines the endocervical canal. It is comprised of a single layer of mucin-secreting cells. The epithelium is thrown into longitudinal folds and invaginations that make up the so-called endocervical glands (they are not true glands). These infolding crypts and channels make the cytologic and colposcopic detection of neoplasia less reliable and more problematic. The complex architecture of the endocervical glands gives the columnar epithelium a papillary appearance through the colposcope and a grainy appearance upon gross visual inspection. The single cell layer allows the coloration of the underlying vasculature to be seen more easily. Therefore, the columnar epithelium appears more red in comparison with the more opaque squamous epithelium." xsd:string {source="http://www.asccp.org/practicemanagement/cervix/histologyofthenormalcervix/tabid/5842/default.aspx"}
+property_value: structure_notes "The 'glandular' or columnar epithelium of the cervix is located cephalad to the squamocolumnar junction. It covers a variable amount of the ectocervix and lines the endocervical canal. It is comprised of a single layer of mucin-secreting cells. The epithelium is thrown into longitudinal folds and invaginations that make up the so-called endocervical glands (they are not true glands). These infolding crypts and channels make the cytologic and colposcopic detection of neoplasia less reliable and more problematic. The complex architecture of the endocervical glands gives the columnar epithelium a papillary appearance through the colposcope and a grainy appearance upon gross visual inspection. The single cell layer allows the coloration of the underlying vasculature to be seen more easily. Therefore, the columnar epithelium appears more red in comparison with the more opaque squamous epithelium." xsd:string {source="http://www.asccp.org/practicemanagement/cervix/histologyofthenormalcervix/tabid/5842/default.aspx"}
 
 [Term]
 id: UBERON:0012251
@@ -30540,6 +30557,15 @@ xref: RO:0002177
 equivalent_to_chain: attaches_to part_of ! part of
 
 [Typedef]
+id: axiom_lost_from_external_ontology
+name: axiom_lost_from_external_ontology
+namespace: uberon
+def: "A textual description of an axiom loss in this ontology compared to an external ontology." [https://orcid.org/0000-0002-6601-2165]
+comment: This annotation property may be replaced with an annotation property from an external ontology such as IAO
+xref: UBPROP:0000002
+is_metadata_tag: true
+
+[Typedef]
 id: bearer_of
 name: bearer of
 namespace: uberon
@@ -30957,6 +30983,15 @@ range: UBERON:0000105 ! life cycle stage
 is_a: existence_starts_during ! existence starts during
 
 [Typedef]
+id: external_comment
+name: external_comment
+namespace: uberon
+def: "An alternate comment for a class taken unmodified from an external source. Note that obo format only allows a single comment for a class, and does not provide a structured means of adding provenance info." [https://orcid.org/0000-0002-6601-2165]
+comment: This annotation property may be replaced with an annotation property from an external ontology such as IAO
+xref: UBPROP:0000005
+is_metadata_tag: true
+
+[Typedef]
 id: external_definition
 name: external_definition
 namespace: uberon
@@ -31194,6 +31229,13 @@ property_value: seeAlso SIO:000251
 is_a: preceded_by ! preceded_by
 
 [Typedef]
+id: implements_design_pattern
+name: implements_design_pattern
+namespace: uberon
+xref: UBPROP:0000006
+is_metadata_tag: true
+
+[Typedef]
 id: in_anterior_side_of
 name: in_anterior_side_of
 namespace: uberon
@@ -31396,6 +31438,17 @@ holds_over_chain: part_of capable_of
 is_a: functionally_related_to ! functionally related to
 
 [Typedef]
+id: pharyngeal_arch_number
+name: pharyngeal arch number
+namespace: uberon
+def: "x pharyngeal_arch_number N if and only if (i) x is a pharyngeal arch, and (ii) x is ancestrally pharyngeal arch number N in a series of pharyngeal arches repeated along a antero-posterior axis, with arch_number 1 being the mandibular arch." [https://orcid.org/0000-0002-6601-2165]
+xref: UBPROP:0000103
+property_value: terminology_notes "gill arch N = PA N-2. the term branchial_arch is ambiguous." xsd:string
+property_value: UBPROP:0000100 UBERON:0002539
+property_value: UBPROP:0000101 BSPO:0000096
+is_metadata_tag: true
+
+[Typedef]
 id: posterior_to
 name: posterior_to
 namespace: uberon
@@ -31481,6 +31534,13 @@ xref: BSPO:0001106
 is_a: in_proximal_side_of ! in_proximal_side_of
 
 [Typedef]
+id: seeAlso
+name: see also
+namespace: uberon
+xref: seeAlso
+is_metadata_tag: true
+
+[Typedef]
 id: simultaneous_with
 name: simultaneous_with
 namespace: uberon
@@ -31514,6 +31574,15 @@ namespace: uberon
 xref: RO:0002224
 is_transitive: true
 is_a: has_part ! has part
+
+[Typedef]
+id: structure_notes
+name: structure_notes
+namespace: uberon
+def: "Notes on the structure, composition or histology of instances of this class." [https://orcid.org/0000-0002-6601-2165]
+xref: UBPROP:0000010
+property_value: editor_note "This annotation property may be replaced with an annotation property from an external ontology such as IAO" xsd:string
+is_metadata_tag: true
 
 [Typedef]
 id: subdivision_of
@@ -31561,6 +31630,15 @@ name: taxon_notes
 namespace: uberon
 def: "Notes on the how instances of this class vary across species." [https://orcid.org/0000-0002-6601-2165]
 xref: UBPROP:0000008
+is_metadata_tag: true
+
+[Typedef]
+id: terminology_notes
+name: terminology_notes
+namespace: uberon
+def: "Notes on how lexical conventions regarding this class, in particular any issues that may arise due to homonyny or synonymy." [https://orcid.org/0000-0002-6601-2165]
+xref: UBPROP:0000013
+property_value: editor_note "This annotation property may be replaced with an annotation property from an external ontology such as IAO" xsd:string
 is_metadata_tag: true
 
 [Typedef]

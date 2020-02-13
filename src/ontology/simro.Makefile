@@ -11,13 +11,13 @@
 
 ## ONTOLOGY: clo
 ## Copy of clo is re-downloaded whenever source changes
-#mirror/clo.trigger: $(SRC)
+mirror/clo.trigger: $(SRC)
 
-#mirror/clo.owl: mirror/clo.trigger
-#	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/srobb1/simr_imports/master/clo_import.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-#	$(ROBOT) remove --input $@ -t CLO:0000015 -t OBI:0000293 --preserve-structure false --output $@.tmp.owl && mv $@.tmp.owl $@
+mirror/clo.owl: mirror/clo.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/srobb1/simr_imports/master/clo_import.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+	$(ROBOT) remove --input $@ -t CLO:0000015 -t OBI:0000293 --preserve-structure false --output $@.tmp.owl && mv $@.tmp.owl $@
 
-#.PRECIOUS: mirror/%.owl
+.PRECIOUS: mirror/%.owl
 
 ## ONTOLOGY: cl
 ## Copy of cl is re-downloaded whenever source changes

@@ -3240,6 +3240,14 @@ property_value: IAO:0000111 "epithelium" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]
+id: UBERON:0000947
+name: aorta
+def: "The main trunk of the systemic arterial system that carries blood from the heart to all the organs and other structures of the body, bringing oxygenated blood to all parts of the body in the systemic circulation" []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "aorta" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
 id: UBERON:0000948
 name: heart
 def: "A myogenic muscular circulatory organ found in the vertebrate cardiovascular system composed of chambers of cardiac muscle. It is the primary circulatory organ." []
@@ -3256,6 +3264,14 @@ property_value: IAO:0000111 "brain" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]
+id: UBERON:0000992
+name: ovary
+def: "the gonad of a female organism which contains germ cells" []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "ovary" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
 id: UBERON:0000995
 name: uterus
 def: "the female muscular organ of gestation in which the developing embryo or fetus is nourished until birth" []
@@ -3264,11 +3280,35 @@ property_value: IAO:0000111 "uterus" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]
+id: UBERON:0000996
+name: vagina
+def: "A fibromuscular tubular tract leading from the uterus to the exterior of the body in female placental mammals and marsupials, or to the cloaca in female birds, monotremes, and some reptiles[WP]." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "vagina" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
 id: UBERON:0001013
 name: adipose tissue
 def: "Portion of connective tissue composed of adipocytes enmeshed in areolar tissue" []
 is_a: UBERON:0000479 ! tissue
 property_value: IAO:0000111 "adipose tissue" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001052
+name: rectum
+def: "the terminal portion of the intestinal tube, terminating with the anus" []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "rectum" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001088
+name: urine
+def: "Excretion that is the output of a kidney" []
+is_a: UBERON:0000463 ! organism substance
+property_value: IAO:0000111 "urine" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]
@@ -3288,11 +3328,43 @@ property_value: IAO:0000111 "colon" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]
+id: UBERON:0001159
+name: sigmoid colon
+def: "The part of the large intestine that is closest to the rectum and anus. It forms a loop that averages about 40 cm. in length, and normally lies within the pelvis, but on account of its freedom of movement it is liable to be displaced into the abdominal cavity." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "sigmoid colon" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001255
+name: urinary bladder
+def: "distensible musculomembranous organ situated in the anterior part of the pelvic cavity in which urine collects before excretion[MP]." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "urinary bladder" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
 id: UBERON:0001638
 name: vein
 def: "Any of the tubular branching vessels that carry blood from the capillaries toward the heart." []
 is_a: UBERON:0000465 ! material anatomical entity
 property_value: IAO:0000111 "vein" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001988
+name: feces
+def: "Portion of semisolid bodily waste discharged through the anus[MW,modified]" []
+is_a: UBERON:0000463 ! organism substance
+property_value: IAO:0000111 "feces" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0002048
+name: lung
+def: "Respiration organ that develops as an oupocketing of the esophagus." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "lung" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]

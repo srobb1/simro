@@ -257,6 +257,18 @@
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref>http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
+        <rdfs:label>see also</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -486,6 +498,43 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000005">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000333"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>fibroblast neural crest derived</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000333"/>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>migratory cranial neural crest cell</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000010">
@@ -500,6 +549,39 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell in vitro that is or has been maintained or propagated as part of a cell culture.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ReO:mhb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000029">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000540"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000333"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0002676"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>neuron neural crest derived</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
     </owl:Axiom>
     
 
@@ -955,6 +1037,59 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000068"/>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>branched duct epithelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000071">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000076"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004638"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000076"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002139"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0002546"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An endothelial cell that lines the vasculature.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>cuboidal endothelial cell of vascular tree</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>blood vessel endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000076"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell that lines the vasculature.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000075 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000075">
@@ -962,6 +1097,17 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <rdfs:label>columnar/cuboidal epithelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+        <oboInOwl:hasDbXref>CALOHA:TS-1249</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>squamous epithelial cell</rdfs:label>
     </owl:Class>
     
 
@@ -989,6 +1135,61 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell which moves among different tissues of the body, via blood, lymph, or other medium.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:add</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000082">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>BTO:0004299</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>lung epithelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>epithelial cell of lung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000213"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002078"/>
+        <obo:IAO_0000115>An endothelial cell comprises the outermost layer or lining of anatomical structures and can be squamous or cuboidal. In mammals, endothelial cell has vimentin filaments and is derived from the mesoderm.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>BTO:0001176</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0278</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:66772</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>endotheliocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:comment>From FMA: 9.07.2001: Endothelial cell has always been classified as a kind of epithelial cell, specifically a squamous cell but that is not true. First, endothelial cell can either be squamous or cuboidal (e.g. high-endothelial cell) and secondly, it has different embryological derivation (mesodermal) than a true epithelial cell (ectodermal and endodermal). The basis for present classification is the fact that it comprises the outermost layer or lining of anatomical structures (location-based) but a better structural basis for the differentia is the cytoskeleton of the cell. Endothelial cell has vimentin filaments while an epithelial cell has keratin filaments. [Onard].</rdfs:comment>
+        <rdfs:label>endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell comprises the outermost layer or lining of anatomical structures and can be squamous or cuboidal. In mammals, endothelial cell has vimentin filaments and is derived from the mesoderm.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D042783</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:21275341</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Endothelial_cell</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sourceforge.net/tracker/?func=detail&amp;atid=440764&amp;aid=3364936&amp;group_id=36855</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1169,6 +1370,41 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000215"/>
+        <obo:IAO_0000115>A cell within an epithelial cell sheet whose main function is to act as an internal or external covering for a tissue or an organism.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>boundary cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>lining cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000213"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell within an epithelial cell sheet whose main function is to act as an internal or external covering for a tissue or an organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JB:jb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <obo:IAO_0000115>A cell whose primary function is to prevent the transport of stuff across compartments.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>barrier cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000215"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell whose primary function is to prevent the transport of stuff across compartments.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JB:jb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000219 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000219">
@@ -1217,6 +1453,32 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell of the outer of the three germ layers of the embryo.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>MESH:A16.254.425.273</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002321"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000926"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell of the middle germ layer of the embryo.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FMA:72554</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>mesoblast</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mesoderm cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>mesodermal cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000222"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell of the middle germ layer of the embryo.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MESH:A16.254.425.660</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1346,6 +1608,50 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000307 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000307">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003126"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002202"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000377"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An epithelial cell found in the trachea.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CL:1000474</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>FMA:74793</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>tracheocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:comment>This class is for the vertebrate tracheal structure. For the analagous insect cell type, see &apos;respiratory tube epithelial cell&apos;</rdfs:comment>
+        <rdfs:label>tracheal epithelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000307"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0002202"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000307"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An epithelial cell found in the trachea.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000325 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000325">
@@ -1360,6 +1666,49 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell that is specialised to accumulate a particular substance(s).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FB:ma</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000333 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000333">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000219"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0007004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell derived from the specialized ectoderm flanking each side of the embryonic neural plate, which after the closure of the neural tube, forms masses of cells that migrate out from the dorsal aspect of the neural tube to spread throughout the body.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FMA:86667</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>migratory neural crest cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000333"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell derived from the specialized ectoderm flanking each side of the embryonic neural plate, which after the closure of the neural tube, forms masses of cells that migrate out from the dorsal aspect of the neural tube to spread throughout the body.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>MESH:A16.254.600</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000031"/>
+        <obo:IAO_0000115>An embryonic cell that develops into a nerve cell or neuron.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>neuroblast (sensu Vertebrata)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000337"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An embryonic cell that develops into a nerve cell or neuron.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:70563</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1430,6 +1779,16 @@
         <owl:annotatedTarget>epithelial cell of skin</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FMA:62411</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000069"/>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>tracheoblast</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1627,6 +1986,53 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dsd</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12768659</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000575">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000076"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000964"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000076"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002159"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <obo:IAO_0000115>An epithelial cell of the cornea.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CL:1000431</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>BTO:0004298</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0173</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:70551</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>epithelial cell of cornea</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>corneal epithelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000575"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000076"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000575"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An epithelial cell of the cornea.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000575"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>epithelial cell of cornea</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:70551</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2464,6 +2870,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0002078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002078">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000222"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <obo:IAO_0000115>Epithelial cell derived from mesoderm or mesenchyme.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-06-29T03:49:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:69076</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>epithelial mesenchymal cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>meso-epithelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Epithelial cell derived from mesoderm or mesenchyme.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:69076</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0002087 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002087">
@@ -2497,6 +2936,72 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002087"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A leukocyte that lacks granules.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <obo:IAO_0000115>An endothelial cell of the vascular tree, which includes blood vessels and lymphatic vessels.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-08-24T02:06:40Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>BTO:0001854</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-1106</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67755</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>vascular endothelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>cubodial endothelial cell of vascular tree</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:comment>These cells are reportedly CD31-positive, CD34-positive, CD144-positive, TAL1-positive.</rdfs:comment>
+        <rdfs:label>endothelial cell of vascular tree</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002139"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell of the vascular tree, which includes blood vessels and lymphatic vessels.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dsd</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12768659</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002144">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001915"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <obo:IAO_0000115>An endothelial cell found in capillaries.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-08-24T10:15:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>BTO:0004956</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0112</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67756</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>capillary endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002144"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002144"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell found in capillaries.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2555,6 +3060,38 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002159"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Epithelial cells derived from general body ectoderm and ectoderm placodes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002202">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007196"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002632"/>
+        <obo:IAO_0000115>An epithelial cell of the tracheobronchial tree.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-09-02T02:09:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>CL:1000407</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>FMA:66816</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>epithelial cell of tracheobronchial tree</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002202"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An epithelial cell of the tracheobronchial tree.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2625,6 +3162,49 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0721662544</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Lens_%28anatomy%29#Lens_epithelium</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002241">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005169"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <obo:IAO_0000115>A fibroblasts found in interstitial spaces in the pulmonary tract. Greater numbers of these cells are found in idiopathic pulmonary fibrosis.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-09-07T02:29:38Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>FMA:84467</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>pulmonary myofibroblast</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pulmonary septal cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>pulmonary interstitial fibroblast</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002241"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002241"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A fibroblasts found in interstitial spaces in the pulmonary tract. Greater numbers of these cells are found in idiopathic pulmonary fibrosis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2725,6 +3305,46 @@
         <owl:annotatedTarget>An epithelial cell of the musculomembranous digestive tube extending from the mouth to the anus.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0721662544</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002253">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002563"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000059"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002563"/>
+        <obo:IAO_0000115>An epithelial cell of the large intestine.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-09-08T09:28:22Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>CL:1000292</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>BTO:0004297</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:256157</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>epithelial cell of colon</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>epithelial cell of large intestine</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002253"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0002563"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002253"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An epithelial cell of the large intestine.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2859,6 +3479,89 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0002328 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002328">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002185"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An epithelial cell of the bronchus.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-09-20T02:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>BTO:0002922</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>bronchial epithelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002328"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An epithelial cell of the bronchus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002350">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002165"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <obo:IAO_0000115>An endothelial cell that lines the intracavitary lumen of the heart, separating the circulating blood from the underlying myocardium. This cell type releases a number of vasoactive substances including prostacyclin, nitrous oxide and endothelin.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-09-21T04:33:05Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>CL:1000475</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>FMA:75621</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>endocardial endothelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>endothelial cell of endocardium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>endocardial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002350"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002350"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell that lines the intracavitary lumen of the heart, separating the circulating blood from the underlying myocardium. This cell type releases a number of vasoactive substances including prostacyclin, nitrous oxide and endothelin.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISSN:0452-3458</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002350"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>endothelial cell of endocardium</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:75621</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0002352 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002352">
@@ -2886,6 +3589,89 @@
         <owl:annotatedTarget>A hematopoietic stem cell that exists during embryogenesis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-60327-246-6</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002363">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001777"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A keratocyte is a specialized fibroblastÂ residing in the cornea stroma that has a flattened, dendritic cell located between the lamellae with a large flattened nucleus and lengthy processes which communicate with neighboring cells. ThisÂ cornealÂ layer, representing about 85-90% of corneal thickness, is built up from highly regular collagenous lamellae and extracellular matrix components. Keratocytes play the major role in keeping it transparent, healing its wounds, and synthesizing its components. This cell type secretes collagen I, V, VI, and keratin sulfate.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-09-22T01:57:40Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>corneal fibroblast</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>corneal keratocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>keratocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002363"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002363"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A keratocyte is a specialized fibroblastÂ residing in the cornea stroma that has a flattened, dendritic cell located between the lamellae with a large flattened nucleus and lengthy processes which communicate with neighboring cells. ThisÂ cornealÂ layer, representing about 85-90% of corneal thickness, is built up from highly regular collagenous lamellae and extracellular matrix components. Keratocytes play the major role in keeping it transparent, healing its wounds, and synthesizing its components. This cell type secretes collagen I, V, VI, and keratin sulfate.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-7020-2958-5</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002368">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002076"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000065"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002076"/>
+        <obo:IAO_0000115>An endo-epithelial cell of the respiratory tract.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-09-23T04:38:49Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>BTO:0004533</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>airway epithelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>respiratory epithelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002368"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0002076"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002368"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endo-epithelial cell of the respiratory tract.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3148,6 +3934,104 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0002543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002543">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001638"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <obo:IAO_0000115>An endothelial cell that is part of the vein.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-02-28T03:48:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>CL:1000393</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>FMA:62104</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>KUPO:0001099</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>endothelial cell of vein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>venous endothelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>vein endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002543"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell that is part of the vein.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000222"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <obo:IAO_0000115>An endothelial progenitor cell that participates in angiogenesis during development.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-02-28T04:20:39Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:comment>See CL:0002619.</rdfs:comment>
+        <rdfs:label>embryonic blood vessel endothelial progenitor cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002546"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial progenitor cell that participates in angiogenesis during development.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002547">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000306"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004664"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000306"/>
+        <obo:IAO_0000115>A fibroblast of the aortic adventitia.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-02-28T04:43:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>fibroblast of the aortic adventitia</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002547"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_1000306"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002547"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A fibroblast of the aortic adventitia.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0002548 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002548">
@@ -3221,6 +4105,122 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0002553 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002553">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <obo:IAO_0000115>A fibroblast that is part of lung.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-02-28T05:11:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>BTO:0000764</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0575</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>fibroblast of lung</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002553"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002553"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A fibroblast that is part of lung.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002557 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002557">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002012"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <obo:IAO_0000115>A fibroblast of pulmonary artery.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-02-28T05:22:27Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>fibroblast of pulmonary artery</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002557"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002557"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A fibroblast of pulmonary artery.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002563">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000160"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002251"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001277"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An epithelial cell of the intestine.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-03-01T05:18:31Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>intestinal epithelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002563"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0002251"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002563"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An epithelial cell of the intestine.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0002570 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002570">
@@ -3245,6 +4245,42 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002570"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A mesenchymal stem cell of adipose tissue.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002585 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002585">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000966"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <obo:IAO_0000115>A blood vessel endothelial cell that is part of the retina.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-03-06T03:28:27Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>retinal blood vessel endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002585"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002585"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A blood vessel endothelial cell that is part of the retina.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3284,6 +4320,92 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A fibroblast of skin.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002632 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002632">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002368"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001558"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002368"/>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-06-21T12:29:31Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>epithelial cell of lower respiratory tract</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002632"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0002368"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0002676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000337"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000333"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A neuroblast derived from a neural crest cell.</obo:IAO_0000115>
+        <oboInOwl:created_by>tmeehan</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-08-22T09:24:15Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>neural crest derived neuroblast</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0002676"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A neuroblast derived from a neural crest cell.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:17407019</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0007004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0007004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002342"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000133"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Cell that is part of the neural crest region of the neuroepithelium, prior to migration. Note that not all premigratory neural crest cells may become migratory neural crest cells.</obo:IAO_0000115>
+        <oboInOwl:created_by>haendel</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-06-27T08:27:35Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>premigratory neural crest cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0007004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Cell that is part of the neural crest region of the neuroepithelium, prior to migration. Note that not all premigratory neural crest cells may become migratory neural crest cells.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>UBERONREF:0000002</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3333,6 +4455,44 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0010006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0010006">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000948"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>cardiac blood vessel endothelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0010008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0010008">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000948"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>cardiac endothelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0010022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0010022">
@@ -3349,6 +4509,56 @@
         </owl:equivalentClass>
         <rdfs:label>cardiac neuron</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0011007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011007">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000222"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003059"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000222"/>
+        <obo:IAO_0000115>A cell in the area of mesoderm in the neurulating embryo that flanks and forms simultaneously with the neural tube. The cells of this region give rise to somites.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>paraxial mesoderm cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>somitic mesoderm cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>presomitic mesoderm cell</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>paraxial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0011007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell in the area of mesoderm in the neurulating embryo that flanks and forms simultaneously with the neural tube. The cells of this region give rise to somites.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:NV</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:11687492</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0011012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002321"/>
+        <obo:IAO_0000115>A cell of the neural crest. Neural crest cells are multipotent. Premigratory neural crest cells are found at the neural plate boarder, some of which will undergo ectomesynchymal transition and delamination to form migratory neural crest cells.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>neural crest cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0011012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell of the neural crest. Neural crest cells are multipotent. Premigratory neural crest cells are found at the neural plate boarder, some of which will undergo ectomesynchymal transition and delamination to form migratory neural crest cells.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5208-3432</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-9900-7880</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3413,6 +4623,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_1000296 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000296">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000057"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002371"/>
+        <obo:IAO_0000115>An epithelial cell that is part of the urethra.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FMA:256165</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>epithelial cell of urethra</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000296"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000066"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000296"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An epithelial cell that is part of the urethra.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_1000306 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000306">
@@ -3443,6 +4689,116 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000306"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A fibroblast that is part of the tunica adventitia of artery.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000412 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000412">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001980"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <obo:IAO_0000115>An endothelial cell that is part of the arteriole.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FMA:67760</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>KUPO:0001097</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>endothelial cell of arteriole</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000412"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000412"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell that is part of the arteriole.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000413">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001637"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001917"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A blood vessel endothelial cell that is part of an arterial endothelium.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CL:0002542</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>BTO:0004758</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67761</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>KUPO:0001095</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>arterial endothelial cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>endothelial cell of artery</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000413"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A blood vessel endothelial cell that is part of an arterial endothelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000414">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002139"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001979"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002139"/>
+        <obo:IAO_0000115>An endothelial cell that is part of the venule.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FMA:67762</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>endothelial cell of venule</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000414"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0002139"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000414"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An endothelial cell that is part of the venule.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tfm</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3559,6 +4915,108 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_1000505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000505">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000497"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001224"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>KUPO:0001018</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>kidney pelvis cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000505"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_1000497"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000600">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000548"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001556"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001556"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>KUPO:0001115</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>lower urinary tract cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000600"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000601 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000601">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000548"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000056"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>KUPO:0001116</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>ureteral cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000601"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_1000606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000606">
@@ -3578,6 +5036,404 @@
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <rdfs:label>kidney nerve cell</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1000708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000708">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_1000601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001252"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002503"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000601"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001252"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>KUPO:0001119</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>ureter adventitial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1000708"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_1000601"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001319">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000548"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001255"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>KUPO:0001120</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>bladder cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001319"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001320">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000548"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000057"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>KUPO:0001123</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:label>urethra cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001320"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
+        <oboInOwl:is_inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</oboInOwl:is_inferred>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001567 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001567">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002139"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000102"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasOBONamespace>cl</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>endothelial cell of lung</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pulmonary vessel endothelial cell</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>lung endothelial cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001568">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002139"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002012"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005317"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>BTO:0001141</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>cl</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>PAEC cell</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>pulmonary artery endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001568"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>PAEC cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0001141</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001572 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001572">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001155"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013695"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Vascular endothelium found in colon blood vessels.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CALOHA:TS-2397</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>colon endothelial cells</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>colonic endothelial cell</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>colon endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001572"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Vascular endothelium found in colon blood vessels.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPX:PDR</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001572"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>colon endothelial cells</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-2397</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/caloha-reqs-vetted#PLURAL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001572"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>colonic endothelial cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-2397</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001575">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000076"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004801"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Squamous cell of uterine cervix epithelium.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CALOHA:TS-1251</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>cervix squamous cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>cervix squamous epithelial cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>cervix, uterine squamous epithelial cells</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>uterine cervix squamous epithelial cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>uterine cervix squamous epithelial cells</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>uterine cervix squamous cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001575"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Squamous cell of uterine cervix epithelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPX:PDR</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001575"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>cervix squamous cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1251</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001575"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>cervix squamous epithelial cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1251</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001575"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>cervix, uterine squamous epithelial cells</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1251</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001575"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>uterine cervix squamous epithelial cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1251</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001575"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>uterine cervix squamous epithelial cells</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1251</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001576 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001576">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000076"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002424"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Squamous cell of oral epithelium.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CALOHA:TS-1252</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>oral cavity mucosa squamous cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>oral cavity mucosa squamous epithelial cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>oral mucosa squamous epithelial cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>oral mucosa squamous epithelial cells</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>oral mucosa squamous cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Squamous cell of oral epithelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPX:PDR</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>oral cavity mucosa squamous cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>oral cavity mucosa squamous epithelial cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>oral mucosa squamous epithelial cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>oral mucosa squamous epithelial cells</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1252</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_1001578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1001578">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000076"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000996"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001344"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Squamous cell of vaginal epithelium.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>CALOHA:TS-1254</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>vagina squamous epithelial cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>vagina squamous epithelial cells</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>vaginal squamous cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>vaginal squamous epithelial cell</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>vagina squamous cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001578"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Squamous cell of vaginal epithelium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NPX:PDR</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001578"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>vagina squamous epithelial cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1254</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001578"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>vagina squamous epithelial cells</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1254</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001578"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>vaginal squamous cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1254</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_1001578"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>vaginal squamous epithelial cell</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CALOHA:TS-1254</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -3633,6 +5489,66 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A leukocyte with a single non-segmented nucleus in the mature form found in the circulatory pool of blood.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002067"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Any blood vessel endothelial cell that is part of a dermis.</obo:IAO_0000115>
+        <oboInOwl:created_by>TermGenie</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-06-04T15:12:06Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CL:2000010</oboInOwl:id>
+        <rdfs:label>dermis blood vessel endothelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any blood vessel endothelial cell that is part of a dermis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000013">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002620"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001416"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Any skin fibroblast that is part of a skin of abdomen.</obo:IAO_0000115>
+        <oboInOwl:created_by>TermGenie</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-06-04T15:18:16Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CL:2000013</oboInOwl:id>
+        <rdfs:label>fibroblast of skin of abdomen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000013"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any skin fibroblast that is part of a skin of abdomen.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3758,6 +5674,99 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_2000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000063">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000992"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Any fibroblast that is part of a female gonad.</obo:IAO_0000115>
+        <oboInOwl:created_by>TermGenie</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-10-07T17:57:42Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CL:2000063</oboInOwl:id>
+        <rdfs:comment>http://www.sciencellonline.com/site/productInformation.php?keyword=7330</rdfs:comment>
+        <rdfs:label>ovarian fibroblast</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000063"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any fibroblast that is part of a female gonad.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000064">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000066"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000992"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Any epithelial cell that is part of a female gonad.</obo:IAO_0000115>
+        <oboInOwl:created_by>TermGenie</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-10-07T17:59:13Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CL:2000064</oboInOwl:id>
+        <rdfs:comment>http://www.sciencellonline.com/site/productInformation.php?keyword=7310</rdfs:comment>
+        <rdfs:label>ovarian surface epithelial cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000064"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any epithelial cell that is part of a female gonad.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000066">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002082"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Any fibroblast that is part of a cardiac ventricle.</obo:IAO_0000115>
+        <oboInOwl:created_by>TermGenie</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-10-07T18:35:38Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CL:2000066</oboInOwl:id>
+        <rdfs:comment>http://www.sciencellonline.com/site/productInformation.php?keyword=6310</rdfs:comment>
+        <rdfs:label>cardiac ventricle fibroblast</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000066"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any fibroblast that is part of a cardiac ventricle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_2000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000070">
@@ -3784,6 +5793,96 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000070"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any fibroblast that is part of a optic choroid.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000073">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000333"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000095"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Any migratory neural crest cell that is part of a cardiac neural crest.</obo:IAO_0000115>
+        <oboInOwl:created_by>TermGenie</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-11-05T01:18:43Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CL:2000073</oboInOwl:id>
+        <rdfs:label>migratory cardiac neural crest cell</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000073"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any migratory neural crest cell that is part of a cardiac neural crest.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000080">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002570"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000916"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Any mesenchymal stem cell of adipose that is part of a abdomen.</obo:IAO_0000115>
+        <oboInOwl:created_by>TermGenie</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-12-02T19:10:34Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CL:2000080</oboInOwl:id>
+        <rdfs:label>mesenchymal stem cell of abdominal adipose</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000080"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any mesenchymal stem cell of adipose that is part of a abdomen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_2000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_2000093">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0002553"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002185"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>Any fibroblast of lung that is part of a bronchus.</obo:IAO_0000115>
+        <oboInOwl:created_by>TermGenie</oboInOwl:created_by>
+        <oboInOwl:creation_date>2015-03-31T21:16:22Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CL:2000093</oboInOwl:id>
+        <rdfs:label>bronchus fibroblast of lung</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_2000093"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any fibroblast of lung that is part of a bronchus.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -4210,9 +6309,75 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000057"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000058 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000058"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000059"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000065"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000081"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000095"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000102"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000159"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000160"/>
     
 
 
@@ -4234,6 +6399,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000458"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000478 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000478"/>
@@ -4249,6 +6420,12 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0000483 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000483"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000916 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000916"/>
     
 
 
@@ -4312,9 +6489,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000992 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000992"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000993"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000995 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000995"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000996 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000996"/>
     
 
 
@@ -4327,6 +6522,12 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0001004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001008"/>
     
 
 
@@ -4348,9 +6549,93 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001133"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001140"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001155"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001159"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001224"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001242"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001252"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001255"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001277"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001278"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001295"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001334"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001344"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001416"/>
     
 
 
@@ -4360,9 +6645,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001515"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001555 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001556 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001556"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001558 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001558"/>
     
 
 
@@ -4408,6 +6711,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001777 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001777"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001803 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001803"/>
@@ -4417,6 +6726,12 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0001891 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001891"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001901 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001901"/>
     
 
 
@@ -4450,9 +6765,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002012"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002028"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002048"/>
     
 
 
@@ -4474,6 +6807,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002082"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002084"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002094"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002097"/>
@@ -4492,9 +6849,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002119"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002165 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002165"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002185"/>
     
 
 
@@ -4546,6 +6921,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002418"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002419 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002419"/>
@@ -4555,6 +6936,12 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0002424 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002424"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002481 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002481"/>
     
 
 
@@ -4582,9 +6969,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003126"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0003129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003129"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003354"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003517"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003527"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003644 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003644"/>
     
 
 
@@ -4606,9 +7023,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004178"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004227"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0004638 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004638"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004664 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004664"/>
     
 
 
@@ -4618,9 +7053,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004786 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004786"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0004801 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004801"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004802 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004802"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004804 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004804"/>
     
 
 
@@ -4630,15 +7083,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005169"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0005215 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005215"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005317"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0005388 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005388"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005396"/>
     
 
 
@@ -4654,9 +7125,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006799 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006799"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0006855 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0006855"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0007100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007196"/>
     
 
 
@@ -4681,6 +7170,18 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0013694 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013694"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0013695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013695"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0015172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0015172"/>
     
 
 

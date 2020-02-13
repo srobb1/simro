@@ -2368,8 +2368,7 @@ intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005255
-name: Saccharomyces cerevisiae BY4742
-def: "Saccharomyces cerevisiae BY4742 used by research group." []
+def: " used by research group." []
 intersection_of: SIMRO:0002083
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 

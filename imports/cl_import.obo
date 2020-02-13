@@ -43,12 +43,36 @@ xref: CARO:0000013
 is_a: CL:0000000 ! cell
 
 [Term]
+id: CL:0000005
+name: fibroblast neural crest derived
+namespace: cell
+is_a: CL:0000057 ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: RO:0002202 CL:0000333 ! migratory neural crest cell
+relationship: RO:0002202 CL:0000008 ! migratory cranial neural crest cell
+
+[Term]
+id: CL:0000008
+name: migratory cranial neural crest cell
+namespace: cell
+is_a: CL:0000333 ! migratory neural crest cell
+
+[Term]
 id: CL:0000010
 name: cultured cell
 namespace: cell
 def: "A cell in vitro that is or has been maintained or propagated as part of a cell culture." [ReO:mhb]
 comment: Note that this class was re-labeled to 'cultured cell' instead of 'cell line cell', as it intent was clarified to cover any cultured cells of multicellular and unicellular organisms. This includes cells actively being cultured, or cells that have been cultured but are stored in a quiescent state for future use. In having been cultured, cells must establish homeostasis and often replicate in a foreign environment. Accomodation of this stress initiates a selection of cells fit for such challenges, wherein necessary adaptive biochemical and.or genetic changes can occur. These changes can set them apart from the in vivo cells from which they derive, and such changes will typically accumulate and change over increasing time in culture.
 is_a: CL:0000578 ! experimentally modified cell in vitro
+
+[Term]
+id: CL:0000029
+name: neuron neural crest derived
+namespace: cell
+is_a: CL:0000540 {is_inferred="true"} ! neuron
+intersection_of: CL:0000540 ! neuron
+intersection_of: RO:0002202 CL:0000333 ! migratory neural crest cell
+relationship: RO:0002202 CL:0002676 ! neural crest derived neuroblast
 
 [Term]
 id: CL:0000031
@@ -220,11 +244,37 @@ intersection_of: CL:0000066 ! epithelial cell
 intersection_of: BFO:0000050 UBERON:0000058
 
 [Term]
+id: CL:0000069
+name: branched duct epithelial cell
+namespace: cell
+is_a: CL:0000068 ! duct epithelial cell
+
+[Term]
+id: CL:0000071
+name: blood vessel endothelial cell
+namespace: cell
+def: "An endothelial cell that lines the vasculature." [GOC:tfm]
+synonym: "cuboidal endothelial cell of vascular tree" EXACT []
+is_a: CL:0000076 {is_inferred="true"} ! squamous epithelial cell
+is_a: CL:0002139 ! endothelial cell of vascular tree
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000076 ! squamous epithelial cell
+intersection_of: BFO:0000050 UBERON:0004638
+relationship: RO:0002202 CL:0002546 ! embryonic blood vessel endothelial progenitor cell
+
+[Term]
 id: CL:0000075
 name: columnar/cuboidal epithelial cell
 namespace: cell
 is_a: CL:0000066 ! epithelial cell
 is_a: CL:0002371 ! somatic cell
+
+[Term]
+id: CL:0000076
+name: squamous epithelial cell
+namespace: cell
+xref: CALOHA:TS-1249
+is_a: CL:0000066 ! epithelial cell
 
 [Term]
 id: CL:0000080
@@ -233,6 +283,29 @@ namespace: cell
 def: "A cell which moves among different tissues of the body, via blood, lymph, or other medium." [GOC:add]
 intersection_of: CL:0000003 ! native cell
 intersection_of: BFO:0000050 UBERON:0000179
+
+[Term]
+id: CL:0000082
+name: epithelial cell of lung
+namespace: cell
+synonym: "lung epithelial cell" EXACT []
+xref: BTO:0004299
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0002048
+relationship: BFO:0000050 UBERON:0000115
+
+[Term]
+id: CL:0000115
+name: endothelial cell
+namespace: cell
+def: "An endothelial cell comprises the outermost layer or lining of anatomical structures and can be squamous or cuboidal. In mammals, endothelial cell has vimentin filaments and is derived from the mesoderm." [GOC:tfm, http://en.wikipedia.org/wiki/Endothelial_cell, https://sourceforge.net/tracker/?func=detail&atid=440764&aid=3364936&group_id=36855, MESH:D042783, PMID:21275341]
+comment: From FMA: 9.07.2001: Endothelial cell has always been classified as a kind of epithelial cell, specifically a squamous cell but that is not true. First, endothelial cell can either be squamous or cuboidal (e.g. high-endothelial cell) and secondly, it has different embryological derivation (mesodermal) than a true epithelial cell (ectodermal and endodermal). The basis for present classification is the fact that it comprises the outermost layer or lining of anatomical structures (location-based) but a better structural basis for the differentia is the cytoskeleton of the cell. Endothelial cell has vimentin filaments while an epithelial cell has keratin filaments. [Onard].
+synonym: "endotheliocyte" EXACT []
+xref: BTO:0001176
+xref: CALOHA:TS-0278
+xref: FMA:66772
+is_a: CL:0000213 ! lining cell
+is_a: CL:0002078 ! meso-epithelial cell
 
 [Term]
 id: CL:0000133
@@ -289,6 +362,21 @@ def: "A cell whose function is determined by the generation or the reception of 
 is_a: CL:0000003 ! native cell
 
 [Term]
+id: CL:0000213
+name: lining cell
+namespace: cell
+def: "A cell within an epithelial cell sheet whose main function is to act as an internal or external covering for a tissue or an organism." [JB:jb]
+synonym: "boundary cell" EXACT []
+is_a: CL:0000215 ! barrier cell
+
+[Term]
+id: CL:0000215
+name: barrier cell
+namespace: cell
+def: "A cell whose primary function is to prevent the transport of stuff across compartments." [JB:jb]
+is_a: CL:0000003 ! native cell
+
+[Term]
 id: CL:0000219
 name: motile cell
 namespace: cell
@@ -305,6 +393,17 @@ synonym: "ectoderm cell" EXACT []
 xref: FMA:72549
 is_a: CL:0002321 ! embryonic cell
 relationship: BFO:0000050 UBERON:0000924
+
+[Term]
+id: CL:0000222
+name: mesodermal cell
+namespace: cell
+def: "A cell of the middle germ layer of the embryo." [MESH:A16.254.425.660]
+synonym: "mesoblast" EXACT []
+synonym: "mesoderm cell" EXACT []
+xref: FMA:72554
+is_a: CL:0002321 ! embryonic cell
+relationship: BFO:0000050 UBERON:0000926
 
 [Term]
 id: CL:0000223
@@ -356,12 +455,44 @@ xref: FBbt:00004193
 is_a: CL:0000325 ! stuff accumulating cell
 
 [Term]
+id: CL:0000307
+name: tracheal epithelial cell
+namespace: cell
+alt_id: CL:1000474
+def: "An epithelial cell found in the trachea." [GOC:tfm]
+comment: This class is for the vertebrate tracheal structure. For the analagous insect cell type, see 'respiratory tube epithelial cell'
+synonym: "tracheocyte" EXACT []
+xref: FMA:74793
+is_a: CL:0002202 {is_inferred="true"} ! epithelial cell of tracheobronchial tree
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0003126
+relationship: RO:0002202 CL:0000377 ! tracheoblast
+
+[Term]
 id: CL:0000325
 name: stuff accumulating cell
 namespace: cell
 def: "A cell that is specialised to accumulate a particular substance(s)." [FB:ma]
 subset: ubprop:upper_level
 is_a: CL:0000003 ! native cell
+
+[Term]
+id: CL:0000333
+name: migratory neural crest cell
+namespace: cell
+def: "A cell derived from the specialized ectoderm flanking each side of the embryonic neural plate, which after the closure of the neural tube, forms masses of cells that migrate out from the dorsal aspect of the neural tube to spread throughout the body." [MESH:A16.254.600]
+xref: FMA:86667
+is_a: CL:0000003 ! native cell
+is_a: CL:0000219 ! motile cell
+is_a: CL:0011012 ! neural crest cell
+relationship: RO:0002202 CL:0007004 ! premigratory neural crest cell
+
+[Term]
+id: CL:0000337
+name: neuroblast (sensu Vertebrata)
+namespace: cell
+def: "An embryonic cell that develops into a nerve cell or neuron." [FMA:70563]
+is_a: CL:0000031 ! neuroblast
 
 [Term]
 id: CL:0000349
@@ -386,6 +517,12 @@ is_a: CL:0002159 ! general ecto-epithelial cell
 is_a: CL:0002371 ! somatic cell
 intersection_of: CL:0000066 ! epithelial cell
 intersection_of: BFO:0000050 UBERON:0007376
+
+[Term]
+id: CL:0000377
+name: tracheoblast
+namespace: cell
+is_a: CL:0000069 ! branched duct epithelial cell
 
 [Term]
 id: CL:0000393
@@ -459,6 +596,22 @@ intersection_of: RO:0002104 PR:000001444
 intersection_of: RO:0002104 PR:000002112
 intersection_of: RO:0002104 PR:000016043
 relationship: RO:0002202 CL:0000134 ! mesenchymal stem cell
+
+[Term]
+id: CL:0000575
+name: corneal epithelial cell
+namespace: cell
+alt_id: CL:1000431
+def: "An epithelial cell of the cornea." [GOC:tfm]
+synonym: "epithelial cell of cornea" EXACT [FMA:70551]
+xref: BTO:0004298
+xref: CALOHA:TS-0173
+xref: FMA:70551
+is_a: CL:0000076 {is_inferred="true"} ! squamous epithelial cell
+is_a: CL:0002159 ! general ecto-epithelial cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000076 ! squamous epithelial cell
+intersection_of: BFO:0000050 UBERON:0000964
 
 [Term]
 id: CL:0000578
@@ -741,6 +894,19 @@ created_by: tmeehan
 creation_date: 2010-06-29T03:38:22Z
 
 [Term]
+id: CL:0002078
+name: meso-epithelial cell
+namespace: cell
+def: "Epithelial cell derived from mesoderm or mesenchyme." [FMA:69076, GOC:tfm]
+synonym: "epithelial mesenchymal cell" EXACT []
+xref: FMA:69076
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: RO:0002202 CL:0000222 ! mesodermal cell
+created_by: tmeehan
+creation_date: 2010-06-29T03:49:14Z
+
+[Term]
 id: CL:0002087
 name: nongranular leukocyte
 namespace: cell
@@ -752,6 +918,35 @@ intersection_of: CL:0000738 ! leukocyte
 intersection_of: lacks_part GO:0030141
 created_by: tmeehan
 creation_date: 2010-07-22T11:30:33Z
+
+[Term]
+id: CL:0002139
+name: endothelial cell of vascular tree
+namespace: cell
+def: "An endothelial cell of the vascular tree, which includes blood vessels and lymphatic vessels." [GOC:dsd, GOC:tfm, PMID:12768659]
+comment: These cells are reportedly CD31-positive, CD34-positive, CD144-positive, TAL1-positive.
+synonym: "cubodial endothelial cell of vascular tree" NARROW []
+synonym: "vascular endothelial cell" EXACT []
+xref: BTO:0001854
+xref: CALOHA:TS-1106
+xref: FMA:67755
+is_a: CL:0000115 ! endothelial cell
+created_by: tmeehan
+creation_date: 2010-08-24T02:06:40Z
+
+[Term]
+id: CL:0002144
+name: capillary endothelial cell
+namespace: cell
+def: "An endothelial cell found in capillaries." [GOC:tfm]
+xref: BTO:0004956
+xref: CALOHA:TS-0112
+xref: FMA:67756
+is_a: CL:0000071 {is_inferred="true"} ! blood vessel endothelial cell
+intersection_of: CL:0000071 ! blood vessel endothelial cell
+intersection_of: BFO:0000050 UBERON:0001915
+created_by: tmeehan
+creation_date: 2010-08-24T10:15:00Z
 
 [Term]
 id: CL:0002149
@@ -775,6 +970,19 @@ xref: FMA:70556
 is_a: CL:0002077 ! ecto-epithelial cell
 created_by: tmeehan
 creation_date: 2010-08-26T08:31:08Z
+
+[Term]
+id: CL:0002202
+name: epithelial cell of tracheobronchial tree
+namespace: cell
+alt_id: CL:1000407
+def: "An epithelial cell of the tracheobronchial tree." [GOC:tfm]
+xref: FMA:66816
+is_a: CL:0002632 ! epithelial cell of lower respiratory tract
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0007196
+created_by: tmeehan
+creation_date: 2010-09-02T02:09:14Z
 
 [Term]
 id: CL:0002222
@@ -801,6 +1009,21 @@ intersection_of: CL:0000075 ! columnar/cuboidal epithelial cell
 intersection_of: BFO:0000050 UBERON:0001803
 created_by: tmeehan
 creation_date: 2010-09-07T10:45:47Z
+
+[Term]
+id: CL:0002241
+name: pulmonary interstitial fibroblast
+namespace: cell
+def: "A fibroblasts found in interstitial spaces in the pulmonary tract. Greater numbers of these cells are found in idiopathic pulmonary fibrosis." [GOC:tfm]
+synonym: "pulmonary myofibroblast" EXACT []
+synonym: "pulmonary septal cell" EXACT []
+xref: FMA:84467
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0001004
+intersection_of: BFO:0000050 UBERON:0005169
+created_by: tmeehan
+creation_date: 2010-09-07T02:29:38Z
 
 [Term]
 id: CL:0002242
@@ -837,6 +1060,21 @@ intersection_of: CL:0000066 ! epithelial cell
 intersection_of: BFO:0000050 UBERON:0001555
 created_by: tmeehan
 creation_date: 2010-09-08T09:26:53Z
+
+[Term]
+id: CL:0002253
+name: epithelial cell of large intestine
+namespace: cell
+alt_id: CL:1000292
+def: "An epithelial cell of the large intestine." [GOC:tfm]
+synonym: "epithelial cell of colon" RELATED []
+xref: BTO:0004297
+xref: FMA:256157
+is_a: CL:0002563 {is_inferred="true"} ! intestinal epithelial cell
+intersection_of: CL:0002563 ! intestinal epithelial cell
+intersection_of: BFO:0000050 UBERON:0000059
+created_by: tmeehan
+creation_date: 2010-09-08T09:28:22Z
 
 [Term]
 id: CL:0002308
@@ -894,6 +1132,33 @@ created_by: tmeehan
 creation_date: 2010-09-15T03:39:21Z
 
 [Term]
+id: CL:0002328
+name: bronchial epithelial cell
+namespace: cell
+def: "An epithelial cell of the bronchus." [GOC:tfm]
+xref: BTO:0002922
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0002185
+relationship: BFO:0000050 UBERON:0002031
+created_by: tmeehan
+creation_date: 2010-09-20T02:00:00Z
+
+[Term]
+id: CL:0002350
+name: endocardial cell
+namespace: cell
+alt_id: CL:1000475
+def: "An endothelial cell that lines the intracavitary lumen of the heart, separating the circulating blood from the underlying myocardium. This cell type releases a number of vasoactive substances including prostacyclin, nitrous oxide and endothelin." [GOC:tfm, ISSN:0452-3458]
+synonym: "endocardial endothelial cell" EXACT []
+synonym: "endothelial cell of endocardium" EXACT [FMA:75621]
+xref: FMA:75621
+is_a: CL:0000115 {is_inferred="true"} ! endothelial cell
+intersection_of: CL:0000115 ! endothelial cell
+intersection_of: BFO:0000050 UBERON:0002165
+created_by: tmeehan
+creation_date: 2010-09-21T04:33:05Z
+
+[Term]
 id: CL:0002352
 name: gestational hematopoietic stem cell
 namespace: cell
@@ -903,6 +1168,33 @@ intersection_of: CL:0000037 ! hematopoietic stem cell
 intersection_of: BFO:0000050 UBERON:0000922
 created_by: tmeehan
 creation_date: 2010-09-22T09:05:13Z
+
+[Term]
+id: CL:0002363
+name: keratocyte
+namespace: cell
+def: "A keratocyte is a specialized fibroblastÂ residing in the cornea stroma that has a flattened, dendritic cell located between the lamellae with a large flattened nucleus and lengthy processes which communicate with neighboring cells. ThisÂ cornealÂ layer, representing about 85-90% of corneal thickness, is built up from highly regular collagenous lamellae and extracellular matrix components. Keratocytes play the major role in keeping it transparent, healing its wounds, and synthesizing its components. This cell type secretes collagen I, V, VI, and keratin sulfate." [GOC:tfm, ISBN:978-0-7020-2958-5]
+synonym: "corneal fibroblast" EXACT []
+synonym: "corneal keratocyte" EXACT []
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0001777
+relationship: RO:0002202 CL:0000008 ! migratory cranial neural crest cell
+created_by: tmeehan
+creation_date: 2010-09-22T01:57:40Z
+
+[Term]
+id: CL:0002368
+name: respiratory epithelial cell
+namespace: cell
+def: "An endo-epithelial cell of the respiratory tract." [GOC:tfm]
+synonym: "airway epithelial cell" EXACT []
+xref: BTO:0004533
+is_a: CL:0002076 {is_inferred="true"} ! endo-epithelial cell
+intersection_of: CL:0002076 ! endo-epithelial cell
+intersection_of: BFO:0000050 UBERON:0000065
+created_by: tmeehan
+creation_date: 2010-09-23T04:38:49Z
 
 [Term]
 id: CL:0002371
@@ -986,6 +1278,44 @@ created_by: tmeehan
 creation_date: 2011-02-24T08:20:08Z
 
 [Term]
+id: CL:0002543
+name: vein endothelial cell
+namespace: cell
+alt_id: CL:1000393
+def: "An endothelial cell that is part of the vein." [GOC:tfm]
+synonym: "endothelial cell of vein" EXACT []
+synonym: "venous endothelial cell" EXACT []
+xref: FMA:62104
+xref: KUPO:0001099
+is_a: CL:0000071 {is_inferred="true"} ! blood vessel endothelial cell
+intersection_of: CL:0000071 ! blood vessel endothelial cell
+intersection_of: BFO:0000050 UBERON:0001638
+created_by: tmeehan
+creation_date: 2011-02-28T03:48:11Z
+
+[Term]
+id: CL:0002546
+name: embryonic blood vessel endothelial progenitor cell
+namespace: cell
+def: "An endothelial progenitor cell that participates in angiogenesis during development." [GOC:tfm]
+comment: See CL:0002619.
+is_a: CL:0000222 ! mesodermal cell
+is_a: CL:0002371 ! somatic cell
+created_by: tmeehan
+creation_date: 2011-02-28T04:20:39Z
+
+[Term]
+id: CL:0002547
+name: fibroblast of the aortic adventitia
+namespace: cell
+def: "A fibroblast of the aortic adventitia." [GOC:tfm]
+is_a: CL:1000306 {is_inferred="true"} ! fibroblast of tunica adventitia of artery
+intersection_of: CL:1000306 ! fibroblast of tunica adventitia of artery
+intersection_of: BFO:0000050 UBERON:0004664
+created_by: tmeehan
+creation_date: 2011-02-28T04:43:41Z
+
+[Term]
 id: CL:0002548
 name: fibroblast of cardiac tissue
 namespace: cell
@@ -1009,6 +1339,42 @@ created_by: tmeehan
 creation_date: 2011-02-28T05:05:33Z
 
 [Term]
+id: CL:0002553
+name: fibroblast of lung
+namespace: cell
+def: "A fibroblast that is part of lung." [GOC:tfm]
+xref: BTO:0000764
+xref: CALOHA:TS-0575
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0002048
+created_by: tmeehan
+creation_date: 2011-02-28T05:11:03Z
+
+[Term]
+id: CL:0002557
+name: fibroblast of pulmonary artery
+namespace: cell
+def: "A fibroblast of pulmonary artery." [GOC:tfm]
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0002012
+created_by: tmeehan
+creation_date: 2011-02-28T05:22:27Z
+
+[Term]
+id: CL:0002563
+name: intestinal epithelial cell
+namespace: cell
+def: "An epithelial cell of the intestine." [GOC:tfm]
+is_a: CL:0002251 {is_inferred="true"} ! epithelial cell of alimentary canal
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0000160
+relationship: BFO:0000050 UBERON:0001277
+created_by: tmeehan
+creation_date: 2011-03-01T05:18:31Z
+
+[Term]
 id: CL:0002570
 name: mesenchymal stem cell of adipose
 namespace: cell
@@ -1017,6 +1383,17 @@ intersection_of: CL:0000134 ! mesenchymal stem cell
 intersection_of: BFO:0000050 UBERON:0001013
 created_by: tmeehan
 creation_date: 2011-03-01T09:57:17Z
+
+[Term]
+id: CL:0002585
+name: retinal blood vessel endothelial cell
+namespace: cell
+def: "A blood vessel endothelial cell that is part of the retina." [GOC:tfm]
+is_a: CL:0000071 {is_inferred="true"} ! blood vessel endothelial cell
+intersection_of: CL:0000071 ! blood vessel endothelial cell
+intersection_of: BFO:0000050 UBERON:0000966
+created_by: tmeehan
+creation_date: 2011-03-06T03:28:27Z
 
 [Term]
 id: CL:0002620
@@ -1030,6 +1407,37 @@ intersection_of: CL:0000057 ! fibroblast
 intersection_of: BFO:0000050 UBERON:0002097
 created_by: tmeehan
 creation_date: 2011-03-14T12:31:49Z
+
+[Term]
+id: CL:0002632
+name: epithelial cell of lower respiratory tract
+namespace: cell
+is_a: CL:0002368 {is_inferred="true"} ! respiratory epithelial cell
+intersection_of: CL:0002368 ! respiratory epithelial cell
+intersection_of: BFO:0000050 UBERON:0001558
+created_by: tmeehan
+creation_date: 2011-06-21T12:29:31Z
+
+[Term]
+id: CL:0002676
+name: neural crest derived neuroblast
+namespace: cell
+def: "A neuroblast derived from a neural crest cell." [GOC:tfm, PMID:17407019]
+is_a: CL:0000337 ! neuroblast (sensu Vertebrata)
+relationship: RO:0002202 CL:0000333 ! migratory neural crest cell
+created_by: tmeehan
+creation_date: 2011-08-22T09:24:15Z
+
+[Term]
+id: CL:0007004
+name: premigratory neural crest cell
+namespace: cell
+def: "Cell that is part of the neural crest region of the neuroepithelium, prior to migration. Note that not all premigratory neural crest cells may become migratory neural crest cells." [UBERONREF:0000002]
+is_a: CL:0011012 ! neural crest cell
+relationship: BFO:0000050 UBERON:0002342
+relationship: RO:0002202 CL:0000133 ! neurectodermal cell
+created_by: haendel
+creation_date: 2012-06-27T08:27:35Z
 
 [Term]
 id: CL:0008001
@@ -1048,10 +1456,41 @@ intersection_of: CL:0002319 ! neural cell
 intersection_of: BFO:0000050 UBERON:0005388
 
 [Term]
+id: CL:0010006
+name: cardiac blood vessel endothelial cell
+intersection_of: CL:0000071 ! blood vessel endothelial cell
+intersection_of: BFO:0000050 UBERON:0000948
+
+[Term]
+id: CL:0010008
+name: cardiac endothelial cell
+intersection_of: CL:0000115 ! endothelial cell
+intersection_of: BFO:0000050 UBERON:0000948
+
+[Term]
 id: CL:0010022
 name: cardiac neuron
 intersection_of: CL:0000540 ! neuron
 intersection_of: BFO:0000050 UBERON:0000948
+
+[Term]
+id: CL:0011007
+name: paraxial cell
+def: "A cell in the area of mesoderm in the neurulating embryo that flanks and forms simultaneously with the neural tube. The cells of this region give rise to somites." [GOC:NV, PMID:11687492]
+synonym: "paraxial mesoderm cell" EXACT []
+synonym: "presomitic mesoderm cell" NARROW []
+synonym: "somitic mesoderm cell" EXACT []
+is_a: CL:0000222 ! mesodermal cell
+intersection_of: CL:0000222 ! mesodermal cell
+intersection_of: BFO:0000050 UBERON:0003059
+
+[Term]
+id: CL:0011012
+name: neural crest cell
+namespace: cell
+def: "A cell of the neural crest. Neural crest cells are multipotent. Premigratory neural crest cells are found at the neural plate boarder, some of which will undergo ectomesynchymal transition and delamination to form migratory neural crest cells." [https://orcid.org/0000-0001-5208-3432, https://orcid.org/0000-0002-9900-7880]
+is_a: CL:0000048 ! multi fate stem cell
+is_a: CL:0002321 ! embryonic cell
 
 [Term]
 id: CL:0011108
@@ -1072,6 +1511,17 @@ intersection_of: CL:0000003 ! native cell
 intersection_of: RO:0002215 GO:0030154
 
 [Term]
+id: CL:1000296
+name: epithelial cell of urethra
+namespace: cell
+def: "An epithelial cell that is part of the urethra." [GOC:tfm]
+xref: FMA:256165
+is_a: CL:0000066 {is_inferred="true"} ! epithelial cell
+is_a: CL:0002371 ! somatic cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0000057
+
+[Term]
 id: CL:1000306
 name: fibroblast of tunica adventitia of artery
 namespace: cell
@@ -1080,6 +1530,42 @@ xref: FMA:261285
 is_a: CL:0000057 {is_inferred="true"} ! fibroblast
 intersection_of: CL:0000057 ! fibroblast
 intersection_of: BFO:0000050 UBERON:0005734
+
+[Term]
+id: CL:1000412
+name: endothelial cell of arteriole
+namespace: cell
+def: "An endothelial cell that is part of the arteriole." [GOC:tfm]
+xref: FMA:67760
+xref: KUPO:0001097
+is_a: CL:0000071 {is_inferred="true"} ! blood vessel endothelial cell
+intersection_of: CL:0000115 ! endothelial cell
+intersection_of: BFO:0000050 UBERON:0001980
+
+[Term]
+id: CL:1000413
+name: endothelial cell of artery
+namespace: cell
+alt_id: CL:0002542
+def: "A blood vessel endothelial cell that is part of an arterial endothelium." [GOC:tfm]
+synonym: "arterial endothelial cell" EXACT []
+xref: BTO:0004758
+xref: FMA:67761
+xref: KUPO:0001095
+is_a: CL:0000071 ! blood vessel endothelial cell
+intersection_of: CL:0000115 ! endothelial cell
+intersection_of: BFO:0000050 UBERON:0001637
+relationship: BFO:0000050 UBERON:0001917
+
+[Term]
+id: CL:1000414
+name: endothelial cell of venule
+namespace: cell
+def: "An endothelial cell that is part of the venule." [GOC:tfm]
+xref: FMA:67762
+is_a: CL:0002139 {is_inferred="true"} ! endothelial cell of vascular tree
+intersection_of: CL:0002139 ! endothelial cell of vascular tree
+intersection_of: BFO:0000050 UBERON:0001979
 
 [Term]
 id: CL:1000428
@@ -1114,6 +1600,36 @@ intersection_of: BFO:0000050 UBERON:0005215
 relationship: BFO:0000050 UBERON:0005215
 
 [Term]
+id: CL:1000505
+name: kidney pelvis cell
+namespace: cell
+xref: KUPO:0001018
+is_a: CL:1000497 {is_inferred="true"} ! kidney cell
+intersection_of: CL:1000497 ! kidney cell
+intersection_of: BFO:0000050 UBERON:0001224
+relationship: BFO:0000050 UBERON:0001224
+
+[Term]
+id: CL:1000600
+name: lower urinary tract cell
+namespace: cell
+xref: KUPO:0001115
+is_a: CL:0000548 {is_inferred="true"} ! animal cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0001556
+relationship: BFO:0000050 UBERON:0001556
+
+[Term]
+id: CL:1000601
+name: ureteral cell
+namespace: cell
+xref: KUPO:0001116
+is_a: CL:0000548 {is_inferred="true"} ! animal cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0000056
+relationship: BFO:0000050 UBERON:0000056
+
+[Term]
 id: CL:1000606
 name: kidney nerve cell
 namespace: cell
@@ -1121,6 +1637,108 @@ xref: KUPO:0001015
 is_a: CL:1000500 ! kidney interstitial cell
 intersection_of: CL:0000540 ! neuron
 intersection_of: BFO:0000050 UBERON:0002113
+
+[Term]
+id: CL:1000708
+name: ureter adventitial cell
+namespace: cell
+xref: KUPO:0001119
+is_a: CL:0000115 ! endothelial cell
+is_a: CL:0002503 ! adventitial cell
+is_a: CL:1000601 {is_inferred="true"} ! ureteral cell
+intersection_of: CL:1000601 ! ureteral cell
+intersection_of: BFO:0000050 UBERON:0001252
+relationship: BFO:0000050 UBERON:0001252
+
+[Term]
+id: CL:1001319
+name: bladder cell
+namespace: cell
+xref: KUPO:0001120
+is_a: CL:0000548 {is_inferred="true"} ! animal cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0001255
+relationship: BFO:0000050 UBERON:0001255
+
+[Term]
+id: CL:1001320
+name: urethra cell
+namespace: cell
+xref: KUPO:0001123
+is_a: CL:0000548 {is_inferred="true"} ! animal cell
+intersection_of: CL:0000548 ! animal cell
+intersection_of: BFO:0000050 UBERON:0000057
+relationship: BFO:0000050 UBERON:0000057
+
+[Term]
+id: CL:1001567
+name: lung endothelial cell
+namespace: cl
+synonym: "endothelial cell of lung" RELATED []
+synonym: "pulmonary vessel endothelial cell" RELATED []
+intersection_of: CL:0002139 ! endothelial cell of vascular tree
+intersection_of: BFO:0000050 UBERON:0002048
+relationship: BFO:0000050 UBERON:0000102
+
+[Term]
+id: CL:1001568
+name: pulmonary artery endothelial cell
+namespace: cl
+synonym: "PAEC cell" RELATED [BTO:0001141]
+xref: BTO:0001141
+intersection_of: CL:0002139 ! endothelial cell of vascular tree
+intersection_of: BFO:0000050 UBERON:0002012
+relationship: BFO:0000050 UBERON:0005317
+
+[Term]
+id: CL:1001572
+name: colon endothelial cell
+def: "Vascular endothelium found in colon blood vessels." [NPX:PDR]
+synonym: "colon endothelial cells" RELATED PLURAL [CALOHA:TS-2397]
+synonym: "colonic endothelial cell" RELATED [CALOHA:TS-2397]
+xref: CALOHA:TS-2397
+intersection_of: CL:0000115 ! endothelial cell
+intersection_of: BFO:0000050 UBERON:0001155
+relationship: BFO:0000050 UBERON:0013695
+
+[Term]
+id: CL:1001575
+name: uterine cervix squamous cell
+def: "Squamous cell of uterine cervix epithelium." [NPX:PDR]
+synonym: "cervix squamous cell" RELATED [CALOHA:TS-1251]
+synonym: "cervix squamous epithelial cell" RELATED [CALOHA:TS-1251]
+synonym: "cervix, uterine squamous epithelial cells" RELATED [CALOHA:TS-1251]
+synonym: "uterine cervix squamous epithelial cell" RELATED [CALOHA:TS-1251]
+synonym: "uterine cervix squamous epithelial cells" RELATED [CALOHA:TS-1251]
+xref: CALOHA:TS-1251
+intersection_of: CL:0000076 ! squamous epithelial cell
+intersection_of: BFO:0000050 UBERON:0000002
+relationship: BFO:0000050 UBERON:0004801
+
+[Term]
+id: CL:1001576
+name: oral mucosa squamous cell
+def: "Squamous cell of oral epithelium." [NPX:PDR]
+synonym: "oral cavity mucosa squamous cell" RELATED [CALOHA:TS-1252]
+synonym: "oral cavity mucosa squamous epithelial cell" RELATED [CALOHA:TS-1252]
+synonym: "oral mucosa squamous epithelial cell" RELATED [CALOHA:TS-1252]
+synonym: "oral mucosa squamous epithelial cells" RELATED [CALOHA:TS-1252]
+xref: CALOHA:TS-1252
+intersection_of: CL:0000076 ! squamous epithelial cell
+intersection_of: BFO:0000050 UBERON:0002424
+
+[Term]
+id: CL:1001578
+name: vagina squamous cell
+def: "Squamous cell of vaginal epithelium." [NPX:PDR]
+synonym: "vagina squamous epithelial cell" RELATED [CALOHA:TS-1254]
+synonym: "vagina squamous epithelial cells" RELATED [CALOHA:TS-1254]
+synonym: "vaginal squamous cell" RELATED [CALOHA:TS-1254]
+synonym: "vaginal squamous epithelial cell" RELATED [CALOHA:TS-1254]
+xref: CALOHA:TS-1254
+intersection_of: CL:0000076 ! squamous epithelial cell
+intersection_of: BFO:0000050 UBERON:0000996
+relationship: BFO:0000050 UBERON:0001344
 
 [Term]
 id: CL:1001609
@@ -1139,6 +1757,26 @@ intersection_of: CL:0000842 ! mononuclear cell
 intersection_of: BFO:0000050 UBERON:0000178
 created_by: TermGenie
 creation_date: 2014-02-11T17:29:04Z
+
+[Term]
+id: CL:2000010
+name: dermis blood vessel endothelial cell
+namespace: cell
+def: "Any blood vessel endothelial cell that is part of a dermis." [GOC:TermGenie]
+intersection_of: CL:0000071 ! blood vessel endothelial cell
+intersection_of: BFO:0000050 UBERON:0002067
+created_by: TermGenie
+creation_date: 2014-06-04T15:12:06Z
+
+[Term]
+id: CL:2000013
+name: fibroblast of skin of abdomen
+namespace: cell
+def: "Any skin fibroblast that is part of a skin of abdomen." [GOC:TermGenie]
+intersection_of: CL:0002620 ! skin fibroblast
+intersection_of: BFO:0000050 UBERON:0001416
+created_by: TermGenie
+creation_date: 2014-06-04T15:18:16Z
 
 [Term]
 id: CL:2000022
@@ -1181,6 +1819,39 @@ created_by: TermGenie
 creation_date: 2014-07-09T00:12:00Z
 
 [Term]
+id: CL:2000063
+name: ovarian fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a female gonad." [GOC:TermGenie]
+comment: http://www.sciencellonline.com/site/productInformation.php?keyword=7330
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0000992
+created_by: TermGenie
+creation_date: 2014-10-07T17:57:42Z
+
+[Term]
+id: CL:2000064
+name: ovarian surface epithelial cell
+namespace: cell
+def: "Any epithelial cell that is part of a female gonad." [GOC:TermGenie]
+comment: http://www.sciencellonline.com/site/productInformation.php?keyword=7310
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: BFO:0000050 UBERON:0000992
+created_by: TermGenie
+creation_date: 2014-10-07T17:59:13Z
+
+[Term]
+id: CL:2000066
+name: cardiac ventricle fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a cardiac ventricle." [GOC:TermGenie]
+comment: http://www.sciencellonline.com/site/productInformation.php?keyword=6310
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: BFO:0000050 UBERON:0002082
+created_by: TermGenie
+creation_date: 2014-10-07T18:35:38Z
+
+[Term]
 id: CL:2000070
 name: optic choroid fibroblast
 namespace: cell
@@ -1190,6 +1861,36 @@ intersection_of: CL:0000057 ! fibroblast
 intersection_of: BFO:0000050 UBERON:0001776
 created_by: TermGenie
 creation_date: 2014-10-07T18:50:43Z
+
+[Term]
+id: CL:2000073
+name: migratory cardiac neural crest cell
+namespace: cell
+def: "Any migratory neural crest cell that is part of a cardiac neural crest." [GOC:TermGenie]
+intersection_of: CL:0000333 ! migratory neural crest cell
+intersection_of: BFO:0000050 UBERON:0000095
+created_by: TermGenie
+creation_date: 2014-11-05T01:18:43Z
+
+[Term]
+id: CL:2000080
+name: mesenchymal stem cell of abdominal adipose
+namespace: cell
+def: "Any mesenchymal stem cell of adipose that is part of a abdomen." [GOC:TermGenie]
+intersection_of: CL:0002570 ! mesenchymal stem cell of adipose
+intersection_of: BFO:0000050 UBERON:0000916
+created_by: TermGenie
+creation_date: 2014-12-02T19:10:34Z
+
+[Term]
+id: CL:2000093
+name: bronchus fibroblast of lung
+namespace: cell
+def: "Any fibroblast of lung that is part of a bronchus." [GOC:TermGenie]
+intersection_of: CL:0002553 ! fibroblast of lung
+intersection_of: BFO:0000050 UBERON:0002185
+created_by: TermGenie
+creation_date: 2015-03-31T21:16:22Z
 
 [Term]
 id: CP:0000000
@@ -1228,4 +1929,11 @@ expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 exactly 0 ?Y" 
 id: lacks_plasma_membrane_part
 name: lacks_plasma_membrane_part
 expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 exactly 0 (http://purl.obolibrary.org/obo/GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)" []
+
+[Typedef]
+id: seeAlso
+name: see also
+namespace: uberon
+xref: http://www.w3.org/2000/01/rdf-schema#seeAlso
+is_metadata_tag: true
 
