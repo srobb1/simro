@@ -643,7 +643,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000141"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>conformation</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>VT:1000738</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VT:1000738</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

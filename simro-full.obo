@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-13/simro-full.owl
+data-version: simro/releases/2020-02-14/simro-full.owl
 subsetdef: 1_STAR "Preliminary entries"
 subsetdef: 3_STAR ""
 subsetdef: 3_STAR "Manually annotated by ChEBI Team"
@@ -1894,8 +1894,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [ChEBI]
 synonym: "carbonyl group" EXACT [UniProt]
+synonym: "carbonyl group" EXACT [ChEBI]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -9697,7 +9697,7 @@ is_a: CL:0002320 {is_inferred="true"} ! 结缔组织细胞
 intersection_of: CL:0002320 ! 结缔组织细胞
 intersection_of: capable_of GO:0001649 ! osteoblast differentiation
 intersection_of: capable_of GO:0016477 ! 细胞迁移
-intersection_of: capable_of GO:0030182 ! neuron differentiation
+intersection_of: capable_of GO:0030182 ! 神经元分化
 intersection_of: capable_of GO:0030855 ! epithelial cell differentiation
 intersection_of: capable_of GO:0045444 ! fat cell differentiation
 intersection_of: capable_of GO:0055007 ! cardiac muscle cell differentiation
@@ -9710,7 +9710,7 @@ intersection_of: RO:0002104 PR:000001800 ! has plasma membrane part 5'-nucleotid
 intersection_of: RO:0002104 PR:000001843 ! has plasma membrane part Thy-1 membrane glycoprotein
 relationship: capable_of GO:0001649 ! osteoblast differentiation
 relationship: capable_of GO:0016477 ! 细胞迁移
-relationship: capable_of GO:0030182 ! neuron differentiation
+relationship: capable_of GO:0030182 ! 神经元分化
 relationship: capable_of GO:0030855 ! epithelial cell differentiation
 relationship: capable_of GO:0045444 ! fat cell differentiation
 relationship: capable_of GO:0055007 ! cardiac muscle cell differentiation
@@ -12194,7 +12194,7 @@ name: immortal human colon epithelial cell line cell
 name: 永生化的结肠上皮细胞系细胞
 def: "An immortal human epithelial cell line cell that derives from human colon." []
 def: "来自人类结肠的永生人类上皮细胞系细胞。" []
-is_a: CLO:0000513 ! 永生化的人结肠衍生细胞系细胞
+is_a: CLO:0000513 ! immortal human colon-derived cell line cell
 is_a: CLO:0000563 ! 永生的人上皮细胞系细胞
 property_value: IAO:0000117 "Yongqun He" xsd:string
 property_value: IAO:0000117 "Yongqun He" xsd:string
@@ -19274,7 +19274,7 @@ name: MHC蛋白复合物
 namespace: cellular_component
 def: "A transmembrane protein complex composed of an MHC alpha chain and, in most cases, either an MHC class II beta chain or an invariant beta2-microglobin chain, and with or without a bound peptide, lipid, or polysaccharide antigen." [GOC:add, GOC:jl, ISBN:0781735149, PMID:15928678, PMID:16153240]
 subset: goslim_pir
-is_a: GO:0098797 ! 质膜蛋白复合物
+is_a: GO:0098797 ! plasma membrane protein complex
 property_value: IAO:0000111 "MHC protein complex" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
@@ -19918,8 +19918,8 @@ namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of neuron differentiation." [GOC:go_curators]
 is_a: GO:0050767 ! regulation of neurogenesis
 intersection_of: GO:0008150 ! biological_process
-intersection_of: regulates GO:0030182 ! neuron differentiation
-relationship: regulates GO:0030182 ! neuron differentiation
+intersection_of: regulates GO:0030182 ! 神经元分化
+relationship: regulates GO:0030182 ! 神经元分化
 
 [Term]
 id: GO:0045665
@@ -19933,8 +19933,8 @@ synonym: "inhibition of neuron differentiation" NARROW []
 is_a: GO:0045664 ! regulation of neuron differentiation
 is_a: GO:0050768 ! negative regulation of neurogenesis
 intersection_of: GO:0008150 ! biological_process
-intersection_of: negatively_regulates GO:0030182 ! neuron differentiation
-relationship: negatively_regulates GO:0030182 ! neuron differentiation
+intersection_of: negatively_regulates GO:0030182 ! 神经元分化
+relationship: negatively_regulates GO:0030182 ! 神经元分化
 
 [Term]
 id: GO:0045666
@@ -19949,8 +19949,8 @@ synonym: "upregulation of neuron differentiation" EXACT []
 is_a: GO:0045664 ! regulation of neuron differentiation
 is_a: GO:0050769 ! positive regulation of neurogenesis
 intersection_of: GO:0008150 ! biological_process
-intersection_of: positively_regulates GO:0030182 ! neuron differentiation
-relationship: positively_regulates GO:0030182 ! neuron differentiation
+intersection_of: positively_regulates GO:0030182 ! 神经元分化
+relationship: positively_regulates GO:0030182 ! 神经元分化
 
 [Term]
 id: GO:0045667
@@ -31783,37 +31783,37 @@ is_a: OBI:0400169 ! microscope
 [Term]
 id: SIMRO:0002031
 name: Axiovert 206 MOT (WID)
-def: "Axiovert 206 MOT (WID) of widefield microscope needs def" []
+def: "Axiovert 206 MOT (WID) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002032
 name: Axiovert 206 Std (WID)
-def: "Axiovert 206 Std (WID) of widefield microscope needs def" []
+def: "Axiovert 206 Std (WID) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002033
 name: Axiovert MOT BW (WID)
-def: "Axiovert MOT BW (WID) of widefield microscope needs def" []
+def: "Axiovert MOT BW (WID) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002034
 name: Nikon TE2000 (NIW)
-def: "Nikon TE2000 (NIW) of widefield microscope needs def" []
+def: "Nikon TE2000 (NIW) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002035
 name: Olympus Slide Scanner (OSS)
-def: "Olympus Slide Scanner (OSS) of widefield microscope needs def" []
+def: "Olympus Slide Scanner (OSS) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002036
 name: Widefield sCMOS (WID)
-def: "Widefield sCMOS (WID) of widefield microscope needs def" []
+def: "Widefield sCMOS (WID) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
@@ -32094,7 +32094,8 @@ is_a: CLO:0037237 ! 293-derived cell
 
 [Term]
 id: SIMRO:0002083
-def: " of Saccharomyces cerevisiae needs def" []
+name: Saccharomyces cerevisiae BY4742
+def: "Saccharomyces cerevisiae BY4742 of Saccharomyces cerevisiae needs def" []
 is_a: NCBITaxon:4932 ! Saccharomyces cerevisiae
 
 [Term]
@@ -32171,8 +32172,8 @@ relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 
 [Term]
 id: SIMRO:0005008
-name: von Kossa staining method
-def: "von Kossa staining method used by histology group." []
+name: von Kossa staining Method
+def: "von Kossa staining Method used by histology group." []
 is_a: SIMRO:0002003 ! von Kossa staining method
 intersection_of: SIMRO:0002003 ! von Kossa staining method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
@@ -32585,8 +32586,8 @@ relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
 [Term]
 id: SIMRO:0005054
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
@@ -32594,8 +32595,8 @@ relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
 [Term]
 id: SIMRO:0005055
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
@@ -32603,8 +32604,8 @@ relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
 [Term]
 id: SIMRO:0005056
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
@@ -32612,8 +32613,8 @@ relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
 [Term]
 id: SIMRO:0005057
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
@@ -32621,8 +32622,8 @@ relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
 [Term]
 id: SIMRO:0005058
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
@@ -32630,8 +32631,8 @@ relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
 [Term]
 id: SIMRO:0005059
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
@@ -32666,8 +32667,8 @@ relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
 [Term]
 id: SIMRO:0005063
-name: laser capture microdissection microscope
-def: "laser capture microdissection microscope used by light microscopy group." []
+name: Zeiss Microbeam (LCM)
+def: "Zeiss Microbeam (LCM) used by light microscopy group." []
 is_a: SIMRO:0002041 ! laser capture microdissection microscope
 intersection_of: SIMRO:0002041 ! laser capture microdissection microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
@@ -32678,7 +32679,7 @@ id: SIMRO:0005064
 name: Zeiss Microbeam (LCM)
 def: "Zeiss Microbeam (LCM) used by light microscopy group." []
 is_a: SIMRO:0002042 ! Zeiss Microbeam (LCM)
-is_a: SIMRO:0005063 ! laser capture microdissection microscope
+is_a: SIMRO:0005063 ! Zeiss Microbeam (LCM)
 intersection_of: SIMRO:0002042 ! Zeiss Microbeam (LCM)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
@@ -33593,8 +33594,8 @@ relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 
 [Term]
 id: SIMRO:0005166
-name: HEK-293T cell
-def: "HEK-293T cell used by proteomic group." []
+name: 293T
+def: "293T used by proteomic group." []
 is_a: SIMRO:0002082 ! HEK-293T cell
 intersection_of: SIMRO:0002082 ! HEK-293T cell
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
@@ -33647,8 +33648,8 @@ relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 
 [Term]
 id: SIMRO:0005172
-name: K562 cell
-def: "K562 cell used by proteomic group." []
+name: K562
+def: "K562 used by proteomic group." []
 is_a: SIMRO:0002081 ! K562 cell
 intersection_of: SIMRO:0002081 ! K562 cell
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
@@ -33684,7 +33685,7 @@ relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 [Term]
 id: SIMRO:0005176
 name: DAPI
-def: "DAPI used by light microscopy group." []
+def: "DAPI used by cytometry group." []
 is_a: CHEBI:51231 ! DAPI
 intersection_of: CHEBI:51231 ! DAPI
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
@@ -34394,10 +34395,11 @@ intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
 id: SIMRO:0005255
-def: " used by research group." []
-is_a: SIMRO:0002083
+name: Saccharomyces cerevisiae BY4742
+def: "Saccharomyces cerevisiae BY4742 used by research group." []
+is_a: SIMRO:0002083 ! Saccharomyces cerevisiae BY4742
 is_a: SIMRO:0005209 ! Saccharomyces cerevisiae
-intersection_of: SIMRO:0002083
+intersection_of: SIMRO:0002083 ! Saccharomyces cerevisiae BY4742
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
@@ -66142,8 +66144,8 @@ id: UBERON:0013701
 name: main body axis
 name: 主体轴
 namespace: uberon
-def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." []
 def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." [https://orcid.org/0000-0002-6601-2165]
+def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." []
 def: "一个生物体的一种主要细分，包括沿主轴的所有结构，通常是前后轴，从头到尾，包括身体本身（例如肋骨）的结构，但不包括附肢。" []
 subset: non_informative
 is_a: UBERON:0000475 ! organism subdivision
@@ -72787,6 +72789,13 @@ is_cyclic: true
 is_transitive: false
 
 [Typedef]
+id: is_count_of
+name: is count of
+namespace: uberon
+xref: UBPROP:0000100
+is_metadata_tag: true
+
+[Typedef]
 id: is_opposite_of
 name: is opposite of
 namespace: quality
@@ -73052,9 +73061,9 @@ name: pharyngeal arch number
 namespace: uberon
 def: "x pharyngeal_arch_number N if and only if (i) x is a pharyngeal arch, and (ii) x is ancestrally pharyngeal arch number N in a series of pharyngeal arches repeated along a antero-posterior axis, with arch_number 1 being the mandibular arch." [https://orcid.org/0000-0002-6601-2165]
 xref: UBPROP:0000103
+property_value: is_count_of UBERON:0002539
+property_value: preceding_element_is BSPO:0000096
 property_value: terminology_notes "gill arch N = PA N-2. the term branchial_arch is ambiguous." xsd:string
-property_value: UBPROP:0000100 UBERON:0002539
-property_value: UBPROP:0000101 BSPO:0000096
 is_metadata_tag: true
 
 [Typedef]
@@ -73130,6 +73139,14 @@ holds_over_chain: happens_during precedes
 holds_over_chain: part_of precedes
 is_transitive: true
 is_a: RO:0002222 ! temporal relation
+
+[Typedef]
+id: preceding_element_is
+name: preceding element is
+namespace: uberon
+def: "A property used in conjunction with repeated_element_number to indicate an axis and directionality along that axis. If P preceding_element_is R, and P is_count_of S, and X P N, and X' P N+1, then it follows that every X R some X', and the class expression [S and R some X' and inv(R) some X] is empty (i.e. X is followed by X', with no intermediates)" [https://orcid.org/0000-0002-6601-2165]
+xref: UBPROP:0000101
+is_metadata_tag: true
 
 [Typedef]
 id: present_in_taxon

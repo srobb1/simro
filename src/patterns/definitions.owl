@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/simro/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/simro/releases/2020-02-13/patterns/definitions.owl>
+<http://purl.obolibrary.org/obo/simro/releases/2020-02-14/patterns/definitions.owl>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_137393>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_137394>))
@@ -872,42 +872,42 @@ SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> <http://purl.obolibrar
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002031> (Axiovert 206 MOT (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID) of widefield microscope needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID) of widefields needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002031> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002031> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002032> (Axiovert 206 Std (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID) of widefield microscope needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID) of widefields needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002032> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002032> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002033> (Axiovert MOT BW (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID) of widefield microscope needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID) of widefields needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002033> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002033> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002034> (Nikon TE2000 (NIW))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW) of widefield microscope needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW) of widefields needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002034> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002034> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002035> (Olympus Slide Scanner (OSS))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS) of widefield microscope needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS) of widefields needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002035> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002035> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002036> (Widefield sCMOS (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID) of widefield microscope needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID) of widefields needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002036> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002036> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
@@ -1234,11 +1234,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002082> "HEK-293T cell"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002082> <http://purl.obolibrary.org/obo/CLO_0037237>)
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0002083> ()
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0002083> (Saccharomyces cerevisiae BY4742)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002083> " of Saccharomyces cerevisiae needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002083> "Saccharomyces cerevisiae BY4742 of Saccharomyces cerevisiae needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002083> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002083> ""^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002083> "Saccharomyces cerevisiae BY4742"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002083> <http://purl.obolibrary.org/obo/NCBITaxon_4932>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005000> (X-Rhodamine)
@@ -1297,11 +1297,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005007> "10% neutral buffered formalin"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005007> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005008> (von Kossa staining method)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005008> (von Kossa staining Method)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005008> "von Kossa staining method used by histology group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005008> "von Kossa staining Method used by histology group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005008> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005008> "von Kossa staining method"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005008> "von Kossa staining Method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005009> (living tissue)
@@ -1619,46 +1619,46 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005053> "mCardinalFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005054> (widefield microscope)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005054> (widefields)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005054> "widefield microscope used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005054> "widefields used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005054> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005054> "widefield microscope"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005054> "widefields"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005054> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005055> (widefield microscope)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005055> (widefields)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005055> "widefield microscope used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005055> "widefields used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005055> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005055> "widefield microscope"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005055> "widefields"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005056> (widefield microscope)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005056> (widefields)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005056> "widefield microscope used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005056> "widefields used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005056> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005056> "widefield microscope"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005056> "widefields"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005056> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005057> (widefield microscope)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005057> (widefields)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005057> "widefield microscope used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005057> "widefields used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005057> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005057> "widefield microscope"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005057> "widefields"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005057> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005058> (widefield microscope)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005058> (widefields)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005058> "widefield microscope used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005058> "widefields used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005058> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005058> "widefield microscope"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005058> "widefields"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005058> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005059> (widefield microscope)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005059> (widefields)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005059> "widefield microscope used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005059> "widefields used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005059> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005059> "widefield microscope"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005059> "widefields"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005059> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005060> (super-resolution microscope)
@@ -1682,11 +1682,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005062> "super-resolution microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005062> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ERO_0001946> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005063> (laser capture microdissection microscope)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005063> (Zeiss Microbeam (LCM))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005063> "laser capture microdissection microscope used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005063> "Zeiss Microbeam (LCM) used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005063> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005063> "laser capture microdissection microscope"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005063> "Zeiss Microbeam (LCM)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005063> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005064> (Zeiss Microbeam (LCM))
@@ -2403,11 +2403,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005165> "Schizosaccharomyces pombe 972h-"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005165> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_284812> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005166> (HEK-293T cell)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005166> (293T)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005166> "HEK-293T cell used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005166> "293T used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005166> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005166> "HEK-293T cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005166> "293T"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005166> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005167> (Saccharomyces cerevisiae BY4741)
@@ -2445,11 +2445,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005171> "HELA-S3 cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005171> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0003699> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005172> (K562 cell)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005172> (K562)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562 cell used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562 used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005172> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562 cell"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005172> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005173> (S2 细胞S2 cell)
@@ -2475,7 +2475,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005175> ObjectIntersect
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005176> (DAPI)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005176> "DAPI used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005176> "DAPI used by cytometry group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005176> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005176> "DAPI"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005176> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51231> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
@@ -3026,11 +3026,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005254> "Saccharomyces cerevisiae S288C"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005254> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_559292> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005255> ()
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005255> (Saccharomyces cerevisiae BY4742)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005255> " used by research group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005255> "Saccharomyces cerevisiae BY4742 used by research group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005255> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005255> ""^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005255> "Saccharomyces cerevisiae BY4742"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005255> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
 
 

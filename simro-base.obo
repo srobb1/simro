@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-13/simro-base.owl
+data-version: simro/releases/2020-02-14/simro-base.owl
 ontology: simro/simro-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "SIMR Ontology" xsd:string
@@ -267,37 +267,37 @@ is_a: OBI:0400169
 [Term]
 id: SIMRO:0002031
 name: Axiovert 206 MOT (WID)
-def: "Axiovert 206 MOT (WID) of widefield microscope needs def" []
+def: "Axiovert 206 MOT (WID) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002032
 name: Axiovert 206 Std (WID)
-def: "Axiovert 206 Std (WID) of widefield microscope needs def" []
+def: "Axiovert 206 Std (WID) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002033
 name: Axiovert MOT BW (WID)
-def: "Axiovert MOT BW (WID) of widefield microscope needs def" []
+def: "Axiovert MOT BW (WID) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002034
 name: Nikon TE2000 (NIW)
-def: "Nikon TE2000 (NIW) of widefield microscope needs def" []
+def: "Nikon TE2000 (NIW) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002035
 name: Olympus Slide Scanner (OSS)
-def: "Olympus Slide Scanner (OSS) of widefield microscope needs def" []
+def: "Olympus Slide Scanner (OSS) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002036
 name: Widefield sCMOS (WID)
-def: "Widefield sCMOS (WID) of widefield microscope needs def" []
+def: "Widefield sCMOS (WID) of widefields needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
@@ -578,7 +578,8 @@ is_a: CLO:0037237
 
 [Term]
 id: SIMRO:0002083
-def: " of Saccharomyces cerevisiae needs def" []
+name: Saccharomyces cerevisiae BY4742
+def: "Saccharomyces cerevisiae BY4742 of Saccharomyces cerevisiae needs def" []
 is_a: NCBITaxon:4932
 
 [Term]
@@ -639,8 +640,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
 
 [Term]
 id: SIMRO:0005008
-name: von Kossa staining method
-def: "von Kossa staining method used by histology group." []
+name: von Kossa staining Method
+def: "von Kossa staining Method used by histology group." []
 intersection_of: SIMRO:0002003 ! von Kossa staining method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! histology group
 
@@ -961,43 +962,43 @@ intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005054
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005055
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005056
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005057
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005058
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005059
-name: widefield microscope
-def: "widefield microscope used by light microscopy group." []
+name: widefields
+def: "widefields used by light microscopy group." []
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
@@ -1024,8 +1025,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
 [Term]
 id: SIMRO:0005063
-name: laser capture microdissection microscope
-def: "laser capture microdissection microscope used by light microscopy group." []
+name: Zeiss Microbeam (LCM)
+def: "Zeiss Microbeam (LCM) used by light microscopy group." []
 intersection_of: SIMRO:0002041 ! laser capture microdissection microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
@@ -1745,8 +1746,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
 [Term]
 id: SIMRO:0005166
-name: HEK-293T cell
-def: "HEK-293T cell used by proteomic group." []
+name: 293T
+def: "293T used by proteomic group." []
 intersection_of: SIMRO:0002082 ! HEK-293T cell
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
@@ -1787,8 +1788,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
 [Term]
 id: SIMRO:0005172
-name: K562 cell
-def: "K562 cell used by proteomic group." []
+name: K562
+def: "K562 used by proteomic group." []
 intersection_of: SIMRO:0002081 ! K562 cell
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 
@@ -1816,7 +1817,7 @@ intersection_of: SIMRO:0000611 SIMRO:0001007 ! proteomic group
 [Term]
 id: SIMRO:0005176
 name: DAPI
-def: "DAPI used by light microscopy group." []
+def: "DAPI used by cytometry group." []
 intersection_of: CHEBI:51231
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! light microscopy group
 
@@ -2368,7 +2369,8 @@ intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 
 [Term]
 id: SIMRO:0005255
-def: " used by research group." []
-intersection_of: SIMRO:0002083
+name: Saccharomyces cerevisiae BY4742
+def: "Saccharomyces cerevisiae BY4742 used by research group." []
+intersection_of: SIMRO:0002083 ! Saccharomyces cerevisiae BY4742
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! research group
 

@@ -176,82 +176,83 @@ SIMRO:0005173	S2	CLO:0008922	S2 cell	SIMRO:0001007	proteomic group
 SIMRO:0005174	T98G	CLO:0009258	T98G cell	SIMRO:0001007	proteomic group												
 SIMRO:0005175	CRISPR/Cas9	GO:0099048	CRISPR-cas system	SIMRO:0001007	proteomic group	EFO:0003969	treatment protocol										
 SIMRO:0005176	DAPI	CHEBI:51231	DAPI	SIMRO:0001005	cytometry group	EFO:0000562	labelling										
-SIMRO:0005177	Pomacea canaliculata	NCBITaxon:400727	Pomacea canaliculata	SIMRO:0001007	proteomic group												(base) mp181vbhv2j:default smr$
+SIMRO:0005177	Pomacea canaliculata	NCBITaxon:400727	Pomacea canaliculata	SIMRO:0001007	proteomic group												
 SIMRO:0005178	Veiled Chameleon	NCBITaxon:179908	Chamaeleo calyptratus	SIMRO:0001008	research group												
-SIMRO:0005179	Mus musculus	NCBITaxon:10090		SIMRO:0001008	research group												
-SIMRO:0005180	Rattus norvegicus	NCBITaxon:10116		SIMRO:0001008	research group												
-SIMRO:0005181	Nothobranchius furzeri 	NCBITaxon:105023		SIMRO:0001008	research group												
-SIMRO:0005182	Drosophila biarmipes	NCBITaxon:125945		SIMRO:0001008	research group												
-SIMRO:0005183	Rhynchomesostoma <genus>	NCBITaxon:1311949		SIMRO:0001008	research group												
-SIMRO:0005184	Phagocata gracilis 	NCBITaxon:1354672		SIMRO:0001008	research group												
-SIMRO:0005185	Girardia dorotocephala	NCBITaxon:135777		SIMRO:0001008	research group												
-SIMRO:0005186	Borreliella burgdorferi	NCBITaxon:139		SIMRO:0001008	research group												
-SIMRO:0005187	Aspidoscelis burti	NCBITaxon:171129		SIMRO:0001008	research group												
-SIMRO:0005188	Phagocata morgani	NCBITaxon:1820202		SIMRO:0001008	research group												
-SIMRO:0005189	Aspidoscelis tesselatus	NCBITaxon:1842987		SIMRO:0001008	research group												
-SIMRO:0005190	Polycelis coronata	NCBITaxon:1930915		SIMRO:0001008	research group												
-SIMRO:0005191	Phagocata velata	NCBITaxon:1969971		SIMRO:0001008	research group												
-SIMRO:0005192	Bacteria <superkingdom>	NCBITaxon:2		SIMRO:0001008	research group												
-SIMRO:0005193	Schizosaccharomyces kambucha	NCBITaxon:204045		SIMRO:0001008	research group												
-SIMRO:0005194	Borreliella burgdorferi B31	NCBITaxon:224326		SIMRO:0001008	research group												
-SIMRO:0005195	Saccharomyces uvarum	NCBITaxon:230603		SIMRO:0001008	research group												
-SIMRO:0005196	Procotyla fluviatilis	NCBITaxon:231627		SIMRO:0001008	research group												
-SIMRO:0005197	Thermus thermophilus	NCBITaxon:274		SIMRO:0001008	research group												
-SIMRO:0005198	Drosophila eugracilis	NCBITaxon:29029		SIMRO:0001008	research group												
-SIMRO:0005199	Drosophila kikkawai	NCBITaxon:30033		SIMRO:0001008	research group												
-SIMRO:0005200	Thermococcus kodakarensis	NCBITaxon:311400		SIMRO:0001008	research group												
-SIMRO:0005201	Aspidoscelis uniparens	NCBITaxon:37197		SIMRO:0001008	research group												
-SIMRO:0005202	Pomacea canaliculata	NCBITaxon:400727		SIMRO:0001008	research group												
-SIMRO:0005203	Drosophila bipectinata	NCBITaxon:42026		SIMRO:0001008	research group												
-SIMRO:0005204	Maritigrella <genus>	NCBITaxon:439306		SIMRO:0001008	research group												
-SIMRO:0005205	Nematostella vectensis	NCBITaxon:45351		SIMRO:0001008	research group												
-SIMRO:0005206	Bdelloura candida	NCBITaxon:46766		SIMRO:0001008	research group												
-SIMRO:0005207	Schizosaccharomyces pombe	NCBITaxon:4896		SIMRO:0001008	research group												
-SIMRO:0005208	Schizosaccharomyces octosporus	NCBITaxon:4899		SIMRO:0001008	research group												
-SIMRO:0005209	Saccharomyces cerevisiae	NCBITaxon:4932		SIMRO:0001008	research group												
-SIMRO:0005210	Schmidtea polychroa	NCBITaxon:50054		SIMRO:0001008	research group												
-SIMRO:0005211	Aspidoscelis tigris	NCBITaxon:52180		SIMRO:0001008	research group												
-SIMRO:0005212	Candida albicans	NCBITaxon:5476		SIMRO:0001008	research group												
-SIMRO:0005213	Toxoplasma gondii	NCBITaxon:5811		SIMRO:0001008	research group												
-SIMRO:0005214	Plasmodium falciparum	NCBITaxon:5833		SIMRO:0001008	research group												
-SIMRO:0005215	Dugesia japonica	NCBITaxon:6161		SIMRO:0001008	research group												
-SIMRO:0005216	Girardia tigrina	NCBITaxon:6162		SIMRO:0001008	research group												
-SIMRO:0005217	Caenorhabditis elegans	NCBITaxon:6239		SIMRO:0001008	research group												
-SIMRO:0005218	Ptychodera flava	NCBITaxon:63121		SIMRO:0001008	research group												
-SIMRO:0005219	Crassostrea virginica	NCBITaxon:6565		SIMRO:0001008	research group												
-SIMRO:0005220	Aspidoscelis gularis	NCBITaxon:68351		SIMRO:0001008	research group												
-SIMRO:0005221	Aspidoscelis inornatus	NCBITaxon:68352		SIMRO:0001008	research group												
-SIMRO:0005222	Spodoptera frugiperda	NCBITaxon:7108		SIMRO:0001008	research group												
-SIMRO:0005223	Drosophila <fruit fly, genus>	NCBITaxon:7215		SIMRO:0001008	research group												
-SIMRO:0005224	Drosophila ananassae	NCBITaxon:7217		SIMRO:0001008	research group												
-SIMRO:0005225	Drosophila erecta	NCBITaxon:7220		SIMRO:0001008	research group												
-SIMRO:0005226	Drosophila mauritiana	NCBITaxon:7226		SIMRO:0001008	research group												
-SIMRO:0005227	Drosophila melanogaster	NCBITaxon:7227		SIMRO:0001008	research group												
-SIMRO:0005228	Drosophila miranda	NCBITaxon:7229		SIMRO:0001008	research group												
-SIMRO:0005229	Drosophila mojavensis	NCBITaxon:7230		SIMRO:0001008	research group												
-SIMRO:0005230	Drosophila persimilis	NCBITaxon:7234		SIMRO:0001008	research group												
-SIMRO:0005231	Drosophila pseudoobscura	NCBITaxon:7237		SIMRO:0001008	research group												
-SIMRO:0005232	Drosophila sechellia	NCBITaxon:7238		SIMRO:0001008	research group												
-SIMRO:0005233	Drosophila simulans	NCBITaxon:7240		SIMRO:0001008	research group												
-SIMRO:0005234	Drosophila virilis	NCBITaxon:7244		SIMRO:0001008	research group												
-SIMRO:0005235	Drosophila yakuba	NCBITaxon:7245		SIMRO:0001008	research group												
-SIMRO:0005236	Drosophila mercatorum	NCBITaxon:7253		SIMRO:0001008	research group												
-SIMRO:0005237	Drosophila willistoni	NCBITaxon:7260		SIMRO:0001008	research group												
-SIMRO:0005238	Petromyzon marinus	NCBITaxon:7757		SIMRO:0001008	research group												
-SIMRO:0005239	Polyodon spathula	NCBITaxon:7913		SIMRO:0001008	research group												
-SIMRO:0005240	Schmidtea mediterranea	NCBITaxon:79327		SIMRO:0001008	research group												
-SIMRO:0005241	Danio rerio	NCBITaxon:7955		SIMRO:0001008	research group												
-SIMRO:0005242	Astyanax mexicanus	NCBITaxon:7994		SIMRO:0001008	research group												
-SIMRO:0005243	Xenopus tropicalis	NCBITaxon:8364		SIMRO:0001008	research group												
-SIMRO:0005244	Gallus gallus	NCBITaxon:9031		SIMRO:0001008	research group												
-SIMRO:0005245	Homo sapiens	NCBITaxon:9606		SIMRO:0001008	research group												
-SIMRO:0005246	Bos taurus	NCBITaxon:9913		SIMRO:0001008	research group												
-SIMRO:0005247	Mesostoma <genus>	NCBITaxon:99404		SIMRO:0001008	research group												
-SIMRO:0005248	HaloTag control vector	NCBITaxon:886328		SIMRO:0001008	research group												
-SIMRO:0005249	Escherichia coli	NCBITaxon:562		SIMRO:0001008	research group												
-SIMRO:0005250	Saccharomyces cerevisiae W303	NCBITaxon:580240		SIMRO:0001008	research group												
-SIMRO:0005251	Schizosaccharomyces pombe 972h-	NCBITaxon:284812		SIMRO:0001008	research group												
-SIMRO:0005252	Saccharomyces cerevisiae BY4741	NCBITaxon:1247190		SIMRO:0001008	research group												
-SIMRO:0005253	Ptychodera flava	NCBITaxon:63121		SIMRO:0001008	research group												
-SIMRO:0005254	Saccharomyces cerevisiae S288C	NCBITaxon:559292	Saccharomyces cerevisiae S288C	SIMRO:0001008	research group												
+SIMRO:0005179	Mus musculus	NCBITaxon:10090	Mus musculus	SIMRO:0001008	research group												
+SIMRO:0005180	Rattus norvegicus	NCBITaxon:10116	Rattus norvegicus	SIMRO:0001008	research group												
+SIMRO:0005181	Nothobranchius furzeri 	NCBITaxon:105023	Nothobranchius furzeri 	SIMRO:0001008	research group												
+SIMRO:0005182	Drosophila biarmipes	NCBITaxon:125945	Drosophila biarmipes	SIMRO:0001008	research group												
+SIMRO:0005183	Rhynchomesostoma <genus>	NCBITaxon:1311949	Rhynchomesostoma <genus>	SIMRO:0001008	research group												
+SIMRO:0005184	Phagocata gracilis 	NCBITaxon:1354672	Phagocata gracilis 	SIMRO:0001008	research group												
+SIMRO:0005185	Girardia dorotocephala	NCBITaxon:135777	Girardia dorotocephala	SIMRO:0001008	research group												
+SIMRO:0005186	Borreliella burgdorferi	NCBITaxon:139	Borreliella burgdorferi	SIMRO:0001008	research group												
+SIMRO:0005187	Aspidoscelis burti	NCBITaxon:171129	Aspidoscelis burti	SIMRO:0001008	research group												
+SIMRO:0005188	Phagocata morgani	NCBITaxon:1820202	Phagocata morgani	SIMRO:0001008	research group												
+SIMRO:0005189	Aspidoscelis tesselatus	NCBITaxon:1842987	Aspidoscelis tesselatus	SIMRO:0001008	research group												
+SIMRO:0005190	Polycelis coronata	NCBITaxon:1930915	Polycelis coronata	SIMRO:0001008	research group												
+SIMRO:0005191	Phagocata velata	NCBITaxon:1969971	Phagocata velata	SIMRO:0001008	research group												
+SIMRO:0005192	Bacteria <superkingdom>	NCBITaxon:2	Bacteria <superkingdom>	SIMRO:0001008	research group												
+SIMRO:0005193	Schizosaccharomyces kambucha	NCBITaxon:204045	Schizosaccharomyces kambucha	SIMRO:0001008	research group												
+SIMRO:0005194	Borreliella burgdorferi B31	NCBITaxon:224326	Borreliella burgdorferi B31	SIMRO:0001008	research group												
+SIMRO:0005195	Saccharomyces uvarum	NCBITaxon:230603	Saccharomyces uvarum	SIMRO:0001008	research group												
+SIMRO:0005196	Procotyla fluviatilis	NCBITaxon:231627	Procotyla fluviatilis	SIMRO:0001008	research group												
+SIMRO:0005197	Thermus thermophilus	NCBITaxon:274	Thermus thermophilus	SIMRO:0001008	research group												
+SIMRO:0005198	Drosophila eugracilis	NCBITaxon:29029	Drosophila eugracilis	SIMRO:0001008	research group												
+SIMRO:0005199	Drosophila kikkawai	NCBITaxon:30033	Drosophila kikkawai	SIMRO:0001008	research group												
+SIMRO:0005200	Thermococcus kodakarensis	NCBITaxon:311400	Thermococcus kodakarensis	SIMRO:0001008	research group												
+SIMRO:0005201	Aspidoscelis uniparens	NCBITaxon:37197	Aspidoscelis uniparens	SIMRO:0001008	research group												
+SIMRO:0005202	Pomacea canaliculata	NCBITaxon:400727	Pomacea canaliculata	SIMRO:0001008	research group												
+SIMRO:0005203	Drosophila bipectinata	NCBITaxon:42026	Drosophila bipectinata	SIMRO:0001008	research group												
+SIMRO:0005204	Maritigrella <genus>	NCBITaxon:439306	Maritigrella <genus>	SIMRO:0001008	research group												
+SIMRO:0005205	Nematostella vectensis	NCBITaxon:45351	Nematostella vectensis	SIMRO:0001008	research group												
+SIMRO:0005206	Bdelloura candida	NCBITaxon:46766	Bdelloura candida	SIMRO:0001008	research group												
+SIMRO:0005207	Schizosaccharomyces pombe	NCBITaxon:4896	Schizosaccharomyces pombe	SIMRO:0001008	research group												
+SIMRO:0005208	Schizosaccharomyces octosporus	NCBITaxon:4899	Schizosaccharomyces octosporus	SIMRO:0001008	research group												
+SIMRO:0005209	Saccharomyces cerevisiae	NCBITaxon:4932	Saccharomyces cerevisiae	SIMRO:0001008	research group												
+SIMRO:0005210	Schmidtea polychroa	NCBITaxon:50054	Schmidtea polychroa	SIMRO:0001008	research group												
+SIMRO:0005211	Aspidoscelis tigris	NCBITaxon:52180	Aspidoscelis tigris	SIMRO:0001008	research group												
+SIMRO:0005212	Candida albicans	NCBITaxon:5476	Candida albicans	SIMRO:0001008	research group												
+SIMRO:0005213	Toxoplasma gondii	NCBITaxon:5811	Toxoplasma gondii	SIMRO:0001008	research group												
+SIMRO:0005214	Plasmodium falciparum	NCBITaxon:5833	Plasmodium falciparum	SIMRO:0001008	research group												
+SIMRO:0005215	Dugesia japonica	NCBITaxon:6161	Dugesia japonica	SIMRO:0001008	research group												
+SIMRO:0005216	Girardia tigrina	NCBITaxon:6162	Girardia tigrina	SIMRO:0001008	research group												
+SIMRO:0005217	Caenorhabditis elegans	NCBITaxon:6239	Caenorhabditis elegans	SIMRO:0001008	research group												
+SIMRO:0005218	Ptychodera flava	NCBITaxon:63121	Ptychodera flava	SIMRO:0001008	research group												
+SIMRO:0005219	Crassostrea virginica	NCBITaxon:6565	Crassostrea virginica	SIMRO:0001008	research group												
+SIMRO:0005220	Aspidoscelis gularis	NCBITaxon:68351	Aspidoscelis gularis	SIMRO:0001008	research group												
+SIMRO:0005221	Aspidoscelis inornatus	NCBITaxon:68352	Aspidoscelis inornatus	SIMRO:0001008	research group												
+SIMRO:0005222	Spodoptera frugiperda	NCBITaxon:7108	Spodoptera frugiperda	SIMRO:0001008	research group												
+SIMRO:0005223	Drosophila <fruit fly, genus>	NCBITaxon:7215	Drosophila <fruit fly, genus>	SIMRO:0001008	research group												
+SIMRO:0005224	Drosophila ananassae	NCBITaxon:7217	Drosophila ananassae	SIMRO:0001008	research group												
+SIMRO:0005225	Drosophila erecta	NCBITaxon:7220	Drosophila erecta	SIMRO:0001008	research group												
+SIMRO:0005226	Drosophila mauritiana	NCBITaxon:7226	Drosophila mauritiana	SIMRO:0001008	research group												
+SIMRO:0005227	Drosophila melanogaster	NCBITaxon:7227	Drosophila melanogaster	SIMRO:0001008	research group												
+SIMRO:0005228	Drosophila miranda	NCBITaxon:7229	Drosophila miranda	SIMRO:0001008	research group												
+SIMRO:0005229	Drosophila mojavensis	NCBITaxon:7230	Drosophila mojavensis	SIMRO:0001008	research group												
+SIMRO:0005230	Drosophila persimilis	NCBITaxon:7234	Drosophila persimilis	SIMRO:0001008	research group												
+SIMRO:0005231	Drosophila pseudoobscura	NCBITaxon:7237	Drosophila pseudoobscura	SIMRO:0001008	research group												
+SIMRO:0005232	Drosophila sechellia	NCBITaxon:7238	Drosophila sechellia	SIMRO:0001008	research group												
+SIMRO:0005233	Drosophila simulans	NCBITaxon:7240	Drosophila simulans	SIMRO:0001008	research group												
+SIMRO:0005234	Drosophila virilis	NCBITaxon:7244	Drosophila virilis	SIMRO:0001008	research group												
+SIMRO:0005235	Drosophila yakuba	NCBITaxon:7245	Drosophila yakuba	SIMRO:0001008	research group												
+SIMRO:0005236	Drosophila mercatorum	NCBITaxon:7253	Drosophila mercatorum	SIMRO:0001008	research group												
+SIMRO:0005237	Drosophila willistoni	NCBITaxon:7260	Drosophila willistoni	SIMRO:0001008	research group												
+SIMRO:0005238	Petromyzon marinus	NCBITaxon:7757	Petromyzon marinus	SIMRO:0001008	research group												
+SIMRO:0005239	Polyodon spathula	NCBITaxon:7913	Polyodon spathula	SIMRO:0001008	research group												
+SIMRO:0005240	Schmidtea mediterranea	NCBITaxon:79327	Schmidtea mediterranea	SIMRO:0001008	research group												
+SIMRO:0005241	Danio rerio	NCBITaxon:7955	Danio rerio	SIMRO:0001008	research group												
+SIMRO:0005242	Astyanax mexicanus	NCBITaxon:7994	Astyanax mexicanus	SIMRO:0001008	research group												
+SIMRO:0005243	Xenopus tropicalis	NCBITaxon:8364	Xenopus tropicalis	SIMRO:0001008	research group												
+SIMRO:0005244	Gallus gallus	NCBITaxon:9031	Gallus gallus	SIMRO:0001008	research group												
+SIMRO:0005245	Homo sapiens	NCBITaxon:9606	Homo sapiens	SIMRO:0001008	research group												
+SIMRO:0005246	Bos taurus	NCBITaxon:9913	Bos taurus	SIMRO:0001008	research group												
+SIMRO:0005247	Mesostoma <genus>	NCBITaxon:99404	Mesostoma <genus>	SIMRO:0001008	research group												
+SIMRO:0005248	HaloTag control vector	NCBITaxon:886328	HaloTag control vector	SIMRO:0001008	research group												
+SIMRO:0005249	Escherichia coli	NCBITaxon:562	Escherichia coli	SIMRO:0001008	research group												
+SIMRO:0005250	Saccharomyces cerevisiae W303	NCBITaxon:580240	Saccharomyces cerevisiae W303	SIMRO:0001008	research group												
+SIMRO:0005251	Schizosaccharomyces pombe 972h-	NCBITaxon:284812	Schizosaccharomyces pombe 972h-	SIMRO:0001008	research group												
+SIMRO:0005252	Saccharomyces cerevisiae BY4741	NCBITaxon:1247190	Saccharomyces cerevisiae BY4741	SIMRO:0001008	research group												
+SIMRO:0005253	Ptychodera flava	NCBITaxon:63121	Ptychodera flava	SIMRO:0001008	research group												
 SIMRO:0005255	Saccharomyces cerevisiae BY4742	SIMRO:0002083	Saccharomyces cerevisiae BY4742	SIMRO:0001008	research group												
+SIMRO:0005254	Saccharomyces cerevisiae S288C	NCBITaxon:559292	Saccharomyces cerevisiae S288C	SIMRO:0001008	research group												
+																	
