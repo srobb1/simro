@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-11/imports/mi_import.owl
-subsetdef: Drugable ""
-subsetdef: PSI-MI_slim ""
+data-version: simro/releases/2020-02-13/imports/mi_import.owl
+subsetdef: Drugable "Drugable Genome Project"
+subsetdef: PSI-MI_slim "Subset of PSI-MI"
 ontology: simro/imports/mi_import
 
 [Term]
@@ -14,6 +14,16 @@ subset: PSI-MI_slim
 synonym: "mi" EXACT PSI-MI-short []
 
 [Term]
+id: MI:0001
+name: interaction detection method
+namespace: PSI-MI
+def: "Method to determine the interaction." [PMID:14755292]
+subset: Drugable
+subset: PSI-MI_slim
+synonym: "interaction detect" EXACT PSI-MI-short []
+relationship: part_of MI:0000 ! molecular interaction
+
+[Term]
 id: MI:0003
 name: feature detection method
 namespace: PSI-MI
@@ -21,6 +31,42 @@ def: "Method to determine the features of the proteins involved in the interacti
 subset: PSI-MI_slim
 synonym: "feature detection" EXACT PSI-MI-short []
 relationship: part_of MI:0000 ! molecular interaction
+
+[Term]
+id: MI:0013
+name: biophysical
+namespace: PSI-MI
+def: "The application of physical principles and methods to biological experiments." [PMID:14755292]
+subset: PSI-MI_slim
+is_a: MI:0045 ! experimental interaction detection
+
+[Term]
+id: MI:0045
+name: experimental interaction detection
+namespace: PSI-MI
+def: "Methods based on laboratory experiments to determine an interaction." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "experimental interac" EXACT PSI-MI-short []
+is_a: MI:0001 ! interaction detection method
+
+[Term]
+id: MI:0051
+name: fluorescence technology
+namespace: PSI-MI
+def: "Techniques based upon the measurement of the emission of one or more photons by a molecule activated by the absorption of a quantum of electro-magnetic radiation. Typically the emission, which is characterised by a wavelength that is longer than the one of excitatory radiation, occurs within 10-8 seconds." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "fluorescence" EXACT PSI-MI-short []
+is_a: MI:0013 ! biophysical
+
+[Term]
+id: MI:0090
+name: protein complementation assay
+namespace: PSI-MI
+def: "In the protein-fragment complementation assay, the proteins of interest (\"Bait\" and \"Prey\") are covalently linked at the genetic level to incomplete fragments of a third protein (known as the \"reporter\") and are expressed in vivo, Interaction between the \"bait\" and the \"prey\" proteins brings the fragments of the \"reporter\" protein in close enough proximity to allow them to reform and become the functional reporter protein. Typically enzymes which confer resistance to antibiotics, such as Dihydrofolate reductase or Beta-lactamase, or proteins that give colorimetric or fluorescent signals are used. The Bait protein is generally the protein under study and the methods are readily adaptable to highthroughput mode." [PMID:11495741]
+subset: PSI-MI_slim
+synonym: "complementation" EXACT PSI-MI-short []
+synonym: "PCA" EXACT PSI-MI-alternate []
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0094
@@ -99,7 +145,16 @@ is_a: MI:0240 ! fusion protein
 
 [Term]
 id: MI:0809
+name: bimolecular fluorescence complementation
+namespace: PSI-MI
 alt_id: MI:0229
+def: "The bimolecular fluorescence complementation (BiFC) is an assay for determination of protein interactions and/or their location in living cells. This approach is based on complementation between two non- fluorescent fragments of a protein fluorophore such as green fluorescent protein (GFP) or its derivatives. Interactions between proteins fused to each fragment bring the fragments together resulting in the reconstitution of a fully functional flourophore that can be identified through fluorescence spectroscopy or microscopy." [PMID:11983170]
+subset: PSI-MI_slim
+synonym: "bifc" EXACT PSI-MI-short []
+synonym: "gfp complementation" EXACT []
+synonym: "green fluorescence protein complementation assay" EXACT []
+is_a: MI:0051 ! fluorescence technology
+is_a: MI:0090 ! protein complementation assay
 
 [Term]
 id: MI:0856

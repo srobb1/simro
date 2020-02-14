@@ -72,7 +72,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ro ms uo obi ero fbbi mi go chebi cl clo efo uberon ncit ncbitaxon
+IMPORTS =  ro ms uo obi fbbi mi go chebi uberon cl clo efo ncit ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_FILES = $(foreach n,$(IMPORT_ROOTS), $(foreach f,$(FORMATS), $(n).$(f)))
@@ -291,16 +291,6 @@ mirror/obi.owl: mirror/obi.trigger
 .PRECIOUS: mirror/%.owl
 
 
-## ONTOLOGY: ero
-## Copy of ero is re-downloaded whenever source changes
-mirror/ero.trigger: $(SRC)
-
-mirror/ero.owl: mirror/ero.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ero.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-.PRECIOUS: mirror/%.owl
-
-
 ## ONTOLOGY: fbbi
 ## Copy of fbbi is re-downloaded whenever source changes
 mirror/fbbi.trigger: $(SRC)
@@ -341,6 +331,16 @@ mirror/chebi.owl: mirror/chebi.trigger
 .PRECIOUS: mirror/%.owl
 
 
+## ONTOLOGY: uberon
+## Copy of uberon is re-downloaded whenever source changes
+mirror/uberon.trigger: $(SRC)
+
+mirror/uberon.owl: mirror/uberon.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/uberon.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
 ## ONTOLOGY: cl
 ## Copy of cl is re-downloaded whenever source changes
 mirror/cl.trigger: $(SRC)
@@ -367,16 +367,6 @@ mirror/efo.trigger: $(SRC)
 
 mirror/efo.owl: mirror/efo.trigger
 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/srobb1/simr_imports/master/efo_import.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-.PRECIOUS: mirror/%.owl
-
-
-## ONTOLOGY: uberon
-## Copy of uberon is re-downloaded whenever source changes
-mirror/uberon.trigger: $(SRC)
-
-mirror/uberon.owl: mirror/uberon.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/srobb1/simr_imports/master/uberon_import.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 

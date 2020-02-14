@@ -9,17 +9,37 @@
 #########################################
 # might want to change this to use imports/..owl in the remove statment instead of using the mirror file $> mirror/owl $@ imports/owl
 
-#imports/clo_import.owl: mirror/clo.owl
-#	$(ROBOT) remove --input $< -t CLO:0000015 -t OBI:0000293 --preserve-structure false \
-	anannotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
-	
-#imports/clo_import.owl: mirror/cl.owl
-#	$(ROBOT) remove --input $< -t CLO:0000015 -t OBI:0000293 --preserve-structure false \
-	anannotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+## ONTOLOGY: clo
+## Copy of clo is re-downloaded whenever source changes
+mirror/clo.trigger: $(SRC)
 
-#imports/obi_import.owl: mirror/obi.owl
-#	$(ROBOT) remove --input $< -t CLO:0000015 -t OBI:0000293 --preserve-structure false \
-	annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+mirror/clo.owl: mirror/clo.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/srobb1/simr_imports/master/clo_import.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+	$(ROBOT) remove --input $@ -t CLO:0000015 -t OBI:0000293 --preserve-structure false --output $@.tmp.owl && mv $@.tmp.owl $@
+
+.PRECIOUS: mirror/%.owl
+
+## ONTOLOGY: cl
+## Copy of cl is re-downloaded whenever source changes
+#mirror/cl.trigger: $(SRC)
+
+#mirror/cl.owl: mirror/cl.trigger
+#	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/cl/cl-base.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+#	$(ROBOT) remove --input $@ -t CLO:0000015 -t OBI:0000293 --preserve-structure false --output $@.tmp.owl && mv $@.tmp.owl $@
+
+#.PRECIOUS: mirror/%.owl
+
+## ONTOLOGY: obi
+## Copy of obi is re-downloaded whenever source changes
+#mirror/obi.trigger: $(SRC)
+
+#mirror/obi.owl: mirror/obi.trigger
+#	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/obi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+#	$(ROBOT) remove --input $@ -t CLO:0000015 -t OBI:0000293 --preserve-structure false --output $@.tmp.owl && mv $@.tmp.owl $@
+
+#.PRECIOUS: mirror/%.owl
+
+
 
 
 

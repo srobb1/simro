@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-11/imports/obi_import.owl
+data-version: simro/releases/2020-02-13/imports/obi_import.owl
 ontology: simro/imports/obi_import
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEBI_26710>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37586>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000037>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000038>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000064>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000101>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000178>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000180>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000183>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000184>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000023>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000094>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000112>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000453>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000456>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000457>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000458>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000571>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000576>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000648>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000652>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000659>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000663>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000685>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000686>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000704>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000707>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000792>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000835>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000947>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0100046>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0100051>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200111>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200166>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200171>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200172>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200175>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200178>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200179>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200188>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200190>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302716>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302729>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302732>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302733>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302876>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000031>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000063>))\nDeclaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000067>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000295>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000643>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000058>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000059>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000079>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000081>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000085>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000086>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000087>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000091>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000092>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001000>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001001>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001015>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002000>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002002>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002350>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000224>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000420>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000755>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000760>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000761>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000762>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000763>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000764>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000766>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000767>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000768>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000772>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000773>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000774>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000775>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000777>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000778>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000780>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000781>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000782>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000783>))\n\n############################\n#   Object Properties\n############################\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000050> (part of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000051>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000051> (has part)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000050>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (realized in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000054> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000055>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realizes)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000054>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000066> (occurs in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000066> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000067>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000067> (contains process)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000067> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000066>))\n\n# Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has_specified_input)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000295>))\n\n# Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is_specified_input_of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000295> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000293>))\n\n# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000312>))\n\n# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is_specified_output_of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000312> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000299>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (inheres in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000053>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (bearer of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000053> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000052>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000056> (participates in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000056> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000057>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000057> (has participant)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000057> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000056>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000058> (is concretized as)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000058> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000059>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000059> (concretizes)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000059> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000058>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000079> (function of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000079> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000085>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000080> (quality of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000080> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000086>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000081> (role of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000081> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000087>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000085> (has function)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000085> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000079>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000086> (has quality)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000086> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000080>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (has role)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000087> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000081>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000091> (has disposition)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000091> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000092>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000092> (disposition of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000092> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000091>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0001000> (derives from)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0001000> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0001001>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0001001> (derives into)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0001001> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0001000>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0001015> (location of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0001015> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0001025>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0001025> (located in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0001025> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0001015>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0002000> (2D boundary of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0002000> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0002002>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0002002> (has 2D boundary)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0002002> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0002000>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0002350> (member of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0002350> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0002351>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0002351> (has member)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0002351> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0002350>))\nIrreflexiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>)\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)\n\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)\n\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)\n\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000178> (material information bearer)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000178> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000030>))))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (obsolescence reason specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000225> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (denotator type)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000104>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000023> (classified data set)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000663>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000094> (material processing)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000456>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000112> (specimen role)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000659>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000453> (measure function)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000453> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000109>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000457> (manufacturing)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000457> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000458>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000571> (manufacturer role)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000571> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000648> (clustered data set)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000648> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0200175>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000652> (material combination)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000652> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000686>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000663> (class prediction data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000663> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000023>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200179>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000707> (decision tree building data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000707> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000704>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000792> (statistical model validation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000792> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200188>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000835> (manufacturer)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000835> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000571>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000947> (service provider role)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000947> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0100046> (phosphate buffered saline solution)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0100046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000576> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000643> <http://purl.obolibrary.org/obo/CHEBI_26710>))))\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0100046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000576> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000643> <http://purl.obolibrary.org/obo/CHEBI_37586>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200000> (data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0200000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200166>))\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0200000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000005>)))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200111> (data visualization)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0200111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.org/obo/IAO_0000101>)))\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0200111> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.org/obo/IAO_0000101>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200171> (partitioning data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0200171> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200172>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200175> (class discovery data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0200175> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000648>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200178>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200190> (clustered data visualization)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0200190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/IAO_0000037> <http://purl.obolibrary.org/obo/IAO_0000179> <http://purl.obolibrary.org/obo/IAO_0000180> <http://purl.obolibrary.org/obo/IAO_0000183> <http://purl.obolibrary.org/obo/IAO_0000184>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0302716> (pool of specimens)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0302716> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0100051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000652> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0100051>)))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0302729> (chemical solution)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0302729> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000576> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0302732>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000576> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0302733>)))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0302876> (dissolved material entity)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0302876> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/OBI_0000576> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000685>))))\n\n# Class: <http://purl.obolibrary.org/obo/OGMS_0000063> (disease course)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OGMS_0000063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OGMS_0000031>))\n\n# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)\n\nEquivalentClasses(<http://www.geneontology.org/formats/oboInOwl#Subset> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000224>))\n\n\n############################\n#   Named Individuals\n############################\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (metadata complete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (ready for release)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (metadata incomplete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (uncurated)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (pending final vetting)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (to be replaced with external ontology term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)\n\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000761> (GenePattern module SVM)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000761> <http://purl.obolibrary.org/obo/OBI_0000775>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000766> (GenePattern module KMeansClustering)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000766> <http://purl.obolibrary.org/obo/OBI_0000764>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000768> (GenePattern module CARTXValidation)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000768> <http://purl.obolibrary.org/obo/OBI_0000763>)\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000768> <http://purl.obolibrary.org/obo/OBI_0000767>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000772> (GenePattern module PeakMatch)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000772> <http://purl.obolibrary.org/obo/OBI_0000778>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000773> (GenePattern module KNN)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000773> <http://purl.obolibrary.org/obo/OBI_0000762>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000774> (GenePattern module HierarchicalClustering)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000774> <http://purl.obolibrary.org/obo/OBI_0000755>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000777> (GenePattern module PCA)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000777> <http://purl.obolibrary.org/obo/OBI_0000760>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000782> (GenePattern module HeatMapViewer)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000782> <http://purl.obolibrary.org/obo/OBI_0000780>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000783> (GenePattern module HierarchicalClusteringViewer)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000783> <http://purl.obolibrary.org/obo/OBI_0000781>)\n\n\nDisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>)\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000219> \"\"@en)\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEBI_26710>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEBI_33697>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37586>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CLO_0000001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CL_0000001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CL_0000010>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CL_0000236>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GO_0003824>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GO_0003964>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GO_0032991>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000037>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000038>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000064>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000101>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000178>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000179>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000180>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000183>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000184>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10239>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000023>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000079>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000086>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000094>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000112>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000419>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000427>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000453>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000456>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000457>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000458>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000571>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000576>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000639>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000648>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000652>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000659>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000663>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000685>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000686>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000704>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000707>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000792>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000806>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000835>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000838>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000845>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000947>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0001479>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0001866>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0001867>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0001912>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0100010>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0100046>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0100051>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200111>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200166>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200171>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200172>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200175>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200178>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200179>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200188>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0200190>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302716>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302729>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302732>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302733>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0302876>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0600014>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0600024>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0600036>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0600037>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000031>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000063>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PR_000000001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000477>))\nDeclaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000067>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000295>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000643>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000058>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000059>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000079>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000081>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000085>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000086>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000087>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000091>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000092>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001000>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001001>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001015>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002000>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002002>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002350>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000224>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000420>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000755>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000760>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000761>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000762>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000763>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000764>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000766>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000767>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000768>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000772>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000773>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000774>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000775>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000777>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000778>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000780>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000781>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000782>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0000783>))\n\n############################\n#   Object Properties\n############################\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000050> (part of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000051>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000051> (has part)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000050>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (realized in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000054> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000055>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realizes)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000054>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000066> (occurs in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000066> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000067>))\n\n# Object Property: <http://purl.obolibrary.org/obo/BFO_0000067> (contains process)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000067> ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000066>))\n\n# Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has_specified_input)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000295>))\n\n# Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is_specified_input_of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000295> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000293>))\n\n# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000312>))\n\n# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is_specified_output_of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000312> ObjectInverseOf(<http://purl.obolibrary.org/obo/OBI_0000299>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (inheres in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000053>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (bearer of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000053> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000052>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000056> (participates in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000056> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000057>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000057> (has participant)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000057> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000056>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000058> (is concretized as)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000058> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000059>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000059> (concretizes)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000059> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000058>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000079> (function of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000079> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000085>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000080> (quality of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000080> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000086>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000081> (role of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000081> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000087>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000085> (has function)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000085> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000079>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000086> (has quality)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000086> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000080>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000087> (has role)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000087> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000081>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000091> (has disposition)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000091> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000092>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0000092> (disposition of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0000092> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000091>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0001000> (derives from)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0001000> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0001001>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0001001> (derives into)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0001001> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0001000>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0001015> (location of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0001015> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0001025>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0001025> (located in)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0001025> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0001015>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0002000> (2D boundary of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0002000> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0002002>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0002002> (has 2D boundary)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0002002> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0002000>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0002350> (member of)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0002350> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0002351>))\n\n# Object Property: <http://purl.obolibrary.org/obo/RO_0002351> (has member)\n\nEquivalentObjectProperties(<http://purl.obolibrary.org/obo/RO_0002351> ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0002350>))\nIrreflexiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>)\n\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)\n\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)\n\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)\n\n\n# Class: <http://purl.obolibrary.org/obo/CLO_0000001> (cell line cell)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CLO_0000001> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0001867>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0001867>))))\n\n# Class: <http://purl.obolibrary.org/obo/CL_0000001> (primary cultured cell)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CL_0000001> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0600037>)))\nSubClassOf(<http://purl.obolibrary.org/obo/CL_0000001> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0600037>)))))\n\n# Class: <http://purl.obolibrary.org/obo/CL_0000010> (cultured cell)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CL_0000010> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0600036>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0600036>))))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000178> (material information bearer)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000178> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000030>))))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (obsolescence reason specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000225> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (denotator type)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000104>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000023> (classified data set)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000663>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000094> (material processing)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000456>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000112> (specimen role)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000659>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000419> (reverse transcriptase)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000419> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000427> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000085> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/GO_0003964>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000427> (enzyme)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000427> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectUnionOf(<http://purl.obolibrary.org/obo/CHEBI_33697> <http://purl.obolibrary.org/obo/GO_0032991> <http://purl.obolibrary.org/obo/PR_000000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/CHEBI_33697>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0032991>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PR_000000001>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000085> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/GO_0003824>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000453> (measure function)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000453> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000109>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000457> (manufacturing)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000457> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000458>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000571> (manufacturer role)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000571> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000648> (clustered data set)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000648> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0200175>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000652> (material combination)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000652> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000686>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000663> (class prediction data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000663> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000023>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200179>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000707> (decision tree building data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000707> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000704>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000792> (statistical model validation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000792> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200188>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000835> (manufacturer)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000835> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000571>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000838> (material maintenance)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000838> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000806>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000845> (primary structure of RNA molecule)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000845> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/CHEBI_33697>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000947> (service provider role)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000947> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000968> (device)\n\nDisjointClasses(<http://purl.obolibrary.org/obo/OBI_0000968> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000086>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0001479> (specimen from organism)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0001479> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0000112>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> ObjectUnionOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0000477>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0001866> (secondary cultured cell)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0001866> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0600037>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0600037>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0100010> (Epstein Barr virus transformed B cell)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0100010> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0600036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/NCBITaxon_10239>))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/CL_0000236>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0100046> (phosphate buffered saline solution)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0100046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000576> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000643> <http://purl.obolibrary.org/obo/CHEBI_26710>))))\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0100046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000576> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000643> <http://purl.obolibrary.org/obo/CHEBI_37586>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200000> (data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0200000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200166>))\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0200000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000005>)))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200111> (data visualization)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0200111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.org/obo/IAO_0000101>)))\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0200111> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/IAO_0000038> <http://purl.obolibrary.org/obo/IAO_0000101>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200171> (partitioning data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0200171> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200172>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200175> (class discovery data transformation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0200175> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000648>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0200178>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0200190> (clustered data visualization)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0200190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectUnionOf(<http://purl.obolibrary.org/obo/IAO_0000037> <http://purl.obolibrary.org/obo/IAO_0000179> <http://purl.obolibrary.org/obo/IAO_0000180> <http://purl.obolibrary.org/obo/IAO_0000183> <http://purl.obolibrary.org/obo/IAO_0000184>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0302716> (pool of specimens)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0302716> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0100051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000652> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0100051>)))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0302729> (chemical solution)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0302729> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000576> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0302732>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0000576> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/OBI_0302733>)))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0302876> (dissolved material entity)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0302876> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/OBI_0000576> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000685>))))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0600014> (material component separation)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0600014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000639>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0600024> (maintaining cell culture)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0600024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> ObjectUnionOf(<http://purl.obolibrary.org/obo/OBI_0000079> <http://purl.obolibrary.org/obo/OBI_0001912>)))\n\n# Class: <http://purl.obolibrary.org/obo/OGMS_0000063> (disease course)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OGMS_0000063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OGMS_0000031>))\n\n# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)\n\nEquivalentClasses(<http://www.geneontology.org/formats/oboInOwl#Subset> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000224>))\n\n\n############################\n#   Named Individuals\n############################\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (metadata complete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (ready for release)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (metadata incomplete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (uncurated)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (pending final vetting)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (to be replaced with external ontology term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)\n\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000761> (GenePattern module SVM)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000761> <http://purl.obolibrary.org/obo/OBI_0000775>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000766> (GenePattern module KMeansClustering)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000766> <http://purl.obolibrary.org/obo/OBI_0000764>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000768> (GenePattern module CARTXValidation)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000768> <http://purl.obolibrary.org/obo/OBI_0000763>)\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000768> <http://purl.obolibrary.org/obo/OBI_0000767>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000772> (GenePattern module PeakMatch)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000772> <http://purl.obolibrary.org/obo/OBI_0000778>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000773> (GenePattern module KNN)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000773> <http://purl.obolibrary.org/obo/OBI_0000762>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000774> (GenePattern module HierarchicalClustering)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000774> <http://purl.obolibrary.org/obo/OBI_0000755>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000777> (GenePattern module PCA)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000777> <http://purl.obolibrary.org/obo/OBI_0000760>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000782> (GenePattern module HeatMapViewer)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000782> <http://purl.obolibrary.org/obo/OBI_0000780>)\n\n# Individual: <http://purl.obolibrary.org/obo/OBI_0000783> (GenePattern module HierarchicalClusteringViewer)\n\nObjectPropertyAssertion(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OBI_0000783> <http://purl.obolibrary.org/obo/OBI_0000781>)\n\n\nDisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>)\nAnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000219> \"\"@en)\n)
 
 [Term]
 id: BFO:0000001
@@ -225,6 +225,63 @@ property_value: IAO:0000602 "(forall (x) (if (Role x) (RealizableEntity x))) // 
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
+id: BFO:0000024
+name: fiat object
+name: fiat object part
+is_a: BFO:0000040 ! material entity
+property_value: BFO:0000179 "fiat-object" xsd:string
+property_value: BFO:0000179 "fiat-object-part" xsd:string
+property_value: BFO:0000180 "FiatObjectPart" xsd:string
+property_value: IAO:0000112 "or with divisions drawn by cognitive subjects for practical reasons, such as the division of a cake (before slicing) into (what will become) slices (and thus member parts of an object aggregate). However, this does not mean that fiat object parts are dependent for their existence on divisions or delineations effected by cognitive subjects. If, for example, it is correct to conceive geological layers of the Earth as fiat object parts of the Earth, then even though these layers were first delineated in recent times, still existed long before such delineation and what holds of these layers (for example that the oldest layers are also the lowest layers) did not begin to hold because of our acts of delineation.Treatment of material entity in BFOExamples viewed by some as problematic cases for the trichotomy of fiat object part, object, and object aggregate include: a mussel on (and attached to) a rock, a slime mold, a pizza, a cloud, a galaxy, a railway train with engine and multiple carriages, a clonal stand of quaking aspen, a bacterial community (biofilm), a broken femur. Note that, as Aristotle already clearly recognized, such problematic cases – which lie at or near the penumbra of instances defined by the categories in question – need not invalidate these categories. The existence of grey objects does not prove that there are not objects which are black and objects which are white; the existence of mules does not prove that there are not objects which are donkeys and objects which are horses. It does, however, show that the examples in question need to be addressed carefully in order to show how they can be fitted into the proposed scheme, for example by recognizing additional subdivisions [29" xsd:string
+property_value: IAO:0000112 "the division of the brain into regions" xsd:string
+property_value: IAO:0000112 "the division of the planet into hemispheres" xsd:string
+property_value: IAO:0000112 "the dorsal and ventral surfaces of the body" xsd:string
+property_value: IAO:0000112 "the FMA:regional parts of an intact human body." xsd:string
+property_value: IAO:0000112 "the upper and lower lobes of the left lung" xsd:string
+property_value: IAO:0000112 "the Western hemisphere of the Earth" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: Most examples of fiat object parts are associated with theoretically drawn divisions" xsd:string
+property_value: IAO:0000600 "b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/027-004"}
+property_value: IAO:0000602 "(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/027-004"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000028
+name: three-dimensional spatial region
+is_a: BFO:0000006 ! spatial region
+property_value: BFO:0000179 "3d-s-region" xsd:string
+property_value: BFO:0000180 "ThreeDimensionalSpatialRegion" xsd:string
+property_value: IAO:0000112 "a cube-shaped region of space" xsd:string
+property_value: IAO:0000112 "a sphere-shaped region of space," xsd:string
+property_value: IAO:0000600 "A three-dimensional spatial region is a spatial region that is of three dimensions. (axiom label in BFO2 Reference: [040-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/040-001"}
+property_value: IAO:0000602 "(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/040-001"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000030
+name: object
+is_a: BFO:0000040 ! material entity
+property_value: BFO:0000179 "object" xsd:string
+property_value: BFO:0000180 "Object" xsd:string
+property_value: IAO:0000112 "atom" xsd:string
+property_value: IAO:0000112 "cell" xsd:string
+property_value: IAO:0000112 "cells and organisms" xsd:string
+property_value: IAO:0000112 "engineered artifacts" xsd:string
+property_value: IAO:0000112 "grain of sand" xsd:string
+property_value: IAO:0000112 "molecule" xsd:string
+property_value: IAO:0000112 "organelle" xsd:string
+property_value: IAO:0000112 "organism" xsd:string
+property_value: IAO:0000112 "planet" xsd:string
+property_value: IAO:0000112 "solid portions of matter" xsd:string
+property_value: IAO:0000112 "star" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: an object is a maximal causally unified material entity" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: BFO rests on the presupposition that at multiple micro-, meso- and macroscopic scales reality exhibits certain stable, spatially separated or separable material units, combined or combinable into aggregates of various sorts (for example organisms into what are called ‘populations’). Such units play a central role in almost all domains of natural science from particle physics to cosmology. Many scientific laws govern the units in question, employing general terms (such as ‘molecule’ or ‘planet’) referring to the types and subtypes of units, and also to the types and subtypes of the processes through which such units develop and interact. The division of reality into such natural units is at the heart of biological science, as also is the fact that these units may form higher-level units (as cells form multicellular organisms) and that they may also form aggregates of units, for example as cells form portions of tissue and organs form families, herds, breeds, species, and so on. At the same time, the division of certain portions of reality into engineered units (manufactured artifacts) is the basis of modern industrial technology, which rests on the distributed mass production of engineered parts through division of labor and on their assembly into larger, compound units such as cars and laptops. The division of portions of reality into units is one starting point for the phenomenon of counting." xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: Each object is such that there are entities of which we can assert unproblematically that they lie in its interior, and other entities of which we can assert unproblematically that they lie in its exterior. This may not be so for entities lying at or near the boundary between the interior and exterior. This means that two objects – for example the two cells depicted in Figure 3 – may be such that there are material entities crossing their boundaries which belong determinately to neither cell. Something similar obtains in certain cases of conjoined twins (see below)." xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: To say that b is causally unified means: b is a material entity which is such that its material parts are tied together in such a way that, in environments typical for entities of the type in question,if c, a continuant part of b that is in the interior of b at t, is larger than a certain threshold size (which will be determined differently from case to case, depending on factors such as porosity of external cover) and is moved in space to be at t at a location on the exterior of the spatial region that had been occupied by b at t, then either b’s other parts will be moved in coordinated fashion or b will be damaged (be affected, for example, by breakage or tearing) in the interval between t and t.causal changes in one part of b can have consequences for other parts of b without the mediation of any entity that lies on the exterior of b. Material entities with no proper material parts would satisfy these conditions trivially. Candidate examples of types of causal unity for material entities of more complex sorts are as follows (this is not intended to be an exhaustive list):CU1: Causal unity via physical coveringHere the parts in the interior of the unified entity are combined together causally through a common membrane or other physical covering\\. The latter points outwards toward and may serve a protective function in relation to what lies on the exterior of the entity [13, 47" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: ‘objects’ are sometimes referred to as ‘grains’ [74" xsd:string
+property_value: IAO:0000600 "b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/024-001"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
 id: BFO:0000031
 name: generically dependent continuant
 def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
@@ -293,6 +350,22 @@ property_value: IAO:0000116 "BFO 2 Reference: Immaterial entities are divided in
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
+id: CHEBI:16670
+name: peptide
+def: "Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from alpha-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc." []
+is_a: CHEBI:33839 ! macromolecule
+property_value: IAO:0000111 "peptide" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
+id: CHEBI:17137
+name: hydrogensulfite
+def: "A sulfur oxoanion that has formula HO3S." []
+is_a: CHEBI:23367 ! molecular entity
+property_value: IAO:0000111 "hydrogensulfite" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
 id: CHEBI:23367
 name: molecular entity
 def: "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity." []
@@ -316,6 +389,47 @@ def: "A xanthene dye that is highly fluorescent, detectable even when present in
 is_a: REO:0000280 ! molecular label
 relationship: RO:0000087 REO:0000171 ! has role molecular label role
 property_value: IAO:0000111 "fluorescein" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
+id: CHEBI:33250
+name: atom
+def: "A chemical entity constituting the smallest component of an element having the chemical properties of the element." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "atom" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
+id: CHEBI:33696
+name: nucleic acid
+def: "A macromolecule made up of nucleotide units and hydrolysable into certain pyrimidine or purine bases (usually adenine, cytosine, guanine, thymine, uracil), D-ribose or 2-deoxy-D-ribose and phosphoric acid." []
+is_a: CHEBI:33839 ! macromolecule
+property_value: IAO:0000111 "nucleic acid" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
+id: CHEBI:33697
+name: ribonucleic acid
+def: "High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins." []
+is_a: CHEBI:33696 ! nucleic acid
+property_value: IAO:0000111 "ribonucleic acid" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
+id: CHEBI:33709
+name: amino acid
+def: "A carboxylic acid containing one or more amino groups." []
+is_a: CHEBI:23367 ! molecular entity
+property_value: IAO:0000111 "amino acid" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
+id: CHEBI:33839
+name: macromolecule
+def: "A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." []
+is_a: CHEBI:23367 ! molecular entity
+property_value: IAO:0000111 "macromolecule" xsd:string
+property_value: IAO:0000118 "polymer" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
 
 [Term]
@@ -370,6 +484,133 @@ property_value: IAO:0000112 "PMID:18089833.Cancer Res. 2007 Dec 15;67(24):12018-
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 
 [Term]
+id: CL:0000001
+name: primary cultured cell
+def: "A cultured cell that is freshly isolated from a organismal source, or derives in culture from such a cell prior to the culture being passaged." []
+is_a: CL:0000010 ! cultured cell
+property_value: IAO:0000111 "primary cultured cell" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000003
+name: native cell
+def: "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment)." []
+is_a: CL:0000000 ! cell
+property_value: IAO:0000111 "native cell" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000010
+name: cultured cell
+def: "A cell in vitro that is or has been maintained or propagated as part of a cell culture." []
+is_a: CL:0000578 ! experimentally modified cell in vitro
+property_value: IAO:0000111 "cultured cell" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000057
+name: fibroblast
+def: "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped." []
+is_a: CL:0000000 ! cell
+property_value: IAO:0000111 "fibroblast" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000066
+name: epithelial cell
+def: "A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina." []
+is_a: CL:0000000 ! cell
+property_value: IAO:0000111 "epithelial cell" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000236
+name: B cell
+def: "A lymphocyte of B lineage with the phenotype CD19-positive, CD20-positive, and capable of B cell mediated immunity." []
+is_a: CL:0000542 ! lymphocyte
+property_value: IAO:0000111 "B cell" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000542
+name: lymphocyte
+def: "A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin." []
+is_a: CL:0000842 ! mononuclear cell
+property_value: IAO:0000111 "lymphocyte" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000578
+name: experimentally modified cell in vitro
+def: "A cell in vitro that has undergone physical changes as a consequence of a deliberate and specific experimental procedure." []
+is_a: CL:0000000 ! cell
+is_a: OBI:0000047 ! processed material
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
+property_value: IAO:0000111 "experimentally modified cell in vitro" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000842
+name: mononuclear cell
+def: "A leukocyte with a single non-segmented nucleus in the mature form." []
+is_a: CL:0000000 ! cell
+property_value: IAO:0000111 "mononuclear cell" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CLO:0000001
+name: cell line cell
+def: "A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture" []
+def: "A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture\n" []
+is_a: OBI:0001866 ! secondary cultured cell
+relationship: RO:0001000 CL:0000001 {http://purl.obolibrary.org/obo/IAO_0000116="'derives from' is transitive, so even cell line cells created through modification of an existing cell line cell have derived_from some initial primary cultured cell that existed at some point in time."} ! derives from primary cultured cell
+property_value: IAO:0000111 "cell line cell" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
+
+[Term]
+id: CLO:0000019
+name: immortal cell line cell
+def: "A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line." []
+is_a: CLO:0000001 ! cell line cell
+property_value: IAO:0000111 "immortal cell line cell" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
+
+[Term]
+id: CLO:0000031
+name: cell line
+def: "A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture). " []
+def: "A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  \n" []
+is_a: OBI:0001905 ! secondary cultured cell population
+relationship: OBI:0000643 CLO:0000001 ! has grain cell line cell
+relationship: OBI:0000643 CLO:0000001 ! has grain cell line cell
+property_value: IAO:0000111 "cell line" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
+
+[Term]
+id: GO:0000785
+name: chromatin
+def: "The ordered and organized complex of DNA, protein, and sometimes RNA, that forms the chromosome." []
+is_a: GO:0005575 ! cellular_component
+property_value: IAO:0000111 "chromatin" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0001508
+name: action potential
+def: "A process in which membrane potential cycles through a depolarizing spike, triggered in response to depolarization above some threshold, followed by repolarization. This cycle is driven by the flow of ions through various voltage gated channels with different thresholds and ion specificities." []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000111 "action potential" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0002250
+name: adaptive immune response
+def: "An immune response mediated by cells expressing specific receptors for antigen produced through a somatic diversification process, and allowing for an enhanced secondary response to subsequent exposures to the same antigen (immunological memory)." []
+is_a: GO:0006955 ! immune response
+property_value: IAO:0000111 "adaptive immune response" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
 id: GO:0003674
 name: GO:molecular_function
 def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs. These actions are described from two distinct but related perspectives: (1) biochemical activity, and (2) role as a component in a larger system/process." []
@@ -386,12 +627,127 @@ property_value: IAO:0000111 "catalytic activity" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Term]
+id: GO:0003964
+name: RNA-directed DNA polymerase activity
+def: "Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1). Catalyzes RNA-template-directed extension of the 3'- end of a DNA strand by one deoxynucleotide at a time." []
+is_a: GO:0003824 ! catalytic activity
+property_value: IAO:0000111 "RNA-directed DNA polymerase activity" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0005575
+name: cellular_component
+def: "A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome)." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "cellular_component" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0005694
+name: chromosome
+def: "A structure composed of a very long molecule of DNA and associated proteins (e.g. histones) that carries hereditary information." []
+is_a: GO:0005575 ! cellular_component
+property_value: IAO:0000111 "chromosome" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0006955
+name: immune response
+def: "Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat." []
+is_a: GO:0050896 ! response to stimulus
+property_value: IAO:0000111 "immune response" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
 id: GO:0008150
 name: biological_process
 def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." []
 is_a: BFO:0000015 ! process
 disjoint_from: OBI:0000011 ! planned process
 property_value: IAO:0000111 "biological_process" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0009987
+name: cellular process
+def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000111 "cellular process" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0010467
+name: gene expression
+def: "The process in which a gene's sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA or circRNA (for protein-coding genes) and the translation of that mRNA or circRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form." []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000111 "gene expression" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0030097
+name: hemopoiesis
+def: "The process whose specific outcome is the progression of the myeloid and lymphoid derived organ/tissue systems of the blood and other parts of the body over time, from formation to the mature structure. The site of hemopoiesis is variable during development, but occurs primarily in bone marrow or kidney in many adult vertebrates." []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000111 "hemopoiesis" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0032991
+name: protein-containing complex
+def: "A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together." []
+is_a: BFO:0000040 ! material entity
+relationship: BFO:0000051 PR:000000001 ! has part protein
+property_value: IAO:0000111 "protein-containing complex" xsd:string
+property_value: IAO:0000112 "A ribosome is a protein complex." xsd:string
+property_value: IAO:0000118 "protein complex" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0034061
+name: DNA polymerase activity
+def: "Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1); the synthesis of DNA from deoxyribonucleotide triphosphates in the presence of a nucleic acid template and a 3'hydroxyl group." []
+is_a: GO:0003824 ! catalytic activity
+property_value: IAO:0000111 "DNA polymerase activity" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0040029
+name: regulation of gene expression, epigenetic
+def: "Any process that modulates the frequency, rate or extent of gene expression; the process is mitotically or meiotically heritable, or is stably self-propagated in the cytoplasm of a resting cell, and does not entail a change in DNA sequence." []
+is_a: GO:0040030 ! regulation of molecular function, epigenetic
+property_value: IAO:0000111 "regulation of gene expression, epigenetic" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0040030
+name: regulation of molecular function, epigenetic
+def: "Any heritable epigenetic process that modulates the frequency, rate or extent of protein function by self-perpetuating conformational conversions of normal proteins in healthy cells. This is distinct from, though mechanistically analogous to, disease states associated with prion propagation and amyloidogenesis. A single protein, if it carries a glutamine/asparagine-rich ('prion') domain, can sometimes stably exist in at least two distinct physical states, each associated with a different phenotype; propagation of one of these traits is achieved by a self-perpetuating change in the protein from one form to the other, mediated by conformational changes in the glutamine/asparagine-rich domain. Prion domains are both modular and transferable to other proteins, on which they can confer a heritable epigenetic alteration of function; existing bioinformatics data indicate that they are rare in non-eukarya, but common in eukarya." []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000111 "regulation of molecular function, epigenetic" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0042611
+name: MHC protein complex
+def: "A transmembrane protein complex composed of an MHC alpha chain and, in most cases, either an MHC class II beta chain or an invariant beta2-microglobin chain, and with or without a bound peptide, lipid, or polysaccharide antigen." []
+is_a: GO:0032991 ! protein-containing complex
+property_value: IAO:0000111 "MHC protein complex" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0043227
+name: membrane-bounded organelle
+def: "Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane." []
+is_a: GO:0005575 ! cellular_component
+property_value: IAO:0000111 "membrane-bounded organelle" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0048869
+name: cellular developmental process
+def: "A biological process whose specific outcome is the progression of a cell over time from an initial condition to a later condition." []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000111 "cellular developmental process" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Term]
@@ -972,6 +1328,14 @@ property_value: IAO:0000118 "zebrafish" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 
 [Term]
+id: NCBITaxon:8353
+name: Xenopus <genus>
+is_a: NCBITaxon:32523 ! Tetrapoda
+property_value: IAO:0000111 "Xenopus <genus>" xsd:string
+property_value: IAO:0000118 "Xenopus" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
 id: NCBITaxon:9031
 name: Gallus gallus
 is_a: NCBITaxon:32524 ! Amniota
@@ -1077,6 +1441,32 @@ property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 
 [Term]
+id: OBI:0000079
+name: culture medium
+def: "a processed material that provides the needed nourishment for microorganisms or cells grown in vitro." []
+is_a: OBI:0000047 ! processed material
+property_value: IAO:0000111 "culture medium" xsd:string
+property_value: IAO:0000112 "A growth medium or culture medium is a substance in which microorganisms or cells can grow.  Wikipedia, growth medium, Feb 29, 2008" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "changed from a role to a processed material based on on Aug 22, 2011 dev call. Details see the tracker item: http://sourceforge.net/tracker/?func=detail&aid=3325270&group_id=177891&atid=886178\nModification made by JZ." xsd:string
+property_value: IAO:0000117 "Person: Jennifer Fostel, Jie Zheng" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+
+[Term]
+id: OBI:0000086
+name: reagent role
+def: "A role inhering in a biological or chemical entity that is intended to be applied in a scientific technique to participate (or have molecular components that participate) in a chemical reaction that facilitates the generation of data about some entity distinct from the bearer, or the generation of some specified material output distinct from the bearer." []
+comment: (copied from ReO)\nReagents are distinguished from instruments or devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, instruments do not participate in a chemical reaction/interaction during the technique.\n\nReagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance will realize only one of these roles in the execution of a given assay or technique. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.\n\nIn regard to the statement that reagents are 'distinct' from the specified outputs of a technique, note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a 'nucleic acid molecule') that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of 'reagent-ness' is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).
+is_a: BFO:0000023 ! role
+property_value: IAO:0000111 "reagent role" xsd:string
+property_value: IAO:0000112 "Buffer, dye, a catalyst, a solvating agent." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
+property_value: IAO:0000118 "reagent" xsd:string
+property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
+property_value: IAO:0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term.\n\nMay 28 2013. Updated definition taken from ReO based on discussions initiated in Philly 2011 workshop.  Former defnition described a narrower view of reagents in chemistry that restricts bearers of the role to be chemical entities (\"a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances\").  Updated definition allows for broader view of reagents in the domain of biomedical research to include larger materials that have parts that participate chemically in a molecular reaction or interaction.\n" xsd:string
+
+[Term]
 id: OBI:0000094
 name: material processing
 def: "A planned process which results in physical changes in a specified input material" []
@@ -1110,6 +1500,19 @@ property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 
 [Term]
+id: OBI:0000181
+name: population
+def: "a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area" []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "population" xsd:string
+property_value: IAO:0000112 "PMID12564891. Environ Sci Technol. 2003 Jan 15;37(2):223-8. Effects of historic PCB exposures on the reproductive success of the Hudson River striped bass population." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "1/28/2013, BP, on the call it was raised that we may want to switch to an external ontology for all populatin terms: \nhttp://code.google.com/p/popcomm-ontology/" xsd:string
+property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000119 "adapted from Oxford English Dictionnary" xsd:string
+property_value: IAO:0000232 "rem1: collection somehow always involve a selection process" xsd:string
+
+[Term]
 id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
@@ -1135,6 +1538,18 @@ property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
 property_value: IAO:0000119 "OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)" xsd:string
 property_value: OBI:0001847 "study protocol" xsd:string
+
+[Term]
+id: OBI:0000368
+name: record function
+def: "A record function is a function that registers or collects information in a particular format on a particular recording medium. For example on paper or a digital representation" []
+is_a: BFO:0000034 ! function
+property_value: IAO:0000111 "record function" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bill Bug" xsd:string
+property_value: IAO:0000117 "Daniel Schober" xsd:string
+property_value: IAO:0000117 "Frank Gibson" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
 
 [Term]
 id: OBI:0000369
@@ -1171,6 +1586,27 @@ property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Frank Gibson" xsd:string
 property_value: IAO:0000118 "image acquisition device" xsd:string
 property_value: IAO:0000119 sep:00096 xsd:string
+
+[Term]
+id: OBI:0000419
+name: reverse transcriptase
+def: "enzyme and has_function some GO:0003964 (RNA-directed DNA polymerase\nactivity)" []
+is_a: OBI:0000427 ! enzyme
+property_value: IAO:0000111 "reverse transcriptase" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "person:Melanie Courtot" xsd:string
+property_value: IAO:0000119 group:OBI xsd:string
+
+[Term]
+id: OBI:0000427
+name: enzyme
+def: "(protein or rna) or has_part (protein or rna) and\nhas_function some GO:0003824 (catalytic activity)" []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "enzyme" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "MC: known issue: enzyme doesn't classify under material entity for now as it isn't stated that anything\nthat has_part some material entity is a material entity. If we add as equivalent classes to material entity has_part some material entity and part_of some material entity  (each one in his own necessary and sufficient block) Pellet in P3 doesn't classify any more." xsd:string
+property_value: IAO:0000117 "person: Melanie Courtot" xsd:string
+property_value: IAO:0000119 GROUP:OBI xsd:string
 
 [Term]
 id: OBI:0000450
@@ -1274,6 +1710,19 @@ property_value: IAO:0000118 "Collective" xsd:string
 property_value: IAO:0000119 "Discussion in Karslruhe with, among others, Alan Rector, Stefan Schulz, Marijke Keet, Melanie Courtot, and Alan Ruttenberg. With inspiration from the paper Granularity, scale and collectivity: When size does and does not matter, Alan Recto, Jeremy Rogers, Thomas Bittner, Journal of Biomedical Informatics 39 (2006) 333-349" xsd:string
 
 [Term]
+id: OBI:0000639
+name: material separation objective
+def: "is an objective to transform a material entity into spatially separated components." []
+is_a: OBI:0000456 ! material transformation objective
+union_of: OBI:0000678 ! portioning objective
+union_of: OBI:0000681 ! separation into different composition objective
+property_value: IAO:0000111 "material separation objective" xsd:string
+property_value: IAO:0000112 "The objective to obtain multiple aliquots of an enzyme preparation. The objective to obtain cells contained in a sample of blood." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PPPB branch" xsd:string
+property_value: IAO:0000119 "PPPB branch" xsd:string
+
+[Term]
 id: OBI:0000648
 name: clustered data set
 def: "A data set that is produced as the output of a class discovery data transformation and consists of a data set with assigned discovered class labels." []
@@ -1331,6 +1780,26 @@ property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "James Malone" xsd:string
 property_value: IAO:0000118 "supervised classification data transformation" xsd:string
 property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+
+[Term]
+id: OBI:0000678
+name: portioning objective
+def: "A material separation objective aiming to separate material into multiple portions, each of which contains a similar composition of the input material." []
+is_a: OBI:0000639 ! material separation objective
+disjoint_from: OBI:0000681 ! separation into different composition objective
+property_value: IAO:0000111 "portioning objective" xsd:string
+property_value: IAO:0000112 "The objective to obtain multiple aliquots of an enzyme preparation." xsd:string
+property_value: IAO:0000114 IAO:0000123
+
+[Term]
+id: OBI:0000681
+name: separation into different composition objective
+def: "A material separation objective aiming to separate a material entity that has parts of different types, and end with at least one output that is a material with parts of fewer types (modulo impurities)." []
+is_a: OBI:0000639 ! material separation objective
+property_value: IAO:0000111 "separation into different composition objective" xsd:string
+property_value: IAO:0000112 "The objective to obtain cells contained in a sample of blood." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "We should be using has the grain relations or concentrations to distinguish the portioning and other sub-objectives" xsd:string
 
 [Term]
 id: OBI:0000684
@@ -1461,6 +1930,16 @@ property_value: IAO:0000117 "Helen Parkinson" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29 xsd:string
 
 [Term]
+id: OBI:0000806
+name: material maintenance objective
+def: "An objective specification maintains some or all of the qualities of a material over time." []
+is_a: IAO:0000005 ! objective specification
+property_value: IAO:0000111 "material maintenance objective" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000119 "PERSON: Bjoern Peters" xsd:string
+
+[Term]
 id: OBI:0000832
 name: measurement device
 def: "A device in which a measure function inheres." []
@@ -1480,6 +1959,23 @@ def: "A person or organization that has a manufacturer role" []
 is_a: BFO:0000040 ! material entity
 property_value: IAO:0000111 "manufacturer" xsd:string
 property_value: IAO:0000114 IAO:0000123
+
+[Term]
+id: OBI:0000838
+name: material maintenance
+def: "a process with that achieves the objective to maintain some or all of the characteristics of an input material over time" []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000111 "material maintenance" xsd:string
+property_value: IAO:0000114 IAO:0000123
+
+[Term]
+id: OBI:0000845
+name: primary structure of RNA molecule
+def: "The primary structure of an RNA molecule that is completely defined by the set of its nucleic residue parts and the linear order induced by the peptide bonds that hold them together" []
+is_a: SO:0000001 ! region
+property_value: IAO:0000111 "primary structure of RNA molecule" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "Person:Bjoern Peters" xsd:string
 
 [Term]
 id: OBI:0000947
@@ -1560,6 +2056,17 @@ property_value: IAO:0000117 "PERSON: Jie Zheng" xsd:string
 property_value: IAO:0000118 "image acquisition" xsd:string
 
 [Term]
+id: OBI:0001048
+name: digital camera
+def: "An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor." []
+is_a: OBI:0000398 ! image creation device
+relationship: RO:0000085 OBI:0000397 ! has function image acquisition function
+property_value: IAO:0000111 "digital camera" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Digital_camera xsd:string
+
+[Term]
 id: OBI:0001055
 name: spinning-disk confocal microscope
 def: "A confocal microscope that uses a Nipkow disk, a mechanical, geometrically operating image scanning device." []
@@ -1580,6 +2087,82 @@ property_value: IAO:0000111 "confocal microscope" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Erik Segerdell" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Confocal_microscopy xsd:string
+
+[Term]
+id: OBI:0001479
+name: specimen from organism
+def: "A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm)." []
+is_a: OBI:0100051 ! specimen
+property_value: IAO:0000111 "specimen from organism" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON: Chris Stoeckert, Jie Zheng" xsd:string
+property_value: IAO:0000118 "tissue specimen" xsd:string
+property_value: IAO:0000119 "MO_954 organism_part" xsd:string
+
+[Term]
+id: OBI:0001866
+name: secondary cultured cell
+def: "A cultured cell that has been passaged or derives from a cell that has been passaged in culture. " []
+comment: A secondary cultured cell has been passaged in culture or is a descendant of such a cell that is derived through propagation in culture.
+is_a: CL:0000010 ! cultured cell
+relationship: RO:0001000 CL:0000001 ! derives from primary cultured cell
+property_value: IAO:0000111 "secondary cultured cell" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "The term 'secondary cell culture' is generally used in biological texts/protocols to refer to any culture following an initial passage.  We include it here because there are often a number of passages between a primary culture and the establishment of a stable, homogenous cell line.  Such cultures are considered to be 'secondary cultures' but not 'cell lines' during this intermediate passaging/selection period between their derivation from a 'primary cell culture' and derivation into a 'cell line', which is a more specific type of secondary culture." xsd:string
+property_value: IAO:0000117 "Person: Matthew Brush" xsd:string
+property_value: IAO:0000119 "PERSON: Matthew Brush" xsd:string
+
+[Term]
+id: OBI:0001867
+name: establishing cell line
+def: "a process whereby a new type of cell line is created, either through passaging of a primary cell culture to relative genetic stability and compositional homogeneity, or through some experimental modification of an existing cell line to produce a new line with novel characteristics  (e.g. immortalization or some other stable genetic modification, or selection of some defined subset)." []
+is_a: OBI:0600036 ! establishing cell culture
+relationship: OBI:0000299 CLO:0000031 ! has_specified_output cell line
+property_value: IAO:0000111 "establishing cell line" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2013-4-20 MHB: For cases of initial establilshment of a line from a primary culture, successive passaging and/or selection processes can confer increasing degrees of genetic stability and compositional homogeneity as compared to the input primary culture. Historically, many texts consider the first passage as the clearest point to define the beginning of a line. However, in practice it is more often that case that more than one passage, and possibly additional selective techniques, may be required before a culture is deemed to have sufficient stability and homogeneity to be considered cell line. This is the view taken in OBI. Regardless, what is important is that some intentional, experimental step has been taken to establish a more homogenous and stable culture that can be characterized and  progatated over time." xsd:string
+property_value: IAO:0000117 "Person: Matthew Brush" xsd:string
+property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
+
+[Term]
+id: OBI:0001879
+name: reagent
+def: "A biological or chemical entity that bears a reagent role in virtue of it being intended for application in a scientific technique  to participate in (or have molecular parts that participate in) a chemical reaction that facilitates the generation of data about some distinct entity, or the generation of some distinct material specified output." []
+comment: (copied from ReO)\nReagents are distinguished from devices/instruments that also serve as facilitators in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in or have parts that participate in some chemical interaction or reaction during their intended participation in some technique.  By contrast, devices do not participate in a chemical reaction/interaction during the technique.\n\nReagents are distinguished from study subjects/evaluants in that study subjects and evaluants are that about which conclusions are drawn and knowledge is sought in an investigation - while reagents, by definition, are not.  It should be noted, however, that reagent and study subject/evaluant roles can be borne by instances of the same type of material entity - but a given instance can only realize one of these roles in the execution of a given  assay. For example, taq polymerase can bear a reagent role or an evaluant role.  In a DNA sequencing assay aimed at generating sequence data about some plasmid, the reagent role of the taq polymerase is realized. In an assay to evaluate the quality of the taq polymerase itself, the evaluant/study subject role of the taq is realized, but not the reagent role since the taq is the subject about which data is generated.\n\nIn regard to the statement that reagents are 'distinct' from the specified outputs of a technique:  note that a reagent may be incorporated into a material output of a technique, as long as the IDENTITY of this output is distinct from that of the bearer of the reagent role.  For example, dNTPs input into a PCR are reagents that become part of the material output of this technique, but this output has a new identity (ie that of a 'nucleic acid molecule') that is distinct from the identity of the dNTPs that comprise it.  Similarly, a biotin molecule input into a cell labeling technique are reagents that become part of the specified output, but the identity of the output is that of some modified cell specimen which shares identity with the input unmodified cell specimen, and not with the biotin label. Thus, we see that an important criteria of 'reagent-ness' is that it is a facilitator, and not the primary focus of an investigation or material processing technique (ie not the specified subject/evaluant about which knowledge is sought, or the specified output material of the technique).
+is_a: OBI:0000047 ! processed material
+intersection_of: BFO:0000040 ! material entity
+intersection_of: RO:0000087 OBI:0000086 ! has role reagent role
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
+property_value: IAO:0000111 "reagent" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2013-6-5 MHB: Clarifications regarding the distinction between reagetns and devices were made at the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For examples, see editor note on OBI:device." xsd:string
+property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
+property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
+
+[Term]
+id: OBI:0001905
+name: secondary cultured cell population
+def: "A cultured cell population that is derived through one or more passages in culture." []
+comment: The concept of a 'secondary cultured cell population' covers cell lines as well as cultured cell populations more immediately derived from a primary culture which have yet to achieve adequate genetic stability and compositional homogeneity to be considered a cell line. The extent of the collection of cells in a 'secondary cultured cell population' is restricted only in that all cell members must share a propagation history (ie be derived through a common lineage of passages from an initial culture).  Secondary cultured cell populations can be under active culture, stored in a quiescent state for future use, or applied experimentally.
+is_a: OBI:0100060 ! cultured cell population
+relationship: OBI:0000312 OBI:0600037 ! is_specified_output_of cell culture splitting
+relationship: OBI:0000643 OBI:0001866 ! has grain secondary cultured cell
+relationship: OBI:0000643 OBI:0001866 ! has grain secondary cultured cell
+property_value: IAO:0000111 "secondary cultured cell population" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "The term 'secondary cell culture' is generally used in biological texts/protocols to refer to any culture of cells following an initial passage.  We include it here because there are often a number of passages between a primary culture and the establishment of a stable, homogenous cell line.  Such cultures are considered to be 'secondary cultures' but not 'cell lines' during this intermediate passaging/selection period between their derivation from a 'primary cell culture' and derivation into a 'cell line', which is a more specific type of secondary culture." xsd:string
+property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
+property_value: IAO:0000118 "secondary cell culture sample" xsd:string
+property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
+
+[Term]
+id: OBI:0001912
+name: cell freezing medium
+def: "A processed material that serves as a liquid vehicle for freezing cells for long term quiescent stroage, which contains chemicls needed to sustain cell viability across freeze-thaw cycles. " []
+is_a: OBI:0000047 ! processed material
+property_value: IAO:0000111 "cell freezing medium" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Matthew Brush" xsd:string
 
 [Term]
 id: OBI:0001930
@@ -1891,6 +2474,17 @@ property_value: IAO:0000119 "NCI BBRB, OBI" xsd:string
 property_value: IAO:0000234 "NCI BBRB" xsd:string
 
 [Term]
+id: OBI:0100010
+name: Epstein Barr virus transformed B cell
+def: "A material entity which results from viral transformation process using EBV as transformation agent when applied to B-cell entity" []
+is_a: OBI:0000047 ! processed material
+property_value: IAO:0000111 "Epstein Barr virus transformed B cell" xsd:string
+property_value: IAO:0000112 "PMID: 8777380. Expression of thyroid peroxidase in EBV-transformed B cell lines using adenovirus.Thyroid. 1996 Feb;6(1):23-8." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Susanna Sansone" xsd:string
+property_value: IAO:0000119 "GROUP: OBI Biomaterial Branch" xsd:string
+
+[Term]
 id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
@@ -1939,6 +2533,23 @@ property_value: IAO:0000116 "Note: definition is in specimen creation objective 
 property_value: IAO:0000117 "PERSON: James Malone" xsd:string
 property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
 property_value: IAO:0000119 "GROUP: OBI Biomaterial Branch" xsd:string
+
+[Term]
+id: OBI:0100060
+name: cultured cell population
+def: "A processed material comprised of a collection of cultured cells that has been continuously maintained together in culture and shares a common propagation history." []
+comment: The extent of a 'cultured cell population' is restricted only in that all cell members must share a propagation history (ie be derived through a common lineage of passages from an initial culture). In being defined in this way, this class can be used to refer to the populations that researchers actually use in the practice of science - ie are the inputs to culturing, experimentation, and sharing. The cells in such populations will be a relatively uniform population as they have experienced similar selective pressures due to their continuous co-propagation. And this population will also have a single passage number, again owing to their common passaging history. Cultured cell populations represent only a collection of cells (ie do not include media, culture dishes, etc), and include populations of cultured unicellular organisms or cultured multicellular organism cells. They can exist under active culture, stored in a quiescent state for future use, or applied experimentally.
+is_a: OBI:0000047 ! processed material
+relationship: OBI:0000312 OBI:0600024 ! is_specified_output_of maintaining cell culture
+relationship: OBI:0000643 CL:0000010 ! has grain cultured cell
+relationship: OBI:0000643 CL:0000010 ! has grain cultured cell
+property_value: IAO:0000111 "cultured cell population" xsd:string
+property_value: IAO:0000112 "A cultured cell population applied in an experiment: \"293 cells expressing TrkA were serum-starved for 18 hours and then neurotrophins were added for 10 min before cell harvest.\"  (Lee, Ramee, et al. \"Regulation of cell survival by secreted proneurotrophins.\" Science 294.5548 (2001): 1945-1948).\n\nA cultured cell population maintained in vitro: \"Rat cortical neurons from 15 day embryos are grown in dissociated cell culture and maintained in vitro for 8–12 weeks\" (Dichter, Marc A. \"Rat cortical neurons in cell culture: culture methods, cell morphology, electrophysiology, and synapse formation.\" Brain Research 149.2 (1978): 279-293)." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2013-6-5 MHB: This OBI class was formerly called 'cell culture', but label changed and definition updated following CLO alignment efforts in spring 2013, during which the intent of this class was clarified to refer to portions of a culture or line rather than a complete cell culture or line." xsd:string
+property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
+property_value: IAO:0000118 "cell culture sample" xsd:string
+property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
 
 [Term]
 id: OBI:0200000
@@ -2251,6 +2862,77 @@ property_value: IAO:0000117 "PERSON: Phillippe Rocca-Serra" xsd:string
 property_value: IAO:0000119 "wikipedia" xsd:string
 
 [Term]
+id: OBI:0600014
+name: material component separation
+def: "a material processing in which components of an input material become segregated in space" []
+is_a: OBI:0000094 ! material processing
+relationship: OBI:0000293 BFO:0000040 ! has_specified_input material entity
+relationship: OBI:0000299 BFO:0000040 ! has_specified_output material entity
+property_value: IAO:0000111 "material component separation" xsd:string
+property_value: IAO:0000112 "Using a cell sorter to separate a mixture of T cells into two fractions; one with surface receptor CD8 and the other lacking the receptor, or purification" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "IEDB" xsd:string
+
+[Term]
+id: OBI:0600024
+name: maintaining cell culture
+def: "a protocol application in which cells are kept alive in a defined environment outside of an organism.  part of cell_culturing" []
+is_a: OBI:0000838 ! material maintenance
+relationship: OBI:0000293 OBI:0100060 ! has_specified_input cultured cell population
+relationship: OBI:0000299 OBI:0100060 ! has_specified_output cultured cell population
+relationship: OBI:0000417 OBI:0000806 ! achieves_planned_objective material maintenance objective
+property_value: IAO:0000111 "maintaining cell culture" xsd:string
+property_value: IAO:0000112 "When harvesting blood from a human, isolating T cells, and then limited dilution cloning of the cells, the maintaining_cell_culture step comprises all steps after the initial dilution and plating of the cells into culture, e.g. placing the culture into an incubator, changing or adding media, and splitting a cell culture" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+
+[Term]
+id: OBI:0600036
+name: establishing cell culture
+def: "a process through which a new type of cell culture or cell line is created, either through the isolation and culture of one or more cells from a fresh source, or the deliberate experimental modification of an existing cell culture (e.g passaging a primary culture to become a secondary culture or line, or the immortalization or stable genetic modification of an existing culture or line)." []
+comment: A 'cell culture' as used here referes to a new lineage of cells in culture deriving from a single biological source.. New cultures are established through the initial isolation and culturing of cells from an organismal source, or through changes in an existing cell culture or line that result in a new culture with unique characteristics.  This can occur through the passaging/selection of a primary culture into a secondary culture or line, or experimental modifications of an existing cell culture or line such as an immortalization process or other stable genetic modification. This class covers establishment of cultures of either multicellular organism cells or unicellular organisms.
+is_a: OBI:0000094 ! material processing
+relationship: OBI:0000293 CL:0000000 ! has_specified_input cell
+relationship: OBI:0000293 OBI:0000079 ! has_specified_input culture medium
+relationship: OBI:0000299 OBI:0100060 ! has_specified_output cultured cell population
+relationship: OBI:0000417 OBI:0000456 ! achieves_planned_objective material transformation objective
+property_value: IAO:0000111 "'establishing cell culture'" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
+property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
+
+[Term]
+id: OBI:0600037
+name: cell culture splitting
+def: "The act of taking part of a homogeneous cell culture and creating one or more additional separate cultures of similar qualities. input: cell_culture, output cell_culture min cardinality 2. part of cell culturing" []
+comment: An active cell culture is typically split when it has grown to confluence in its culture dish.  Cell culture splitting of a cell culture sample results in an increase in its passage number, which measures how long a sample has been propagated in vitro, and therefore how many selective or genetic changes it is likely to have undergone.
+is_a: OBI:0600014 ! material component separation
+relationship: OBI:0000293 OBI:0100060 ! has_specified_input cultured cell population
+relationship: OBI:0000299 OBI:0100060 ! has_specified_output cultured cell population
+relationship: OBI:0000417 OBI:0000678 ! achieves_planned_objective portioning objective
+property_value: IAO:0000111 "cell culture splitting" xsd:string
+property_value: IAO:0000112 "The act of taking a cell culture of high density, counting the cells, removing part of the cells, and re-seeding a select number of the cells into new flasks with fresh tissue culture media." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000118 "cell culture passaging" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+
+[Term]
+id: OBI:1110055
+name: obsolete_disease
+def: "placeholder to be imported from disease ontology" []
+is_a: ObsoleteClass ! Obsolete Class
+property_value: IAO:0000111 "disease" xsd:string
+property_value: IAO:0000114 IAO:0000121
+property_value: IAO:0000117 "IEDB" xsd:string
+property_value: IAO:0000119 "IEDB" xsd:string
+property_value: IAO:0000231 IAO:0000228
+is_obsolete: true
+replaced_by: http://purl.obolibrary.org/obo/OGMS_0000031
+
+[Term]
 id: OGMS:0000031
 name: disease
 def: "A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." []
@@ -2272,11 +2954,35 @@ id: ObsoleteClass
 name: Obsolete Class
 
 [Term]
+id: PATO:0000033
+name: concentration of
+def: "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance." []
+is_a: PATO:0002182 ! molecular quality
+property_value: IAO:0000111 "concentration of" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
 id: PATO:0000051
 name: morphology
 def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." []
 is_a: PATO:0001241 ! physical object quality
 property_value: IAO:0000111 "morphology" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000117
+name: size
+def: "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." []
+is_a: PATO:0000051 ! morphology
+property_value: IAO:0000111 "size" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000125
+name: mass
+def: "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter." []
+is_a: BFO:0000019 ! quality
+property_value: IAO:0000111 "mass" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -2288,11 +2994,35 @@ property_value: IAO:0000111 "structure" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
+id: PATO:0000146
+name: temperature
+def: "A physical quality of the thermal energy of a system." []
+is_a: PATO:0001018 ! physical quality
+property_value: IAO:0000111 "temperature" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000165
+name: time
+def: "A quality in which events occur in sequence." []
+is_a: PATO:0001018 ! physical quality
+property_value: IAO:0000111 "time" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
 id: PATO:0000186
 name: behavioral quality
 def: "An organismal quality inhering in a bearer by virtue of the bearer's behavior aggregate of the responses or reactions or movements in a given situation." []
 is_a: PATO:0001995 ! organismal quality
 property_value: IAO:0000111 "behavioral quality" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001018
+name: physical quality
+def: "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities." []
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000111 "physical quality" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -2304,11 +3034,51 @@ property_value: IAO:0000111 "physical object quality" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
+id: PATO:0001396
+name: cellular quality
+def: "A monadic quality of continuant that exists at the cellular level of organisation." []
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000111 "cellular quality" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001574
+name: flow rate
+def: "A physical quality inhering in a bearer by virtue of the bearer's motion characteristic." []
+is_a: PATO:0001906 ! movement quality
+property_value: IAO:0000111 "flow rate" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001710
+name: 3-D extent
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in three dimensions." []
+is_a: PATO:0000117 ! size
+property_value: IAO:0000111 "3-D extent" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001906
+name: movement quality
+def: "A physical quality inhering in a bearer by virtue of the bearer's participation in movement." []
+is_a: PATO:0001018 ! physical quality
+property_value: IAO:0000111 "movement quality" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
 id: PATO:0001995
 name: organismal quality
 def: "A quality that inheres in an entire organism or part of an organism." []
 is_a: PATO:0001241 ! physical object quality
 property_value: IAO:0000111 "organismal quality" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002182
+name: molecular quality
+def: "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc." []
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000111 "molecular quality" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -2344,6 +3114,23 @@ property_value: IAO:0000111 "ambidextrous handedness" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
+id: PR:000000001
+name: protein
+def: "An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA." []
+is_a: CHEBI:16670 ! peptide
+property_value: IAO:0000111 "protein" xsd:string
+property_value: IAO:0000112 "antithrombin III is a protein" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pr.owl
+
+[Term]
+id: PR:000001004
+name: CD4 molecule
+def: "A protein that is a translation product of the human CD4 gene or a 1:1 ortholog thereof. CD4 is an accessory protein for MHC class-II antigen/T-cell receptor interaction. It is the primary receptor for HIV-1. CD4 has four immunoglobulin-like domains in its extracellular region that share the same structure, but can differ in sequence." []
+is_a: PR:000000001 ! protein
+property_value: IAO:0000111 "CD4 molecule" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pr.owl
+
+[Term]
 id: REO:0000171
 name: molecular label role
 def: "a reagent role inhering in a molecular entity intended to associate with some molecular target to serve as a proxy for the presence, abundance, or location of this target in a detection of molecular label assay." []
@@ -2367,8 +3154,242 @@ property_value: IAO:0000119 "OBI developer call, 3-12-12" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/reo.owl
 
 [Term]
+id: SO:0000001
+name: region
+def: "A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids." []
+is_a: BFO:0000031 ! generically dependent continuant
+property_value: IAO:0000111 "region" xsd:string
+property_value: IAO:0000118 "primary structure of sequence macromolecule" xsd:string
+property_value: IAO:0000118 "sequence" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so.owl
+
+[Term]
 id: Subset
 is_a: IAO:0000102 ! data about an ontology part
+
+[Term]
+id: UBERON:0000105
+name: life cycle stage
+def: "A spatiotemporal region encompassing some part of the life cycle of an organism." []
+is_a: GO:0008150 ! biological_process
+property_value: IAO:0000111 "life cycle stage" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000165
+name: mouth
+def: "The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening. In vertebrates, this extends to the pharynx and includes gums, lips, tongue and parts of the palate. Typically also includes the teeth, except where these occur elsewhere (e.g. pharyngeal jaws) or protrude from the mouth (tusks)." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "mouth" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000178
+name: blood
+def: "A fluid that is composed of blood plasma and erythrocytes." []
+is_a: UBERON:0000463 ! organism substance
+property_value: IAO:0000111 "blood" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000463
+name: organism substance
+def: "Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "organism substance" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000465
+name: material anatomical entity
+def: "Anatomical entity that has mass." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "material anatomical entity" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000477
+name: anatomical cluster
+def: "Anatomical group that has its parts adjacent to one another." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "anatomical cluster" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000479
+name: tissue
+def: "Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "tissue" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000481
+name: multi-tissue structure
+def: "Anatomical structure that has as its parts two or more portions of tissue of at least two different types and which through specific morphogenetic processes forms a single distinct structural unit demarcated by bona-fide boundaries from other distinct structural units of different types." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "multi-tissue structure" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000483
+name: epithelium
+def: "Portion of tissue, that consists of one or more layers of epithelial cells connected to each other by cell junctions and which is underlain by a basal lamina. Examples: simple squamous epithelium, glandular cuboidal epithelium, transitional epithelium, myoepithelium[CARO]." []
+is_a: UBERON:0000479 ! tissue
+property_value: IAO:0000111 "epithelium" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000947
+name: aorta
+def: "The main trunk of the systemic arterial system that carries blood from the heart to all the organs and other structures of the body, bringing oxygenated blood to all parts of the body in the systemic circulation" []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "aorta" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000948
+name: heart
+def: "A myogenic muscular circulatory organ found in the vertebrate cardiovascular system composed of chambers of cardiac muscle. It is the primary circulatory organ." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "heart" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000955
+name: brain
+def: "The brain is the center of the nervous system in all vertebrate, and most invertebrate, animals. Some primitive animals such as jellyfish and starfish have a decentralized nervous system without a brain, while sponges lack any nervous system at all. In vertebrates, the brain is located in the head, protected by the skull and close to the primary sensory apparatus of vision, hearing, balance, taste, and smell[WP]." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "brain" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000992
+name: ovary
+def: "the gonad of a female organism which contains germ cells" []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "ovary" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000995
+name: uterus
+def: "the female muscular organ of gestation in which the developing embryo or fetus is nourished until birth" []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "uterus" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000996
+name: vagina
+def: "A fibromuscular tubular tract leading from the uterus to the exterior of the body in female placental mammals and marsupials, or to the cloaca in female birds, monotremes, and some reptiles[WP]." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "vagina" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001013
+name: adipose tissue
+def: "Portion of connective tissue composed of adipocytes enmeshed in areolar tissue" []
+is_a: UBERON:0000479 ! tissue
+property_value: IAO:0000111 "adipose tissue" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001052
+name: rectum
+def: "the terminal portion of the intestinal tube, terminating with the anus" []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "rectum" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001088
+name: urine
+def: "Excretion that is the output of a kidney" []
+is_a: UBERON:0000463 ! organism substance
+property_value: IAO:0000111 "urine" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001090
+name: synovial fluid
+def: "Joint fluid is a transudate of plasma that is actively secreted by synovial cells." []
+is_a: UBERON:0000463 ! organism substance
+property_value: IAO:0000111 "synovial fluid" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001155
+name: colon
+def: "Last portion of the large intestine before it becomes the rectum." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "colon" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001159
+name: sigmoid colon
+def: "The part of the large intestine that is closest to the rectum and anus. It forms a loop that averages about 40 cm. in length, and normally lies within the pelvis, but on account of its freedom of movement it is liable to be displaced into the abdominal cavity." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "sigmoid colon" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001255
+name: urinary bladder
+def: "distensible musculomembranous organ situated in the anterior part of the pelvic cavity in which urine collects before excretion[MP]." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "urinary bladder" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001638
+name: vein
+def: "Any of the tubular branching vessels that carry blood from the capillaries toward the heart." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "vein" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0001988
+name: feces
+def: "Portion of semisolid bodily waste discharged through the anus[MW,modified]" []
+is_a: UBERON:0000463 ! organism substance
+property_value: IAO:0000111 "feces" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0002048
+name: lung
+def: "Respiration organ that develops as an oupocketing of the esophagus." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "lung" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0002067
+name: dermis
+def: "The dermis is a layer of skin between the epidermis (with which it makes up the skin) and subcutaneous tissues, and is composed of two layers, the papillary and reticular dermis[WP]." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "dermis" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0002072
+name: hypodermis
+def: "Lowermost layer of the integumentary system in vertebrates. Types of cells that are found in the hypodermis are fibroblasts, adipose cells, and macrophages. It is derived from the mesoderm, but unlike the dermis, it is not derived from the dermatome region of the mesoderm. The hypodermis is used mainly for fat storage[WP]." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "hypodermis" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0002097
+name: skin of body
+def: "The organ covering the body that consists of the dermis and epidermis." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000111 "skin of body" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]
 id: UO:0000001
@@ -2625,6 +3646,54 @@ is_a: RO:0000057 ! has participant
 inverse_of: OBI:0000312 ! is_specified_output_of
 
 [Typedef]
+id: OBI:0000300
+name: obsolete_is_realized_by
+def: "Relation between a realizable and a process. Reciprocal relation of realizes [GOC:cjm]" []
+property_value: IAO:0000111 "is_realized_by" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "replaced by http://purl.obolibrary.org/obo/BFO_0000054: 'is realized by'" xsd:string
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON: Chris Mungall" xsd:string
+property_value: IAO:0000118 "executed_during" xsd:string
+property_value: IAO:0000118 "has_realization" xsd:string
+property_value: IAO:0000118 "is_realized_as" xsd:string
+property_value: IAO:0000231 IAO:0000228
+is_a: ObsoleteProperty
+is_obsolete: true
+
+[Typedef]
+id: OBI:0000306
+name: obsolete_has_function
+def: "Relation between an independent continuant and a function." []
+property_value: IAO:0000111 "has_function" xsd:string
+property_value: IAO:0000112 "heart has_function to-pump-blood" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "replaced by: http://purl.obolibrary.org/obo/BFO_0000085" xsd:string
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON: Chris Mungall" xsd:string
+property_value: IAO:0000231 IAO:0000228
+is_a: ObsoleteProperty
+is_obsolete: true
+
+[Typedef]
+id: OBI:0000308
+name: obsolete_realizes
+def: "Relation between a process and a function, where the unfolding of the \nprocess requires the execution of the function. Class level: P realizes F iff: \ngiven any p that instantiates P, there exists some f, t such that f instantiates\n F at t and p *realizes* f. Here, *realizes* is the primitive \ninstance level relation [GOC:cjm]" []
+property_value: IAO:0000111 "realizes" xsd:string
+property_value: IAO:0000112 "example of usage: The process of 'histidine catabolism' (GO:0006548) realizes the \nfunction 'histidine ammonia lyase activity' (GO:0004397) (note: here 'activity' \ndenotes a function and not a process). We leave open the possibility of defining \nin future the sub-relations directly_realizes (as bewteen a function and it's \nfunctioning) and indirectly_realizes." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "replaced by http://purl.obolibrary.org/obo/BFO_0000055: 'realizes'" xsd:string
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON: Chris Mungal" xsd:string
+property_value: IAO:0000118 "executes" xsd:string
+property_value: IAO:0000118 "has_function_part" xsd:string
+property_value: IAO:0000118 "involves_execution_of" xsd:string
+property_value: IAO:0000118 "is_realization_of" xsd:string
+property_value: IAO:0000231 IAO:0000228
+is_a: ObsoleteProperty
+is_obsolete: true
+
+[Typedef]
 id: OBI:0000312
 name: is_specified_output_of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
@@ -2636,6 +3705,19 @@ property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 range: OBI:0000011 ! planned process
 is_a: RO:0000056 ! participates in
+
+[Typedef]
+id: OBI:0000316
+name: obsolete_has_role
+def: "A relation between a continuant C and a role R. The reciprocal relation of role_of." []
+property_value: IAO:0000111 "has_role" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "replaced by: http://purl.obolibrary.org/obo/BFO_0000087" xsd:string
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON:Chris Mungal" xsd:string
+property_value: IAO:0000231 IAO:0000228
+is_a: ObsoleteProperty
+is_obsolete: true
 
 [Typedef]
 id: OBI:0000417

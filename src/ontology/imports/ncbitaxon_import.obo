@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-11/imports/ncbitaxon_import.owl
+data-version: simro/releases/2020-02-13/imports/ncbitaxon_import.owl
 ontology: simro/imports/ncbitaxon_import
 
 [Term]

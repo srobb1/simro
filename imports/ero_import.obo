@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-11/imports/ero_import.owl
+data-version: simro/releases/2020-02-12/imports/ero_import.owl
 ontology: simro/imports/ero_import
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000094>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000456>))\nDeclaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000224>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000420>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (obsolescence reason specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000225> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (denotator type)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000094> (material processing)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000456>))\n\n# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)\n\nEquivalentClasses(<http://www.geneontology.org/formats/oboInOwl#Subset> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000224>))\n\n\n############################\n#   Named Individuals\n############################\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (metadata complete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (ready for release)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (metadata incomplete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (uncurated)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (pending final vetting)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000224> (core)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (to be replaced with external ontology term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)\n\n\n\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)\n\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>)\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/ERO_0100036>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/ERO_0100288>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000094>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000456>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000571>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000835>))\nDeclaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))\nDeclaration(Class(<http://xmlns.com/foaf/0.1/Organization>))\nDeclaration(Class(<http://xmlns.com/foaf/0.1/Person>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0001908>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000316>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))\nDeclaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000224>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000420>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))\nDeclaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/ERO_0100036> (data analysis objective)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/ERO_0100036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/ERO_0001908> <http://purl.obolibrary.org/obo/ERO_0100288>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (obsolescence reason specification)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000225> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000103> <http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>))\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (denotator type)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000409> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000410> <http://purl.obolibrary.org/obo/IAO_0000420> <http://purl.obolibrary.org/obo/IAO_0000421>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000094> (material processing)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000417> <http://purl.obolibrary.org/obo/OBI_0000456>))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000571> (manufacturer role)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000571> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://xmlns.com/foaf/0.1/Organization>)))\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000835> (manufacturer)\n\nEquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0000835> ObjectIntersectionOf(ObjectUnionOf(<http://xmlns.com/foaf/0.1/Organization> <http://xmlns.com/foaf/0.1/Person>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000316> <http://purl.obolibrary.org/obo/OBI_0000571>)))\n\n# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)\n\nEquivalentClasses(<http://www.geneontology.org/formats/oboInOwl#Subset> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000224>))\n\n\n############################\n#   Named Individuals\n############################\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (metadata complete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (organizational term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (ready for release)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (metadata incomplete)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (uncurated)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (pending final vetting)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000224> (core)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (placeholder removed)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (terms merged)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (term imported)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (term split)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (to be replaced with external ontology term)\n\n\n# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (requires discussion)\n\n\n\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)\n\nDifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229>)\n)
 
 [Term]
 id: BFO:0000001
@@ -69,6 +69,28 @@ name: material_entity
 is_a: BFO:0000004 ! independent_continuant
 
 [Term]
+id: CLO:0000031
+name: cell line
+def: "A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture)." []
+is_a: BFO:0000040 ! material_entity
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
+relationship: OBI:0000316 OBI:0000086 ! has_role reagent role
+relationship: RO:0001000 OBI:0100026 ! derives_from organism
+property_value: IAO:0000117 "MB, SS, JZ, MAH, BP, CS, YH" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
+
+[Term]
+id: DOID:4
+name: disease (DOID)
+namespace: disease_ontology
+def: "A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." [url:http\://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+xref: MSH:D004194
+xref: NCI:C2991
+xref: SNOMEDCT_2010_1_31:64572001
+xref: UMLS_CUI:C0012634
+is_a: OBI:1110055 ! disease (OBI)
+
+[Term]
 id: ERO:0000001
 name: laboratory
 def: "Material entity that performs research, provides services, or processes materials." []
@@ -92,6 +114,19 @@ property_value: IAO:0000112 "A flow cytometer." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Melissa Haendel" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Scientific_instrument xsd:string
+
+[Term]
+id: ERO:0000006
+name: reagent
+def: "Processed material that is used in a chemical reaction or other experimental process to detect, measure, examine, or produce other  substances." []
+comment: Placeholder for class to be imported from the Reagent Ontology (ReO).
+intersection_of: BFO:0000040 ! material_entity
+intersection_of: OBI:0000316 OBI:0000086 {all_some="true"} ! has_role reagent role
+property_value: IAO:0000111 "reagent" xsd:string
+property_value: IAO:0000112 "A plasmid can be used as a reagent." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Melissa Haendel" xsd:string
+property_value: IAO:0000119 http://www.yourdictionary.com/reagent xsd:string
 
 [Term]
 id: ERO:0000007
@@ -171,6 +206,37 @@ property_value: IAO:0000117 "PERSON: Melissa Haendel" xsd:string
 property_value: IAO:0000119 "PERSON: Melissa Haendel" xsd:string
 
 [Term]
+id: ERO:0001283
+name: culture and propagation
+def: "A material processing technique used to create and maintain conditions suitable for growth of a living entity such as tissue cells, or bacteria." []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000112 "Culture of cell lines." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
+property_value: IAO:0000118 "In vitro culture and propagation" xsd:string
+property_value: IAO:0000119 http://oxforddictionaries.com/definition/culture?region=us xsd:string
+
+[Term]
+id: ERO:0001309
+name: data analysis
+def: "A data transformation technique used to analyze and interpret data to gain a better understanding of it." []
+is_a: OBI:0200000 ! data transformation
+property_value: IAO:0000112 "Data analysis of flow cytometry data." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Analysis xsd:string
+
+[Term]
+id: ERO:0001313
+name: material production
+def: "A material processing technique in which physical changes are made to a specified input material that produce a new entity as specified output.  The specified output of a material production technique can be contained within, derived from, or synthesized from specified input materials, but it represents a material entity that is of a distinct type from any of the specified input materials." []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000112 "Monoclonal antibody production." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: Nicole Vasilevsky" xsd:string
+property_value: IAO:0000119 http://neurolex.org/wiki/Category:Material_service_resource xsd:string
+
+[Term]
 id: ERO:0001946
 name: super-resolution microscope
 def: "A microscope that uses light to capture images with a higher resolution than the diffraction limit" []
@@ -180,6 +246,35 @@ property_value: IAO:0000117 "PERSON: Scott Hoffmann" xsd:string
 property_value: IAO:0000119 http://en.wikipedia.org/wiki/Super_resolution_microscopy xsd:string
 
 [Term]
+id: ERO:0100036
+name: data analysis objective
+def: "objective to perform and/or support data analysis, whereby data is input and processed to achieve a better understanding of it.  This will involve generation \"new\" information through algorithmic processing and/or statistical calculations." []
+comment: analysis generates "new" information about some biomedical entity, as opposed to data transformation objectives which aim to process data in a way that no analysis is performed and no new information is generated.
+is_a: OBI:0200166 ! data transformation objective
+property_value: IAO:0000118 "analysis objective" xsd:string
+
+[Term]
+id: ERO:0100084
+name: process-based data analysis objective
+def: "objective of using a particular type of process/operation to process and analyze data.  This hierarchy classifies software objectives based on the type of operation that is specified to be performed " []
+is_a: ERO:0100036 ! data analysis objective
+property_value: IAO:0000118 "operation-based data analysis objectives" xsd:string
+
+[Term]
+id: ERO:0100287
+name: data processing operation
+comment: Placeholder for EDAM operation class.
+is_a: IAO:0000007 ! action specification
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000118 "operation" xsd:string
+
+[Term]
+id: ERO:0100288
+name: data analysis operation
+comment: Placeholder for EDAM operation class.
+is_a: ERO:0100287 ! data processing operation
+
+[Term]
 id: GO:0008150
 name: biological_process
 def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." []
@@ -187,6 +282,19 @@ is_a: BFO:0000015 ! process
 property_value: IAO:0000118 "biological process" xsd:string
 property_value: IAO:0000118 "physiological process" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: IAO:0000003
+name: measurement unit label
+def: "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure." []
+is_a: IAO:0000009 ! label
+property_value: IAO:0000111 "measurement unit label" xsd:string
+property_value: IAO:0000112 "Examples of measurement unit labels are liters, inches, weight per volume." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI." xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
 id: IAO:0000005
@@ -203,6 +311,28 @@ property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
 property_value: IAO:0000119 "OBI Plan and Planned Process/Roles Branch" xsd:string
 property_value: IAO:0000119 "OBI_0000217" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000007
+name: action specification
+def: "a directive information entity that describes an action the bearer will take" []
+is_a: IAO:0000033 ! directive information entity
+property_value: IAO:0000112 "Pour the contents of flask 1 into flask 2" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "OBI Plan and Planned Process branch" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000009
+name: label
+def: "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "label" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n xsd:string
+property_value: IAO:0000117 "GROUP: IAO" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
@@ -247,6 +377,20 @@ property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
 
 [Term]
+id: IAO:0000064
+name: algorithm
+def: "A plan specification which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "algorithm" xsd:string
+property_value: IAO:0000112 "PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)" xsd:string
+property_value: IAO:0000119 "OBI_0000270" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
 id: IAO:0000078
 name: curation status specification
 def: "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." []
@@ -259,11 +403,51 @@ property_value: IAO:0000119 GROUP:OBI:<http://purl.obolibrary.org/obo/obi> xsd:s
 property_value: IAO:0000119 "OBI_0000266" xsd:string
 
 [Term]
+id: IAO:0000098
+name: data format specification
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "data format specification" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: IAO:0000119 "OBI_0000187" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
 id: IAO:0000102
 name: data about an ontology part
 def: "data about an ontology part is a data item about a part of an ontology, for example a term" []
 is_a: IAO:0000027 ! data item
 property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
+
+[Term]
+id: IAO:0000104
+name: plan specification
+def: "a directive information entity that when concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified. Plan specifications includes parts such as objective specification, action specifications and conditional specifications." []
+is_a: IAO:0000033 ! directive information entity
+property_value: IAO:0000111 "plan specification" xsd:string
+property_value: IAO:0000112 "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was \" a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan\". It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term." xsd:string
+property_value: IAO:0000116 "Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved" xsd:string
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "OBI Plan and Planned Process branch" xsd:string
+property_value: IAO:0000119 "OBI_0000344" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000109
+name: measurement datum
+def: "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device." []
+is_a: IAO:0000027 ! data item
+property_value: IAO:0000111 "measurement datum" xsd:string
+property_value: IAO:0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2/2/2009 is_specified_output of some assay?" xsd:string
+property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
+property_value: IAO:0000119 group:OBI xsd:string
+property_value: IAO:0000119 "OBI_0000305" xsd:string
 
 [Term]
 id: IAO:0000225
@@ -338,6 +522,15 @@ property_value: IAO:0000118 "Rattus sp. strain Wistar" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 
 [Term]
+id: NCBITaxon:10239
+name: Viruses
+is_a: OBI:0100026 ! organism
+property_value: IAO:0000118 "Vira" xsd:string
+property_value: IAO:0000118 "Viridae" xsd:string
+property_value: IAO:0000118 "viruses" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
 id: NCBITaxon:1224
 name: Proteobacteria
 is_a: NCBITaxon:2 ! Bacteria
@@ -365,10 +558,41 @@ property_value: IAO:0000118 "prokaryotes" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 
 [Term]
+id: NCBITaxon:2157
+name: Archaea
+is_a: ERO:0000581 ! Prokaryota
+property_value: IAO:0000118 "archaea" xsd:string
+property_value: IAO:0000118 "Archaebacteria" xsd:string
+property_value: IAO:0000118 "Mendosicutes" xsd:string
+property_value: IAO:0000118 "Metabacteria" xsd:string
+property_value: IAO:0000118 "Monera" xsd:string
+property_value: IAO:0000118 "Procaryotae" xsd:string
+property_value: IAO:0000118 "Prokaryota" xsd:string
+property_value: IAO:0000118 "Prokaryotae" xsd:string
+property_value: IAO:0000118 "prokaryote" xsd:string
+property_value: IAO:0000118 "prokaryotes" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
 id: NCBITaxon:314147
 name: Glires
 is_a: NCBITaxon:40674 ! Mammalia
 property_value: IAO:0000118 "Rodents and rabbits" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:314293
+name: Simiiformes
+is_a: NCBITaxon:9443 ! Primates
+property_value: IAO:0000118 "Anthropoidea" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:314295
+name: Hominoidea
+is_a: NCBITaxon:9443 ! Primates
+property_value: IAO:0000118 "ape" xsd:string
+property_value: IAO:0000118 "apes" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
 
 [Term]
@@ -736,6 +960,20 @@ property_value: IAO:0000232 "This class merges the previously separated objectiv
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000017
+name: regulatory role
+def: "a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body." []
+is_a: BFO:0000023 ! role (bfo)
+disjoint_from: OBI:0000571 ! manufacturer role
+property_value: IAO:0000111 "regulatory role" xsd:string
+property_value: IAO:0000112 "Regulatory agency, Ethics committee, Approval letter; example:  Browse these EPA Regulatory Role subtopics  http://www.epa.gov/ebtpages/enviregulatoryrole.html  Feb 29, 2008" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "GROUP:  Role branch" xsd:string
+property_value: IAO:0000119 "OBI, CDISC" xsd:string
+property_value: IAO:0000232 "govt agents responsible for creating regulations; proxies for enforcing regulations.  CDISC definition:  regulatory authorities. Bodies having the power to regulate. NOTE: In the ICH GCP guideline the term includes the authorities that review submitted clinical data and those that conduct inspections. These bodies are sometimes referred to as competent" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: OBI:0000047
 name: processed material
 def: "Is a material entity that is created or changed during material processing." []
@@ -746,6 +984,20 @@ property_value: IAO:0000111 "processed material" xsd:string
 property_value: IAO:0000112 "Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000086
+name: reagent role
+def: "a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances" []
+is_a: BFO:0000023 ! role (bfo)
+property_value: IAO:0000111 "reagent role" xsd:string
+property_value: IAO:0000112 "Buffer, dye, a catalyst, a solvating agent." xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
+property_value: IAO:0000118 "reagent" xsd:string
+property_value: IAO:0000119 "www.answers.com/topic/reagent; November 2008" xsd:string
+property_value: IAO:0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term." xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
@@ -796,6 +1048,19 @@ property_value: IAO:0000117 "Melanie Courtot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000369
+name: magnify function
+def: "A magnify function is a function to increase the size of a transmitted object image through the precise arrangement of energy diffraction elements along an imaging path." []
+is_a: BFO:0000034 ! function
+property_value: IAO:0000111 "magnify function" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bill Bug" xsd:string
+property_value: IAO:0000117 "Daniel Schober" xsd:string
+property_value: IAO:0000117 "Frank Gibson" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: OBI:0000397
 name: image acquisition function
 def: "An image acquisition function is a function to acquire an image of a material" []
@@ -837,6 +1102,66 @@ property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0000457
+name: manufacturing
+def: "Manufacturing is a process with the intent to produce a processed material which will have a function for future use. A person or organization (having manufacturer role) is a participant in this process" []
+is_a: ERO:0001313 ! material production
+property_value: IAO:0000111 "manufacturing" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "Manufacturing implies reproducibility and responsibility AR" xsd:string
+property_value: IAO:0000116 "This includes a single scientist making a processed material for personal use." xsd:string
+property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000117 "PERSON: Frank Gibson" xsd:string
+property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000571
+name: manufacturer role
+def: "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process." []
+is_a: BFO:0000023 ! role (bfo)
+relationship: OBI:0000300 OBI:0000457 ! is_realized_by manufacturing
+property_value: IAO:0000111 "manufacturer role" xsd:string
+property_value: IAO:0000112 "With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role." xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000659
+name: specimen collection
+def: "a planned process with the objective of obtaining specimen." []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000111 "specimen creation" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000116 "Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation." xsd:string
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000232 "5/31/2012: This process is not necessarily an acquisition, as specimens may be collected from materials already in posession" xsd:string
+property_value: IAO:0000232 "6/9/09: used at workshop" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000704
+name: decision tree induction objective
+def: "A decision tree induction objective is a data transformation objective in which a tree-like graph of edges and nodes is created and from which the selection of each branch requires that some type of logical decision is made." []
+is_a: ERO:0100084 ! process-based data analysis objective
+property_value: IAO:0000111 "decision tree induction objective" xsd:string
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000835
+name: manufacturer
+def: "A person or organization that has a manufacturer role" []
+is_a: http://xmlns.com/foaf/0.1/Agent ! agent
+property_value: IAO:0000114 IAO:0000124
+
+[Term]
 id: OBI:0001048
 name: digital camera
 def: "An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor." []
@@ -872,6 +1197,14 @@ property_value: IAO:0000119 http://en.wikipedia.org/wiki/Confocal_microscopy xsd
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0001867
+name: establishing cell line
+def: "a process whereby a new type of cell line is created, either through passaging of a primary cell culture to relative genetic stability and compositional homogeneity, or through some experimental modification of an existing cell line to produce a new line with novel characteristics  (e.g. immortalization or some other stable genetic modification, or selection of some defined subset)." []
+is_a: ERO:0001313 ! material production
+property_value: IAO:0000116 "2013-4-20 MHB: For cases of initial establilshment of a line from a primary culture, successive passaging and/or selection processes can confer increasing degrees of genetic stability and compositional homogeneity as compared to the input primary culture. Historically, many texts consider the first passage as the clearest point to define the beginning of a line. However, in practice it is more often that case that more than one passage, and possibly additional selective techniques, may be required before a culture is deemed to have sufficient stability and homogeneity to be considered cell line. This is the view taken in OBI. Regardless, what is important is that some intentional, experimental step has been taken to establish a more homogenous and stable culture that can be characterized and  progatated over time." xsd:string
+property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
+
+[Term]
 id: OBI:0100026
 name: organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
@@ -885,6 +1218,59 @@ property_value: IAO:0000114 IAO:0000121
 property_value: IAO:0000116 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')" xsd:string
 property_value: IAO:0000117 "GROUP: OBI Biomaterial Branch" xsd:string
 property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Organism" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0200000
+name: data transformation
+def: "A data transformation is a process which produces output data from input data" []
+is_a: ERO:0000007 ! technique
+property_value: IAO:0000111 "data transformation" xsd:string
+property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
+property_value: IAO:0000117 "Helen Parkinson" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+property_value: IAO:0000117 "Philippe Rocca-Serra" xsd:string
+property_value: IAO:0000117 "Richard Scheuermann" xsd:string
+property_value: IAO:0000117 "Ryan Brinkman" xsd:string
+property_value: IAO:0000117 "Tina Hernandez-Boussard" xsd:string
+property_value: IAO:0000118 "data analysis" xsd:string
+property_value: IAO:0000118 "data processing" xsd:string
+property_value: IAO:0000119 "Branch editors" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0200111
+name: data visualization
+def: "An planned process that creates images, diagrams or animations from the input data." []
+is_a: ERO:0001309 ! data analysis
+property_value: IAO:0000111 "data visualization" xsd:string
+property_value: IAO:0000112 "Generation of a heatmap from a microarray dataset" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Elisabetta Manduchi" xsd:string
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000117 "Melanie Courtot" xsd:string
+property_value: IAO:0000117 "Tina Boussard" xsd:string
+property_value: IAO:0000118 "data encoding as image" xsd:string
+property_value: IAO:0000118 "visualization" xsd:string
+property_value: IAO:0000119 "PERSON: Elisabetta Manduchi" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000119 "PERSON: Tina Boussard" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0200166
+name: data transformation objective
+def: "A data transformation objective is an objective specification that a data transformation may have towards which the realization of that transformation is directed." []
+is_a: IAO:0000005 ! objective specification
+property_value: IAO:0000111 "data transformation objective" xsd:string
+property_value: IAO:0000112 "normalize objective" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "James Malone" xsd:string
+property_value: IAO:0000119 "PERSON: James Malone" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
@@ -912,6 +1298,65 @@ property_value: IAO:0000119 "wikipedia" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
+id: OBI:0600014
+name: material component separation
+def: "a material processing in which components of an input material become segregated in space" []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000111 "material component separation" xsd:string
+property_value: IAO:0000112 "Using a cell sorter to separate a mixture of T cells into two fractions; one with surface receptor CD8 and the other lacking the receptor, or purification" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "IEDB" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0600024
+name: maintaining cell culture
+def: "a protocol application in which cells are kept alive in a defined environment outside of an organism.  part of cell_culturing" []
+comment: This is a renamed of the manaintainig cell culture
+is_a: ERO:0001283 ! culture and propagation
+property_value: IAO:0000111 "maintaining cell culture" xsd:string
+property_value: IAO:0000112 "When harvesting blood from a human, isolating T cells, and then limited dilution cloning of the cells, the maintaining_cell_culture step comprises all steps after the initial dilution and plating of the cells into culture, e.g. placing the culture into an incubator, changing or adding media, and splitting a cell culture" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0600036
+name: establishing cell culture
+def: "establishing a cell culture is a process which results in creating an in vitro environment in which cells are sustained from input material containing cells. input: cell-containing material, output cell culture, part of cell culturing. Cells are originally plated at a certain concentration referred to as seeding density." []
+is_a: OBI:0600024 ! maintaining cell culture
+property_value: IAO:0000111 "establishing cell culture" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0600037
+name: cell culture splitting
+def: "The act of taking part of a homogeneous cell culture and creating one or more additional separate cultures of similar qualities. input: cell_culture, output cell_culture min cardinality 2. part of cell culturing" []
+is_a: OBI:0600024 ! maintaining cell culture
+property_value: IAO:0000111 "cell culture splitting" xsd:string
+property_value: IAO:0000112 "The act of taking a cell culture of high density, counting the cells, removing part of the cells, and re-seeding a select number of the cells into new flasks with fresh tissue culture media." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:1110055
+name: disease (OBI)
+def: "placeholder to be imported from disease ontology" []
+is_a: BFO:0000016 ! disposition (bfo)
+property_value: IAO:0000111 "disease" xsd:string
+property_value: IAO:0000114 IAO:0000121
+property_value: IAO:0000117 "IEDB" xsd:string
+property_value: IAO:0000119 "IEDB" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: PATO:0000001
 name: quality
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." []
@@ -924,6 +1369,32 @@ id: Subset
 is_a: IAO:0000102 ! data about an ontology part
 
 [Term]
+id: UBERON:0000061
+name: anatomical structure
+def: "Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism's own genome." []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000118 "biological structure" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000465
+name: material anatomical entity
+def: "Anatomical entity that has mass." []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000479
+name: tissue
+def: "Anatomical structure, that consists of similar cells and intercellular matrix, aggregated according to genetically determined spatial relationships." []
+comment: This class was sourced from CARO, which was initially sourced from FMA. Nomenclature changes have been made. Note also AEO introduces a class AEO:0000013 'single-cell tissue'
+is_a: UBERON:0000061 ! anatomical structure
+property_value: IAO:0000114 IAO:0000123
+property_value: IAO:0000118 "portion of tissue" xsd:string
+property_value: IAO:0000118 "simple tissue" xsd:string
+property_value: IAO:0000118 "tissue portion" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
 id: UBERON:0001062
 name: anatomical entity
 def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." []
@@ -931,6 +1402,73 @@ is_a: BFO:0000040 ! material_entity
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000118 "mouse anatomical entity" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0002050
+name: embryonic structure
+def: "Anatomical structure that is part of an embryo." []
+comment: Note in FMA embryo is_a embryonic structure
+property_value: IAO:0000118 "developing embryonic structure" xsd:string
+property_value: IAO:0000118 "embryonic anatomical structure" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0005291
+name: embryonic tissue
+def: "A portion of tissue that is part of an embryo." []
+is_a: UBERON:0000479 ! tissue
+is_a: UBERON:0002050 ! embryonic structure
+property_value: IAO:0000118 "portion of embryonic tissue" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0010316
+name: germ layer / neural crest
+is_a: UBERON:0005291 ! embryonic tissue
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UO:0000280
+name: rate unit
+is_a: IAO:0000003 ! measurement unit label
+
+[Term]
+id: http://xmlns.com/foaf/0.1/Agent
+name: agent
+def: "Agents are things that do stuff" []
+def: "Things that do stuff." []
+comment: An agent
+is_a: BFO:0000040 ! material_entity
+property_value: IAO:0000111 "agent" xsd:string
+property_value: IAO:0000112 "see: http://xmlns.com/foaf/spec/#term_Agent" xsd:string
+property_value: IAO:0000117 "PERSON: Scott Hoffmann" xsd:string
+property_value: IAO:0000118 "" xsd:string
+property_value: scopeNote "Used to describe any \"agent\" related to bibliographic items. Such agents can be persons, organizations or groups of any kind." xsd:string
+
+[Term]
+id: http://xmlns.com/foaf/0.1/Organization
+name: organization
+def: "A generic class encompassing several types of organizations." []
+def: "A kind of Agent corresponding to social instititutions such as companies, societies etc." []
+comment: An organization
+is_a: http://xmlns.com/foaf/0.1/Agent ! agent
+property_value: IAO:0000111 "organization" xsd:string
+property_value: IAO:0000112 "Only use if no specific subclasses of foaf:organization desribe the organization." xsd:string
+property_value: IAO:0000112 "This class will display all the instances in the subclasses below it, as well as any organizations that were added as part of this generic class because there wasn't a specific class available." xsd:string
+property_value: IAO:0000117 "PERSON: Scott Hoffmann" xsd:string
+property_value: IAO:0000118 "" xsd:string
+property_value: scopeNote "Ued to describe an organization related to bibliographic items such as a publishing company, etc." xsd:string
+
+[Term]
+id: http://xmlns.com/foaf/0.1/Person
+name: person
+def: "An instance of a human being (Homo sapiens)" []
+def: "The most general classification of a person" []
+comment: A person
+is_a: http://xmlns.com/foaf/0.1/Agent ! agent
+property_value: IAO:0000111 "person" xsd:string
+property_value: IAO:0000117 "PERSON: Melissa Haendel" xsd:string
+property_value: IAO:0000118 "" xsd:string
 
 [Term]
 id: owl:DeprecatedClass
@@ -969,6 +1507,17 @@ domain: BFO:0000003 ! occurrent
 is_transitive: true
 
 [Typedef]
+id: ERO:0001908
+name: objective_achieved_by_operation
+def: "a relation between a software objective (data transformation objective) and an operation whose execution in a software tool achieves the objective" []
+comment: Links an objective to a software operation whise execution achieves the objective. Is different from OBI:objective_achieved_by which links an objective to the process that achieves it.
+property_value: IAO:0000116 "software relation expanding to something like: \n\nobjective_achieved_by some ('software/algorithm execution' and (specified_by some 'data processing operation'))" xsd:string
+property_value: IAO:0000117 "PERSON:Matthew Brush" xsd:string
+property_value: IAO:0000119 "PERSON:Matthew Brush" xsd:string
+domain: OBI:0200166 ! data transformation objective
+range: ERO:0100287 ! data processing operation
+
+[Typedef]
 id: OBI:0000293
 name: has_specified_input
 def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
@@ -998,6 +1547,20 @@ is_a: RO:0002234 ! has output
 inverse_of: OBI:0000312 ! is_specified_output_of
 
 [Typedef]
+id: OBI:0000300
+name: is_realized_by
+def: "Relation between a realizable and a process. Reciprocal relation of realizes [GOC:cjm]" []
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON: Chris Mungall" xsd:string
+property_value: IAO:0000118 "executed_during" xsd:string
+property_value: IAO:0000118 "has_realization" xsd:string
+property_value: IAO:0000118 "is_realized_as" xsd:string
+domain: BFO:0000017 ! realizable_entity
+range: BFO:0000015 ! process
+inverse_of: OBI:0000308 ! realizes
+
+[Typedef]
 id: OBI:0000306
 name: has_function
 def: "Relation between an independent continuant and a function." []
@@ -1011,6 +1574,22 @@ range: BFO:0000034 ! function
 is_a: RO:0000053 ! bearer_of
 
 [Typedef]
+id: OBI:0000308
+name: realizes
+def: "Relation between a process and a function, where the unfolding of the \nprocess requires the execution of the function. Class level: P realizes F iff: \ngiven any p that instantiates P, there exists some f, t such that f instantiates\n F at t and p *realizes* f. Here, *realizes* is the primitive \ninstance level relation [GOC:cjm]" []
+property_value: IAO:0000111 "realizes" xsd:string
+property_value: IAO:0000112 "example of usage: The process of 'histidine catabolism' (GO:0006548) realizes the \nfunction 'histidine ammonia lyase activity' (GO:0004397) (note: here 'activity' \ndenotes a function and not a process). We leave open the possibility of defining \nin future the sub-relations directly_realizes (as bewteen a function and it's \nfunctioning) and indirectly_realizes." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON: Chris Mungal" xsd:string
+property_value: IAO:0000118 "executes" xsd:string
+property_value: IAO:0000118 "has_function_part" xsd:string
+property_value: IAO:0000118 "involves_execution_of" xsd:string
+property_value: IAO:0000118 "is_realization_of" xsd:string
+domain: BFO:0000015 ! process
+range: BFO:0000017 ! realizable_entity
+
+[Typedef]
 id: OBI:0000312
 name: is_specified_output_of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
@@ -1020,6 +1599,19 @@ property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 range: OBI:0000011 ! planned process
 is_a: RO:0000056 ! participates_in
 is_a: RO:0002353 ! output_of
+
+[Typedef]
+id: OBI:0000316
+name: has_role
+def: "A relation between a continuant C and a role R. The reciprocal relation of role_of." []
+property_value: IAO:0000111 "has_role" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON:Chris Mungal" xsd:string
+domain: BFO:0000004 ! independent_continuant
+range: BFO:0000023 ! role (bfo)
+is_a: RO:0000053 ! bearer_of
+inverse_of: role_of ! role_of
 
 [Typedef]
 id: OBI:0000417
@@ -1032,6 +1624,17 @@ property_value: IAO:0000232 "modified according to email thread from 1/23/09 in 
 domain: OBI:0000011 ! planned process
 range: IAO:0000005 ! objective specification
 inverse_of: OBI:0000833 ! objective_achieved_by
+
+[Typedef]
+id: OBI:0000643
+name: has grain
+def: "the relation of the cells in the finger of the skin to the finger, in which an indeterminate number of grains are parts of the whole by virtue of being grains in a collective that is part of the whole, and in which removing one granular part does not nec- essarily damage or diminish the whole. Ontological Whether there is a fixed, or nearly fixed number of parts - e.g. fingers of the hand, chambers of the heart, or wheels of a car - such that there can be a notion of a single one being missing, or whether, by contrast, the number of parts is indeterminate - e.g., cells in the skin of the hand, red cells in blood, or rubber molecules in the tread of the tire of the wheel of the car." []
+property_value: IAO:0000111 "has grain" xsd:string
+property_value: IAO:0000116 "Discussion in Karslruhe with, among others, Alan Rector, Stefan Schulz, Marijke Keet, Melanie Courtot, and Alan Ruttenberg. Definition take from the definition of granular parthood in the cited paper. Needs work to put into standard form" xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "PAPER: Granularity, scale and collectivity: When size does and does not matter, Alan Rector, Jeremy Rogers, Thomas Bittner, Journal of Biomedical Informatics 39 (2006) 333-349" xsd:string
+property_value: IAO:0000412 obi:webservice.owl
+is_a: BFO:0000051 ! has_part
 
 [Typedef]
 id: OBI:0000833
@@ -1177,4 +1780,14 @@ property_value: IAO:0000117 "Melissa Haendel" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000040 ! material_entity
 range: BFO:0000040 ! material_entity
+
+[Typedef]
+id: role_of
+name: role_of
+def: "A relation between a role R and an entity E. R role_of E iff: R inheres_in E and R is a role" []
+property_value: IAO:0000111 "role_of" xsd:string
+property_value: IAO:0000117 GROUP:OBI:<http://obi.sourceforge.net> xsd:string
+property_value: IAO:0000117 "PERSON: Chris Mungall" xsd:string
+property_value: IAO:0000412 ro:proposed
+is_a: RO:0000052 ! inheres in
 

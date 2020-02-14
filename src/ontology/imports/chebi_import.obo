@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-11/imports/chebi_import.owl
-subsetdef: 1_STAR ""
-subsetdef: 3_STAR ""
+data-version: simro/releases/2020-02-13/imports/chebi_import.owl
+subsetdef: 1_STAR "Preliminary entries"
+subsetdef: 3_STAR "Manually annotated by ChEBI Team"
 ontology: simro/imports/chebi_import
 
 [Term]
@@ -191,6 +191,24 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "78.91889"
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "[Br-]" xsd:string
 
 [Term]
+id: CHEBI:15986
+name: polynucleotide
+namespace: chebi_ontology
+alt_id: CHEBI:13672
+alt_id: CHEBI:14859
+alt_id: CHEBI:8312
+def: "A nucleobase-containing molecular entity with a polymeric structure comprised of a linear sequence of 13 or more nucleotide residues." []
+subset: 3_STAR
+synonym: "Polynucleotide" EXACT [KEGG_COMPOUND]
+synonym: "polynucleotides" RELATED [ChEBI]
+xref: KEGG:C00419
+is_a: CHEBI:33695 ! information biomacromolecule
+is_a: CHEBI:61120 ! nucleobase-containing molecular entity
+relationship: has_part CHEBI:50319 ! nucleotide residue
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "(C5H8O6PR)n.C10H17O10PR2" xsd:string
+
+[Term]
 id: CHEBI:16042
 name: halide anion
 namespace: chebi_ontology
@@ -373,6 +391,24 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "60.03236"
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "NC(N)=O" xsd:string
 
 [Term]
+id: CHEBI:16247
+name: phospholipid
+namespace: chebi_ontology
+alt_id: CHEBI:14816
+alt_id: CHEBI:26063
+alt_id: CHEBI:8150
+def: "A lipid containing phosphoric acid as a mono- or di-ester. The term encompasses phosphatidic acids and phosphoglycerides." []
+subset: 3_STAR
+synonym: "a phospholipid derivative" RELATED [UniProt]
+synonym: "Phospholipid" EXACT [KEGG_COMPOUND]
+synonym: "phospholipids" RELATED [ChEBI]
+xref: KEGG:C00865
+is_a: CHEBI:18059 ! lipid
+is_a: CHEBI:25703 ! organic phosphate
+is_a: CHEBI:37734 ! phosphoric ester
+relationship: is_conjugate_acid_of CHEBI:62643 ! anionic phospholipid
+
+[Term]
 id: CHEBI:16382
 name: iodide
 namespace: chebi_ontology
@@ -430,6 +466,28 @@ synonym: "saccharides" RELATED [IUPAC]
 synonym: "saccharidum" RELATED [ChEBI]
 xref: Wikipedia:Carbohydrate
 is_a: CHEBI:78616 ! carbohydrates and carbohydrate derivatives
+
+[Term]
+id: CHEBI:16670
+name: peptide
+namespace: chebi_ontology
+alt_id: CHEBI:14753
+alt_id: CHEBI:25906
+alt_id: CHEBI:7990
+def: "Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from alpha-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc." []
+subset: 3_STAR
+synonym: "Peptid" RELATED [ChEBI]
+synonym: "Peptide" EXACT [KEGG_COMPOUND]
+synonym: "peptides" EXACT IUPAC_NAME [IUPAC]
+synonym: "peptido" RELATED [ChEBI]
+synonym: "peptidos" RELATED [ChEBI]
+xref: KEGG:C00012
+is_a: CHEBI:37622 ! carboxamide
+is_a: CHEBI:50047 ! organic amino compound
+relationship: has_part CHEBI:33708 ! amino-acid residue
+relationship: is_tautomer_of CHEBI:60466 ! peptide zwitterion
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "(C2H2NOR)nC2H3NOR" xsd:string
 
 [Term]
 id: CHEBI:17087
@@ -719,6 +777,20 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "34.96940"
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "[Cl-]" xsd:string
 
 [Term]
+id: CHEBI:18059
+name: lipid
+namespace: chebi_ontology
+alt_id: CHEBI:14517
+alt_id: CHEBI:25054
+alt_id: CHEBI:6486
+def: "'Lipids' is a loosely defined term for substances of biological origin that are soluble in nonpolar solvents. They consist of saponifiable lipids, such as glycerides (fats and oils) and phospholipids, as well as nonsaponifiable lipids, principally steroids." []
+subset: 3_STAR
+synonym: "Lipid" EXACT [KEGG_COMPOUND]
+synonym: "lipids" EXACT IUPAC_NAME [IUPAC]
+xref: KEGG:C01356
+is_a: CHEBI:50860 ! organic molecular entity
+
+[Term]
 id: CHEBI:18140
 name: hydrogen halide
 namespace: chebi_ontology
@@ -737,6 +809,56 @@ property_value: http://purl.obolibrary.org/obo/chebi/formula "HX" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "1.008" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "1.00783" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "[F,Cl,Br,I]" xsd:string
+
+[Term]
+id: CHEBI:18282
+name: nucleobase
+namespace: chebi_ontology
+alt_id: CHEBI:13873
+alt_id: CHEBI:25598
+alt_id: CHEBI:2995
+def: "That part of DNA or RNA that may be involved in pairing." []
+subset: 3_STAR
+synonym: "Base" RELATED [KEGG_COMPOUND]
+synonym: "nucleobases" RELATED [ChEBI]
+xref: KEGG:C00701
+xref: Wikipedia:Nucleobase
+is_a: CHEBI:38101 ! organonitrogen heterocyclic compound
+
+[Term]
+id: CHEBI:18367
+name: phosphate(3-)
+namespace: chebi_ontology
+alt_id: CHEBI:14791
+alt_id: CHEBI:45024
+alt_id: CHEBI:7793
+def: "A phosphate ion that is the conjugate base of hydrogenphosphate." []
+subset: 3_STAR
+synonym: "[PO4](3-)" RELATED [IUPAC]
+synonym: "Orthophosphate" RELATED [KEGG_COMPOUND]
+synonym: "Phosphate" RELATED [KEGG_COMPOUND]
+synonym: "phosphate" EXACT IUPAC_NAME [IUPAC]
+synonym: "PHOSPHATE ION" RELATED [PDBeChem]
+synonym: "PO4(3-)" RELATED [IUPAC]
+synonym: "tetraoxidophosphate(3-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "tetraoxophosphate(3-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "tetraoxophosphate(V)" EXACT IUPAC_NAME [IUPAC]
+xref: Beilstein:3903772 "Beilstein"
+xref: CAS:14265-44-2 "ChemIDplus"
+xref: Gmelin:1997 "Gmelin"
+xref: KEGG:C00009
+xref: PDBeChem:PO4 "ChEBI"
+xref: Reaxys:3903772 "Reaxys"
+is_a: CHEBI:35780 ! phosphate ion
+is_a: CHEBI:79387 ! trivalent inorganic anion
+relationship: is_conjugate_base_of CHEBI:43474 ! hydrogenphosphate
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-3" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "O4P" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-3" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "NBIIXXVUZAFLBC-UHFFFAOYSA-K" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "94.97136" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "94.95507" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[O-]P([O-])([O-])=O" xsd:string
 
 [Term]
 id: CHEBI:22221
@@ -968,8 +1090,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [ChEBI]
 synonym: "carbonyl group" EXACT [UniProt]
+synonym: "carbonyl group" EXACT [ChEBI]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -1160,6 +1282,18 @@ synonym: "glucosides" RELATED [ChEBI]
 is_a: CHEBI:35313 ! hexoside
 
 [Term]
+id: CHEBI:24397
+name: glycophospholipid
+namespace: chebi_ontology
+def: "Any phospholipid that contain both phosphate and carbohydrate as integral structural components." []
+subset: 3_STAR
+synonym: "glycophospholipid" EXACT [ChEBI]
+synonym: "glycophospholipids" RELATED [ChEBI]
+synonym: "phosphoglycolipids" RELATED [ChEBI]
+is_a: CHEBI:16247 ! phospholipid
+is_a: CHEBI:33563 ! glycolipid
+
+[Term]
 id: CHEBI:24400
 name: glycoside
 namespace: chebi_ontology
@@ -1341,6 +1475,26 @@ is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:25741 ! oxide
 
 [Term]
+id: CHEBI:24838
+name: inorganic phosphate
+namespace: chebi_ontology
+def: "Any  phosphate that contains no carbon atom." []
+subset: 3_STAR
+synonym: "inorganic phosphates" RELATED [ChEBI]
+is_a: CHEBI:24835 ! inorganic molecular entity
+is_a: CHEBI:26020 ! phosphate
+
+[Term]
+id: CHEBI:24839
+name: inorganic salt
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "anorganisches Salz" RELATED [ChEBI]
+synonym: "inorganic salts" RELATED [ChEBI]
+is_a: CHEBI:24835 ! inorganic molecular entity
+is_a: CHEBI:24866 ! salt
+
+[Term]
 id: CHEBI:24858
 name: iodide salt
 namespace: chebi_ontology
@@ -1473,6 +1627,16 @@ synonym: "Laktone" RELATED [ChEBI]
 is_a: CHEBI:33308 ! carboxylic ester
 is_a: CHEBI:35701 ! ester
 is_a: CHEBI:38104 ! oxacycle
+
+[Term]
+id: CHEBI:25051
+name: lipid As
+namespace: chebi_ontology
+def: "Glycophospholipids that are the components of endotoxins held responsible for the toxicity of Gram-negative bacteria. Lipid A is the innermost of the three regions of the lipopolysaccharide (LPS) molecule, and its hydrophobic nature allows it to anchor the LPS to the outer membrane.  Four acyl chains attached directly to two (1->6)-linked glucosamine sugars are beta-hydroxy acyl chains usually between 10 and 16 carbons in length. Two additional acyl chains are often attached to the beta-hydroxy group." []
+subset: 3_STAR
+synonym: "lipid A" RELATED [ChEBI]
+is_a: CHEBI:24397 ! glycophospholipid
+is_a: CHEBI:35371 ! lipooligosaccharide
 
 [Term]
 id: CHEBI:25212
@@ -1625,6 +1789,32 @@ is_a: CHEBI:24870 ! ion
 is_a: CHEBI:50860 ! organic molecular entity
 
 [Term]
+id: CHEBI:25703
+name: organic phosphate
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "organic phosphate" EXACT [ChEBI]
+synonym: "organic phosphate ester" RELATED [ChEBI]
+synonym: "organic phosphate esters" RELATED [ChEBI]
+synonym: "organic phosphates" RELATED [ChEBI]
+synonym: "organophosphate ester" RELATED [ChEBI]
+synonym: "organophosphate esters" RELATED [ChEBI]
+is_a: CHEBI:25710 ! organophosphorus compound
+is_a: CHEBI:26020 ! phosphate
+is_a: CHEBI:26079 ! phosphoric acid derivative
+
+[Term]
+id: CHEBI:25710
+name: organophosphorus compound
+namespace: chebi_ontology
+def: "An organophosphorus compound is formally a compound containing at least one carbon-phosphorus bond, but the term is often extended to include esters and thioesters." []
+subset: 3_STAR
+synonym: "organophosphorus compound" EXACT [ChEBI]
+synonym: "organophosphorus compounds" RELATED [ChEBI]
+is_a: CHEBI:26082 ! phosphorus molecular entity
+is_a: CHEBI:33285 ! heteroorganic entity
+
+[Term]
 id: CHEBI:25741
 name: oxide
 namespace: chebi_ontology
@@ -1669,6 +1859,86 @@ synonym: "oxygen molecular entities" RELATED [ChEBI]
 synonym: "oxygen molecular entity" EXACT [ChEBI]
 is_a: CHEBI:33304 ! chalcogen molecular entity
 relationship: has_part CHEBI:25805 ! oxygen atom
+
+[Term]
+id: CHEBI:26020
+name: phosphate
+namespace: chebi_ontology
+def: "Salts and esters of phosphoric and oligophosphoric acids and their chalcogen analogues. In inorganic chemistry, the term is also used to describe anionic coordination entities with phosphorus as central atom." []
+subset: 3_STAR
+synonym: "phosphates" EXACT IUPAC_NAME [IUPAC]
+synonym: "phosphates" RELATED [ChEBI]
+is_a: CHEBI:26079 ! phosphoric acid derivative
+
+[Term]
+id: CHEBI:26078
+name: phosphoric acid
+namespace: chebi_ontology
+def: "A phosphorus oxoacid that consists of one oxo and three hydroxy groups joined covalently to a central phosphorus atom." []
+subset: 3_STAR
+synonym: "[PO(OH)3]" RELATED [IUPAC]
+synonym: "acide phosphorique" RELATED [ChEBI]
+synonym: "acidum phosphoricum" RELATED [ChEBI]
+synonym: "H3PO4" RELATED [IUPAC]
+synonym: "Orthophosphoric acid" RELATED [KEGG_COMPOUND]
+synonym: "orthophosphoric acid" RELATED [NIST_Chemistry_WebBook]
+synonym: "Phosphate" RELATED [KEGG_COMPOUND]
+synonym: "Phosphoric acid" EXACT [KEGG_COMPOUND]
+synonym: "phosphoric acid" EXACT [IUPAC]
+synonym: "Phosphorsaeure" RELATED [ChEBI]
+synonym: "Phosphorsaeureloesungen" RELATED [ChEBI]
+synonym: "tetraoxophosphoric acid" EXACT IUPAC_NAME [IUPAC]
+synonym: "trihydrogen tetraoxophosphate(3-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "trihydroxidooxidophosphorus" EXACT IUPAC_NAME [IUPAC]
+xref: Beilstein:1921286 "Beilstein"
+xref: CAS:7664-38-2 "ChemIDplus"
+xref: Drug_Central:4478 "DrugCentral"
+xref: Gmelin:2000 "Gmelin"
+xref: HMDB:HMDB0002142
+xref: KEGG:C00009
+xref: KEGG:D05467
+xref: KNApSAcK:C00007408
+xref: PMID:11455380 "Europe PMC"
+xref: PMID:15630224 "Europe PMC"
+xref: PMID:17439666 "Europe PMC"
+xref: PMID:17518491 "Europe PMC"
+xref: PMID:22282755 "Europe PMC"
+xref: PMID:22333268 "Europe PMC"
+xref: PMID:22381614 "Europe PMC"
+xref: PMID:22401268 "Europe PMC"
+xref: Reaxys:1921286 "Reaxys"
+xref: Wikipedia:Phosphoric_Acid
+is_a: CHEBI:59698 ! phosphoric acids
+relationship: has_role CHEBI:33287 ! fertilizer
+relationship: has_role CHEBI:46787 ! solvent
+relationship: has_role CHEBI:77746 ! human metabolite
+relationship: has_role CHEBI:84735 ! algal metabolite
+relationship: is_conjugate_acid_of CHEBI:35780 ! phosphate ion
+relationship: is_conjugate_acid_of CHEBI:39745 ! dihydrogenphosphate
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "H3O4P" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "NBIIXXVUZAFLBC-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "97.99520" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "97.97690" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[H]OP(=O)(O[H])O[H]" xsd:string
+
+[Term]
+id: CHEBI:26079
+name: phosphoric acid derivative
+namespace: chebi_ontology
+subset: 1_STAR
+is_a: CHEBI:36359 ! phosphorus oxoacid derivative
+relationship: has_functional_parent CHEBI:26078 ! phosphoric acid
+
+[Term]
+id: CHEBI:26082
+name: phosphorus molecular entity
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "phosphorus molecular entities" RELATED [ChEBI]
+is_a: CHEBI:33302 ! pnictogen molecular entity
+relationship: has_part CHEBI:28659 ! phosphorus atom
 
 [Term]
 id: CHEBI:26144
@@ -1739,6 +2009,44 @@ property_value: http://purl.obolibrary.org/obo/chebi/inchikey "KEAYESYHFKHZAL-UH
 property_value: http://purl.obolibrary.org/obo/chebi/mass "22.98977" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "22.98977" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "[Na]" xsd:string
+
+[Term]
+id: CHEBI:26710
+name: sodium chloride
+namespace: chebi_ontology
+def: "An inorganic chloride salt having sodium(1+) as the counterion." []
+subset: 3_STAR
+synonym: "chlorure de sodium" RELATED [ChEBI]
+synonym: "cloruro sodico" RELATED [ChEBI]
+synonym: "common salt" RELATED [ChemIDplus]
+synonym: "halite" RELATED [NIST_Chemistry_WebBook]
+synonym: "Kochsalz" RELATED [ChEBI]
+synonym: "NaCl" RELATED [IUPAC]
+synonym: "natrii chloridum" RELATED [ChEBI]
+synonym: "Natriumchlorid" RELATED [NIST_Chemistry_WebBook]
+synonym: "rock salt" RELATED [ChemIDplus]
+synonym: "salt" RELATED [ChemIDplus]
+synonym: "sodium chloride" EXACT [ChEBI]
+synonym: "sodium chloride" EXACT IUPAC_NAME [IUPAC]
+synonym: "table salt" RELATED [ChemIDplus]
+xref: Beilstein:3534976 "Beilstein"
+xref: CAS:7647-14-5 "KEGG COMPOUND"
+xref: Gmelin:13673 "Gmelin"
+xref: KEGG:C13563
+xref: KEGG:D02056
+xref: MetaCyc:NACL
+xref: PPDB:595
+xref: Reaxys:3534976 "Reaxys"
+xref: Wikipedia:Sodium_Chloride
+is_a: CHEBI:36093 ! inorganic chloride
+is_a: CHEBI:38702 ! inorganic sodium salt
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "ClNa" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/ClH.Na/h1H;/q;+1/p-1" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "FAPWRFPIFSIZLT-UHFFFAOYSA-M" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "58.44247" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "57.95862" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[Na+].[Cl-]" xsd:string
 
 [Term]
 id: CHEBI:26712
@@ -1976,7 +2284,27 @@ property_value: http://purl.obolibrary.org/obo/chebi/smiles "[C]" xsd:string
 
 [Term]
 id: CHEBI:28526
+name: (KDO)2-lipid IVA
+namespace: chebi_ontology
+alt_id: CHEBI:23657
 alt_id: CHEBI:4477
+def: "Lipid IVA glycosylated with two 3-deoxy-D-manno-octulosonic acid (KDO) residues." []
+subset: 3_STAR
+synonym: "3-deoxy-alpha-D-manno-oct-2-ulopyranonosyl-(2->4)-3-deoxy-alpha-D-manno-oct-2-ulopyranonosyl-(2->6)-2-deoxy-3-O-[(3R)-3-hydroxytetradecanoyl]-2-[(3R)-3-hydroxytetradecanamido]-4-O-phosphono-beta-D-glucopyranosyl-(1->6)-2-deoxy-3-O-[(3R)-3-hydroxytetradecanoyl]-2-[(3R)-3-hydroxytetradecanamido]-1-O-phosphono-alpha-D-glucopyranose" EXACT IUPAC_NAME [IUPAC]
+synonym: "Di[3-deoxy-D-manno-octulosonyl]-lipid IV(A)" RELATED [KEGG_COMPOUND]
+synonym: "KDO2-lipid IV(A)" RELATED [KEGG_COMPOUND]
+xref: KEGG:C06025
+xref: KEGG:G11160
+is_a: CHEBI:25051 ! lipid As
+relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
+relationship: is_conjugate_acid_of CHEBI:60365 ! (KDO)2-lipid IVA(6-)
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C84H154N2O37P2" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C84H154N2O37P2/c1-5-9-13-17-21-25-29-33-37-41-55(89)45-65(96)85-69-77(117-67(98)47-57(91)43-39-35-31-27-23-19-15-11-7-3)73(102)63(115-80(69)123-125(110,111)112)53-113-79-70(86-66(97)46-56(90)42-38-34-30-26-22-18-14-10-6-2)78(118-68(99)48-58(92)44-40-36-32-28-24-20-16-12-8-4)76(122-124(107,108)109)64(116-79)54-114-83(81(103)104)50-62(72(101)75(120-83)61(95)52-88)119-84(82(105)106)49-59(93)71(100)74(121-84)60(94)51-87/h55-64,69-80,87-95,100-102H,5-54H2,1-4H3,(H,85,96)(H,86,97)(H,103,104)(H,105,106)(H2,107,108,109)(H2,110,111,112)/t55-,56-,57-,58-,59-,60-,61-,62-,63-,64-,69-,70-,71-,72-,73-,74-,75-,76-,77-,78-,79-,80-,83-,84-/m1/s1" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "XAOLJGCZESYRFT-VHSKNIDJSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "1846.06030" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "1844.97057" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "CCCCCCCCCCC[C@@H](O)CC(=O)N[C@H]1[C@H](OC[C@H]2O[C@H](OP(O)(O)=O)[C@H](NC(=O)C[C@H](O)CCCCCCCCCCC)[C@@H](OC(=O)C[C@H](O)CCCCCCCCCCC)[C@@H]2O)O[C@H](CO[C@@]2(C[C@@H](O[C@@]3(C[C@@H](O)[C@@H](O)[C@H](O3)[C@H](O)CO)C(O)=O)[C@@H](O)[C@H](O2)[C@H](O)CO)C(O)=O)[C@@H](OP(O)(O)=O)[C@@H]1OC(=O)C[C@H](O)CCCCCCCCCCC" xsd:string
 
 [Term]
 id: CHEBI:28616
@@ -2014,6 +2342,37 @@ property_value: http://purl.obolibrary.org/obo/chebi/inchikey "KXDHJXZQYSOELW-UH
 property_value: http://purl.obolibrary.org/obo/chebi/mass "61.04006" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "61.01638" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "NC(O)=O" xsd:string
+
+[Term]
+id: CHEBI:28659
+name: phosphorus atom
+namespace: chebi_ontology
+alt_id: CHEBI:26080
+alt_id: CHEBI:8168
+subset: 3_STAR
+synonym: "15P" RELATED [IUPAC]
+synonym: "fosforo" RELATED [ChEBI]
+synonym: "P" RELATED [IUPAC]
+synonym: "P" RELATED [KEGG_COMPOUND]
+synonym: "Phosphor" RELATED [ChEBI]
+synonym: "phosphore" RELATED [ChEBI]
+synonym: "Phosphorus" RELATED [KEGG_COMPOUND]
+synonym: "phosphorus" EXACT IUPAC_NAME [IUPAC]
+synonym: "phosphorus" RELATED [ChEBI]
+xref: CAS:7723-14-0 "KEGG COMPOUND"
+xref: Gmelin:16235 "Gmelin"
+xref: KEGG:C06262
+xref: WebElements:P
+is_a: CHEBI:25585 ! nonmetal atom
+is_a: CHEBI:33300 ! pnictogen
+relationship: has_role CHEBI:33937 ! macronutrient
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "P" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/P" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "OAICVXFJPJFONN-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "30.97376" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "30.97376" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[P]" xsd:string
 
 [Term]
 id: CHEBI:28938
@@ -2865,6 +3224,16 @@ is_a: CHEBI:33608 ! hydrogen molecular entity
 relationship: has_role CHEBI:39141 ! Bronsted acid
 
 [Term]
+id: CHEBI:33408
+name: pnictogen oxoacid
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "pnictogen oxoacids" RELATED [ChEBI]
+is_a: CHEBI:24833 ! oxoacid
+is_a: CHEBI:33302 ! pnictogen molecular entity
+relationship: has_role CHEBI:138103 ! inorganic acid
+
+[Term]
 id: CHEBI:33424
 name: sulfur oxoacid derivative
 namespace: chebi_ontology
@@ -2923,6 +3292,41 @@ subset: 3_STAR
 synonym: "elemental halogen" EXACT [ChEBI]
 synonym: "elemental halogens" RELATED [ChEBI]
 is_a: CHEBI:33259 ! elemental molecular entity
+
+[Term]
+id: CHEBI:33457
+name: phosphorus oxoacid
+namespace: chebi_ontology
+def: "A pnictogen oxoacid which contains phosphorus and oxygen, at least one hydrogen atom bound to oxygen, and forms an ion by the loss of one or more protons." []
+subset: 3_STAR
+synonym: "oxoacids of phosphorus" RELATED [ChEBI]
+synonym: "Oxosaeure des Phosphors" RELATED [ChEBI]
+synonym: "phosphorus oxoacid" EXACT [ChEBI]
+synonym: "phosphorus oxoacids" RELATED [ChEBI]
+is_a: CHEBI:33408 ! pnictogen oxoacid
+is_a: CHEBI:36360 ! phosphorus oxoacids and derivatives
+
+[Term]
+id: CHEBI:33459
+name: pnictogen oxoanion
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "pnictogen oxoanion" EXACT [ChEBI]
+synonym: "pnictogen oxoanions" RELATED [ChEBI]
+is_a: CHEBI:33302 ! pnictogen molecular entity
+is_a: CHEBI:35406 ! oxoanion
+
+[Term]
+id: CHEBI:33461
+name: phosphorus oxoanion
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "oxoanions of phosphorus" RELATED [ChEBI]
+synonym: "phosphorus oxoanion" EXACT [ChEBI]
+synonym: "phosphorus oxoanions" RELATED [ChEBI]
+is_a: CHEBI:24834 ! inorganic anion
+is_a: CHEBI:26082 ! phosphorus molecular entity
+is_a: CHEBI:33459 ! pnictogen oxoanion
 
 [Term]
 id: CHEBI:33482
@@ -3093,6 +3497,20 @@ synonym: "d-block element" RELATED [ChEBI]
 synonym: "d-block elements" RELATED [ChEBI]
 is_a: CHEBI:27081 ! transition element atom
 is_a: CHEBI:33521 ! metal atom
+
+[Term]
+id: CHEBI:33563
+name: glycolipid
+namespace: chebi_ontology
+alt_id: CHEBI:24393
+alt_id: CHEBI:5476
+def: "Any member of class of 1,2-di-O-acylglycerols joined at oxygen 3 by a glycosidic linkage to a carbohydrate part (usually a mono-, di- or tri-saccharide). Some substances classified as bacterial glycolipids have the sugar part acylated by one or more fatty acids and the glycerol part may be absent." []
+subset: 3_STAR
+synonym: "Glycolipid" EXACT [KEGG_COMPOUND]
+synonym: "glycolipids" EXACT IUPAC_NAME [IUPAC]
+xref: KEGG:C05005
+xref: Wikipedia:Glycolipids
+is_a: CHEBI:35740 ! liposaccharide
 
 [Term]
 id: CHEBI:33575
@@ -3349,6 +3767,70 @@ is_a: CHEBI:33608 ! hydrogen molecular entity
 is_a: CHEBI:37577 ! heteroatomic molecular entity
 
 [Term]
+id: CHEBI:33694
+name: biomacromolecule
+namespace: chebi_ontology
+def: "A macromolecule formed by a living organism." []
+subset: 3_STAR
+synonym: "biomacromolecules" RELATED [ChEBI]
+synonym: "biopolymer" EXACT IUPAC_NAME [IUPAC]
+synonym: "Biopolymere" RELATED [ChEBI]
+synonym: "biopolymers" RELATED [ChEBI]
+is_a: CHEBI:33839 ! macromolecule
+is_a: CHEBI:50860 ! organic molecular entity
+
+[Term]
+id: CHEBI:33695
+name: information biomacromolecule
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "genetically encoded biomacromolecules" RELATED [ChEBI]
+synonym: "genetically encoded biopolymers" RELATED [ChEBI]
+synonym: "information biomacromolecules" RELATED [ChEBI]
+synonym: "information biopolymers" RELATED [ChEBI]
+synonym: "information macromolecule" RELATED [ChEBI]
+synonym: "information macromolecules" RELATED [ChEBI]
+is_a: CHEBI:33694 ! biomacromolecule
+
+[Term]
+id: CHEBI:33696
+name: nucleic acid
+namespace: chebi_ontology
+def: "A macromolecule made up of nucleotide units and hydrolysable into certain pyrimidine or purine bases (usually adenine, cytosine, guanine, thymine, uracil), D-ribose or 2-deoxy-D-ribose and phosphoric acid." []
+subset: 3_STAR
+synonym: "acide nucleique" RELATED [ChEBI]
+synonym: "acides nucleiques" RELATED [ChEBI]
+synonym: "acido nucleico" RELATED [ChEBI]
+synonym: "acidos nucleicos" RELATED [ChEBI]
+synonym: "NA" RELATED [ChEBI]
+synonym: "nucleic acids" EXACT IUPAC_NAME [IUPAC]
+synonym: "Nukleinsaeure" RELATED [ChEBI]
+synonym: "Nukleinsaeuren" RELATED [ChEBI]
+is_a: CHEBI:15986 ! polynucleotide
+relationship: has_part CHEBI:33791 ! canonical nucleoside residue
+relationship: has_part CHEBI:50297 ! canonical nucleotide residue
+
+[Term]
+id: CHEBI:33697
+name: ribonucleic acid
+namespace: chebi_ontology
+def: "High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins." []
+subset: 3_STAR
+synonym: "pentosenucleic acids" RELATED [ChemIDplus]
+synonym: "ribonucleic acid" EXACT [IUPAC]
+synonym: "ribonucleic acids" EXACT IUPAC_NAME [IUPAC]
+synonym: "ribonucleic acids" RELATED [ChEBI]
+synonym: "Ribonukleinsaeure" RELATED [ChEBI]
+synonym: "ribose nucleic acid" RELATED [ChEBI]
+synonym: "RNA" RELATED [IUPAC]
+synonym: "RNS" RELATED [ChEBI]
+synonym: "yeast nucleic acid" RELATED [ChEBI]
+xref: CAS:63231-63-0 "ChemIDplus"
+is_a: CHEBI:33696 ! nucleic acid
+relationship: has_part CHEBI:33792 ! canonical ribonucleoside residue
+relationship: has_part CHEBI:50299 ! canonical ribonucleotide residue
+
+[Term]
 id: CHEBI:33702
 name: polyatomic cation
 namespace: chebi_ontology
@@ -3357,6 +3839,18 @@ subset: 3_STAR
 synonym: "polyatomic cations" RELATED [ChEBI]
 is_a: CHEBI:36358 ! polyatomic ion
 is_a: CHEBI:36916 ! cation
+
+[Term]
+id: CHEBI:33708
+name: amino-acid residue
+namespace: chebi_ontology
+def: "When two or more amino acids combine to form a peptide, the elements of water are removed, and what remains of each amino acid is called an amino-acid residue." []
+subset: 3_STAR
+synonym: "amino acid residue" RELATED [ChEBI]
+synonym: "amino-acid residue" EXACT IUPAC_NAME [IUPAC]
+synonym: "amino-acid residues" RELATED [JCBN]
+is_a: CHEBI:33247 ! organic group
+relationship: is_substituent_group_from CHEBI:33709 ! amino acid
 
 [Term]
 id: CHEBI:33709
@@ -3374,6 +3868,30 @@ xref: Wikipedia:Amino_acid
 is_a: CHEBI:33575 ! carboxylic acid
 is_a: CHEBI:50047 ! organic amino compound
 relationship: is_conjugate_acid_of CHEBI:37022 ! amino-acid anion
+
+[Term]
+id: CHEBI:33791
+name: canonical nucleoside residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "canonical nucleoside residues" RELATED [ChEBI]
+synonym: "common nucleoside residues" RELATED [CBN]
+synonym: "nucleoside residue" RELATED [CBN]
+synonym: "standard nucleoside residues" RELATED [ChEBI]
+is_a: CHEBI:50320 ! nucleoside residue
+
+[Term]
+id: CHEBI:33792
+name: canonical ribonucleoside residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "canonical ribonucleoside residues" RELATED [ChEBI]
+synonym: "common ribonucleoside residue" RELATED [CBN]
+synonym: "common ribonucleoside residues" RELATED [CBN]
+synonym: "N" RELATED [CBN]
+synonym: "Nuc" RELATED [CBN]
+synonym: "standard ribonucleoside residues" RELATED [ChEBI]
+is_a: CHEBI:33791 ! canonical nucleoside residue
 
 [Term]
 id: CHEBI:33822
@@ -3418,6 +3936,20 @@ synonym: "benzenoid aromatic compounds" RELATED [ChEBI]
 synonym: "benzenoid compound" RELATED [ChEBI]
 is_a: CHEBI:33598 ! carbocyclic compound
 is_a: CHEBI:33659 ! organic aromatic compound
+
+[Term]
+id: CHEBI:33839
+name: macromolecule
+namespace: chebi_ontology
+def: "A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." []
+subset: 3_STAR
+synonym: "macromolecule" EXACT IUPAC_NAME [IUPAC]
+synonym: "macromolecules" RELATED [ChEBI]
+synonym: "polymer" RELATED [ChEBI]
+synonym: "polymer molecule" RELATED [IUPAC]
+synonym: "polymers" RELATED [ChEBI]
+xref: Wikipedia:Macromolecule
+is_a: CHEBI:36357 ! polyatomic entity
 
 [Term]
 id: CHEBI:33853
@@ -3681,6 +4213,18 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "69.99290"
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "[*]N(C([*])=O)C([*])=O" xsd:string
 
 [Term]
+id: CHEBI:35371
+name: lipooligosaccharide
+namespace: chebi_ontology
+alt_id: CHEBI:25053
+alt_id: CHEBI:25060
+subset: 3_STAR
+synonym: "lipooligosaccharides" RELATED [ChEBI]
+synonym: "LOS" RELATED [KEGG_COMPOUND]
+xref: KEGG:C19596
+is_a: CHEBI:63563 ! oligosaccharide derivative
+
+[Term]
 id: CHEBI:35406
 name: oxoanion
 namespace: chebi_ontology
@@ -3856,6 +4400,15 @@ xref: Wikipedia:Ester
 is_a: CHEBI:36963 ! organooxygen compound
 
 [Term]
+id: CHEBI:35740
+name: liposaccharide
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "liposaccharides" RELATED [ChEBI]
+is_a: CHEBI:18059 ! lipid
+is_a: CHEBI:63299 ! carbohydrate derivative
+
+[Term]
 id: CHEBI:35757
 name: monocarboxylic acid anion
 namespace: chebi_ontology
@@ -3877,6 +4430,19 @@ property_value: http://purl.obolibrary.org/obo/chebi/formula "CO2R" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "44.01000" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "43.98983" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "[O-]C([*])=O" xsd:string
+
+[Term]
+id: CHEBI:35780
+name: phosphate ion
+namespace: chebi_ontology
+def: "A phosphorus oxoanion that is the conjugate base of phosphoric acid." []
+subset: 3_STAR
+synonym: "phosphate" RELATED [ChEBI]
+synonym: "phosphate ions" RELATED [ChEBI]
+synonym: "Pi" RELATED [ChEBI]
+is_a: CHEBI:33461 ! phosphorus oxoanion
+relationship: has_role CHEBI:77746 ! human metabolite
+relationship: is_conjugate_base_of CHEBI:26078 ! phosphoric acid
 
 [Term]
 id: CHEBI:35881
@@ -3908,6 +4474,17 @@ synonym: "antibacterial drugs" RELATED [ChEBI]
 xref: Wikipedia:Antibacterial
 is_a: CHEBI:33282 ! antibacterial agent
 is_a: CHEBI:36043 ! antimicrobial drug
+
+[Term]
+id: CHEBI:36093
+name: inorganic chloride
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "inorganic chloride salt" RELATED [ChEBI]
+synonym: "inorganic chloride salts" RELATED [ChEBI]
+synonym: "inorganic chlorides" RELATED [ChEBI]
+is_a: CHEBI:23114 ! chloride salt
+is_a: CHEBI:24839 ! inorganic salt
 
 [Term]
 id: CHEBI:36094
@@ -4025,6 +4602,23 @@ subset: 3_STAR
 synonym: "polyatomic ions" RELATED [ChEBI]
 is_a: CHEBI:24870 ! ion
 is_a: CHEBI:36357 ! polyatomic entity
+
+[Term]
+id: CHEBI:36359
+name: phosphorus oxoacid derivative
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "phosphorus oxoacid derivative" EXACT [ChEBI]
+is_a: CHEBI:33241 ! oxoacid derivative
+is_a: CHEBI:36360 ! phosphorus oxoacids and derivatives
+relationship: has_functional_parent CHEBI:33457 ! phosphorus oxoacid
+
+[Term]
+id: CHEBI:36360
+name: phosphorus oxoacids and derivatives
+namespace: chebi_ontology
+subset: 1_STAR
+is_a: CHEBI:26082 ! phosphorus molecular entity
 
 [Term]
 id: CHEBI:36586
@@ -4389,6 +4983,21 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "83.01330"
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "O1C(C(C(C1=O)*)*)*" xsd:string
 
 [Term]
+id: CHEBI:37586
+name: sodium phosphate
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "phosphoric acid, sodium salt" RELATED [ChemIDplus]
+synonym: "sodium orthophosphate" RELATED [ChemIDplus]
+synonym: "sodium phosphate" EXACT [ChemIDplus]
+synonym: "sodium phosphates" RELATED [ChEBI]
+synonym: "sodium salt of phosphoric acid" RELATED [ChemIDplus]
+xref: CAS:7632-05-5 "ChemIDplus"
+xref: Wikipedia:Sodium_phosphates
+is_a: CHEBI:24838 ! inorganic phosphate
+is_a: CHEBI:26714 ! sodium salt
+
+[Term]
 id: CHEBI:37622
 name: carboxamide
 namespace: chebi_ontology
@@ -4417,6 +5026,15 @@ def: "An EC 2.7.* (P-containing group transferase) inhibitor that interferes wit
 subset: 3_STAR
 synonym: "protein kinase inhibitors" RELATED [ChEBI]
 is_a: CHEBI:76668 ! EC 2.7.* (P-containing group transferase) inhibitor
+
+[Term]
+id: CHEBI:37734
+name: phosphoric ester
+namespace: chebi_ontology
+alt_id: CHEBI:26019
+subset: 1_STAR
+is_a: CHEBI:26079 ! phosphoric acid derivative
+is_a: CHEBI:35701 ! ester
 
 [Term]
 id: CHEBI:37838
@@ -4702,6 +5320,15 @@ is_a: CHEBI:24868 ! organic salt
 is_a: CHEBI:26714 ! sodium salt
 
 [Term]
+id: CHEBI:38702
+name: inorganic sodium salt
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "inorganic sodium salts" RELATED [ChEBI]
+is_a: CHEBI:24839 ! inorganic salt
+is_a: CHEBI:26714 ! sodium salt
+
+[Term]
 id: CHEBI:38831
 name: 2-benzofurans
 namespace: chebi_ontology
@@ -4793,6 +5420,37 @@ namespace: chebi_ontology
 def: "A role played by a fluorescent molecular entity used to study the microscopic environment by fluorescence spectroscopy." []
 subset: 3_STAR
 is_a: CHEBI:50406 ! probe
+
+[Term]
+id: CHEBI:39745
+name: dihydrogenphosphate
+namespace: chebi_ontology
+alt_id: CHEBI:29137
+alt_id: CHEBI:39739
+def: "A monovalent inorganic anion that consists of phosphoric acid in which one of the three OH groups has been deprotonated." []
+subset: 3_STAR
+synonym: "[PO2(OH)2](-)" RELATED [IUPAC]
+synonym: "dihydrogen(tetraoxidophosphate)(1-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "dihydrogenphosphate" EXACT IUPAC_NAME [IUPAC]
+synonym: "DIHYDROGENPHOSPHATE ION" RELATED [PDBeChem]
+synonym: "dihydrogentetraoxophosphate(1-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "dihydrogentetraoxophosphate(V)" EXACT IUPAC_NAME [IUPAC]
+synonym: "dihydroxidodioxidophosphate(1-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "H2PO4(-)" RELATED [IUPAC]
+xref: DrugBank:DB02831
+xref: Gmelin:1999 "Gmelin"
+xref: PDBeChem:2HP
+is_a: CHEBI:35780 ! phosphate ion
+is_a: CHEBI:79389 ! monovalent inorganic anion
+relationship: is_conjugate_acid_of CHEBI:43474 ! hydrogenphosphate
+relationship: is_conjugate_base_of CHEBI:26078 ! phosphoric acid
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "H2O4P" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-1" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "NBIIXXVUZAFLBC-UHFFFAOYSA-M" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "96.98724" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "96.96962" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[H]OP([O-])(=O)O[H]" xsd:string
 
 [Term]
 id: CHEBI:3992
@@ -4953,6 +5611,44 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "127.91230
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "I[H]" xsd:string
 
 [Term]
+id: CHEBI:43474
+name: hydrogenphosphate
+namespace: chebi_ontology
+alt_id: CHEBI:29139
+alt_id: CHEBI:43470
+def: "A phosphate ion that is the conjugate base of dihydrogenphosphate." []
+subset: 3_STAR
+synonym: "[P(OH)O3](2-)" RELATED [MolBase]
+synonym: "[PO3(OH)](2-)" RELATED [IUPAC]
+synonym: "HPO4(2-)" RELATED [IUPAC]
+synonym: "hydrogen phosphate" RELATED [ChEBI]
+synonym: "hydrogen(tetraoxidophosphate)(2-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "hydrogenphosphate" EXACT IUPAC_NAME [IUPAC]
+synonym: "HYDROGENPHOSPHATE ION" RELATED [PDBeChem]
+synonym: "hydrogentetraoxophosphate(2-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "hydrogentetraoxophosphate(V)" EXACT IUPAC_NAME [IUPAC]
+synonym: "hydroxidotrioxidophosphate(2-)" EXACT IUPAC_NAME [IUPAC]
+synonym: "INORGANIC PHOSPHATE GROUP" RELATED [PDBeChem]
+synonym: "phosphate" RELATED [UniProt]
+xref: Gmelin:1998 "Gmelin"
+xref: MolBase:1628
+xref: PDBeChem:PI
+xref: PDBeChem:PO4
+is_a: CHEBI:35780 ! phosphate ion
+is_a: CHEBI:79388 ! divalent inorganic anion
+relationship: has_role CHEBI:23357 ! cofactor
+relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
+relationship: is_conjugate_acid_of CHEBI:18367 ! phosphate(3-)
+relationship: is_conjugate_base_of CHEBI:39745 ! dihydrogenphosphate
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-2" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "HO4P" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-2" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "NBIIXXVUZAFLBC-UHFFFAOYSA-L" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "95.97930" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "95.96234" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "OP([O-])([O-])=O" xsd:string
+
+[Term]
 id: CHEBI:46629
 name: oxo group
 namespace: chebi_ontology
@@ -4968,6 +5664,19 @@ property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "15.99940" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "15.99491" xsd:string
+
+[Term]
+id: CHEBI:46787
+name: solvent
+namespace: chebi_ontology
+def: "A liquid that can dissolve other substances (solutes) without any change in their chemical composition." []
+subset: 3_STAR
+synonym: "Loesungsmittel" RELATED [ChEBI]
+synonym: "solvant" RELATED [ChEBI]
+synonym: "solvents" RELATED [ChEBI]
+xref: Wikipedia:Solvent
+is_a: CHEBI:33232 ! application
+is_a: CHEBI:51086 ! chemical role
 
 [Term]
 id: CHEBI:46845
@@ -5270,6 +5979,22 @@ relationship: has_parent_hydride CHEBI:16134 ! ammonia
 relationship: has_role CHEBI:39142 ! Bronsted base
 
 [Term]
+id: CHEBI:50297
+name: canonical nucleotide residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "canonical nucleotide residues" RELATED [ChEBI]
+is_a: CHEBI:50319 ! nucleotide residue
+
+[Term]
+id: CHEBI:50299
+name: canonical ribonucleotide residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "canonical ribonucleotide residues" RELATED [ChEBI]
+is_a: CHEBI:50297 ! canonical nucleotide residue
+
+[Term]
 id: CHEBI:50312
 name: onium compound
 namespace: chebi_ontology
@@ -5349,6 +6074,22 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "128.91957
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "[H][I+][H]" xsd:string
 
 [Term]
+id: CHEBI:50319
+name: nucleotide residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "nucleotide residues" RELATED [ChEBI]
+is_a: CHEBI:33247 ! organic group
+
+[Term]
+id: CHEBI:50320
+name: nucleoside residue
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "nucleoside residues" RELATED [ChEBI]
+is_a: CHEBI:33247 ! organic group
+
+[Term]
 id: CHEBI:50334
 name: pyridinium ion
 namespace: chebi_ontology
@@ -5372,6 +6113,24 @@ namespace: chebi_ontology
 def: "A role played by a molecular entity used to study the microscopic environment." []
 subset: 3_STAR
 is_a: CHEBI:33232 ! application
+
+[Term]
+id: CHEBI:50699
+name: oligosaccharide
+namespace: chebi_ontology
+alt_id: CHEBI:25679
+alt_id: CHEBI:35319
+alt_id: CHEBI:7758
+def: "A compound in which monosaccharide units are joined by glycosidic linkages. The term is commonly used to refer to a defined structure as opposed to a polymer of unspecified length or a homologous mixture. When the linkages are of other types the compounds are regarded as oligosaccharide analogues." []
+subset: 3_STAR
+synonym: "O-glycosylglycoside" RELATED [ChEBI]
+synonym: "O-glycosylglycosides" RELATED [ChEBI]
+synonym: "oligosacarido" RELATED [ChEBI]
+synonym: "oligosacaridos" RELATED [IUPAC]
+synonym: "Oligosaccharide" EXACT [KEGG_COMPOUND]
+synonym: "oligosaccharides" EXACT IUPAC_NAME [IUPAC]
+xref: KEGG:C00930
+is_a: CHEBI:16646 ! carbohydrate
 
 [Term]
 id: CHEBI:50860
@@ -6231,6 +6990,16 @@ synonym: "heterocyclic compounds" RELATED [ChEBI]
 is_a: CHEBI:33595 ! cyclic compound
 
 [Term]
+id: CHEBI:58945
+name: organophosphate oxoanion
+namespace: chebi_ontology
+def: "An organic phosphoric acid derivative in which one or more oxygen atoms of the phosphate group(s) has been deprotonated." []
+subset: 3_STAR
+synonym: "organophosphate oxoanions" RELATED [ChEBI]
+is_a: CHEBI:25696 ! organic anion
+is_a: CHEBI:26079 ! phosphoric acid derivative
+
+[Term]
 id: CHEBI:59132
 name: antigen
 namespace: chebi_ontology
@@ -6252,6 +7021,14 @@ xref: PMID:19101624 "Europe PMC"
 xref: PMID:291959 "Europe PMC"
 xref: PMID:3782019 "Europe PMC"
 is_a: CHEBI:24432 ! biological role
+
+[Term]
+id: CHEBI:59698
+name: phosphoric acids
+namespace: chebi_ontology
+def: "Compounds containing one or more phosphoric acid units." []
+subset: 3_STAR
+is_a: CHEBI:33457 ! phosphorus oxoacid
 
 [Term]
 id: CHEBI:59740
@@ -6296,6 +7073,44 @@ synonym: "protease inhibitors" RELATED [ChEBI]
 is_a: CHEBI:76759 ! EC 3.* (hydrolase) inhibitor
 
 [Term]
+id: CHEBI:60365
+name: (KDO)2-lipid IVA(6-)
+namespace: chebi_ontology
+def: "(KDO)2-lipid IVA deprotonated at both phosphono groups and at the uronic acid carboxy groups. It is the major species at pH 7.3." []
+subset: 3_STAR
+synonym: "alpha-Kdo-(2->4)-alpha-Kdo-(2->6)-lipid IVA" RELATED [UniProt]
+is_a: CHEBI:60373 ! lipid IVA oxoanion
+relationship: is_conjugate_base_of CHEBI:28526 ! (KDO)2-lipid IVA
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-6" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C84H148N2O37P2" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C84H154N2O37P2/c1-5-9-13-17-21-25-29-33-37-41-55(89)45-65(96)85-69-77(117-67(98)47-57(91)43-39-35-31-27-23-19-15-11-7-3)73(102)63(115-80(69)123-125(110,111)112)53-113-79-70(86-66(97)46-56(90)42-38-34-30-26-22-18-14-10-6-2)78(118-68(99)48-58(92)44-40-36-32-28-24-20-16-12-8-4)76(122-124(107,108)109)64(116-79)54-114-83(81(103)104)50-62(72(101)75(120-83)61(95)52-88)119-84(82(105)106)49-59(93)71(100)74(121-84)60(94)51-87/h55-64,69-80,87-95,100-102H,5-54H2,1-4H3,(H,85,96)(H,86,97)(H,103,104)(H,105,106)(H2,107,108,109)(H2,110,111,112)/p-6/t55-,56-,57-,58-,59-,60-,61-,62-,63-,64-,69-,70-,71-,72-,73-,74-,75-,76-,77-,78-,79-,80-,83-,84-/m1/s1" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "XAOLJGCZESYRFT-VHSKNIDJSA-H" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "1840.01260" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "1838.92691" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "CCCCCCCCCCC[C@@H](O)CC(=O)N[C@H]1[C@H](OC[C@H]2O[C@H](OP([O-])([O-])=O)[C@H](NC(=O)C[C@H](O)CCCCCCCCCCC)[C@@H](OC(=O)C[C@H](O)CCCCCCCCCCC)[C@@H]2O)O[C@H](CO[C@@]2(C[C@@H](O[C@@]3(C[C@@H](O)[C@@H](O)[C@H](O3)[C@H](O)CO)C([O-])=O)[C@@H](O)[C@H](O2)[C@H](O)CO)C([O-])=O)[C@@H](OP([O-])([O-])=O)[C@@H]1OC(=O)C[C@H](O)CCCCCCCCCCC" xsd:string
+
+[Term]
+id: CHEBI:60373
+name: lipid IVA oxoanion
+namespace: chebi_ontology
+def: "Any oxoanion formed by loss of one or more protons from the phosphate groups of a lipid IVA compound." []
+subset: 3_STAR
+synonym: "lipid IVA oxoanions" RELATED [ChEBI]
+is_a: CHEBI:58945 ! organophosphate oxoanion
+
+[Term]
+id: CHEBI:60466
+name: peptide zwitterion
+namespace: chebi_ontology
+def: "Zwitterionic form of any peptide where the amino terminus is positively charged and the carboxy terminus is negatively charged." []
+subset: 3_STAR
+synonym: "peptide zwitterions" RELATED [ChEBI]
+is_a: CHEBI:27369 ! zwitterion
+relationship: is_tautomer_of CHEBI:16670 ! peptide
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4NO2R(C2H2NOR)n" xsd:string
+
+[Term]
 id: CHEBI:60979
 name: alpha-glucoside
 namespace: chebi_ontology
@@ -6303,6 +7118,19 @@ def: "A glucoside in which the anomeric carbon of the glycosidic bond is in an a
 subset: 3_STAR
 synonym: "alpha-glucosides" RELATED [ChEBI]
 is_a: CHEBI:24278 ! glucoside
+
+[Term]
+id: CHEBI:61120
+name: nucleobase-containing molecular entity
+namespace: chebi_ontology
+def: "Any compound that has a nucleobase as a part." []
+subset: 3_STAR
+synonym: "nucleobase-containing compound" RELATED [SUBMITTER]
+synonym: "nucleobase-containing compounds" RELATED [ChEBI]
+synonym: "nucleobase-containing molecular entities" RELATED [ChEBI]
+is_a: CHEBI:33833 ! heteroarene
+is_a: CHEBI:51143 ! nitrogen molecular entity
+relationship: has_functional_parent CHEBI:18282 ! nucleobase
 
 [Term]
 id: CHEBI:62434
@@ -6528,6 +7356,18 @@ is_a: CHEBI:38637 ! tyrosine kinase inhibitor
 is_a: CHEBI:76817 ! EC 2.7.10.* (protein-tyrosine kinase) inhibitor
 
 [Term]
+id: CHEBI:62643
+name: anionic phospholipid
+namespace: chebi_ontology
+def: "Any organophosphate oxoanion that is a negatively charged phospholipid, e.g. phosphatidylserine(1-), phosphatidate(2-), phosphatidylglycerol(1-)." []
+subset: 3_STAR
+synonym: "anionic phospholipids" RELATED [ChEBI]
+synonym: "phospholipid anion" RELATED [ChEBI]
+synonym: "phospholipid anions" RELATED [ChEBI]
+is_a: CHEBI:58945 ! organophosphate oxoanion
+relationship: is_conjugate_base_of CHEBI:16247 ! phospholipid
+
+[Term]
 id: CHEBI:63161
 name: glycosyl compound
 namespace: chebi_ontology
@@ -6625,6 +7465,18 @@ synonym: "fibroblast growth factor receptor antagonists" RELATED [ChEBI]
 synonym: "fibroblast growth factor receptor inhibitor" RELATED [ChEBI]
 synonym: "fibroblast growth factor receptor inhibitors" RELATED [ChEBI]
 is_a: CHEBI:48706 ! antagonist
+
+[Term]
+id: CHEBI:63563
+name: oligosaccharide derivative
+namespace: chebi_ontology
+def: "A carbohydrate derivative that is formally obtained from an oligosaccharide." []
+subset: 3_STAR
+synonym: "O-glycosylglycoside derivative" RELATED [ChEBI]
+synonym: "O-glycosylglycoside derivatives" RELATED [ChEBI]
+synonym: "oligosaccharide derivatives" RELATED [ChEBI]
+is_a: CHEBI:63299 ! carbohydrate derivative
+relationship: has_functional_parent CHEBI:50699 ! oligosaccharide
 
 [Term]
 id: CHEBI:64047
@@ -7267,6 +8119,15 @@ synonym: "carbohydrates and their derivatives" RELATED [ChEBI]
 is_a: CHEBI:36963 ! organooxygen compound
 
 [Term]
+id: CHEBI:79387
+name: trivalent inorganic anion
+namespace: chebi_ontology
+def: "Any inorganic anion with a valency of three." []
+subset: 3_STAR
+synonym: "trivalent inorganic anions" RELATED [ChEBI]
+is_a: CHEBI:24834 ! inorganic anion
+
+[Term]
 id: CHEBI:79388
 name: divalent inorganic anion
 namespace: chebi_ontology
@@ -7319,6 +8180,15 @@ namespace: chebi_ontology
 def: "Any member of the class of chlorobenzenes containing a mono- or poly-substituted benzene ring in which only one substituent is chlorine." []
 subset: 3_STAR
 is_a: CHEBI:23132 ! chlorobenzenes
+
+[Term]
+id: CHEBI:84735
+name: algal metabolite
+namespace: chebi_ontology
+def: "Any eukaryotic metabolite produced during a metabolic reaction in algae including unicellular organisms like chlorella and diatoms to multicellular organisms like giant kelps and brown algae." []
+subset: 3_STAR
+synonym: "algal metabolites" RELATED [ChEBI]
+is_a: CHEBI:75763 ! eukaryotic metabolite
 
 [Term]
 id: CHEBI:87358

@@ -311,6 +311,7 @@ http://purl.obolibrary.org/obo/SIMRO_0002079
 http://purl.obolibrary.org/obo/SIMRO_0002080
 http://purl.obolibrary.org/obo/SIMRO_0002081
 http://purl.obolibrary.org/obo/SIMRO_0002082
+http://purl.obolibrary.org/obo/SIMRO_0002083
 http://purl.obolibrary.org/obo/SIMRO_0005000
 http://purl.obolibrary.org/obo/SIMRO_0005001
 http://purl.obolibrary.org/obo/SIMRO_0005002
@@ -565,10 +566,8 @@ http://purl.obolibrary.org/obo/SIMRO_0005250
 http://purl.obolibrary.org/obo/SIMRO_0005251
 http://purl.obolibrary.org/obo/SIMRO_0005252
 http://purl.obolibrary.org/obo/SIMRO_0005253
-http://purl.obolibrary.org/obo/SIMR_0001008
-http://purl.obolibrary.org/obo/SIMR_0002083
-http://purl.obolibrary.org/obo/SIMR_0005254
-http://purl.obolibrary.org/obo/SIMR_0005255
+http://purl.obolibrary.org/obo/SIMRO_0005254
+http://purl.obolibrary.org/obo/SIMRO_0005255
 http://purl.obolibrary.org/obo/UBERON_0001062
 http://purl.obolibrary.org/obo/upheno/patterns/abnormalAnatomicalEntity.yaml
 http://purl.org/dc/terms/title
