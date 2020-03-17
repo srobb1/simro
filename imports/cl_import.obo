@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-13/imports/cl_import.owl
+data-version: simro/releases/2020-03-17/imports/cl_import.owl
 subsetdef: ubprop:upper_level "abstract upper-level terms not directly useful for analysis"
 ontology: simro/imports/cl_import
 
@@ -55,6 +55,7 @@ relationship: RO:0002202 CL:0000008 ! migratory cranial neural crest cell
 id: CL:0000008
 name: migratory cranial neural crest cell
 namespace: cell
+def: "Cell that is part of the migratory cranial neural crest population. Migratory cranial neural crest cells develop from premigratory cranial neural crest cells and have undergone epithelial to mesenchymal transition and delamination." [https://orcid.org/0000-0001-5208-3432, ZFA:0007091]
 is_a: CL:0000333 ! migratory neural crest cell
 
 [Term]
@@ -76,13 +77,13 @@ relationship: RO:0002202 CL:0002676 ! neural crest derived neuroblast
 
 [Term]
 id: CL:0000031
-name: neuroblast
+name: neuroblast (sensu Vertebrata)
 namespace: cell
+alt_id: CL:0000337
 def: "A cell that will develop into a neuron often after a migration phase." [GOC:NV, http://en.wikipedia.org/wiki/Neuroblast]
+synonym: "neuroblast" EXACT []
 xref: BTO:0000930
-xref: FBbt:00005146
 xref: FMA:70563
-is_a: CL:0000047 ! neuronal stem cell
 is_a: CL:0000055 ! non-terminally differentiated cell
 
 [Term]
@@ -427,7 +428,7 @@ intersection_of: RO:0000053 PATO:0001407
 id: CL:0000236
 name: B cell
 namespace: cell
-def: "A lymphocyte of B lineage with the phenotype CD19-positive, CD20-positive, and capable of B cell mediated immunity." [GO_REF:0000031, GOC:add, GOC:tfm, ISBN:0781735149]
+def: "A lymphocyte of B lineage that is capable of B cell mediated immunity." [GO_REF:0000031, GOC:add, GOC:tfm, ISBN:0781735149]
 synonym: "B lymphocyte" EXACT []
 synonym: "B-cell" EXACT []
 synonym: "B-lymphocyte" EXACT []
@@ -486,13 +487,6 @@ is_a: CL:0000003 ! native cell
 is_a: CL:0000219 ! motile cell
 is_a: CL:0011012 ! neural crest cell
 relationship: RO:0002202 CL:0007004 ! premigratory neural crest cell
-
-[Term]
-id: CL:0000337
-name: neuroblast (sensu Vertebrata)
-namespace: cell
-def: "An embryonic cell that develops into a nerve cell or neuron." [FMA:70563]
-is_a: CL:0000031 ! neuroblast
 
 [Term]
 id: CL:0000349
@@ -554,7 +548,7 @@ xref: WBbt:0003679
 is_a: CL:0000393 ! electrically responsive cell
 is_a: CL:0000404 ! electrically signaling cell
 is_a: CL:0002319 ! neural cell
-relationship: RO:0002202 CL:0000031 ! neuroblast
+relationship: RO:0002202 CL:0000031 ! neuroblast (sensu Vertebrata)
 relationship: RO:0002215 GO:0019226
 
 [Term]
@@ -572,7 +566,7 @@ intersection_of: CL:0000738 ! leukocyte
 intersection_of: BFO:0000051 CP:0000000 ! neutrophillic cytoplasm
 intersection_of: BFO:0000051 CP:0000037 ! increased nucleus size
 intersection_of: BFO:0000051 GO:0000792
-intersection_of: lacks_part GO:0030141
+intersection_of: RO:0000053 PATO:0001407
 relationship: RO:0002202 CL:0000051 ! common lymphoid progenitor
 
 [Term]
@@ -667,6 +661,7 @@ xref: CALOHA:TS-0549
 xref: FMA:62852
 is_a: CL:0000988 {is_inferred="true"} ! hematopoietic cell
 intersection_of: CL:0000988 ! hematopoietic cell
+intersection_of: RO:0000053 PATO:0002505
 intersection_of: RO:0002215 GO:0001667
 relationship: BFO:0000050 UBERON:0002405
 relationship: RO:0002160 NCBITaxon:7742
@@ -752,19 +747,15 @@ xref: CALOHA:TS-0768
 xref: FMA:86713
 is_a: CL:0000738 {is_inferred="true"} ! leukocyte
 intersection_of: CL:0000738 ! leukocyte
-intersection_of: lacks_part GO:0030141
 intersection_of: RO:0000053 PATO:0001407
 
 [Term]
 id: CL:0000945
 name: lymphocyte of B lineage
 namespace: cell
-def: "A lymphocyte of B lineage is a lymphocyte that expresses CD19 on the cell surface. An additional defining characteristic is the commitment to express an immunoglobulin complex." [GO_REF:0000031, GOC:add, GOC:rhs, GOC:tfm, ISBN:0781735149]
+def: "A lymphocyte of B lineage with the commitment to express an immunoglobulin complex." [GO_REF:0000031, GOC:add, GOC:rhs, GOC:tfm, ISBN:0781735149]
 comment: Types of B lineage lymphocytes include B cells and antibody secreting cells (plasmablasts and plasma cells).  Lymphocytes of B cell lineage can be distinguished from those of T cell lineage by their lack of CD3e (as part of the T cell receptor complex).
 is_a: CL:0000542 {is_inferred="true"} ! lymphocyte
-intersection_of: CL:0000542 ! lymphocyte
-intersection_of: lacks_plasma_membrane_part PR:000001020
-intersection_of: RO:0002104 PR:000001002
 relationship: RO:0002202 CL:0000826 ! pro-B cell
 
 [Term]
@@ -840,6 +831,36 @@ intersection_of: GO:0005623
 intersection_of: RO:0000053 PATO:0000460
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-9990-8331
 property_value: http://purl.org/dc/elements/1.1/date 2017-01-30T18:53:32Z xsd:dateTime
+
+[Term]
+id: CL:0001200
+name: lymphocyte of B lineage, CD19-positive
+namespace: cell
+def: "A lymphocyte of B lineage that is CD19-positive." [GOC:add]
+comment: Types of B lineage lymphocytes include B cells and antibody secreting cells (plasmablasts and plasma cells).  Lymphocytes of B cell lineage can be distinguished from those of T cell lineage by their lack of CD3e (as part of the T cell receptor complex).
+is_a: CL:0000945 ! lymphocyte of B lineage
+intersection_of: CL:0000945 ! lymphocyte of B lineage
+intersection_of: lacks_plasma_membrane_part PR:000001020
+intersection_of: RO:0002104 PR:000001002
+intersection_of: RO:0002162 NCBITaxon:40674
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9990-8331 xsd:string
+
+[Term]
+id: CL:0001201
+name: B cell, CD19-positive
+namespace: cell
+def: "A B cell that is CD19-positive." [GOC:add]
+synonym: "B lymphocyte, CD19-positive" EXACT []
+synonym: "B-cell, CD19-positive" EXACT []
+synonym: "B-lymphocyte, CD19-positive" EXACT []
+synonym: "CD19+ B cell" EXACT []
+synonym: "CD19-positive B cell" EXACT []
+is_a: CL:0000236 ! B cell
+intersection_of: CL:0001200 ! lymphocyte of B lineage, CD19-positive
+intersection_of: RO:0002104 PR:000001002
+intersection_of: RO:0002162 NCBITaxon:40674
+intersection_of: RO:0002215 GO:0019724
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-9990-8331 xsd:string
 
 [Term]
 id: CL:0002031
@@ -1032,7 +1053,7 @@ namespace: cell
 def: "A cell containing at least one nucleus." [GOC:tfm]
 xref: FMA:67513
 intersection_of: CL:0000003 ! native cell
-intersection_of: BFO:0000051 GO:0005634
+intersection_of: RO:0000053 PATO:0002505
 created_by: tmeehan
 creation_date: 2010-09-07T03:32:33Z
 
@@ -1423,7 +1444,7 @@ id: CL:0002676
 name: neural crest derived neuroblast
 namespace: cell
 def: "A neuroblast derived from a neural crest cell." [GOC:tfm, PMID:17407019]
-is_a: CL:0000337 ! neuroblast (sensu Vertebrata)
+is_a: CL:0000031 ! neuroblast (sensu Vertebrata)
 relationship: RO:0002202 CL:0000333 ! migratory neural crest cell
 created_by: tmeehan
 creation_date: 2011-08-22T09:24:15Z

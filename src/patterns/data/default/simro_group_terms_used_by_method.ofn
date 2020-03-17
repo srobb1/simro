@@ -1,0 +1,798 @@
+Prefix(:=<urn:unnamed:ontology#ont1#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont1>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000369>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00001012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MI_0416>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C23010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C92302>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0002010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0002055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005039>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005086>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005089>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005090>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005091>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005092>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005093>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005095>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005096>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005097>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005098>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005099>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005103>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005105>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005108>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005111>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005112>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005114>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005115>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005116>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005124>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005130>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005132>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005134>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005136>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005137>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005138>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005139>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005142>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005143>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005144>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005147>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005148>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005149>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005151>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005152>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005153>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005154>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005155>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005156>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005157>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005158>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005163>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005175>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005176>))
+Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0000562>))
+Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0003813>))
+Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0003969>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_0000612>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005000> (<http://purl.obolibrary.org/obo/SIMRO_0005000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005001> (<http://purl.obolibrary.org/obo/SIMRO_0005001>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005002> (<http://purl.obolibrary.org/obo/SIMRO_0005002>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000011>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005003> (<http://purl.obolibrary.org/obo/SIMRO_0005003>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005004> (<http://purl.obolibrary.org/obo/SIMRO_0005004>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005005> (<http://purl.obolibrary.org/obo/SIMRO_0005005>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003813>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005006> (<http://purl.obolibrary.org/obo/SIMRO_0005006>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005007> (<http://purl.obolibrary.org/obo/SIMRO_0005007>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005008> (<http://purl.obolibrary.org/obo/SIMRO_0005008>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005010> (<http://purl.obolibrary.org/obo/SIMRO_0005010>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005011> (<http://purl.obolibrary.org/obo/SIMRO_0005011>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005012> (<http://purl.obolibrary.org/obo/SIMRO_0005012>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003969>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005013> (<http://purl.obolibrary.org/obo/SIMRO_0005013>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005016> (<http://purl.obolibrary.org/obo/SIMRO_0005016>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005017> (<http://purl.obolibrary.org/obo/SIMRO_0005017>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005018> (<http://purl.obolibrary.org/obo/SIMRO_0005018>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005019> (<http://purl.obolibrary.org/obo/SIMRO_0005019>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005020> (<http://purl.obolibrary.org/obo/SIMRO_0005020>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003969>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005021> (<http://purl.obolibrary.org/obo/SIMRO_0005021>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005022> (<http://purl.obolibrary.org/obo/SIMRO_0005022>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005023> (<http://purl.obolibrary.org/obo/SIMRO_0005023>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005024> (<http://purl.obolibrary.org/obo/SIMRO_0005024>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005025> (<http://purl.obolibrary.org/obo/SIMRO_0005025>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005027> (<http://purl.obolibrary.org/obo/SIMRO_0005027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005028> (<http://purl.obolibrary.org/obo/SIMRO_0005028>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005029> (<http://purl.obolibrary.org/obo/SIMRO_0005029>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005030> (<http://purl.obolibrary.org/obo/SIMRO_0005030>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005031> (<http://purl.obolibrary.org/obo/SIMRO_0005031>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00001012>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005034> (<http://purl.obolibrary.org/obo/SIMRO_0005034>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005035> (<http://purl.obolibrary.org/obo/SIMRO_0005035>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005036> (<http://purl.obolibrary.org/obo/SIMRO_0005036>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005038> (<http://purl.obolibrary.org/obo/SIMRO_0005038>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005039> (<http://purl.obolibrary.org/obo/SIMRO_0005039>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005040> (<http://purl.obolibrary.org/obo/SIMRO_0005040>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005041> (<http://purl.obolibrary.org/obo/SIMRO_0005041>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005042> (<http://purl.obolibrary.org/obo/SIMRO_0005042>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005043> (<http://purl.obolibrary.org/obo/SIMRO_0005043>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005044> (<http://purl.obolibrary.org/obo/SIMRO_0005044>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005045> (<http://purl.obolibrary.org/obo/SIMRO_0005045>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005046> (<http://purl.obolibrary.org/obo/SIMRO_0005046>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005047> (<http://purl.obolibrary.org/obo/SIMRO_0005047>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005048> (<http://purl.obolibrary.org/obo/SIMRO_0005048>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005049> (<http://purl.obolibrary.org/obo/SIMRO_0005049>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005050> (<http://purl.obolibrary.org/obo/SIMRO_0005050>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005051> (<http://purl.obolibrary.org/obo/SIMRO_0005051>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005052> (<http://purl.obolibrary.org/obo/SIMRO_0005052>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005053> (<http://purl.obolibrary.org/obo/SIMRO_0005053>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005054> (<http://purl.obolibrary.org/obo/SIMRO_0005054>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005055> (<http://purl.obolibrary.org/obo/SIMRO_0005055>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005056> (<http://purl.obolibrary.org/obo/SIMRO_0005056>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005057> (<http://purl.obolibrary.org/obo/SIMRO_0005057>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005058> (<http://purl.obolibrary.org/obo/SIMRO_0005058>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005059> (<http://purl.obolibrary.org/obo/SIMRO_0005059>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005060> (<http://purl.obolibrary.org/obo/SIMRO_0005060>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005061> (<http://purl.obolibrary.org/obo/SIMRO_0005061>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005062> (<http://purl.obolibrary.org/obo/SIMRO_0005062>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005063> (<http://purl.obolibrary.org/obo/SIMRO_0005063>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005064> (<http://purl.obolibrary.org/obo/SIMRO_0005064>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005065> (<http://purl.obolibrary.org/obo/SIMRO_0005065>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005065> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005066> (<http://purl.obolibrary.org/obo/SIMRO_0005066>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005067> (<http://purl.obolibrary.org/obo/SIMRO_0005067>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005068> (<http://purl.obolibrary.org/obo/SIMRO_0005068>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005069> (<http://purl.obolibrary.org/obo/SIMRO_0005069>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005070> (<http://purl.obolibrary.org/obo/SIMRO_0005070>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005071> (<http://purl.obolibrary.org/obo/SIMRO_0005071>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005072> (<http://purl.obolibrary.org/obo/SIMRO_0005072>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005073> (<http://purl.obolibrary.org/obo/SIMRO_0005073>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005073> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005074> (<http://purl.obolibrary.org/obo/SIMRO_0005074>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005074> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000369>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005075> (<http://purl.obolibrary.org/obo/SIMRO_0005075>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/MI_0416>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005076> (<http://purl.obolibrary.org/obo/SIMRO_0005076>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002055>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005077> (<http://purl.obolibrary.org/obo/SIMRO_0005077>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005078> (<http://purl.obolibrary.org/obo/SIMRO_0005078>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005078> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005079> (<http://purl.obolibrary.org/obo/SIMRO_0005079>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005080> (<http://purl.obolibrary.org/obo/SIMRO_0005080>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005081> (<http://purl.obolibrary.org/obo/SIMRO_0005081>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005082> (<http://purl.obolibrary.org/obo/SIMRO_0005082>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005083> (<http://purl.obolibrary.org/obo/SIMRO_0005083>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005084> (<http://purl.obolibrary.org/obo/SIMRO_0005084>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005085> (<http://purl.obolibrary.org/obo/SIMRO_0005085>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005085> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005086> (<http://purl.obolibrary.org/obo/SIMRO_0005086>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005086> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005087> (<http://purl.obolibrary.org/obo/SIMRO_0005087>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005088> (<http://purl.obolibrary.org/obo/SIMRO_0005088>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005088> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005089> (<http://purl.obolibrary.org/obo/SIMRO_0005089>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005090> (<http://purl.obolibrary.org/obo/SIMRO_0005090>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005090> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005091> (<http://purl.obolibrary.org/obo/SIMRO_0005091>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005091> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005092> (<http://purl.obolibrary.org/obo/SIMRO_0005092>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005092> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005093> (<http://purl.obolibrary.org/obo/SIMRO_0005093>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005093> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005094> (<http://purl.obolibrary.org/obo/SIMRO_0005094>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005095> (<http://purl.obolibrary.org/obo/SIMRO_0005095>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005096> (<http://purl.obolibrary.org/obo/SIMRO_0005096>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005096> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005097> (<http://purl.obolibrary.org/obo/SIMRO_0005097>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005097> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005098> (<http://purl.obolibrary.org/obo/SIMRO_0005098>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005098> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005099> (<http://purl.obolibrary.org/obo/SIMRO_0005099>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005099> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005100> (<http://purl.obolibrary.org/obo/SIMRO_0005100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005101> (<http://purl.obolibrary.org/obo/SIMRO_0005101>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005101> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005102> (<http://purl.obolibrary.org/obo/SIMRO_0005102>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005102> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005103> (<http://purl.obolibrary.org/obo/SIMRO_0005103>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005104> (<http://purl.obolibrary.org/obo/SIMRO_0005104>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005105> (<http://purl.obolibrary.org/obo/SIMRO_0005105>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005106> (<http://purl.obolibrary.org/obo/SIMRO_0005106>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005107> (<http://purl.obolibrary.org/obo/SIMRO_0005107>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005108> (<http://purl.obolibrary.org/obo/SIMRO_0005108>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005109> (<http://purl.obolibrary.org/obo/SIMRO_0005109>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005110> (<http://purl.obolibrary.org/obo/SIMRO_0005110>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005111> (<http://purl.obolibrary.org/obo/SIMRO_0005111>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005112> (<http://purl.obolibrary.org/obo/SIMRO_0005112>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005113> (<http://purl.obolibrary.org/obo/SIMRO_0005113>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005113> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005114> (<http://purl.obolibrary.org/obo/SIMRO_0005114>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005114> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005115> (<http://purl.obolibrary.org/obo/SIMRO_0005115>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005115> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005116> (<http://purl.obolibrary.org/obo/SIMRO_0005116>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005117> (<http://purl.obolibrary.org/obo/SIMRO_0005117>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005118> (<http://purl.obolibrary.org/obo/SIMRO_0005118>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005118> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005119> (<http://purl.obolibrary.org/obo/SIMRO_0005119>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005119> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005120> (<http://purl.obolibrary.org/obo/SIMRO_0005120>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005120> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005121> (<http://purl.obolibrary.org/obo/SIMRO_0005121>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005122> (<http://purl.obolibrary.org/obo/SIMRO_0005122>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005122> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005123> (<http://purl.obolibrary.org/obo/SIMRO_0005123>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005123> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005124> (<http://purl.obolibrary.org/obo/SIMRO_0005124>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005125> (<http://purl.obolibrary.org/obo/SIMRO_0005125>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005125> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005126> (<http://purl.obolibrary.org/obo/SIMRO_0005126>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005126> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005127> (<http://purl.obolibrary.org/obo/SIMRO_0005127>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005127> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005128> (<http://purl.obolibrary.org/obo/SIMRO_0005128>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000006>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005130> (<http://purl.obolibrary.org/obo/SIMRO_0005130>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000006>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005132> (<http://purl.obolibrary.org/obo/SIMRO_0005132>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005132> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005133> (<http://purl.obolibrary.org/obo/SIMRO_0005133>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005134> (<http://purl.obolibrary.org/obo/SIMRO_0005134>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005135> (<http://purl.obolibrary.org/obo/SIMRO_0005135>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005135> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005136> (<http://purl.obolibrary.org/obo/SIMRO_0005136>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005136> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005137> (<http://purl.obolibrary.org/obo/SIMRO_0005137>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005137> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005138> (<http://purl.obolibrary.org/obo/SIMRO_0005138>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005138> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005139> (<http://purl.obolibrary.org/obo/SIMRO_0005139>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005139> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005140> (<http://purl.obolibrary.org/obo/SIMRO_0005140>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005140> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005141> (<http://purl.obolibrary.org/obo/SIMRO_0005141>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005142> (<http://purl.obolibrary.org/obo/SIMRO_0005142>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005142> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005143> (<http://purl.obolibrary.org/obo/SIMRO_0005143>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005143> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005144> (<http://purl.obolibrary.org/obo/SIMRO_0005144>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005144> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005145> (<http://purl.obolibrary.org/obo/SIMRO_0005145>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005145> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005146> (<http://purl.obolibrary.org/obo/SIMRO_0005146>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005146> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005147> (<http://purl.obolibrary.org/obo/SIMRO_0005147>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005147> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005148> (<http://purl.obolibrary.org/obo/SIMRO_0005148>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005148> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005149> (<http://purl.obolibrary.org/obo/SIMRO_0005149>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005149> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005150> (<http://purl.obolibrary.org/obo/SIMRO_0005150>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005151> (<http://purl.obolibrary.org/obo/SIMRO_0005151>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005151> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005152> (<http://purl.obolibrary.org/obo/SIMRO_0005152>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C92302>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005153> (<http://purl.obolibrary.org/obo/SIMRO_0005153>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005154> (<http://purl.obolibrary.org/obo/SIMRO_0005154>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005154> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003813>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005155> (<http://purl.obolibrary.org/obo/SIMRO_0005155>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003813>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005156> (<http://purl.obolibrary.org/obo/SIMRO_0005156>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005157> (<http://purl.obolibrary.org/obo/SIMRO_0005157>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005157> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005158> (<http://purl.obolibrary.org/obo/SIMRO_0005158>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005163> (<http://purl.obolibrary.org/obo/SIMRO_0005163>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005163> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003969>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005175> (<http://purl.obolibrary.org/obo/SIMRO_0005175>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005175> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003969>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005176> (<http://purl.obolibrary.org/obo/SIMRO_0005176>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005176> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
+
+
+)

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-13/imports/uo_import.owl
+data-version: simro/releases/2020-03-17/imports/uo_import.owl
 subsetdef: unit_group_slim "unit group slim"
 subsetdef: unit_slim "unit slim"
 ontology: simro/imports/uo_import

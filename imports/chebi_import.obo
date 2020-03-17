@@ -1,6 +1,7 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-13/imports/chebi_import.owl
+data-version: simro/releases/2020-03-17/imports/chebi_import.owl
 subsetdef: 1_STAR "Preliminary entries"
+subsetdef: 2_STAR ""
 subsetdef: 3_STAR "Manually annotated by ChEBI Team"
 ontology: simro/imports/chebi_import
 
@@ -874,6 +875,25 @@ synonym: "groupe acyle" RELATED [IUPAC]
 is_a: CHEBI:33247 ! organic group
 
 [Term]
+id: CHEBI:22313
+name: alkaline earth metal atom
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "alkaline earth metal" RELATED [ChEBI]
+synonym: "alkaline earth metals" EXACT IUPAC_NAME [IUPAC]
+synonym: "alkaline-earth metal" RELATED [ChEBI]
+synonym: "alkaline-earth metals" RELATED [ChEBI]
+synonym: "Erdalkalimetall" RELATED [ChEBI]
+synonym: "Erdalkalimetalle" RELATED [ChEBI]
+synonym: "metal alcalino-terreux" RELATED [ChEBI]
+synonym: "metal alcalinoterreo" RELATED [ChEBI]
+synonym: "metales alcalinoterreos" RELATED [ChEBI]
+synonym: "metaux alcalino-terreux" RELATED [ChEBI]
+is_a: CHEBI:33318 ! main group element atom
+is_a: CHEBI:33521 ! metal atom
+is_a: CHEBI:33559 ! s-block element atom
+
+[Term]
 id: CHEBI:22314
 name: alkali metal atom
 namespace: chebi_ontology
@@ -1054,6 +1074,32 @@ is_a: CHEBI:24471 ! halogen molecular entity
 relationship: has_part CHEBI:22927 ! bromine atom
 
 [Term]
+id: CHEBI:22984
+name: calcium atom
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "20Ca" RELATED [IUPAC]
+synonym: "Ca" RELATED [IUPAC]
+synonym: "calcio" RELATED [ChEBI]
+synonym: "Calcium" RELATED [KEGG_COMPOUND]
+synonym: "calcium" EXACT IUPAC_NAME [IUPAC]
+synonym: "calcium" RELATED [ChEBI]
+synonym: "Kalzium" RELATED [ChEBI]
+xref: CAS:7440-70-2 "ChemIDplus"
+xref: DrugBank:DB01373
+xref: KEGG:C00076
+xref: WebElements:Ca
+is_a: CHEBI:22313 ! alkaline earth metal atom
+relationship: has_role CHEBI:33937 ! macronutrient
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "Ca" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Ca" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "OYPRJOBELJOOCE-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "40.07800" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "39.96259" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[Ca]" xsd:string
+
+[Term]
 id: CHEBI:23004
 name: carbamoyl group
 namespace: chebi_ontology
@@ -1090,8 +1136,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [UniProt]
 synonym: "carbonyl group" EXACT [ChEBI]
+synonym: "carbonyl group" EXACT [UniProt]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -5226,6 +5272,17 @@ is_a: CHEBI:24532 ! organic heterocyclic compound
 is_a: CHEBI:36963 ! organooxygen compound
 
 [Term]
+id: CHEBI:3815
+name: Collagen
+namespace: chebi_ontology
+subset: 2_STAR
+synonym: "Collagen" EXACT [KEGG_COMPOUND]
+xref: CAS:9064-67-9 "KEGG COMPOUND"
+xref: KEGG:C00211
+is_a: CHEBI:60027 ! polymer
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H6N2O3R2(C7H9N2O2R)n" xsd:string
+
+[Term]
 id: CHEBI:38164
 name: organic heteropentacyclic compound
 namespace: chebi_ontology
@@ -7041,6 +7098,36 @@ synonym: "nucleophiles" RELATED [ChEBI]
 synonym: "nucleophilic reagents" RELATED [ChEBI]
 is_a: CHEBI:33893 ! reagent
 is_a: CHEBI:39144 ! Lewis base
+
+[Term]
+id: CHEBI:59999
+name: chemical substance
+namespace: chebi_ontology
+def: "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types." []
+subset: 3_STAR
+synonym: "Chemische Substanz" RELATED [ChEBI]
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
+id: CHEBI:60004
+name: mixture
+namespace: chebi_ontology
+def: "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind." []
+subset: 3_STAR
+synonym: "Mischung" RELATED [ChEBI]
+is_a: CHEBI:59999 ! chemical substance
+
+[Term]
+id: CHEBI:60027
+name: polymer
+namespace: chebi_ontology
+def: "A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc.." []
+subset: 3_STAR
+synonym: "Kunststoff" RELATED [ChEBI]
+synonym: "Polymer" EXACT [ChEBI]
+xref: Wikipedia:Polymer
+is_a: CHEBI:60004 ! mixture
+relationship: has_part CHEBI:33839 ! macromolecule
 
 [Term]
 id: CHEBI:60242

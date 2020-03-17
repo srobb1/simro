@@ -1,0 +1,3 @@
+defined_class	defined_class_label	used_by_lims_menu	used_by_lims_menu_label
+SIMRO:0005009	living tissue	menu:0000001	sample submission
+SIMRO:0005015	phosphate buffered saline solution	menu:0000001	sample submission

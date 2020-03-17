@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-13/imports/mi_import.owl
+data-version: simro/releases/2020-03-17/imports/mi_import.owl
 subsetdef: Drugable "Drugable Genome Project"
 subsetdef: PSI-MI_slim "Subset of PSI-MI"
 ontology: simro/imports/mi_import
@@ -108,6 +108,24 @@ namespace: PSI-MI
 def: "All Alexa dyes are fluorescent iodoacetamide dyes that can be conjugated with the primary amines of biomolecules. All Alexa dyes and their conjugates are more fluorescent and more photostable than the commonly used dyes. The numbers in the Alexa names indicate the approximate excitation wavelength maximum in nm)." [PMID:10449539]
 subset: PSI-MI_slim
 is_a: MI:0857 ! fluorescent dye label
+
+[Term]
+id: MI:0416
+name: fluorescence microscopy
+namespace: PSI-MI
+def: "Fluorescent microscopy uses a high intensity light to illuminate the sample. This light excites fluorescence species in the sample, which then emit light of a longer wavelength. A fluorescent microscope also produces a magnified image of the sample, but the image is based on the second light source -- the light emanating from the fluorescent species -- rather than from the light originally used to illuminate, and excite, the sample." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "fluorescence imaging" EXACT PSI-MI-short []
+is_a: MI:0428 ! imaging technique
+
+[Term]
+id: MI:0428
+name: imaging technique
+namespace: PSI-MI
+def: "Methods that provide images of molecules at various resolution depending on the technology used." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "microscopy" EXACT PSI-MI-alternate []
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0505

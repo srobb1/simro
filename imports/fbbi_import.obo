@@ -1,5 +1,6 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-13/imports/fbbi_import.owl
+data-version: simro/releases/2020-03-17/imports/fbbi_import.owl
+subsetdef: PhenoImageShare_ImagingMethod ""
 subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
 ontology: simro/imports/fbbi_import
@@ -306,6 +307,31 @@ is_a: FBbi:00000456 ! enzyme label
 property_value: IAO:0000589 "visualization of acid phosphatase conjugated to probe" xsd:string
 
 [Term]
+id: FBbi:00000222
+name: imaging method
+namespace: image
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+
+[Term]
+id: FBbi:00000241
+name: microscopy
+namespace: image
+def: "methods for forming images of objects too small to be observed with the unaided eye" []
+subset: PhenoImageShare_ImagingMethod
+is_a: FBbi:00000265 ! recorded image
+
+[Term]
+id: FBbi:00000246
+name: fluorescence microscopy
+namespace: image
+subset: PhenoImageShare_ImagingMethod
+is_a: FBbi:00000345 ! light microscopy
+intersection_of: FBbi:00000345 ! light microscopy
+intersection_of: FBbi:00000346 FBbi:00000316 ! makes_use_of fluorescence emission
+intersection_of: FBbi:00000346 FBbi:00000341 ! makes_use_of UV/visible/IR illumination
+relationship: FBbi:00000346 FBbi:00000316 ! makes_use_of fluorescence emission
+
+[Term]
 id: FBbi:00000263
 name: solvent permeabilized
 namespace: image
@@ -313,6 +339,59 @@ def: "permeabilization due to extraction of lipid from membranes by an organic s
 is_a: FBbi:00000093 ! permeabilized tissue
 created_by: jm
 creation_date: 2010-03-07T02:37:29Z
+
+[Term]
+id: FBbi:00000265
+name: recorded image
+namespace: image
+def: "methods and devices used for capturing an image of a real object; distinct from images created by artwork" []
+synonym: "photograph" RELATED []
+is_a: FBbi:00000222 ! imaging method
+property_value: IAO:0000589 "image recording method" xsd:string
+created_by: jm
+creation_date: 2010-03-09T09:57:38Z
+
+[Term]
+id: FBbi:00000268
+name: illumination method
+namespace: image
+def: "sources and methods for illumination" []
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+created_by: jm
+creation_date: 2010-03-09T10:38:14Z
+
+[Term]
+id: FBbi:00000270
+name: imaged parameter
+namespace: image
+def: "The physical property of the specimen that leads to the modifications of the illumination that are recorded in the image." []
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+created_by: jm
+creation_date: 2010-03-09T10:38:14Z
+
+[Term]
+id: FBbi:00000272
+name: illumination by photons
+namespace: image
+is_a: FBbi:00000268 ! illumination method
+created_by: jm
+creation_date: 2010-03-09T10:46:27Z
+
+[Term]
+id: FBbi:00000285
+name: oblique illumination
+namespace: image
+is_a: FBbi:00000268 ! illumination method
+created_by: jm
+creation_date: 2010-03-09T10:50:41Z
+
+[Term]
+id: FBbi:00000316
+name: fluorescence emission
+namespace: image
+is_a: FBbi:00000270 ! imaged parameter
+created_by: jm
+creation_date: 2010-03-09T03:11:47Z
 
 [Term]
 id: FBbi:00000321
@@ -330,6 +409,56 @@ namespace: image
 is_a: FBbi:00000321 ! resolution-enhancing method
 created_by: jm
 creation_date: 2010-03-09T03:24:02Z
+
+[Term]
+id: FBbi:00000341
+name: UV/visible/IR illumination
+namespace: image
+is_a: FBbi:00000272 ! illumination by photons
+created_by: jm
+creation_date: 2010-03-09T03:51:49Z
+
+[Term]
+id: FBbi:00000343
+name: microscopy with lenses
+namespace: image
+is_a: FBbi:00000241 ! microscopy
+created_by: jm
+creation_date: 2010-03-09T04:04:04Z
+
+[Term]
+id: FBbi:00000345
+name: light microscopy
+namespace: image
+subset: PhenoImageShare_ImagingMethod
+synonym: "mode of light microscopy" RELATED []
+is_a: FBbi:00000343 ! microscopy with lenses
+intersection_of: FBbi:00000343 ! microscopy with lenses
+intersection_of: FBbi:00000346 FBbi:00000341 ! makes_use_of UV/visible/IR illumination
+relationship: FBbi:00000346 FBbi:00000341 ! makes_use_of UV/visible/IR illumination
+created_by: jm
+creation_date: 2010-03-09T04:18:03Z
+
+[Term]
+id: FBbi:00000364
+name: light-sheet illumination
+namespace: image
+def: "illumination in the form of a thin sheet of light directed perpendicular to the optic axis" []
+is_a: FBbi:00000285 ! oblique illumination
+created_by: jm
+creation_date: 2010-03-11T10:06:20Z
+
+[Term]
+id: FBbi:00000369
+name: SPIM
+namespace: image
+def: "single (or selective) plane illumination." []
+is_a: FBbi:00000246 ! fluorescence microscopy
+intersection_of: FBbi:00000246 ! fluorescence microscopy
+intersection_of: FBbi:00000346 FBbi:00000364 ! makes_use_of light-sheet illumination
+relationship: FBbi:00000346 FBbi:00000364 ! makes_use_of light-sheet illumination
+created_by: jm
+creation_date: 2010-03-11T10:09:33Z
 
 [Term]
 id: FBbi:00000397
@@ -955,6 +1084,15 @@ def: "[copied from inverse property 'occurs in'] b occurs_in c =def b is a proce
 comment: Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant
 property_value: IAO:0000111 "site of" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Typedef]
+id: FBbi:00000346
+name: makes_use_of
+namespace: image
+def: "The child is an essential component of the parent device, or plays an essential role in performance of the parent function." []
+is_transitive: true
+created_by: jm
+creation_date: 2010-03-09T09:32:04Z
 
 [Typedef]
 id: RO:0000056

@@ -1,6 +1,7 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-14/simro-full.owl
+data-version: simro/releases/2020-03-17/simro-full.owl
 subsetdef: 1_STAR "Preliminary entries"
+subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
 subsetdef: 3_STAR "Manually annotated by ChEBI Team"
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -60,6 +61,8 @@ subsetdef: NCIT:C124297 ""
 subsetdef: NCIT:C61410 ""
 subsetdef: NCIT:C66830 ""
 subsetdef: NCIT:C67497 ""
+subsetdef: NCIT:C67567 ""
+subsetdef: NCIT:C78734 ""
 subsetdef: NCIT:C85492 ""
 subsetdef: NCIT:C89506 ""
 subsetdef: NCIT:C90259 ""
@@ -69,6 +72,7 @@ subsetdef: non_informative "abstract class brought in to group ontology classes 
 subsetdef: organ_slim ""
 subsetdef: organ_slim "organs, excluding individual muscles and skeletal elements"
 subsetdef: pheno_slim "Phenotype slim"
+subsetdef: PhenoImageShare_ImagingMethod ""
 subsetdef: phenotype_rcn "A subset specifically created for the 2012 Phenotype RCN meeting. Includes some human-specific terms that may eventually be removed when they are adequately represented with part of relationships in FMA"
 subsetdef: PSI-MI_slim "Subset of PSI-MI"
 subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
@@ -772,7 +776,6 @@ is_a: CARO:0000003 ! anatomical structure
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
-property_value: IAO:0000589 "cell part (CARO)" xsd:string
 
 [Term]
 id: CARO:0001000
@@ -1678,6 +1681,25 @@ synonym: "groupe acyle" RELATED [IUPAC]
 is_a: CHEBI:33247 ! organic group
 
 [Term]
+id: CHEBI:22313
+name: alkaline earth metal atom
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "alkaline earth metal" RELATED [ChEBI]
+synonym: "alkaline earth metals" EXACT IUPAC_NAME [IUPAC]
+synonym: "alkaline-earth metal" RELATED [ChEBI]
+synonym: "alkaline-earth metals" RELATED [ChEBI]
+synonym: "Erdalkalimetall" RELATED [ChEBI]
+synonym: "Erdalkalimetalle" RELATED [ChEBI]
+synonym: "metal alcalino-terreux" RELATED [ChEBI]
+synonym: "metal alcalinoterreo" RELATED [ChEBI]
+synonym: "metales alcalinoterreos" RELATED [ChEBI]
+synonym: "metaux alcalino-terreux" RELATED [ChEBI]
+is_a: CHEBI:33318 ! main group element atom
+is_a: CHEBI:33521 ! metal atom
+is_a: CHEBI:33559 ! s-block element atom
+
+[Term]
 id: CHEBI:22314
 name: alkali metal atom
 namespace: chebi_ontology
@@ -1858,6 +1880,32 @@ is_a: CHEBI:24471 ! halogen molecular entity
 relationship: has_part CHEBI:22927 ! bromine atom
 
 [Term]
+id: CHEBI:22984
+name: calcium atom
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "20Ca" RELATED [IUPAC]
+synonym: "Ca" RELATED [IUPAC]
+synonym: "calcio" RELATED [ChEBI]
+synonym: "Calcium" RELATED [KEGG_COMPOUND]
+synonym: "calcium" EXACT IUPAC_NAME [IUPAC]
+synonym: "calcium" RELATED [ChEBI]
+synonym: "Kalzium" RELATED [ChEBI]
+xref: CAS:7440-70-2 "ChemIDplus"
+xref: DrugBank:DB01373
+xref: KEGG:C00076
+xref: WebElements:Ca
+is_a: CHEBI:22313 ! alkaline earth metal atom
+relationship: has_role CHEBI:33937 ! macronutrient
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "Ca" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Ca" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "OYPRJOBELJOOCE-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "40.07800" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "39.96259" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "[Ca]" xsd:string
+
+[Term]
 id: CHEBI:23004
 name: carbamoyl group
 namespace: chebi_ontology
@@ -1894,8 +1942,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [UniProt]
 synonym: "carbonyl group" EXACT [ChEBI]
+synonym: "carbonyl group" EXACT [UniProt]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -6064,6 +6112,17 @@ is_a: CHEBI:24532 ! organic heterocyclic compound
 is_a: CHEBI:36963 ! organooxygen compound
 
 [Term]
+id: CHEBI:3815
+name: Collagen
+namespace: chebi_ontology
+subset: 2_STAR
+synonym: "Collagen" EXACT [KEGG_COMPOUND]
+xref: CAS:9064-67-9 "KEGG COMPOUND"
+xref: KEGG:C00211
+is_a: CHEBI:60027 ! polymer
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H6N2O3R2(C7H9N2O2R)n" xsd:string
+
+[Term]
 id: CHEBI:38164
 name: organic heteropentacyclic compound
 namespace: chebi_ontology
@@ -7886,6 +7945,36 @@ is_a: CHEBI:33893 ! reagent
 is_a: CHEBI:39144 ! Lewis base
 
 [Term]
+id: CHEBI:59999
+name: chemical substance
+namespace: chebi_ontology
+def: "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types." []
+subset: 3_STAR
+synonym: "Chemische Substanz" RELATED [ChEBI]
+is_a: CHEBI:24431 ! 化学实体
+
+[Term]
+id: CHEBI:60004
+name: mixture
+namespace: chebi_ontology
+def: "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind." []
+subset: 3_STAR
+synonym: "Mischung" RELATED [ChEBI]
+is_a: CHEBI:59999 ! chemical substance
+
+[Term]
+id: CHEBI:60027
+name: polymer
+namespace: chebi_ontology
+def: "A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc.." []
+subset: 3_STAR
+synonym: "Kunststoff" RELATED [ChEBI]
+synonym: "Polymer" EXACT [ChEBI]
+xref: Wikipedia:Polymer
+is_a: CHEBI:60004 ! mixture
+relationship: has_part CHEBI:33839 ! macromolecule
+
+[Term]
 id: CHEBI:60242
 name: monovalent inorganic cation
 namespace: chebi_ontology
@@ -9250,6 +9339,7 @@ relationship: develops_from CL:0000008 ! migratory cranial neural crest cell
 id: CL:0000008
 name: migratory cranial neural crest cell
 namespace: cell
+def: "Cell that is part of the migratory cranial neural crest population. Migratory cranial neural crest cells develop from premigratory cranial neural crest cells and have undergone epithelial to mesenchymal transition and delamination." [https://orcid.org/0000-0001-5208-3432, ZFA:0007091]
 is_a: CL:0000333 ! migratory neural crest cell
 
 [Term]
@@ -9283,13 +9373,13 @@ relationship: develops_from CL:0002676 ! neural crest derived neuroblast
 
 [Term]
 id: CL:0000031
-name: neuroblast
+name: neuroblast (sensu Vertebrata)
 namespace: cell
+alt_id: CL:0000337
 def: "A cell that will develop into a neuron often after a migration phase." [GOC:NV, http://en.wikipedia.org/wiki/Neuroblast]
+synonym: "neuroblast" EXACT []
 xref: BTO:0000930
-xref: FBbt:00005146
 xref: FMA:70563
-is_a: CL:0000047 ! neuronal stem cell
 is_a: CL:0000055 ! non-terminally differentiated cell
 
 [Term]
@@ -9387,9 +9477,9 @@ synonym: "神经干细胞" EXACT []
 xref: BTO:0002881
 xref: CALOHA:TS-2360
 xref: FMA:86684
-is_a: CL:0000048 {is_inferred="true"} ! 多能造血干细胞
+is_a: CL:0000048 {is_inferred="true"} ! multi fate stem cell
 is_a: CL:0002319 ! neural cell
-intersection_of: CL:0000048 ! 多能造血干细胞
+intersection_of: CL:0000048 ! multi fate stem cell
 intersection_of: part_of UBERON:0001017 ! central nervous system
 relationship: develops_from CL:0000133 ! neurectodermal cell
 relationship: part_of UBERON:0001017 ! central nervous system
@@ -9691,13 +9781,13 @@ synonym: "骨髓基质细胞(marrow stromal cells)" NARROW []
 xref: BTO:0002625
 xref: BTO:0003298
 xref: FMA:70546
-is_a: CL:0000048 ! 多能造血干细胞
+is_a: CL:0000048 ! multi fate stem cell
 is_a: CL:0000219 ! motile cell
 is_a: CL:0002320 {is_inferred="true"} ! 结缔组织细胞
 intersection_of: CL:0002320 ! 结缔组织细胞
 intersection_of: capable_of GO:0001649 ! osteoblast differentiation
 intersection_of: capable_of GO:0016477 ! 细胞迁移
-intersection_of: capable_of GO:0030182 ! 神经元分化
+intersection_of: capable_of GO:0030182 ! neuron differentiation
 intersection_of: capable_of GO:0030855 ! epithelial cell differentiation
 intersection_of: capable_of GO:0045444 ! fat cell differentiation
 intersection_of: capable_of GO:0055007 ! cardiac muscle cell differentiation
@@ -9705,12 +9795,12 @@ intersection_of: capable_of GO:0060591 ! chondroblast differentiation
 intersection_of: lacks_plasma_membrane_part GO:0042613 ! MHCⅡ类蛋白复合物
 intersection_of: lacks_plasma_membrane_part PR:000001003 ! CD34 molecule
 intersection_of: lacks_plasma_membrane_part PR:000001006 ! 受体型酪氨酸蛋白磷酸酶C
-intersection_of: RO:0002104 PR:000001345 ! has plasma membrane part 内皮糖蛋白
+intersection_of: RO:0002104 PR:000001345 ! has plasma membrane part endoglin
 intersection_of: RO:0002104 PR:000001800 ! has plasma membrane part 5'-nucleotidase
 intersection_of: RO:0002104 PR:000001843 ! has plasma membrane part Thy-1 membrane glycoprotein
 relationship: capable_of GO:0001649 ! osteoblast differentiation
 relationship: capable_of GO:0016477 ! 细胞迁移
-relationship: capable_of GO:0030182 ! 神经元分化
+relationship: capable_of GO:0030182 ! neuron differentiation
 relationship: capable_of GO:0030855 ! epithelial cell differentiation
 relationship: capable_of GO:0045444 ! fat cell differentiation
 relationship: capable_of GO:0055007 ! cardiac muscle cell differentiation
@@ -9718,7 +9808,7 @@ relationship: capable_of GO:0060591 ! chondroblast differentiation
 relationship: lacks_plasma_membrane_part GO:0042613 ! MHCⅡ类蛋白复合物
 relationship: lacks_plasma_membrane_part PR:000001003 ! CD34 molecule
 relationship: lacks_plasma_membrane_part PR:000001006 ! 受体型酪氨酸蛋白磷酸酶C
-relationship: RO:0002104 PR:000001345 ! has plasma membrane part 内皮糖蛋白
+relationship: RO:0002104 PR:000001345 ! has plasma membrane part endoglin
 relationship: RO:0002104 PR:000001800 ! has plasma membrane part 5'-nucleotidase
 relationship: RO:0002104 PR:000001843 ! has plasma membrane part Thy-1 membrane glycoprotein
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
@@ -9810,7 +9900,7 @@ id: CL:0000226
 name: single nucleate cell
 namespace: cell
 def: "A cell with a single nucleus." [FB:ma, GOC:tfm]
-is_a: CL:0000003 ! native cell
+is_a: CL:0002242 ! nucleate cell
 intersection_of: CL:0000003 ! native cell
 intersection_of: bearer_of PATO:0001407 ! mononucleate
 relationship: bearer_of PATO:0001407 ! mononucleate
@@ -9819,7 +9909,8 @@ relationship: bearer_of PATO:0001407 ! mononucleate
 id: CL:0000236
 name: B cell
 namespace: cell
-def: "A lymphocyte of B lineage with the phenotype CD19-positive, CD20-positive, and capable of B cell mediated immunity." [GO_REF:0000031, GOC:add, GOC:tfm, ISBN:0781735149]
+def: "A lymphocyte of B lineage that is capable of B cell mediated immunity." [GO_REF:0000031, GOC:add, GOC:tfm, ISBN:0781735149]
+def: "A lymphocyte of B lineage with the phenotype CD19-positive, CD20-positive, and capable of B cell mediated immunity." []
 synonym: "B lymphocyte" EXACT []
 synonym: "B-cell" EXACT []
 synonym: "B-lymphocyte" EXACT []
@@ -9887,13 +9978,6 @@ is_a: CL:0011012 ! neural crest cell
 relationship: develops_from CL:0007004 ! premigratory neural crest cell
 
 [Term]
-id: CL:0000337
-name: neuroblast (sensu Vertebrata)
-namespace: cell
-def: "An embryonic cell that develops into a nerve cell or neuron." [FMA:70563]
-is_a: CL:0000031 ! neuroblast
-
-[Term]
 id: CL:0000349
 name: extraembryonic cell
 namespace: cell
@@ -9957,7 +10041,7 @@ is_a: CL:0000393 ! electrically responsive cell
 is_a: CL:0000404 ! electrically signaling cell
 is_a: CL:0002319 ! neural cell
 relationship: capable_of GO:0019226 ! transmission of nerve impulse
-relationship: develops_from CL:0000031 ! neuroblast
+relationship: develops_from CL:0000031 ! neuroblast (sensu Vertebrata)
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 
 [Term]
@@ -9971,12 +10055,11 @@ xref: CALOHA:TS-0583
 xref: FMA:62863
 xref: VHOG:0001535
 is_a: CL:0000842 ! mononuclear cell
-is_a: CL:0002242 ! nucleate cell
 intersection_of: CL:0000738 ! leukocyte
+intersection_of: bearer_of PATO:0001407 ! mononucleate
 intersection_of: has_part CP:0000000 ! neutrophillic cytoplasm
 intersection_of: has_part CP:0000037 ! increased nucleus size
 intersection_of: has_part GO:0000792 ! heterochromatin
-intersection_of: lacks_part GO:0030141 ! secretory granule
 relationship: develops_from CL:0000051 ! common lymphoid progenitor
 relationship: has_part CP:0000000 ! neutrophillic cytoplasm
 relationship: has_part CP:0000037 ! increased nucleus size
@@ -10101,7 +10184,9 @@ xref: CALOHA:TS-0549
 xref: FMA:62852
 is_a: CL:0000219 ! motile cell
 is_a: CL:0000988 {is_inferred="true"} ! hematopoietic cell
+is_a: CL:0002242 ! nucleate cell
 intersection_of: CL:0000988 ! hematopoietic cell
+intersection_of: bearer_of PATO:0002505 ! nucleated
 intersection_of: capable_of GO:0001667 ! ameboidal-type cell migration
 relationship: capable_of GO:0001667 ! ameboidal-type cell migration
 relationship: develops_from CL:0000037 ! hematopoietic stem cell
@@ -10206,10 +10291,9 @@ xref: BTO:0000878
 xref: CALOHA:TS-0768
 xref: FMA:86713
 is_a: CL:0000226 ! single nucleate cell
-is_a: CL:0002087 ! nongranular leukocyte
+is_a: CL:0000738 {is_inferred="true"} ! leukocyte
 intersection_of: CL:0000738 ! leukocyte
 intersection_of: bearer_of PATO:0001407 ! mononucleate
-intersection_of: lacks_part GO:0030141 ! secretory granule
 property_value: IAO:0000111 "mononuclear cell" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 
@@ -10217,15 +10301,10 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 id: CL:0000945
 name: lymphocyte of B lineage
 namespace: cell
-def: "A lymphocyte of B lineage is a lymphocyte that expresses CD19 on the cell surface. An additional defining characteristic is the commitment to express an immunoglobulin complex." [GO_REF:0000031, GOC:add, GOC:rhs, GOC:tfm, ISBN:0781735149]
+def: "A lymphocyte of B lineage with the commitment to express an immunoglobulin complex." [GO_REF:0000031, GOC:add, GOC:rhs, GOC:tfm, ISBN:0781735149]
 comment: Types of B lineage lymphocytes include B cells and antibody secreting cells (plasmablasts and plasma cells).  Lymphocytes of B cell lineage can be distinguished from those of T cell lineage by their lack of CD3e (as part of the T cell receptor complex).
 is_a: CL:0000542 {is_inferred="true"} ! lymphocyte
-intersection_of: CL:0000542 ! lymphocyte
-intersection_of: lacks_plasma_membrane_part PR:000001020
-intersection_of: RO:0002104 PR:000001002 ! has plasma membrane part
 relationship: develops_from CL:0000826 ! pro-B cell
-relationship: lacks_plasma_membrane_part PR:000001020
-relationship: RO:0002104 PR:000001002 ! has plasma membrane part
 
 [Term]
 id: CL:0000988
@@ -10321,6 +10400,40 @@ intersection_of: bearer_of PATO:0000460 ! abnormal
 relationship: bearer_of PATO:0000460 ! abnormal
 relationship: dc-creator http://orcid.org/0000-0001-9990-8331
 property_value: http://purl.org/dc/elements/1.1/date 2017-01-30T18:53:32Z xsd:dateTime
+
+[Term]
+id: CL:0001200
+name: lymphocyte of B lineage, CD19-positive
+namespace: cell
+def: "A lymphocyte of B lineage that is CD19-positive." [GOC:add]
+comment: Types of B lineage lymphocytes include B cells and antibody secreting cells (plasmablasts and plasma cells).  Lymphocytes of B cell lineage can be distinguished from those of T cell lineage by their lack of CD3e (as part of the T cell receptor complex).
+is_a: CL:0000945 ! lymphocyte of B lineage
+intersection_of: CL:0000945 ! lymphocyte of B lineage
+intersection_of: in_taxon NCBITaxon:40674 ! Mammalia
+intersection_of: lacks_plasma_membrane_part PR:000001020
+intersection_of: RO:0002104 PR:000001002 ! has plasma membrane part
+relationship: in_taxon NCBITaxon:40674 ! Mammalia
+relationship: lacks_plasma_membrane_part PR:000001020
+relationship: RO:0002104 PR:000001002 ! has plasma membrane part
+property_value: dc-creator https://orcid.org/0000-0001-9990-8331 xsd:string
+
+[Term]
+id: CL:0001201
+name: B cell, CD19-positive
+namespace: cell
+def: "A B cell that is CD19-positive." [GOC:add]
+synonym: "B lymphocyte, CD19-positive" EXACT []
+synonym: "B-cell, CD19-positive" EXACT []
+synonym: "B-lymphocyte, CD19-positive" EXACT []
+synonym: "CD19+ B cell" EXACT []
+synonym: "CD19-positive B cell" EXACT []
+is_a: CL:0000236 ! B cell
+is_a: CL:0001200 ! lymphocyte of B lineage, CD19-positive
+intersection_of: CL:0001200 ! lymphocyte of B lineage, CD19-positive
+intersection_of: capable_of GO:0019724 ! B cell mediated immunity
+intersection_of: in_taxon NCBITaxon:40674 ! Mammalia
+intersection_of: RO:0002104 PR:000001002 ! has plasma membrane part
+property_value: dc-creator https://orcid.org/0000-0001-9990-8331 xsd:string
 
 [Term]
 id: CL:0002031
@@ -10531,8 +10644,8 @@ def: "A cell containing at least one nucleus." [GOC:tfm]
 xref: FMA:67513
 is_a: CL:0000003 ! native cell
 intersection_of: CL:0000003 ! native cell
-intersection_of: has_part GO:0005634 ! nucleus
-relationship: has_part GO:0005634 ! nucleus
+intersection_of: bearer_of PATO:0002505 ! nucleated
+relationship: bearer_of PATO:0002505 ! nucleated
 created_by: tmeehan
 creation_date: 2010-09-07T03:32:33Z
 
@@ -10981,7 +11094,7 @@ id: CL:0002676
 name: neural crest derived neuroblast
 namespace: cell
 def: "A neuroblast derived from a neural crest cell." [GOC:tfm, PMID:17407019]
-is_a: CL:0000337 ! neuroblast (sensu Vertebrata)
+is_a: CL:0000031 ! neuroblast (sensu Vertebrata)
 relationship: develops_from CL:0000333 ! migratory neural crest cell
 created_by: tmeehan
 creation_date: 2011-08-22T09:24:15Z
@@ -11057,7 +11170,7 @@ id: CL:0011012
 name: neural crest cell
 namespace: cell
 def: "A cell of the neural crest. Neural crest cells are multipotent. Premigratory neural crest cells are found at the neural plate boarder, some of which will undergo ectomesynchymal transition and delamination to form migratory neural crest cells." [https://orcid.org/0000-0001-5208-3432, https://orcid.org/0000-0002-9900-7880]
-is_a: CL:0000048 ! 多能造血干细胞
+is_a: CL:0000048 ! multi fate stem cell
 is_a: CL:0002321 ! embryonic cell
 
 [Term]
@@ -11596,7 +11709,7 @@ name: immortal cell line cell
 name: 永生细胞系细胞
 def: "A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line." []
 def: "预期能够进行无限次分裂的细胞系细胞，作为永生细胞系一部分，能够支持体外无限增殖。" []
-is_a: CLO:0000001 ! cell line cell
+is_a: CLO:0000001 ! 细胞系细胞
 property_value: IAO:0000111 "immortal cell line cell" xsd:string
 property_value: IAO:0000111 "immortal cell line cell" xsd:string
 property_value: IAO:0000111 "永生细胞系细胞" xsd:string
@@ -11667,8 +11780,8 @@ comment: The term 'line' is used when a culture has undergone an intentional exp
 comment: The term 'line' is used when a culture has undergone an intentional experimental process to establish a more uniform and stable population of cells (see 'establishing cell line'). This will require one or more passages, but may involve additional selection processes. Through such passaging and/or selection processes, the resulting 'line' attains some level of genetic stability and compositional homogeneity which is typically absent in primary cultures. Because of their relative homogeneity, ‘lines’ are capable of being characterized and stably propagated over a period of time.  A new *type* of cell line can be established not only through the passaging/selection of a primary culture, but also through experimental modifications of existing lines (e.g. immortalization, stable genetic modifications, drug selection for a resistant subset, etc.).  \n\nThe definition provided here establishes the 'scale' of cell populations that qualify as cell lines - specifically those with a shared propagation history in culture. In this way,  the 'cell line' class demarcates populations that represent what researchers actually use in the practice of science - e.g. as inputs to culturing, experimentation, and sharing. The definition is such that cell lines will exhibit important attributes. For example, they will have a relatively homogenous cell type composition as they have experienced similar selective pressures due to their continuous co-propagation. In addition, these populations can also be characterized by a passage number, again owing to their common passaging history.  As defined here,  'cell line' can refer to a population of cells in active culture, applied experimentally, or stored in a quiescent state for future use. \n
 comment: 当培养物经过有意的实验过程以建立更均匀和稳定的细胞群时（参见“建立细胞系”），使用术语“系”。这将需要一个或多次传代，但可能涉及额外的选择过程。通过这样的传代和/或选择过程，产生的'细胞系'达到一定水平的遗传稳定性和组成均一性，这在原代培养物中通常是不存在的。由于它们的相对同质性，“细胞系”能够在一段时间内被表征和稳定地增殖。一种新*型*细胞系不仅可以通过原代培养物的传代/选择建立，而且可以通过对现有系列的实验性修饰（例如永生化，稳定的遗传修饰，用于抗性子集的药物选择等）来建立。 \n\n这里提供的定义确立了符合细胞系特征的细胞群的“范围” - 特别是那些在培养中具有共同繁殖历史的细胞群。通过这种方式，“细胞系”类划分代表研究人员在科学实践中实际使用的细胞群 - 例如作为培养、实验和分享的投入。定义是这样的，细胞系将显示重要的属性。例如，它们将具有相对均匀的细胞类型组成，因为它们的连续共增殖而经历了类似的选择压力。此外，这些细胞群还可以通过传代数来表征，这也是由于它们共同的传代史。如此处所定义的，“细胞系”可以指活性培养物中，实验性应用的或以静止状态存储以备将来使用的细胞群。 \n
 is_a: OBI:0001905 ! secondary cultured cell population
-relationship: OBI:0000643 CLO:0000001 ! has grain cell line cell
-relationship: OBI:0000643 CLO:0000001 ! has grain cell line cell
+relationship: OBI:0000643 CLO:0000001 ! has grain 细胞系细胞
+relationship: OBI:0000643 CLO:0000001 ! has grain 细胞系细胞
 property_value: editor_note "In the spring of 2013, a working group comprised of domain experts and representatives from CLO, OBI, CL, and ReO worked to establish a consensus model and definitions of cultured cells across these efforts. This included a careful characterization of how the term 'cell line' should be defined and applied.  Notes about this work and its outcomes can be found on the CLO wiki here: \nhttp://code.google.com/p/clo-ontology/wiki/Cell_Lines\n" xsd:string
 property_value: editor_note "在2013年春季，由CLO，OBI，CL和ReO的领域专家和代表组成的工作组经过这些努力中建立了共识模型和培养细胞的定义。 这包括仔细描述术语“细胞系”应该如何定义和应用。 关于这项工作及其结果的说明可以在CLO wiki上找到：\nhttp://code.google.com/p/clo-ontology/wiki/Cell_Lines\n" xsd:string
 property_value: example_of_usage "He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  \"To evaluate the transcriptional effects of APC, we studied a human colorectal cancer cell line (HT29-APC) containing a zinc-inducible APC gene and a control cell line (HT29–β-Gal) containing an analogous inducible lacZ gene\". \n	\nNote that common usage in the literature is often of the form \"a human colorectal cancer cell line\", as seen above. But such references to studies in \"a line\" refer to the fact that discrete populations of cells that are input into culturing or experiments, not an entire lineage of cells.  It is these discrete populations that we refer to as 'cell lines'.\n" xsd:string
@@ -11712,7 +11825,7 @@ name: immortal animal cell line cell
 name: 永生的动物细胞系细胞
 def: "a immortal eukaryotic cell line that is derived from animal cell" []
 def: "源自动物细胞的永生真核细胞系" []
-is_a: CLO:0000124 ! 永生的真核细胞系细胞
+is_a: CLO:0000124 ! immortal eukaryotic cell line cell
 relationship: RO:0001000 CL:0000548 ! derives_from animal cell
 property_value: IAO:0000117 "ZX, YH" xsd:string
 property_value: IAO:0000117 "ZX, YH" xsd:string
@@ -12084,7 +12197,7 @@ name: HCT 116 细胞
 comment: disease: colorectal carcinoma
 comment: 疾病：结直肠癌
 is_a: CLO:0000020 ! immortal human cell line cell
-is_a: CLO:0037195 ! immortal human colon epithelial cell line cell
+is_a: CLO:0037195 ! 永生化的结肠上皮细胞系细胞
 relationship: OBI:0000295 CLO:0000013 ! is_specified_input_of adherent on feeder cells cell line culturing
 property_value: alternative:term "" xsd:string
 property_value: alternative:term "" xsd:string
@@ -12194,7 +12307,7 @@ name: immortal human colon epithelial cell line cell
 name: 永生化的结肠上皮细胞系细胞
 def: "An immortal human epithelial cell line cell that derives from human colon." []
 def: "来自人类结肠的永生人类上皮细胞系细胞。" []
-is_a: CLO:0000513 ! immortal human colon-derived cell line cell
+is_a: CLO:0000513 ! 永生化的人结肠衍生细胞系细胞
 is_a: CLO:0000563 ! 永生的人上皮细胞系细胞
 property_value: IAO:0000117 "Yongqun He" xsd:string
 property_value: IAO:0000117 "Yongqun He" xsd:string
@@ -12212,8 +12325,8 @@ id: CLO:0037224
 name: stem cell line cell
 def: "A cell line cell that is cultured in vitro and possesses two capabilities: (1) it can self-renew, which means that it can divide indefinitely while remaining in an undifferentiated state; and (2) it is pluripotent or multipotent, which means that it can differentiate to form a specialized cell type." []
 comment: While stem cells hold great promise for biomedical research, the in vitro propagation and maintenance of these cells in an undifferentiated state is essential. Reference: \nhttps://www.atcc.org/~/media/7E031EF950594BC3B85A411AE1DC9684.ashx
-is_a: CLO:0000001 ! cell line cell
-intersection_of: CLO:0000001 ! cell line cell
+is_a: CLO:0000001 ! 细胞系细胞
+intersection_of: CLO:0000001 ! 细胞系细胞
 intersection_of: capable_of GO:0017145 ! stem cell division
 intersection_of: capable_of GO:0030154 ! cell differentiation
 relationship: capable_of GO:0017145 ! stem cell division
@@ -15474,6 +15587,31 @@ is_a: FBbi:00000456 ! enzyme label
 property_value: IAO:0000589 "visualization of acid phosphatase conjugated to probe" xsd:string
 
 [Term]
+id: FBbi:00000222
+name: imaging method
+namespace: image
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+
+[Term]
+id: FBbi:00000241
+name: microscopy
+namespace: image
+def: "methods for forming images of objects too small to be observed with the unaided eye" []
+subset: PhenoImageShare_ImagingMethod
+is_a: FBbi:00000265 ! recorded image
+
+[Term]
+id: FBbi:00000246
+name: fluorescence microscopy
+namespace: image
+subset: PhenoImageShare_ImagingMethod
+is_a: FBbi:00000345 ! light microscopy
+intersection_of: FBbi:00000345 ! light microscopy
+intersection_of: FBbi:00000346 FBbi:00000316 ! makes_use_of fluorescence emission
+intersection_of: FBbi:00000346 FBbi:00000341 ! makes_use_of UV/visible/IR illumination
+relationship: FBbi:00000346 FBbi:00000316 ! makes_use_of fluorescence emission
+
+[Term]
 id: FBbi:00000263
 name: solvent permeabilized
 namespace: image
@@ -15481,6 +15619,59 @@ def: "permeabilization due to extraction of lipid from membranes by an organic s
 is_a: FBbi:00000093 ! permeabilized tissue
 created_by: jm
 creation_date: 2010-03-07T02:37:29Z
+
+[Term]
+id: FBbi:00000265
+name: recorded image
+namespace: image
+def: "methods and devices used for capturing an image of a real object; distinct from images created by artwork" []
+synonym: "photograph" RELATED []
+is_a: FBbi:00000222 ! imaging method
+property_value: IAO:0000589 "image recording method" xsd:string
+created_by: jm
+creation_date: 2010-03-09T09:57:38Z
+
+[Term]
+id: FBbi:00000268
+name: illumination method
+namespace: image
+def: "sources and methods for illumination" []
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+created_by: jm
+creation_date: 2010-03-09T10:38:14Z
+
+[Term]
+id: FBbi:00000270
+name: imaged parameter
+namespace: image
+def: "The physical property of the specimen that leads to the modifications of the illumination that are recorded in the image." []
+is_a: FBbi_root:00000000 ! method involved in biological imaging
+created_by: jm
+creation_date: 2010-03-09T10:38:14Z
+
+[Term]
+id: FBbi:00000272
+name: illumination by photons
+namespace: image
+is_a: FBbi:00000268 ! illumination method
+created_by: jm
+creation_date: 2010-03-09T10:46:27Z
+
+[Term]
+id: FBbi:00000285
+name: oblique illumination
+namespace: image
+is_a: FBbi:00000268 ! illumination method
+created_by: jm
+creation_date: 2010-03-09T10:50:41Z
+
+[Term]
+id: FBbi:00000316
+name: fluorescence emission
+namespace: image
+is_a: FBbi:00000270 ! imaged parameter
+created_by: jm
+creation_date: 2010-03-09T03:11:47Z
 
 [Term]
 id: FBbi:00000321
@@ -15498,6 +15689,56 @@ namespace: image
 is_a: FBbi:00000321 ! resolution-enhancing method
 created_by: jm
 creation_date: 2010-03-09T03:24:02Z
+
+[Term]
+id: FBbi:00000341
+name: UV/visible/IR illumination
+namespace: image
+is_a: FBbi:00000272 ! illumination by photons
+created_by: jm
+creation_date: 2010-03-09T03:51:49Z
+
+[Term]
+id: FBbi:00000343
+name: microscopy with lenses
+namespace: image
+is_a: FBbi:00000241 ! microscopy
+created_by: jm
+creation_date: 2010-03-09T04:04:04Z
+
+[Term]
+id: FBbi:00000345
+name: light microscopy
+namespace: image
+subset: PhenoImageShare_ImagingMethod
+synonym: "mode of light microscopy" RELATED []
+is_a: FBbi:00000343 ! microscopy with lenses
+intersection_of: FBbi:00000343 ! microscopy with lenses
+intersection_of: FBbi:00000346 FBbi:00000341 ! makes_use_of UV/visible/IR illumination
+relationship: FBbi:00000346 FBbi:00000341 ! makes_use_of UV/visible/IR illumination
+created_by: jm
+creation_date: 2010-03-09T04:18:03Z
+
+[Term]
+id: FBbi:00000364
+name: light-sheet illumination
+namespace: image
+def: "illumination in the form of a thin sheet of light directed perpendicular to the optic axis" []
+is_a: FBbi:00000285 ! oblique illumination
+created_by: jm
+creation_date: 2010-03-11T10:06:20Z
+
+[Term]
+id: FBbi:00000369
+name: SPIM
+namespace: image
+def: "single (or selective) plane illumination." []
+is_a: FBbi:00000246 ! fluorescence microscopy
+intersection_of: FBbi:00000246 ! fluorescence microscopy
+intersection_of: FBbi:00000346 FBbi:00000364 ! makes_use_of light-sheet illumination
+relationship: FBbi:00000346 FBbi:00000364 ! makes_use_of light-sheet illumination
+created_by: jm
+creation_date: 2010-03-11T10:09:33Z
 
 [Term]
 id: FBbi:00000397
@@ -16107,6 +16348,7 @@ def: "A process in which membrane potential cycles through a depolarizing spike,
 comment: Action potentials typically propagate across excitable membranes. This class covers both action potentials that propagate and those that fail to do so.
 xref: MIPS_funcat:34.03.03
 is_a: GO:0042391 ! regulation of membrane potential
+relationship: never_in_taxon NCBITaxon:4895 ! Schizosaccharomyces
 property_value: IAO:0000111 "action potential" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
@@ -16165,8 +16407,7 @@ relationship: part_of GO:0030097 ! hemopoiesis
 id: GO:0002250
 name: adaptive immune response
 namespace: biological_process
-def: "An immune response mediated by cells expressing specific receptors for antigen produced through a somatic diversification process, and allowing for an enhanced secondary response to subsequent exposures to the same antigen (immunological memory)." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05, ISBN:0781735149]
-comment: This term was added by GO_REF:0000022.
+def: "An immune response mediated by cells expressing specific receptors for antigen produced through a somatic diversification process, and allowing for an enhanced secondary response to subsequent exposures to the same antigen (immunological memory)." [GO_REF:0000022, GOC:add, ISBN:0781735149]
 synonym: "acquired immune response" EXACT [ISBN:068340007X]
 synonym: "immune memory response" EXACT [GOC:add]
 xref: Wikipedia:Adaptive_immune_system
@@ -16178,16 +16419,14 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 id: GO:0002252
 name: immune effector process
 namespace: biological_process
-def: "Any process of the immune system that can potentially contribute to an immune response." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05, ISBN:0781735149]
-comment: This term was added by GO_REF:0000022.
+def: "Any process of the immune system that can potentially contribute to an immune response." [GO_REF:0000022, GOC:add, ISBN:0781735149]
 is_a: GO:0002376 ! immune system process
 
 [Term]
 id: GO:0002263
 name: cell activation involved in immune response
 namespace: biological_process
-def: "A change in the morphology or behavior of a cell resulting from exposure to an activating factor such as a cellular or soluble ligand, leading to the initiation or perpetuation of an immune response." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05, ISBN:0781735149]
-comment: This term was added by GO_REF:0000022.
+def: "A change in the morphology or behavior of a cell resulting from exposure to an activating factor such as a cellular or soluble ligand, leading to the initiation or perpetuation of an immune response." [GO_REF:0000022, GOC:add, ISBN:0781735149]
 synonym: "cell activation during immune response" RELATED [GOC:tb]
 is_a: GO:0001775 ! cell activation
 is_a: GO:0002252 ! immune effector process
@@ -16223,8 +16462,8 @@ intersection_of: part_of GO:0006955 ! immune response
 id: GO:0002376
 name: immune system process
 namespace: biological_process
-def: "Any process involved in the development or functioning of the immune system, an organismal system for calibrated responses to potential internal or invasive threats." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05]
-comment: Note that this term is a direct child of 'biological_process ; GO:0008150' because some immune system processes are types of cellular process (GO:0009987), whereas others are types of multicellular organism process (GO:0032501). This term was added by GO_REF:0000022.
+def: "Any process involved in the development or functioning of the immune system, an organismal system for calibrated responses to potential internal or invasive threats." [GO_REF:0000022, GOC:add]
+comment: Note that this term is a direct child of 'biological_process ; GO:0008150' because some immune system processes are types of cellular process (GO:0009987), whereas others are types of multicellular organism process (GO:0032501).
 subset: goslim_agr
 subset: goslim_chembl
 subset: goslim_flybase_ribbon
@@ -16233,6 +16472,7 @@ subset: goslim_mouse
 subset: goslim_pir
 xref: Wikipedia:Immune_system
 is_a: GO:0008150 ! biological_process
+relationship: never_in_taxon NCBITaxon:4895 ! Schizosaccharomyces
 
 [Term]
 id: GO:0002377
@@ -16246,8 +16486,7 @@ is_a: GO:0002440 ! production of molecular mediator of immune response
 id: GO:0002440
 name: production of molecular mediator of immune response
 namespace: biological_process
-def: "The synthesis or release of any molecular mediator of the immune response, resulting in an increase in its intracellular or extracellular levels." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05, ISBN:0781735149]
-comment: This term was added by GO_REF:0000022.
+def: "The synthesis or release of any molecular mediator of the immune response, resulting in an increase in its intracellular or extracellular levels." [GO_REF:0000022, GOC:add, ISBN:0781735149]
 synonym: "production of cellular mediator of immune response" RELATED []
 is_a: GO:0002376 ! immune system process
 
@@ -16257,8 +16496,7 @@ name: leukocyte mediated immunity
 namespace: biological_process
 alt_id: GO:0019723
 alt_id: GO:0042087
-def: "Any process involved in the carrying out of an immune response by a leukocyte." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05, ISBN:0781735149]
-comment: This term was added by GO_REF:0000022.
+def: "Any process involved in the carrying out of an immune response by a leukocyte." [GO_REF:0000022, GOC:add, ISBN:0781735149]
 synonym: "cell-mediated immune response" RELATED []
 synonym: "cellular immune response" RELATED []
 synonym: "immune cell effector process" EXACT []
@@ -16272,8 +16510,7 @@ is_a: GO:0002252 ! immune effector process
 id: GO:0002449
 name: lymphocyte mediated immunity
 namespace: biological_process
-def: "Any process involved in the carrying out of an immune response by a lymphocyte." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05, ISBN:0781735149]
-comment: This term was added by GO_REF:0000022.
+def: "Any process involved in the carrying out of an immune response by a lymphocyte." [GO_REF:0000022, GOC:add, ISBN:0781735149]
 synonym: "cell-mediated immunity" BROAD []
 synonym: "cellular immune response" BROAD []
 is_a: GO:0002443 ! leukocyte mediated immunity
@@ -16668,18 +16905,6 @@ intersection_of: positively_regulates GO:0019724 ! B cell mediated immunity
 relationship: positively_regulates GO:0019724 ! B cell mediated immunity
 
 [Term]
-id: GO:0002818
-name: intracellular defense response
-namespace: biological_process
-def: "A physiological defense response which occurs intracellularly." [GOC:add]
-synonym: "intracellular defence response" EXACT []
-is_a: GO:0006968 ! cellular defense response
-is_a: GO:0033554 ! cellular response to stress
-intersection_of: GO:0006952 ! defense response
-intersection_of: occurs_in GO:0005622 ! intracellular
-relationship: occurs_in GO:0005622 ! intracellular
-
-[Term]
 id: GO:0002819
 name: regulation of adaptive immune response
 namespace: biological_process
@@ -16751,6 +16976,53 @@ is_a: GO:0002822 ! regulation of adaptive immune response based on somatic recom
 intersection_of: GO:0008150 ! biological_process
 intersection_of: positively_regulates GO:0002460 ! adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains
 relationship: positively_regulates GO:0002460 ! adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains
+
+[Term]
+id: GO:0002831
+name: regulation of response to biotic stimulus
+namespace: biological_process
+def: "Any process that modulates the frequency, rate, or extent of a response to biotic stimulus." [GOC:add]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+is_a: GO:0048583 ! regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0009607 ! response to biotic stimulus
+relationship: regulates GO:0009607 ! response to biotic stimulus
+
+[Term]
+id: GO:0002832
+name: negative regulation of response to biotic stimulus
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate, or extent of a response to biotic stimulus." [GOC:add]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+synonym: "down regulation of response to biotic stimulus" EXACT []
+synonym: "down-regulation of response to biotic stimulus" EXACT []
+synonym: "downregulation of response to biotic stimulus" EXACT []
+synonym: "inhibition of response to biotic stimulus" NARROW []
+is_a: GO:0002831 ! regulation of response to biotic stimulus
+is_a: GO:0048585 ! negative regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0009607 ! response to biotic stimulus
+relationship: negatively_regulates GO:0009607 ! response to biotic stimulus
+
+[Term]
+id: GO:0002833
+name: positive regulation of response to biotic stimulus
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate, or extent of a response to biotic stimulus." [GOC:add]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+synonym: "activation of response to biotic stimulus" NARROW []
+synonym: "stimulation of response to biotic stimulus" NARROW []
+synonym: "up regulation of response to biotic stimulus" EXACT []
+synonym: "up-regulation of response to biotic stimulus" EXACT []
+synonym: "upregulation of response to biotic stimulus" EXACT []
+is_a: GO:0002831 ! regulation of response to biotic stimulus
+is_a: GO:0048584 ! positive regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0009607 ! response to biotic stimulus
+relationship: positively_regulates GO:0009607 ! response to biotic stimulus
 
 [Term]
 id: GO:0003008
@@ -17247,8 +17519,7 @@ is_a: GO:0006950 ! response to stress
 id: GO:0006955
 name: immune response
 namespace: biological_process
-def: "Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05]
-comment: This term was improved by GO_REF:0000022. It was redefined and moved.
+def: "Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat." [GO_REF:0000022, GOC:add]
 subset: goslim_drosophila
 xref: MIPS_funcat:36.25.16
 is_a: GO:0002376 ! immune system process
@@ -17260,11 +17531,14 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 id: GO:0006968
 name: cellular defense response
 namespace: biological_process
+alt_id: GO:0002818
 alt_id: GO:0016066
 alt_id: GO:0016067
 def: "A defense response that is mediated by cells." [GOC:ebc]
-comment: Note that this term refers to any type of defense response made by any cell, whether only a single-celled organism or part of a multicellular organism; also includes responses that occur in the context of multiorganism processes.
+comment: Merged terms, see https://github.com/geneontology/go-ontology/issues/18111.
 synonym: "cellular defence response" EXACT []
+synonym: "intracellular defence response" NARROW []
+synonym: "intracellular defense response" NARROW []
 is_a: GO:0006952 ! defense response
 
 [Term]
@@ -17376,7 +17650,9 @@ is_a: GO:0061061 ! muscle structure development
 id: GO:0007610
 name: behavior
 namespace: biological_process
+alt_id: GO:0023032
 alt_id: GO:0044708
+alt_id: GO:0044709
 def: "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity." [GOC:ems, GOC:jl, ISBN:0395448956, PMID:20160973]
 comment: 1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).
 subset: gocheck_do_not_manually_annotate
@@ -17497,6 +17773,31 @@ is_a: GO:0043170 ! macromolecule metabolic process
 is_a: GO:1901576 ! organic substance biosynthetic process
 
 [Term]
+id: GO:0009605
+name: response to external stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an external stimulus." [GOC:hb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_drosophila
+subset: goslim_plant
+synonym: "response to environmental stimulus" EXACT []
+xref: MIPS_funcat:36.20.35
+is_a: GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0009607
+name: response to biotic stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a biotic stimulus, a stimulus caused or produced by a living organism." [GOC:hb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_metagenomics
+subset: goslim_plant
+synonym: "response to biotic stress" NARROW []
+is_a: GO:0050896 ! response to stimulus
+
+[Term]
 id: GO:0009888
 name: tissue development
 namespace: biological_process
@@ -17505,6 +17806,11 @@ synonym: "histogenesis" EXACT []
 synonym: "histogenesis and organogenesis" BROAD []
 xref: Wikipedia:Histogenesis
 is_a: GO:0048856 ! anatomical structure development
+relationship: never_in_taxon NCBITaxon:147554 ! Schizosaccharomycetes
+relationship: never_in_taxon NCBITaxon:33630 ! Alveolata
+relationship: never_in_taxon NCBITaxon:33682
+relationship: never_in_taxon NCBITaxon:38254
+relationship: never_in_taxon NCBITaxon:4891 ! Saccharomycetes
 
 [Term]
 id: GO:0009889
@@ -17951,7 +18257,7 @@ subset: goslim_pir
 subset: goslim_plant
 subset: goslim_yeast
 xref: Wikipedia:Biological_membrane
-is_a: CARO:0000014 ! 细胞部分
+is_a: CARO:0000003 ! anatomical structure
 is_a: GO:0110165 ! cellular anatomical entity
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
@@ -17976,6 +18282,7 @@ synonym: "posttranscriptional gene silencing by siRNA" EXACT [GOC:mah]
 synonym: "RNAi" EXACT []
 xref: Wikipedia:RNA_interference
 is_a: GO:0035194 ! posttranscriptional gene silencing by RNA
+relationship: never_in_taxon NCBITaxon:4895 ! Schizosaccharomyces
 
 [Term]
 id: GO:0016301
@@ -18062,7 +18369,7 @@ id: GO:0016477
 name: cell migration
 name: 细胞迁移
 namespace: biological_process
-def: "The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms." [GOC:cjm, GOC:dph, GOC:ems, GOC:pf, http://en.wikipedia.org/wiki/Cell_migration]
+def: "The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms." [GOC:cjm, GOC:dph, GOC:ems, GOC:pf, Wikipedia:Cell_migration]
 xref: MIPS_funcat:34.05.01
 xref: Wikipedia:Cell_migration
 is_a: GO:0048870 ! cell motility
@@ -18213,15 +18520,13 @@ is_a: GO:0044249 ! cellular biosynthetic process
 id: GO:0019724
 name: B cell mediated immunity
 namespace: biological_process
-def: "Any process involved with the carrying out of an immune response by a B cell, through, for instance, the production of antibodies or cytokines, or antigen presentation to T cells." [GO_REF:0000022, GOC:add, GOC:mtg_15nov05, ISBN:0781735149]
-comment: This term was improved by GO_REF:0000022. It was moved.
+def: "Any process involved with the carrying out of an immune response by a B cell, through, for instance, the production of antibodies or cytokines, or antigen presentation to T cells." [GO_REF:0000022, GOC:add, ISBN:0781735149]
 synonym: "B lymphocyte mediated immune effector process" EXACT []
 synonym: "B lymphocyte mediated immunity" EXACT []
 synonym: "B-cell mediated immune effector process" EXACT []
 synonym: "B-cell mediated immunity" EXACT []
 synonym: "B-lymphocyte mediated immune effector process" EXACT []
 synonym: "B-lymphocyte mediated immunity" EXACT []
-xref: MIPS_funcat:36.25.16.03.01
 is_a: GO:0002449 ! lymphocyte mediated immunity
 is_a: GO:0002460 ! adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains
 
@@ -18229,8 +18534,7 @@ is_a: GO:0002460 ! adaptive immune response based on somatic recombination of im
 id: GO:0022008
 name: neurogenesis
 namespace: biological_process
-def: "Generation of cells within the nervous system." [GO_REF:0000021, GOC:cls, GOC:curators, GOC:dgh, GOC:dph, GOC:jid, GOC:mtg_15jun06]
-comment: This term was added by GO_REF:0000021.
+def: "Generation of cells within the nervous system." [GO_REF:0000021, GOC:cls, GOC:curators, GOC:dgh, GOC:dph, GOC:jid]
 synonym: "nervous system cell generation" EXACT systematic_synonym []
 synonym: "neural cell differentiation" RELATED [GOC:BHF, GOC:dph]
 xref: Wikipedia:Neurogenesis
@@ -18313,6 +18617,19 @@ relationship: negatively_regulates GO:0023052 ! signaling
 creation_date: 2010-02-16T09:30:50Z
 
 [Term]
+id: GO:0030054
+name: cell junction
+namespace: cellular_component
+def: "A cellular component that forms a specialized region of connection between two or more cells, or between a cell and the extracellular matrix, or between two membrane-bound components of a cell, such as flagella." [GOC:aruk, GOC:bc, GOC:mah, http://www.vivo.colostate.edu/hbooks/cmb/cells/pmemb/junctions_a.html, ISBN:0198506732, PMID:26820516, PMID:28096264]
+subset: goslim_agr
+subset: goslim_drosophila
+subset: goslim_flybase_ribbon
+xref: MIPS_funcat:70.06
+xref: Wikipedia:Cell_junction
+is_a: GO:0110165 ! cellular anatomical entity
+relationship: never_in_taxon NCBITaxon:4751 ! Fungi
+
+[Term]
 id: GO:0030097
 name: hemopoiesis
 namespace: biological_process
@@ -18347,6 +18664,7 @@ def: "A small subcellular vesicle, surrounded by a membrane, that is formed from
 comment: Note that the term 'secretory vesicle' is sometimes used in this sense, but can also mean 'transport vesicle ; GO:0030133'.
 synonym: "secretory vesicle" BROAD []
 is_a: GO:0099503 ! secretory vesicle
+relationship: never_in_taxon NCBITaxon:4890 ! Ascomycota
 relationship: part_of GO:0012505 ! endomembrane system
 
 [Term]
@@ -18826,6 +19144,53 @@ intersection_of: positively_regulates GO:0005515 ! protein binding
 relationship: positively_regulates GO:0005515 ! protein binding
 
 [Term]
+id: GO:0032101
+name: regulation of response to external stimulus
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a response to an external stimulus." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+is_a: GO:0048583 ! regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: regulates GO:0009605 ! response to external stimulus
+relationship: regulates GO:0009605 ! response to external stimulus
+
+[Term]
+id: GO:0032102
+name: negative regulation of response to external stimulus
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a response to an external stimulus." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+synonym: "down regulation of response to external stimulus" EXACT []
+synonym: "down-regulation of response to external stimulus" EXACT []
+synonym: "downregulation of response to external stimulus" EXACT []
+synonym: "inhibition of response to external stimulus" NARROW []
+is_a: GO:0032101 ! regulation of response to external stimulus
+is_a: GO:0048585 ! negative regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: negatively_regulates GO:0009605 ! response to external stimulus
+relationship: negatively_regulates GO:0009605 ! response to external stimulus
+
+[Term]
+id: GO:0032103
+name: positive regulation of response to external stimulus
+namespace: biological_process
+def: "Any process that activates, maintains or increases the rate of a response to an external stimulus." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+synonym: "activation of response to external stimulus" NARROW []
+synonym: "stimulation of response to external stimulus" NARROW []
+synonym: "up regulation of response to external stimulus" EXACT []
+synonym: "up-regulation of response to external stimulus" EXACT []
+synonym: "upregulation of response to external stimulus" EXACT []
+is_a: GO:0032101 ! regulation of response to external stimulus
+is_a: GO:0048584 ! positive regulation of response to stimulus
+intersection_of: GO:0008150 ! biological_process
+intersection_of: positively_regulates GO:0009605 ! response to external stimulus
+relationship: positively_regulates GO:0009605 ! response to external stimulus
+
+[Term]
 id: GO:0032501
 name: multicellular organismal process
 namespace: biological_process
@@ -18836,6 +19201,8 @@ subset: goslim_pir
 synonym: "organismal physiological process" EXACT []
 synonym: "single-multicellular organism process" RELATED []
 is_a: GO:0008150 ! biological_process
+relationship: never_in_taxon NCBITaxon:4896 ! Schizosaccharomyces pombe
+relationship: never_in_taxon NCBITaxon:4932 ! Saccharomyces cerevisiae
 created_by: janelomax
 creation_date: 2012-09-19T16:07:47Z
 
@@ -19152,6 +19519,7 @@ subset: goslim_pir
 subset: gosubset_prok
 xref: MIPS_funcat:02.45.11
 is_a: GO:0008150 ! biological_process
+relationship: never_in_taxon NCBITaxon:451864 ! Dikarya
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/clo.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
@@ -19409,6 +19777,14 @@ synonym: "organismal macromolecule metabolism" EXACT []
 is_a: GO:0071704 ! organic substance metabolic process
 
 [Term]
+id: GO:0043207
+name: response to external biotic stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an external biotic stimulus, an external stimulus caused by, or produced by living things." [GOC:go_curators]
+is_a: GO:0009605 ! response to external stimulus
+is_a: GO:0009607 ! response to biotic stimulus
+
+[Term]
 id: GO:0043226
 name: organelle
 namespace: cellular_component
@@ -19576,6 +19952,24 @@ created_by: jane
 creation_date: 2009-04-21T04:11:06Z
 
 [Term]
+id: GO:0044111
+name: development involved in symbiotic interaction
+namespace: biological_process
+alt_id: GO:0044152
+def: "The progression of an organism from an initial condition to a later condition, occurring when the organism is in a symbiotic interaction." [GO:jl, GOC:pamgo_curators]
+comment: This term partially replaces the obsolete term 'growth or development during symbiotic interaction ; GO:0052171'. See also 'growth during symbiotic interaction ; GO:0044110'.
+synonym: "development during symbiotic interaction" RELATED [gOC:dph]
+synonym: "development on or near surface of other organism during symbiotic interaction" RELATED [GOC:dph]
+synonym: "development on or near surface of other organism involved in symbiotic interaction" NARROW []
+is_a: GO:0032502 ! developmental process
+is_a: GO:0051704 ! multi-organism process
+intersection_of: GO:0032502 ! developmental process
+intersection_of: part_of GO:0044419 ! interspecies interaction between organisms
+relationship: part_of GO:0044419 ! interspecies interaction between organisms
+created_by: jane
+creation_date: 2009-07-30T02:26:46Z
+
+[Term]
 id: GO:0044237
 name: cellular metabolic process
 namespace: biological_process
@@ -19630,6 +20024,19 @@ is_a: GO:0034641 ! cellular nitrogen compound metabolic process
 is_a: GO:0044249 ! cellular biosynthetic process
 
 [Term]
+id: GO:0044419
+name: interspecies interaction between organisms
+namespace: biological_process
+def: "Any process in which an organism has an effect on an organism of a different species." [GOC:cc]
+subset: goslim_candida
+subset: goslim_pir
+synonym: "interaction with another species" EXACT []
+synonym: "interspecies interaction" EXACT []
+synonym: "interspecies interaction with other organisms" EXACT []
+is_a: GO:0008150 ! biological_process
+relationship: never_in_taxon NCBITaxon:4895 ! Schizosaccharomyces
+
+[Term]
 id: GO:0044425
 name: membrane part
 name: obsolete membrane part
@@ -19654,7 +20061,7 @@ comment: Note that this term is in the subset of terms that should not be used f
 subset: gocheck_do_not_annotate
 synonym: "synaptic component" RELATED [NIF_Subcellular:sao1784069613]
 xref: NIF_Subcellular:sao1784069613
-is_a: CARO:0000014 ! 细胞部分
+is_a: GO:0044464 ! obsolete cell part
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 is_obsolete: true
 consider: GO:0045202
@@ -19717,7 +20124,7 @@ is_a: GO:0044699
 id: GO:0045202
 name: synapse
 namespace: cellular_component
-def: "The junction between a nerve fiber of one neuron and another neuron, muscle fiber or glial cell. As the nerve fiber approaches the synapse it enlarges into a specialized structure, the presynaptic nerve ending, which contains mitochondria and synaptic vesicles. At the tip of the nerve ending is the presynaptic membrane; facing it, and separated from it by a minute cleft (the synaptic cleft) is a specialized area of membrane on the receiving cell, known as the postsynaptic membrane. In response to the arrival of nerve impulses, the presynaptic nerve ending secretes molecules of neurotransmitters into the synaptic cleft. These diffuse across the cleft and transmit the signal to the postsynaptic membrane." [ISBN:0198506732]
+def: "The junction between an axon of one neuron and a dendrite of another neuron, a muscle fiber or a glial cell. As the axon approaches the synapse it enlarges into a specialized structure, the presynaptic terminal bouton, which contains mitochondria and synaptic vesicles. At the tip of the terminal bouton is the presynaptic membrane; facing it, and separated from it by a minute cleft (the synaptic cleft) is a specialized area of membrane on the receiving cell, known as the postsynaptic membrane. In response to the arrival of nerve impulses, the presynaptic terminal bouton secretes molecules of neurotransmitters into the synaptic cleft. These diffuse across the cleft and transmit the signal to the postsynaptic membrane." [GOC:aruk, ISBN:0198506732, PMID:24619342, PMID:29383328, PMID:31998110]
 subset: goslim_agr
 subset: goslim_drosophila
 subset: goslim_flybase_ribbon
@@ -19729,8 +20136,8 @@ synonym: "mixed synapse" NARROW [NIF_Subcellular:sao1506103497]
 synonym: "synaptic junction" EXACT []
 xref: NIF_Subcellular:sao914572699
 xref: Wikipedia:Chemical_synapse
-is_a: CARO:0000014 ! 细胞部分
-is_a: GO:0110165 ! cellular anatomical entity
+is_a: CARO:0000003 ! anatomical structure
+is_a: GO:0030054 ! cell junction
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Term]
@@ -19918,8 +20325,8 @@ namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of neuron differentiation." [GOC:go_curators]
 is_a: GO:0050767 ! regulation of neurogenesis
 intersection_of: GO:0008150 ! biological_process
-intersection_of: regulates GO:0030182 ! 神经元分化
-relationship: regulates GO:0030182 ! 神经元分化
+intersection_of: regulates GO:0030182 ! neuron differentiation
+relationship: regulates GO:0030182 ! neuron differentiation
 
 [Term]
 id: GO:0045665
@@ -19933,8 +20340,8 @@ synonym: "inhibition of neuron differentiation" NARROW []
 is_a: GO:0045664 ! regulation of neuron differentiation
 is_a: GO:0050768 ! negative regulation of neurogenesis
 intersection_of: GO:0008150 ! biological_process
-intersection_of: negatively_regulates GO:0030182 ! 神经元分化
-relationship: negatively_regulates GO:0030182 ! 神经元分化
+intersection_of: negatively_regulates GO:0030182 ! neuron differentiation
+relationship: negatively_regulates GO:0030182 ! neuron differentiation
 
 [Term]
 id: GO:0045666
@@ -19949,8 +20356,8 @@ synonym: "upregulation of neuron differentiation" EXACT []
 is_a: GO:0045664 ! regulation of neuron differentiation
 is_a: GO:0050769 ! positive regulation of neurogenesis
 intersection_of: GO:0008150 ! biological_process
-intersection_of: positively_regulates GO:0030182 ! 神经元分化
-relationship: positively_regulates GO:0030182 ! 神经元分化
+intersection_of: positively_regulates GO:0030182 ! neuron differentiation
+relationship: positively_regulates GO:0030182 ! neuron differentiation
 
 [Term]
 id: GO:0045667
@@ -20478,8 +20885,7 @@ relationship: part_of GO:0007507 ! heart development
 id: GO:0048856
 name: anatomical structure development
 namespace: biological_process
-def: "The biological process whose specific outcome is the progression of an anatomical structure from an initial condition to its mature state. This process begins with the formation of the structure and ends with the mature structure, whatever form that may be including its natural destruction. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GO_REF:0000021, GOC:mtg_15jun06]
-comment: This term was added by GO_REF:0000021.
+def: "The biological process whose specific outcome is the progression of an anatomical structure from an initial condition to its mature state. This process begins with the formation of the structure and ends with the mature structure, whatever form that may be including its natural destruction. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GO_REF:0000021]
 subset: goslim_chembl
 subset: goslim_generic
 subset: goslim_plant
@@ -21093,7 +21499,7 @@ creation_date: 2013-12-18T13:51:04Z
 id: GO:0051216
 name: cartilage development
 namespace: biological_process
-def: "The process whose specific outcome is the progression of a cartilage element over time, from its formation to the mature structure. Cartilage elements are skeletal elements that consist of connective tissue dominated by extracellular matrix containing collagen type II and large amounts of proteoglycan, particularly chondroitin sulfate." [DOI:10.1371/journal.pone.0051070, GOC:cjm, http://www.onelook.com]
+def: "The process whose specific outcome is the progression of a cartilage element over time, from its formation to the mature structure. Cartilage elements are skeletal elements that consist of connective tissue dominated by extracellular matrix containing collagen type II and large amounts of proteoglycan, particularly chondroitin sulfate." [GOC:cjm, PMID:23251424]
 synonym: "cartilage biogenesis" EXACT []
 synonym: "cartilage biosynthesis" EXACT []
 synonym: "cartilage element development" EXACT []
@@ -21377,6 +21783,16 @@ synonym: "interaction between organisms" EXACT []
 synonym: "physiological interaction between organisms" EXACT []
 synonym: "physiological interaction with other organism" EXACT []
 is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051707
+name: response to other organism
+namespace: biological_process
+alt_id: GO:0009613
+alt_id: GO:0042828
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus from another living organism." [GOC:ai]
+is_a: GO:0043207 ! response to external biotic stimulus
+is_a: GO:0044419 ! interspecies interaction between organisms
 
 [Term]
 id: GO:0051716
@@ -21846,7 +22262,7 @@ relationship: part_of GO:0043229 ! intracellular organelle
 id: GO:0071704
 name: organic substance metabolic process
 namespace: biological_process
-def: "The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon." [CHEBI:50860, GOC:mah]
+def: "The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon." [GOC:mah]
 synonym: "organic molecular entity metabolic process" EXACT []
 synonym: "organic molecular entity metabolism" EXACT []
 synonym: "organic substance metabolism" EXACT []
@@ -21975,6 +22391,16 @@ created_by: paola
 creation_date: 2016-03-29T17:39:45Z
 
 [Term]
+id: GO:0098542
+name: defense response to other organism
+namespace: biological_process
+def: "Reactions triggered in response to the presence of another organism that act to protect the cell or organism from damage caused by that organism." [GOC:dos]
+is_a: GO:0006952 ! defense response
+is_a: GO:0051707 ! response to other organism
+created_by: davidos
+creation_date: 2013-11-11T12:59:11Z
+
+[Term]
 id: GO:0098590
 name: plasma membrane region
 namespace: cellular_component
@@ -22069,8 +22495,8 @@ is_a: GO:0099537 ! trans-synaptic signaling
 id: GO:0099046
 name: clearance of foreign intracellular nucleic acids
 namespace: biological_process
-def: "A defense process that protects an organism from invading foreign DNA or RNA." [GO:dos]
-is_a: GO:0006952 ! defense response
+def: "A defense process that protects an organism from DNA or RNA from an invading organism." [GO:dos]
+is_a: GO:0098542 ! defense response to other organism
 
 [Term]
 id: GO:0099048
@@ -22147,6 +22573,7 @@ subset: goslim_synapse
 is_a: GO:0007267 ! cell-cell signaling
 intersection_of: GO:0007267 ! cell-cell signaling
 intersection_of: occurs_in GO:0045202 ! synapse
+relationship: never_in_taxon NCBITaxon:4895 ! Schizosaccharomyces
 relationship: occurs_in GO:0045202 ! synapse
 
 [Term]
@@ -22196,7 +22623,9 @@ id: GO:0110132
 name: regulation of CRISPR-cas system
 namespace: biological_process
 def: "Any process that modulates the frequency, rate or extent of a CRISPR-cas system." [PMID:30190307, PMID:30190308]
+is_a: GO:0002831 ! regulation of response to biotic stimulus
 is_a: GO:0031347 ! regulation of defense response
+is_a: GO:0032101 ! regulation of response to external stimulus
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: regulates GO:0099048 ! CRISPR-cas system
 relationship: regulates GO:0099048 ! CRISPR-cas system
@@ -22208,7 +22637,9 @@ id: GO:0110133
 name: negative regulation of CRISPR-cas system
 namespace: biological_process
 def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a CRISPR-cas system." [PMID:30190307, PMID:30190308]
+is_a: GO:0002832 ! negative regulation of response to biotic stimulus
 is_a: GO:0031348 ! negative regulation of defense response
+is_a: GO:0032102 ! negative regulation of response to external stimulus
 is_a: GO:0110132 ! regulation of CRISPR-cas system
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: negatively_regulates GO:0099048 ! CRISPR-cas system
@@ -23824,6 +24255,24 @@ namespace: PSI-MI
 def: "All Alexa dyes are fluorescent iodoacetamide dyes that can be conjugated with the primary amines of biomolecules. All Alexa dyes and their conjugates are more fluorescent and more photostable than the commonly used dyes. The numbers in the Alexa names indicate the approximate excitation wavelength maximum in nm)." [PMID:10449539]
 subset: PSI-MI_slim
 is_a: MI:0857 ! fluorescent dye label
+
+[Term]
+id: MI:0416
+name: fluorescence microscopy
+namespace: PSI-MI
+def: "Fluorescent microscopy uses a high intensity light to illuminate the sample. This light excites fluorescence species in the sample, which then emit light of a longer wavelength. A fluorescent microscope also produces a magnified image of the sample, but the image is based on the second light source -- the light emanating from the fluorescent species -- rather than from the light originally used to illuminate, and excite, the sample." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "fluorescence imaging" EXACT PSI-MI-short []
+is_a: MI:0428 ! imaging technique
+
+[Term]
+id: MI:0428
+name: imaging technique
+namespace: PSI-MI
+def: "Methods that provide images of molecules at various resolution depending on the technology used." [PMID:14755292]
+subset: PSI-MI_slim
+synonym: "microscopy" EXACT PSI-MI-alternate []
+is_a: MI:0045 ! experimental interaction detection
 
 [Term]
 id: MI:0505
@@ -27966,7 +28415,7 @@ synonym: "man" EXACT []
 synonym: "man" EXACT common_name []
 xref: GC_ID:1
 is_a: NCBITaxon:9605 ! Homo
-relationship: has_part OGG:1000009606 ! 人类基因组
+relationship: has_part OGG:1000009606 ! genome of Homo sapiens
 property_value: has_rank NCBITaxon:species
 property_value: IAO:0000111 "Homo sapiens" xsd:string
 property_value: IAO:0000111 "Homo sapiens" xsd:string
@@ -28119,6 +28568,97 @@ property_value: NCIT:P108 "Masson Trichrome Staining Method" xsd:string
 property_value: NCIT:P207 "C1294297" xsd:string
 
 [Term]
+id: NCIT:C12219
+name: Anatomic Structure, System, or Substance
+def: "A human biological structure, fluid or other substance; excludes single molecular entities." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C90259
+synonym: "Anatomic Structure, System, or Substance" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NICHD"}
+synonym: "Anatomic Structure, System, or Substance" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Anatomic Structures and Systems" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+disjoint_from: NCIT:C26548 ! Gene Product
+disjoint_from: NCIT:C43431 ! Activity
+property_value: NCIT:A11 NCIT:C90259
+property_value: NCIT:NHC0 "C12219" xsd:string
+property_value: NCIT:P106 "Classification" xsd:string
+property_value: NCIT:P107 "Anatomical Concepts" xsd:string
+property_value: NCIT:P108 "Anatomic Structure, System, or Substance" xsd:string
+property_value: NCIT:P207 "C1515976" xsd:string
+property_value: NCIT:P322 "NICHD" xsd:string
+property_value: NCIT:P366 "Anatomic_Structure_System_or_Substance" xsd:string
+property_value: NCIT:P371 "Anatomic Structure, System, or Substance" xsd:string
+
+[Term]
+id: NCIT:C12508
+name: Cell
+def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C67567
+synonym: "Cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P385="TCGA", http://purl.obolibrary.org/obo/NCIT_P386="caDSR", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000046476"}
+synonym: "Cell Type" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Cell Types" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="DN", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Cells" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Cells" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="UCUM"}
+synonym: "Cellular" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AD", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Normal Cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "{Cells}" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="UCUM"}
+is_a: NCIT:C21599 ! Microanatomic Structure
+property_value: NCIT:NHC0 "C12508" xsd:string
+property_value: NCIT:P106 "Cell" xsd:string
+property_value: NCIT:P107 "Cell Types" xsd:string
+property_value: NCIT:P108 "Cell" xsd:string
+property_value: NCIT:P207 "C0007634" xsd:string
+property_value: NCIT:P322 "CPTAC" xsd:string
+property_value: NCIT:P322 "UCUM" xsd:string
+property_value: NCIT:P325 "The individual unit that makes up all of the tissues of the body. All living things are made up of one or more cells." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P366 "Cell" xsd:string
+
+[Term]
+id: NCIT:C12578
+name: Epithelial Cell
+def: "Any of the cells of the epithelium, which covers the body and lines its cavities and glands." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C61410
+subset: NCIT:C66830
+subset: NCIT:C78734
+synonym: "EPITHELIAL CELL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Epithelial Cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Epithelial Cells" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C12508 ! Cell
+relationship: NCIT:R82 NCIT:C45714 ! Epithelial Tissue
+property_value: NCIT:NHC0 "C12578" xsd:string
+property_value: NCIT:P106 "Cell" xsd:string
+property_value: NCIT:P107 "Epithelial Cell" xsd:string
+property_value: NCIT:P108 "Epithelial Cell" xsd:string
+property_value: NCIT:P207 "C0014597" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P325 "Any of the cells of the epithelium, which covers the body and lines its cavities and glands." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P366 "Epithelial_Cell" xsd:string
+
+[Term]
+id: NCIT:C12801
+name: Tissue
+def: "An anatomical structure consisting of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships, performing a specific function." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C61410
+subset: NCIT:C66830
+subset: NCIT:C78734
+synonym: "Normal Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "TISSUE" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P385="TCGA", http://purl.obolibrary.org/obo/NCIT_P386="caDSR", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P385="CDR0000046683", http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS"}
+synonym: "Tissues" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C12219 ! Anatomic Structure, System, or Substance
+property_value: NCIT:NHC0 "C12801" xsd:string
+property_value: NCIT:P106 "Tissue" xsd:string
+property_value: NCIT:P107 "Tissue" xsd:string
+property_value: NCIT:P108 "Tissue" xsd:string
+property_value: NCIT:P207 "C0040300" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P325 "A group or layer of cells that work together to perform a specific function." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P325 "An anatomical structure consisting of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships, performing a specific function. (NCI)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P366 "Tissue" xsd:string
+
+[Term]
 id: NCIT:C16203
 name: Clinical or Research Activity
 def: "Any specific activity undertaken during the course of a clinical study or research protocol." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
@@ -28129,6 +28669,21 @@ property_value: NCIT:P106 "Activity" xsd:string
 property_value: NCIT:P108 "Clinical or Research Activity" xsd:string
 property_value: NCIT:P207 "C1516654" xsd:string
 property_value: NCIT:P366 "Clinical_or_Research_Activity" xsd:string
+
+[Term]
+id: NCIT:C16642
+name: Glycoprotein
+def: "A conjugated protein having a carbohydrate component." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Glycoprotein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "glycoprotein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000044034"}
+is_a: NCIT:C20028 ! Protein, Organized by Structure
+property_value: NCIT:NHC0 "C16642" xsd:string
+property_value: NCIT:P106 "Amino Acid, Peptide, or Protein" xsd:string
+property_value: NCIT:P108 "Glycoprotein" xsd:string
+property_value: NCIT:P207 "C0017968" xsd:string
+property_value: NCIT:P325 "A protein that has sugar molecules attached to it." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P366 "Glycoprotein" xsd:string
+property_value: NCIT:P368 CHEBI:17089 xsd:string
 
 [Term]
 id: NCIT:C16680
@@ -28151,6 +28706,66 @@ property_value: NCIT:P207 "C0019637" xsd:string
 property_value: NCIT:P322 "CTRP" xsd:string
 property_value: NCIT:P325 "The examination of tissue specimens under a microscope." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
 property_value: NCIT:P366 "Histological_Techniques" xsd:string
+
+[Term]
+id: NCIT:C16883
+name: Mucin
+def: "An albuminoid substance containing mucopolysaccharides and protein which is contained in mucus, and gives to the latter secretion its peculiar ropy character. It is found in all the secretions from mucous glands, and also between the fibres of connective tissue, as in tendons." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI", http://purl.obolibrary.org/obo/NCIT_P381="from On-line Medical Dictionary"}
+synonym: "Mucin" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Mucus Glycoprotein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C16642 ! Glycoprotein
+relationship: NCIT:R49 NCIT:C12578 ! Epithelial Cell
+property_value: NCIT:NHC0 "C16883" xsd:string
+property_value: NCIT:P106 "Amino Acid, Peptide, or Protein" xsd:string
+property_value: NCIT:P108 "Mucin" xsd:string
+property_value: NCIT:P207 "C0026682" xsd:string
+property_value: NCIT:P366 "Mucin" xsd:string
+
+[Term]
+id: NCIT:C17021
+name: Protein
+def: "A group of complex organic macromolecules composed of one or more chains (linear polymers) of alpha-L-amino acids linked by peptide bonds and ranging in size from a few thousand to over 1 million Daltons. Proteins are fundamental genetically encoded components of living cells with specific structures and functions dictated by amino acid sequence." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Protein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P385="TCGA", http://purl.obolibrary.org/obo/NCIT_P386="caDSR", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Protein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "protein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000046092", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS"}
+synonym: "Protein (NOS)" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P385="31102", http://purl.obolibrary.org/obo/NCIT_P384="DCP"}
+synonym: "Proteins" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C26548 ! Gene Product
+property_value: NCIT:NHC0 "C17021" xsd:string
+property_value: NCIT:P106 "Amino Acid, Peptide, or Protein" xsd:string
+property_value: NCIT:P108 "Protein" xsd:string
+property_value: NCIT:P207 "C0033684" xsd:string
+property_value: NCIT:P325 "A molecule made up of amino acids that are needed for the body to function properly. Proteins are the basis of body structures such as skin and hair and of substances such as enzymes, cytokines, and antibodies." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P366 "Protein" xsd:string
+property_value: NCIT:P368 CHEBI:36080 xsd:string
+
+[Term]
+id: NCIT:C20028
+name: Protein, Organized by Structure
+def: "Organizing term for the Proteins tree" [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Protein, Organized by Structure" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="HD", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Proteins [By Structure]" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C17021 ! Protein
+property_value: NCIT:NHC0 "C20028" xsd:string
+property_value: NCIT:P106 "Classification" xsd:string
+property_value: NCIT:P108 "Protein, Organized by Structure" xsd:string
+property_value: NCIT:P207 "C0175168" xsd:string
+property_value: NCIT:P310 "Header_Concept" xsd:string
+property_value: NCIT:P366 "Protein_Organized_by_Structure" xsd:string
+
+[Term]
+id: NCIT:C21599
+name: Microanatomic Structure
+def: "Those anatomic structures that are generally only visible through the use of microscopy." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Microanatomic Structure" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Microanatomy" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Microscopic Anatomy" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C12219 ! Anatomic Structure, System, or Substance
+property_value: NCIT:NHC0 "C21599" xsd:string
+property_value: NCIT:P106 "Conceptual Entity" xsd:string
+property_value: NCIT:P108 "Microanatomic Structure" xsd:string
+property_value: NCIT:P207 "C1513264" xsd:string
+property_value: NCIT:P366 "Microanatomy" xsd:string
 
 [Term]
 id: NCIT:C23010
@@ -28316,6 +28931,20 @@ property_value: NCIT:P366 "Test" xsd:string
 property_value: NCIT:P371 "Laboratory Procedure" xsd:string
 
 [Term]
+id: NCIT:C26548
+name: Gene Product
+def: "A protein, RNA or a complex that contains proteins and/or RNA." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Gene Product" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Genome Encoded Entity" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+disjoint_from: NCIT:C43431 ! Activity
+property_value: NCIT:NHC0 "C26548" xsd:string
+property_value: NCIT:P106 "Classification" xsd:string
+property_value: NCIT:P108 "Gene Product" xsd:string
+property_value: NCIT:P207 "C1704222" xsd:string
+property_value: NCIT:P366 "Gene_Product" xsd:string
+property_value: NCIT:P98 "In NCI Thesaurus: includes Proteins, Functional RNAs, Protein Complexes, and Riboprotein Complexes" xsd:string
+
+[Term]
 id: NCIT:C43431
 name: Activity
 def: "An active process; excludes processes and mechanisms which fulfill biological functions." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
@@ -28331,6 +28960,17 @@ property_value: NCIT:P207 "C0441655" xsd:string
 property_value: NCIT:P322 "BRIDG" xsd:string
 property_value: NCIT:P325 "Any action that can, in the context of a study or a post-marketing investigation, be defined, planned, scheduled or performed. EXAMPLE(S): surgical procedure, laboratory test, administration of a drug." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="BRIDG"}
 property_value: NCIT:P366 "Activity" xsd:string
+
+[Term]
+id: NCIT:C45714
+name: Epithelial Tissue
+synonym: "Epithelial Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C12801 ! Tissue
+property_value: NCIT:NHC0 "C45714" xsd:string
+property_value: NCIT:P106 "Tissue" xsd:string
+property_value: NCIT:P108 "Epithelial Tissue" xsd:string
+property_value: NCIT:P208 "CL448688" xsd:string
+property_value: NCIT:P366 "Epithelial_Tissue" xsd:string
 
 [Term]
 id: NCIT:C74942
@@ -31783,37 +32423,37 @@ is_a: OBI:0400169 ! microscope
 [Term]
 id: SIMRO:0002031
 name: Axiovert 206 MOT (WID)
-def: "Axiovert 206 MOT (WID) of widefields needs def" []
+def: "Axiovert 206 MOT (WID) of widefield microscope needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002032
 name: Axiovert 206 Std (WID)
-def: "Axiovert 206 Std (WID) of widefields needs def" []
+def: "Axiovert 206 Std (WID) of widefield microscope needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002033
 name: Axiovert MOT BW (WID)
-def: "Axiovert MOT BW (WID) of widefields needs def" []
+def: "Axiovert MOT BW (WID) of widefield microscope needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002034
 name: Nikon TE2000 (NIW)
-def: "Nikon TE2000 (NIW) of widefields needs def" []
+def: "Nikon TE2000 (NIW) of widefield microscope needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002035
 name: Olympus Slide Scanner (OSS)
-def: "Olympus Slide Scanner (OSS) of widefields needs def" []
+def: "Olympus Slide Scanner (OSS) of widefield microscope needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
 id: SIMRO:0002036
 name: Widefield sCMOS (WID)
-def: "Widefield sCMOS (WID) of widefields needs def" []
+def: "Widefield sCMOS (WID) of widefield microscope needs def" []
 is_a: SIMRO:0002030 ! widefield microscope
 
 [Term]
@@ -32106,6 +32746,7 @@ is_a: FBbi:00000584 ! X-Rhodamine
 intersection_of: FBbi:00000584 ! X-Rhodamine
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005001
@@ -32115,6 +32756,7 @@ is_a: SIMRO:0002000 ! x-gal staining fixation solution
 intersection_of: SIMRO:0002000 ! x-gal staining fixation solution
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
 
 [Term]
 id: SIMRO:0005002
@@ -32124,6 +32766,7 @@ is_a: SIMRO:0002000 ! x-gal staining fixation solution
 intersection_of: SIMRO:0002000 ! x-gal staining fixation solution
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000011 ! used by method glutaraldehyde fixed tissue
 
 [Term]
 id: SIMRO:0005003
@@ -32133,6 +32776,7 @@ is_a: NCIT:C118401 ! Tartrate Resistant Acid Phosphatase Staining Method
 intersection_of: NCIT:C118401 ! Tartrate Resistant Acid Phosphatase Staining Method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
 
 [Term]
 id: SIMRO:0005004
@@ -32142,6 +32786,7 @@ is_a: FBbi:00000440 ! Alexa Fluor 488
 intersection_of: FBbi:00000440 ! Alexa Fluor 488
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005005
@@ -32151,6 +32796,7 @@ is_a: SIMRO:0002001 ! feulegen staining
 intersection_of: SIMRO:0002001 ! feulegen staining
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 EFO:0003813 ! used by method nucleic acid labeling protocol
 
 [Term]
 id: SIMRO:0005006
@@ -32160,6 +32806,7 @@ is_a: SIMRO:0002001 ! feulegen staining
 intersection_of: SIMRO:0002001 ! feulegen staining
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005007
@@ -32169,15 +32816,18 @@ is_a: SIMRO:0002002 ! 10% neutral buffered formalin
 intersection_of: SIMRO:0002002 ! 10% neutral buffered formalin
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000010 ! used by method formaldehyde fixed tissue
 
 [Term]
 id: SIMRO:0005008
-name: von Kossa staining Method
-def: "von Kossa staining Method used by histology group." []
+name: von Kossa staining method
+def: "von Kossa staining method used by histology group." []
 is_a: SIMRO:0002003 ! von Kossa staining method
 intersection_of: SIMRO:0002003 ! von Kossa staining method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
+relationship: SIMRO:0000614 CHEBI:22984 ! used to label calcium atom
 
 [Term]
 id: SIMRO:0005009
@@ -32187,6 +32837,7 @@ is_a: FBbi:00000025 ! living tissue
 intersection_of: FBbi:00000025 ! living tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000615 menu:0000001
 
 [Term]
 id: SIMRO:0005010
@@ -32196,6 +32847,7 @@ is_a: SIMRO:0002005 ! ATTO 532
 intersection_of: SIMRO:0002005 ! ATTO 532
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005011
@@ -32205,6 +32857,7 @@ is_a: SIMRO:0002006 ! ATTO 550
 intersection_of: SIMRO:0002006 ! ATTO 550
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005012
@@ -32214,6 +32867,7 @@ is_a: EO:0007173
 intersection_of: EO:0007173
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
+relationship: SIMRO:0000612 EFO:0003969 ! used by method
 
 [Term]
 id: SIMRO:0005013
@@ -32223,6 +32877,8 @@ is_a: NCIT:C120047 ! Masson Trichrome Staining Method
 intersection_of: NCIT:C120047 ! Masson Trichrome Staining Method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
+relationship: SIMRO:0000614 UBERON:0002384 ! used to label connective tissue
 
 [Term]
 id: SIMRO:0005014
@@ -32231,6 +32887,7 @@ def: "PD173074 used by research group." []
 is_a: CHEBI:63448 ! PD173074
 intersection_of: CHEBI:63448 ! PD173074
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+relationship: SIMRO:0000610 NCBITaxon:7955 ! used by Danio rerio
 relationship: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
@@ -32241,6 +32898,7 @@ is_a: OBI:0100046 ! phosphate buffered saline solution
 intersection_of: OBI:0100046 ! phosphate buffered saline solution
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000615 menu:0000001
 
 [Term]
 id: SIMRO:0005016
@@ -32250,6 +32908,7 @@ is_a: SIMRO:0002007 ! zinc formalin fixative
 intersection_of: SIMRO:0002007 ! zinc formalin fixative
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000010 ! used by method formaldehyde fixed tissue
 
 [Term]
 id: SIMRO:0005017
@@ -32259,6 +32918,7 @@ is_a: SIMRO:0002011 ! R110Direct HaloTag Ligand
 intersection_of: SIMRO:0002011 ! R110Direct HaloTag Ligand
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005018
@@ -32268,6 +32928,7 @@ is_a: CHEBI:52718 ! Cy7 dye
 intersection_of: CHEBI:52718 ! Cy7 dye
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005019
@@ -32277,6 +32938,7 @@ is_a: SIMRO:0002012 ! ATTO 488
 intersection_of: SIMRO:0002012 ! ATTO 488
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005020
@@ -32286,6 +32948,7 @@ is_a: EO:0007222
 intersection_of: EO:0007222
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
+relationship: SIMRO:0000612 EFO:0003969 ! used by method
 
 [Term]
 id: SIMRO:0005021
@@ -32295,6 +32958,7 @@ is_a: SIMRO:0002013 ! SNAP-Cell Oregon Green
 intersection_of: SIMRO:0002013 ! SNAP-Cell Oregon Green
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005022
@@ -32304,6 +32968,7 @@ is_a: FBbi:00000443 ! Alexa Fluor 555
 intersection_of: FBbi:00000443 ! Alexa Fluor 555
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005023
@@ -32313,6 +32978,7 @@ is_a: CHEBI:37926 ! fluorescein isothiocyanate
 intersection_of: CHEBI:37926 ! fluorescein isothiocyanate
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005024
@@ -32322,6 +32988,9 @@ is_a: NCIT:C92299 ! Alcian Blue Staining Method
 intersection_of: NCIT:C92299 ! Alcian Blue Staining Method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
+relationship: SIMRO:0000614 NCIT:C16883 ! used to label Mucin
+relationship: SIMRO:0000614 UBERON:0002418 ! used to label cartilage tissue
 
 [Term]
 id: SIMRO:0005025
@@ -32331,6 +33000,7 @@ is_a: CLO:0037317 ! mouse embryonic stem cell line cell
 intersection_of: CLO:0037317 ! mouse embryonic stem cell line cell
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
+relationship: SIMRO:0000612 NCIT:C23010 ! used by method Staining Method
 
 [Term]
 id: SIMRO:0005026
@@ -32339,6 +33009,7 @@ def: "LY-411575 used by research group." []
 is_a: CHEBI:87359 ! LY-411575
 intersection_of: CHEBI:87359 ! LY-411575
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+relationship: SIMRO:0000610 NCBITaxon:7955 ! used by Danio rerio
 relationship: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
@@ -32349,6 +33020,7 @@ is_a: MI:0094 ! protein staining
 intersection_of: MI:0094 ! protein staining
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005028
@@ -32358,6 +33030,8 @@ is_a: FBbi:00000041 ! hematoxylin
 intersection_of: FBbi:00000041 ! hematoxylin
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
+relationship: SIMRO:0000614 UBERON:0005769 ! used to label 上皮基底膜
 
 [Term]
 id: SIMRO:0005029
@@ -32367,6 +33041,7 @@ is_a: SIMRO:0002014 ! CF405M
 intersection_of: SIMRO:0002014 ! CF405M
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005030
@@ -32376,6 +33051,10 @@ is_a: NCIT:C23011 ! Hematoxylin and Eosin Staining Method
 intersection_of: NCIT:C23011 ! Hematoxylin and Eosin Staining Method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 NCIT:C23010 ! used by method Staining Method
+relationship: SIMRO:0000614 CHEBI:3815 ! used to label Collagen
+relationship: SIMRO:0000614 GO:0000785 ! used to label chromatin
+relationship: SIMRO:0000614 UBERON:0002384 ! used to label connective tissue
 
 [Term]
 id: SIMRO:0005031
@@ -32385,6 +33064,7 @@ is_a: CHEBI:27363 ! zinc atom
 intersection_of: CHEBI:27363 ! zinc atom
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00001012 ! used by method fixation method
 
 [Term]
 id: SIMRO:0005032
@@ -32393,6 +33073,7 @@ def: "neomycin used by research group." []
 is_a: CHEBI:7507 ! neomycin
 intersection_of: CHEBI:7507 ! neomycin
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+relationship: SIMRO:0000610 NCBITaxon:7955 ! used by Danio rerio
 relationship: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
@@ -32402,6 +33083,7 @@ def: "SU5402 used by research group." []
 is_a: CHEBI:63449 ! SU5402
 intersection_of: CHEBI:63449 ! SU5402
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+relationship: SIMRO:0000610 NCBITaxon:7955 ! used by Danio rerio
 relationship: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
@@ -32412,6 +33094,10 @@ is_a: SIMRO:0002015 ! skeletal staining method
 intersection_of: SIMRO:0002015 ! skeletal staining method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 NCIT:C23010 ! used by method Staining Method
+relationship: SIMRO:0000614 UBERON:0001434 ! used to label skeletal system
+relationship: SIMRO:0000614 UBERON:0002418 ! used to label cartilage tissue
+relationship: SIMRO:0000614 UBERON:0004288 ! used to label skeleton
 
 [Term]
 id: SIMRO:0005035
@@ -32421,6 +33107,7 @@ is_a: SIMRO:0002016 ! ATTO 647N
 intersection_of: SIMRO:0002016 ! ATTO 647N
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005036
@@ -32430,6 +33117,7 @@ is_a: CHEBI:31624 ! fluorescein
 intersection_of: CHEBI:31624 ! fluorescein
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005037
@@ -32438,6 +33126,7 @@ def: "tyrphostin AG 1478 used by research group." []
 is_a: CHEBI:75404 ! tyrphostin AG 1478
 intersection_of: CHEBI:75404 ! tyrphostin AG 1478
 intersection_of: SIMRO:0000611 SIMRO:0001008 ! used by group research group
+relationship: SIMRO:0000610 NCBITaxon:7955 ! used by Danio rerio
 relationship: SIMRO:0000611 SIMRO:0001008 ! used by group research group
 
 [Term]
@@ -32448,6 +33137,7 @@ is_a: SIMRO:0002017 ! TMRDirect HaloTag Ligand
 intersection_of: SIMRO:0002017 ! TMRDirect HaloTag Ligand
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005039
@@ -32457,6 +33147,7 @@ is_a: SIMRO:0002018 ! ATTO 594
 intersection_of: SIMRO:0002018 ! ATTO 594
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005040
@@ -32466,6 +33157,7 @@ is_a: CHEBI:4477
 intersection_of: CHEBI:4477
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005041
@@ -32475,6 +33167,7 @@ is_a: FBbi:00000037 ! eosin
 intersection_of: FBbi:00000037 ! eosin
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 NCIT:C23010 ! used by method Staining Method
 
 [Term]
 id: SIMRO:0005042
@@ -32484,6 +33177,7 @@ is_a: FBbi:00000453 ! TexasRed
 intersection_of: FBbi:00000453 ! TexasRed
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005043
@@ -32493,6 +33187,7 @@ is_a: SIMRO:0002019 ! ATTO 633
 intersection_of: SIMRO:0002019 ! ATTO 633
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005044
@@ -32502,6 +33197,10 @@ is_a: CHEBI:87358 ! alizarin red S
 intersection_of: CHEBI:87358 ! alizarin red S
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 NCIT:C23010 ! used by method Staining Method
+relationship: SIMRO:0000614 CHEBI:22984 ! used to label calcium atom
+relationship: SIMRO:0000614 UBERON:0001434 ! used to label skeletal system
+relationship: SIMRO:0000614 UBERON:0004288 ! used to label skeleton
 
 [Term]
 id: SIMRO:0005045
@@ -32511,6 +33210,10 @@ is_a: CHEBI:87358 ! alizarin red S
 intersection_of: CHEBI:87358 ! alizarin red S
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
+relationship: SIMRO:0000614 CHEBI:22984 ! used to label calcium atom
+relationship: SIMRO:0000614 UBERON:0001434 ! used to label skeletal system
+relationship: SIMRO:0000614 UBERON:0004288 ! used to label skeleton
 
 [Term]
 id: SIMRO:0005046
@@ -32520,6 +33223,7 @@ is_a: SIMRO:0002020 ! ATTO 647
 intersection_of: SIMRO:0002020 ! ATTO 647
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005047
@@ -32529,6 +33233,7 @@ is_a: SIMRO:0002021 ! Bouin solution
 intersection_of: SIMRO:0002021 ! Bouin solution
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000010 ! used by method formaldehyde fixed tissue
 
 [Term]
 id: SIMRO:0005048
@@ -32547,6 +33252,7 @@ is_a: SIMRO:0002023 ! SNAP-Cell TMR-Star
 intersection_of: SIMRO:0002023 ! SNAP-Cell TMR-Star
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005050
@@ -32556,6 +33262,7 @@ is_a: SIMRO:0002024 ! GFP 11 fragment
 intersection_of: SIMRO:0002024 ! GFP 11 fragment
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005051
@@ -32565,6 +33272,7 @@ is_a: SIMRO:0002025 ! HaloTag
 intersection_of: SIMRO:0002025 ! HaloTag
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005052
@@ -32574,6 +33282,7 @@ is_a: SIMRO:0002026 ! SNAP-tag
 intersection_of: SIMRO:0002026 ! SNAP-tag
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005053
@@ -32583,60 +33292,67 @@ is_a: SIMRO:0002028 ! mCardinalFP
 intersection_of: SIMRO:0002028 ! mCardinalFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005054
-name: widefields
-def: "widefields used by light microscopy group." []
+name: widefield microscope
+def: "widefield microscope used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005055
-name: widefields
-def: "widefields used by light microscopy group." []
+name: widefield microscope
+def: "widefield microscope used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005056
-name: widefields
-def: "widefields used by light microscopy group." []
+name: widefield microscope
+def: "widefield microscope used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005057
-name: widefields
-def: "widefields used by light microscopy group." []
+name: widefield microscope
+def: "widefield microscope used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005058
-name: widefields
-def: "widefields used by light microscopy group." []
+name: widefield microscope
+def: "widefield microscope used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005059
-name: widefields
-def: "widefields used by light microscopy group." []
+name: widefield microscope
+def: "widefield microscope used by light microscopy group." []
 is_a: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0002030 ! widefield microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005060
@@ -32646,6 +33362,7 @@ is_a: ERO:0001946
 intersection_of: ERO:0001946
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005061
@@ -32655,6 +33372,7 @@ is_a: ERO:0001946
 intersection_of: ERO:0001946
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005062
@@ -32664,22 +33382,24 @@ is_a: ERO:0001946
 intersection_of: ERO:0001946
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005063
-name: Zeiss Microbeam (LCM)
-def: "Zeiss Microbeam (LCM) used by light microscopy group." []
+name: laser capture microdissection microscope
+def: "laser capture microdissection microscope used by light microscopy group." []
 is_a: SIMRO:0002041 ! laser capture microdissection microscope
 intersection_of: SIMRO:0002041 ! laser capture microdissection microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005064
 name: Zeiss Microbeam (LCM)
 def: "Zeiss Microbeam (LCM) used by light microscopy group." []
 is_a: SIMRO:0002042 ! Zeiss Microbeam (LCM)
-is_a: SIMRO:0005063 ! Zeiss Microbeam (LCM)
+is_a: SIMRO:0005063 ! laser capture microdissection microscope
 intersection_of: SIMRO:0002042 ! Zeiss Microbeam (LCM)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 
@@ -32691,6 +33411,7 @@ is_a: SIMRO:0002043 ! AiryScan
 intersection_of: SIMRO:0002043 ! AiryScan
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005066
@@ -32700,6 +33421,7 @@ is_a: SIMRO:0002044 ! Deltavision OMX (OMX)
 intersection_of: SIMRO:0002044 ! Deltavision OMX (OMX)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005067
@@ -32709,6 +33431,7 @@ is_a: SIMRO:0002045 ! LSM-700 Falcon (FAL)
 intersection_of: SIMRO:0002045 ! LSM-700 Falcon (FAL)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005068
@@ -32718,6 +33441,7 @@ is_a: SIMRO:0002046 ! LSM-700 Upright (UPR)
 intersection_of: SIMRO:0002046 ! LSM-700 Upright (UPR)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005069
@@ -32727,6 +33451,7 @@ is_a: SIMRO:0002047 ! LSM-710 (710)
 intersection_of: SIMRO:0002047 ! LSM-710 (710)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005070
@@ -32736,6 +33461,7 @@ is_a: SIMRO:0002048 ! LSM-780 DS (780)
 intersection_of: SIMRO:0002048 ! LSM-780 DS (780)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005071
@@ -32745,6 +33471,7 @@ is_a: SIMRO:0002049 ! SP8 STED (SP8)
 intersection_of: SIMRO:0002049 ! SP8 STED (SP8)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005072
@@ -32754,6 +33481,7 @@ is_a: SIMRO:0002050 ! Nikon 3PO (3PO)
 intersection_of: SIMRO:0002050 ! Nikon 3PO (3PO)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005073
@@ -32763,6 +33491,7 @@ is_a: SIMRO:0002051 ! PE Ultraview (ULT)
 intersection_of: SIMRO:0002051 ! PE Ultraview (ULT)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000031 ! used by method visualization method
 
 [Term]
 id: SIMRO:0005074
@@ -32772,6 +33501,7 @@ is_a: SIMRO:0002053 ! SPIM microscope
 intersection_of: SIMRO:0002053 ! SPIM microscope
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 FBbi:00000369 ! used by method SPIM
 
 [Term]
 id: SIMRO:0005075
@@ -32781,6 +33511,7 @@ is_a: MI:0229
 intersection_of: MI:0229
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 MI:0416 ! used by method fluorescence microscopy
 
 [Term]
 id: SIMRO:0005076
@@ -32790,6 +33521,7 @@ is_a: SIMRO:0002057 ! webcam (WEB)
 intersection_of: SIMRO:0002057 ! webcam (WEB)
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 SIMRO:0002055 ! used by method microscopy image capture
 
 [Term]
 id: SIMRO:0005077
@@ -32799,6 +33531,7 @@ is_a: CHEBI:51232 ! 2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzim
 intersection_of: CHEBI:51232 ! 2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005078
@@ -32808,6 +33541,7 @@ is_a: SIMRO:0002070 ! ATTO 565
 intersection_of: SIMRO:0002070 ! ATTO 565
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005079
@@ -32817,6 +33551,7 @@ is_a: CHEBI:51756 ! Alexa Fluor 532
 intersection_of: CHEBI:51756 ! Alexa Fluor 532
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005080
@@ -32826,6 +33561,7 @@ is_a: CHEBI:51760 ! Alexa Fluor 546
 intersection_of: CHEBI:51760 ! Alexa Fluor 546
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005081
@@ -32835,6 +33571,7 @@ is_a: CHEBI:51766 ! Alexa Fluor 568
 intersection_of: CHEBI:51766 ! Alexa Fluor 568
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005082
@@ -32844,6 +33581,7 @@ is_a: FBbi:00000444 ! Alexa Fluor 594
 intersection_of: FBbi:00000444 ! Alexa Fluor 594
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005083
@@ -32853,6 +33591,7 @@ is_a: FBbi:00000445 ! Alexa Fluor 610
 intersection_of: FBbi:00000445 ! Alexa Fluor 610
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005084
@@ -32862,6 +33601,7 @@ is_a: CHEBI:137393 ! Alexa Fluor 633
 intersection_of: CHEBI:137393 ! Alexa Fluor 633
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005085
@@ -32871,6 +33611,7 @@ is_a: CHEBI:137394 ! Alexa Fluor 647
 intersection_of: CHEBI:137394 ! Alexa Fluor 647
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005086
@@ -32880,6 +33621,7 @@ is_a: CHEBI:51886 ! BODIPY FL
 intersection_of: CHEBI:51886 ! BODIPY FL
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005087
@@ -32889,6 +33631,7 @@ is_a: CHEBI:37987 ! Cy3 dye
 intersection_of: CHEBI:37987 ! Cy3 dye
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005088
@@ -32898,6 +33641,7 @@ is_a: CHEBI:37989 ! Cy5 dye
 intersection_of: CHEBI:37989 ! Cy5 dye
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005089
@@ -32916,6 +33660,7 @@ is_a: CHEBI:52078 ! FM 4-64 dye
 intersection_of: CHEBI:52078 ! FM 4-64 dye
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005091
@@ -32925,6 +33670,7 @@ is_a: CHEBI:52104 ! lucifer yellow dye
 intersection_of: CHEBI:52104 ! lucifer yellow dye
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005092
@@ -32934,6 +33680,7 @@ is_a: CHEBI:52156 ! mitoTracker Red
 intersection_of: CHEBI:52156 ! mitoTracker Red
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005093
@@ -32943,6 +33690,7 @@ is_a: CHEBI:52315 ! rhodamine 110
 intersection_of: CHEBI:52315 ! rhodamine 110
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005094
@@ -32952,6 +33700,7 @@ is_a: FBbi:00000474 ! CitrineFP
 intersection_of: FBbi:00000474 ! CitrineFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005095
@@ -32961,6 +33710,7 @@ is_a: CHEBI:51231 ! DAPI
 intersection_of: CHEBI:51231 ! DAPI
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005096
@@ -32970,6 +33720,7 @@ is_a: FBbi:00000549 ! Dendra2FP
 intersection_of: FBbi:00000549 ! Dendra2FP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005097
@@ -32979,6 +33730,7 @@ is_a: FBbi:00000115 ! DiI
 intersection_of: FBbi:00000115 ! DiI
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005098
@@ -32988,6 +33740,7 @@ is_a: FBbi:00000116 ! DiO
 intersection_of: FBbi:00000116 ! DiO
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005099
@@ -32997,6 +33750,7 @@ is_a: FBbi:00000085 ! DsRed
 intersection_of: FBbi:00000085 ! DsRed
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005100
@@ -33006,6 +33760,7 @@ is_a: FBbi:00000081 ! ECFP
 intersection_of: FBbi:00000081 ! ECFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005101
@@ -33015,6 +33770,7 @@ is_a: FBbi:00000082 ! EGFP
 intersection_of: FBbi:00000082 ! EGFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005102
@@ -33024,6 +33780,7 @@ is_a: FBbi:00000084 ! EYFP
 intersection_of: FBbi:00000084 ! EYFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005103
@@ -33033,6 +33790,7 @@ is_a: CHEBI:37926 ! fluorescein isothiocyanate
 intersection_of: CHEBI:37926 ! fluorescein isothiocyanate
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005104
@@ -33042,6 +33800,7 @@ is_a: CHEBI:51103 ! Fluo-4
 intersection_of: CHEBI:51103 ! Fluo-4
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005105
@@ -33051,6 +33810,7 @@ is_a: FBbi:00000545 ! PA-CFP
 intersection_of: FBbi:00000545 ! PA-CFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005106
@@ -33060,6 +33820,7 @@ is_a: FBbi:00000544 ! PA-GFP
 intersection_of: FBbi:00000544 ! PA-GFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005107
@@ -33069,6 +33830,7 @@ is_a: FBbi:00000472 ! SuperfolderFP
 intersection_of: FBbi:00000472 ! SuperfolderFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005108
@@ -33078,6 +33840,7 @@ is_a: FBbi:00000473 ! T-SapphireFP
 intersection_of: FBbi:00000473 ! T-SapphireFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005109
@@ -33087,6 +33850,7 @@ is_a: CHEBI:52336 ! tetramethylrhodamine thiocyanate
 intersection_of: CHEBI:52336 ! tetramethylrhodamine thiocyanate
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005110
@@ -33096,6 +33860,7 @@ is_a: FBbi:00000517 ! TagRFP-T
 intersection_of: FBbi:00000517 ! TagRFP-T
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005111
@@ -33105,6 +33870,7 @@ is_a: FBbi:00000477 ! VenusFP
 intersection_of: FBbi:00000477 ! VenusFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005112
@@ -33114,6 +33880,7 @@ is_a: CHEBI:31624 ! fluorescein
 intersection_of: CHEBI:31624 ! fluorescein
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005113
@@ -33123,6 +33890,7 @@ is_a: FBbi:00000524 ! mAppleFP
 intersection_of: FBbi:00000524 ! mAppleFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005114
@@ -33132,6 +33900,7 @@ is_a: FBbi:00000525 ! mCherryFP
 intersection_of: FBbi:00000525 ! mCherryFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005115
@@ -33141,6 +33910,7 @@ is_a: FBbi:00000552 ! mEOS2FP
 intersection_of: FBbi:00000552 ! mEOS2FP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005116
@@ -33150,6 +33920,7 @@ is_a: SIMRO:0002029 ! mEOS3.1FP
 intersection_of: SIMRO:0002029 ! mEOS3.1FP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005117
@@ -33159,6 +33930,7 @@ is_a: FBbi:00000495 ! mKate2FP
 intersection_of: FBbi:00000495 ! mKate2FP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005118
@@ -33168,6 +33940,7 @@ is_a: FBbi:00000494 ! mKateFP
 intersection_of: FBbi:00000494 ! mKateFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005119
@@ -33177,6 +33950,7 @@ is_a: FBbi:00000553 ! mKikGR
 intersection_of: FBbi:00000553 ! mKikGR
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005120
@@ -33186,6 +33960,7 @@ is_a: FBbi:00000514 ! mOrangeFP
 intersection_of: FBbi:00000514 ! mOrangeFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005121
@@ -33195,6 +33970,7 @@ is_a: FBbi:00000529 ! mStrawberryFP
 intersection_of: FBbi:00000529 ! mStrawberryFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005122
@@ -33204,6 +33980,7 @@ is_a: FBbi:00000486 ! mTagBFP
 intersection_of: FBbi:00000486 ! mTagBFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005123
@@ -33213,6 +33990,7 @@ is_a: SIMRO:0002058 ! mTurquoise2
 intersection_of: SIMRO:0002058 ! mTurquoise2
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005124
@@ -33222,6 +34000,7 @@ is_a: FBbi:00000518 ! tdTomatoFP
 intersection_of: FBbi:00000518 ! tdTomatoFP
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005125
@@ -33231,6 +34010,7 @@ is_a: FBbi:00000555 ! wtKIikGR
 intersection_of: FBbi:00000555 ! wtKIikGR
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005126
@@ -33240,6 +34020,7 @@ is_a: FBbi:00000584 ! X-Rhodamine
 intersection_of: FBbi:00000584 ! X-Rhodamine
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005127
@@ -33249,6 +34030,7 @@ is_a: FBbi:00000478 ! yPet
 intersection_of: FBbi:00000478 ! yPet
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005128
@@ -33258,6 +34040,7 @@ is_a: SIMRO:0002059 ! 100% ethanol
 intersection_of: SIMRO:0002059 ! 100% ethanol
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000006 ! used by method ethanol fixed tissue
 
 [Term]
 id: SIMRO:0005129
@@ -33276,6 +34059,7 @@ is_a: SIMRO:0002061 ! 30% ethanol
 intersection_of: SIMRO:0002061 ! 30% ethanol
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000006 ! used by method ethanol fixed tissue
 
 [Term]
 id: SIMRO:0005131
@@ -33294,6 +34078,7 @@ is_a: SIMRO:0002063 ! 4% paraformaldehyde solution
 intersection_of: SIMRO:0002063 ! 4% paraformaldehyde solution
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005133
@@ -33303,6 +34088,8 @@ is_a: SIMRO:0002064 ! 70% ethanol
 intersection_of: SIMRO:0002064 ! 70% ethanol
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
+relationship: SIMRO:00006xx FBbi:00000010 ! formaldehyde fixed tissue
 
 [Term]
 id: SIMRO:0005134
@@ -33312,6 +34099,8 @@ is_a: FBbi:00000158 ! acid phosphatase
 intersection_of: FBbi:00000158 ! acid phosphatase
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
+relationship: SIMRO:00006xx FBbi:00000006 ! ethanol fixed tissue
 
 [Term]
 id: SIMRO:0005135
@@ -33330,6 +34119,7 @@ is_a: FBbi:00000013 ! cryofixed tissue
 intersection_of: FBbi:00000013 ! cryofixed tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005137
@@ -33339,6 +34129,7 @@ is_a: FBbi:00000006 ! ethanol fixed tissue
 intersection_of: FBbi:00000006 ! ethanol fixed tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005138
@@ -33348,6 +34139,7 @@ is_a: SIMRO:0002066 ! fixed frozen tissue
 intersection_of: SIMRO:0002066 ! fixed frozen tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005139
@@ -33357,6 +34149,7 @@ is_a: FBbi:00000010 ! formaldehyde fixed tissue
 intersection_of: FBbi:00000010 ! formaldehyde fixed tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005140
@@ -33375,6 +34168,7 @@ is_a: FBbi:00000011 ! glutaraldehyde fixed tissue
 intersection_of: FBbi:00000011 ! glutaraldehyde fixed tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005142
@@ -33393,6 +34187,7 @@ is_a: FBbi:00000007 ! methanol fixed tissue
 intersection_of: FBbi:00000007 ! methanol fixed tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005144
@@ -33402,6 +34197,7 @@ is_a: FBbi:00000042 ! methyl green
 intersection_of: FBbi:00000042 ! methyl green
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 NCIT:C23010 ! used by method Staining Method
 
 [Term]
 id: SIMRO:0005145
@@ -33411,6 +34207,7 @@ is_a: FBbi:00000045 ! nuclear fast red
 intersection_of: FBbi:00000045 ! nuclear fast red
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 NCIT:C23010 ! used by method Staining Method
 
 [Term]
 id: SIMRO:0005146
@@ -33420,6 +34217,7 @@ is_a: SIMRO:0002067 ! slide mounted tissue
 intersection_of: SIMRO:0002067 ! slide mounted tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005147
@@ -33447,6 +34245,7 @@ is_a: FBbi:00000020 ! tissue in paraffin embedment
 intersection_of: FBbi:00000020 ! tissue in paraffin embedment
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005150
@@ -33456,6 +34255,7 @@ is_a: FBbi:00000016 ! tissue in plastic embedment
 intersection_of: FBbi:00000016 ! tissue in plastic embedment
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005151
@@ -33465,6 +34265,7 @@ is_a: NCIT:C92302 ! Toluidine Blue Staining Method
 intersection_of: NCIT:C92302 ! Toluidine Blue Staining Method
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 NCIT:C23010 ! used by method Staining Method
 
 [Term]
 id: SIMRO:0005152
@@ -33474,6 +34275,7 @@ is_a: FBbi:00000049 ! toluidine blue
 intersection_of: FBbi:00000049 ! toluidine blue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 NCIT:C92302 ! used by method Toluidine Blue Staining Method
 
 [Term]
 id: SIMRO:0005153
@@ -33483,6 +34285,7 @@ is_a: FBbi:00000030 ! vibratome-sectioned tissue
 intersection_of: FBbi:00000030 ! vibratome-sectioned tissue
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005154
@@ -33492,6 +34295,7 @@ is_a: CHEBI:51231 ! DAPI
 intersection_of: CHEBI:51231 ! DAPI
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 EFO:0003813 ! used by method nucleic acid labeling protocol
 
 [Term]
 id: SIMRO:0005155
@@ -33501,6 +34305,7 @@ is_a: CHEBI:52299 ! ToTo-3
 intersection_of: CHEBI:52299 ! ToTo-3
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 EFO:0003813 ! used by method nucleic acid labeling protocol
 
 [Term]
 id: SIMRO:0005156
@@ -33510,6 +34315,7 @@ is_a: FBbi:00000077 ! beta-galactosidase
 intersection_of: FBbi:00000077 ! beta-galactosidase
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 SIMRO:0002010 ! used by method slide staining
 
 [Term]
 id: SIMRO:0005157
@@ -33519,6 +34325,7 @@ is_a: SIMRO:0002069 ! whole mounted organism
 intersection_of: SIMRO:0002069 ! whole mounted organism
 intersection_of: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
 relationship: SIMRO:0000611 SIMRO:0001004 ! used by group histology group
+relationship: SIMRO:0000612 FBbi:00000001 ! used by method sample preparation method
 
 [Term]
 id: SIMRO:0005158
@@ -33573,6 +34380,7 @@ is_a: GO:0016246 ! RNA interference
 intersection_of: GO:0016246 ! RNA interference
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
+relationship: SIMRO:0000612 EFO:0003969 ! used by method
 
 [Term]
 id: SIMRO:0005164
@@ -33594,8 +34402,8 @@ relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 
 [Term]
 id: SIMRO:0005166
-name: 293T
-def: "293T used by proteomic group." []
+name: HEK-293T cell
+def: "HEK-293T cell used by proteomic group." []
 is_a: SIMRO:0002082 ! HEK-293T cell
 intersection_of: SIMRO:0002082 ! HEK-293T cell
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
@@ -33648,8 +34456,8 @@ relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 
 [Term]
 id: SIMRO:0005172
-name: K562
-def: "K562 used by proteomic group." []
+name: K562 cell
+def: "K562 cell used by proteomic group." []
 is_a: SIMRO:0002081 ! K562 cell
 intersection_of: SIMRO:0002081 ! K562 cell
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
@@ -33681,15 +34489,17 @@ is_a: GO:0099048 ! CRISPR-cas system
 intersection_of: GO:0099048 ! CRISPR-cas system
 intersection_of: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
 relationship: SIMRO:0000611 SIMRO:0001007 ! used by group proteomic group
+relationship: SIMRO:0000612 EFO:0003969 ! used by method
 
 [Term]
 id: SIMRO:0005176
 name: DAPI
-def: "DAPI used by cytometry group." []
+def: "DAPI used by light microscopy group." []
 is_a: CHEBI:51231 ! DAPI
 intersection_of: CHEBI:51231 ! DAPI
 intersection_of: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
 relationship: SIMRO:0000611 SIMRO:0001005 ! used by group light microscopy group
+relationship: SIMRO:0000612 EFO:0000562 ! used by method labelling
 
 [Term]
 id: SIMRO:0005177
@@ -37284,8 +38094,8 @@ def: "Non-material anatomical entity of three dimensions, that is generated by m
 def: "Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures." [http://orcid.org/0000-0001-9114-8737]
 def: "三维非物质解剖学实体，由形态发生或其他生理过程产生；被一个或多个解剖结构包围；包含一种或多种有机体物质或解剖结构。" []
 subset: upper_level
-synonym: "anatomical spaces" RELATED PLURAL [ZFA:0001643]
 synonym: "anatomical spaces" RELATED []
+synonym: "anatomical spaces" RELATED PLURAL [ZFA:0001643]
 synonym: "lumen" BROAD []
 synonym: "lumen space" EXACT []
 synonym: "space" BROAD []
@@ -57804,6 +58614,7 @@ subset: pheno_slim
 synonym: "thoracic cavity organ" EXACT [MA:0000557]
 xref: EMAPA:37273 {source="MA:th"}
 xref: MA:0000557
+is_a: UBERON:0002075 ! viscus
 is_a: UBERON:0005181 ! thoracic segment organ
 intersection_of: UBERON:0000062 ! organ
 intersection_of: located_in UBERON:0002224 ! thoracic cavity
@@ -66144,8 +66955,8 @@ id: UBERON:0013701
 name: main body axis
 name: 主体轴
 namespace: uberon
-def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." [https://orcid.org/0000-0002-6601-2165]
 def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." []
+def: "A principle subdivision of an organism that includes all structures along the primary axis, typically the anterior-posterior axis, from head to tail, including structures of the body proper where present (for example, ribs), but excluding appendages." [https://orcid.org/0000-0002-6601-2165]
 def: "一个生物体的一种主要细分，包括沿主轴的所有结构，通常是前后轴，从头到尾，包括身体本身（例如肋骨）的结构，但不包括附肢。" []
 subset: non_informative
 is_a: UBERON:0000475 ! organism subdivision
@@ -69510,6 +70321,15 @@ id: EFO:0000784
 name: has_disease_location
 
 [Typedef]
+id: FBbi:00000346
+name: makes_use_of
+namespace: image
+def: "The child is an essential component of the parent device, or plays an essential role in performance of the parent function." []
+is_transitive: true
+created_by: jm
+creation_date: 2010-03-09T09:32:04Z
+
+[Typedef]
 id: HANCESTRO:0301
 name: hasAncestryStatus
 
@@ -69536,6 +70356,32 @@ property_value: example_of_usage "A person's name denotes the person. A variable
 property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan" xsd:string
 is_a: IAO:0000136 ! is about
+
+[Typedef]
+id: NCIT:R49
+name: Gene_Product_Expressed_In_Tissue
+def: "A role used to specify that a normal tissue is the normal location for the expression of a gene product. The domain and range for this role are 'Gene Product' and 'Anatomic Structure, System, or Substance', respectively." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Gene_Product_Expressed_In_Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+property_value: NCIT:NHC0 "R49" xsd:string
+property_value: NCIT:P106 "Conceptual Entity" xsd:string
+property_value: NCIT:P107 "Expressed In Tissue" xsd:string
+property_value: NCIT:P108 "Gene_Product_Expressed_In_Tissue" xsd:string
+property_value: NCIT:P98 "This information is often useful to researchers. However, we no longer curate this information and now favor linking out to externally curated databases. Source database for the link has yet to be decided." xsd:string
+domain: NCIT:C26548 ! Gene Product
+range: NCIT:C12219 ! Anatomic Structure, System, or Substance
+
+[Typedef]
+id: NCIT:R82
+name: Anatomic_Structure_Is_Physical_Part_Of
+def: "A role used to indicate that an anatomic structure has a physical association with a broader system or organ. Both the domain and range for this role are 'Anatomic Structure, System, or Substance'." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Anatomic_Structure_Is_Physical_Part_Of" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+property_value: NCIT:NHC0 "R82" xsd:string
+property_value: NCIT:P106 "Conceptual Entity" xsd:string
+property_value: NCIT:P107 "Is Physical Part Of" xsd:string
+property_value: NCIT:P108 "Anatomic_Structure_Is_Physical_Part_Of" xsd:string
+domain: NCIT:C12219 ! Anatomic Structure, System, or Substance
+range: NCIT:C12219 ! Anatomic Structure, System, or Substance
+is_transitive: true
 
 [Typedef]
 id: OBI:0000293
@@ -69863,7 +70709,7 @@ is_transitive: true
 [Typedef]
 id: RO:0000301
 name: upstream in neural circuit with
-def: "A relation that holds between a neuron that is synapsed_to another neuron or a neuron that is connected indirectly to another by a chain of neurons, each synapsed_to the next." []
+def: "A relation that holds between a neuron that is synapsed_to another neuron or a neuron that is connected indirectly to another by a chain of neurons, each synapsed_to the next, in which the direction is from the last to the first." []
 property_value: http://purl.org/spar/cito/citesAsAuthority http://www.ncbi.nlm.nih.gov/pubmed/22402613
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
@@ -69875,7 +70721,7 @@ is_a: RO:0000300 ! in neural circuit with
 [Typedef]
 id: RO:0000302
 name: downstream in neural circuit with
-def: "A relation that holds between a neuron that is synapsed_to another neuron or a neuron that is connected indirectly to another by a chain of neurons, each synapsed_to the next." []
+def: "A relation that holds between a neuron that is synapsed_to another neuron or a neuron that is connected indirectly to another by a chain of neurons, each synapsed_to the next, in which the direction is from the first to the last." []
 property_value: http://purl.org/spar/cito/citesAsAuthority http://www.ncbi.nlm.nih.gov/pubmed/22402613
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
@@ -70390,11 +71236,15 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 [Typedef]
 id: RO:0002217
 name: actively participates in
+name: obsolete actively participates in
+def: "OBSOLETE x actively participates in y if and only if x participates in y and x realizes some active role" []
 def: "x actively participates in y if and only if x participates in y and x realizes some active role" []
+comment: Obsoleted as the inverse property was obsoleted.
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "agent in" xsd:string
 is_a: RO:0000056 ! participates in
 inverse_of: RO:0002218 ! obsolete has active participant
+is_obsolete: true
 
 [Typedef]
 id: RO:0002218
@@ -70676,7 +71526,8 @@ property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
 property_value: seeAlso Involved:in
 holds_over_chain: RO:0002327 part_of
-is_a: RO:0002217 ! actively participates in
+is_a: RO:0000056 ! participates in
+is_a: RO:0002217 ! obsolete actively participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
 transitive_over: part_of ! part_of
 
@@ -70929,29 +71780,47 @@ is_a: RO:0002436 ! molecularly interacts with
 [Typedef]
 id: RO:0002448
 name: activity directly regulates activity of
+name: directly regulates activity of
 def: "Holds between molecular entities A and B where A can physically interact with B and in doing so regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A regulates the kinase activity of B." []
+def: "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B." []
 synonym: "molecularly controls" EXACT []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
 is_a: RO:0002436 ! molecularly interacts with
 is_a: RO:0002566 ! causally influences
+is_a: RO:0011002 ! regulates activity of
 
 [Typedef]
 id: RO:0002449
 name: activity directly negatively regulates activity of
+name: directly negatively regulates activity of
 def: "Holds between molecular entities A and B where A can physically interact with B and in doing so negatively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
+def: "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
 synonym: "molecularly decreases activity of" EXACT []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
+property_value: IAO:0000118 "directly inhibits" xsd:string
 property_value: IAO:0000118 "inhibits" xsd:string
-is_a: RO:0002448 ! activity directly regulates activity of
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002448 ! directly regulates activity of
 
 [Typedef]
 id: RO:0002450
 name: activity directly positively regulates activity of
+name: directly positively regulates activity of
 def: "Holds between molecular entities A and B where A can physically interact with B and in doing so positively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
+def: "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
 synonym: "molecularly increases activity of" EXACT []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
 property_value: IAO:0000118 "activates" xsd:string
-is_a: RO:0002448 ! activity directly regulates activity of
+property_value: IAO:0000118 "directly activates" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002448 ! directly regulates activity of
 
 [Typedef]
 id: RO:0002464
@@ -70977,10 +71846,10 @@ is_a: RO:0002564 ! molecular interaction relation helper property
 
 [Typedef]
 id: RO:0002487
-name: relation between structure and stage
+name: relation between physical entity and a process or stage
 property_value: curator_notes "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, typically connecting an anatomical entity to a biological process or developmental stage." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-domain: BFO:0000002 ! continuant
+domain: BFO:0000004 ! 独立常体
 range: BFO:0000003 ! occurrent
 
 [Typedef]
@@ -70989,7 +71858,7 @@ name: existence overlaps
 def: "x existence overlaps y if and only if either (a) the start of x is part of y or (b) the end of x is part of y. Formally: x existence starts and ends during y iff (α(x) >= α(y) & α(x) <= ω(y)) OR (ω(x) <= ω(y) & ω(x) >= α(y))" []
 comment: The relations here were created based on work originally by Fabian Neuhaus and David Osumi-Sutherland. The work has not yet been vetted and errors in definitions may have occurred during transcription.
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002487 ! relation between structure and stage
+is_a: RO:0002487 ! relation between physical entity and a process or stage
 
 [Typedef]
 id: RO:0002500
@@ -71020,12 +71889,15 @@ property_value: seeAlso BFO:0000169
 
 [Typedef]
 id: RO:0002506
+name: causal relation between entities
 name: causal relation between material entities
 property_value: curator_notes "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 property_value: editor_note "The intent is that the process branch of the causal property hierarchy is primary (causal relations hold between occurrents/processes), and that the material branch is defined in terms of the process branch" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+domain: BFO:0000002 ! continuant
 domain: BFO:0000040 ! material entity
+range: BFO:0000002 ! continuant
 range: BFO:0000040 ! material entity
 is_a: RO:0002410 ! causally related to
 
@@ -71042,6 +71914,7 @@ id: RO:0002559
 name: causally influenced by
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "causally influenced by (entity-centric)" xsd:string
 property_value: IAO:0000589 "causally influenced by (material entity to material entity)" xsd:string
 is_a: RO:0002506 ! causal relation between material entities
 inverse_of: RO:0002566 ! causally influences
@@ -71064,9 +71937,14 @@ is_a: RO:0002563 ! interaction relation helper property
 id: RO:0002566
 name: causally influences
 def: "Holds between materal entities a and b if the activity of a is causally upstream of the activity of b, or causally upstream of a an activity that modifies b" []
+def: "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size)." []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "causally influences (entity-centric)" xsd:string
 property_value: IAO:0000589 "causally influences (material entity to material entity)" xsd:string
+domain: BFO:0000002 ! continuant
+range: BFO:0000002 ! continuant
 is_a: RO:0002506 ! causal relation between material entities
 
 [Typedef]
@@ -71314,6 +72192,15 @@ range: BFO:0000031 ! 普遍依赖性常体
 holds_over_chain: RO:0000059 bearer_of
 
 [Typedef]
+id: RO:0011002
+name: regulates activity of
+def: "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B." []
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002566 ! causally influences
+
+[Typedef]
 id: RO:0040036
 name: has anatomical participant
 def: "p has anatomical participant c iff p has participant c, and c is an anatomical entity" []
@@ -71531,7 +72418,6 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
 domain: BFO:0000004 ! 独立常体
 range: BFO:0000015 ! 过程
-holds_over_chain: RO:0002214 RO:0002217
 is_a: capable_of_part_of ! capable of part of
 is_a: functionally_related_to ! functionally related to
 expand_expression_to: "RO_0000053 some (RO_0000054 only ?Y)" []
@@ -72104,7 +72990,7 @@ xref: RO:0002497
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 holds_over_chain: part_of existence_ends_during_or_before
 holds_over_chain: RO:0002286 existence_ends_during_or_before
-is_a: RO:0002487 ! relation between structure and stage
+is_a: RO:0002487 ! relation between physical entity and a process or stage
 transitive_over: part_of ! part_of
 transitive_over: precedes ! precedes
 transitive_over: simultaneous_with ! simultaneous with
@@ -72154,7 +73040,7 @@ xref: RO:0002496
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 holds_over_chain: developmentally_preceded_by existence_starts_during_or_after
 holds_over_chain: part_of existence_starts_during_or_after
-is_a: RO:0002487 ! relation between structure and stage
+is_a: RO:0002487 ! relation between physical entity and a process or stage
 transitive_over: part_of ! part_of
 transitive_over: preceded_by ! preceded_by
 transitive_over: simultaneous_with ! simultaneous with
@@ -72705,7 +73591,6 @@ holds_over_chain: produces in_taxon
 holds_over_chain: results_in_developmental_progression_of in_taxon
 holds_over_chain: RO:0002206 in_taxon
 holds_over_chain: RO:0002214 in_taxon
-holds_over_chain: RO:0002217 in_taxon
 holds_over_chain: supplies in_taxon
 is_a: RO:0002320 ! evolutionarily related to
 
@@ -72849,6 +73734,7 @@ property_value: RO:0001900 RO:0001901
 domain: BFO:0000004 {http://purl.obolibrary.org/obo/IAO_0000116="This is redundant with the more specific 'independent and not spatial region' constraint. We leave in the redundant axiom for use with reasoners that do not use negation."} ! 独立常体
 range: BFO:0000004 {http://purl.obolibrary.org/obo/IAO_0000116="This is redundant with the more specific 'independent and not spatial region' constraint. We leave in the redundant axiom for use with reasoners that do not use negation."} ! 独立常体
 is_transitive: true
+transitive_over: part_of ! part_of
 
 [Typedef]
 id: location_of
@@ -72923,7 +73809,6 @@ inverse_of: RO:0002335 ! negatively regulated by
 id: never_in_taxon
 name: never in taxon
 name: never_in_taxon
-namespace: external
 namespace: uberon
 def: "S never_in_taxon T iff: S SubClassOf in_taxon only not T" [http://www.ncbi.nlm.nih.gov/pubmed/20973947]
 def: "x never in taxon T if and only if T is a class, and x does not instantiate the class expression \"in taxon some T\". Note that this is a shortcut relation, and should be used as a hasValue restriction in OWL." []
@@ -72935,7 +73820,6 @@ property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20973947
 property_value: seeAlso https://github.com/obophenotype/uberon/wiki/Taxon-constraints
 expand_assertion_to: "?X DisjointWith RO_0002162 some ?Y " []
 expand_assertion_to: "Class: <http://www.w3.org/2002/07/owl#Nothing> EquivalentTo: ?X and (RO_0002162 some ?Y)" []
-expand_assertion_to: "Class: ?X DisjointWith: RO_0002162 some ?Y" []
 is_metadata_tag: true
 is_class_level: true
 

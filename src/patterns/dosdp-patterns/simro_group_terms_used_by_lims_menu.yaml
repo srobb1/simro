@@ -1,0 +1,20 @@
+pattern_name: simro_group_terms_used_by_group.yaml
+pattern_iri: https://tbd
+description: "adding ObjectProperty:used_by_lims_menu to simro_group terms"
+
+contributors:
+  - https://orcid.org/0000-0002-3528-5267
+
+relations:
+  used by lims menu: SIMRO:0000615
+
+classes:
+  used_by_lims_menu: owl:Thing
+
+vars:
+  used_by_lims_menu: "'used_by_lims_menu'"
+
+subClassOf:
+    text: "'used by lims menu' some  %s"
+    vars:
+      - used_by_lims_menu

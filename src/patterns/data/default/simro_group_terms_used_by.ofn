@@ -1,0 +1,44 @@
+Prefix(:=<urn:unnamed:ontology#ont1#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont1>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7955>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005037>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_0000610>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005014> (<http://purl.obolibrary.org/obo/SIMRO_0005014>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005026> (<http://purl.obolibrary.org/obo/SIMRO_0005026>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005032> (<http://purl.obolibrary.org/obo/SIMRO_0005032>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005033> (<http://purl.obolibrary.org/obo/SIMRO_0005033>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
+
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005037> (<http://purl.obolibrary.org/obo/SIMRO_0005037>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
+
+
+)

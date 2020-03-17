@@ -1,0 +1,18 @@
+defined_class	defined_class_label	used_to_label	used_to_label_label
+SIMRO:0005008	von Kossa staining Method	CHEBI:22984	calcium
+SIMRO:0005013	Masson Trichrome Staining Method	UBERON:0002384	connective tissue
+SIMRO:0005024	Alcian Blue Staining Method	UBERON:0002418	cartilage tissue
+SIMRO:0005024	Alcian Blue Staining Method	NCIT:C16883	Mucin
+SIMRO:0005028	hematoxylin	UBERON:0005769	basement membrane of epithelium
+SIMRO:0005030	Hematoxylin and Eosin Staining Method	CHEBI:3815	Collagen
+SIMRO:0005030	Hematoxylin and Eosin Staining Method	GO:0000785	chromatin
+SIMRO:0005030	Hematoxylin and Eosin Staining Method	UBERON:0002384	connective tissue
+SIMRO:0005034	skeletal staining method	UBERON:0002418	cartilage tissue
+SIMRO:0005034	skeletal staining method	UBERON:0001434	skeletal system
+SIMRO:0005034	skeletal staining method	UBERON:0004288	skeleton
+SIMRO:0005044	alizarin red S	UBERON:0001434	skeletal system
+SIMRO:0005044	alizarin red S	UBERON:0004288	skeleton
+SIMRO:0005044	alizarin red S	CHEBI:22984	calcium
+SIMRO:0005045	alizarin red S	UBERON:0004288	skeleton
+SIMRO:0005045	alizarin red S	CHEBI:22984	calcium
+SIMRO:0005045	alizarin red S	UBERON:0001434	skeletal system

@@ -1,0 +1,20 @@
+pattern_name: simro_to_generate_terms_used_by_to_generate.yaml
+pattern_iri: https://tbd
+description: "adding ObjectProperty:used_to_generate to simro_group terms"
+
+contributors:
+  - https://orcid.org/0000-0002-3528-5267
+
+relations:
+  used to generate: SIMRO:00006xx
+
+classes:
+  used_to_generate: SIMRO:0001000
+
+vars:
+  used_to_generate: "'used_to_generate'"
+
+subClassOf:
+    text: "'used to generate' some  %s"
+    vars:
+      - used_to_generate

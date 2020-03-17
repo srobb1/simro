@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:fbbi="http://purl.obolibrary.org/obo/fbbi#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
@@ -15,7 +16,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/simro/imports/fbbi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-02-13/imports/fbbi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/simro/releases/2020-03-17/imports/fbbi_import.owl"/>
     </owl:Ontology>
     
 
@@ -164,6 +165,14 @@
     <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbbi#PhenoImageShare_ImagingMethod -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbbi#PhenoImageShare_ImagingMethod">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -420,6 +429,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:comment>Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">contains process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000346 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/FBbi_00000346">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115>The child is an essential component of the parent device, or plays an essential role in performance of the parent function.</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T09:32:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000346</oboInOwl:id>
+        <rdfs:label>makes_use_of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2570,6 +2593,63 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_root_00000000"/>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000222</oboInOwl:id>
+        <rdfs:label>imaging method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000265"/>
+        <obo:IAO_0000115>methods for forming images of objects too small to be observed with the unaided eye</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000241</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbi#PhenoImageShare_ImagingMethod"/>
+        <rdfs:label>microscopy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000246 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000246">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000345"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000346"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000316"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000346"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000341"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000345"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000346"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000316"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000246</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbi#PhenoImageShare_ImagingMethod"/>
+        <rdfs:label>fluorescence microscopy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FBbi_00000263 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000263">
@@ -2580,6 +2660,89 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbi:00000263</oboInOwl:id>
         <rdfs:label>solvent permeabilized</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000222"/>
+        <obo:IAO_0000115>methods and devices used for capturing an image of a real object; distinct from images created by artwork</obo:IAO_0000115>
+        <obo:IAO_0000589>image recording method</obo:IAO_0000589>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T09:57:38Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>photograph</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000265</oboInOwl:id>
+        <rdfs:label>recorded image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000268 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_root_00000000"/>
+        <obo:IAO_0000115>sources and methods for illumination</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T10:38:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000268</oboInOwl:id>
+        <rdfs:label>illumination method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_root_00000000"/>
+        <obo:IAO_0000115>The physical property of the specimen that leads to the modifications of the illumination that are recorded in the image.</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T10:38:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000270</oboInOwl:id>
+        <rdfs:label>imaged parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000268"/>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T10:46:27Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000272</oboInOwl:id>
+        <rdfs:label>illumination by photons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000268"/>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T10:50:41Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000285</oboInOwl:id>
+        <rdfs:label>oblique illumination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000270"/>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T03:11:47Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000316</oboInOwl:id>
+        <rdfs:label>fluorescence emission</rdfs:label>
     </owl:Class>
     
 
@@ -2607,6 +2770,109 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBbi:00000332</oboInOwl:id>
         <rdfs:label>structured illumination microscopy (SIM)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000272"/>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T03:51:49Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000341</oboInOwl:id>
+        <rdfs:label>UV/visible/IR illumination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000241"/>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T04:04:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000343</oboInOwl:id>
+        <rdfs:label>microscopy with lenses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000345">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000343"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000346"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000341"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000343"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000346"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000341"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-09T04:18:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>mode of light microscopy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>FBbi:00000345</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbbi#PhenoImageShare_ImagingMethod"/>
+        <rdfs:label>light microscopy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000285"/>
+        <obo:IAO_0000115>illumination in the form of a thin sheet of light directed perpendicular to the optic axis</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-11T10:06:20Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000364</oboInOwl:id>
+        <rdfs:label>light-sheet illumination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FBbi_00000369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbi_00000369">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FBbi_00000246"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000346"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000246"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000346"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbi_00000364"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>single (or selective) plane illumination.</obo:IAO_0000115>
+        <oboInOwl:created_by>jm</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-03-11T10:09:33Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>image</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>FBbi:00000369</oboInOwl:id>
+        <rdfs:label>SPIM</rdfs:label>
     </owl:Class>
     
 

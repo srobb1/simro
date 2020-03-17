@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: simro/releases/2020-02-13/imports/ncit_import.owl
+data-version: simro/releases/2020-03-17/imports/ncit_import.owl
 subsetdef: NCIT:C105551 ""
 subsetdef: NCIT:C116977 ""
 subsetdef: NCIT:C118169 ""
@@ -7,6 +7,8 @@ subsetdef: NCIT:C124297 ""
 subsetdef: NCIT:C61410 ""
 subsetdef: NCIT:C66830 ""
 subsetdef: NCIT:C67497 ""
+subsetdef: NCIT:C67567 ""
+subsetdef: NCIT:C78734 ""
 subsetdef: NCIT:C85492 ""
 subsetdef: NCIT:C89506 ""
 subsetdef: NCIT:C90259 ""
@@ -44,6 +46,97 @@ property_value: NCIT:P108 "Masson Trichrome Staining Method" xsd:string
 property_value: NCIT:P207 "C1294297" xsd:string
 
 [Term]
+id: NCIT:C12219
+name: Anatomic Structure, System, or Substance
+def: "A human biological structure, fluid or other substance; excludes single molecular entities." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C90259
+synonym: "Anatomic Structure, System, or Substance" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NICHD"}
+synonym: "Anatomic Structure, System, or Substance" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Anatomic Structures and Systems" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+disjoint_from: NCIT:C26548 ! Gene Product
+disjoint_from: NCIT:C43431 ! Activity
+property_value: NCIT:A11 NCIT:C90259
+property_value: NCIT:NHC0 "C12219" xsd:string
+property_value: NCIT:P106 "Classification" xsd:string
+property_value: NCIT:P107 "Anatomical Concepts" xsd:string
+property_value: NCIT:P108 "Anatomic Structure, System, or Substance" xsd:string
+property_value: NCIT:P207 "C1515976" xsd:string
+property_value: NCIT:P322 "NICHD" xsd:string
+property_value: NCIT:P366 "Anatomic_Structure_System_or_Substance" xsd:string
+property_value: NCIT:P371 "Anatomic Structure, System, or Substance" xsd:string
+
+[Term]
+id: NCIT:C12508
+name: Cell
+def: "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C67567
+synonym: "Cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P385="TCGA", http://purl.obolibrary.org/obo/NCIT_P386="caDSR", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000046476"}
+synonym: "Cell Type" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Cell Types" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="DN", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Cells" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Cells" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="UCUM"}
+synonym: "Cellular" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="AD", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Normal Cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "{Cells}" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="UCUM"}
+is_a: NCIT:C21599 ! Microanatomic Structure
+property_value: NCIT:NHC0 "C12508" xsd:string
+property_value: NCIT:P106 "Cell" xsd:string
+property_value: NCIT:P107 "Cell Types" xsd:string
+property_value: NCIT:P108 "Cell" xsd:string
+property_value: NCIT:P207 "C0007634" xsd:string
+property_value: NCIT:P322 "CPTAC" xsd:string
+property_value: NCIT:P322 "UCUM" xsd:string
+property_value: NCIT:P325 "The individual unit that makes up all of the tissues of the body. All living things are made up of one or more cells." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P366 "Cell" xsd:string
+
+[Term]
+id: NCIT:C12578
+name: Epithelial Cell
+def: "Any of the cells of the epithelium, which covers the body and lines its cavities and glands." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C61410
+subset: NCIT:C66830
+subset: NCIT:C78734
+synonym: "EPITHELIAL CELL" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Epithelial Cell" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Epithelial Cells" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C12508 ! Cell
+relationship: NCIT:R82 NCIT:C45714 ! Epithelial Tissue
+property_value: NCIT:NHC0 "C12578" xsd:string
+property_value: NCIT:P106 "Cell" xsd:string
+property_value: NCIT:P107 "Epithelial Cell" xsd:string
+property_value: NCIT:P108 "Epithelial Cell" xsd:string
+property_value: NCIT:P207 "C0014597" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P325 "Any of the cells of the epithelium, which covers the body and lines its cavities and glands." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P366 "Epithelial_Cell" xsd:string
+
+[Term]
+id: NCIT:C12801
+name: Tissue
+def: "An anatomical structure consisting of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships, performing a specific function." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+subset: NCIT:C61410
+subset: NCIT:C66830
+subset: NCIT:C78734
+synonym: "Normal Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "TISSUE" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="CDISC"}
+synonym: "Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P385="TCGA", http://purl.obolibrary.org/obo/NCIT_P386="caDSR", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P385="CDR0000046683", http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS"}
+synonym: "Tissues" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C12219 ! Anatomic Structure, System, or Substance
+property_value: NCIT:NHC0 "C12801" xsd:string
+property_value: NCIT:P106 "Tissue" xsd:string
+property_value: NCIT:P107 "Tissue" xsd:string
+property_value: NCIT:P108 "Tissue" xsd:string
+property_value: NCIT:P207 "C0040300" xsd:string
+property_value: NCIT:P322 "CDISC" xsd:string
+property_value: NCIT:P325 "A group or layer of cells that work together to perform a specific function." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P325 "An anatomical structure consisting of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships, performing a specific function. (NCI)" xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+property_value: NCIT:P366 "Tissue" xsd:string
+
+[Term]
 id: NCIT:C16203
 name: Clinical or Research Activity
 def: "Any specific activity undertaken during the course of a clinical study or research protocol." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
@@ -54,6 +147,21 @@ property_value: NCIT:P106 "Activity" xsd:string
 property_value: NCIT:P108 "Clinical or Research Activity" xsd:string
 property_value: NCIT:P207 "C1516654" xsd:string
 property_value: NCIT:P366 "Clinical_or_Research_Activity" xsd:string
+
+[Term]
+id: NCIT:C16642
+name: Glycoprotein
+def: "A conjugated protein having a carbohydrate component." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Glycoprotein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "glycoprotein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000044034"}
+is_a: NCIT:C20028 ! Protein, Organized by Structure
+property_value: NCIT:NHC0 "C16642" xsd:string
+property_value: NCIT:P106 "Amino Acid, Peptide, or Protein" xsd:string
+property_value: NCIT:P108 "Glycoprotein" xsd:string
+property_value: NCIT:P207 "C0017968" xsd:string
+property_value: NCIT:P325 "A protein that has sugar molecules attached to it." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P366 "Glycoprotein" xsd:string
+property_value: NCIT:P368 CHEBI:17089 xsd:string
 
 [Term]
 id: NCIT:C16680
@@ -76,6 +184,66 @@ property_value: NCIT:P207 "C0019637" xsd:string
 property_value: NCIT:P322 "CTRP" xsd:string
 property_value: NCIT:P325 "The examination of tissue specimens under a microscope." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
 property_value: NCIT:P366 "Histological_Techniques" xsd:string
+
+[Term]
+id: NCIT:C16883
+name: Mucin
+def: "An albuminoid substance containing mucopolysaccharides and protein which is contained in mucus, and gives to the latter secretion its peculiar ropy character. It is found in all the secretions from mucous glands, and also between the fibres of connective tissue, as in tendons." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI", http://purl.obolibrary.org/obo/NCIT_P381="from On-line Medical Dictionary"}
+synonym: "Mucin" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Mucus Glycoprotein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C16642 ! Glycoprotein
+relationship: NCIT:R49 NCIT:C12578 ! Epithelial Cell
+property_value: NCIT:NHC0 "C16883" xsd:string
+property_value: NCIT:P106 "Amino Acid, Peptide, or Protein" xsd:string
+property_value: NCIT:P108 "Mucin" xsd:string
+property_value: NCIT:P207 "C0026682" xsd:string
+property_value: NCIT:P366 "Mucin" xsd:string
+
+[Term]
+id: NCIT:C17021
+name: Protein
+def: "A group of complex organic macromolecules composed of one or more chains (linear polymers) of alpha-L-amino acids linked by peptide bonds and ranging in size from a few thousand to over 1 million Daltons. Proteins are fundamental genetically encoded components of living cells with specific structures and functions dictated by amino acid sequence." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Protein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Protein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P385="TCGA", http://purl.obolibrary.org/obo/NCIT_P386="caDSR", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "protein" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P385="CDR0000046092", http://purl.obolibrary.org/obo/NCIT_P384="NCI-GLOSS"}
+synonym: "Protein (NOS)" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P385="31102", http://purl.obolibrary.org/obo/NCIT_P384="DCP"}
+synonym: "Proteins" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C26548 ! Gene Product
+property_value: NCIT:NHC0 "C17021" xsd:string
+property_value: NCIT:P106 "Amino Acid, Peptide, or Protein" xsd:string
+property_value: NCIT:P108 "Protein" xsd:string
+property_value: NCIT:P207 "C0033684" xsd:string
+property_value: NCIT:P325 "A molecule made up of amino acids that are needed for the body to function properly. Proteins are the basis of body structures such as skin and hair and of substances such as enzymes, cytokines, and antibodies." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="NCI-GLOSS"}
+property_value: NCIT:P366 "Protein" xsd:string
+property_value: NCIT:P368 CHEBI:36080 xsd:string
+
+[Term]
+id: NCIT:C20028
+name: Protein, Organized by Structure
+def: "Organizing term for the Proteins tree" [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Protein, Organized by Structure" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="HD", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Proteins [By Structure]" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C17021 ! Protein
+property_value: NCIT:NHC0 "C20028" xsd:string
+property_value: NCIT:P106 "Classification" xsd:string
+property_value: NCIT:P108 "Protein, Organized by Structure" xsd:string
+property_value: NCIT:P207 "C0175168" xsd:string
+property_value: NCIT:P310 "Header_Concept" xsd:string
+property_value: NCIT:P366 "Protein_Organized_by_Structure" xsd:string
+
+[Term]
+id: NCIT:C21599
+name: Microanatomic Structure
+def: "Those anatomic structures that are generally only visible through the use of microscopy." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Microanatomic Structure" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Microanatomy" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Microscopic Anatomy" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C12219 ! Anatomic Structure, System, or Substance
+property_value: NCIT:NHC0 "C21599" xsd:string
+property_value: NCIT:P106 "Conceptual Entity" xsd:string
+property_value: NCIT:P108 "Microanatomic Structure" xsd:string
+property_value: NCIT:P207 "C1513264" xsd:string
+property_value: NCIT:P366 "Microanatomy" xsd:string
 
 [Term]
 id: NCIT:C23010
@@ -241,6 +409,20 @@ property_value: NCIT:P366 "Test" xsd:string
 property_value: NCIT:P371 "Laboratory Procedure" xsd:string
 
 [Term]
+id: NCIT:C26548
+name: Gene Product
+def: "A protein, RNA or a complex that contains proteins and/or RNA." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Gene Product" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+synonym: "Genome Encoded Entity" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="SY", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+disjoint_from: NCIT:C43431 ! Activity
+property_value: NCIT:NHC0 "C26548" xsd:string
+property_value: NCIT:P106 "Classification" xsd:string
+property_value: NCIT:P108 "Gene Product" xsd:string
+property_value: NCIT:P207 "C1704222" xsd:string
+property_value: NCIT:P366 "Gene_Product" xsd:string
+property_value: NCIT:P98 "In NCI Thesaurus: includes Proteins, Functional RNAs, Protein Complexes, and Riboprotein Complexes" xsd:string
+
+[Term]
 id: NCIT:C43431
 name: Activity
 def: "An active process; excludes processes and mechanisms which fulfill biological functions." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
@@ -256,6 +438,17 @@ property_value: NCIT:P207 "C0441655" xsd:string
 property_value: NCIT:P322 "BRIDG" xsd:string
 property_value: NCIT:P325 "Any action that can, in the context of a study or a post-marketing investigation, be defined, planned, scheduled or performed. EXAMPLE(S): surgical procedure, laboratory test, administration of a drug." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="BRIDG"}
 property_value: NCIT:P366 "Activity" xsd:string
+
+[Term]
+id: NCIT:C45714
+name: Epithelial Tissue
+synonym: "Epithelial Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+is_a: NCIT:C12801 ! Tissue
+property_value: NCIT:NHC0 "C45714" xsd:string
+property_value: NCIT:P106 "Tissue" xsd:string
+property_value: NCIT:P108 "Epithelial Tissue" xsd:string
+property_value: NCIT:P208 "CL448688" xsd:string
+property_value: NCIT:P366 "Epithelial_Tissue" xsd:string
 
 [Term]
 id: NCIT:C74942
@@ -302,4 +495,30 @@ property_value: NCIT:P108 "Toluidine Blue Staining Method" xsd:string
 property_value: NCIT:P207 "C0523203" xsd:string
 property_value: NCIT:P322 "CDISC" xsd:string
 property_value: NCIT:P325 "A microscopy staining method that utilizes toluidine blue, a solution composed of tolonium chloride, to determine the presence of mast cells, lignin, proteoglycans and glycosaminoglycans." xsd:string {http://purl.obolibrary.org/obo/NCIT_P378="CDISC"}
+
+[Typedef]
+id: NCIT:R49
+name: Gene_Product_Expressed_In_Tissue
+def: "A role used to specify that a normal tissue is the normal location for the expression of a gene product. The domain and range for this role are 'Gene Product' and 'Anatomic Structure, System, or Substance', respectively." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Gene_Product_Expressed_In_Tissue" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+property_value: NCIT:NHC0 "R49" xsd:string
+property_value: NCIT:P106 "Conceptual Entity" xsd:string
+property_value: NCIT:P107 "Expressed In Tissue" xsd:string
+property_value: NCIT:P108 "Gene_Product_Expressed_In_Tissue" xsd:string
+property_value: NCIT:P98 "This information is often useful to researchers. However, we no longer curate this information and now favor linking out to externally curated databases. Source database for the link has yet to be decided." xsd:string
+domain: NCIT:C26548 ! Gene Product
+range: NCIT:C12219 ! Anatomic Structure, System, or Substance
+
+[Typedef]
+id: NCIT:R82
+name: Anatomic_Structure_Is_Physical_Part_Of
+def: "A role used to indicate that an anatomic structure has a physical association with a broader system or organ. Both the domain and range for this role are 'Anatomic Structure, System, or Substance'." [] {http://purl.obolibrary.org/obo/NCIT_P378="NCI"}
+synonym: "Anatomic_Structure_Is_Physical_Part_Of" EXACT [] {http://purl.obolibrary.org/obo/NCIT_P383="PT", http://purl.obolibrary.org/obo/NCIT_P384="NCI"}
+property_value: NCIT:NHC0 "R82" xsd:string
+property_value: NCIT:P106 "Conceptual Entity" xsd:string
+property_value: NCIT:P107 "Is Physical Part Of" xsd:string
+property_value: NCIT:P108 "Anatomic_Structure_Is_Physical_Part_Of" xsd:string
+domain: NCIT:C12219 ! Anatomic Structure, System, or Substance
+range: NCIT:C12219 ! Anatomic Structure, System, or Substance
+is_transitive: true
 

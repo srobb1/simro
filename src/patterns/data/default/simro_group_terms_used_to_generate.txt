@@ -1,0 +1,5 @@
+http://purl.obolibrary.org/obo/FBbi_00000010
+http://purl.obolibrary.org/obo/SIMRO_00006xx
+http://purl.obolibrary.org/obo/SIMRO_0005134
+http://purl.obolibrary.org/obo/SIMRO_0005133
+http://purl.obolibrary.org/obo/FBbi_00000006

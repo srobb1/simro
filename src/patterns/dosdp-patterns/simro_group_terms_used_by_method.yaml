@@ -1,0 +1,20 @@
+pattern_name: simro_method_terms_used_by_method.yaml
+pattern_iri: https://tbd
+description: "adding ObjectProperty:used_by_method to simro_method terms"
+
+contributors:
+  - https://orcid.org/0000-0002-3528-5267
+
+relations:
+  used by method: SIMRO:0000612
+
+classes:
+  used_by_method: owl:Thing
+
+vars:
+  used_by_method: "'used_by_method'"
+
+subClassOf:
+    text: "'used by method' some  %s"
+    vars:
+      - used_by_method

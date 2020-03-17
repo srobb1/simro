@@ -437,42 +437,42 @@ SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> <http://purl.obolibrar
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002031> (Axiovert 206 MOT (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002031> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002031> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002032> (Axiovert 206 Std (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002032> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002032> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002033> (Axiovert MOT BW (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002033> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002033> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002034> (Nikon TE2000 (NIW))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002034> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002034> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002035> (Olympus Slide Scanner (OSS))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002035> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002035> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002036> (Widefield sCMOS (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002036> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002036> <http://purl.obolibrary.org/obo/SIMRO_0002030>)

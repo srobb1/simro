@@ -1,0 +1,154 @@
+defined_class	defined_class_label	used_by_method	used_by_method_label
+SIMRO:0005000	X-Rhodamine	EFO:0000562	labelling
+SIMRO:0005001	x-gal staining fixation solution	SIMRO:0002010	beta-galactosidase staining fixation
+SIMRO:0005002	x-gal staining fixation solution	FBbi:00000011	glutaraldehyde fixed tissue
+SIMRO:0005003	Tartrate Resistant Acid Phosphatase Staining Method	SIMRO:0002010	slide staining
+SIMRO:0005004	Alexa Fluor 488	EFO:0000562	labelling
+SIMRO:0005005	feulegen staining	EFO:0003813	nucleic acid labeling protocol
+SIMRO:0005006	feulegen staining	EFO:0000562	labelling
+SIMRO:0005007	10% neutral buffered formalin	FBbi:00000010	formaldehyde fixed tissue
+SIMRO:0005008	von Kossa staining Method	SIMRO:0002010	slide staining
+SIMRO:0005010	ATTO 532	EFO:0000562	labelling
+SIMRO:0005011	ATTO 550	EFO:0000562	labelling
+SIMRO:0005012	warm/hot temperature regimen	EFO:0003969	treatment protocol
+SIMRO:0005013	Masson Trichrome Staining Method	SIMRO:0002010	slide staining
+SIMRO:0005016	zinc formalin fixative	FBbi:00000010	formaldehyde fixed tissue
+SIMRO:0005017	R110Direct HaloTag Ligand	EFO:0000562	labelling
+SIMRO:0005018	Cy7 dye	EFO:0000562	labelling
+SIMRO:0005019	ATTO 488	EFO:0000562	labelling
+SIMRO:0005020	UV light regimen	EFO:0003969	treatment protocol
+SIMRO:0005021	SNAP-Cell Oregon Green	EFO:0000562	labelling
+SIMRO:0005022	Alexa Fluor 555	EFO:0000562	labelling
+SIMRO:0005023	FITC	EFO:0000562	labelling
+SIMRO:0005024	Alcian Blue Staining Method	SIMRO:0002010	slide staining
+SIMRO:0005025	mouse embryonic stem cell line cell	NCIT:C23010	Staining Method
+SIMRO:0005027	protein staining	EFO:0000562	labelling
+SIMRO:0005028	hematoxylin	SIMRO:0002010	slide staining
+SIMRO:0005029	CF405M	EFO:0000562	labelling
+SIMRO:0005030	Hematoxylin and Eosin Staining Method	NCIT:C23010	Staining Method
+SIMRO:0005031	Zinc	FBbi:00001012	fixation method
+SIMRO:0005034	skeletal staining method	NCIT:C23010	Staining Method
+SIMRO:0005035	ATTO 647N	EFO:0000562	labelling
+SIMRO:0005036	fluorescein	EFO:0000562	labelling
+SIMRO:0005038	TMRDirect HaloTag Ligand	EFO:0000562	labelling
+SIMRO:0005039	ATTO 594	EFO:0000562	labelling
+SIMRO:0005040	oregon green 488	EFO:0000562	labelling
+SIMRO:0005041	eosin	NCIT:C23010	Staining Method
+SIMRO:0005042	TexasRed	EFO:0000562	labelling
+SIMRO:0005043	ATTO 633	EFO:0000562	labelling
+SIMRO:0005044	alizarin red S	NCIT:C23010	Staining Method
+SIMRO:0005045	alizarin red S	SIMRO:0002010	slide staining
+SIMRO:0005046	ATTO 647	EFO:0000562	labelling
+SIMRO:0005047	Bouin solution	FBbi:00000010	formaldehyde fixed tissue
+SIMRO:0005048	GFP 1-10 fragment	EFO:0000562	labelling
+SIMRO:0005049	SNAP-Cell TMR-Star	EFO:0000562	labelling
+SIMRO:0005050	GFP 11 fragment	EFO:0000562	labelling
+SIMRO:0005051	HaloTag	EFO:0000562	labelling
+SIMRO:0005052	SNAP-tag	EFO:0000562	labelling
+SIMRO:0005053	mCardinalFP	EFO:0000562	labelling
+SIMRO:0005054	Axiovert 206 MOT (WID)	FBbi:00000031	visualization method
+SIMRO:0005055	Axiovert 206 Std (WID)	FBbi:00000031	visualization method
+SIMRO:0005056	Axiovert MOT BW (WID)	FBbi:00000031	visualization method
+SIMRO:0005057	Nikon TE2000 (NIW)	FBbi:00000031	visualization method
+SIMRO:0005058	Olympus Slide Scanner (OSS)	FBbi:00000031	visualization method
+SIMRO:0005059	Widefield sCMOS (WID)	FBbi:00000031	visualization method
+SIMRO:0005060	Deltavision OMX (OMX)	FBbi:00000031	visualization method
+SIMRO:0005061	LSM-780 DS (780)	FBbi:00000031	visualization method
+SIMRO:0005062	SP8 STED (SP8)	FBbi:00000031	visualization method
+SIMRO:0005063	Zeiss Microbeam (LCM)	FBbi:00000031	visualization method
+SIMRO:0005064	Zeiss Microbeam (LCM)	FBbi:00000031	visualization method
+SIMRO:0005065	AiryScan	FBbi:00000031	visualization method
+SIMRO:0005066	Deltavision OMX (OMX)	FBbi:00000031	visualization method
+SIMRO:0005067	LSM-700 Falcon (FAL)	FBbi:00000031	visualization method
+SIMRO:0005068	LSM-700 Upright (UPR)	FBbi:00000031	visualization method
+SIMRO:0005069	LSM-710 (710)	FBbi:00000031	visualization method
+SIMRO:0005070	LSM-780 DS (780)	FBbi:00000031	visualization method
+SIMRO:0005071	SP8 STED (SP8)	FBbi:00000031	visualization method
+SIMRO:0005072	Nikon 3PO (3PO)	FBbi:00000031	visualization method
+SIMRO:0005073	PE Ultraview (ULT)	FBbi:00000031	visualization method
+SIMRO:0005074	SPIM microscope	FBbi:00000369	single plane illumination microscopy
+SIMRO:0005075	Bimolecular Fluorescence Complementation	MI:0416	fluorescence microscopy
+SIMRO:0005076	webcam (WEB)	SIMRO:0002055	microscopy image capture
+SIMRO:0005077	Hoechst 33342	EFO:0000562	labelling
+SIMRO:0005078	ATTO 565	EFO:0000562	labelling
+SIMRO:0005079	Alexa Fluor 532	EFO:0000562	labelling
+SIMRO:0005080	Alexa Fluor 546	EFO:0000562	labelling
+SIMRO:0005081	Alexa Fluor 568	EFO:0000562	labelling
+SIMRO:0005082	Alexa Fluor 594	EFO:0000562	labelling
+SIMRO:0005083	Alexa Fluor 610	EFO:0000562	labelling
+SIMRO:0005084	Alexa Fluor 633	EFO:0000562	labelling
+SIMRO:0005085	Alexa Fluor 647	EFO:0000562	labelling
+SIMRO:0005086	BODIPY FL	EFO:0000562	labelling
+SIMRO:0005087	Cy3 dye	EFO:0000562	labelling
+SIMRO:0005088	Cy5 dye	EFO:0000562	labelling
+SIMRO:0005089	Cy5.5 dye	EFO:0000562	labelling
+SIMRO:0005090	FM 4-64 dye	EFO:0000562	labelling
+SIMRO:0005091	lucifer yellow dye	EFO:0000562	labelling
+SIMRO:0005092	mitoTracker Red	EFO:0000562	labelling
+SIMRO:0005093	rhodamine 110	EFO:0000562	labelling
+SIMRO:0005094	CitrineFP	EFO:0000562	labelling
+SIMRO:0005095	DAPI	EFO:0000562	labelling
+SIMRO:0005096	Dendra2FP	EFO:0000562	labelling
+SIMRO:0005097	DiI	EFO:0000562	labelling
+SIMRO:0005098	DiO	EFO:0000562	labelling
+SIMRO:0005099	DsRed	EFO:0000562	labelling
+SIMRO:0005100	ECFP	EFO:0000562	labelling
+SIMRO:0005101	EGFP	EFO:0000562	labelling
+SIMRO:0005102	EYFP	EFO:0000562	labelling
+SIMRO:0005103	FITC	EFO:0000562	labelling
+SIMRO:0005104	Fluo-4	EFO:0000562	labelling
+SIMRO:0005105	PA-CFP	EFO:0000562	labelling
+SIMRO:0005106	PA-GFP	EFO:0000562	labelling
+SIMRO:0005107	SuperfolderFP	EFO:0000562	labelling
+SIMRO:0005108	T-SapphireFP	EFO:0000562	labelling
+SIMRO:0005109	TRITC	EFO:0000562	labelling
+SIMRO:0005110	TagRFP-T	EFO:0000562	labelling
+SIMRO:0005111	VenusFP	EFO:0000562	labelling
+SIMRO:0005112	fluorescein	EFO:0000562	labelling
+SIMRO:0005113	mAppleFP	EFO:0000562	labelling
+SIMRO:0005114	mCherryFP	EFO:0000562	labelling
+SIMRO:0005115	mEOS2FP	EFO:0000562	labelling
+SIMRO:0005116	mEOS3.1FP	EFO:0000562	labelling
+SIMRO:0005117	mKate2FP	EFO:0000562	labelling
+SIMRO:0005118	mKateFP	EFO:0000562	labelling
+SIMRO:0005119	mKikGR	EFO:0000562	labelling
+SIMRO:0005120	mOrangeFP	EFO:0000562	labelling
+SIMRO:0005121	mStrawberryFP	EFO:0000562	labelling
+SIMRO:0005122	mTagBFP	EFO:0000562	labelling
+SIMRO:0005123	mTurquoise2	EFO:0000562	labelling
+SIMRO:0005124	tdTomatoFP	EFO:0000562	labelling
+SIMRO:0005125	wtKIikGR	EFO:0000562	labelling
+SIMRO:0005126	x-rhodamine	EFO:0000562	labelling
+SIMRO:0005127	yPet	EFO:0000562	labelling
+SIMRO:0005128	100% ethanol	FBbi:00000006	ethanol fixed tissue
+SIMRO:0005130	30% ethanol	FBbi:00000006	ethanol fixed tissue
+SIMRO:0005132	4% paraformaldehyde solution	FBbi:00000001	sample preparation method
+SIMRO:0005133	70% ethanol	FBbi:00000001	sample preparation method
+SIMRO:0005134	acid phosphatase	SIMRO:0002010	slide staining
+SIMRO:0005135	critical_point dried specimen	FBbi:00000001	sample preparation method
+SIMRO:0005136	cryofixed tissue	FBbi:00000001	sample preparation method
+SIMRO:0005137	ethanol fixed tissue	FBbi:00000001	sample preparation method
+SIMRO:0005138	fixed frozen tissue	FBbi:00000001	sample preparation method
+SIMRO:0005139	formaldehyde fixed tissue	FBbi:00000001	sample preparation method
+SIMRO:0005140	freeze-substituted tissue	FBbi:00000001	sample preparation method
+SIMRO:0005141	glutaraldehyde fixed tissue	FBbi:00000001	sample preparation method
+SIMRO:0005142	lyophilized specimen	FBbi:00000001	sample preparation method
+SIMRO:0005143	methanol fixed tissue	FBbi:00000001	sample preparation method
+SIMRO:0005144	methyl green	NCIT:C23010	Staining Method
+SIMRO:0005145	nuclear fast red	NCIT:C23010	Staining Method
+SIMRO:0005146	slide mounted tissue	FBbi:00000001	sample preparation method
+SIMRO:0005147	tissue in acrylic resin embedment	FBbi:00000001	sample preparation method
+SIMRO:0005148	tissue in epoxy resin embedment	FBbi:00000001	sample preparation method
+SIMRO:0005149	tissue in paraffin embedment	FBbi:00000001	sample preparation method
+SIMRO:0005150	tissue in plastic embedment	FBbi:00000001	sample preparation method
+SIMRO:0005151	Toluidine Blue Staining Method	NCIT:C23010	Staining Method
+SIMRO:0005152	toluidine blue	NCIT:C92302	Toluidine Blue Staining Method
+SIMRO:0005153	vibratome-sectioned tissue	FBbi:00000001	sample preparation method
+SIMRO:0005154	DAPI	EFO:0003813	nucleic acid labeling protocol
+SIMRO:0005155	ToTo-3	EFO:0003813	nucleic acid labeling protocol
+SIMRO:0005156	beta-galactosidase	SIMRO:0002010	slide staining
+SIMRO:0005157	whole mounted organism	FBbi:00000001	sample preparation method
+SIMRO:0005158	freeze_fracture/freeze_etch	FBbi:00000001	sample preparation method
+SIMRO:0005163	RNA interference	EFO:0003969	treatment protocol
+SIMRO:0005175	CRISPR/Cas9	EFO:0003969	treatment protocol
+SIMRO:0005176	DAPI	EFO:0000562	labelling

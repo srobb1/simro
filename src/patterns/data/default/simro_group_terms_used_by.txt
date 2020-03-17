@@ -1,0 +1,7 @@
+http://purl.obolibrary.org/obo/SIMRO_0005037
+http://purl.obolibrary.org/obo/SIMRO_0005026
+http://purl.obolibrary.org/obo/SIMRO_0005014
+http://purl.obolibrary.org/obo/SIMRO_0005032
+http://purl.obolibrary.org/obo/SIMRO_0000610
+http://purl.obolibrary.org/obo/NCBITaxon_7955
+http://purl.obolibrary.org/obo/SIMRO_0005033

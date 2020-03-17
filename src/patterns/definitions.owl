@@ -7,15 +7,17 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/simro/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/simro/releases/2020-02-14/patterns/definitions.owl>
+<http://purl.obolibrary.org/obo/simro/releases/2020-03-17/patterns/definitions.owl>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_137393>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_137394>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_22984>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_27363>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_31624>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37926>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37987>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_37989>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_3815>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_4477>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_50913>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_51103>))
@@ -67,6 +69,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000042>))
@@ -82,6 +85,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000115>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000116>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000158>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000332>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000369>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000419>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000443>))
@@ -114,12 +118,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000583>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000584>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00000621>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbi_00001012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0000785>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016246>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0099048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MI_0094>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MI_0229>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MI_0384>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MI_0416>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MI_0687>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MI_1092>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10090>))
@@ -200,6 +206,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9913>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_99404>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C118401>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C120047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C16883>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C23010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C23011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C23044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C92299>))
@@ -562,9 +570,22 @@ Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005252>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005253>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005254>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SIMRO_0005255>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001434>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002384>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002418>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004288>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0005769>))
+Declaration(Class(<http://purl.obolibrary.org/obo/menu_0000001>))
+Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0000562>))
 Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0002694>))
 Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0003813>))
+Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0003969>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_0000610>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_0000611>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_0000612>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_0000614>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_0000615>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/SIMRO_00006xx>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
@@ -872,42 +893,42 @@ SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> <http://purl.obolibrar
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002031> (Axiovert 206 MOT (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002031> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002031> "Axiovert 206 MOT (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002031> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002032> (Axiovert 206 Std (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002032> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002032> "Axiovert 206 Std (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002032> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002033> (Axiovert MOT BW (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002033> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002033> "Axiovert MOT BW (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002033> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002034> (Nikon TE2000 (NIW))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002034> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002034> "Nikon TE2000 (NIW)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002034> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002035> (Olympus Slide Scanner (OSS))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002035> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002035> "Olympus Slide Scanner (OSS)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002035> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0002036> (Widefield sCMOS (WID))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID) of widefields needs def"^^xsd:string)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> ""^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID) of widefield microscope needs def"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0002036> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0002036> "Widefield sCMOS (WID)"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0002036> <http://purl.obolibrary.org/obo/SIMRO_0002030>)
@@ -1247,6 +1268,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005000> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005000> "X-Rhodamine"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000584> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005001> (x-gal staining fixation solution)
 
@@ -1254,6 +1276,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005001> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005001> "x-gal staining fixation solution"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005001> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005002> (x-gal staining fixation solution)
 
@@ -1261,6 +1284,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005002> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005002> "x-gal staining fixation solution"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000011>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005003> (Tartrate Resistant Acid Phosphatase Staining Method)
 
@@ -1268,6 +1292,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005003> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005003> "Tartrate Resistant Acid Phosphatase Staining Method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005003> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCIT_C118401> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005004> (Alexa Fluor 488)
 
@@ -1275,6 +1300,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005004> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005004> "Alexa Fluor 488"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000440> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005005> (feulegen staining)
 
@@ -1282,6 +1308,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005005> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005005> "feulegen staining"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005005> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003813>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005006> (feulegen staining)
 
@@ -1289,6 +1316,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005006> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005006> "feulegen staining"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005006> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005007> (10% neutral buffered formalin)
 
@@ -1296,13 +1324,16 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005007> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005007> "10% neutral buffered formalin"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005007> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000010>))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005008> (von Kossa staining Method)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005008> (von Kossa staining method)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005008> "von Kossa staining Method used by histology group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005008> "von Kossa staining method used by histology group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005008> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005008> "von Kossa staining Method"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005008> "von Kossa staining method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/CHEBI_22984>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005009> (living tissue)
 
@@ -1310,6 +1341,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005009> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005009> "living tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005009> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000615> <http://purl.obolibrary.org/obo/menu_0000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005010> (ATTO 532)
 
@@ -1317,6 +1349,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005010> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005010> "ATTO 532"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005010> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005011> (ATTO 550)
 
@@ -1324,6 +1357,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005011> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005011> "ATTO 550"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005011> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005012> (warm/hot temperature regimen)
 
@@ -1331,6 +1365,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005012> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005012> "warm/hot temperature regimen"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005012> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/EO_0007173> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003969>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005013> (Masson Trichrome Staining Method)
 
@@ -1338,6 +1373,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005013> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005013> "Masson Trichrome Staining Method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005013> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCIT_C120047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0002384>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005014> (PD173074)
 
@@ -1345,6 +1382,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005014> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005014> "PD173074"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005014> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_63448> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005015> (phosphate buffered saline solution)
 
@@ -1352,6 +1390,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005015> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005015> "phosphate buffered saline solution"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005015> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OBI_0100046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000615> <http://purl.obolibrary.org/obo/menu_0000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005016> (zinc formalin fixative)
 
@@ -1359,6 +1398,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005016> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005016> "zinc formalin fixative"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005016> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005017> (R110Direct HaloTag Ligand)
 
@@ -1366,6 +1406,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005017> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005017> "R110Direct HaloTag Ligand"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005017> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005018> (Cy7 dye)
 
@@ -1373,6 +1414,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005018> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005018> "Cy7 dye"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005018> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_52718> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005019> (ATTO 488)
 
@@ -1380,6 +1422,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005019> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005019> "ATTO 488"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005019> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005020> (UV light regimen)
 
@@ -1387,6 +1430,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005020> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005020> "UV light regimen"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005020> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/EO_0007222> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003969>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005021> (SNAP-Cell Oregon Green)
 
@@ -1394,6 +1438,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005021> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005021> "SNAP-Cell Oregon Green"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005021> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005022> (Alexa Fluor 555)
 
@@ -1401,6 +1446,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005022> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005022> "Alexa Fluor 555"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005022> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000443> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005023> (fluorescein isothiocyanate)
 
@@ -1408,6 +1454,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005023> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005023> "fluorescein isothiocyanate"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005023> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_37926> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005024> (Alcian Blue Staining Method)
 
@@ -1415,6 +1462,9 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005024> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005024> "Alcian Blue Staining Method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005024> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCIT_C92299> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/NCIT_C16883>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0002418>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005025> (mouse embryonic stem cell line cell)
 
@@ -1422,6 +1472,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005025> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005025> "mouse embryonic stem cell line cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005025> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0037317> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005026> (LY-411575)
 
@@ -1429,6 +1480,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005026> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005026> "LY-411575"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005026> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_87359> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005027> (protein staining)
 
@@ -1436,6 +1488,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005027> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005027> "protein staining"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005027> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/MI_0094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005028> (hematoxylin)
 
@@ -1443,6 +1496,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005028> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005028> "hematoxylin"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005028> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0005769>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005029> (CF405M)
 
@@ -1450,6 +1505,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005029> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005029> "CF405M"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005029> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002014> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005030> (Hematoxylin and Eosin Staining Method)
 
@@ -1457,6 +1513,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005030> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005030> "Hematoxylin and Eosin Staining Method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005030> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCIT_C23011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/CHEBI_3815>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/GO_0000785>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0002384>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005031> (zinc atom)
 
@@ -1464,6 +1524,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005031> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005031> "zinc atom"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005031> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_27363> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00001012>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005032> (neomycin)
 
@@ -1471,6 +1532,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005032> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005032> "neomycin"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005032> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_7507> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005033> (SU5402)
 
@@ -1478,6 +1540,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005033> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005033> "SU5402"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005033> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_63449> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005034> (skeletal staining method)
 
@@ -1485,6 +1548,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005034> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005034> "skeletal staining method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005034> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0001434>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0002418>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0004288>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005035> (ATTO 647N)
 
@@ -1492,6 +1559,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005035> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005035> "ATTO 647N"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005035> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005036> (fluorescein)
 
@@ -1499,6 +1567,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005036> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005036> "fluorescein"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005036> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_31624> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005037> (tyrphostin AG 1478)
 
@@ -1506,6 +1575,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005037> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005037> "tyrphostin AG 1478"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005037> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_75404> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001008>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000610> <http://purl.obolibrary.org/obo/NCBITaxon_7955>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005038> (TMRDirect HaloTag Ligand)
 
@@ -1513,6 +1583,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005038> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005038> "TMRDirect HaloTag Ligand"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005038> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005039> (ATTO 594)
 
@@ -1520,6 +1591,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005039> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005039> "ATTO 594"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005039> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005040> (oregon green 488)
 
@@ -1527,6 +1599,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005040> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005040> "oregon green 488"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005040> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_4477> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005041> (eosin)
 
@@ -1534,6 +1607,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005041> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005041> "eosin"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005041> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005042> (TexasRed)
 
@@ -1541,6 +1615,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005042> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005042> "TexasRed"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005042> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000453> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005043> (ATTO 633)
 
@@ -1548,6 +1623,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005043> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005043> "ATTO 633"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005043> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005044> (alizarin red S)
 
@@ -1555,6 +1631,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005044> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005044> "alizarin red S"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005044> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_87358> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/CHEBI_22984>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0001434>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0004288>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005045> (alizarin red S)
 
@@ -1562,6 +1642,10 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005045> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005045> "alizarin red S"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_87358> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/CHEBI_22984>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0001434>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000614> <http://purl.obolibrary.org/obo/UBERON_0004288>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005046> (ATTO 647)
 
@@ -1569,6 +1653,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005046> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005046> "ATTO 647"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005046> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005047> (Bouin solution)
 
@@ -1576,6 +1661,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005047> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005047> "Bouin solution"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005047> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005048> (GFP 1-10 fragment)
 
@@ -1583,6 +1669,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005048> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005048> "GFP 1-10 fragment"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005049> (SNAP-Cell TMR-Star)
 
@@ -1590,6 +1677,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005049> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005049> "SNAP-Cell TMR-Star"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005049> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005050> (GFP 11 fragment)
 
@@ -1597,6 +1685,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005050> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005050> "GFP 11 fragment"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005051> (HaloTag)
 
@@ -1604,6 +1693,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005051> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005051> "HaloTag"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005052> (SNAP-tag)
 
@@ -1611,6 +1701,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005052> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005052> "SNAP-tag"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005053> (mCardinalFP)
 
@@ -1618,48 +1709,55 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005053> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005053> "mCardinalFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005054> (widefields)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005054> (widefield microscope)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005054> "widefields used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005054> "widefield microscope used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005054> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005054> "widefields"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005054> "widefield microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005054> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005055> (widefields)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005055> (widefield microscope)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005055> "widefields used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005055> "widefield microscope used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005055> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005055> "widefields"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005055> "widefield microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005056> (widefields)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005056> (widefield microscope)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005056> "widefields used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005056> "widefield microscope used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005056> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005056> "widefields"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005056> "widefield microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005056> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005057> (widefields)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005057> (widefield microscope)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005057> "widefields used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005057> "widefield microscope used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005057> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005057> "widefields"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005057> "widefield microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005057> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005058> (widefields)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005058> (widefield microscope)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005058> "widefields used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005058> "widefield microscope used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005058> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005058> "widefields"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005058> "widefield microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005058> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005059> (widefields)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005059> (widefield microscope)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005059> "widefields used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005059> "widefield microscope used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005059> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005059> "widefields"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005059> "widefield microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005059> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005060> (super-resolution microscope)
 
@@ -1667,6 +1765,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005060> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005060> "super-resolution microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005060> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ERO_0001946> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005060> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005061> (super-resolution microscope)
 
@@ -1674,6 +1773,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005061> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005061> "super-resolution microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005061> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ERO_0001946> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005062> (super-resolution microscope)
 
@@ -1681,13 +1781,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005062> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005062> "super-resolution microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005062> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/ERO_0001946> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005063> (Zeiss Microbeam (LCM))
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005063> (laser capture microdissection microscope)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005063> "Zeiss Microbeam (LCM) used by light microscopy group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005063> "laser capture microdissection microscope used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005063> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005063> "Zeiss Microbeam (LCM)"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005063> "laser capture microdissection microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005063> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005064> (Zeiss Microbeam (LCM))
 
@@ -1695,6 +1797,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005064> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005064> "Zeiss Microbeam (LCM)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005064> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005065> (AiryScan)
 
@@ -1702,6 +1805,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005065> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005065> "AiryScan"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005065> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005065> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005066> (Deltavision OMX (OMX))
 
@@ -1709,6 +1813,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005066> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005066> "Deltavision OMX (OMX)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005066> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002044> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005067> (LSM-700 Falcon (FAL))
 
@@ -1716,6 +1821,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005067> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005067> "LSM-700 Falcon (FAL)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005067> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005068> (LSM-700 Upright (UPR))
 
@@ -1723,6 +1829,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005068> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005068> "LSM-700 Upright (UPR)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005068> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005068> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005069> (LSM-710 (710))
 
@@ -1730,6 +1837,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005069> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005069> "LSM-710 (710)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005069> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005070> (LSM-780 DS (780))
 
@@ -1737,6 +1845,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005070> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005070> "LSM-780 DS (780)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005070> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005071> (SP8 STED (SP8))
 
@@ -1744,6 +1853,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005071> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005071> "SP8 STED (SP8)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005071> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005072> (Nikon 3PO (3PO))
 
@@ -1751,6 +1861,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005072> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005072> "Nikon 3PO (3PO)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005072> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005073> (PE Ultraview (ULT))
 
@@ -1758,6 +1869,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005073> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005073> "PE Ultraview (ULT)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005073> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005073> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000031>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005074> (SPIM microscope)
 
@@ -1765,6 +1877,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005074> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005074> "SPIM microscope"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005074> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005074> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000369>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005075> (Bimolecular Fluorescence Complementation)
 
@@ -1772,6 +1885,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005075> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005075> "Bimolecular Fluorescence Complementation"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005075> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/MI_0229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/MI_0416>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005076> (webcam (WEB))
 
@@ -1779,6 +1893,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005076> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005076> "webcam (WEB)"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005076> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005076> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002055>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005077> (2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole)
 
@@ -1786,6 +1901,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005077> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005077> "2'-(4-ethoxyphenyl)-5-(4-methylpiperazin-1-yl)-2,5'-bibenzimidazole"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005077> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51232> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005078> (ATTO 565)
 
@@ -1793,6 +1909,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005078> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005078> "ATTO 565"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005078> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005078> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005079> (Alexa Fluor 532)
 
@@ -1800,6 +1917,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005079> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005079> "Alexa Fluor 532"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005079> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51756> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005079> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005080> (Alexa Fluor 546)
 
@@ -1807,6 +1925,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005080> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005080> "Alexa Fluor 546"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51760> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005081> (Alexa Fluor 568)
 
@@ -1814,6 +1933,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005081> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005081> "Alexa Fluor 568"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005081> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51766> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005082> (Alexa Fluor 594)
 
@@ -1821,6 +1941,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005082> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005082> "Alexa Fluor 594"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005082> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000444> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005083> (Alexa Fluor 610)
 
@@ -1828,6 +1949,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005083> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005083> "Alexa Fluor 610"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005083> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000445> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005083> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005084> (Alexa Fluor 633)
 
@@ -1835,6 +1957,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005084> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005084> "Alexa Fluor 633"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005084> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_137393> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005085> (Alexa Fluor 647)
 
@@ -1842,6 +1965,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005085> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005085> "Alexa Fluor 647"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005085> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_137394> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005085> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005086> (BODIPY FL)
 
@@ -1849,6 +1973,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005086> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005086> "BODIPY FL"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005086> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51886> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005086> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005087> (Cy3 dye)
 
@@ -1856,6 +1981,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005087> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005087> "Cy3 dye"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005087> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_37987> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005087> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005088> (Cy5 dye)
 
@@ -1863,6 +1989,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005088> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005088> "Cy5 dye"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005088> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_37989> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005088> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005089> (Cy5.5 dye)
 
@@ -1870,6 +1997,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005089> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005089> "Cy5.5 dye"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005089> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_52003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005090> (FM 4-64 dye)
 
@@ -1877,6 +2005,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005090> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005090> "FM 4-64 dye"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005090> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_52078> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005090> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005091> (lucifer yellow dye)
 
@@ -1884,6 +2013,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005091> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005091> "lucifer yellow dye"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005091> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_52104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005091> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005092> (mitoTracker Red)
 
@@ -1891,6 +2021,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005092> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005092> "mitoTracker Red"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005092> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_52156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005092> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005093> (rhodamine 110)
 
@@ -1898,6 +2029,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005093> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005093> "rhodamine 110"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005093> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_52315> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005093> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005094> (CitrineFP)
 
@@ -1905,6 +2037,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005094> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005094> "CitrineFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005094> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000474> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005094> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005095> (DAPI)
 
@@ -1912,6 +2045,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005095> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005095> "DAPI"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005095> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51231> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005095> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005096> (Dendra2FP)
 
@@ -1919,6 +2053,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005096> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005096> "Dendra2FP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005096> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000549> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005096> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005097> (DiI)
 
@@ -1926,6 +2061,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005097> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005097> "DiI"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005097> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000115> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005097> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005098> (DiO)
 
@@ -1933,6 +2069,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005098> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005098> "DiO"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005098> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005098> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005099> (DsRed)
 
@@ -1940,6 +2077,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005099> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005099> "DsRed"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005099> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000085> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005099> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005100> (ECFP)
 
@@ -1947,6 +2085,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005100> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005100> "ECFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005100> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005101> (EGFP)
 
@@ -1954,6 +2093,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005101> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005101> "EGFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005101> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005101> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005102> (EYFP)
 
@@ -1961,6 +2101,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005102> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005102> "EYFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005102> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000084> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005102> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005103> (fluorescein isothiocyanate)
 
@@ -1968,6 +2109,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005103> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005103> "fluorescein isothiocyanate"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005103> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_37926> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005104> (Fluo-4)
 
@@ -1975,6 +2117,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005104> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005104> "Fluo-4"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005104> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005105> (PA-CFP)
 
@@ -1982,6 +2125,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005105> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005105> "PA-CFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005105> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000545> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005105> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005106> (PA-GFP)
 
@@ -1989,6 +2133,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005106> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005106> "PA-GFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005106> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000544> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005106> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005107> (SuperfolderFP)
 
@@ -1996,6 +2141,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005107> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005107> "SuperfolderFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005107> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000472> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005107> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005108> (T-SapphireFP)
 
@@ -2003,6 +2149,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005108> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005108> "T-SapphireFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005108> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000473> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005109> (tetramethylrhodamine thiocyanate)
 
@@ -2010,6 +2157,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005109> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005109> "tetramethylrhodamine thiocyanate"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005109> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_52336> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005109> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005110> (TagRFP-T)
 
@@ -2017,6 +2165,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005110> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005110> "TagRFP-T"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005110> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000517> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005110> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005111> (VenusFP)
 
@@ -2024,6 +2173,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005111> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005111> "VenusFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005111> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000477> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005112> (fluorescein)
 
@@ -2031,6 +2181,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005112> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005112> "fluorescein"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005112> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_31624> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005113> (mAppleFP)
 
@@ -2038,6 +2189,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005113> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005113> "mAppleFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005113> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000524> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005113> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005114> (mCherryFP)
 
@@ -2045,6 +2197,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005114> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005114> "mCherryFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005114> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000525> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005114> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005115> (mEOS2FP)
 
@@ -2052,6 +2205,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005115> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005115> "mEOS2FP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005115> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000552> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005115> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005116> (mEOS3.1FP)
 
@@ -2059,6 +2213,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005116> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005116> "mEOS3.1FP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005116> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005117> (mKate2FP)
 
@@ -2066,6 +2221,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005117> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005117> "mKate2FP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005117> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000495> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005118> (mKateFP)
 
@@ -2073,6 +2229,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005118> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005118> "mKateFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005118> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000494> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005118> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005119> (mKikGR)
 
@@ -2080,6 +2237,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005119> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005119> "mKikGR"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005119> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000553> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005119> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005120> (mOrangeFP)
 
@@ -2087,6 +2245,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005120> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005120> "mOrangeFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005120> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000514> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005120> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005121> (mStrawberryFP)
 
@@ -2094,6 +2253,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005121> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005121> "mStrawberryFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005121> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000529> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005121> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005122> (mTagBFP)
 
@@ -2101,6 +2261,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005122> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005122> "mTagBFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000486> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005122> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005123> (mTurquoise2)
 
@@ -2108,6 +2269,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005123> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005123> "mTurquoise2"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005123> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005123> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005124> (tdTomatoFP)
 
@@ -2115,6 +2277,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005124> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005124> "tdTomatoFP"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005124> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000518> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005125> (wtKIikGR)
 
@@ -2122,6 +2285,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005125> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005125> "wtKIikGR"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005125> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000555> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005125> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005126> (X-Rhodamine)
 
@@ -2129,6 +2293,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005126> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005126> "X-Rhodamine"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005126> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000584> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005126> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005127> (yPet)
 
@@ -2136,6 +2301,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005127> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005127> "yPet"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005127> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000478> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005127> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005128> (100% ethanol)
 
@@ -2143,6 +2309,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005128> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005128> "100% ethanol"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005128> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000006>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005129> (15% sucrose in PBS)
 
@@ -2157,6 +2324,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005130> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005130> "30% ethanol"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005130> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000006>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005131> (30% sucrose in PBS)
 
@@ -2171,6 +2339,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005132> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005132> "4% paraformaldehyde solution"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005132> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005132> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005133> (70% ethanol)
 
@@ -2178,6 +2347,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005133> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005133> "70% ethanol"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005133> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002064> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_00006xx> <http://purl.obolibrary.org/obo/FBbi_00000010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005134> (acid phosphatase)
 
@@ -2185,6 +2356,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005134> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005134> "acid phosphatase"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005134> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_00006xx> <http://purl.obolibrary.org/obo/FBbi_00000006>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005135> (critical_point dried specimen)
 
@@ -2192,6 +2365,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005135> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005135> "critical_point dried specimen"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005135> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000581> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005135> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005136> (cryofixed tissue)
 
@@ -2199,6 +2373,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005136> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005136> "cryofixed tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005136> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005136> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005137> (ethanol fixed tissue)
 
@@ -2206,6 +2381,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005137> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005137> "ethanol fixed tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005137> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005137> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005138> (fixed frozen tissue)
 
@@ -2213,6 +2389,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005138> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005138> "fixed frozen tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005138> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005138> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005139> (formaldehyde fixed tissue)
 
@@ -2220,6 +2397,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005139> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005139> "formaldehyde fixed tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005139> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005139> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005140> (freeze-substituted tissue)
 
@@ -2227,6 +2405,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005140> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005140> "freeze-substituted tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005140> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000621> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005140> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005141> (glutaraldehyde fixed tissue)
 
@@ -2234,6 +2413,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005141> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005141> "glutaraldehyde fixed tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005141> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005141> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005142> (lyophilized specimen)
 
@@ -2241,6 +2421,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005142> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005142> "lyophilized specimen"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005142> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000583> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005142> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005143> (methanol fixed tissue)
 
@@ -2248,6 +2429,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005143> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005143> "methanol fixed tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005143> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005143> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005144> (methyl green)
 
@@ -2255,6 +2437,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005144> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005144> "methyl green"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005144> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005144> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005145> (nuclear fast red)
 
@@ -2262,6 +2445,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005145> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005145> "nuclear fast red"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005145> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000045> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005145> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005146> (slide mounted tissue)
 
@@ -2269,6 +2453,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005146> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005146> "slide mounted tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005146> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002067> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005146> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005147> (tissue in acrylic resin embedment)
 
@@ -2276,6 +2461,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005147> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005147> "tissue in acrylic resin embedment"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005147> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005147> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005148> (tissue in epoxy resin embedment)
 
@@ -2283,6 +2469,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005148> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005148> "tissue in epoxy resin embedment"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005148> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005148> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005149> (tissue in paraffin embedment)
 
@@ -2290,6 +2477,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005149> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005149> "tissue in paraffin embedment"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005149> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005149> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005150> (tissue in plastic embedment)
 
@@ -2297,6 +2485,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005150> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005150> "tissue in plastic embedment"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005150> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005151> (Toluidine Blue Staining Method)
 
@@ -2304,6 +2493,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005151> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005151> "Toluidine Blue Staining Method"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005151> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCIT_C92302> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005151> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C23010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005152> (toluidine blue)
 
@@ -2311,6 +2501,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005152> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005152> "toluidine blue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005152> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005152> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/NCIT_C92302>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005153> (vibratome-sectioned tissue)
 
@@ -2318,6 +2509,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005153> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005153> "vibratome-sectioned tissue"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005153> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005153> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005154> (DAPI)
 
@@ -2325,6 +2517,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005154> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005154> "DAPI"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005154> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51231> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005154> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003813>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005155> (ToTo-3)
 
@@ -2332,6 +2525,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005155> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005155> "ToTo-3"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005155> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_52299> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005155> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003813>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005156> (beta-galactosidase)
 
@@ -2339,6 +2533,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005156> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005156> "beta-galactosidase"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005156> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000077> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/SIMRO_0002010>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005157> (whole mounted organism)
 
@@ -2346,6 +2541,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005157> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005157> "whole mounted organism"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005157> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002069> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005157> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005158> (freeze_fracture/freeze_etch)
 
@@ -2353,6 +2549,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005158> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005158> "freeze_fracture/freeze_etch"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005158> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FBbi_00000419> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001004>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005158> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://purl.obolibrary.org/obo/FBbi_00000001>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005159> (Escherichia coli)
 
@@ -2388,6 +2585,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005163> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005163> "RNA interference"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005163> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0016246> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005163> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003969>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005164> (Saccharomyces cerevisiae W303)
 
@@ -2403,11 +2601,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005165> "Schizosaccharomyces pombe 972h-"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005165> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NCBITaxon_284812> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005166> (293T)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005166> (HEK-293T cell)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005166> "293T used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005166> "HEK-293T cell used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005166> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005166> "293T"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005166> "HEK-293T cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005166> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002082> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005167> (Saccharomyces cerevisiae BY4741)
@@ -2445,11 +2643,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005171> "HELA-S3 cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005171> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CLO_0003699> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
-# Class: <http://purl.obolibrary.org/obo/SIMRO_0005172> (K562)
+# Class: <http://purl.obolibrary.org/obo/SIMRO_0005172> (K562 cell)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562 used by proteomic group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562 cell used by proteomic group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005172> ""^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005172> "K562 cell"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005172> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/SIMRO_0002081> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005173> (S2 细胞S2 cell)
@@ -2472,13 +2670,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005175> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005175> "CRISPR-cas system"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005175> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0099048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001007>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005175> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0003969>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005176> (DAPI)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005176> "DAPI used by cytometry group."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/SIMRO_0005176> "DAPI used by light microscopy group."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/SIMRO_0005176> ""^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SIMRO_0005176> "DAPI"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/SIMRO_0005176> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CHEBI_51231> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000611> <http://purl.obolibrary.org/obo/SIMRO_0001005>)))
+SubClassOf(<http://purl.obolibrary.org/obo/SIMRO_0005176> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/SIMRO_0000612> <http://www.ebi.ac.uk/efo/EFO_0000562>))
 
 # Class: <http://purl.obolibrary.org/obo/SIMRO_0005177> (Pomacea canaliculata)
 
